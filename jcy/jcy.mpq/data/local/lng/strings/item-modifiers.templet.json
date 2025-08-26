@@ -2275,7 +2275,7 @@
     "jaJP": "血の饗宴",
     "ptBR": "Mais sangrento",
     "ruRU": "Дополнительное кровотечение",
-    "zhCN": "额外嗜战"
+    "zhCN": "额外血腥"
   },
   {
     "id": 3591,
@@ -2309,7 +2309,7 @@
     "jaJP": "天恵の狙い",
     "ptBR": "Mira Abençoada",
     "ruRU": "Правое дело",
-    "zhCN": "增运瞄准"
+    "zhCN": "祝福瞄准"
   },
   {
     "id": 3594,
@@ -3499,7 +3499,7 @@
     "jaJP": "〈ポイズン/ボーン〉スキル向上（%+d）",
     "ptBR": "%+d para habilidades Veneno e Ossos",
     "ruRU": "%+d к умениям ядов и костей",
-    "zhCN": "{{color0}}%+d 毒素和钙白体术{{color1}}"
+    "zhCN": "{{color0}}%+d 毒素和白骨术{{color1}}"
   },
   {
     "id": 10062,
@@ -3839,7 +3839,7 @@
     "jaJP": "（アサシン専用）",
     "ptBR": "(Somente Assassina)",
     "ruRU": "(только для ассасинов)",
-    "zhCN": "{{color0}}(仅限猎法者){{color1}}"
+    "zhCN": "{{color0}}(仅限刺客){{color1}}"
   },
   {
     "id": 10976,
@@ -4400,7 +4400,7 @@
     "jaJP": "〈アサシン〉スキルレベル向上（%+d）",
     "ptBR": "%+d de níveis de habilidade de Assassina",
     "ruRU": "%+d к уровню умений ассасина",
-    "zhCN": "%+d 猎法者技能等级{{abbr}}"
+    "zhCN": "%+d 刺客技能等级{{abbr}}"
   },
   {
     "id": 11163,
@@ -4689,7 +4689,7 @@
     "jaJP": " 〈ポイズン/ボーン〉スキル +",
     "ptBR": " para habilidades Veneno e Ossos",
     "ruRU": " к уровню умений «Яды и кости»",
-    "zhCN": "至毒素和钙白体术"
+    "zhCN": "至毒素和白骨术"
   },
   {
     "id": 21220,

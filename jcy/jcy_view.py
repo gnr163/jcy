@@ -588,16 +588,15 @@ class D2RLauncherApp(tk.Frame):
         ttk.Label(frame_global, text="区服:").grid(row=1, column=0, sticky="w")
         self.region_var = tk.StringVar(value=self.global_config.get("region", "kr"))
 
-        col = 1
+        frame_region = ttk.Frame(frame_global)
+        frame_region.grid(row=1, column=1, columnspan=10, sticky="w")
+
         for key, label in REGION_NAME_MAP.items():
-            ttk.Radiobutton(frame_global, text=label, variable=self.region_var, value=key).grid(
-                row=1, column=col, sticky="nsew", padx=5
-            )
-            col += 1
+            ttk.Radiobutton(
+                frame_region, text=label, variable=self.region_var, value=key
+            ).pack(side="left", padx=5, pady=2)
 
-        for i in range(col):
-            frame_global.columnconfigure(i, weight=1)
-
+        # 启动间隔
         ttk.Label(frame_global, text="启动间隔(秒):").grid(row=2, column=0, sticky="w")
         self.entry_interval = ttk.Entry(frame_global, width=5)
         self.entry_interval.grid(row=2, column=1, sticky="w")
@@ -623,8 +622,11 @@ class D2RLauncherApp(tk.Frame):
         btn_launch_all = ttk.Button(frame_bottom, text="一键多开", command=self.launch_all_accounts)
         btn_launch_all.pack(side="left", padx=5)
 
-        btn_launch_all = ttk.Button(frame_bottom, text="全部关闭", command=self.close_all)
-        btn_launch_all.pack(side="left", padx=5)
+        btn_kill_proc = ttk.Button(frame_bottom, text="杀进程", command=self.release_mutex)
+        btn_kill_proc.pack(side="left", padx=5)
+
+        btn_close_all = ttk.Button(frame_bottom, text="全部关闭", command=self.close_all)
+        btn_close_all.pack(side="left", padx=5)
 
     def select_d2r_path(self):
         path = filedialog.askopenfilename(title="选择 D2R.exe", filetypes=[("D2R.exe", "D2R.exe")])
