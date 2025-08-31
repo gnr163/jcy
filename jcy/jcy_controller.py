@@ -254,6 +254,8 @@ class FeatureController:
             "302": self.file_operations.select_entry_effects,
             # 装备名称特效
             "303": self.file_operations.select_item_name_effects,
+            # 装备底材特效
+            "304": self.file_operations.select_item_base_effects,
 
             # 照亮范围
             "401": self.file_operations.modify_character_player,

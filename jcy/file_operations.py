@@ -55,6 +55,12 @@ class FileOperations:
             try:
                 target_file = os.path.join(MOD_PATH, file)
                 temp_file = target_file + ".tmp"
+
+                # 先检查状态及文件是否匹配(True==文件名 False==文件名.tmp),是则无需修改
+                if os.path.exists(target_file if isEnabled else temp_file):
+                        count += 1
+                        continue
+
                 os.replace(temp_file, target_file) if isEnabled else os.replace(target_file, temp_file)
                 count += 1
             except Exception as e:
@@ -2204,7 +2210,7 @@ class FileOperations:
 
         # load item.jcy.json
         item_jcy_data = None
-        item_jcy_json = os.path.join(MOD_PATH, r"data/local/lng/strings/items.jcy.json")
+        item_jcy_json = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/jcy.modifiers.json")
         with open(item_jcy_json, 'r', encoding='utf-8') as f:
             item_jcy_data = json.load(f)
 
@@ -2216,8 +2222,8 @@ class FileOperations:
                 item_modifiers_data = json.load(f)
 
             for item in item_modifiers_data:
-                id = str(item["id"])
-                data = item_jcy_data.get(id)
+                Key = item["Key"]
+                data = item_jcy_data.get(Key)
                 if data is not None:
                     abbr = data.get("abbr")
                     if abbr is not None:
@@ -2249,11 +2255,16 @@ class FileOperations:
         handler_max = "5" in keys
         handler_mark = "6" in keys
 
-        # load item.jcy.json
-        item_jcy_data = None
-        item_jcy_json = os.path.join(MOD_PATH, r"data/local/lng/strings/items.jcy.json")
-        with open(item_jcy_json, 'r', encoding='utf-8') as f:
-            item_jcy_data = json.load(f)
+        # load jcy json
+        jcy_equipments_data = None
+        jcy_equipments_json = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/jcy.equipments.json")
+        with open(jcy_equipments_json, 'r', encoding='utf-8') as f:
+            jcy_equipments_data = json.load(f)
+
+        jcy_runewords_data = None
+        jcy_runewords_json = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/jcy.runewords.json")
+        with open(jcy_runewords_json, 'r', encoding='utf-8') as f:
+            jcy_runewords_data = json.load(f)
 
         try:
             # item-names.templet.json -> item-names.json
@@ -2264,7 +2275,7 @@ class FileOperations:
 
             for item in item_names_data:
                 Key = item["Key"]
-                data = item_jcy_data.get(Key)
+                data = jcy_equipments_data.get(Key)
                 if data is not None:
                     for lng in ("zhCN", "zhTW", "enUS"):
                         arr = []
@@ -2307,7 +2318,7 @@ class FileOperations:
 
             for item in item_runes_data:
                 Key = item["Key"]
-                data = item_jcy_data.get(Key)
+                data = jcy_runewords_data.get(Key)
                 if data is not None:
                     for lng in ("zhCN", "zhTW", "enUS"):
                         arr = []
@@ -2342,6 +2353,80 @@ class FileOperations:
             print(e)
 
         return (count, 2)
+    
+    def select_item_base_effects(self, keys: list):
+        """装备底材特效"""
+        # TODO:对道具过滤应该保持既有设置...偷懒了
+        count = 0
+        handler_grade = "3" in keys
+        handler_weight = "4" in keys
+        handler_sockets = "5" in keys
+        handler_defense = "6" in keys
+
+        # load jcy json
+        jcy_base_data = None
+        jcy_base_json = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/jcy.bases.json")
+        with open(jcy_base_json, 'r', encoding='utf-8') as f:
+            jcy_base_data = json.load(f)
+
+        _filter = [2182, 2183, 2184, 2185, 2186, 2187, 2200, 2202, 2207, 2208, 2209, 2210, 2211, 2218, 2220, 2222, 2236, 2237, 2238, 2239, 2240, 
+                   2241, 2242, 2243, 2244, 2245, 2246, 2247, 2248, 2249, 2250, 2251, 2252, 2254, 2253, 2255, 2256, 2257, 2258, 2259, 2260, 2261, 
+                   2262, 2263, 2264, 2265, 2266, 2267, 2268, 2269, 2270, 2271, 2272, 2273, 2274, 2275, 2277, 2278, 2279, 2280, 2281]
+        
+        try:
+            # item-names.templet.json -> item-names.json
+            item_names_data = None
+            item_names_templet = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.templet.json")
+            with open(item_names_templet, 'r', encoding='utf-8-sig') as f:
+                item_names_data = json.load(f)
+            
+            for item in item_names_data:
+                id = item["id"]
+                if id in _filter:
+                    continue
+
+                Key = item["Key"]
+                data = jcy_base_data.get(Key)
+                if data is not None:
+                    for lng in ("zhCN", "zhTW", "enUS"):
+                        arr = []
+                        arr.append(item[lng])
+                        if handler_grade:
+                            grade = data[lng].get("grade")
+                            if grade:
+                                arr.append("|")
+                                arr.append(grade)
+                        if handler_weight:
+                            weight = data[lng].get("weight")
+                            if weight:
+                                if len(arr) == 0:
+                                    arr.append("|")
+                                arr.append(weight)
+                        if handler_sockets:
+                            sockets = data[lng].get("sockets")
+                            if sockets:
+                                arr.append("[")
+                                arr.append(sockets)
+                                arr.append("]")
+                        if handler_defense:
+                            defense = data[lng].get("defense")
+                            if defense:
+                                arr.append("[")
+                                arr.append(defense)
+                                arr.append("]")
+                        item[lng] = ''.join(arr)
+
+            item_names_templet_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.templet.json.tmp")
+            with open(item_names_templet_tmp, 'w', encoding="utf-8-sig") as f:
+                json.dump(item_names_data, f, ensure_ascii=False, indent=2)
+
+            item_names_json = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json")
+            os.replace(item_names_templet_tmp, item_names_json)
+            count += 1
+        except Exception as e:
+            print(e)
+
+        return (count, 1)
 
     def toggle_quick_buy(self, isEnabled:bool):
         """

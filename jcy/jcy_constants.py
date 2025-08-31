@@ -21,10 +21,10 @@ LANG = ZHCN
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.1.5c"
+APP_VERSION = "v1.1.6"
 
 # 发布日期
-APP_DATE = "20250826"
+APP_DATE = "20250901"
 
 # 控制器全称
 APP_FULL_NAME = f"{APP_NAME}_{APP_VERSION}"
@@ -36,16 +36,14 @@ APP_SIZE = "750x700"
 REGION_DOMAIN_MAP = {
     "kr": "kr.actual.battle.net",
     "us": "us.actual.battle.net",
-    "eu": "eu.actual.battle.net",
-    "cn": "cn.actual.battlenet.com.bgs.battle.net"
+    "eu": "eu.actual.battle.net"
 }
 
 # 区服名称
 REGION_NAME_MAP = {
     "kr": "亚服",
     "us": "美服",
-    "eu": "欧服",
-    "cn": "国服"
+    "eu": "欧服"
 }
 
 # Unicode私有区字符 for 屏蔽道具

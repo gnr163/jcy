@@ -716,8 +716,8 @@
   {
     "id": 3494,
     "Key": "ModStr1v",
-    "enUS": "Attacker Takes Damage of %d",
-    "zhTW": "攻擊者反傷：%d",
+    "enUS": "Attacker Takes Damage of(ATD) %d",
+    "zhTW": "攻擊者反傷(ATD)：%d",
     "deDE": "Angreifer erleidet Schaden von %d",
     "esES": "Los atacantes reciben %d p. de daño",
     "frFR": "L’adversaire subit des dégâts de %d",
@@ -728,7 +728,7 @@
     "jaJP": "反撃ダメージ（%d）を与える",
     "ptBR": "Agressor recebe %d de dano",
     "ruRU": "Атакующий получает %d урона",
-    "zhCN": "攻击者受到 %d 点伤害"
+    "zhCN": "攻击者受到 %d 点伤害(ATD)"
   },
   {
     "id": 3497,
