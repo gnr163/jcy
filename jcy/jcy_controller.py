@@ -216,7 +216,7 @@ class FeatureController:
             "134": self.file_operations.toggle_lightningbolt_big,
             # "降低 闪电新星亮度",
             "135": self.file_operations.toggle_electric_nova,
-            # "怪物血条加宽加高",
+            # "怪物血条D3风格",
             "136": self.file_operations.toggle_monster_health,
             # "死灵召唤骷髅 火焰刀+圣盾特效",
             "137": self.file_operations.toggle_necroskeleton,
