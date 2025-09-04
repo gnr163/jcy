@@ -379,6 +379,41 @@ class FileOperations:
         )
 
         return self.common_rename(files_entrance_arrow, isEnabled)
+    
+    def toggle_a2hire_female(self, isEnabled: bool):
+        """A2佣兵 女性化"""
+
+        _files = (
+            # 佣兵昵称
+            r"data/local/lng/strings/mercenaries.json",
+            # 佣兵头像
+            r"data/hd/global/ui/hireables/act2hireableicon.lowend.sprite",
+            r"data/hd/global/ui/hireables/act2hireableicon.sprite",
+            # 佣兵模型
+            r"data/hd/character/enemy/act2hire.json",
+            r"data/hd/character/enemy/act2hire_female/act2hire_female_state_machine.json",
+            r"data/hd/character/enemy/act2hire_female/act2hire_female_variant.json",
+            # 声音文件
+            r"data/hd/global/sfx/monster/guard/monster_guard_death_1_hd.flac",
+            r"data/hd/global/sfx/monster/guard/monster_guard_death_2_hd.flac",
+            r"data/hd/global/sfx/monster/guard/monster_guard_death_3_hd.flac",
+            r"data/hd/global/sfx/monster/guard/monster_guard_gethit_1_hd.flac",
+            r"data/hd/global/sfx/monster/guard/monster_guard_gethit_2_hd.flac",
+            r"data/hd/global/sfx/monster/guard/monster_guard_gethit_3_hd.flac",
+            r"data/hd/global/sfx/monster/guard/monster_guard_gethit_4_hd.flac",
+        )
+
+        return self.common_rename(_files, isEnabled)
+
+    def toggle_a5hire_sword(self, isEnabled: bool):
+        """A5佣兵火焰刀"""
+        _files = (
+            r"data/hd/character/enemy/act5hire1.json",
+            r"data/hd/items/weapon/sword/act5hire1_bastard_sword.json",
+            r"data/hd/items/weapon/sword/act5hire1_long_sword.json",
+        )
+
+        return self.common_rename(_files, isEnabled)
 
     def toggle_low_quality(self, isEnabled: bool):
         """
@@ -2342,7 +2377,11 @@ class FileOperations:
                                     arr.append(mark)
                                     arr.append("\n")
                             if len(arr) > 0:
-                                arr.append("ÿc4")
+                                # 暗金vs套装
+                                if Key in SET_ITEM_INDEX:
+                                    arr.append("ÿc2")
+                                else:
+                                    arr.append("ÿc4")
                             arr.append(item.get(lng))
                             if handler_enUS and lng in ("zhCN", "zhTW"):
                                 arr.append("ÿcI ")

@@ -232,6 +232,10 @@ class FeatureController:
             "142": self.file_operations.toggle_roomtiles_arrow,
             # "小站 箭头指引",
             "143": self.file_operations.toggle_waypoint_arrow,
+            # "A2佣兵 女性化"
+            "144": self.file_operations.toggle_a2hire_female,
+            # "A5佣兵 火焰刀"
+            "145": self.file_operations.toggle_a5hire_sword,
             
             
             # 佣兵图标位置
@@ -246,7 +250,7 @@ class FeatureController:
             "205": self.file_operations.select_enemy_arrow_skin,
             # 符文皮肤
             "206": self.file_operations.select_rune_skin,
-            
+
 
             #角色特效
             "301": self.file_operations.select_character_effects,
