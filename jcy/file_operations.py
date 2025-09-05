@@ -88,17 +88,6 @@ class FileOperations:
                 print(e)
         return (count, total)
 
-    def toggle_mini_cube(self, isEnabled: bool):
-        """
-        INI方块
-        """
-        files_mini_cube = (
-            r"data/global/ui/layouts/minihoradriccubelayouthd.json",
-            r"data/global/ui/layouts/minihoradriccubelayout.json",
-        )
-
-        return self.common_rename(files_mini_cube, isEnabled)
-
     def toggle_droped_highlight(self, isEnabled: bool):
         """
         开关 掉落光柱
@@ -1868,9 +1857,7 @@ class FileOperations:
         return self.common_rename(files_env_vis, isEnabled)
     
     def toggle_monster_health(self, isEnabled: bool):
-        """
-        怪物血条加宽加高
-        """
+        """怪物血条D3风格"""
         files_monster_health = [
             r"data/global/ui/layouts/hudmonsterhealthhd.json",
         ]
@@ -1919,47 +1906,6 @@ class FileOperations:
         ]
 
         return self.common_rename(files_electric_nova, isEnabled)
-
-    def toogle_d2r_wiki(self, isEnabled: bool):
-        """
-        暗黑2百科
-        """
-        _files = [
-            r"data/global/ui/layouts/hudpanel_realhd.json",
-            r"data/global/ui/layouts/hudpanel_real.json",
-        ]
-
-        return self.common_rename(_files, isEnabled)
-    
-    def toggle_inventory_expansion(self, isEnabled: bool):
-        """
-        物品栏+精品词缀
-        """
-        _files = [
-            r"data/global/ui/layouts/playerinventoryexpansionlayouthd.json",
-        ]
-
-        return self.common_rename(_files, isEnabled)
-    
-    def toggle_bank_expansion(self, isEnabled: bool):
-        """
-        储物箱+精品词缀
-        """
-        _files = [
-            r"data/global/ui/layouts/bankexpansionlayouthd.json",
-        ]
-
-        return self.common_rename(_files, isEnabled)
-    
-    def toogle_cube_formula(self, isEnabled: bool):
-        """
-        方块+符文升级公式
-        """
-        _files = [
-            r"data/global/ui/layouts/horadriccubelayouthd.json",
-        ]
-
-        return self.common_rename(_files, isEnabled)
 
     def toggle_shenk(self, isEnabled: bool):
         """

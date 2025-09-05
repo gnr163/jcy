@@ -270,8 +270,8 @@
     "TooltipFontSize": 36,
     "CinematicsFontSize": 32,
     "AddFriendModalFontSize": 26,
-    "GameNameFilterFontSize": 28,
-    "ShowItemFontSize": "$TooltipFontSize",
+    "FixedXMediumFontSize": 30,
+    "FixedMediumFontSize": 28,
     "XMediumPanelFontSize": "$XMediumFontSize",
     "MediumPanelFontSize": "$MediumFontSize",
     "SmallPanelFontSize": "$SmallFontSize",
@@ -576,9 +576,6 @@
             "options": {
                 "pipeCharacterBehavior": "handle",
                 "newlineHandling": "reversed"
-            },
-            "spacing": {
-                "leading": 1
             }
         },
         "padding": [
@@ -589,9 +586,9 @@
         ],
         "inGameTargetPadding": [
             0,
-            1,
             0,
-            1
+            0,
+            0
         ],
         "drawBorder": false,
         "centeredOnAnchor": true,
@@ -1141,19 +1138,13 @@
         "height": 1150
     },
     "TutorialTooltipConsoleSoloRect": {
-        "x": -200,
+        "x": 275,
         "y": 451,
         "width": 900,
         "height": 700
     },
-    "TutorialTooltipConsoleGameCreatorRect": {
-        "x": -1600,
-        "y": 451,
-        "width": 900,
-        "height": 700
-    },
-    "TutorialTooltipConsoleGameListRect": {
-        "x": -700,
+    "TutorialTooltipConsoleMultiRect": {
+        "x": -1375,
         "y": 451,
         "width": 900,
         "height": 700
@@ -1239,281 +1230,5 @@
         "y": 80
     },
     "JoinGamePlayerEntryHeight": 100,
-    "JoinGamePlayerNameHeight": 60,
-    "StandardToolTipStyle": {
-        "fontStyle": {
-            "options": {
-                "newlineHandling": "standard"
-            }
-        }
-    },
-    "SmallStandardLeftToolTipStyle": {
-        "fontStyle": {
-            "pointSize": 26,
-            "alignment": {
-                "h": "left",
-                "v": "center"
-            },
-            "options": {
-                "newlineHandling": "standard"
-            }
-        }
-    },
-    "StandardLeftToolTipStyle": {
-        "fontStyle": {
-            "alignment": {
-                "h": "left",
-                "v": "center"
-            },
-            "options": {
-                "newlineHandling": "standard"
-            }
-        }
-    },
-    "RuneWordFirstRuneRect": {
-        "x": 36,
-        "y": -10,
-        "scale": 0.7
-    },
-    "RuneWordSecondRuneRect": {
-        "x": 106,
-        "y": -10,
-        "scale": 0.7
-    },
-    "RuneWordThirdRuneRect": {
-        "x": 176,
-        "y": -10,
-        "scale": 0.7
-    },
-    "RuneWordForthRuneRect": {
-        "x": 246,
-        "y": -10,
-        "scale": 0.7
-    },
-    "RuneWordFifthRuneRect": {
-        "x": 316,
-        "y": -10,
-        "scale": 0.7
-    },
-    "RuneWordSixRuneRect": {
-        "x": 386,
-        "y": -10,
-        "scale": 0.7
-    },
-    "RuneWordNameWidgetRect": {
-        "x": 0,
-        "y": 0,
-        "width": 240,
-        "height": 60,
-        "scale": 0.95
-    },
-    "RuneWordRunesWidgetRect": {
-        "x": 250,
-        "y": 0,
-        "scale": 0.95
-    },
-    "RuneWordTextBoxWidgetStyle": {
-        "pointSize": "$XMediumLargeFontSize",
-        "alignment": {
-            "h": "left",
-            "v": "center"
-        },
-        "options": {
-            "pipeCharacterBehavior": "handle"
-        }
-    },
-    "FileRune1": "items\\misc\\rune\\El_rune",
-    "TooltipRune1": "@r01@jghelp50601rune01tooltip",
-    "FileRune2": "items\\misc\\rune\\Eld_rune",
-    "TooltipRune2": "@r02@jghelp50602rune02tooltip",
-    "FileRune3": "items\\misc\\rune\\Tir_rune",
-    "TooltipRune3": "@r03@jghelp50603rune03tooltip",
-    "FileRune4": "items\\misc\\rune\\Nef_rune",
-    "TooltipRune4": "@r04@jghelp50604rune04tooltip",
-    "FileRune5": "items\\misc\\rune\\Eth_rune",
-    "TooltipRune5": "@r05@jghelp50605rune05tooltip",
-    "FileRune6": "items\\misc\\rune\\Ith_rune",
-    "TooltipRune6": "@r06@jghelp50606rune06tooltip",
-    "FileRune7": "items\\misc\\rune\\Tal_rune",
-    "TooltipRune7": "@r07@jghelp50607rune07tooltip",
-    "FileRune8": "items\\misc\\rune\\Ral_rune",
-    "TooltipRune8": "@r08@jghelp50608rune08tooltip",
-    "FileRune9": "items\\misc\\rune\\Ort_rune",
-    "TooltipRune9": "@r09@jghelp50609rune09tooltip",
-    "FileRune10": "items\\misc\\rune\\Thul_rune",
-    "TooltipRune10": "@r10@jghelp50610rune10tooltip",
-    "FileRune11": "items\\misc\\rune\\Amn_rune",
-    "TooltipRune11": "@r11@jghelp50611rune11tooltip",
-    "FileRune12": "items\\misc\\rune\\Sol_rune",
-    "TooltipRune12": "@r12@jghelp50612rune12tooltip",
-    "FileRune13": "items\\misc\\rune\\Shael_rune",
-    "TooltipRune13": "@r13@jghelp50613rune13tooltip",
-    "FileRune14": "items\\misc\\rune\\Dol_rune",
-    "TooltipRune14": "@r14@jghelp50614rune14tooltip",
-    "FileRune15": "items\\misc\\rune\\Hel_rune",
-    "TooltipRune15": "@r15@jghelp50615rune15tooltip",
-    "FileRune16": "items\\misc\\rune\\Io_rune",
-    "TooltipRune16": "@r16@jghelp50616rune16tooltip",
-    "FileRune17": "items\\misc\\rune\\Lum_rune",
-    "TooltipRune17": "@r17@jghelp50617rune17tooltip",
-    "FileRune18": "items\\misc\\rune\\Ko_rune",
-    "TooltipRune18": "@r18@jghelp50618rune18tooltip",
-    "FileRune19": "items\\misc\\rune\\Fal_rune",
-    "TooltipRune19": "@r19@jghelp50619rune19tooltip",
-    "FileRune20": "items\\misc\\rune\\Lem_rune",
-    "TooltipRune20": "@r20@jghelp50620rune20tooltip",
-    "FileRune21": "items\\misc\\rune\\Pul_rune",
-    "TooltipRune21": "@r21@jghelp50621rune21tooltip",
-    "FileRune22": "items\\misc\\rune\\Um_rune",
-    "TooltipRune22": "@r22@jghelp50622rune22tooltip",
-    "FileRune23": "items\\misc\\rune\\Mal_rune",
-    "TooltipRune23": "@r23@jghelp50623rune23tooltip",
-    "FileRune24": "items\\misc\\rune\\Ist_rune",
-    "TooltipRune24": "@r24@jghelp50624rune24tooltip",
-    "FileRune25": "items\\misc\\rune\\Gul_rune",
-    "TooltipRune25": "@r25@jghelp50625rune25tooltip",
-    "FileRune26": "items\\misc\\rune\\Vex_rune",
-    "TooltipRune26": "@r26@jghelp50626rune26tooltip",
-    "FileRune27": "items\\misc\\rune\\Ohm_rune",
-    "TooltipRune27": "@r27@jghelp50627rune27tooltip",
-    "FileRune28": "items\\misc\\rune\\Lo_rune",
-    "TooltipRune28": "@r28@jghelp50628rune28tooltip",
-    "FileRune29": "items\\misc\\rune\\Sur_rune",
-    "TooltipRune29": "@r29@jghelp50629rune29tooltip",
-    "FileRune30": "items\\misc\\rune\\Ber_rune",
-    "TooltipRune30": "@r30@jghelp50630rune30tooltip",
-    "FileRune31": "items\\misc\\rune\\Jah_rune",
-    "TooltipRune31": "@r31@jghelp50631rune31tooltip",
-    "FileRune32": "items\\misc\\rune\\Cham_rune",
-    "TooltipRune32": "@r32@jghelp50632rune32tooltip",
-    "FileRune33": "items\\misc\\rune\\Zod_rune",
-    "TooltipRune33": "@r33@jghelp50633rune33tooltip",
-    "RuneUpWidgetRect": {
-        "x": 0,
-        "y": 0,
-        "scale": 0.7
-    },
-    "EqualTextBoxWidgetStyle": {
-        "pointSize": "$XLargeFontSize",
-        "alignment": {
-            "h": "center",
-            "v": "center"
-        },
-        "options": {
-            "pipeCharacterBehavior": "handle"
-        },
-        "fontColor": "$FontColorGoldYellow",
-        "dropShadow": {
-            "shadowColor": "$FontColorGoldYellow",
-            "offset": {
-                "x": 3,
-                "y": 3
-            }
-        }
-    },
-    "RuneUpEqualTextBoxWidgetRect": {
-        "x": 75,
-        "y": 30,
-        "scale": 0.7
-    },
-    "RuneUpFirstItemRect": {
-        "x": 85,
-        "y": 0,
-        "scale": 0.7
-    },
-    "RuneUpSecondItemRect": {
-        "x": 155,
-        "y": 0,
-        "scale": 0.7
-    },
-    "RuneUpThirdItemRect": {
-        "x": 225,
-        "y": 0,
-        "scale": 0.7
-    },
-    "RuneUpForthItemRect": {
-        "x": 295,
-        "y": 0,
-        "scale": 0.7
-    },
-    "FileChippedTopaz": "items\\misc\\gem\\chipped_topaz",
-    "TooltipChippedTopaz": "@gcy",
-    "FileFlawedTopaz": "items\\misc\\gem\\flawed_topaz",
-    "TooltipFlawedTopaz": "@gfy",
-    "FileTopaz": "items\\misc\\gem\\topaz",
-    "TooltipTopaz": "@gsy",
-    "FileFlawlessTopaz": "items\\misc\\gem\\flawless_topaz",
-    "TooltipFlawlessTopaz": "@gly",
-    "FilePerfectTopaz": "items\\misc\\gem\\perfect_topaz",
-    "TooltipPerfectTopaz": "@gpy",
-    "FileChippedAmethyst": "items\\misc\\gem\\chipped_amethyst",
-    "TooltipChippedAmethyst": "@gcv",
-    "FileFlawedAmethyst": "items\\misc\\gem\\flawed_amethyst",
-    "TooltipFlawedAmethyst": "@gfv",
-    "FileAmethyst": "items\\misc\\gem\\amethyst",
-    "TooltipAmethyst": "@gsv",
-    "FileFlawlessAmethyst": "items\\misc\\gem\\flawless_amethyst",
-    "TooltipFlawlessAmethyst": "@gzv",
-    "FilePerfectAmethyst": "items\\misc\\gem\\perfect_amethyst",
-    "TooltipPerfectAmethystz": "@gpv",
-    "FileChippedSapphire": "items\\misc\\gem\\chipped_saphire",
-    "TooltipChippedSapphire": "@gcb",
-    "FileFlawedSapphire": "items\\misc\\gem\\flawed_saphire",
-    "TooltipFlawedSapphire": "@gfb",
-    "FileSapphire": "items\\misc\\gem\\saphire",
-    "TooltipSapphire": "@gsb",
-    "FileFlawlessSapphire": "items\\misc\\gem\\flawless_saphire",
-    "TooltipFlawlessSapphire": "@glb",
-    "FilePerfectSapphire": "items\\misc\\gem\\perfect_saphire",
-    "TooltipPerfectSapphirez": "@gpb",
-    "FileChippedRuby": "items\\misc\\gem\\chipped_ruby",
-    "TooltipChippedRuby": "@gcr",
-    "FileFlawedRuby": "items\\misc\\gem\\flawed_ruby",
-    "TooltipFlawedRuby": "@gfr",
-    "FileRuby": "items\\misc\\gem\\ruby",
-    "TooltipRuby": "@gsr",
-    "FileFlawlessRuby": "items\\misc\\gem\\flawless_ruby",
-    "TooltipFlawlessRuby": "@glr",
-    "FilePerfectRuby": "items\\misc\\gem\\perfect_ruby",
-    "TooltipPerfectRubyz": "@gpr",
-    "FileChippedEmerald": "items\\misc\\gem\\chipped_emerald",
-    "TooltipChippedEmerald": "@gcg",
-    "FileFlawedEmerald": "items\\misc\\gem\\flawed_emerald",
-    "TooltipFlawedEmerald": "@gfg",
-    "FileEmerald": "items\\misc\\gem\\emerald",
-    "TooltipEmerald": "@gsg",
-    "FileFlawlessEmerald": "items\\misc\\gem\\flawless_emerald",
-    "TooltipFlawlessEmerald": "@glg",
-    "FilePerfectEmerald": "items\\misc\\gem\\perfect_emerald",
-    "TooltipPerfectEmeraldz": "@gpg",
-    "FileChippedDiamond": "items\\misc\\gem\\chipped_diamond",
-    "TooltipChippedDiamond": "@gcw",
-    "FileFlawedDiamond": "items\\misc\\gem\\flawed_diamond",
-    "TooltipFlawedDiamond": "@gfw",
-    "FileDiamond": "items\\misc\\gem\\diamond",
-    "TooltipDiamond": "@gsw",
-    "FileFlawlessDiamond": "items\\misc\\gem\\flawless_diamond",
-    "TooltipFlawlessDiamond": "@glw",
-    "FilePerfectDiamond": "items\\misc\\gem\\perfect_diamond",
-    "TooltipPerfectDiamondz": "@gpw",
-    "FileChippedSkull": "items\\misc\\gem\\chipped_skull",
-    "TooltipChippedSkull": "@skc",
-    "FileFlawedSkull": "items\\misc\\gem\\flawed_skull",
-    "TooltipFlawedSkull": "@skf",
-    "FileSkull": "items\\misc\\gem\\skull",
-    "TooltipSkull": "@sku",
-    "FileFlawlessSkull": "items\\misc\\gem\\flawless_skull",
-    "TooltipFlawlessSkull": "@skl",
-    "FilePerfectSkull": "items\\misc\\gem\\perfect_skull",
-    "TooltipPerfectSkullz": "@skz",
-    "StyleLinkButtonText": {
-        "fontColor": "$LightButtonTextColor",
-        "pointSize": "$MediumLargeFontSize",
-        "dropShadow": "$DefaultDropShadow",
-        "spacing": "$MinimumSpacing",
-        "alignment": {
-            "h": "left",
-            "v": "center"
-        }
-    }
+    "JoinGamePlayerNameHeight": 60
 }

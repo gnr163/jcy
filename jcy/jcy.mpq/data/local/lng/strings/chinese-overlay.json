@@ -14,7 +14,7 @@
     "jaJP": "36...And so it came to pass that the Countess, who once bathed in the rejuvenating blood of a hundred virgins, was buried alive... And her castle in which so many cruel deeds took place fell rapidly into ruin. Rising over the buried dungeons in that god-forsaken wilderness, a solitary tower, like some monument to Evil, is all that remains.\n\nThe Countess' fortune was believed to be divided among the clergy, although some say that more remains unfound, still buried alongside the rotting skulls that bear mute witness to the inhumanity of the human creature.",
     "ptBR": "36...And so it came to pass that the Countess, who once bathed in the rejuvenating blood of a hundred virgins, was buried alive... And her castle in which so many cruel deeds took place fell rapidly into ruin. Rising over the buried dungeons in that god-forsaken wilderness, a solitary tower, like some monument to Evil, is all that remains.\n\nThe Countess' fortune was believed to be divided among the clergy, although some say that more remains unfound, still buried alongside the rotting skulls that bear mute witness to the inhumanity of the human creature.",
     "ruRU": "36...And so it came to pass that the Countess, who once bathed in the rejuvenating blood of a hundred virgins, was buried alive... And her castle in which so many cruel deeds took place fell rapidly into ruin. Rising over the buried dungeons in that god-forsaken wilderness, a solitary tower, like some monument to Evil, is all that remains.\n\nThe Countess' fortune was believed to be divided among the clergy, although some say that more remains unfound, still buried alongside the rotting skulls that bear mute witness to the inhumanity of the human creature.",
-    "zhCN": "……那个女伯爵被活埋在地下……她那座见证了无数残忍行径的堡垒也很快化作了废墟。在那片被神灵遗弃的荒原中，只留下一座孤寂的高塔矗立在深埋的地牢之上，仿佛是那场邪恶惨剧的纪念碑。\n\n有人说，圣职者瓜分了女伯爵留下的财富，然而也有人说，还有更多未发掘的宝藏，藏匿在腐烂的枯骨旁，沉默地见证了人类失去人性的过程。"
+    "zhCN": "……那个女伯爵曾用一百名处女的血沐浴，希望能够永葆青春，却被活埋在了地下……她那座见证了无数残忍行径的堡垒也很快化作了废墟。在那片被神灵遗弃的荒原中，只留下一座孤寂的高塔矗立在深埋的地牢之上，仿佛是那场邪恶惨剧的纪念碑。\n\n有人说，圣职者瓜分了女伯爵留下的财富，然而也有人说，还有更多未发掘的宝藏，藏匿在腐烂的枯骨旁，沉默地见证了人类失去人性的过程。"
   },
   {
     "id": 1742,
@@ -31,7 +31,7 @@
     "jaJP": "Dangerous",
     "ptBR": "Dangerous",
     "ruRU": "Dangerous",
-    "zhCN": "危险"
+    "zhCN": "致命"
   },
   {
     "id": 1825,
@@ -48,7 +48,7 @@
     "jaJP": "Offenders",
     "ptBR": "Offenders",
     "ruRU": "Offenders",
-    "zhCN": "侵害者的"
+    "zhCN": "屠杀者的"
   },
   {
     "id": 1844,
@@ -65,7 +65,7 @@
     "jaJP": "of Impale",
     "ptBR": "of Impale",
     "ruRU": "of Impale",
-    "zhCN": "穿透之"
+    "zhCN": "刺穿之"
   },
   {
     "id": 1973,
@@ -82,7 +82,7 @@
     "jaJP": "Spiked Helm",
     "ptBR": "Spiked Helm",
     "ruRU": "Spiked Helm",
-    "zhCN": "尖刺盔"
+    "zhCN": "骨盔|普"
   },
   {
     "id": 1974,
@@ -99,7 +99,7 @@
     "jaJP": "Spiny Shield",
     "ptBR": "Spiny Shield",
     "ruRU": "Spiny Shield",
-    "zhCN": "刺盾"
+    "zhCN": "骨盾|普轻"
   },
   {
     "id": 2277,
@@ -116,7 +116,7 @@
     "jaJP": "Chipped Quartz",
     "ptBR": "Chipped Quartz",
     "ruRU": "Chipped Quartz",
-    "zhCN": "碎裂的石英"
+    "zhCN": "ÿc1碎裂的头骨宝石ÿc0"
   },
   {
     "id": 2278,
@@ -133,7 +133,7 @@
     "jaJP": "Flawed Quartz",
     "ptBR": "Flawed Quartz",
     "ruRU": "Flawed Quartz",
-    "zhCN": "有瑕疵的石英"
+    "zhCN": "ÿc1有瑕疵的头骨宝石ÿc0"
   },
   {
     "id": 2279,
@@ -150,7 +150,7 @@
     "jaJP": "Quartz",
     "ptBR": "Quartz",
     "ruRU": "Quartz",
-    "zhCN": "石英"
+    "zhCN": "ÿc1头骨宝石ÿc0"
   },
   {
     "id": 2280,
@@ -167,7 +167,7 @@
     "jaJP": "Flawless Quartz",
     "ptBR": "Flawless Quartz",
     "ruRU": "Flawless Quartz",
-    "zhCN": "无瑕疵的石英"
+    "zhCN": "ÿc1无瑕疵的头骨宝石ÿc0"
   },
   {
     "id": 2281,
@@ -184,7 +184,7 @@
     "jaJP": "Perfect Quartz",
     "ptBR": "Perfect Quartz",
     "ruRU": "Perfect Quartz",
-    "zhCN": "完美的石英"
+    "zhCN": "ÿc1完美的头骨宝石ÿc0"
   },
   {
     "id": 2315,
@@ -201,7 +201,7 @@
     "jaJP": "Rot",
     "ptBR": "Rot",
     "ruRU": "Rot",
-    "zhCN": "残骸"
+    "zhCN": "尸骸"
   },
   {
     "id": 2341,
@@ -218,7 +218,7 @@
     "jaJP": "Offender",
     "ptBR": "Offender",
     "ruRU": "Offender",
-    "zhCN": "侵害者"
+    "zhCN": "屠杀者"
   },
   {
     "id": 2649,
@@ -235,7 +235,7 @@
     "jaJP": "Wormsteel",
     "ptBR": "Wormsteel",
     "ruRU": "Wormsteel",
-    "zhCN": "虫噬钢盔"
+    "zhCN": "[MAX:防御36]\n蛆虫头骨"
   },
   {
     "id": 2772,
@@ -252,7 +252,7 @@
     "jaJP": "Violator",
     "ptBR": "Violator",
     "ruRU": "Violator",
-    "zhCN": "侵害者"
+    "zhCN": "杀戮者"
   },
   {
     "id": 2901,
@@ -269,7 +269,7 @@
     "jaJP": "Gremlin",
     "ptBR": "Gremlin",
     "ruRU": "Gremlin",
-    "zhCN": "小妖"
+    "zhCN": "鬼娃"
   },
   {
     "id": 2906,
@@ -286,7 +286,7 @@
     "jaJP": "Undead Gremlin",
     "ptBR": "Undead Gremlin",
     "ruRU": "Undead Gremlin",
-    "zhCN": "亡灵小妖"
+    "zhCN": "亡灵鬼娃"
   },
   {
     "id": 2913,
@@ -303,7 +303,7 @@
     "jaJP": "Evil Lord",
     "ptBR": "Evil Lord",
     "ruRU": "Evil Lord",
-    "zhCN": "煞王"
+    "zhCN": "血王"
   },
   {
     "id": 3008,
@@ -320,7 +320,7 @@
     "jaJP": "Drowned One",
     "ptBR": "Drowned One",
     "ruRU": "Drowned One",
-    "zhCN": "溺者"
+    "zhCN": "溺尸"
   },
   {
     "id": 3010,
@@ -337,7 +337,7 @@
     "jaJP": "Rotten One",
     "ptBR": "Rotten One",
     "ruRU": "Rotten One",
-    "zhCN": "腐朽者"
+    "zhCN": "僵尸"
   },
   {
     "id": 3011,
@@ -354,7 +354,7 @@
     "jaJP": "Undead",
     "ptBR": "Undead",
     "ruRU": "Undead",
-    "zhCN": "亡灵"
+    "zhCN": "骷髅"
   },
   {
     "id": 3015,
@@ -371,7 +371,7 @@
     "jaJP": "Risen Warrior",
     "ptBR": "Risen Warrior",
     "ruRU": "Risen Warrior",
-    "zhCN": "复生战士"
+    "zhCN": "白骨战士"
   },
   {
     "id": 3086,
@@ -388,7 +388,7 @@
     "jaJP": "Undead Archer",
     "ptBR": "Undead Archer",
     "ruRU": "Undead Archer",
-    "zhCN": "亡灵弓手"
+    "zhCN": "白骨弓手"
   },
   {
     "id": 3088,
@@ -405,7 +405,7 @@
     "jaJP": "Risen Archer",
     "ptBR": "Risen Archer",
     "ruRU": "Risen Archer",
-    "zhCN": "复生弓手"
+    "zhCN": "骷髅弓手"
   },
   {
     "id": 3103,
@@ -422,7 +422,7 @@
     "jaJP": "Gremlin Shaman",
     "ptBR": "Gremlin Shaman",
     "ruRU": "Gremlin Shaman",
-    "zhCN": "小妖萨满"
+    "zhCN": "鬼娃萨满"
   },
   {
     "id": 3107,
@@ -439,7 +439,7 @@
     "jaJP": "Risen Mage",
     "ptBR": "Risen Mage",
     "ruRU": "Risen Mage",
-    "zhCN": "复生法师"
+    "zhCN": "白骨法师"
   },
   {
     "id": 3124,
@@ -456,7 +456,7 @@
     "jaJP": "Dark Golem",
     "ptBR": "Dark Golem",
     "ruRU": "Dark Golem",
-    "zhCN": "黑暗傀儡"
+    "zhCN": "鲜血傀儡"
   },
   {
     "id": 3181,
@@ -473,7 +473,7 @@
     "jaJP": "Raises Gremlins",
     "ptBR": "Raises Gremlins",
     "ruRU": "Raises Gremlins",
-    "zhCN": "复活小妖"
+    "zhCN": "复活鬼娃"
   },
   {
     "id": 3195,
@@ -490,7 +490,7 @@
     "jaJP": "Raises Gremlins",
     "ptBR": "Raises Gremlins",
     "ruRU": "Raises Gremlins",
-    "zhCN": "复活小妖"
+    "zhCN": "复活鬼娃"
   },
   {
     "id": 3241,
@@ -507,7 +507,7 @@
     "jaJP": "Villager",
     "ptBR": "Villager",
     "ruRU": "Villager",
-    "zhCN": "村民"
+    "zhCN": "尸骸"
   },
   {
     "id": 3243,
@@ -524,7 +524,7 @@
     "jaJP": "Grave",
     "ptBR": "Grave",
     "ruRU": "Grave",
-    "zhCN": "坟墓"
+    "zhCN": "死去的流亡者"
   },
   {
     "id": 3275,
@@ -541,7 +541,7 @@
     "jaJP": "Grave",
     "ptBR": "Grave",
     "ruRU": "Grave",
-    "zhCN": "坟墓"
+    "zhCN": "守卫的尸体"
   },
   {
     "id": 3283,
@@ -558,7 +558,7 @@
     "jaJP": "Rogue",
     "ptBR": "Rogue",
     "ruRU": "Rogue",
-    "zhCN": "流亡者"
+    "zhCN": "骷髅"
   },
   {
     "id": 3284,
@@ -575,7 +575,7 @@
     "jaJP": "Stone Pile",
     "ptBR": "Stone Pile",
     "ruRU": "Stone Pile",
-    "zhCN": "石堆"
+    "zhCN": "头骨堆"
   },
   {
     "id": 3305,
@@ -592,7 +592,7 @@
     "jaJP": "Junk Pile",
     "ptBR": "Junk Pile",
     "ruRU": "Junk Pile",
-    "zhCN": "垃圾堆"
+    "zhCN": "死尸"
   },
   {
     "id": 3307,
@@ -609,7 +609,7 @@
     "jaJP": "Grave",
     "ptBR": "Grave",
     "ruRU": "Grave",
-    "zhCN": "坟墓"
+    "zhCN": "死去的守卫"
   },
   {
     "id": 3321,
@@ -626,7 +626,7 @@
     "jaJP": "Debris Pile",
     "ptBR": "Debris Pile",
     "ruRU": "Debris Pile",
-    "zhCN": "碎石堆"
+    "zhCN": "骨箱"
   },
   {
     "id": 3323,
@@ -643,7 +643,7 @@
     "jaJP": "Hidden Stash",
     "ptBR": "Hidden Stash",
     "ruRU": "Hidden Stash",
-    "zhCN": "隐蔽储物箱"
+    "zhCN": "被绞死的骷髅"
   },
   {
     "id": 4053,
@@ -660,7 +660,7 @@
     "jaJP": "Skeleton",
     "ptBR": "Skeleton",
     "ruRU": "Skeleton",
-    "zhCN": "亡灵"
+    "zhCN": "骷髅"
   },
   {
     "id": 4295,
@@ -677,7 +677,7 @@
     "jaJP": "Magi: Improved Missile Damage",
     "ptBR": "Magi: Improved Missile Damage",
     "ruRU": "Magi: Improved Missile Damage",
-    "zhCN": "亡灵法师: 提高远程伤害"
+    "zhCN": "骷髅法师: 提高远程伤害"
   },
   {
     "id": 4296,
@@ -694,7 +694,7 @@
     "jaJP": "%d skeletons total",
     "ptBR": "%d skeletons total",
     "ruRU": "%d skeletons total",
-    "zhCN": "总计%d个亡灵"
+    "zhCN": "总计%d个骷髅"
   },
   {
     "id": 4347,
@@ -711,7 +711,7 @@
     "jaJP": "%d skeleton total",
     "ptBR": "%d skeleton total",
     "ruRU": "%d skeleton total",
-    "zhCN": "总计%d个亡灵"
+    "zhCN": "总计%d个骷髅"
   },
   {
     "id": 4348,
@@ -728,7 +728,7 @@
     "jaJP": "Skeletons: Life: %+d",
     "ptBR": "Skeletons: Life: %+d",
     "ruRU": "Skeletons: Life: %+d",
-    "zhCN": "亡灵: 生命: %+d"
+    "zhCN": "骷髅: 生命: %+d"
   },
   {
     "id": 4349,
@@ -745,7 +745,7 @@
     "jaJP": "Magi: Life: %+d",
     "ptBR": "Magi: Life: %+d",
     "ruRU": "Magi: Life: %+d",
-    "zhCN": "亡灵法师: 生命: %+d"
+    "zhCN": "骷髅法师: 生命: %+d"
   },
   {
     "id": 4409,
@@ -762,7 +762,7 @@
     "jaJP": "Dangerous Strike",
     "ptBR": "Dangerous Strike",
     "ruRU": "Dangerous Strike",
-    "zhCN": "危险攻击"
+    "zhCN": "致命攻击"
   },
   {
     "id": 4412,
@@ -779,7 +779,7 @@
     "jaJP": "Dangerous Strike",
     "ptBR": "Dangerous Strike",
     "ruRU": "Dangerous Strike",
-    "zhCN": "危险攻击"
+    "zhCN": "致命攻击"
   },
   {
     "id": 4465,
@@ -796,7 +796,7 @@
     "jaJP": "Impale",
     "ptBR": "Impale",
     "ruRU": "Impale",
-    "zhCN": "穿透"
+    "zhCN": "刺穿"
   },
   {
     "id": 4468,
@@ -813,7 +813,7 @@
     "jaJP": "Impale",
     "ptBR": "Impale",
     "ruRU": "Impale",
-    "zhCN": "穿透"
+    "zhCN": "刺穿"
   },
   {
     "id": 4526,
@@ -830,7 +830,7 @@
     "jaJP": "creates multiple dangerous sparks",
     "ptBR": "creates multiple dangerous sparks",
     "ruRU": "creates multiple dangerous sparks",
-    "zhCN": "制造出多个危险的火花"
+    "zhCN": "制造出多个致命的火花"
   },
   {
     "id": 4542,
@@ -847,7 +847,7 @@
     "jaJP": "creates a field of dangerous sparks",
     "ptBR": "creates a field of dangerous sparks",
     "ruRU": "creates a field of dangerous sparks",
-    "zhCN": "制造一个危险的火花力场"
+    "zhCN": "制造一个致命的火花力场"
   },
   {
     "id": 4603,
@@ -864,7 +864,7 @@
     "jaJP": "summons a dangerous thunderstorm that strikes\nyour enemies with bolts of lightning",
     "ptBR": "summons a dangerous thunderstorm that strikes\nyour enemies with bolts of lightning",
     "ruRU": "summons a dangerous thunderstorm that strikes\nyour enemies with bolts of lightning",
-    "zhCN": "召唤出危险的雷云风暴\n用闪电攻击你的敌人"
+    "zhCN": "召唤出致命的雷云风暴\n用闪电攻击你的敌人"
   },
   {
     "id": 4645,
@@ -881,7 +881,7 @@
     "jaJP": "Spike Armor",
     "ptBR": "Spike Armor",
     "ruRU": "Spike Armor",
-    "zhCN": "尖刺护盾"
+    "zhCN": "骨甲"
   },
   {
     "id": 4647,
@@ -898,7 +898,7 @@
     "jaJP": "creates an orbiting shield of spikes\nthat absorbs melee damage",
     "ptBR": "creates an orbiting shield of spikes\nthat absorbs melee damage",
     "ruRU": "creates an orbiting shield of spikes\nthat absorbs melee damage",
-    "zhCN": "制造出盘旋的尖刺护盾\n吸收近战伤害"
+    "zhCN": "制造出盘旋的白骨盾牌\n吸收近战伤害"
   },
   {
     "id": 4648,
@@ -915,7 +915,7 @@
     "jaJP": "Spike Armor",
     "ptBR": "Spike Armor",
     "ruRU": "Spike Armor",
-    "zhCN": "尖刺护盾"
+    "zhCN": "骨甲"
   },
   {
     "id": 4649,
@@ -932,7 +932,7 @@
     "jaJP": "Undead Mastery",
     "ptBR": "Undead Mastery",
     "ruRU": "Undead Mastery",
-    "zhCN": "亡灵精通"
+    "zhCN": "骷髅精通"
   },
   {
     "id": 4650,
@@ -949,7 +949,7 @@
     "jaJP": "passive - better undead and revived creatures",
     "ptBR": "passive - better undead and revived creatures",
     "ruRU": "passive - better undead and revived creatures",
-    "zhCN": "被动 - 复活的亡灵和怪物更加强大"
+    "zhCN": "被动 - 骷髅和复活的生物变得更强"
   },
   {
     "id": 4651,
@@ -966,7 +966,7 @@
     "jaJP": "passive - increases life and damage\nof raised undead and revived creatures",
     "ptBR": "passive - increases life and damage\nof raised undead and revived creatures",
     "ruRU": "passive - increases life and damage\nof raised undead and revived creatures",
-    "zhCN": "被动 - 你复活的亡灵和怪物\n具有更高的生命和伤害"
+    "zhCN": "被动 - 你复活的骷髅和怪物\n具有更高的生命和伤害"
   },
   {
     "id": 4652,
@@ -983,7 +983,7 @@
     "jaJP": "Undead Mastery",
     "ptBR": "Undead Mastery",
     "ruRU": "Undead Mastery",
-    "zhCN": "亡灵精通"
+    "zhCN": "骷髅精通"
   },
   {
     "id": 4653,
@@ -1000,7 +1000,7 @@
     "jaJP": "Raise Undead",
     "ptBR": "Raise Undead",
     "ruRU": "Raise Undead",
-    "zhCN": "复生亡灵"
+    "zhCN": "复生骷髅"
   },
   {
     "id": 4655,
@@ -1017,7 +1017,7 @@
     "jaJP": "cast on the corpse of a slain monster,\nthis raises an undead warrior that\nfights for you",
     "ptBR": "cast on the corpse of a slain monster,\nthis raises an undead warrior that\nfights for you",
     "ruRU": "cast on the corpse of a slain monster,\nthis raises an undead warrior that\nfights for you",
-    "zhCN": "对死去怪物的残骸施放\n复活一个亡灵战士\n为你而战"
+    "zhCN": "对死去怪物的残骸施放\n复活一个骷髅战士\n为你而战"
   },
   {
     "id": 4656,
@@ -1034,7 +1034,7 @@
     "jaJP": "Raise Undead",
     "ptBR": "Raise Undead",
     "ruRU": "Raise Undead",
-    "zhCN": "复生亡灵"
+    "zhCN": "复生骷髅"
   },
   {
     "id": 4685,
@@ -1051,7 +1051,7 @@
     "jaJP": "Spike Wall",
     "ptBR": "Spike Wall",
     "ruRU": "Spike Wall",
-    "zhCN": "尖刺之墙"
+    "zhCN": "骨墙"
   },
   {
     "id": 4687,
@@ -1068,7 +1068,7 @@
     "jaJP": "creates an impassable barrier\nof spikes and debris",
     "ptBR": "creates an impassable barrier\nof spikes and debris",
     "ruRU": "creates an impassable barrier\nof spikes and debris",
-    "zhCN": "用尖刺和碎片制造\n一道无法越过的屏障"
+    "zhCN": "用白骨和碎片制造\n一道无法越过的屏障"
   },
   {
     "id": 4688,
@@ -1085,7 +1085,7 @@
     "jaJP": "Spike Wall",
     "ptBR": "Spike Wall",
     "ruRU": "Spike Wall",
-    "zhCN": "尖刺之墙"
+    "zhCN": "骨墙"
   },
   {
     "id": 4693,
@@ -1102,7 +1102,7 @@
     "jaJP": "Raise Undead Mage",
     "ptBR": "Raise Undead Mage",
     "ruRU": "Raise Undead Mage",
-    "zhCN": "复生亡灵法师"
+    "zhCN": "复生骷髅法师"
   },
   {
     "id": 4694,
@@ -1119,7 +1119,7 @@
     "jaJP": "reanimate undead mage from target corpse",
     "ptBR": "reanimate undead mage from target corpse",
     "ruRU": "reanimate undead mage from target corpse",
-    "zhCN": "从目标残骸中复活亡灵法师"
+    "zhCN": "从目标残骸中复活骷髅法师"
   },
   {
     "id": 4695,
@@ -1136,7 +1136,7 @@
     "jaJP": "cast on the corpse of a slain monster,\nthis raises an undead mage that\nfights for you",
     "ptBR": "cast on the corpse of a slain monster,\nthis raises an undead mage that\nfights for you",
     "ruRU": "cast on the corpse of a slain monster,\nthis raises an undead mage that\nfights for you",
-    "zhCN": "对死去怪物的残骸施放\n复活一个亡灵法师\n为你而战"
+    "zhCN": "对死去怪物的残骸施放\n复活一个骷髅法师\n为你而战"
   },
   {
     "id": 4696,
@@ -1153,7 +1153,7 @@
     "jaJP": "Undead Mage",
     "ptBR": "Undead Mage",
     "ruRU": "Undead Mage",
-    "zhCN": "亡灵法师"
+    "zhCN": "骷髅法师"
   },
   {
     "id": 4710,
@@ -1170,7 +1170,7 @@
     "jaJP": "summons a dangerous spike of bone",
     "ptBR": "summons a dangerous spike of bone",
     "ruRU": "summons a dangerous spike of bone",
-    "zhCN": "召唤一根危险的骨刺"
+    "zhCN": "召唤一根致命的骨刺"
   },
   {
     "id": 4711,
@@ -1187,7 +1187,7 @@
     "jaJP": "summons a dangerous spike of bone to penetrate your enemies",
     "ptBR": "summons a dangerous spike of bone to penetrate your enemies",
     "ruRU": "summons a dangerous spike of bone to penetrate your enemies",
-    "zhCN": "召唤危险的白骨尖刺, 穿透你的敌人"
+    "zhCN": "召唤致命的白骨尖刺, 刺穿你的敌人"
   },
   {
     "id": 4713,
@@ -1204,7 +1204,7 @@
     "jaJP": "Dark Golem",
     "ptBR": "Dark Golem",
     "ruRU": "Dark Golem",
-    "zhCN": "黑暗傀儡"
+    "zhCN": "鲜血傀儡"
   },
   {
     "id": 4716,
@@ -1221,7 +1221,7 @@
     "jaJP": "Dark Golem",
     "ptBR": "Dark Golem",
     "ruRU": "Dark Golem",
-    "zhCN": "黑暗傀儡"
+    "zhCN": "鲜血傀儡"
   },
   {
     "id": 4725,
@@ -1238,7 +1238,7 @@
     "jaJP": "Spike Prison",
     "ptBR": "Spike Prison",
     "ruRU": "Spike Prison",
-    "zhCN": "尖刺之牢"
+    "zhCN": "骨牢"
   },
   {
     "id": 4726,
@@ -1255,7 +1255,7 @@
     "jaJP": "creates a barrier of spikes around target",
     "ptBR": "creates a barrier of spikes around target",
     "ruRU": "creates a barrier of spikes around target",
-    "zhCN": "在目标周围制造出碎块屏障"
+    "zhCN": "在目标周围制造出白骨屏障"
   },
   {
     "id": 4727,
@@ -1272,7 +1272,7 @@
     "jaJP": "creates a barrier of fossilized spikes around your target",
     "ptBR": "creates a barrier of fossilized spikes around your target",
     "ruRU": "creates a barrier of fossilized spikes around your target",
-    "zhCN": "在目标周围制造出石化碎块屏障"
+    "zhCN": "在目标周围制造出石化白骨屏障"
   },
   {
     "id": 4728,
@@ -1289,7 +1289,7 @@
     "jaJP": "Spike Prison",
     "ptBR": "Spike Prison",
     "ruRU": "Spike Prison",
-    "zhCN": "尖刺之牢"
+    "zhCN": "骨牢"
   },
   {
     "id": 4757,
@@ -1306,7 +1306,7 @@
     "jaJP": "Life Contributor",
     "ptBR": "Life Contributor",
     "ruRU": "Life Contributor",
-    "zhCN": "献生"
+    "zhCN": "牺牲"
   },
   {
     "id": 4760,
@@ -1323,7 +1323,7 @@
     "jaJP": "Life Contributor",
     "ptBR": "Life Contributor",
     "ruRU": "Life Contributor",
-    "zhCN": "献生"
+    "zhCN": "牺牲"
   },
   {
     "id": 5054,
@@ -1340,7 +1340,7 @@
     "jaJP": "Scarlet Moor",
     "ptBR": "Scarlet Moor",
     "ruRU": "Scarlet Moor",
-    "zhCN": "鲜红荒地"
+    "zhCN": "鲜血荒地[01/36/67]"
   },
   {
     "id": 5092,
@@ -1357,7 +1357,7 @@
     "jaJP": "To The Scarlet Moor",
     "ptBR": "To The Scarlet Moor",
     "ruRU": "To The Scarlet Moor",
-    "zhCN": "前往鲜红荒地"
+    "zhCN": "前往鲜血荒地"
   },
   {
     "id": 11001,
@@ -1374,7 +1374,7 @@
     "jaJP": "%d undead mage",
     "ptBR": "%d undead mage",
     "ruRU": "%d undead mage",
-    "zhCN": "%d个亡灵法师"
+    "zhCN": "%d个骷髅法师"
   },
   {
     "id": 11002,
@@ -1391,7 +1391,7 @@
     "jaJP": "%d undead magi",
     "ptBR": "%d undead magi",
     "ruRU": "%d undead magi",
-    "zhCN": "%d个亡灵法师"
+    "zhCN": "%d个骷髅法师"
   },
   {
     "id": 20333,
@@ -1408,7 +1408,7 @@
     "jaJP": "Rotten One Head",
     "ptBR": "Rotten One Head",
     "ruRU": "Rotten One Head",
-    "zhCN": "腐朽者头骨"
+    "zhCN": "僵尸头骨|普轻"
   },
   {
     "id": 20384,
@@ -1425,7 +1425,7 @@
     "jaJP": "Spiked Visage",
     "ptBR": "Spiked Visage",
     "ruRU": "Spiked Visage",
-    "zhCN": "尖刺面甲"
+    "zhCN": "白骨面甲|精[底3孔:157/E235]"
   },
   {
     "id": 20396,
@@ -1442,7 +1442,7 @@
     "jaJP": "Violator Guard",
     "ptBR": "Violator Guard",
     "ruRU": "Violator Guard",
-    "zhCN": "侵害者头盔"
+    "zhCN": "杀戮者头盔|扩"
   },
   {
     "id": 20403,
@@ -1459,7 +1459,7 @@
     "jaJP": "Gremlin Trophy",
     "ptBR": "Gremlin Trophy",
     "ruRU": "Gremlin Trophy",
-    "zhCN": "小妖法器"
+    "zhCN": "鬼娃法器|扩轻"
   },
   {
     "id": 20421,
@@ -1476,7 +1476,7 @@
     "jaJP": "Minion Head",
     "ptBR": "Minion Head",
     "ruRU": "Minion Head",
-    "zhCN": "爪牙头骨"
+    "zhCN": "爪牙颅骨|精轻"
   },
   {
     "id": 20422,
@@ -1493,7 +1493,7 @@
     "jaJP": "Hellspawn Head",
     "ptBR": "Hellspawn Head",
     "ruRU": "Hellspawn Head",
-    "zhCN": "地狱魔头骨"
+    "zhCN": "地狱魔颅骨|精轻"
   },
   {
     "id": 20423,
@@ -1510,7 +1510,7 @@
     "jaJP": "Overseer Head",
     "ptBR": "Overseer Head",
     "ruRU": "Overseer Head",
-    "zhCN": "督军头骨"
+    "zhCN": "督军颅骨|精轻"
   },
   {
     "id": 20424,
@@ -1527,7 +1527,7 @@
     "jaJP": "Succubus Head",
     "ptBR": "Succubus Head",
     "ruRU": "Succubus Head",
-    "zhCN": "魅魔头骨"
+    "zhCN": "魅魔颅骨|精轻"
   },
   {
     "id": 20425,
@@ -1544,7 +1544,7 @@
     "jaJP": "Evil Lord Head",
     "ptBR": "Evil Lord Head",
     "ruRU": "Evil Lord Head",
-    "zhCN": "煞王头骨"
+    "zhCN": "血王颅骨|精轻"
   },
   {
     "id": 21137,
@@ -1561,7 +1561,7 @@
     "jaJP": "of Life Contributor",
     "ptBR": "of Life Contributor",
     "ruRU": "of Life Contributor",
-    "zhCN": "献生之"
+    "zhCN": "牺牲之"
   },
   {
     "id": 21345,
@@ -1578,7 +1578,7 @@
     "jaJP": "Soul Collector",
     "ptBR": "Soul Collector",
     "ruRU": "Soul Collector",
-    "zhCN": "灵魂收集者"
+    "zhCN": "骷髅收集者"
   },
   {
     "id": 21488,
@@ -1595,7 +1595,7 @@
     "jaJP": "Rabbit Violator",
     "ptBR": "Rabbit Violator",
     "ruRU": "Rabbit Violator",
-    "zhCN": "兔子侵害者"
+    "zhCN": "兔子杀戮者"
   },
   {
     "id": 21595,
@@ -1612,7 +1612,7 @@
     "jaJP": "Punisher's Hearty Cord",
     "ptBR": "Punisher's Hearty Cord",
     "ruRU": "Punisher's Hearty Cord",
-    "zhCN": "处罚者的粗绳"
+    "zhCN": "[MAX:140ED/40VIT/13REP/120STA/15DR]\n行刑者的绞首绳"
   },
   {
     "id": 21813,
@@ -1629,7 +1629,7 @@
     "jaJP": "of the Gargantuan",
     "ptBR": "of the Gargantuan",
     "ruRU": "of the Gargantuan",
-    "zhCN": "腐朽者巨兽之"
+    "zhCN": "僵尸巨兽之"
   },
   {
     "id": 22356,
@@ -1646,7 +1646,7 @@
     "jaJP": "Unholy Warrior",
     "ptBR": "Unholy Warrior",
     "ruRU": "Unholy Warrior",
-    "zhCN": "不洁武士"
+    "zhCN": "不洁尸骸"
   },
   {
     "id": 22371,
@@ -1663,7 +1663,7 @@
     "jaJP": "Offender",
     "ptBR": "Offender",
     "ruRU": "Offender",
-    "zhCN": "侵害者"
+    "zhCN": "屠杀者"
   },
   {
     "id": 22379,
@@ -1680,7 +1680,7 @@
     "jaJP": "Offender Slayer",
     "ptBR": "Offender Slayer",
     "ruRU": "Offender Slayer",
-    "zhCN": "狂暴侵害者"
+    "zhCN": "狂暴屠杀者"
   },
   {
     "id": 22422,
@@ -1697,7 +1697,7 @@
     "jaJP": "Evil Lord",
     "ptBR": "Evil Lord",
     "ruRU": "Evil Lord",
-    "zhCN": "煞王"
+    "zhCN": "血王"
   },
   {
     "id": 22493,
@@ -1714,7 +1714,7 @@
     "jaJP": "Sharptooth Violator",
     "ptBR": "Sharptooth Violator",
     "ruRU": "Sharptooth Violator",
-    "zhCN": "尖牙侵害者"
+    "zhCN": "尖牙杀戮者"
   },
   {
     "id": 22519,
@@ -1731,7 +1731,7 @@
     "jaJP": "Schooled in the Martial Arts, her mind and body are dangerous weapons.",
     "ptBR": "Schooled in the Martial Arts, her mind and body are dangerous weapons.",
     "ruRU": "Schooled in the Martial Arts, her mind and body are dangerous weapons.",
-    "zhCN": "受过武术训练的她，身心都是危险的武器。"
+    "zhCN": "受过武术训练的她，身心都是致命的武器。"
   },
   {
     "id": 22523,
@@ -1748,7 +1748,7 @@
     "jaJP": "Burial Box",
     "ptBR": "Burial Box",
     "ruRU": "Burial Box",
-    "zhCN": "埋物箱"
+    "zhCN": "埋尸箱"
   },
   {
     "id": 22524,
@@ -1765,7 +1765,7 @@
     "jaJP": "Burial Box",
     "ptBR": "Burial Box",
     "ruRU": "Burial Box",
-    "zhCN": "埋物箱"
+    "zhCN": "埋尸箱"
   },
   {
     "id": 22543,
@@ -1782,7 +1782,7 @@
     "jaJP": "Ruins",
     "ptBR": "Ruins",
     "ruRU": "Ruins",
-    "zhCN": "废墟"
+    "zhCN": "头骨与石块"
   },
   {
     "id": 22581,
@@ -1799,7 +1799,7 @@
     "jaJP": "Ruins",
     "ptBR": "Ruins",
     "ruRU": "Ruins",
-    "zhCN": "废墟"
+    "zhCN": "头骨与石块"
   },
   {
     "id": 22582,
@@ -1816,7 +1816,7 @@
     "jaJP": "Ruins",
     "ptBR": "Ruins",
     "ruRU": "Ruins",
-    "zhCN": "废墟"
+    "zhCN": "头骨与石块"
   },
   {
     "id": 22606,
@@ -1833,7 +1833,7 @@
     "jaJP": "Grave",
     "ptBR": "Grave",
     "ruRU": "Grave",
-    "zhCN": "坟墓"
+    "zhCN": "尸骸"
   },
   {
     "id": 22610,
@@ -1850,7 +1850,7 @@
     "jaJP": "Grave",
     "ptBR": "Grave",
     "ruRU": "Grave",
-    "zhCN": "坟墓"
+    "zhCN": "尸骸"
   },
   {
     "id": 22619,
@@ -1867,7 +1867,7 @@
     "jaJP": "Stop the Siege by killing Shenk the Overseer in the Fierce Battle Foothills.",
     "ptBR": "Stop the Siege by killing Shenk the Overseer in the Fierce Battle Foothills.",
     "ruRU": "Stop the Siege by killing Shenk the Overseer in the Fierce Battle Foothills.",
-    "zhCN": "消灭苦战丘陵的督军山克，解除围城。"
+    "zhCN": "消灭血腥丘陵的督军山克，解除围城。"
   },
   {
     "id": 22647,
@@ -1884,7 +1884,7 @@
     "jaJP": "Fierce Battle Foothills",
     "ptBR": "Fierce Battle Foothills",
     "ruRU": "Fierce Battle Foothills",
-    "zhCN": "苦战丘陵"
+    "zhCN": "血腥丘陵[24/58/80]"
   },
   {
     "id": 22669,
@@ -1901,7 +1901,7 @@
     "jaJP": "To The Fierce Battle Foothills",
     "ptBR": "To The Fierce Battle Foothills",
     "ruRU": "To The Fierce Battle Foothills",
-    "zhCN": "前往苦战丘陵"
+    "zhCN": "前往血腥丘陵"
   },
   {
     "id": 22766,
@@ -1918,7 +1918,7 @@
     "jaJP": "Entering The Scarlet Moor",
     "ptBR": "Entering The Scarlet Moor",
     "ruRU": "Entering The Scarlet Moor",
-    "zhCN": "进入鲜红荒地"
+    "zhCN": "进入鲜血荒地"
   },
   {
     "id": 22869,
@@ -1935,7 +1935,7 @@
     "jaJP": "Entering The Fierce Battle Foothills",
     "ptBR": "Entering The Fierce Battle Foothills",
     "ruRU": "Entering The Fierce Battle Foothills",
-    "zhCN": "进入苦战丘陵"
+    "zhCN": "进入血腥丘陵"
   },
   {
     "id": 23046,
@@ -1952,7 +1952,7 @@
     "jaJP": "Skeletons: Damage: %+d",
     "ptBR": "Skeletons: Damage: %+d",
     "ruRU": "Skeletons: Damage: %+d",
-    "zhCN": "亡灵: 伤害: %+d"
+    "zhCN": "骷髅: 伤害: %+d"
   },
   {
     "id": 23534,
@@ -1969,7 +1969,7 @@
     "jaJP": "Here for a bloodbath?",
     "ptBR": "Here for a bloodbath?",
     "ruRU": "Here for a bloodbath?",
-    "zhCN": "你是来找死的吗？"
+    "zhCN": "来洗鲜血浴吗？"
   },
   {
     "id": 23535,
@@ -1986,7 +1986,7 @@
     "jaJP": "Your blood will boil.",
     "ptBR": "Your blood will boil.",
     "ruRU": "Your blood will boil.",
-    "zhCN": "你会后悔踏入此地。"
+    "zhCN": "你的血会沸腾。"
   },
   {
     "id": 26670,
@@ -2003,7 +2003,7 @@
     "jaJP": "Madawc’s double throw can stun you long enough for the others to land dangerous blows. Try targeting him first.",
     "ptBR": "Madawc’s double throw can stun you long enough for the others to land dangerous blows. Try targeting him first.",
     "ruRU": "Madawc’s double throw can stun you long enough for the others to land dangerous blows. Try targeting him first.",
-    "zhCN": "马道克的双手投掷会击晕你，让你无法躲避其他先祖的危险打击。最好先解决他。"
+    "zhCN": "马道克的双手投掷会击晕你，让你无法躲避其他先祖的致命打击。最好先解决他。"
   },
   {
     "id": 26699,
@@ -2020,6 +2020,6 @@
     "jaJP": "Belongings",
     "ptBR": "Belongings",
     "ruRU": "Belongings",
-    "zhCN": "遗物"
+    "zhCN": "尸骸"
   }
 ]

@@ -3215,18 +3215,18 @@
   {
     "id": 27213,
     "Key": "oldStash",
-    "enUS": "Past",
-    "zhTW": "上一個",
-    "deDE": "Zurück",
-    "esES": "Anterior",
-    "frFR": "Préc.",
-    "itIT": "Prec",
-    "koKR": "이전",
-    "plPL": "Poprzedni",
-    "esMX": "Anterior",
-    "jaJP": "前",
-    "ptBR": "Anterior",
-    "ruRU": "Прошлый",
-    "zhCN": "上一个"
+    "enUS": "Remove Only",
+    "zhTW": "僅限取出",
+    "deDE": "Remove Only",
+    "esES": "Remove Only",
+    "frFR": "Remove Only",
+    "itIT": "Remove Only",
+    "koKR": "Remove Only",
+    "plPL": "Remove Only",
+    "esMX": "Remove Only",
+    "jaJP": "Remove Only",
+    "ptBR": "Remove Only",
+    "ruRU": "Remove Only",
+    "zhCN": "仅限取出"
   }
 ]
