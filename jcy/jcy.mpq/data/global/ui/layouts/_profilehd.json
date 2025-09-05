@@ -828,11 +828,7 @@
     },
     "SettingsSliderValueFields": {
         "rect": "$OptionsSliderValueRect",
-        "style": {
-            "alignment": {
-                "h": "right"
-            }
-        }
+        "style": "$StyleSettingsNumericSlider"
     },
     "SettingsSliderTooltipRect": {
         "x": -75,
@@ -1230,5 +1226,14 @@
         "y": 80
     },
     "JoinGamePlayerEntryHeight": 100,
-    "JoinGamePlayerNameHeight": 60
+    "JoinGamePlayerNameHeight": 60,
+    "StyleSettingsNumericSlider": {
+        "fontFace": "Exocet",
+        "pointSize": "$MediumFontSize",
+        "fontColor": "$FontColorWhite",
+        "alignment": {
+            "h": "right",
+            "v": "center"
+        }
+    }
 }
