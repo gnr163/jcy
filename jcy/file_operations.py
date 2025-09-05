@@ -401,7 +401,18 @@ class FileOperations:
             r"data/hd/items/weapon/sword/act5hire1_bastard_sword.json",
             r"data/hd/items/weapon/sword/act5hire1_long_sword.json",
         )
-
+        return self.common_rename(_files, isEnabled)
+    
+    def toggle_weapon_swap(self, isEnabled: bool):
+        """正副手防呆提示"""
+        _files = (
+            r"data/global/ui/layouts/hudwarningsfake.json",
+            r"data/global/ui/layouts/hudwarningsfakehd.json",
+            r"data/global/ui/layouts/hudwarningshd.json",
+            r"data/global/ui/layouts/ui_new_weaponswaphd.json",
+            r"data/hd/global/ui/panel/Inventory/weapon_swap.lowend.sprite",
+            r"data/hd/global/ui/panel/Inventory/weapon_swap.sprite",
+        )
         return self.common_rename(_files, isEnabled)
 
     def toggle_low_quality(self, isEnabled: bool):
