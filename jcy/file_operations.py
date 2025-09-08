@@ -2569,6 +2569,37 @@ class FileOperations:
                     print(e)
         return (count, total)
     
+    def select_hudpanel_size(self, radio: str):
+        """HUD面板尺寸"""
+        params = {
+            "default": { "x": -1454, "y": -412, "width": 2952, "height": 764 },
+            "1": { "x": -1236, "y": -350, "width": 2952, "height": 764, "scale": 0.85 },
+            "2": { "x": -1090, "y": -310, "width": 2952, "height": 764, "scale": 0.75 },
+            "3": { "x": -945.1, "y": -267.8, "width": 2952, "height": 764, "scale": 0.65 },
+        }
+        _files = [
+            r"data/global/ui/layouts/hudpanelhd.json",
+        ]
+        count = 0
+        total = len(_files)
+
+        # 1.load
+        hud_panel_data = None
+        hud_panel_path = os.path.join(MOD_PATH, _files[0])
+        with open(hud_panel_path, 'r', encoding='utf-8') as f:
+            hud_panel_data = json.load(f)
+
+        # 2.modify
+        hud_panel_data["fields"]["rect"] = params.get(radio, params.get("default"))
+                    
+        # 3.write
+        with open(hud_panel_path, 'w', encoding='utf-8') as f:
+            json.dump(hud_panel_data, f, ensure_ascii=False, indent=4)
+        
+        count += 1
+        return (count, total)
+
+
     def sync_app_data(self):
         """
         APP_VERSION -> npcs.json.50001

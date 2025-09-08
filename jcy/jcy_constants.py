@@ -21,10 +21,10 @@ LANG = ZHCN
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.1.7"
+APP_VERSION = "v1.1.8"
 
 # 发布日期
-APP_DATE = "20250905"
+APP_DATE = "20250912"
 
 # 控制器全称
 APP_FULL_NAME = f"{APP_NAME}_{APP_VERSION}"

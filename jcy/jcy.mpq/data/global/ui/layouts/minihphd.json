@@ -16,20 +16,6 @@
     },
     "children": [
         {
-            "type": "ButtonWidget",
-            "name": "MinihpClose",
-            "fields": {
-                "rect": {
-                    "x": 34
-                },
-                "filename": "PANEL/hud_102/minihp_off",
-                "onClickMessage": "PanelManager:ClosePanel:minihp",
-                "tooltipString": "@JcyDisableMiniBar",
-                "sound": "cursor_close_window_hd",
-                "acceptsEscKeyEverywhere": false
-            }
-        },
-        {
             "type": "ImageWidget",
             "name": "ManaBarBG",
             "fields": {

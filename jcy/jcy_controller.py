@@ -242,6 +242,8 @@ class FeatureController:
             "205": self.file_operations.select_enemy_arrow_skin,
             # 符文皮肤
             "206": self.file_operations.select_rune_skin,
+            # HUD面板尺寸
+            "207": self.file_operations.select_hudpanel_size,
 
 
             #角色特效

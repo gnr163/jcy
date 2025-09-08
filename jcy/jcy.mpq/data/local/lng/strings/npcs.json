@@ -2,8 +2,8 @@
   {
     "id": 50001,
     "Key": "JcyModVersion",
-    "enUS": "v1.1.7",
-    "zhTW": "v1.1.7",
+    "enUS": "v1.1.8",
+    "zhTW": "v1.1.8",
     "deDE": "",
     "esES": "",
     "frFR": "",
@@ -14,13 +14,13 @@
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": "v1.1.7"
+    "zhCN": "v1.1.8"
   },
   {
     "id": 50002,
     "Key": "JcyModDate",
-    "enUS": "20250905",
-    "zhTW": "20250905",
+    "enUS": "20250912",
+    "zhTW": "20250912",
     "deDE": "",
     "esES": "",
     "frFR": "",
@@ -31,7 +31,7 @@
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": "20250905"
+    "zhCN": "20250912"
   },
   {
     "id": 50003,
@@ -52,9 +52,9 @@
   },
   {
     "id": 50004,
-    "Key": "JcyEnableMiniBar",
-    "enUS": "Enable MiniHP bar",
-    "zhTW": "開啓迷你血條",
+    "Key": "JcyToggleMiniBar",
+    "enUS": "Toggle MiniHP bar",
+    "zhTW": "開關迷你血條",
     "deDE": "",
     "esES": "",
     "frFR": "",
@@ -65,23 +65,6 @@
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": "开启迷你血条"
-  },
-  {
-    "id": 50005,
-    "Key": "JcyDisableMiniBar",
-    "enUS": "Disable MiniHP bar",
-    "zhTW": "關閉迷你血條",
-    "deDE": "",
-    "esES": "",
-    "frFR": "",
-    "itIT": "",
-    "koKR": "",
-    "plPL": "",
-    "esMX": "",
-    "jaJP": "",
-    "ptBR": "",
-    "ruRU": "",
-    "zhCN": "关闭迷你血条"
-  },
+    "zhCN": "开关迷你血条"
+  }
 ]
