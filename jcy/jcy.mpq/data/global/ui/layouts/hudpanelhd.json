@@ -2,7 +2,7 @@
     "type": "HUDPanelHD",
     "name": "HUDPanel",
     "fields": {
-        "priority": 100,
+        "priority": -9,
         "anchor": {
             "x": 0.5,
             "y": 1
@@ -53,28 +53,6 @@
             },
             "children": [
                 {
-                    "type": "TextBoxWidget",
-                    "name": "ValueDisplay",
-                    "fields": {
-                        "anchor": {
-                            "x": 0.5
-                        },
-                        "rect": {
-                            "y": -30
-                        },
-                        "fontType": "16pt",
-                        "style": {
-                            "pointSize": "$XMediumLargeFontSize",
-                            "alignment": {
-                                "v": "bottom",
-                                "h": "center"
-                            },
-                            "spacing": "$MinimumSpacing",
-                            "dropShadow": "$DefaultDropShadow"
-                        }
-                    }
-                },
-                {
                     "type": "AnimatedImageWidget",
                     "name": "BallImage",
                     "fields": {
@@ -115,6 +93,29 @@
                     }
                 },
                 {
+                    "type": "TextBoxWidget",
+                    "name": "ValueDisplay",
+                    "fields": {
+                        "anchor": {
+                            "x": 0.5
+                        },
+                        "rect": {
+                            "x": 5,
+                            "y": -50
+                        },
+                        "fontType": "16pt",
+                        "style": {
+                            "pointSize": "$XMediumLargeFontSize",
+                            "alignment": {
+                                "v": "bottom",
+                                "h": "center"
+                            },
+                            "spacing": "$MinimumSpacing",
+                            "dropShadow": "$DefaultDropShadow"
+                        }
+                    }
+                },
+                {
                     "type": "ClickCatcherWidget",
                     "name": "donttouch",
                     "fields": {
@@ -144,27 +145,6 @@
                 "potionPreviewTransparency": 0.5
             },
             "children": [
-                {
-                    "type": "TextBoxWidget",
-                    "name": "ValueDisplay",
-                    "fields": {
-                        "anchor": {
-                            "x": 0.5
-                        },
-                        "rect": {
-                            "y": -30
-                        },
-                        "style": {
-                            "pointSize": "$XMediumLargeFontSize",
-                            "alignment": {
-                                "v": "bottom",
-                                "h": "center"
-                            },
-                            "spacing": "$MinimumSpacing",
-                            "dropShadow": "$DefaultDropShadow"
-                        }
-                    }
-                },
                 {
                     "type": "AnimatedImageWidget",
                     "name": "BallImage",
@@ -227,6 +207,28 @@
                     }
                 },
                 {
+                    "type": "TextBoxWidget",
+                    "name": "ValueDisplay",
+                    "fields": {
+                        "anchor": {
+                            "x": 0.5
+                        },
+                        "rect": {
+                            "x": 5,
+                            "y": -50
+                        },
+                        "style": {
+                            "pointSize": "$XMediumLargeFontSize",
+                            "alignment": {
+                                "v": "bottom",
+                                "h": "center"
+                            },
+                            "spacing": "$MinimumSpacing",
+                            "dropShadow": "$DefaultDropShadow"
+                        }
+                    }
+                },
+                {
                     "type": "ClickCatcherWidget",
                     "name": "donttouch",
                     "fields": {
@@ -258,9 +260,7 @@
                     "name": "HotkeyText",
                     "fields": {
                         "rect": "$SkillHotkeyTextRect",
-                        "style": "$SkillHotkeyTextStyle",
-                        "useAltStyleIfDoesntFit": true,
-                        "altStyle": "$SkillHotkeyTextAltStyle"
+                        "style": "$SkillHotkeyTextStyle"
                     }
                 },
                 {
@@ -310,7 +310,7 @@
                         "blendMode": "black",
                         "fps": 14,
                         "loop": false,
-                        "hideOnComplete": true,
+                        "hideOnComplete": false,
                         "playing": false
                     }
                 },
@@ -326,7 +326,7 @@
                         "blendMode": "black",
                         "fps": 14,
                         "loop": false,
-                        "hideOnComplete": true,
+                        "hideOnComplete": false,
                         "playing": false
                     }
                 }
@@ -450,6 +450,22 @@
                     }
                 },
                 {
+                    "type": "MiniMenuButtonWidget",
+                    "name": "MiniMenuPauseMenu",
+                    "fields": {
+                        "menu": "pauseMenu",
+                        "filename": "PANEL/HUD_02/PauseMenu",
+                        "hoveredFrame": 2,
+                        "tooltipOffset": {
+                            "y": -30
+                        },
+                        "rect": {
+                            "x": 422,
+                            "y": -6
+                        }
+                    }
+                },
+                {
                     "type": "ButtonWidget",
                     "name": "exitandsetting",
                     "fields": {
@@ -528,9 +544,7 @@
                     "name": "HotkeyText",
                     "fields": {
                         "rect": "$SkillHotkeyTextRect",
-                        "style": "$SkillHotkeyTextStyle",
-                        "useAltStyleIfDoesntFit": true,
-                        "altStyle": "$SkillHotkeyTextAltStyle"
+                        "style": "$SkillHotkeyTextStyle"
                     }
                 },
                 {
@@ -560,9 +574,7 @@
                     "name": "HotkeyText",
                     "fields": {
                         "rect": "$SkillHotkeyTextRect",
-                        "style": "$SkillHotkeyTextStyle",
-                        "useAltStyleIfDoesntFit": true,
-                        "altStyle": "$SkillHotkeyTextAltStyle"
+                        "style": "$SkillHotkeyTextStyle"
                     }
                 },
                 {
@@ -574,6 +586,20 @@
                     }
                 }
             ]
+        },
+        {
+            "type": "ButtonWidget",
+            "name": "MinihpOpen",
+            "fields": {
+                "rect": {
+                    "x": 34
+                },
+                "filename": "PANEL/HUD_102/minihp_on",
+                "onClickMessage": "PanelManager:OpenPanel:minihp",
+                "tooltipString": "@JcyEnableMiniBar",
+                "sound": "select",
+                "acceptsEscKeyEverywhere": false
+            }
         },
         {
             "type": "ImageWidget",
