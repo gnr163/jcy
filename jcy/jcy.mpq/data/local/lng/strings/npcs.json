@@ -71,7 +71,7 @@
     "id": 51000,
     "Key": "dictCraftHitPowerCommon",
     "enUS": "ÿc35% Chance to cast level 4 Frost Nova when struck\nAttacker Takes Damage of 3-7 ÿcT(Varies)",
-    "zhTW": "ÿc35% Chance to cast level 4 Frost Nova when struck\nAttacker Takes Damage of 3-7 ÿcT(Varies)",
+    "zhTW": "ÿc3被擊中時有5%幾率施展等級4冰凍新星\n攻擊者收到傷害(ATD)3-7",
     "deDE": "ÿc35% Chance to cast level 4 Frost Nova when struck\nAttacker Takes Damage of 3-7 ÿcT(Varies)",
     "esES": "ÿc35% Chance to cast level 4 Frost Nova when struck\nAttacker Takes Damage of 3-7 ÿcT(Varies)",
     "frFR": "ÿc35% Chance to cast level 4 Frost Nova when struck\nAttacker Takes Damage of 3-7 ÿcT(Varies)",
@@ -82,7 +82,7 @@
     "jaJP": "ÿc35% Chance to cast level 4 Frost Nova when struck\nAttacker Takes Damage of 3-7 ÿcT(Varies)",
     "ptBR": "ÿc35% Chance to cast level 4 Frost Nova when struck\nAttacker Takes Damage of 3-7 ÿcT(Varies)",
     "ruRU": "ÿc35% Chance to cast level 4 Frost Nova when struck\nAttacker Takes Damage of 3-7 ÿcT(Varies)",
-    "zhCN": "ÿc35% Chance to cast level 4 Frost Nova when struck\nAttacker Takes Damage of 3-7 ÿcT(Varies)"
+    "zhCN": "ÿc3被击中时有5%几率施展等级4冰冻新星\n攻击者收到伤害(ATD)3-7"
   },
   {
     "id": 51001,
@@ -99,7 +99,7 @@
     "jaJP": "ÿc31-3% Life stolen per hit ÿcT(Varies)\nÿc3+10-20 to Life ÿcT(Varies)",
     "ptBR": "ÿc31-3% Life stolen per hit ÿcT(Varies)\nÿc3+10-20 to Life ÿcT(Varies)",
     "ruRU": "ÿc31-3% Life stolen per hit ÿcT(Varies)\nÿc3+10-20 to Life ÿcT(Varies)",
-    "zhCN": "ÿc31-3% Life stolen per hit ÿcT(Varies)\nÿc3+10-20 to Life ÿcT(Varies)"
+    "zhCN": "ÿc31-3%击中偷取生命(LL)\nÿc3+10-20生命(Life)"
   },
   {
     "id": 51002,
@@ -116,7 +116,7 @@
     "jaJP": "ÿc3Regenerate Mana 4-10% ÿcT(Varies)\nÿc3+10-20 to Mana ÿcT(Varies)",
     "ptBR": "ÿc3Regenerate Mana 4-10% ÿcT(Varies)\nÿc3+10-20 to Mana ÿcT(Varies)",
     "ruRU": "ÿc3Regenerate Mana 4-10% ÿcT(Varies)\nÿc3+10-20 to Mana ÿcT(Varies)",
-    "zhCN": "ÿc3Regenerate Mana 4-10% ÿcT(Varies)\nÿc3+10-20 to Mana ÿcT(Varies)"
+    "zhCN": "ÿc3法力重生(Reg Mana)4-10%\nÿc3+10-20法力(Mana)"
   },
   {
     "id": 51003,
@@ -133,7 +133,7 @@
     "jaJP": "ÿc3Magic Damage Reduced By 1-2 ÿcT(Varies)\nÿc3Damage Reduced By 1-4 ÿcT(Varies)",
     "ptBR": "ÿc3Magic Damage Reduced By 1-2 ÿcT(Varies)\nÿc3Damage Reduced By 1-4 ÿcT(Varies)",
     "ruRU": "ÿc3Magic Damage Reduced By 1-2 ÿcT(Varies)\nÿc3Damage Reduced By 1-4 ÿcT(Varies)",
-    "zhCN": "ÿc3Magic Damage Reduced By 1-2 ÿcT(Varies)\nÿc3Damage Reduced By 1-4 ÿcT(Varies)"
+    "zhCN": "ÿc3法术伤害减少(MDR)1-2\nÿc3伤害减少(DR)1-4"
   },
   {
     "id": 51004,
@@ -150,7 +150,7 @@
     "jaJP": "ÿc4+2-198 to Maximum Cold Damage (Based on Character Level)\n+5 to Strength (2 Items)\n+50 to Life (3 Items)\nCannot Be Frozen",
     "ptBR": "ÿc4+2-198 to Maximum Cold Damage (Based on Character Level)\n+5 to Strength (2 Items)\n+50 to Life (3 Items)\nCannot Be Frozen",
     "ruRU": "ÿc4+2-198 to Maximum Cold Damage (Based on Character Level)\n+5 to Strength (2 Items)\n+50 to Life (3 Items)\nCannot Be Frozen",
-    "zhCN": "ÿc4+2-198 to Maximum Cold Damage (Based on Character Level)\n+5 to Strength (2 Items)\n+50 to Life (3 Items)\nCannot Be Frozen"
+    "zhCN": "ÿc4+2最大冰冷伤害(Max CD)/等级\n+5力量(Str)(2套装物品)\n+50生命(Life)(3套装物品)\n无法冰冻"
   },
   {
     "id": 51005,
@@ -167,7 +167,7 @@
     "jaJP": "ÿc3+50% Enhanced Damage\n20% Bonus to Attack Rating\nÿc2Adds 20-30 cold damage (3 Items)\n+8-792 to Attack Rating (Based on Character Level) (2 Items)",
     "ptBR": "ÿc3+50% Enhanced Damage\n20% Bonus to Attack Rating\nÿc2Adds 20-30 cold damage (3 Items)\n+8-792 to Attack Rating (Based on Character Level) (2 Items)",
     "ruRU": "ÿc3+50% Enhanced Damage\n20% Bonus to Attack Rating\nÿc2Adds 20-30 cold damage (3 Items)\n+8-792 to Attack Rating (Based on Character Level) (2 Items)",
-    "zhCN": "ÿc3+50% Enhanced Damage\n20% Bonus to Attack Rating\nÿc2Adds 20-30 cold damage (3 Items)\n+8-792 to Attack Rating (Based on Character Level) (2 Items)"
+    "zhCN": "ÿc3+50%增强伤害(ED)\n20%额外的攻击准确率加成(AR)\nÿc2增加20-30冰寒伤害(CD)(3套装物品)\n+8攻击准确率(AR)/等级(2套装物品)"
   },
   {
     "id": 51006,
@@ -184,7 +184,7 @@
     "jaJP": "ÿc3+275-325% Enhanced Defense ÿcT(Varies)\nÿc3All Resistances +10\nÿc2Cold Resist +15% (3 Items)\n+3-297 Defense (Based on Character Level) (2 Items)",
     "ptBR": "ÿc3+275-325% Enhanced Defense ÿcT(Varies)\nÿc3All Resistances +10\nÿc2Cold Resist +15% (3 Items)\n+3-297 Defense (Based on Character Level) (2 Items)",
     "ruRU": "ÿc3+275-325% Enhanced Defense ÿcT(Varies)\nÿc3All Resistances +10\nÿc2Cold Resist +15% (3 Items)\n+3-297 Defense (Based on Character Level) (2 Items)",
-    "zhCN": "ÿc3+275-325% Enhanced Defense ÿcT(Varies)\nÿc3All Resistances +10\nÿc2Cold Resist +15% (3 Items)\n+3-297 Defense (Based on Character Level) (2 Items)"
+    "zhCN": "ÿc3+275-325% 防御强化(EDef)\nÿc3所有抗性(Res)+10\nÿc冰寒抗性(CR)+15%(3套装物品)\n+3防御/等级(2套装物品)"
   },
   {
     "id": 51007,
@@ -201,7 +201,7 @@
     "jaJP": "ÿc3+10% Increased Attack Speed\n+20 to Life\nÿc2+10 to Dexterity (3 Items)\n+50 to Attack Rating (2 Items)",
     "ptBR": "ÿc3+10% Increased Attack Speed\n+20 to Life\nÿc2+10 to Dexterity (3 Items)\n+50 to Attack Rating (2 Items)",
     "ruRU": "ÿc3+10% Increased Attack Speed\n+20 to Life\nÿc2+10 to Dexterity (3 Items)\n+50 to Attack Rating (2 Items)",
-    "zhCN": "ÿc3+10% Increased Attack Speed\n+20 to Life\nÿc2+10 to Dexterity (3 Items)\n+50 to Attack Rating (2 Items)"
+    "zhCN": "ÿc3+10% 增加攻击速度(IAS)\n+20生命(Life)\nÿc2+10敏捷(Dex)(3套装物品)\n+50攻击准确率(AR)(2套装物品)"
   },
   {
     "id": 51008,
@@ -218,7 +218,7 @@
     "jaJP": "ÿc3+30 Defense\nCold Resist +40%\nÿc2Cold Resist +10% (3 Items)\n40% Better Chance of Getting Magic Items (2 Items)",
     "ptBR": "ÿc3+30 Defense\nCold Resist +40%\nÿc2Cold Resist +10% (3 Items)\n40% Better Chance of Getting Magic Items (2 Items)",
     "ruRU": "ÿc3+30 Defense\nCold Resist +40%\nÿc2Cold Resist +10% (3 Items)\n40% Better Chance of Getting Magic Items (2 Items)",
-    "zhCN": "ÿc3+30 Defense\nCold Resist +40%\nÿc2Cold Resist +10% (3 Items)\n40% Better Chance of Getting Magic Items (2 Items)"
+    "zhCN": "ÿc3+30防御\n冰寒抗性(CR)+40%\nÿc2冰寒抗性(CR)+10%(3套装物品)\n40%额外几率获得魔法物品(MF)(2套装物品)"
   },
   {
     "id": 51009,
@@ -235,7 +235,7 @@
     "jaJP": "ÿc4+5 to Maximum Damage\nLightning Resist +25%\nCannot Be Frozen\nAttacker Takes Damage of 5 (2 Items)",
     "ptBR": "ÿc4+5 to Maximum Damage\nLightning Resist +25%\nCannot Be Frozen\nAttacker Takes Damage of 5 (2 Items)",
     "ruRU": "ÿc4+5 to Maximum Damage\nLightning Resist +25%\nCannot Be Frozen\nAttacker Takes Damage of 5 (2 Items)",
-    "zhCN": "ÿc4+5 to Maximum Damage\nLightning Resist +25%\nCannot Be Frozen\nAttacker Takes Damage of 5 (2 Items)"
+    "zhCN": "ÿc4+5最大伤害(Max)\n闪电抗性(LR)+25%\n无法冰冻\n攻击者收到伤害(ATD)5(2套装物品)"
   },
   {
     "id": 51010,
@@ -252,7 +252,7 @@
     "jaJP": "ÿc3+10 to Strength\nDamage Reduced by 2\nÿc2+2-247 Defense (Based on Character Level) (2 Items)",
     "ptBR": "ÿc3+10 to Strength\nDamage Reduced by 2\nÿc2+2-247 Defense (Based on Character Level) (2 Items)",
     "ruRU": "ÿc3+10 to Strength\nDamage Reduced by 2\nÿc2+2-247 Defense (Based on Character Level) (2 Items)",
-    "zhCN": "ÿc3+10 to Strength\nDamage Reduced by 2\nÿc2+2-247 Defense (Based on Character Level) (2 Items)"
+    "zhCN": "ÿc3+10力量(Str)\n伤害降低(DR)2\nÿc+2.5防御/等级(2套装物品)"
   },
   {
     "id": 51011,
@@ -269,7 +269,7 @@
     "jaJP": "ÿc3+20 to Life\nCold Resist +20%\nÿc2+2-247 Defense (Based on Character Level) (2 Items)",
     "ptBR": "ÿc3+20 to Life\nCold Resist +20%\nÿc2+2-247 Defense (Based on Character Level) (2 Items)",
     "ruRU": "ÿc3+20 to Life\nCold Resist +20%\nÿc2+2-247 Defense (Based on Character Level) (2 Items)",
-    "zhCN": "ÿc3+20 to Life\nCold Resist +20%\nÿc2+2-247 Defense (Based on Character Level) (2 Items)"
+    "zhCN": "ÿc3+20生命(Life)\n冰寒抗性(CR)+20%\nÿc2.5防御/等级(2套装物品)"
   },
   {
     "id": 51012,
@@ -286,7 +286,7 @@
     "jaJP": "ÿc3+20% Faster Run/Walk\nFire Resist +25%\nÿc2+10-990 to Attack Rating (Based on Character Level) (2 Items)",
     "ptBR": "ÿc3+20% Faster Run/Walk\nFire Resist +25%\nÿc2+10-990 to Attack Rating (Based on Character Level) (2 Items)",
     "ruRU": "ÿc3+20% Faster Run/Walk\nFire Resist +25%\nÿc2+10-990 to Attack Rating (Based on Character Level) (2 Items)",
-    "zhCN": "ÿc3+20% Faster Run/Walk\nFire Resist +25%\nÿc2+10-990 to Attack Rating (Based on Character Level) (2 Items)"
+    "zhCN": "ÿc3+20%快速的跑步/行走速度(FRW)\n火焰抗性(FR)+25%\nÿc2+10攻击准确率(AR)/等级(2套装物品)"
   },
   {
     "id": 51013,
@@ -303,7 +303,7 @@
     "jaJP": "ÿc4Adds 5-9 poison damage over 3 seconds\n+75 Defense\n+50 to Life (2 Items)\nPoison Length Reduced by 75%",
     "ptBR": "ÿc4Adds 5-9 poison damage over 3 seconds\n+75 Defense\n+50 to Life (2 Items)\nPoison Length Reduced by 75%",
     "ruRU": "ÿc4Adds 5-9 poison damage over 3 seconds\n+75 Defense\n+50 to Life (2 Items)\nPoison Length Reduced by 75%",
-    "zhCN": "ÿc4Adds 5-9 poison damage over 3 seconds\n+75 Defense\n+50 to Life (2 Items)\nPoison Length Reduced by 75%"
+    "zhCN": "ÿc43秒内增加5-9毒素伤害(PD)\n+75 Defense\n+50生命(Life)(2套装物品)\n毒素持续时间减少75%"
   },
   {
     "id": 51014,
@@ -3216,7 +3216,7 @@
     "id": 51185,
     "Key": "dictTextNormalWeapons",
     "enUS": "Normal Weapons",
-    "zhTW": "Normal Weapons",
+    "zhTW": "普通武器",
     "deDE": "Normal Weapons",
     "esES": "Normal Weapons",
     "frFR": "Normal Weapons",
@@ -3227,13 +3227,13 @@
     "jaJP": "Normal Weapons",
     "ptBR": "Normal Weapons",
     "ruRU": "Normal Weapons",
-    "zhCN": "Normal Weapons"
+    "zhCN": "普通武器"
   },
   {
     "id": 51186,
     "Key": "dictTextNormalArmors",
     "enUS": "Normal Armors",
-    "zhTW": "Normal Armors",
+    "zhTW": "普通盔甲",
     "deDE": "Normal Armors",
     "esES": "Normal Armors",
     "frFR": "Normal Armors",
@@ -3244,13 +3244,13 @@
     "jaJP": "Normal Armors",
     "ptBR": "Normal Armors",
     "ruRU": "Normal Armors",
-    "zhCN": "Normal Armors"
+    "zhCN": "普通盔甲"
   },
   {
     "id": 51187,
     "Key": "dictTextUniqueWeapons",
     "enUS": "Unique Weapons",
-    "zhTW": "Unique Weapons",
+    "zhTW": "暗金武器",
     "deDE": "Unique Weapons",
     "esES": "Unique Weapons",
     "frFR": "Unique Weapons",
@@ -3261,13 +3261,13 @@
     "jaJP": "Unique Weapons",
     "ptBR": "Unique Weapons",
     "ruRU": "Unique Weapons",
-    "zhCN": "Unique Weapons"
+    "zhCN": "暗金武器"
   },
   {
     "id": 51188,
     "Key": "dictTextUniqueArmors",
     "enUS": "Unique Armors/Other",
-    "zhTW": "Unique Armors/Other",
+    "zhTW": "暗金盔甲/其他",
     "deDE": "Unique Armors/Other",
     "esES": "Unique Armors/Other",
     "frFR": "Unique Armors/Other",
@@ -3278,13 +3278,13 @@
     "jaJP": "Unique Armors/Other",
     "ptBR": "Unique Armors/Other",
     "ruRU": "Unique Armors/Other",
-    "zhCN": "Unique Armors/Other"
+    "zhCN": "暗金盔甲/其他"
   },
   {
     "id": 51189,
     "Key": "dictTextRunewords",
     "enUS": "Runewords",
-    "zhTW": "Runewords",
+    "zhTW": "符文之語",
     "deDE": "Runewords",
     "esES": "Runewords",
     "frFR": "Runewords",
@@ -3295,13 +3295,13 @@
     "jaJP": "Runewords",
     "ptBR": "Runewords",
     "ruRU": "Runewords",
-    "zhCN": "Runewords"
+    "zhCN": "符文之语"
   },
   {
     "id": 51190,
     "Key": "dictTextSetItems",
     "enUS": "Set Items",
-    "zhTW": "Set Items",
+    "zhTW": "套裝物品",
     "deDE": "Set Items",
     "esES": "Set Items",
     "frFR": "Set Items",
@@ -3312,13 +3312,13 @@
     "jaJP": "Set Items",
     "ptBR": "Set Items",
     "ruRU": "Set Items",
-    "zhCN": "Set Items"
+    "zhCN": "套装物品"
   },
   {
     "id": 51191,
     "Key": "dictTextCubeRecipes",
     "enUS": "Cube Recipes",
-    "zhTW": "Cube Recipes",
+    "zhTW": "合成公式",
     "deDE": "Cube Recipes",
     "esES": "Cube Recipes",
     "frFR": "Cube Recipes",
@@ -3329,7 +3329,7 @@
     "jaJP": "Cube Recipes",
     "ptBR": "Cube Recipes",
     "ruRU": "Cube Recipes",
-    "zhCN": "Cube Recipes"
+    "zhCN": "合成公式"
   },
   {
     "id": 51192,
@@ -3420,7 +3420,7 @@
     "id": 51197,
     "Key": "dictRequiredStrength",
     "enUS": "Required Strength",
-    "zhTW": "Required Strength",
+    "zhTW": "需要力量",
     "deDE": "Required Strength",
     "esES": "Required Strength",
     "frFR": "Required Strength",
@@ -3431,13 +3431,13 @@
     "jaJP": "Required Strength",
     "ptBR": "Required Strength",
     "ruRU": "Required Strength",
-    "zhCN": "Required Strength"
+    "zhCN": "需要力量"
   },
   {
     "id": 51198,
     "Key": "dictRequiredDexterity",
     "enUS": "Required Dexterity",
-    "zhTW": "Required Dexterity",
+    "zhTW": "需要敏捷",
     "deDE": "Required Dexterity",
     "esES": "Required Dexterity",
     "frFR": "Required Dexterity",
@@ -3448,13 +3448,13 @@
     "jaJP": "Required Dexterity",
     "ptBR": "Required Dexterity",
     "ruRU": "Required Dexterity",
-    "zhCN": "Required Dexterity"
+    "zhCN": "需要敏捷"
   },
   {
     "id": 51199,
     "Key": "dictBlockRate",
     "enUS": "Chance to Block",
-    "zhTW": "Chance to Block",
+    "zhTW": "格擋機率(CTB)",
     "deDE": "Chance to Block",
     "esES": "Chance to Block",
     "frFR": "Chance to Block",
@@ -3465,13 +3465,13 @@
     "jaJP": "Chance to Block",
     "ptBR": "Chance to Block",
     "ruRU": "Chance to Block",
-    "zhCN": "Chance to Block"
+    "zhCN": "格挡几率(CTB)"
   },
   {
     "id": 51200,
     "Key": "dictSmiteDamage",
     "enUS": "Smite Damage",
-    "zhTW": "Smite Damage",
+    "zhTW": "重擊傷害",
     "deDE": "Smite Damage",
     "esES": "Smite Damage",
     "frFR": "Smite Damage",
@@ -3482,13 +3482,13 @@
     "jaJP": "Smite Damage",
     "ptBR": "Smite Damage",
     "ruRU": "Smite Damage",
-    "zhCN": "Smite Damage"
+    "zhCN": "盾击伤害"
   },
   {
     "id": 51201,
     "Key": "dictKickDamage",
     "enUS": "Kick Damage",
-    "zhTW": "Kick Damage",
+    "zhTW": "踢擊傷害",
     "deDE": "Kick Damage",
     "esES": "Kick Damage",
     "frFR": "Kick Damage",
@@ -3499,13 +3499,13 @@
     "jaJP": "Kick Damage",
     "ptBR": "Kick Damage",
     "ruRU": "Kick Damage",
-    "zhCN": "Kick Damage"
+    "zhCN": "脚踢伤害"
   },
   {
     "id": 51202,
     "Key": "dictBeltSize",
     "enUS": "Belt Size",
-    "zhTW": "Belt Size",
+    "zhTW": "腰帶空間",
     "deDE": "Belt Size",
     "esES": "Belt Size",
     "frFR": "Belt Size",
@@ -3516,7 +3516,7 @@
     "jaJP": "Belt Size",
     "ptBR": "Belt Size",
     "ruRU": "Belt Size",
-    "zhCN": "Belt Size"
+    "zhCN": "腰带大小"
   },
   {
     "id": 51203,
@@ -3624,7 +3624,7 @@
     "id": 51209,
     "Key": "dictRuneUpgrade",
     "enUS": "Rune Upgrade",
-    "zhTW": "Rune Upgrade",
+    "zhTW": "符文升級",
     "deDE": "Rune Upgrade",
     "esES": "Rune Upgrade",
     "frFR": "Rune Upgrade",
@@ -3635,7 +3635,7 @@
     "jaJP": "Rune Upgrade",
     "ptBR": "Rune Upgrade",
     "ruRU": "Rune Upgrade",
-    "zhCN": "Rune Upgrade"
+    "zhCN": "符文升级"
   },
   {
     "id": 51210,
@@ -3811,7 +3811,7 @@
     "id": 51220,
     "Key": "dictClassStaves",
     "enUS": "Staves",
-    "zhTW": "Staves",
+    "zhTW": "法杖",
     "deDE": "Staves",
     "esES": "Staves",
     "frFR": "Staves",
@@ -3822,7 +3822,7 @@
     "jaJP": "Staves",
     "ptBR": "Staves",
     "ruRU": "Staves",
-    "zhCN": "Staves"
+    "zhCN": "法杖"
   },
   {
     "id": 51221,
@@ -3981,7 +3981,7 @@
     "id": 51230,
     "Key": "dictClassThrowing",
     "enUS": "Throwing",
-    "zhTW": "Throwing",
+    "zhTW": "飛刀",
     "deDE": "Throwing",
     "esES": "Throwing",
     "frFR": "Throwing",
@@ -3998,7 +3998,7 @@
     "id": 51231,
     "Key": "dictClassThrowingKnifeAxe",
     "enUS": "Throwing Knives/Axes",
-    "zhTW": "Throwing Knives/Axes",
+    "zhTW": "投擲武器",
     "deDE": "Throwing Knives/Axes",
     "esES": "Throwing Knives/Axes",
     "frFR": "Throwing Knives/Axes",
@@ -4009,7 +4009,7 @@
     "jaJP": "Throwing Knives/Axes",
     "ptBR": "Throwing Knives/Axes",
     "ruRU": "Throwing Knives/Axes",
-    "zhCN": "Throwing Knives/Axes"
+    "zhCN": "投掷武器"
   },
   {
     "id": 51232,

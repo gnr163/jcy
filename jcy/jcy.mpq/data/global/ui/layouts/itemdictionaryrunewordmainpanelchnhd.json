@@ -1,5 +1,5 @@
 {
-    "type": "SettingsPanel", "name": "ItemDictionaryUniqueWeaponMainPanelChn",
+    "type": "SettingsPanel", "name": "ItemDictionaryRunewordMainPanelChn",
     "fields": {
         "priority": 9002,
         "fitToParent": true
@@ -35,7 +35,7 @@
                             "type": "TextBoxWidget", "name": "Title",
                             "fields": {
                                 "rect": { "x": 0, "y": 45, "width": 1950, "height": 103 },
-                                "text": "Unique Weapons",
+                                "text": "Runewords",
                                 "style": "$StyleTitleBlock"
                             }
                         },
@@ -45,7 +45,7 @@
                                 "rect": { "x": 1868, "y": 8 },
                                 "filename": "PANEL\\closebtn_4x",
                                 "hoveredFrame": 3,
-								"onClickMessage": "PanelManager:ClosePanel:ItemDictionaryUniqueWeaponMainPanelChn",
+								"onClickMessage": "PanelManager:ClosePanel:ItemDictionaryRunewordMainPanelChn",
                                 "tooltipString": "@strClose",
                                 "sound": "cursor_close_window_hd",
                                 "acceptsEscKeyEverywhere": true,
@@ -69,14 +69,14 @@
             "fields": {
                 "rect": "$SettingsPanelTabsRect",
                 "anchor": { "x": 0.5 },
-                "tabCount": 8,
-                "tabSize": { "x": 220, "y": 121 },
+                "tabCount": 6,
+                "tabSize": { "x": 266, "y": 121 },
                 "tabPadding": { "x": 2, "y": 0 },
                 "unavailableTabsLeaveGaps": false,
                 "tabSizingMethod": "fixedCenter",
-                "filename": "itemDictionary/StashTabs220",
-                "inactiveFrames": [ 1, 1, 1, 1, 1, 1, 1, 1 ],
-                "activeFrames": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+                "filename": "Controller/Panel/Stash/V2/StashTabs",
+                "inactiveFrames": [ 1, 1, 1, 1, 1, 1 ],
+                "activeFrames": [ 0, 0, 0, 0, 0, 0 ],
                 "activeTextColor": "$TabsActiveTextColor",
                 "inactiveTextColor": "$TabsInactiveTextColor",
                 "tabTextOffset": { "x": 0, "y": -4 },
@@ -87,16 +87,14 @@
                     "fontColor": "$FontColorWhite",
                     "spacing": {"leading":0.9, "kerning":0.95}
                 },
-                "textStrings": [ "匕首", "剑", "斧", "长柄武器 / 长矛", "Staff", "钉锤", "弓 / 弩", "投掷武器 / Claws" ],
+                "textStrings": [ "2 Socket", "3 Socket\n(Weapons)", "3 Socket\n(Armors)", "4 Socket", "5 Socket", "6 Socket" ],
                 "tabMessages": [
-                    "SettingsPanelMessage:CheckChanges:ItemDictionaryUniqueWeaponPanelChn1",
-                    "SettingsPanelMessage:CheckChanges:ItemDictionaryUniqueWeaponPanelChn2",
-                    "SettingsPanelMessage:CheckChanges:ItemDictionaryUniqueWeaponPanelChn3",
-                    "SettingsPanelMessage:CheckChanges:ItemDictionaryUniqueWeaponPanelChn4",
-					"SettingsPanelMessage:CheckChanges:ItemDictionaryUniqueWeaponPanelChn5",
-					"SettingsPanelMessage:CheckChanges:ItemDictionaryUniqueWeaponPanelChn6",
-					"SettingsPanelMessage:CheckChanges:ItemDictionaryUniqueWeaponPanelChn7",
-					"SettingsPanelMessage:CheckChanges:ItemDictionaryUniqueWeaponPanelChn8"
+                    "SettingsPanelMessage:CheckChanges:ItemDictionaryRunewordPanelChn1",
+                    "SettingsPanelMessage:CheckChanges:ItemDictionaryRunewordPanelChn2",
+                    "SettingsPanelMessage:CheckChanges:ItemDictionaryRunewordPanelChn3",
+                    "SettingsPanelMessage:CheckChanges:ItemDictionaryRunewordPanelChn4",
+					"SettingsPanelMessage:CheckChanges:ItemDictionaryRunewordPanelChn5",
+					"SettingsPanelMessage:CheckChanges:ItemDictionaryRunewordPanelChn6"
                 ]
             }
         },
