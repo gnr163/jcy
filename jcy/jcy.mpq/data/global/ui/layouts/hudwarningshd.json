@@ -184,10 +184,10 @@
         },
         {
             "type": "TimerWidget",
-            "name": "OpenMiniCube",
+            "name": "OpenMiniHp",
             "fields": {
                 "time": 1,
-                "message": "PanelManager:OpenPanel:UI_New_MiniCube"
+                "message": "PanelManager:OpenPanel:minihp"
             }
         },
         {

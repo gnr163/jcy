@@ -228,6 +228,8 @@ class FeatureController:
             "145": self.file_operations.toggle_a5hire_sword,
             # "正副手防呆提示"
             "146": self.file_operations.toggle_weapon_swap,
+            # "默认开启迷你血条"
+            "147": self.file_operations.toggle_minihp_bar,
             
             
             # 佣兵图标位置

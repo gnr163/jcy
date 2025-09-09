@@ -414,6 +414,45 @@ class FileOperations:
             r"data/hd/global/ui/panel/Inventory/weapon_swap.sprite",
         )
         return self.common_rename(_files, isEnabled)
+    
+    def toggle_minihp_bar(self, isEnabled: bool):
+        """默认开启迷你血条"""
+        _files = [
+            r"data/global/ui/layouts/hudwarningshd.json",
+        ]
+        count = 0
+        total = len(_files)
+
+        # 1.load
+        json_data = None
+        json_path = os.path.join(MOD_PATH, _files[0])
+        with open(json_path, 'r', encoding='utf-8') as f:
+            json_data = json.load(f)
+
+        # 2.modify 
+        _idx = 7
+        _obj = json_data["children"][_idx]
+        if isEnabled:
+            if _obj["name"] != "OpenMiniHp":
+                json_data["children"].insert(_idx, {
+                    "type": "TimerWidget",
+                    "name": "OpenMiniHp",
+                    "fields": {
+                        "time": 1,
+                        "message": "PanelManager:OpenPanel:minihp"
+                    }
+                })
+        else:
+            if _obj["name"] == "OpenMiniHp":
+                del json_data["children"][_idx]
+                
+        # 3.write
+        with open(json_path, 'w', encoding="utf-8") as f:
+            json.dump(json_data, f, ensure_ascii=False, indent=4)
+
+
+        count += 1
+        return (count, total)
 
     def toggle_low_quality(self, isEnabled: bool):
         """
