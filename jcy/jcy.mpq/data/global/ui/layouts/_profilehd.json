@@ -272,6 +272,7 @@
     "AddFriendModalFontSize": 26,
     "FixedXMediumFontSize": 30,
     "FixedMediumFontSize": 28,
+    "GameNameFilterFontSize": 28,
     "XMediumPanelFontSize": "$XMediumFontSize",
     "MediumPanelFontSize": "$MediumFontSize",
     "SmallPanelFontSize": "$SmallFontSize",
@@ -302,7 +303,7 @@
         "fontColor": "$FontColorGoldYellow",
         "pointSize": "$MediumLargeFontSize",
         "options": {
-            "lineWrap": true
+            "lineWrap": 1
         },
         "alignment": {
             "h": "left",
@@ -315,7 +316,7 @@
         "pointSize": "$MediumFontSize",
         "fontFace": "Formal",
         "options": {
-            "lineWrap": true
+            "lineWrap": 1
         },
         "alignment": {
             "h": "left",
@@ -368,7 +369,7 @@
             "h": "center"
         },
         "options": {
-            "lineWrap": true,
+            "lineWrap": 1,
             "newlineHandling": "standard"
         },
         "pointSize": "$MediumLargeFontSize",
@@ -381,7 +382,7 @@
             "v": "center"
         },
         "options": {
-            "lineWrap": true,
+            "lineWrap": 1,
             "newlineHandling": "standard"
         },
         "pointSize": "$MediumFontSize",
@@ -411,7 +412,7 @@
             "v": "center"
         },
         "options": {
-            "lineWrap": true,
+            "lineWrap": 1,
             "newlineHandling": "standard"
         }
     },
@@ -445,7 +446,7 @@
     },
     "StyleSkillTreeTabs": {
         "options": {
-            "lineWrap": true
+            "lineWrap": 1
         },
         "pointSize": "$SmallPanelFontSize",
         "alignment": {
@@ -479,7 +480,7 @@
             "v": "center"
         },
         "options": {
-            "lineWrap": true
+            "lineWrap": 1
         }
     },
     "StyleSettingsCarousel": {
@@ -513,7 +514,7 @@
         },
         "options": {
             "newlineHandling": "standard",
-            "lineWrap": true
+            "lineWrap": 1
         }
     },
     "StyleNotification": {
@@ -526,7 +527,7 @@
         },
         "options": {
             "newlineHandling": "standard",
-            "lineWrap": true
+            "lineWrap": 1
         }
     },
     "StyleVictoryText": {
@@ -585,13 +586,13 @@
             12
         ],
         "inGameTargetPadding": [
-            0,
-            0,
-            0,
-            0
+            7,
+            1,
+            7,
+            1
         ],
-        "drawBorder": false,
-        "centeredOnAnchor": true,
+        "drawBorder": 0,
+        "centeredOnAnchor": 1,
         "hp": 0,
         "backgroundColor": [
             0,
@@ -828,7 +829,11 @@
     },
     "SettingsSliderValueFields": {
         "rect": "$OptionsSliderValueRect",
-        "style": "$StyleSettingsNumericSlider"
+        "style": {
+            "alignment": {
+                "h": "right"
+            }
+        }
     },
     "SettingsSliderTooltipRect": {
         "x": -75,
@@ -907,7 +912,7 @@
             "h": "right"
         },
         "options": {
-            "lineWrap": true
+            "lineWrap": 1
         },
         "spacing": "$MinimumSpacing"
     },
@@ -1134,7 +1139,19 @@
         "height": 1150
     },
     "TutorialTooltipConsoleSoloRect": {
-        "x": 275,
+        "x": -200,
+        "y": 451,
+        "width": 900,
+        "height": 700
+    },
+    "TutorialTooltipConsoleGameCreatorRect": {
+        "x": -1600,
+        "y": 451,
+        "width": 900,
+        "height": 700
+    },
+    "TutorialTooltipConsoleGameListRect": {
+        "x": -700,
         "y": 451,
         "width": 900,
         "height": 700
@@ -1227,13 +1244,118 @@
     },
     "JoinGamePlayerEntryHeight": 100,
     "JoinGamePlayerNameHeight": 60,
-    "StyleSettingsNumericSlider": {
-        "fontFace": "Exocet",
-        "pointSize": "$MediumFontSize",
+        "DictionaryModCreditRect": {
+        "x": 12,
+        "y": 12
+    },
+    "DictionaryModCreditText": "@dictCredit",
+    "DictionaryModCreditStyle": {
+        "fontColor": "$FontColorGoldYellow",
+        "pointSize": "$MediumLargeFontSize",
+        "alignment": {
+            "h": "left"
+        },
+        "options": {
+            "newlineHandling": "standard"
+        }
+    },
+    "StyleDictionaryDefaultImageRect": {
+        "x": 16,
+        "y": 16
+    },
+    "DictionaryOptionScrollImage": "items/misc/quest/bark_scroll",
+    "StyleDictionaryNotice": {
+        "fontColor": "$FontColorGreen",
+        "pointSize": "$XMediumFontSize",
+        "alignment": {
+            "h": "left",
+            "v": "center"
+        },
+        "options": {
+            "newlineHandling": "standard"
+        },
+        "spacing": {
+            "kerning": 0.9
+        }
+    },
+    "StyleDictionaryCategory": {
+        "fontColor": "$FontColorGoldYellow",
+        "pointSize": "$LargeFontSize",
+        "alignment": {
+            "h": "left",
+            "v": "top"
+        },
+        "options": {
+            "newlineHandling": "standard"
+        },
+        "spacing": {
+            "kerning": 0.9
+        },
+        "dropShadow": "$DefaultDropShadow"
+    },
+    "StyleDictionaryItemDescription": {
         "fontColor": "$FontColorWhite",
+        "pointSize": "$XMediumFontSize",
+        "alignment": {
+            "h": "left",
+            "v": "top"
+        },
+        "options": {
+            "newlineHandling": "standard"
+        },
+        "spacing": {
+            "kerning": 0.9
+        }
+    },
+    "StyleDictionaryRunewordRune": {
+        "fontColor": "$FontColorWhite",
+        "pointSize": "$MediumLargeFontSize",
+        "alignment": {
+            "h": "center",
+            "v": "top"
+        },
+        "options": {
+            "newlineHandling": "standard"
+        },
+        "spacing": {
+            "kerning": 0.9
+        },
+        "dropShadow": "$DefaultDropShadow"
+    },
+    "StyleDictionaryRunewordDescription": {
+        "fontColor": "$FontColorWhite",
+        "pointSize": "$XMediumFontSize",
+        "alignment": {
+            "h": "left",
+            "v": "top"
+        },
+        "options": {
+            "newlineHandling": "standard"
+        },
+        "spacing": {
+            "kerning": 0.9
+        }
+    },
+    "DictionaryNormalItemTableColumnLeft": {
+        "width": 500,
+        "alignment": {
+            "h": "left",
+            "v": "fit"
+        }
+    },
+    "DictionaryNormalItemTableColumnCenter": {
+        "width": 500,
+        "alignment": {
+            "h": "center",
+            "v": "fit"
+        }
+    },
+    "DictionaryNormalItemTableColumnRight": {
+        "width": 500,
         "alignment": {
             "h": "right",
-            "v": "center"
+            "v": "fit"
         }
-    }
+    },
+    "DictionaryNormalItemRowHeight": 110
 }
