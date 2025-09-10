@@ -230,6 +230,9 @@ class FeatureController:
             "146": self.file_operations.toggle_weapon_swap,
             # "默认开启迷你血条"
             "147": self.file_operations.toggle_minihp_bar,
+            # "默认开启迷你盒子"
+            "148": self.file_operations.toggle_mini_cube,
+
             
             
             # 佣兵图标位置

@@ -192,6 +192,14 @@
         },
         {
             "type": "TimerWidget",
+            "name": "OpenMiniCute",
+            "fields": {
+                "time": 1,
+                "message": "PanelManager:OpenPanel:HoradricCubeMiniLayout"
+            }
+        },
+        {
+            "type": "TimerWidget",
             "name": "CloseInventory",
             "fields": {
                 "time": 1,

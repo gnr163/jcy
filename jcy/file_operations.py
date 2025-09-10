@@ -421,6 +421,7 @@ class FileOperations:
         ]
         count = 0
         total = len(_files)
+        keyword = "OpenMiniHp"
 
         # 1.load
         json_data = None
@@ -429,11 +430,9 @@ class FileOperations:
             json_data = json.load(f)
 
         # 2.modify 
-        _idx = 7
-        _obj = json_data["children"][_idx]
         if isEnabled:
-            if _obj["name"] != "OpenMiniHp":
-                json_data["children"].insert(_idx, {
+            if not any(keyword == child["name"] for child in json_data["children"]):
+                json_data["children"].insert(-2, {
                     "type": "TimerWidget",
                     "name": "OpenMiniHp",
                     "fields": {
@@ -442,8 +441,44 @@ class FileOperations:
                     }
                 })
         else:
-            if _obj["name"] == "OpenMiniHp":
-                del json_data["children"][_idx]
+            json_data["children"] = [child for child in json_data["children"] if child["name"] != keyword]
+                
+        # 3.write
+        with open(json_path, 'w', encoding="utf-8") as f:
+            json.dump(json_data, f, ensure_ascii=False, indent=4)
+
+
+        count += 1
+        return (count, total)
+    
+    def toggle_mini_cube(self, isEnabled: bool):
+        """默认开启迷你盒子"""
+        _files = [
+            r"data/global/ui/layouts/hudwarningshd.json",
+        ]
+        count = 0
+        total = len(_files)
+        keyword = "OpenMiniCute"
+
+        # 1.load
+        json_data = None
+        json_path = os.path.join(MOD_PATH, _files[0])
+        with open(json_path, 'r', encoding='utf-8') as f:
+            json_data = json.load(f)
+
+        # 2.modify 
+        if isEnabled:
+            if not any(keyword == child["name"] for child in json_data["children"]):
+                json_data["children"].insert(-2, {
+                    "type": "TimerWidget",
+                    "name": "OpenMiniCute",
+                    "fields": {
+                        "time": 1,
+                        "message": "PanelManager:OpenPanel:HoradricCubeMiniLayout"
+                    }
+                })
+        else:
+            json_data["children"] = [child for child in json_data["children"] if child["name"] != keyword]
                 
         # 3.write
         with open(json_path, 'w', encoding="utf-8") as f:
