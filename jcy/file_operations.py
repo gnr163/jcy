@@ -408,7 +408,6 @@ class FileOperations:
         _files = (
             r"data/global/ui/layouts/hudwarningsfake.json",
             r"data/global/ui/layouts/hudwarningsfakehd.json",
-            r"data/global/ui/layouts/hudwarningshd.json",
             r"data/global/ui/layouts/ui_new_weaponswaphd.json",
             r"data/hd/global/ui/panel/Inventory/weapon_swap.lowend.sprite",
             r"data/hd/global/ui/panel/Inventory/weapon_swap.sprite",
@@ -2610,32 +2609,47 @@ class FileOperations:
     
     def select_hudpanel_size(self, radio: str):
         """HUD面板尺寸"""
-        params = {
-            "default": { "x": -1454, "y": -412, "width": 2952, "height": 764 },
-            "1": { "x": -1236, "y": -350, "width": 2952, "height": 764, "scale": 0.85 },
-            "2": { "x": -1090, "y": -310, "width": 2952, "height": 764, "scale": 0.75 },
-            "3": { "x": -945.1, "y": -267.8, "width": 2952, "height": 764, "scale": 0.65 },
-        }
+
+        rects = [
+            {
+                "default": { "x": -1454, "y": -412, "width": 2952, "height": 764 },
+                "1": { "x": -1236, "y": -350, "width": 2952, "height": 764, "scale": 0.85 },
+                "2": { "x": -1090, "y": -310, "width": 2952, "height": 764, "scale": 0.75 },
+                "3": { "x": -945.1, "y": -267.8, "width": 2952, "height": 764, "scale": 0.65 },
+            },
+            {
+                "default": { "x": 0, "y": -500 , "scale": 1},
+                "1": { "x": 0, "y": -420 , "scale": 0.85},
+                "2": { "x": 0, "y": -370 , "scale": 0.75},
+                "3": { "x": 0, "y": -320 , "scale": 0.65},
+            }
+        ]
+
         _files = [
             r"data/global/ui/layouts/hudpanelhd.json",
+            r"data/global/ui/layouts/ui_new_weaponswaphd.json"
         ]
+
         count = 0
         total = len(_files)
 
-        # 1.load
-        hud_panel_data = None
-        hud_panel_path = os.path.join(MOD_PATH, _files[0])
-        with open(hud_panel_path, 'r', encoding='utf-8') as f:
-            hud_panel_data = json.load(f)
+        for i, _file in enumerate(_files):
+            try:
+                # 1.load
+                file_data = None
+                file_path = os.path.join(MOD_PATH, _file)
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    file_data = json.load(f)
 
-        # 2.modify
-        hud_panel_data["fields"]["rect"] = params.get(radio, params.get("default"))
-                    
-        # 3.write
-        with open(hud_panel_path, 'w', encoding='utf-8') as f:
-            json.dump(hud_panel_data, f, ensure_ascii=False, indent=4)
-        
-        count += 1
+                # 2.modify
+                file_data["fields"]["rect"] = rects[i].get(radio)
+                            
+                # 3.write
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    json.dump(file_data, f, ensure_ascii=False, indent=4)
+                count += 1
+            except Exception as e:
+                print(e)
         return (count, total)
 
 

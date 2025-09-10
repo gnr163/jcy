@@ -1,28 +1,41 @@
 {
-    "type": "PlayerInventoryPanel", "name": "UI_New_WeaponSwap",
+    "type": "PlayerInventoryPanel",
+    "name": "UI_New_WeaponSwap",
     "fields": {
         "priority": -1,
-        "rect": { "x": 0, "y": -500 },
+        "rect": {
+            "x": 0,
+            "y": -320,
+            "scale": 0.65
+        },
         "anchor": {
             "x": 0.5,
             "y": 1
-        },
+        }
     },
     "children": [
         {
-            "type": "ImageWidget", "name": "background_right_arm_selected",
+            "type": "ImageWidget",
+            "name": "background_right_arm_selected",
             "fields": {
-                "rect": { "x": -72, "y": 0 },
-                "filename": "PANEL\\Inventory\\weapon_swap",
-            },
+                "rect": {
+                    "x": -72,
+                    "y": 0
+                },
+                "filename": "PANEL\\Inventory\\weapon_swap"
+            }
         },
         {
-            "type": "ImageWidget", "name": "background_right_arm",
+            "type": "ImageWidget",
+            "name": "background_right_arm",
             "fields": {
-                "rect": { "x": -72, "y": 0 },
+                "rect": {
+                    "x": -72,
+                    "y": 0
+                },
                 "filename": "PANEL\\Inventory\\weapon_swap",
-                "frame": 1,
-            },
+                "frame": 1
+            }
         }
     ]
 }

@@ -586,10 +586,10 @@
             12
         ],
         "inGameTargetPadding": [
-            7,
-            1,
-            7,
-            1
+            0,
+            0,
+            0,
+            0
         ],
         "drawBorder": 0,
         "centeredOnAnchor": 1,
