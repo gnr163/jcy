@@ -829,11 +829,7 @@
     },
     "SettingsSliderValueFields": {
         "rect": "$OptionsSliderValueRect",
-        "style": {
-            "alignment": {
-                "h": "right"
-            }
-        }
+        "style": "$StyleSettingsNumericSlider"
     },
     "SettingsSliderTooltipRect": {
         "x": -75,
@@ -1244,7 +1240,16 @@
     },
     "JoinGamePlayerEntryHeight": 100,
     "JoinGamePlayerNameHeight": 60,
-        "DictionaryModCreditRect": {
+    "StyleSettingsNumericSlider": {
+        "fontFace": "Exocet",
+        "pointSize": "$MediumFontSize",
+        "fontColor": "$FontColorWhite",
+        "alignment": {
+            "h": "right",
+            "v": "center"
+        }
+    },
+    "DictionaryModCreditRect": {
         "x": 12,
         "y": 12
     },
