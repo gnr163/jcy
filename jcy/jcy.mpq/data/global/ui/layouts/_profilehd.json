@@ -722,7 +722,7 @@
             "v": "center"
         }
     },
-    "OptionsTableRowHeight": 100,
+    "OptionsTableRowHeight": 110,
     "OptionsCarouselRect": {
         "width": 596,
         "height": 72

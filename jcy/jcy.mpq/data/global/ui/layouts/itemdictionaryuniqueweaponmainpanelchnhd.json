@@ -35,7 +35,7 @@
                             "type": "TextBoxWidget", "name": "Title",
                             "fields": {
                                 "rect": { "x": 0, "y": 45, "width": 1950, "height": 103 },
-                                "text": "Unique Weapons",
+                                "text": "暗金武器",
                                 "style": "$StyleTitleBlock"
                             }
                         },
@@ -87,7 +87,7 @@
                     "fontColor": "$FontColorWhite",
                     "spacing": {"leading":0.9, "kerning":0.95}
                 },
-                "textStrings": [ "匕首", "剑", "斧", "长柄武器 / 长矛", "Staff", "钉锤", "弓 / 弩", "投掷武器 / Claws" ],
+                "textStrings": [ "匕首", "剑", "斧", "长柄武器 / 长矛", "法杖", "钉锤", "弓 / 弩", "投掷武器 / 爪" ],
                 "tabMessages": [
                     "SettingsPanelMessage:CheckChanges:ItemDictionaryUniqueWeaponPanelChn1",
                     "SettingsPanelMessage:CheckChanges:ItemDictionaryUniqueWeaponPanelChn2",

@@ -99,7 +99,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Gull",
+                                                "text": "@dictUniqueItem39",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -114,7 +114,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold Gull \n@dgr\n\n@dictBlue Adds 1-15 damage\n-5 to Mana\n100% Better Chance of Getting Magic Items",
+                                                "tooltipString": "@dictGold @dictUniqueItem39 \n@dgr\n\n@dictBlue @dictUniqueItem39Info",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -263,7 +263,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "The Diggler",
+                                                "text": "@dictUniqueItem40",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -278,7 +278,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold The Diggler \n@dir\n\n@dictBlue +30% Increased Attack Speed\n+50% Enhanced Damage\nIgnore Target's Defense\n+10 to Dexterity\nCold Resist +25%\nFire Resist +25%",
+                                                "tooltipString": "@dictGold @dictUniqueItem40 \n@dir\n\n@dictBlue @dictUniqueItem40Info",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -427,7 +427,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "The Jade Tan Do",
+                                                "text": "@dictUniqueItem41",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -442,7 +442,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold The Jade Tan Do \n@kri\n\n@dictBlue +100-150 to Attack Rating @dictVariable\n@dictBlue +180 poison damage over 4 seconds\n+20% to Maximum Poison Resist\nPoison Resist +95%\nCannot Be Frozen",
+                                                "tooltipString": "@dictGold @dictUniqueItem41 \n@kri\n\n@dictBlue @dictUniqueItem41Info",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -564,7 +564,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Spectral Shard",
+                                                "text": "@dictUniqueItem42",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -579,7 +579,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Spectral Shard \n@bld\n\n@dictBlue +50% Faster Cast Rate\n+55 to Attack Rating\n+50 to Mana\nAll Resistances +10",
+                                                "tooltipString": "@dictGold @dictUniqueItem42 Shard \n@bld\n\n@dictBlue @dictUniqueItem42Info",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -728,7 +728,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Spineripper",
+                                                "text": "@dictUniqueItem168",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -743,7 +743,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold Spineripper \n@9dg\n\n@dictBlue +1 to Necromancer Skill Levels\n+15% Increased Attack Speed\n+200-240% Enhanced Damage @dictVariable\n@dictBlue Adds 15-27 damage\nIgnore Target's Defense\n8% Life stolen per hit\nPrevent Monster Heal\n+10 to Dexterity",
+                                                "tooltipString": "@dictGold @dictUniqueItem168 \n@9dg\n\n@dictBlue @dictUniqueItem168Info",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -865,7 +865,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Heart Carver",
+                                                "text": "@dictUniqueItem169",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -880,7 +880,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold Heart Carver \n@9di\n\n@dictBlue +190-240% Enhanced Damage @dictVariable\n@dictBlue Adds 15-35 damage\nIgnore Target's Defense\n+35% Deadly Strike\n+4 to Grim Ward (Barbarian Only)\n+4 to Find Item (Barbarian Only)\n+4 to Find Potion (Barbarian Only)",
+                                                "tooltipString": "@dictGold @dictUniqueItem169 \n@9di\n\n@dictBlue @dictUniqueItem169Info",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1002,7 +1002,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Blackbog's Sharp",
+                                                "text": "@dictUniqueItem170",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1017,7 +1017,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Blackbog's Sharp \n@9kr\n\n@dictBlue +30% Increased Attack Speed\nAdds 15-45 damage\n+488 poison damage over 10 seconds\n+4 to Poison Nova (Necromancer Only)\n+4 to Poison Explosion (Necromancer Only)\n+5 to Poison Dagger (Necromancer Only)\nSlows Target by 50%\n+50 Defense",
+                                                "tooltipString": "@dictGold @dictUniqueItem170 \n@9kr\n\n@dictBlue @dictUniqueItem170Info",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1139,7 +1139,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Stormspike",
+                                                "text": "@dictUniqueItem171",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1154,7 +1154,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Stormspike \n@9bl\n\n@dictBlue 25% Chance to cast level 3 Charged Bolt when struck\n+150% Enhanced Damage\nAdds 1-120 lightning damage\nLightning Resist +1-99% (Based on Character Level)\nAttacker Takes Lightning Damage of 20",
+                                                "tooltipString": "@dictGold @dictUniqueItem171 \n@9bl\n\n@dictBlue @dictUniqueItem171Info",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1303,7 +1303,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Wizardspike",
+                                                "text": "@dictUniqueItem262",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1318,7 +1318,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold Wizardspike \n@7dg\n\n@dictBlue Indestructible\n+50% Faster Cast Rate\nIncrease Maximum Mana 15%\n+2-198 to Mana (Based on Character Level)\nRegenerate Mana 15%\nAll Resistances +75",
+                                                "tooltipString": "@dictGold @dictUniqueItem262 \n@7dg\n\n@dictBlue @dictUniqueItem262Info",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1467,7 +1467,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Fleshripper",
+                                                "text": "@dictUniqueItem304",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1482,7 +1482,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Fleshripper \n@7kr\n\n@dictBlue +200-300% Enhanced Damage @dictVariable\n@dictBlue -50% Target Defense\n+25% Chance of Crushing Blow\n+33% Deadly Strike\n+50% Chance of Open Wounds\nPrevent Monster Heal\nSlows Target by 20%",
+                                                "tooltipString": "@dictGold @dictUniqueItem304 \n@7kr\n\n@dictBlue @dictUniqueItem304Info",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1631,7 +1631,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Ghostflame",
+                                                "text": "@dictUniqueItem333",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1646,7 +1646,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Ghostflame \n@7bl\n\n@dictBlue Indestructible\n+190-240% Enhanced Damage @dictVariable\n@dictBlue Ignore Target's Defense\n+108 magic damage\n10-15% Mana stolen per hit @dictVariable\n@dictBlue +2 to Light Radius\nEthereal (Cannot be Repaired)",
+                                                "tooltipString": "@dictGold @dictUniqueItem333 \n@7bl\n\n@dictBlue @dictUniqueItem333Info",
                                                 "pressedFrame": 0
                                             }
                                         },
