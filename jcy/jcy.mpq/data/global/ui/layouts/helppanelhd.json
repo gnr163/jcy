@@ -348,7 +348,7 @@
                                             0,
                                             0
                                         ],
-                                        "onClickMessage": "PanelManager:OpenPanel:ItemDictionaryCubeRecipeMainPanel",
+                                        "onClickMessage": "PanelManager:OpenPanel:itemDictionaryCubeMainPanel",
                                         "textColor": "$FontColorLightTeal",
                                         "text/style": "$StyleFEButtonText",
                                         "acceptsReturnKey": true,

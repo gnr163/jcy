@@ -1,5 +1,5 @@
 {
-    "type": "SettingsPanel", "name": "ItemDictionaryCubeRecipeMainPanel",
+    "type": "SettingsPanel", "name": "itemDictionaryCubeMainPanel",
     "fields": {
         "priority": 9002,
         "fitToParent": true
@@ -45,7 +45,7 @@
                                 "rect": { "x": 1868, "y": 8 },
                                 "filename": "PANEL\\closebtn_4x",
                                 "hoveredFrame": 3,
-								"onClickMessage": "PanelManager:ClosePanel:ItemDictionaryCubeRecipeMainPanel",
+								"onClickMessage": "PanelManager:ClosePanel:itemDictionaryCubeMainPanel",
                                 "tooltipString": "@strClose",
                                 "sound": "cursor_close_window_hd",
                                 "acceptsEscKeyEverywhere": true,
@@ -89,12 +89,12 @@
                 },
                 "textStrings": [ "@dictClassGems/@dictClassRunes", "@dictClassSocketing", "@dictClassUpgrade", "@dictClassReroll", "@dictClassCrafting", "@dictClassOthers" ],
                 "tabMessages": [
-                    "SettingsPanelMessage:CheckChanges:ItemDictionaryCubeRuneGemPanel",
-                    "SettingsPanelMessage:CheckChanges:ItemDictionaryCubeSocketPanel",
-                    "SettingsPanelMessage:CheckChanges:ItemDictionaryCubeUpgradePanel",
-                    "SettingsPanelMessage:CheckChanges:ItemDictionaryCubeRerollPanel",
-					"SettingsPanelMessage:CheckChanges:ItemDictionaryCubeCraftPanel",
-					"SettingsPanelMessage:CheckChanges:ItemDictionaryCubeOtherPanel"
+                    "SettingsPanelMessage:CheckChanges:ItemDictionaryCubePanel1",
+                    "SettingsPanelMessage:CheckChanges:ItemDictionaryCubePanel2",
+                    "SettingsPanelMessage:CheckChanges:ItemDictionaryCubePanel3",
+                    "SettingsPanelMessage:CheckChanges:ItemDictionaryCubePanel4",
+					"SettingsPanelMessage:CheckChanges:ItemDictionaryCubePanel5",
+					"SettingsPanelMessage:CheckChanges:ItemDictionaryCubePanel6"
                 ]
             }
         },

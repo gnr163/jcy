@@ -75,7 +75,7 @@
                                             "name": "BaseItemLevelReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictNoticeBlockChance",
+                                                "text": "- @dictNoticeBlockChance",
                                                 "style": "$StyleDictionaryNotice"
                                             }
                                         }
@@ -91,7 +91,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "극지 장비 (아틱 기어)",
+                                        "text": "Arctic Gear",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -124,7 +124,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "극지 뿔 (아틱 혼)",
+                                                "text": "Arctic Horn",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -139,7 +139,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 극지 뿔 \n@swb\n\n@dictSetArticHorn\n\n@dictSetArticGear",
+                                                "tooltipString": "@dictGreen Arctic Horn \n@swb\n\n@dictSetArticHorn\n\n@dictSetArticGear",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -278,7 +278,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "극지 모피 (아틱 퍼스)",
+                                                "text": "Arctic Furs",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -293,7 +293,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 극지 모피 \n@qui\n\n@dictSetArcticFurs\n\n@dictSetArticGear",
+                                                "tooltipString": "@dictGreen Arctic Furs \n@qui\n\n@dictSetArcticFurs\n\n@dictSetArticGear",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -432,7 +432,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "극지 장갑 (아틱 미트)",
+                                                "text": "Arctic Mitts",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -447,7 +447,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 극지 장갑 \n@tgl\n\n@dictSetArcticMitts\n\n@dictSetArticGear",
+                                                "tooltipString": "@dictGreen Arctic Mitts \n@tgl\n\n@dictSetArcticMitts\n\n@dictSetArticGear",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -586,7 +586,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "극지 허리띠 (아틱 바인딩)",
+                                                "text": "Arctic Binding",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -601,7 +601,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGreen 극지 허리띠 \n@vbl\n\n@dictSetArcticBinding\n\n@dictSetArticGear",
+                                                "tooltipString": "@dictGreen Arctic Binding \n@vbl\n\n@dictSetArcticBinding\n\n@dictSetArticGear",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -735,7 +735,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "흐사루스의 방어 (사루의 디펜스)",
+                                        "text": "Hsarus' Defense",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -768,7 +768,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "흐사루스의 무쇠 주먹 (사루의 아이언 피스트)",
+                                                "text": "Hsarus' Iron Fist",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -783,7 +783,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 흐사루스의 무쇠 주먹 \n@buc\n\n@dictSetHsarusIronFist\n\n@dictSetHsarusDefense",
+                                                "tooltipString": "@dictGreen Hsarus' Iron Fist \n@buc\n\n@dictSetHsarusIronFist\n\n@dictSetHsarusDefense",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -922,7 +922,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "흐사루스의 무쇠 고정대 (사루의 아이언 스테이)",
+                                                "text": "Hsarus' Iron Stay",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -937,7 +937,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGreen 흐사루스의 무쇠 고정대 \n@mbl\n\n@dictSetHsarusIronStay\n\n@dictSetHsarusDefense",
+                                                "tooltipString": "@dictGreen Hsarus' Iron Stay \n@mbl\n\n@dictSetHsarusIronStay\n\n@dictSetHsarusDefense",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1076,7 +1076,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "흐사루스의 무쇠 발꿈치 (사루의 아이언 힐)",
+                                                "text": "Hsarus' Iron Heel",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1091,7 +1091,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 흐사루스의 무쇠 발꿈치 \n@mbt\n\n@dictSetHsarusIronHeel\n\n@dictSetHsarusDefense",
+                                                "tooltipString": "@dictGreen Hsarus' Iron Heel \n@mbt\n\n@dictSetHsarusIronHeel\n\n@dictSetHsarusDefense",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1225,7 +1225,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "광전사의 무기고 (버서커 아스널)",
+                                        "text": "Berserker's Arsenal",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -1258,7 +1258,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "광전사의 머리 방어구 (버서커의 헤드기어)",
+                                                "text": "Berserker's Headgear",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1273,7 +1273,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 광전사의 머리 방어구 \n@hlm\n\n@dictSetBerserkersHeadgear\n\n@dictSetBerserkersArsenal",
+                                                "tooltipString": "@dictGreen Berserker's Headgear \n@hlm\n\n@dictSetBerserkersHeadgear\n\n@dictSetBerserkersArsenal",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1412,7 +1412,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "광전사의 해칫 (버서커의 헤칫)",
+                                                "text": "Berserker's Hatchet",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1427,7 +1427,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 광전사의 해칫 \n@2ax\n\n@dictSetBerserkersHatchet\n\n@dictSetBerserkersArsenal",
+                                                "tooltipString": "@dictGreen Berserker's Hatchet \n@2ax\n\n@dictSetBerserkersHatchet\n\n@dictSetBerserkersArsenal",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1566,7 +1566,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "광전사의 흉갑 (버서커의 허버크)",
+                                                "text": "Berserker's Hauberk",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1581,7 +1581,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 광전사의 흉갑 \n@spl\n\n@dictSetBerserkersHauberk\n\n@dictSetBerserkersArsenal",
+                                                "tooltipString": "@dictGreen Berserker's Hauberk \n@spl\n\n@dictSetBerserkersHauberk\n\n@dictSetBerserkersArsenal",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1715,7 +1715,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "클리글로의 버팀목 (클레글로우 브레이스)",
+                                        "text": "Cleglaw's Brace",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -1748,7 +1748,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "클리글로의 이빨 (클레그로우의 투쓰)",
+                                                "text": "Cleglaw's Tooth",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1763,7 +1763,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 클리글로의 이빨 \n@lsd\n\n@dictSetCleglawsTooth\n\n@dictSetCleglawsBrace",
+                                                "tooltipString": "@dictGreen Cleglaw's Tooth \n@lsd\n\n@dictSetCleglawsTooth\n\n@dictSetCleglawsBrace",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1902,7 +1902,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "클리글로의 발톱 (클레그로우의 클러)",
+                                                "text": "Cleglaw's Claw",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1917,7 +1917,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 클리글로의 발톱 \n@sml\n\n@dictSetCleglawsClaw\n\n@dictSetCleglawsBrace",
+                                                "tooltipString": "@dictGreen Cleglaw's Claw \n@sml\n\n@dictSetCleglawsClaw\n\n@dictSetCleglawsBrace",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2056,7 +2056,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "클리글로의 집게 (클레그로우의 핀서즈)",
+                                                "text": "Cleglaw's Pincers",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2071,7 +2071,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 클리글로의 집게 \n@mgl\n\n@dictSetCleglawsPincers\n\n@dictSetCleglawsBrace",
+                                                "tooltipString": "@dictGreen Cleglaw's Pincers \n@mgl\n\n@dictSetCleglawsPincers\n\n@dictSetCleglawsBrace",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2205,7 +2205,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "지옥불 도구 (인퍼널 툴스)",
+                                        "text": "Infernal Tools",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -2238,7 +2238,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "지옥불 두개골 (인퍼널 크래니엄)",
+                                                "text": "Infernal Cranium",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2253,7 +2253,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 지옥불 두개골 \n@cap\n\n@dictSetInfernalCranium\n\n@dictSetInfernalTools",
+                                                "tooltipString": "@dictGreen Infernal Cranium \n@cap\n\n@dictSetInfernalCranium\n\n@dictSetInfernalTools",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2392,7 +2392,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "지옥의 횃불 (인퍼널 터치)",
+                                                "text": "Infernal Torch",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2407,7 +2407,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGreen 지옥의 횃불 \n@gwn\n\n@dictSetInfernalTorch\n\n@dictSetInfernalTools",
+                                                "tooltipString": "@dictGreen Infernal Torch \n@gwn\n\n@dictSetInfernalTorch\n\n@dictSetInfernalTools",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2546,7 +2546,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "지옥의 흔적 (인퍼널 싸인)",
+                                                "text": "Infernal Sign",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2561,7 +2561,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGreen 지옥의 흔적 \n@tbl\n\n@dictSetInfernalSign\n\n@dictSetInfernalTools",
+                                                "tooltipString": "@dictGreen Infernal Sign \n@tbl\n\n@dictSetInfernalSign\n\n@dictSetInfernalTools",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2695,7 +2695,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "죽음의 위장 (데쓰 디스가이즈)",
+                                        "text": "Death's Disguise",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -2728,7 +2728,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "죽음의 손길 (데쓰 터치)",
+                                                "text": "Death's Touch",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2743,7 +2743,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGreen 죽음의 손길 \n@wsd\n\n@dictSetDeathsTouch\n\n@dictSetDeathsDisguise",
+                                                "tooltipString": "@dictGreen Death's Touch \n@wsd\n\n@dictSetDeathsTouch\n\n@dictSetDeathsDisguise",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2882,7 +2882,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "죽음의 손 (데쓰 핸드)",
+                                                "text": "Death's Hand",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2897,7 +2897,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 죽음의 손 \n@lgl\n\n@dictSetDeathsHand\n\n@dictSetDeathsDisguise",
+                                                "tooltipString": "@dictGreen Death's Hand \n@lgl\n\n@dictSetDeathsHand\n\n@dictSetDeathsDisguise",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3036,7 +3036,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "죽음의 경비 (데쓰 가드)",
+                                                "text": "Death's Guard",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3051,7 +3051,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGreen 죽음의 경비 \n@lbl\n\n@dictSetDeathsGuard\n\n@dictSetDeathsDisguise",
+                                                "tooltipString": "@dictGreen Death's Guard \n@lbl\n\n@dictSetDeathsGuard\n\n@dictSetDeathsDisguise",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3185,7 +3185,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "시곤의 온전한 강철 (사이곤 컴플릿스틸)",
+                                        "text": "Sigon's Complete Steel",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -3218,7 +3218,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "시곤의 챙 (사이곤의 바이저)",
+                                                "text": "Sigon's Visor",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3233,7 +3233,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 시곤의 챙 \n@ghm\n\n@dictSetSigonsVisor\n\n@dictSetSigonsCompleteSteel",
+                                                "tooltipString": "@dictGreen Sigon's Visor \n@ghm\n\n@dictSetSigonsVisor\n\n@dictSetSigonsCompleteSteel",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3372,7 +3372,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "시곤의 안식처 (사이곤의 쉘터)",
+                                                "text": "Sigon's Shelter",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3387,7 +3387,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 시곤의 안식처 \n@gth\n\n@dictSetSigonsShelter\n\n@dictSetSigonsCompleteSteel",
+                                                "tooltipString": "@dictGreen Sigon's Shelter \n@gth\n\n@dictSetSigonsShelter\n\n@dictSetSigonsCompleteSteel",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3526,7 +3526,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "시곤의 보호 (사이곤의 가드)",
+                                                "text": "Sigon's Guard",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3541,7 +3541,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 시곤의 보호 \n@tow\n\n@dictSetSigonsGuard\n\n@dictSetSigonsCompleteSteel",
+                                                "tooltipString": "@dictGreen Sigon's Guard \n@tow\n\n@dictSetSigonsGuard\n\n@dictSetSigonsCompleteSteel",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3680,7 +3680,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "시곤의 전투 장갑 (사이곤의 게이지)",
+                                                "text": "Sigon's Gage",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3695,7 +3695,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 시곤의 전투 장갑 \n@hgl\n\n@dictSetSigonsGage\n\n@dictSetSigonsCompleteSteel",
+                                                "tooltipString": "@dictGreen Sigon's Gage \n@hgl\n\n@dictSetSigonsGage\n\n@dictSetSigonsCompleteSteel",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3834,7 +3834,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "시곤의 싸개 (사이곤의 랩)",
+                                                "text": "Sigon's Wrap",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3849,7 +3849,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGreen 시곤의 싸개 \n@hbl\n\n@dictSetSigonsWrap\n\n@dictSetSigonsCompleteSteel",
+                                                "tooltipString": "@dictGreen Sigon's Wrap \n@hbl\n\n@dictSetSigonsWrap\n\n@dictSetSigonsCompleteSteel",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3988,7 +3988,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "시곤의 나막신 (사이곤의 사보)",
+                                                "text": "Sigon's Sabot",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4003,7 +4003,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 시곤의 나막신 \n@hbt\n\n@dictSetSigonsSabot\n\n@dictSetSigonsCompleteSteel",
+                                                "tooltipString": "@dictGreen Sigon's Sabot \n@hbt\n\n@dictSetSigonsSabot\n\n@dictSetSigonsCompleteSteel",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4137,7 +4137,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "아이젠하트의 무기고 (아이젠하트 아머리)",
+                                        "text": "Isenhart's Armory",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -4170,7 +4170,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "아이젠하트의 뿔 (아이젠하트의 혼즈)",
+                                                "text": "Isenhart's Horns",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4185,7 +4185,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 아이젠하트의 뿔 \n@fhl\n\n@dictSetIsenhartsHorns\n\n@dictSetIsenhartsArmory",
+                                                "tooltipString": "@dictGreen Isenhart's Horns \n@fhl\n\n@dictSetIsenhartsHorns\n\n@dictSetIsenhartsArmory",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4324,7 +4324,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "아이젠하트의 빛 낙인 (아이젠하트의 라이트 브랜드)",
+                                                "text": "Isenhart's Lightbrand",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4339,7 +4339,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 아이젠하트의 빛 낙인 \n@bsd\n\n@dictSetIsenhartsLightbrand\n\n@dictSetIsenhartsArmory",
+                                                "tooltipString": "@dictGreen Isenhart's Lightbrand \n@bsd\n\n@dictSetIsenhartsLightbrand\n\n@dictSetIsenhartsArmory",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4478,7 +4478,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "아이젠하트의 통 (아이젠하트의 케이스)",
+                                                "text": "Isenhart's Case",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4493,7 +4493,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 아이젠하트의 통 \n@brs\n\n@dictSetIsenhartsCase\n\n@dictSetIsenhartsArmory",
+                                                "tooltipString": "@dictGreen Isenhart's Case \n@brs\n\n@dictSetIsenhartsCase\n\n@dictSetIsenhartsArmory",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4632,7 +4632,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "아이젠하트의 회피 (아이젠하트의 패리)",
+                                                "text": "Isenhart's Parry",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4647,7 +4647,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGreen 아이젠하트의 회피 \n@gts\n\n@dictSetIsenhartsParry\n\n@dictSetIsenhartsArmory",
+                                                "tooltipString": "@dictGreen Isenhart's Parry \n@gts\n\n@dictSetIsenhartsParry\n\n@dictSetIsenhartsArmory",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4781,7 +4781,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "시버브의 예복 (시버브 베스트먼트)",
+                                        "text": "Civerb's Vestments",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -4814,7 +4814,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "시버브의 성화 (시버브의 아이콘)",
+                                                "text": "Civerb's Icon",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4829,7 +4829,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGreen 시버브의 성화 \n@amu\n\n@dictSetCiverbsIcon\n\n@dictSetCiverbsVestments",
+                                                "tooltipString": "@dictGreen Civerb's Icon \n@amu\n\n@dictSetCiverbsIcon\n\n@dictSetCiverbsVestments",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4941,7 +4941,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "시버브의 곤봉 (시버브의 커질)",
+                                                "text": "Civerb's Cudgel",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4956,7 +4956,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGreen 시버브의 곤봉 \n@gsc\n\n@dictSetCiverbsCudgel\n\n@dictSetCiverbsVestments",
+                                                "tooltipString": "@dictGreen Civerb's Cudgel \n@gsc\n\n@dictSetCiverbsCudgel\n\n@dictSetCiverbsVestments",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5095,7 +5095,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "시버브의 수호물 (시버브의 워드)",
+                                                "text": "Civerb's Ward",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5110,7 +5110,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 시버브의 수호물 \n@lrg\n\n@dictSetCiverbsWard\n\n@dictSetCiverbsVestments",
+                                                "tooltipString": "@dictGreen Civerb's Ward \n@lrg\n\n@dictSetCiverbsWard\n\n@dictSetCiverbsVestments",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5244,7 +5244,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "카탄의 덫 (캐산 트랩)",
+                                        "text": "Cathan's Traps",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -5277,7 +5277,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "카탄의 얼굴 (캐산의 비지즈)",
+                                                "text": "Cathan's Visage",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5292,7 +5292,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 카탄의 얼굴 \n@msk\n\n@dictSetCathansVisage\n\n@dictSetCathansTraps",
+                                                "tooltipString": "@dictGreen Cathan's Visage \n@msk\n\n@dictSetCathansVisage\n\n@dictSetCathansTraps",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5431,7 +5431,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "카탄의 인장 (캐산의 시질)",
+                                                "text": "Cathan's Sigil",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5446,7 +5446,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGreen 카탄의 인장 \n@amu\n\n@dictSetCathansSigil\n\n@dictSetCathansTraps",
+                                                "tooltipString": "@dictGreen Cathan's Sigil \n@amu\n\n@dictSetCathansSigil\n\n@dictSetCathansTraps",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5558,7 +5558,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "카탄의 지배 (캐산의 룰)",
+                                                "text": "Cathan's Rule",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5573,7 +5573,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGreen 카탄의 지배 \n@bst\n\n@dictSetCathansRule\n\n@dictSetCathansTraps",
+                                                "tooltipString": "@dictGreen Cathan's Rule \n@bst\n\n@dictSetCathansRule\n\n@dictSetCathansTraps",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5712,7 +5712,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "카탄의 그물망 (캐산의 메쉬)",
+                                                "text": "Cathan's Mesh",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5727,7 +5727,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 카탄의 그물망 \n@chn\n\n@dictSetCathansMesh\n\n@dictSetCathansTraps",
+                                                "tooltipString": "@dictGreen Cathan's Mesh \n@chn\n\n@dictSetCathansMesh\n\n@dictSetCathansTraps",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5866,7 +5866,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "카탄의 문장 (캐산의 씨일)",
+                                                "text": "Cathan's Seal",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5881,7 +5881,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGreen 카탄의 문장 \n@rin\n\n@dictSetCathansSeal\n\n@dictSetCathansTraps",
+                                                "tooltipString": "@dictGreen Cathan's Seal \n@rin\n\n@dictSetCathansSeal\n\n@dictSetCathansTraps",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5988,7 +5988,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "천사의 의복 (엔젤릭 레이먼트)",
+                                        "text": "Angelical Raiment",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -6021,7 +6021,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "천사의 날개 (엔젤릭 윙)",
+                                                "text": "Angelic Wings",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -6036,7 +6036,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGreen 천사의 날개 \n@amu\n\n@dictSetAngelicWings\n\n@dictSetAngelicRaiment",
+                                                "tooltipString": "@dictGreen Angelic Wings \n@amu\n\n@dictSetAngelicWings\n\n@dictSetAngelicRaiment",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -6148,7 +6148,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "천사의 낫 (엔젤릭 시클)",
+                                                "text": "Angelic Sickle",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -6163,7 +6163,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGreen 천사의 낫 \n@sbr\n\n@dictSetAngelicSickle\n\n@dictSetAngelicRaiment",
+                                                "tooltipString": "@dictGreen Angelic Sickle \n@sbr\n\n@dictSetAngelicSickle\n\n@dictSetAngelicRaiment",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -6302,7 +6302,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "천사의 어깨걸이 (엔젤릭 맨틀)",
+                                                "text": "Angelic Mantle",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -6317,7 +6317,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 천사의 어깨걸이 \n@rng\n\n@dictSetAngelicMantle\n\n@dictSetAngelicRaiment",
+                                                "tooltipString": "@dictGreen Angelic Mantle \n@rng\n\n@dictSetAngelicMantle\n\n@dictSetAngelicRaiment",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -6456,7 +6456,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "천사의 후광 (엔젤릭 헤일로우)",
+                                                "text": "Angelic Halo",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -6471,7 +6471,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGreen 천사의 후광 \n@rin\n\n@dictSetAngelicHalo\n\n@dictSetAngelicRaiment",
+                                                "tooltipString": "@dictGreen Angelic Halo \n@rin\n\n@dictSetAngelicHalo\n\n@dictSetAngelicRaiment",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -6578,7 +6578,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "비달라의 장치 (비달라 리그)",
+                                        "text": "Vidala's Rig",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -6611,7 +6611,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "비달라의 덫 (비달라의 스네어)",
+                                                "text": "Vidala's Snare",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -6626,7 +6626,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGreen 비달라의 덫 \n@amu\n\n@dictSetVidalasSnare\n\n@dictSetVidalasRig",
+                                                "tooltipString": "@dictGreen Vidala's Snare \n@amu\n\n@dictSetVidalasSnare\n\n@dictSetVidalasRig",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -6738,7 +6738,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "비달라의 미늘 (비달라의 바아브)",
+                                                "text": "Vidala's Barb",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -6753,7 +6753,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGreen 비달라의 미늘 \n@lbb\n\n@dictSetVidalasBarb\n\n@dictSetVidalasRig",
+                                                "tooltipString": "@dictGreen Vidala's Barb \n@lbb\n\n@dictSetVidalasBarb\n\n@dictSetVidalasRig",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -6892,7 +6892,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "비달라의 매복 (비달라의 앰부쉬)",
+                                                "text": "Vidala's Ambush",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -6907,7 +6907,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 비달라의 매복 \n@lea\n\n@dictSetVidalasAmbush\n\n@dictSetVidalasRig",
+                                                "tooltipString": "@dictGreen Vidala's Ambush \n@lea\n\n@dictSetVidalasAmbush\n\n@dictSetVidalasRig",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -7046,7 +7046,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "비달라의 구절 (비달라의 페트락)",
+                                                "text": "Vidala's Fetlock",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -7061,7 +7061,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 비달라의 구절 \n@tbt\n\n@dictSetVidalasFetlock\n\n@dictSetVidalasRig",
+                                                "tooltipString": "@dictGreen Vidala's Fetlock \n@tbt\n\n@dictSetVidalasFetlock\n\n@dictSetVidalasRig",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -7195,7 +7195,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "아르카나의 속임수 (아칸나 트릭스)",
+                                        "text": "Arcanna's Tricks",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -7228,7 +7228,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "아르카나의 머리 (아칸나의 헤드)",
+                                                "text": "Arcanna's Head",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -7243,7 +7243,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 아르카나의 머리 \n@skp\n\n@dictSetArcannasHead\n\n@dictSetArcannasTricks",
+                                                "tooltipString": "@dictGreen Arcanna's Head \n@skp\n\n@dictSetArcannasHead\n\n@dictSetArcannasTricks",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -7382,7 +7382,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "아르카나의 징조 (아칸나의 싸인)",
+                                                "text": "Arcanna's Sign",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -7397,7 +7397,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGreen 아르카나의 징조 \n@amu\n\n@dictSetArcannasSign\n\n@dictSetArcannasTricks",
+                                                "tooltipString": "@dictGreen Arcanna's Sign \n@amu\n\n@dictSetArcannasSign\n\n@dictSetArcannasTricks",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -7509,7 +7509,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "아르카나의 죽음마법봉 (아칸나의 데쓰원드)",
+                                                "text": "Arcanna's Deathwand",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -7524,7 +7524,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGreen 아르카나의 죽음마법봉 \n@wst\n\n@dictSetArcannasDeathwand\n\n@dictSetArcannasTricks",
+                                                "tooltipString": "@dictGreen Arcanna's Deathwand \n@wst\n\n@dictSetArcannasDeathwand\n\n@dictSetArcannasTricks",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -7663,7 +7663,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "아르카나의 살점 (아칸나의 플레쉬)",
+                                                "text": "Arcanna's Flesh",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -7678,7 +7678,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 아르카나의 살점 \n@ltp\n\n@dictSetArcannasFlesh\n\n@dictSetArcannasTricks",
+                                                "tooltipString": "@dictGreen Arcanna's Flesh \n@ltp\n\n@dictSetArcannasFlesh\n\n@dictSetArcannasTricks",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -7812,7 +7812,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "이라타의 장식 (이라사 파이너리)",
+                                        "text": "Iratha's Finery",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -7845,7 +7845,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "이라타의 고리 (이라사의 코일)",
+                                                "text": "Iratha's Coil",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -7860,7 +7860,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 이라타의 고리 \n@crn\n\n@dictSetIrathasCoil\n\n@dictSetIrathasFinery",
+                                                "tooltipString": "@dictGreen Iratha's Coil \n@crn\n\n@dictSetIrathasCoil\n\n@dictSetIrathasFinery",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -7999,7 +7999,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "이라타의 목깃 (이라사의 칼러)",
+                                                "text": "Iratha's Collar",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -8014,7 +8014,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGreen 이라타의 목깃 \n@amu\n\n@dictSetIrathasCollar\n\n@dictSetIrathasFinery",
+                                                "tooltipString": "@dictGreen Iratha's Collar \n@amu\n\n@dictSetIrathasCollar\n\n@dictSetIrathasFinery",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -8126,7 +8126,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "이라타의 소매 장식 (이라사의 커프)",
+                                                "text": "Iratha's Cuff",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -8141,7 +8141,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 이라타의 소매 장식 \n@tgl\n\n@dictSetIrathasCuff\n\n@dictSetIrathasFinery",
+                                                "tooltipString": "@dictGreen Iratha's Cuff \n@tgl\n\n@dictSetIrathasCuff\n\n@dictSetIrathasFinery",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -8280,7 +8280,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "이라타의 노끈 (이라사의 코드)",
+                                                "text": "Iratha's Cord",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -8295,7 +8295,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGreen 이라타의 노끈 \n@tbl\n\n@dictSetIrathasCord\n\n@dictSetIrathasFinery",
+                                                "tooltipString": "@dictGreen Iratha's Cord \n@tbl\n\n@dictSetIrathasCord\n\n@dictSetIrathasFinery",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -8429,7 +8429,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "밀라브레가의 상징 (밀라브레가 리게일리어)",
+                                        "text": "Milabrega's Regalia",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -8462,7 +8462,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "밀라브레가의 머리관 (밀라브레가의 다이어뎀)",
+                                                "text": "Milabrega's Diadem",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -8477,7 +8477,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 밀라브레가의 머리관 \n@crn\n\n@dictSetMilabregasDiadem\n\n@dictSetMilabregasRegalia",
+                                                "tooltipString": "@dictGreen Milabrega's Diadem \n@crn\n\n@dictSetMilabregasDiadem\n\n@dictSetMilabregasRegalia",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -8616,7 +8616,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "밀라브레가의 막대 (밀라브레가의 로드)",
+                                                "text": "Milabrega's Rod",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -8631,7 +8631,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 밀라브레가의 막대 \n@wsp\n\n@dictSetMilabregasRod\n\n@dictSetMilabregasRegalia",
+                                                "tooltipString": "@dictGreen Milabrega's Rod \n@wsp\n\n@dictSetMilabregasRod\n\n@dictSetMilabregasRegalia",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -8770,7 +8770,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "밀라브레가의 장포 (밀라브레가의 로브)",
+                                                "text": "Milabrega's Robe",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -8785,7 +8785,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 밀라브레가의 장포 \n@aar\n\n@dictSetMilabregasRobe\n\n@dictSetMilabregasRegalia",
+                                                "tooltipString": "@dictGreen Milabrega's Robe \n@aar\n\n@dictSetMilabregasRobe\n\n@dictSetMilabregasRegalia",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -8924,7 +8924,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "밀라브레가의 보주 (밀라브레가의 오브)",
+                                                "text": "Milabrega's Orb",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -8939,7 +8939,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 밀라브레가의 보주 \n@kit\n\n@dictSetMilabregasOrb\n\n@dictSetMilabregasRegalia",
+                                                "tooltipString": "@dictGreen Milabrega's Orb \n@kit\n\n@dictSetMilabregasOrb\n\n@dictSetMilabregasRegalia",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -9073,7 +9073,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "탄크레드의 전투 장비 (탄크레드 배틀기어)",
+                                        "text": "Tancred's Battlegear",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -9106,7 +9106,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "탄크레드의 두개골 (탄크레드의 스컬)",
+                                                "text": "Tancred's Skull",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -9121,7 +9121,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 탄크레드의 두개골 \n@bhm\n\n@dictSetTancredsSkull\n\n@dictSetTancredsBattlegear",
+                                                "tooltipString": "@dictGreen Tancred's Skull \n@bhm\n\n@dictSetTancredsSkull\n\n@dictSetTancredsBattlegear",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -9260,7 +9260,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "탄크레드의 기묘 (탄크레드의 와이어드)",
+                                                "text": "Tancred's Weird",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -9275,7 +9275,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGreen 탄크레드의 기묘 \n@amu\n\n@dictSetTancredsWeird\n\n@dictSetTancredsBattlegear",
+                                                "tooltipString": "@dictGreen Tancred's Weird \n@amu\n\n@dictSetTancredsWeird\n\n@dictSetTancredsBattlegear",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -9387,7 +9387,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "탄크레드의 크로우빌",
+                                                "text": "Tancred's Crowbill",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -9402,7 +9402,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 탄크레드의 크로우빌 \n@mpi\n\n@dictSetTancredsCrowbill\n\n@dictSetTancredsBattlegear",
+                                                "tooltipString": "@dictGreen Tancred's Crowbill \n@mpi\n\n@dictSetTancredsCrowbill\n\n@dictSetTancredsBattlegear",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -9541,7 +9541,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "탄크레드의 가시 (탄크레드의 스파인)",
+                                                "text": "Tancred's Spine",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -9556,7 +9556,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 탄크레드의 가시 \n@ful\n\n@dictSetTancredsSpine\n\n@dictSetTancredsBattlegear",
+                                                "tooltipString": "@dictGreen Tancred's Spine \n@ful\n\n@dictSetTancredsSpine\n\n@dictSetTancredsBattlegear",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -9695,7 +9695,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "탄크레드의 구두징 (탄크레드의 헙네일즈)",
+                                                "text": "Tancred's Hobnails",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -9710,7 +9710,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 탄크레드의 구두징 \n@lbt\n\n@dictSetTancredsHobnails\n\n@dictSetTancredsBattlegear",
+                                                "tooltipString": "@dictGreen Tancred's Hobnails \n@lbt\n\n@dictSetTancredsHobnails\n\n@dictSetTancredsBattlegear",
                                                 "pressedFrame": 0
                                             }
                                         },

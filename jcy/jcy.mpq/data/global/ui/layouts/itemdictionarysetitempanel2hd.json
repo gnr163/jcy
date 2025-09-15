@@ -75,7 +75,7 @@
                                             "name": "BaseItemLevelReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictNoticeBlockChance",
+                                                "text": "- @dictNoticeBlockChance",
                                                 "style": "$StyleDictionaryNotice"
                                             }
                                         }
@@ -91,7 +91,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "젖소 왕의 보호구 (카우 킹의 레더)",
+                                        "text": "Cow King's Leathers",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -124,7 +124,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "젖소 왕의 뿔 (카우 킹의 혼스)",
+                                                "text": "Cow King's Horns",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -139,7 +139,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 젖소 왕의 뿔 \n@xap\n\n@dictSetCowKingsHorns\n\n@dictSetCowKingsLeathers",
+                                                "tooltipString": "@dictGreen Cow King's Horns \n@xap\n\n@dictSetCowKingsHorns\n\n@dictSetCowKingsLeathers",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -251,7 +251,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "젖소 왕의 날가죽 (카우 킹의 하이드)",
+                                                "text": "Cow King's Hide",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -266,7 +266,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 젖소 왕의 날가죽 \n@stu\n\n@dictSetCowKingsHide\n\n@dictSetCowKingsLeathers",
+                                                "tooltipString": "@dictGreen Cow King's Hide \n@stu\n\n@dictSetCowKingsHide\n\n@dictSetCowKingsLeathers",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -378,7 +378,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "젖소 왕의 발굽 (카우 킹의 후브)",
+                                                "text": "Cow King's Hoofs",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -393,7 +393,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 젖소 왕의 발굽 \n@vbt\n\n@dictSetCowKingsHooves\n\n@dictSetCowKingsLeathers",
+                                                "tooltipString": "@dictGreen Cow King's Hoofs \n@vbt\n\n@dictSetCowKingsHooves\n\n@dictSetCowKingsLeathers",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -500,7 +500,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "샌더의 어리석음 (샌더의 폴리)",
+                                        "text": "Sander's Folly",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -533,7 +533,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "샌더의 귀감 (샌더의 파라곤)",
+                                                "text": "Sander's Paragon",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -548,7 +548,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 샌더의 귀감 \n@cap\n\n@dictSetSandersParagon\n\n@dictSetSandersFolly",
+                                                "tooltipString": "@dictGreen Sander's Paragon \n@cap\n\n@dictSetSandersParagon\n\n@dictSetSandersFolly",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -687,7 +687,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "샌더의 미신 (샌더의 수퍼스티션)",
+                                                "text": "Sander's Superstition",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -702,7 +702,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGreen 샌더의 미신 \n@bwn\n\n@dictSetSandersSuperstition\n\n@dictSetSandersFolly",
+                                                "tooltipString": "@dictGreen Sander's Superstition \n@bwn\n\n@dictSetSandersSuperstition\n\n@dictSetSandersFolly",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -841,7 +841,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "샌더의 금기 (샌더의 타부)",
+                                                "text": "Sander's Taboo",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -856,7 +856,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 샌더의 금기 \n@vgl\n\n@dictSetSandersTaboo\n\n@dictSetSandersFolly",
+                                                "tooltipString": "@dictGreen Sander's Taboo \n@vgl\n\n@dictSetSandersTaboo\n\n@dictSetSandersFolly",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -995,7 +995,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "샌더의 사석 (샌더의 립랩)",
+                                                "text": "Sander's Riprap",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1010,7 +1010,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 샌더의 사석 \n@vbt\n\n@dictSetSandersRiprap\n\n@dictSetSandersFolly",
+                                                "tooltipString": "@dictGreen Sander's Riprap \n@vbt\n\n@dictSetSandersRiprap\n\n@dictSetSandersFolly",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1144,7 +1144,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "마비나의 전투 찬가 (마비나의 배틀 힘)",
+                                        "text": "M'avina's Battle Hymn",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -1177,7 +1177,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "마비나의 진실의 눈 (마비나의 트루 사이트)",
+                                                "text": "M'avina's True Sight",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1192,7 +1192,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 마비나의 진실의 눈 \n@Diadem\n\n@dictSetMavinasTrueSight\n\n@dictSetMavinasBattleHymn",
+                                                "tooltipString": "@dictGreen M'avina's True Sight \n@Diadem\n\n@dictSetMavinasTrueSight\n\n@dictSetMavinasBattleHymn",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1331,7 +1331,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "마비나의 활 (마비나의 캐스터)",
+                                                "text": "M'avina's Caster",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1346,7 +1346,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGreen 마비나의 활 \n@amc\n\n@dictSetMavinasCaster\n\n@dictSetMavinasBattleHymn",
+                                                "tooltipString": "@dictGreen M'avina's Caster \n@amc\n\n@dictSetMavinasCaster\n\n@dictSetMavinasBattleHymn",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1485,7 +1485,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "마비나의 포옹 (마비나의 엠브레스)",
+                                                "text": "M'avina's Embrace",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1500,7 +1500,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 마비나의 포옹 \n@uld\n\n@dictSetMavinasEmbrace\n\n@dictSetMavinasBattleHymn",
+                                                "tooltipString": "@dictGreen M'avina's Embrace \n@uld\n\n@dictSetMavinasEmbrace\n\n@dictSetMavinasBattleHymn",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1639,7 +1639,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "마비나의 얼음 같은 손길 (마비나의 아이시 클러쳐)",
+                                                "text": "M'avina's Icy Clutch",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1654,7 +1654,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 마비나의 얼음 같은 손길 \n@xtg\n\n@dictSetMavinasIcyClutch\n\n@dictSetMavinasBattleHymn",
+                                                "tooltipString": "@dictGreen M'avina's Icy Clutch \n@xtg\n\n@dictSetMavinasIcyClutch\n\n@dictSetMavinasBattleHymn",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1793,7 +1793,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "마비나의 신조 (마비나의 테너트)",
+                                                "text": "M'avina's Tenet",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1808,7 +1808,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGreen 마비나의 신조 \n@zvb\n\n@dictSetMavinasTenet\n\n@dictSetMavinasBattleHymn",
+                                                "tooltipString": "@dictGreen M'avina's Tenet \n@zvb\n\n@dictSetMavinasTenet\n\n@dictSetMavinasBattleHymn",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1942,7 +1942,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "나탈랴의 혐오 (나탈리아의 오디엄)",
+                                        "text": "Natalya's Odium",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -1975,7 +1975,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "나탈랴의 토템 (나탈리아의 토템)",
+                                                "text": "Natalya's Totem",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1990,7 +1990,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 나탈랴의 토템 \n@xh9\n\n@dictSetNatalyasTotem\n\n@dictSetNatalyasOdium",
+                                                "tooltipString": "@dictGreen Natalya's Totem \n@xh9\n\n@dictSetNatalyasTotem\n\n@dictSetNatalyasOdium",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2129,7 +2129,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "나탈랴의 표식 (나탈리아의 마크)",
+                                                "text": "Natalya's Mark",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2144,7 +2144,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGreen 나탈랴의 표식 \n@7qr\n\n@dictSetNatalyasMark\n\n@dictSetNatalyasOdium",
+                                                "tooltipString": "@dictGreen Natalya's Mark \n@7qr\n\n@dictSetNatalyasMark\n\n@dictSetNatalyasOdium",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2283,7 +2283,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "나탈랴의 그림자 (나탈리아의 쉐도우)",
+                                                "text": "Natalya's Shadow",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2298,7 +2298,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 나탈랴의 그림자 \n@ucl\n\n@dictSetNatalyasShadow\n\n@dictSetNatalyasOdium",
+                                                "tooltipString": "@dictGreen Natalya's Shadow \n@ucl\n\n@dictSetNatalyasShadow\n\n@dictSetNatalyasOdium",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2437,7 +2437,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "나탈랴의 영혼 (나탈리아의 소울)",
+                                                "text": "Natalya's Soul",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2452,7 +2452,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 나탈랴의 영혼 \n@xmb\n\n@dictSetNatalyasSoul\n\n@dictSetNatalyasOdium",
+                                                "tooltipString": "@dictGreen Natalya's Soul \n@xmb\n\n@dictSetNatalyasSoul\n\n@dictSetNatalyasOdium",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2586,7 +2586,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "탈 라샤의 수의 (탈 라샤의 래핑스)",
+                                        "text": "Tal Rasha's Wrappings",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -2619,7 +2619,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "탈 라샤의 호라드림 관모 (탈 라샤의 호라드릭 크레스트)",
+                                                "text": "Tal Rasha's Horadric Crest",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2634,7 +2634,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 탈 라샤의 호라드림 관모 \n@xsk\n\n@dictSetTalRashasHoradricCrest\n\n@dictSetTalRashasWrappings",
+                                                "tooltipString": "@dictGreen Tal Rasha's Horadric Crest \n@xsk\n\n@dictSetTalRashasHoradricCrest\n\n@dictSetTalRashasWrappings",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2773,7 +2773,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "탈 라샤의 선고 (탈 라샤의 어쥬디케이션)",
+                                                "text": "Tal Rasha's Adjudication",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2788,7 +2788,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGreen 탈 라샤의 선고 \n@amu\n\n@dictSetTalRashasAdjudication\n\n@dictSetTalRashasWrappings",
+                                                "tooltipString": "@dictGreen Tal Rasha's Adjudication \n@amu\n\n@dictSetTalRashasAdjudication\n\n@dictSetTalRashasWrappings",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2900,7 +2900,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "탈 라샤의 잠들지 않는 눈 (탈 라샤의 리드리스 아이)",
+                                                "text": "Tal Rasha's Lidless Eye",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2915,7 +2915,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGreen 탈 라샤의 잠들지 않는 눈 \n@oba\n\n@dictSetTalRashasLidlessEye\n\n@dictSetTalRashasWrappings",
+                                                "tooltipString": "@dictGreen Tal Rasha's Lidless Eye \n@oba\n\n@dictSetTalRashasLidlessEye\n\n@dictSetTalRashasWrappings",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3054,7 +3054,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "탈 라샤의 보호 (탈 라샤의 가이언쉽)",
+                                                "text": "Tal Rasha's Guardianship",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3069,7 +3069,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 탈 라샤의 보호 \n@uth\n\n@dictSetTalRashasGuardianship\n\n@dictSetTalRashasWrappings",
+                                                "tooltipString": "@dictGreen Tal Rasha's Guardianship \n@uth\n\n@dictSetTalRashasGuardianship\n\n@dictSetTalRashasWrappings",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3208,7 +3208,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "탈 라샤의 고운 띠 (탈 라샤의 파인-스펀 클로쓰)",
+                                                "text": "Tal Rasha's Fire-Spun Cloth",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3223,7 +3223,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGreen 탈 라샤의 고운 띠 \n@zmb\n\n@dictSetTalRashasFineSpunCloth\n\n@dictSetTalRashasWrappings",
+                                                "tooltipString": "@dictGreen Tal Rasha's Fire-Spun Cloth \n@zmb\n\n@dictSetTalRashasFineSpunCloth\n\n@dictSetTalRashasWrappings",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3357,7 +3357,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "환인의 위엄 (한인의 위엄)",
+                                        "text": "Hwanin's Majesty",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -3390,7 +3390,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "환인의 광채 (한인의 광채)",
+                                                "text": "Hwanin's Splendor",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3405,7 +3405,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 환인의 광채 \n@xrn\n\n@dictSetHwaninsSplendor\n\n@dictSetHwaninsMajesty",
+                                                "tooltipString": "@dictGreen Hwanin's Splendor \n@xrn\n\n@dictSetHwaninsSplendor\n\n@dictSetHwaninsMajesty",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3517,7 +3517,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "환인의 정의 (한인의 정의)",
+                                                "text": "Hwanin's Justice",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3532,7 +3532,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGreen 환인의 정의 \n@9vo\n\n@dictSetHwaninsJustice\n\n@dictSetHwaninsMajesty",
+                                                "tooltipString": "@dictGreen Hwanin's Justice \n@9vo\n\n@dictSetHwaninsJustice\n\n@dictSetHwaninsMajesty",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3644,7 +3644,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "환인의 피난처 (한인의 보호)",
+                                                "text": "Hwanin's Refuge",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3659,7 +3659,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 환인의 피난처 \n@xcl\n\n@dictSetHwaninsRefuge\n\n@dictSetHwaninsMajesty",
+                                                "tooltipString": "@dictGreen Hwanin's Refuge \n@xcl\n\n@dictSetHwaninsRefuge\n\n@dictSetHwaninsMajesty",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3771,7 +3771,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "환인의 축복 (한인의 축복)",
+                                                "text": "Hwanin's Blessing",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3786,7 +3786,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGreen 환인의 축복 \n@mbl\n\n@dictSetHwaninsBlessing\n\n@dictSetHwaninsMajesty",
+                                                "tooltipString": "@dictGreen Hwanin's Blessing \n@mbl\n\n@dictSetHwaninsBlessing\n\n@dictSetHwaninsMajesty",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3893,7 +3893,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "알두르의 감시탑 (알더의 와치타워)",
+                                        "text": "Aldur's Watchtower",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -3926,7 +3926,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "알두르의 냉랭한 눈길 (알더의 스토니 게이즈)",
+                                                "text": "Aldur's Stony Gaze",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3941,7 +3941,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 알두르의 냉랭한 눈길 \n@dr8\n\n@dictSetAldursStonyGaze\n\n@dictSetAldursWatchtower",
+                                                "tooltipString": "@dictGreen Aldur's Stony Gaze \n@dr8\n\n@dictSetAldursStonyGaze\n\n@dictSetAldursWatchtower",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4080,7 +4080,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "알두르의 운율 (알더의 리듬)",
+                                                "text": "Aldur's Rhythm",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4095,7 +4095,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGreen 알두르의 운율 \n@9mt\n\n@dictSetAldursRhythm\n\n@dictSetAldursWatchtower",
+                                                "tooltipString": "@dictGreen Aldur's Rhythm \n@9mt\n\n@dictSetAldursRhythm\n\n@dictSetAldursWatchtower",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4234,7 +4234,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "알두르의 기만 (알더의 디셉션)",
+                                                "text": "Aldur's Deception",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4249,7 +4249,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 알두르의 기만 \n@uul\n\n@dictSetAldursDeception\n\n@dictSetAldursWatchtower",
+                                                "tooltipString": "@dictGreen Aldur's Deception \n@uul\n\n@dictSetAldursDeception\n\n@dictSetAldursWatchtower",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4388,7 +4388,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "알두르의 진보 (알더의 어드벤스)",
+                                                "text": "Aldur's Advance",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4403,7 +4403,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 알두르의 진보 \n@xtb\n\n@dictSetAldursAdvance\n\n@dictSetAldursWatchtower",
+                                                "tooltipString": "@dictGreen Aldur's Advance \n@xtb\n\n@dictSetAldursAdvance\n\n@dictSetAldursWatchtower",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4537,7 +4537,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "트래그울의 화신 (트랑-울의 아바타)",
+                                        "text": "Trang-Oul's Avatar",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -4570,7 +4570,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "트래그울의 허울 (트랑-울의 가이즈)",
+                                                "text": "Trang-Oul's Guise",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4585,7 +4585,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 트래그울의 허울 \n@uh9\n\n@dictSetTrangOulsGuise\n\n@dictSetTrangOulsAvatar",
+                                                "tooltipString": "@dictGreen Trang-Oul's Guise \n@uh9\n\n@dictSetTrangOulsGuise\n\n@dictSetTrangOulsAvatar",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4724,7 +4724,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "트래그울의 비늘 (트랑-울의 스케일스)",
+                                                "text": "Trang-Oul's Scales",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4739,7 +4739,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 트래그울의 비늘 \n@xul\n\n@dictSetTrangOulsScales\n\n@dictSetTrangOulsAvatar",
+                                                "tooltipString": "@dictGreen Trang-Oul's Scales \n@xul\n\n@dictSetTrangOulsScales\n\n@dictSetTrangOulsAvatar",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4878,7 +4878,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "트래그울의 날개 (트랑-울의 윙)",
+                                                "text": "Trang-Oul's Wing",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4893,7 +4893,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 트래그울의 날개 \n@ne9\n\n@dictSetTrangOulsWing\n\n@dictSetTrangOulsAvatar",
+                                                "tooltipString": "@dictGreen Trang-Oul's Wing \n@ne9\n\n@dictSetTrangOulsWing\n\n@dictSetTrangOulsAvatar",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5005,7 +5005,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "트래그울의 발톱 (트랑-울의 클러스)",
+                                                "text": "Trang-Oul's Claws",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5020,7 +5020,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 트래그울의 발톱 \n@xmg\n\n@dictSetTrangOulsClaws\n\n@dictSetTrangOulsAvatar",
+                                                "tooltipString": "@dictGreen Trang-Oul's Claws \n@xmg\n\n@dictSetTrangOulsClaws\n\n@dictSetTrangOulsAvatar",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5159,7 +5159,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "트래그울의 끈 (트랑-울의 거즈)",
+                                                "text": "Trang-Oul's Girth",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5174,7 +5174,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGreen 트래그울의 끈 \n@utc\n\n@dictSetTrangOulsGirth\n\n@dictSetTrangOulsAvatar",
+                                                "tooltipString": "@dictGreen Trang-Oul's Girth \n@utc\n\n@dictSetTrangOulsGirth\n\n@dictSetTrangOulsAvatar",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5308,7 +5308,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "사자비의 대공물 (사자바이의 그랜드 트라이뷰트)",
+                                        "text": "Sazabi's Grand Tribute",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -5341,7 +5341,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "사자비의 정신 보호구 (사자바이의 멘틀 쉬쓰)",
+                                                "text": "Sazabi's Mental Sheath",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5356,7 +5356,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 사자비의 정신 보호구 \n@xhl\n\n@dictSetSazabisMentalSheath\n\n@dictSetSazabisGrandTribute",
+                                                "tooltipString": "@dictGreen Sazabi's Mental Sheath \n@xhl\n\n@dictSetSazabisMentalSheath\n\n@dictSetSazabisGrandTribute",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5495,7 +5495,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "사자비의 코발트 구원자 (사자바이의 코발트 리디머르)",
+                                                "text": "Sazabi's Cobalt Redeemer",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5510,7 +5510,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 사자비의 코발트 구원자 \n@7ls\n\n@dictSetSazabisCobaltRedeemer\n\n@dictSetSazabisGrandTribute",
+                                                "tooltipString": "@dictGreen Sazabi's Cobalt Redeemer \n@7ls\n\n@dictSetSazabisCobaltRedeemer\n\n@dictSetSazabisGrandTribute",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5649,7 +5649,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "사자비의 유령 해방자 (사자바이의 고스트 리버레이터)",
+                                                "text": "Sazabi's Ghost Liberator",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5664,7 +5664,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 사자비의 유령 해방자 \n@upl\n\n@dictSetSazabisGhostLiberator\n\n@dictSetSazabisGrandTribute",
+                                                "tooltipString": "@dictGreen Sazabi's Ghost Liberator \n@upl\n\n@dictSetSazabisGhostLiberator\n\n@dictSetSazabisGrandTribute",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5798,7 +5798,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "불멸왕 (임모틀 킹)",
+                                        "text": "Immortal King",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -5831,7 +5831,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "불멸왕의 의지 (임모틀 킹의 윌)",
+                                                "text": "Immortal King's Will",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5846,7 +5846,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 불멸왕의 의지 \n@ba5\n\n@dictSetImmortalKingsWill\n\n@dictSetImmortalKing",
+                                                "tooltipString": "@dictGreen Immortal King's Will \n@ba5\n\n@dictSetImmortalKingsWill\n\n@dictSetImmortalKing",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5985,7 +5985,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "불멸왕의 파석추 (임모틀 킹의 스톤 크러셔)",
+                                                "text": "Immortal King's Stone Crusher",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -6000,7 +6000,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGreen 불멸왕의 파석추 \n@7m7\n\n@dictSetImmortalKingsStoneCrusher\n\n@dictSetImmortalKing",
+                                                "tooltipString": "@dictGreen Immortal King's Stone Crusher \n@7m7\n\n@dictSetImmortalKingsStoneCrusher\n\n@dictSetImmortalKing",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -6139,7 +6139,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "불멸왕의 영혼집 (임모틀 킹의 소울 케이지)",
+                                                "text": "Immortal King's Soul Cage",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -6154,7 +6154,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 불멸왕의 영혼집 \n@uar\n\n@dictSetImmortalKingsSoulCage\n\n@dictSetImmortalKing",
+                                                "tooltipString": "@dictGreen Immortal King's Soul Cage \n@uar\n\n@dictSetImmortalKingsSoulCage\n\n@dictSetImmortalKing",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -6293,7 +6293,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "불멸왕의 용광로 (임모틀 킹의 포지)",
+                                                "text": "Immortal King's Forge",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -6308,7 +6308,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 불멸왕의 용광로 \n@xhg\n\n@dictSetImmortalKingsForge\n\n@dictSetImmortalKing",
+                                                "tooltipString": "@dictGreen Immortal King's Forge \n@xhg\n\n@dictSetImmortalKingsForge\n\n@dictSetImmortalKing",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -6447,7 +6447,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "불멸왕의 장식띠 (임모틀 킹의 디테일)",
+                                                "text": "Immortal King's Detail",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -6462,7 +6462,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGreen 불멸왕의 장식띠 \n@zhb\n\n@dictSetImmortalKingsDetail\n\n@dictSetImmortalKing",
+                                                "tooltipString": "@dictGreen Immortal King's Detail \n@zhb\n\n@dictSetImmortalKingsDetail\n\n@dictSetImmortalKing",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -6601,7 +6601,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "불멸왕의 기둥 (임모틀 킹의 필라)",
+                                                "text": "Immortal King's Pillar",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -6616,7 +6616,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 불멸왕의 기둥 \n@xhb\n\n@dictSetImmortalKingsPillar\n\n@dictSetImmortalKing",
+                                                "tooltipString": "@dictGreen Immortal King's Pillar \n@xhb\n\n@dictSetImmortalKingsPillar\n\n@dictSetImmortalKing",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -6750,7 +6750,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "사도 (디싸이플)",
+                                        "text": "The Disciple",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -6783,7 +6783,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "구슬 묵주 (텔링 오브 비드)",
+                                                "text": "Telling of Beads",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -6798,7 +6798,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGreen 구슬 묵주 \n@amu\n\n@dictSetTellingofBeads\n\n@dictSetTheDisciple",
+                                                "tooltipString": "@dictGreen Telling of Beads \n@amu\n\n@dictSetTellingofBeads\n\n@dictSetTheDisciple",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -6910,7 +6910,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "어둠의 추종자 (다크 애드히어런트)",
+                                                "text": "Dark Adherent",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -6925,7 +6925,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 어둠의 추종자 \n@uui\n\n@dictSetDarkAdherent\n\n@dictSetTheDisciple",
+                                                "tooltipString": "@dictGreen Dark Adherent \n@uui\n\n@dictSetDarkAdherent\n\n@dictSetTheDisciple",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -7064,7 +7064,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "안수 (레잉 오브 핸즈)",
+                                                "text": "Laying of Hands",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -7079,7 +7079,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 안수 \n@ulg\n\n@dictSetLayingofHands\n\n@dictSetTheDisciple",
+                                                "tooltipString": "@dictGreen Laying of Hands \n@ulg\n\n@dictSetLayingofHands\n\n@dictSetTheDisciple",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -7218,7 +7218,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "신조 (크리덴덤)",
+                                                "text": "Credendum",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -7233,7 +7233,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGreen 신조 \n@umc\n\n@dictSetCredendum\n\n@dictSetTheDisciple",
+                                                "tooltipString": "@dictGreen Credendum \n@umc\n\n@dictSetCredendum\n\n@dictSetTheDisciple",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -7372,7 +7372,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "통과의례 (고대인의 통과의례)",
+                                                "text": "Rite of Passage",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -7387,7 +7387,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 통과의례 \n@xlb\n\n@dictSetRiteofPassage\n\n@dictSetTheDisciple",
+                                                "tooltipString": "@dictGreen Rite of Passage \n@xlb\n\n@dictSetRiteofPassage\n\n@dictSetTheDisciple",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -7521,7 +7521,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "고아의 부름 (오펀의 콜)",
+                                        "text": "Orphan's Call",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -7554,7 +7554,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "기욤의 얼굴 (길리엄의 페이스)",
+                                                "text": "Guillaume's Face",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -7569,7 +7569,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 기욤의 얼굴 \n@xhm\n\n@dictSetGuillaumesFace\n\n@dictSetOrphansCall",
+                                                "tooltipString": "@dictGreen Guillaume's Face \n@xhm\n\n@dictSetGuillaumesFace\n\n@dictSetOrphansCall",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -7708,7 +7708,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "위트스탄의 보호구 (위트스탄의 가드)",
+                                                "text": "Wihtstan's Guard",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -7723,7 +7723,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 위트스탄의 보호구 \n@xml\n\n@dictSetWhitstansGuard\n\n@dictSetOrphansCall",
+                                                "tooltipString": "@dictGreen Wihtstan's Guard \n@xml\n\n@dictSetWhitstansGuard\n\n@dictSetOrphansCall",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -7862,7 +7862,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "마그누스의 가죽 (메이그너스의 스킨)",
+                                                "text": "Magnus' Skin",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -7877,7 +7877,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 마그누스의 가죽 \n@xvg\n\n@dictSetMagnusSkin\n\n@dictSetOrphansCall",
+                                                "tooltipString": "@dictGreen Magnus' Skin \n@xvg\n\n@dictSetMagnusSkin\n\n@dictSetOrphansCall",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -8016,7 +8016,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "빌헬름의 자부심 (빌헬름의 프라이드)",
+                                                "text": "Wilhelm's Pride",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -8031,7 +8031,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGreen 빌헬름의 자부심 \n@ztb\n\n@dictSetWilhelmsPride\n\n@dictSetOrphansCall",
+                                                "tooltipString": "@dictGreen Wilhelm's Pride \n@ztb\n\n@dictSetWilhelmsPride\n\n@dictSetOrphansCall",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -8165,7 +8165,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "나즈의 고대 흔적 (나즈 앤션트 베스티지)",
+                                        "text": "Naj's Ancient Vestige",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -8198,7 +8198,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "나즈의 띠관 (나즈 서클리트)",
+                                                "text": "Naj's Circlet",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -8213,7 +8213,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 나즈의 띠관 \n@circlet\n\n@dictSetNajsCirclet\n\n@dictSetNajsAncientVestige",
+                                                "tooltipString": "@dictGreen Naj's Circlet \n@circlet\n\n@dictSetNajsCirclet\n\n@dictSetNajsAncientVestige",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -8325,7 +8325,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "나즈의 수수께끼 (나즈 퍼즐)",
+                                                "text": "Naj's Puzzler",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -8340,7 +8340,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGreen 나즈의 수수께끼 \n@6cs\n\n@dictSetNajsPuzzler\n\n@dictSetNajsAncientVestige",
+                                                "tooltipString": "@dictGreen Naj's Puzzler \n@6cs\n\n@dictSetNajsPuzzler\n\n@dictSetNajsAncientVestige",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -8452,7 +8452,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "나즈의 경판갑 (나즈 라이트 플레이트)",
+                                                "text": "Naj's Light Plate",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -8467,7 +8467,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 나즈의 경판갑 \n@ult\n\n@dictSetNajsLightPlate\n\n@dictSetNajsAncientVestige",
+                                                "tooltipString": "@dictGreen Naj's Light Plate \n@ult\n\n@dictSetNajsLightPlate\n\n@dictSetNajsAncientVestige",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -8574,7 +8574,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "그리스월드의 유산 (그리스월드의 레거시)",
+                                        "text": "Griswold's Legacy",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -8607,7 +8607,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "그리스월드의 용맹 (그리스월드의 밸러)",
+                                                "text": "Griswold's Valor",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -8622,7 +8622,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 그리스월드의 용맹 \n@urn\n\n@dictSetGriswoldsValor\n\n@dictSetGriswoldsLegacy",
+                                                "tooltipString": "@dictGreen Griswold's Valor \n@urn\n\n@dictSetGriswoldsValor\n\n@dictSetGriswoldsLegacy",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -8761,7 +8761,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "그리스월드의 구원 (그리스월드의 리뎀프션)",
+                                                "text": "Griswolds's Redemption",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -8776,7 +8776,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 그리스월드의 구원 \n@7ws\n\n@dictSetGriswoldsRedemption\n\n@dictSetGriswoldsLegacy",
+                                                "tooltipString": "@dictGreen Griswolds's Redemption \n@7ws\n\n@dictSetGriswoldsRedemption\n\n@dictSetGriswoldsLegacy",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -8915,7 +8915,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "그리스월드의 심장 (그리스월드의 하트)",
+                                                "text": "Griswold's Heart",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -8930,7 +8930,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 그리스월드의 심장 \n@xar\n\n@dictSetGriswoldsHeart\n\n@dictSetGriswoldsLegacy",
+                                                "tooltipString": "@dictGreen Griswold's Heart \n@xar\n\n@dictSetGriswoldsHeart\n\n@dictSetGriswoldsLegacy",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -9069,7 +9069,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "그리스월드의 명예 (그리스월드의 아너)",
+                                                "text": "Griswold's Honor",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -9084,7 +9084,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 그리스월드의 명예 \n@paf\n\n@dictSetGriswoldsHonor\n\n@dictSetGriswoldsLegacy",
+                                                "tooltipString": "@dictGreen Griswold's Honor \n@paf\n\n@dictSetGriswoldsHonor\n\n@dictSetGriswoldsLegacy",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -9191,7 +9191,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "불카토스의 자손 (발카서스의 칠드런)",
+                                        "text": "Bul-Kathos' Children",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -9224,7 +9224,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "불카토스의 부족 수호자 (발카서스의 트라이벌 가디안)",
+                                                "text": "Bul-Kathos' Tribal Guardian",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -9239,7 +9239,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGreen 불카토스의 부족 수호자 \n@7wd\n\n@dictSetBulKathosTribalGuardian\n\n@dictSetBulKathosChildren",
+                                                "tooltipString": "@dictGreen Bul-Kathos' Tribal Guardian \n@7wd\n\n@dictSetBulKathosTribalGuardian\n\n@dictSetBulKathosChildren",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -9378,7 +9378,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "불카토스의 신성한 임무 (발카서스의 세이크리드 차지)",
+                                                "text": "Bul-Kathos' Sacred Charge",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -9393,7 +9393,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGreen 불카토스의 신성한 임무 \n@7gd\n\n@dictSetBulKathosSacredCharge\n\n@dictSetBulKathosChildren",
+                                                "tooltipString": "@dictGreen Bul-Kathos' Sacred Charge \n@7gd\n\n@dictSetBulKathosSacredCharge\n\n@dictSetBulKathosChildren",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -9527,7 +9527,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "천상의 동포 (천인의 형제)",
+                                        "text": "Heaven's Brethren",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -9560,7 +9560,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "온달의 사랑",
+                                                "text": "Ondal's Almighty",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -9575,7 +9575,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen 온달의 사랑 \n@uhm\n\n@dictSetOndalsAlmighty\n\n@dictSetHeavensBrethren",
+                                                "tooltipString": "@dictGreen Ondal's Almighty \n@uhm\n\n@dictSetOndalsAlmighty\n\n@dictSetHeavensBrethren",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -9687,7 +9687,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "단군의 가르침",
+                                                "text": "Dangoon's Teaching",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -9702,7 +9702,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGreen 단군의 가르침 \n@7ma\n\n@dictSetDangoonsTeaching\n\n@dictSetHeavensBrethren",
+                                                "tooltipString": "@dictGreen Dangoon's Teaching \n@7ma\n\n@dictSetDangoonsTeaching\n\n@dictSetHeavensBrethren",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -9814,7 +9814,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "해모수의 견고 (해모수의 강직)",
+                                                "text": "Haemosu's Adament",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -9829,7 +9829,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen 해모수의 견고 \n@xrs\n\n@dictSetHaemosusAdamant\n\n@dictSetHeavensBrethren",
+                                                "tooltipString": "@dictGreen Haemosu's Adament \n@xrs\n\n@dictSetHaemosusAdamant\n\n@dictSetHeavensBrethren",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -9941,7 +9941,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "태백의 영예 (태백의 영광)",
+                                                "text": "Heaven's Taebaek",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -9956,7 +9956,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGreen 태백의 영예 \n@war\n\n@dictSetTaebaeksGlory\n\n@dictSetHeavensBrethren",
+                                                "tooltipString": "@dictGreen Heaven's Taebaek \n@war\n\n@dictSetTaebaeksGlory\n\n@dictSetHeavensBrethren",
                                                 "pressedFrame": 0
                                             }
                                         },

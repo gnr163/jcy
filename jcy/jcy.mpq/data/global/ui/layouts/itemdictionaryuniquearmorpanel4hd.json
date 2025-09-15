@@ -66,7 +66,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "장갑",
+                                        "text": "Gloves",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -99,7 +99,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "브록의 손 (더 헨드 오브 브록)",
+                                                "text": "The Hand of Broc",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -114,7 +114,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 브록의 손 \n@lgl\n\n@dictBlue 적중당 마나 3% 훔침\n적중당 생명력 3% 훔침\n방어력 +10~20% 증가 @dictVariable\n@dictBlue 방어력 +10\n마나 +20\n독 저항 +10%",
+                                                "tooltipString": "@dictGold The Hand of Broc \n@lgl\n\n@dictBlue 3% Mana stolen per hit\n3% Life stolen per hit\n+10-20% Enhanced Defense @dictVariable\n@dictBlue +10 Defense\n+20 to Mana\nPoison Resist +10%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -263,7 +263,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "피주먹 (블러드피스트)",
+                                                "text": "Bloodfist",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -278,7 +278,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 피주먹 \n@vgl\n\n@dictBlue 공격 속도 +10%\n타격 회복 속도 +30%\n최소 피해 +5\n방어력 +10~20% 증가 @dictVariable\n@dictBlue 방어력 +10\n생명력 +40",
+                                                "tooltipString": "@dictGold Bloodfist \n@vgl\n\n@dictBlue +10% Increased Attack Speed\n+30% Faster Hit Recovery\n+5 to Minimum Damage\n+10-20% Enhanced Defense @dictVariable\n@dictBlue +10 Defense\n+40 to Life",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -427,7 +427,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "행운의 장갑 (챈스 가드)",
+                                                "text": "Chance Guards",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -442,7 +442,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 행운의 장갑 \n@mgl\n\n@dictBlue 명중률 +25\n방어력 +20~30% 증가 @dictVariable\n@dictBlue 방어력 +15\n괴물에게서 얻는 금화 200% 증가\n마법 아이템 발견 확률 25~40% 증가 @dictVariable\n@dictBlue 시야 +2",
+                                                "tooltipString": "@dictGold Chance Guards \n@mgl\n\n@dictBlue +25 to Attack Rating\n+20-30% Enhanced Defense @dictVariable\n@dictBlue +15 Defense\n200% Extra Gold from Monsters\n25-40% Better Chance of Getting Magic Items @dictVariable\n@dictBlue +2 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -591,7 +591,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "마수 (메이지피스트)",
+                                                "text": "Magefist",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -606,7 +606,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 마수 \n@tgl\n\n@dictBlue 화염 기술 +1\n시전 속도 +20%\n화염 피해 1 - 6 추가\n방어력 +20~30% 증가 @dictVariable\n@dictBlue 방어력 +10\n마나 재생 25%",
+                                                "tooltipString": "@dictGold Magefist \n@tgl\n\n@dictBlue +1 to Fire Skills\n+20% Faster Cast Rate\nAdds 1-6 fire damage\n+20-30% Enhanced Defense @dictVariable\n@dictBlue +10 Defense\nRegenerate Mana 25%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -755,7 +755,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "서리불꽃 (프로스트번)",
+                                                "text": "Frostburn",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -770,7 +770,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 서리불꽃 \n@hgl\n\n@dictBlue 피해 +5% 증가\n냉기 피해 1 - 6 추가\n방어력 +10~20% 증가 @dictVariable\n@dictBlue 방어력 +30\n최대 마나 40% 증가",
+                                                "tooltipString": "@dictGold Frostburn \n@hgl\n\n@dictBlue +5% Enhanced Damage\nAdds 1-6 cold damage\n+10-20% Enhanced Defense @dictVariable\n@dictBlue +30 Defense\nIncrease Maximum Mana 40%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -919,7 +919,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "맹독 손아귀 (베넘 그립)",
+                                                "text": "Venom Grip",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -934,7 +934,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 맹독 손아귀 \n@xlg\n\n@dictBlue 독 피해 +60 (4초에 걸쳐)\n적중당 생명력 5% 훔침\n강타 확률 +5%\n방어력 +130~160% 증가 @dictVariable\n@dictBlue 방어력 +15~25 @dictVariable\n@dictBlue 최대 독 저항 +5%\n독 저항 +30%",
+                                                "tooltipString": "@dictGold Venom Grip \n@xlg\n\n@dictBlue +60 poison damage over 4 seconds\n5% Life stolen per hit\n+5% Chance of Crushing Blow\n+130-160% Enhanced Defense @dictVariable\n@dictBlue +15-25 Defense @dictVariable\n@dictBlue +5% to Maximum Poison Resist\nPoison Resist +30%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1056,7 +1056,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "무덤손바닥 (그레이브팜)",
+                                                "text": "Gravepalm",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1071,7 +1071,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 무덤손바닥 \n@xvg\n\n@dictBlue 언데드에게 주는 피해 +100~200% @dictVariable\n@dictBlue 언데드에 대한 명중률 +100~200 @dictVariable\n@dictBlue 방어력 +140~180% 증가 @dictVariable\n@dictBlue 힘 +10\n마력 +10",
+                                                "tooltipString": "@dictGold Gravepalm \n@xvg\n\n@dictBlue +100-200% Damage to Undead @dictVariable\n@dictBlue +100-200 to Attack Rating against Undead @dictVariable\n@dictBlue +140-180% Enhanced Defense @dictVariable\n@dictBlue +10 to Strength\n+10 to Energy",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1193,7 +1193,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "구울 가죽 (구울하이드)",
+                                                "text": "Ghoulhide",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1208,7 +1208,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 구울 가죽 \n@xmg\n\n@dictBlue 언데드에게 주는 피해 +2~198% (캐릭터 레벨에 비례)\n언데드에 대한 명중률 +8~792 (캐릭터 레벨에 비례)\n적중당 마나 4~5% 훔침 @dictVariable\n@dictBlue 방어력 +150~190% 증가 @dictVariable\n@dictBlue 생명력 +20",
+                                                "tooltipString": "@dictGold Ghoulhide \n@xmg\n\n@dictBlue +2-198% Damage to Undead (Based on Character Level)\n+8-792 to Attack Rating against Undead (Based on Character Level)\n4-5% Mana stolen per hit @dictVariable\n@dictBlue +150-190% Enhanced Defense @dictVariable\n@dictBlue +20 to Life",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1330,7 +1330,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "용암 불똥 (라바 가우트)",
+                                                "text": "Lava Gout",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1345,7 +1345,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 용암 불똥 \n@xtg\n\n@dictBlue 타격 시 2% 확률로 10 레벨 마법부여 시전\n공격 속도 +20%\n화염 피해 13 - 46 추가\n방어력 +150~200% 증가 @dictVariable\n@dictBlue 화염 저항 +24%\n빙결 지속시간 절반으로 감소",
+                                                "tooltipString": "@dictGold Lava Gout \n@xtg\n\n@dictBlue 2% Chance to cast level 10 Enchant on striking\n+20% Increased Attack Speed\nAdds 13-46 fire damage\n+150-200% Enhanced Defense @dictVariable\n@dictBlue Fire Resist +24%\nHalf Freeze Duration",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1467,7 +1467,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "지옥어귀 (헬마우쓰)",
+                                                "text": "Hellmouth",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1482,7 +1482,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 지옥어귀 \n@xhg\n\n@dictBlue 타격 시 4% 확률로 12 레벨 화염폭풍 시전\n타격 시 2% 확률로 4 레벨 운석 낙하 시전\n화염 피해 15 - 72 추가\n방어력 +150~200% 증가 @dictVariable\n@dictBlue 화염 흡수 +15",
+                                                "tooltipString": "@dictGold Hellmouth \n@xhg\n\n@dictBlue 4% Chance to cast level 12 Firestorm on striking\n2% Chance to cast level 4 Meteor on striking\nAdds 15-72 fire damage\n+150-200% Enhanced Defense @dictVariable\n@dictBlue +15 Fire Absorb",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1604,7 +1604,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "드라쿨의 손아귀 (드라큘의 그래스프)",
+                                                "text": "Dracul's Grasp",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1619,7 +1619,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 드라쿨의 손아귀 \n@uvg\n\n@dictBlue 타격 시 5% 확률로 10 레벨 생명력 추출 시전\n적중당 생명력 7~10% 훔침 @dictVariable\n@dictBlue 상처 악화 확률 +25%\n방어력 +90~120% 증가 @dictVariable\n@dictBlue 힘 +10~15 @dictVariable\n@dictBlue 적 처치 시 생명력 +5~10 @dictVariable",
+                                                "tooltipString": "@dictGold Dracul's Grasp \n@uvg\n\n@dictBlue 5% Chance to cast level 10 Life Tap on striking\n7-10% Life stolen per hit @dictVariable\n@dictBlue +25% Chance of Open Wounds\n+90-120% Enhanced Defense @dictVariable\n@dictBlue +10-15 to Strength @dictVariable\n@dictBlue +5-10 Life after each Kill @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1768,7 +1768,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "영혼 흡수자 (소울 드레이너)",
+                                                "text": "Soul Drainer",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1783,7 +1783,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 영혼 흡수자 \n@umg\n\n@dictBlue 타격 시 8% 확률로 3 레벨 약화 시전\n적중당 마나 4~7% 훔침 @dictVariable\n@dictBlue 적중당 생명력 4~7% 훔침 @dictVariable\n@dictBlue 적중당 괴물 방어력 -50 감소\n방어력 +90~120% 증가 @dictVariable",
+                                                "tooltipString": "@dictGold Soul Drainer \n@umg\n\n@dictBlue 8% Chance to cast level 3 Weaken on striking\n4-7% Mana stolen per hit @dictVariable\n@dictBlue 4-7% Life stolen per hit @dictVariable\n@dictBlue -50 to Monster Defense Per Hit\n+90-120% Enhanced Defense @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1932,7 +1932,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "강철찢개 (스틸렌드)",
+                                                "text": "Steelrend",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1947,7 +1947,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 강철찢개 \n@uhg\n\n@dictBlue 피해 +30~60% 증가 @dictVariable\n@dictBlue 강타 확률 +10%\n방어력 +170~210 @dictVariable\n@dictBlue 힘 +15~20 @dictVariable",
+                                                "tooltipString": "@dictGold Steelrend \n@uhg\n\n@dictBlue +30-60% Enhanced Damage @dictVariable\n@dictBlue +10% Chance of Crushing Blow\n+170-210 Defense @dictVariable\n@dictBlue +15-20 to Strength @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },

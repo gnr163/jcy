@@ -1,6 +1,6 @@
 {
     "type": "VideoOptionsPanel",
-    "name": "ItemDictionaryCubeSocketPanel",
+    "name": "ItemDictionaryCubePanel2",
     "fields": {
         "priority": 9003,
         "rect": "$OptionsPanelRect",
@@ -107,7 +107,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "홈 생성",
+                                        "text": "Add Sockets",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -140,7 +140,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "일반 갑옷\n@r07L + @r10L\n최상급 토파즈",
+                                                "text": "Normal Armor\n@r07L + @r10L\nPerfect Topaz",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -161,7 +161,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  랜덤한 수의 홈 생성",
+                                                "text": "->  Add Random Sockets",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -190,7 +190,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "일반 무기\n@r08L + @r11L\n최상급 자수정",
+                                                "text": "Normal Weapon\n@r08L + @r11L\nPerfect Amethyst",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -211,7 +211,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  랜덤한 수의 홈 생성",
+                                                "text": "->  Add Random Sockets",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -240,7 +240,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "일반 투구\n@r08L + @r10L\n최상급 사파이어",
+                                                "text": "Normal Helm\n@r08L + @r10L\nPerfect Sapphire",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -261,7 +261,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  랜덤한 수의 홈 생성",
+                                                "text": "->  Add Random Sockets",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -290,7 +290,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "일반 방패\n@r07L + @r11L\n최상급 루비",
+                                                "text": "Normal Shield\n@r07L + @r11L\nPerfect Ruby",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -311,7 +311,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  랜덤한 수의 홈 생성",
+                                                "text": "->  Add Random Sockets",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -340,7 +340,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "희귀 아이템\n최상급 해골 × 3\n요르단의 반지",
+                                                "text": "Rare Item\nPerfect Skull × 3\nStone of Jordan",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -361,7 +361,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  홈 1개 생성",
+                                                "text": "->  Add 1 Socket",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -385,7 +385,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "홈 아이템 제거",
+                                        "text": "Remove Socketed Items",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -418,7 +418,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "홈을 사용한 아이템\n@r15L 룬\n마을 차원문의 두루마리",
+                                                "text": "Any Socketed Item\n@r15L Rune\nScroll of Town Portal",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -439,7 +439,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  홈에 사용된 아이템 제거",
+                                                "text": "->  Remove all items from sockets",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }

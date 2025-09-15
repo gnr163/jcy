@@ -66,7 +66,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "갑옷",
+                                        "text": "Armors",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -99,7 +99,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "회색 형체 (글레이폼)",
+                                                "text": "Greyform",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -114,7 +114,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 회색 형체 \n@qui\n\n@dictBlue 적중당 생명력 5% 훔침\n방어력 +20\n민첩 +10\n냉기 저항 +20%\n화염 저항 +20%\n마법 피해 3 감소",
+                                                "tooltipString": "@dictGold Greyform \n@qui\n\n@dictBlue 5% Life stolen per hit\n+20 Defense\n+10 to Dexterity\nCold Resist +20%\nFire Resist +20%\nMagic Damage Reduced by 3",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -263,7 +263,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "점멸박쥐의 형상 (블링크뱃츠 폼)",
+                                                "text": "Blinkbat's Form",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -278,7 +278,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 점멸박쥐의 형상 \n@lea\n\n@dictBlue 달리기/걷기 속도 +10%\n타격 회복 속도 +40%\n화염 피해 3 - 6 추가\n방어력 +25\n원거리 공격 방어력 +50",
+                                                "tooltipString": "@dictGold Blinkbat's Form \n@lea\n\n@dictBlue +10% Faster Run/Walk\n+40% Faster Hit Recovery\nAdds 3-6 fire damage\n+25 Defense\n+50 Defense vs. Missile",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -427,7 +427,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "백인대장 (더 센츄리언)",
+                                                "text": "The Centurion",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -442,7 +442,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 백인대장 \n@hla\n\n@dictBlue 명중률 +50\n방어력 +30\n생명력 +15\n생명력 회복 +5\n마나 +15\n최대 지구력 +15\n지구력 고갈 속도 25% 감소\n피해 2 감소",
+                                                "tooltipString": "@dictGold The Centurion \n@hla\n\n@dictBlue +50 to Attack Rating\n+30 Defense\n+15 to Life\nReflensh Life +5\n+15 to Mana\n+15 Maximum Stamina\n25% Slower Stamina Drain\nDamage Reduced by 2",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -591,7 +591,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "뒤틀린 단말마 (트윗치쓰로)",
+                                                "text": "Twitchthroe",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -606,7 +606,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 뒤틀린 단말마 \n@stu\n\n@dictBlue 공격 속도 +20%\n타격 회복 속도 +20%\n막기 확률 25% 증가\n방어력 +25\n힘 +10\n민첩 +10",
+                                                "tooltipString": "@dictGold Twitchthroe \n@stu\n\n@dictBlue +20% Increased Attack Speed\n+20% Faster Hit Recovery\n25% Increased Chance of Blocking\n+25 Defense\n+10 to Strength\n+10 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -755,7 +755,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "어둠빛 (다크글로우)",
+                                                "text": "Darkglow",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -770,7 +770,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 어둠빛 \n@rng\n\n@dictBlue 명중률 +20\n방어력 +70~100% 증가 @dictVariable\n@dictBlue 근접 공격 방어력 +50\n최대 독 저항 +5%\n최대 냉기 저항 +5%\n최대 번개 저항 +5%\n최대 화염 저항 +5%\n모든 저항 +10\n시야 +3",
+                                                "tooltipString": "@dictGold Darkglow \n@rng\n\n@dictBlue +20 to Attack Rating\n+70-100% Enhanced Defense @dictVariable\n@dictBlue +50 Defense vs. Melee\n+5% to Maximum Poison Resist\n+5% to Maximum Cold Resist\n+5% to Maximum Lightning Resist\n+5% to Maximum Fire Resist\nAll Resistances +10\n+3 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -919,7 +919,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "매 사슬갑옷 (호크메일)",
+                                                "text": "Hawkmail",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -934,7 +934,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 매 사슬갑옷 \n@scl\n\n@dictBlue 달리기/걷기 속도 +10%\n방어력 +80~100% 증가 @dictVariable\n@dictBlue 최대 냉기 저항 +15%\n냉기 저항 +15%\n빙결되지 않음",
+                                                "tooltipString": "@dictGold Hawkmail \n@scl\n\n@dictBlue +10% Faster Run/Walk\n+80-100% Enhanced Defense @dictVariable\n@dictBlue +15% to Maximum Cold Resist\nCold Resist +15%\nCannot Be Frozen",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1083,7 +1083,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "불꽃 튀는 사슬 갑옷 (스파킹 메일)",
+                                                "text": "Sparking Mail",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1098,7 +1098,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 불꽃 튀는 사슬 갑옷 \n@chn\n\n@dictBlue 번개 피해 1 - 20 추가\n방어력 +75~85% 증가 @dictVariable\n@dictBlue 번개 저항 +30%\n공격자가 번개 피해를 10~14 받음 @dictVariable",
+                                                "tooltipString": "@dictGold Sparking Mail \n@chn\n\n@dictBlue Adds 1-20 lightning damage\n+75-85% Enhanced Defense @dictVariable\n@dictBlue Lightning Resist +30%\nAttacker Takes Lightning Damage of 10-14 @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1247,7 +1247,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "맹독 호신부 (베넘 워드)",
+                                                "text": "Venom Ward",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1262,7 +1262,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 맹독 호신부 \n@brs\n\n@dictBlue 방어력 +60~100% 증가 @dictVariable\n@dictBlue 최대 독 저항 +15%\n독 저항 +90%\n독 지속시간 50% 감소\n시야 +2",
+                                                "tooltipString": "@dictGold Venom Ward \n@brs\n\n@dictBlue +60-100% Enhanced Defense @dictVariable\n@dictBlue +15% to Maximum Poison Resist\nPoison Resist +90%\nPoison Length Reduced by 50%\n+2 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1411,7 +1411,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "얼음빛 (아이스블링크)",
+                                                "text": "Iceblink",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1426,7 +1426,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 얼음빛 \n@spl\n\n@dictBlue 대상 빙결\n방어력 +70~80% 증가 @dictVariable\n@dictBlue 냉기 저항 +30%\n마법 피해 1 감소\n시야 +4",
+                                                "tooltipString": "@dictGold Iceblink \n@spl\n\n@dictBlue Freezes Target\n+70-80% Enhanced Defense @dictVariable\n@dictBlue Cold Resist +30%\nMagic Damage Reduced by 1\n+4 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1575,7 +1575,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "뼈살점 (본플레쉬)",
+                                                "text": "Boneflesh",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1590,7 +1590,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 뼈살점 \n@plt\n\n@dictBlue 명중률 +35\n적중당 생명력 5% 훔침\n상처 악화 확률 +25%\n방어력 +100~120% 증가 @dictVariable",
+                                                "tooltipString": "@dictGold Boneflesh \n@plt\n\n@dictBlue +35 to Attack Rating\n5% Life stolen per hit\n+25% Chance of Open Wounds\n+100-120% Enhanced Defense @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1739,7 +1739,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "바위털가죽 (락플리스)",
+                                                "text": "Rockfleece",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1754,7 +1754,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 바위털가죽 \n@fld\n\n@dictBlue 방어력 +100~130% 증가 @dictVariable\n@dictBlue 힘 +5\n받는 물리 피해 10% 감소\n피해 5 감소\n착용 조건 -10%",
+                                                "tooltipString": "@dictGold Rockfleece \n@fld\n\n@dictBlue +100-130% Enhanced Defense @dictVariable\n@dictBlue +5 to Strength\nPhysical Damage Received Reduced by 10%\nDamage Reduced by 5\nRequirements -10%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1903,7 +1903,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "성가신 철창 (래틀케이지)",
+                                                "text": "Rattlecage",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1918,7 +1918,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 성가신 철창 \n@gth\n\n@dictBlue 명중률 +45\n강타 확률 +25%\n적중 시 괴물 도주 +40%\n방어력 +200",
+                                                "tooltipString": "@dictGold Rattlecage \n@gth\n\n@dictBlue +45 to Attack Rating\n+25% Chance of Crushing Blow\nHit Causes Monster to Flee +40%\n+200 Defense",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2067,7 +2067,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "천상의 의복 (헤븐리 가브)",
+                                                "text": "Heavenly Garb",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2082,7 +2082,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 천상의 의복 \n@ltp\n\n@dictBlue 언데드에게 주는 피해 +50%\n언데드에 대한 명중률 +100\n방어력 +100% 증가\n마력 +15\n마나 재생 25%\n모든 저항 +10",
+                                                "tooltipString": "@dictGold Heavenly Garb \n@ltp\n\n@dictBlue +50% Damage to Undead\n+100 to Attack Rating against Undead\n+100% Enhanced Defense\n+15 to Energy\nRegenerate Mana 25%\nAll Resistances +10",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2231,7 +2231,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "황금 가죽 (골드스킨)",
+                                                "text": "Goldskin",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2246,7 +2246,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 황금 가죽 \n@ful\n\n@dictBlue 방어력 +120~150% 증가 @dictVariable\n@dictBlue 모든 저항 +35\n공격자가 피해를 10 받음\n괴물에게서 얻는 금화 100% 증가\n시야 +2",
+                                                "tooltipString": "@dictGold Goldskin \n@ful\n\n@dictBlue +120-150% Enhanced Defense @dictVariable\n@dictBlue All Resistances +35\nAttacker Takes Damage of 10\n100% Extra Gold from Monsters\n+2 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2368,7 +2368,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "승자의 비단 (실크 오브 빅터)",
+                                                "text": "Silks of the Victor",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2383,7 +2383,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 승자의 비단 \n@aar\n\n@dictBlue 모든 기술 +1\n적중당 마나 5% 훔침\n방어력 +100~120% 증가 @dictVariable\n@dictBlue 시야 +2",
+                                                "tooltipString": "@dictGold Silks of the Victor \n@aar\n\n@dictBlue +1 to All Skills\n5% Mana stolen per hit\n+100-120% Enhanced Defense @dictVariable\n@dictBlue +2 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2505,7 +2505,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "혼령 장막 (스피리트 슈라우드)",
+                                                "text": "The Spirit Shroud",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2520,7 +2520,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 혼령 장막 \n@xui\n\n@dictBlue 모든 기술 +1\n방어력 +150% 증가\n생명력 회복 +10\n마법 피해 7~11 감소 @dictVariable\n@dictBlue 빙결되지 않음",
+                                                "tooltipString": "@dictGold The Spirit Shroud \n@xui\n\n@dictBlue +1 to All Skills\n+150% Enhanced Defense\nReflensh Life +10\nMagic Damage Reduced by 7-11 @dictVariable\n@dictBlue Cannot Be Frozen",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2642,7 +2642,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "독사마술사의 가죽 (스킨 오브 바이퍼마이자이)",
+                                                "text": "Skin of the Vipermagi",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2657,7 +2657,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 독사마술사의 가죽 \n@xea\n\n@dictBlue 모든 기술 +1\n시전 속도 +30%\n방어력 +120% 증가\n모든 저항 +20~35 @dictVariable\n@dictBlue 마법 피해 9~13 감소 @dictVariable",
+                                                "tooltipString": "@dictGold Skin of the Vipermagi \n@xea\n\n@dictBlue +1 to All Skills\n+30% Faster Cast Rate\n+120% Enhanced Defense\nAll Resistances +20-35 @dictVariable\n@dictBlue Magic Damage Reduced by 9-13 @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2806,7 +2806,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "벗겨진 자의 가죽 (스킨 오브 플라이드 원)",
+                                                "text": "Skin of Flayed One",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2821,7 +2821,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 벗겨진 자의 가죽 \n@xla\n\n@dictBlue 적중당 생명력 5~7% 훔침 @dictVariable\n@dictBlue 방어력 +150~190% 증가 @dictVariable\n@dictBlue 생명력 회복 +15~25 @dictVariable\n@dictBlue 공격자가 피해를 15 받음\n내구도 1 회복 (10초마다)",
+                                                "tooltipString": "@dictGold Skin of Flayed One \n@xla\n\n@dictBlue 5-7% Life stolen per hit @dictVariable\n@dictBlue +150-190% Enhanced Defense @dictVariable\n@dictBlue Reflensh Life +15-25 @dictVariable\n@dictBlue Attacker Takes Damage of 15\nRepairs 1 durability in 10 seconds",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2970,7 +2970,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "무쇠 털가죽 (아이언 펠트)",
+                                                "text": "Iron Pelt",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2985,7 +2985,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 무쇠 털가죽 \n@xtu\n\n@dictBlue 방어력 +50~100% 증가 @dictVariable\n@dictBlue 방어력 +3~297 (캐릭터 레벨에 비례)\n생명력 +25\n피해 15~20 감소 @dictVariable\n@dictBlue 마법 피해 10~16 감소 @dictVariable",
+                                                "tooltipString": "@dictGold Iron Pelt \n@xtu\n\n@dictBlue +50-100% Enhanced Defense @dictVariable\n@dictBlue +3-297 Defense (Based on Character Level)\n+25 to Life\nDamage Reduced by 15-20 @dictVariable\n@dictBlue Magic Damage Reduced by 10-16 @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3134,7 +3134,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "영혼의 용광로 (스피리트 포지)",
+                                                "text": "Spirit Forge",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3149,7 +3149,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 영혼의 용광로 \n@xng\n\n@dictBlue 화염 피해 20 - 65 추가\n방어력 +120~160% 증가 @dictVariable\n@dictBlue 힘 +15\n생명력 +1~123 (캐릭터 레벨에 비례)\n화염 저항 +5%\n시야 +4\n홈 있음 (2)",
+                                                "tooltipString": "@dictGold Spirit Forge \n@xng\n\n@dictBlue Adds 20-65 fire damage\n+120-160% Enhanced Defense @dictVariable\n@dictBlue +15 to Strength\n+1-123 to Life (Based on Character Level)\nFire Resist +5%\n+4 to Light Radius\nSocketed (2)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3271,7 +3271,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "까마귀 울음 (크로우 코우)",
+                                                "text": "Crow Caw",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3286,7 +3286,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 까마귀 울음 \n@xcl\n\n@dictBlue 공격 속도 +15%\n타격 회복 속도 +15%\n상처 악화 확률 +35%\n방어력 +150~180% 증가 @dictVariable\n@dictBlue 민첩 +15",
+                                                "tooltipString": "@dictGold Crow Caw \n@xcl\n\n@dictBlue +15% Increased Attack Speed\n+15% Faster Hit Recovery\n+35% Chance of Open Wounds\n+150-180% Enhanced Defense @dictVariable\n@dictBlue +15 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3408,7 +3408,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "장대막이 (샤프트스톱)",
+                                                "text": "Shaftstop",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3423,7 +3423,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 장대막이 \n@xhn\n\n@dictBlue 방어력 +180~220% 증가 @dictVariable\n@dictBlue 원거리 공격 방어력 +250\n생명력 +60\n받는 물리 피해 30% 감소",
+                                                "tooltipString": "@dictGold Shaftstop \n@xhn\n\n@dictBlue +180-220% Enhanced Defense @dictVariable\n@dictBlue +250 Defense vs. Missile\n+60 to Life\nPhysical Damage Received Reduced by 30%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3545,7 +3545,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "두리엘의 껍질 (듀리엘의 쉘)",
+                                                "text": "Duriel's Shell",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3560,7 +3560,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 두리엘의 껍질 \n@xrs\n\n@dictBlue 방어력 +160~200% 증가 @dictVariable\n@dictBlue 방어력 +1~123 (캐릭터 레벨에 비례)\n힘 +15\n생명력 +1~99 (캐릭터 레벨에 비례)\n냉기 저항 +50%\n번개 저항 +20%\n화염 저항 +20%\n독 저항 +20%\n빙결되지 않음",
+                                                "tooltipString": "@dictGold Duriel's Shell \n@xrs\n\n@dictBlue +160-200% Enhanced Defense @dictVariable\n@dictBlue +1-123 Defense (Based on Character Level)\n+15 to Strength\n+1-99 to Life (Based on Character Level)\nCold Resist +50%\nLightning Resist +20%\nFire Resist +20%\nPoison Resist +20%\nCannot Be Frozen",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3709,7 +3709,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "스쿨더의 분노 (스컬더의 아이어)",
+                                                "text": "Skullder's Ire",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3724,7 +3724,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 스쿨더의 분노 \n@xpl\n\n@dictBlue 모든 기술 +1\n방어력 +160~200% 증가 @dictVariable\n@dictBlue 마법 피해 10 감소\n마법 아이템 발견 확률 1~123% 증가 (캐릭터 레벨에 비례)\n내구도 1 회복 (5초마다)",
+                                                "tooltipString": "@dictGold Skullder's Ire \n@xpl\n\n@dictBlue +1 to All Skills\n+160-200% Enhanced Defense @dictVariable\n@dictBlue Magic Damage Reduced by 10\n1-123% Better Chance of Getting Magic Items (Based on Character Level)\nRepairs 1 durability in 5 seconds",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3846,7 +3846,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "수호 천사 (가디안 엔젤)",
+                                                "text": "Guardian Angel",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3861,7 +3861,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 수호 천사 \n@xlt\n\n@dictBlue 성기사 기술 레벨 +1\n막기 속도 +30%\n막기 확률 20% 증가\n악마에 대한 명중률 +2~247 (캐릭터 레벨에 비례)\n방어력 +180~200% 증가 @dictVariable\n@dictBlue 최대 독 저항 +15%\n최대 냉기 저항 +15%\n최대 번개 저항 +15%\n최대 화염 저항 +15%\n시야 +4",
+                                                "tooltipString": "@dictGold Guardian Angel \n@xlt\n\n@dictBlue +1 to Paladin Skill Levels\n+30% Faster Block Rate\n20% Increased Chance of Blocking\n+2-247 to Attack Rating against Demons (Based on Character Level)\n+180-200% Enhanced Defense @dictVariable\n@dictBlue +15% to Maximum Poison Resist\n+15% to Maximum Cold Resist\n+15% to Maximum Lightning Resist\n+15% to Maximum Fire Resist\n+4 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4010,7 +4010,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "강철니 (투쓰로)",
+                                                "text": "Toothrow",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4025,7 +4025,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 강철니 \n@xld\n\n@dictBlue 상처 악화 확률 +40%\n방어력 +160~220% 증가 @dictVariable\n@dictBlue 방어력 +40~60 @dictVariable\n@dictBlue 힘 +10\n화염 저항 +15%\n공격자가 피해를 20~40 받음 @dictVariable",
+                                                "tooltipString": "@dictGold Toothrow \n@xld\n\n@dictBlue +40% Chance of Open Wounds\n+160-220% Enhanced Defense @dictVariable\n@dictBlue +40-60 Defense @dictVariable\n@dictBlue +10 to Strength\nFire Resist +15%\nAttacker Takes Damage of 20-40 @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4174,7 +4174,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "아트마의 통곡 (아트마의 와일)",
+                                                "text": "Atma's Wail",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4189,7 +4189,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 아트마의 통곡 \n@xth\n\n@dictBlue 타격 회복 속도 +30%\n방어력 +120~160% 증가 @dictVariable\n@dictBlue 방어력 +2~198 (캐릭터 레벨에 비례)\n민첩 +15\n생명력 회복 +10\n최대 마나 15% 증가\n마법 아이템 발견 확률 20% 증가",
+                                                "tooltipString": "@dictGold Atma's Wail \n@xth\n\n@dictBlue +30% Faster Hit Recovery\n+120-160% Enhanced Defense @dictVariable\n@dictBlue +2-198 Defense (Based on Character Level)\n+15 to Dexterity\nReflensh Life +10\nIncrease Maximum Mana 15%\n20% Better Chance of Getting Magic Items",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4311,7 +4311,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "쿠에 히간의 지혜 (퀘-히간의 위즈덤)",
+                                                "text": "Que-Hegan's Wisdom",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4326,7 +4326,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 쿠에 히간의 지혜 \n@xtp\n\n@dictBlue 모든 기술 +1\n시전 속도 +20%\n타격 회복 속도 +20%\n방어력 +140~160% 증가 @dictVariable\n@dictBlue 마력 +15\n마법 피해 6~10 감소 @dictVariable\n@dictBlue 적 처치 시 마나 +3",
+                                                "tooltipString": "@dictGold Que-Hegan's Wisdom \n@xtp\n\n@dictBlue +1 to All Skills\n+20% Faster Cast Rate\n+20% Faster Hit Recovery\n+140-160% Enhanced Defense @dictVariable\n@dictBlue +15 to Energy\nMagic Damage Reduced by 6-10 @dictVariable\n@dictBlue +3 Mana after each Kill",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4448,7 +4448,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "검은 하데스 (블랙 하이드스)",
+                                                "text": "Black Hades",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4463,7 +4463,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 검은 하데스 \n@xul\n\n@dictBlue 악마에게 주는 피해 +30~60% @dictVariable\n@dictBlue 악마에 대한 명중률 +200~250 @dictVariable\n@dictBlue 방어력 +140~200% 증가 @dictVariable\n@dictBlue 빙결 지속시간 절반으로 감소\n시야 -2\n홈 있음 (3)",
+                                                "tooltipString": "@dictGold Black Hades \n@xul\n\n@dictBlue +30-60% Damage to Demons @dictVariable\n@dictBlue +200-250 to Attack Rating against Demons @dictVariable\n@dictBlue +140-200% Enhanced Defense @dictVariable\n@dictBlue Half Freeze Duration\n-2 to Light Radius\nSocketed (3)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4585,7 +4585,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "망자의 애도 (커프스모온)",
+                                                "text": "Corpsemourn",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4600,7 +4600,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 망자의 애도 \n@xar\n\n@dictBlue 피격 시 6% 확률로 2 레벨 가시 박힌 철관 시전\n화염 피해 12 - 36 추가\n방어력 +150~180% 증가 @dictVariable\n@dictBlue 힘 +8\n활력 +10\n냉기 저항 +35%\n5 레벨 시체 폭발 (충전 40회)",
+                                                "tooltipString": "@dictGold Corpsemourn \n@xar\n\n@dictBlue 6% Chance to cast level 2 Iron Maiden when struck\nAdds 12-36 fire damage\n+150-180% Enhanced Defense @dictVariable\n@dictBlue +8 to Strength\n+10 to Vitality\nCold Resist +35%\nLevel 5 Corpse Explosion (40 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4749,7 +4749,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "오르무스의 장포 (오르무의 로브)",
+                                                "text": "Ormus' Robe",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4764,7 +4764,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 오르무스의 장포 \n@uui\n\n@dictBlue 시전 속도 +20%\n냉기 기술 피해 +10~15% @dictVariable\n@dictBlue 번개 기술 피해 +10~15% @dictVariable\n@dictBlue 화염 기술 피해 +10~15% @dictVariable\n@dictBlue +3 무작위 원소술사 기술\n방어력 +10~20 @dictVariable\n@dictBlue 마나 재생 10~15% @dictVariable",
+                                                "tooltipString": "@dictGold Ormus' Robe \n@uui\n\n@dictBlue +20% Faster Cast Rate\n+10-15% to Cold Skill Damage @dictVariable\n@dictBlue +10-15% to Lightning Skill Damage @dictVariable\n@dictBlue +10-15% to Fire Skill Damage @dictVariable\n@dictBlue +3 to Random Sorceress Skill Levels\n+10-20 Defense @dictVariable\n@dictBlue Regenerate Mana 10-15% @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4913,7 +4913,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "검투사의 재앙 (글래디에이터의 베인)",
+                                                "text": "The Gladiator's Bane",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4928,7 +4928,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 검투사의 재앙 \n@utu\n\n@dictBlue 타격 회복 속도 +30%\n방어력 +150~200% 증가 @dictVariable\n@dictBlue 방어력 +50\n피해 15~20 감소 @dictVariable\n@dictBlue 마법 피해 15~20 감소 @dictVariable\n@dictBlue 빙결되지 않음\n독 지속시간 50% 감소\n공격자가 피해를 20 받음",
+                                                "tooltipString": "@dictGold The Gladiator's Bane \n@utu\n\n@dictBlue +30% Faster Hit Recovery\n+150-200% Enhanced Defense @dictVariable\n@dictBlue +50 Defense\nDamage Reduced by 15-20 @dictVariable\n@dictBlue Magic Damage Reduced by 15-20 @dictVariable\n@dictBlue Cannot Be Frozen\nPoison Length Reduced by 50%\nAttacker Takes Damage of 20",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5077,7 +5077,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "아르케인의 용맹 (아케인의 발러)",
+                                                "text": "Arkaine's Valor",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5092,7 +5092,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 아르케인의 용맹 \n@upl\n\n@dictBlue 모든 기술 +1~2 @dictVariable\n@dictBlue 타격 회복 속도 +30%\n방어력 +150~180% 증가 @dictVariable\n@dictBlue 활력 +0~49 (캐릭터 레벨에 비례)\n피해 10~15 감소 @dictVariable",
+                                                "tooltipString": "@dictGold Arkaine's Valor \n@upl\n\n@dictBlue +1 to All Skills-2 @dictVariable\n@dictBlue +30% Faster Hit Recovery\n+150-180% Enhanced Defense @dictVariable\n@dictBlue +0-49 to Vitality (Based on Character Level)\nDamage Reduced by 10-15 @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5241,7 +5241,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "거대괴수 (레비아탄)",
+                                                "text": "Leviathan",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5256,7 +5256,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 거대괴수 \n@uld\n\n@dictBlue 파괴 불가\n방어력 +170~200% 증가 @dictVariable\n@dictBlue 방어력 +100~150 @dictVariable\n@dictBlue 힘 +40~50 @dictVariable\n@dictBlue 받는 물리 피해 15~25% 감소 @dictVariable",
+                                                "tooltipString": "@dictGold Leviathan \n@uld\n\n@dictBlue Indestructible\n+170-200% Enhanced Defense @dictVariable\n@dictBlue +100-150 Defense @dictVariable\n@dictBlue +40-50 to Strength @dictVariable\n@dictBlue Physical Damage Received Reduced by 15-25% @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5405,7 +5405,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "강철 갑피 (스틸 캐러패이스)",
+                                                "text": "Steel Carapace",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5420,7 +5420,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 강철 갑피 \n@uul\n\n@dictBlue 피격 시 8% 확률로 6 레벨 가시 박힌 철관 시전\n타격 회복 속도 +20%\n방어력 +190~220% 증가 @dictVariable\n@dictBlue 마나 재생 10~15% @dictVariable\n@dictBlue 냉기 저항 +40~60% @dictVariable\n@dictBlue 피해 9~14 감소 @dictVariable\n@dictBlue 내구도 1 회복 (20초마다)",
+                                                "tooltipString": "@dictGold Steel Carapace \n@uul\n\n@dictBlue 8% Chance to cast level 6 Iron Maiden when struck\n+20% Faster Hit Recovery\n+190-220% Enhanced Defense @dictVariable\n@dictBlue Regenerate Mana 10-15% @dictVariable\n@dictBlue Cold Resist +40-60% @dictVariable\n@dictBlue Damage Reduced by 9-14 @dictVariable\n@dictBlue Repairs 1 durability in 20 seconds",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5569,7 +5569,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "기사단의 위세 (템플러의 마이트)",
+                                                "text": "Templar's Might",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5584,7 +5584,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 기사단의 위세 \n@uar\n\n@dictBlue 공격 오라 +1~2 (성기사 전용) @dictVariable\n@dictBlue 타격 회복 속도 +20%\n방어력 +170~220% 증가 @dictVariable\n@dictBlue 원거리 공격 방어력 +250~300 @dictVariable\n@dictBlue 힘 +10~15 @dictVariable\n@dictBlue 활력 +10~15 @dictVariable\n@dictBlue 최대 지구력 +40~50 @dictVariable",
+                                                "tooltipString": "@dictGold Templar's Might \n@uar\n\n@dictBlue +1-2 to Offensive Auras (Paladin Only) @dictVariable\n@dictBlue +20% Faster Hit Recovery\n+170-220% Enhanced Defense @dictVariable\n@dictBlue +250-300 Defense vs. Missile @dictVariable\n@dictBlue +10-15 to Strength @dictVariable\n@dictBlue +10-15 to Vitality @dictVariable\n@dictBlue +40-50 Maximum Stamina @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5733,7 +5733,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "티리엘의 권능 (티리얼의 마이트)",
+                                                "text": "Tyrael's Might",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5748,7 +5748,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 티리엘의 권능 \n@uar\n\n@dictBlue 파괴 불가\n달리기/걷기 속도 +20%\n악마에게 주는 피해 +50~100% @dictVariable\n@dictBlue 처치한 괴물이 안식에 듦\n방어력 +120~150% 증가 @dictVariable\n@dictBlue 힘 +20~30 @dictVariable\n@dictBlue 모든 저항 +20~30 @dictVariable\n@dictBlue 빙결되지 않음\n착용 조건 -100%",
+                                                "tooltipString": "@dictGold Tyrael's Might \n@uar\n\n@dictBlue Indestructible\n+20% Faster Run/Walk\n+50-100% Damage to Demons @dictVariable\n@dictBlue Slain Monsters Rest in Peace\n+120-150% Enhanced Defense @dictVariable\n@dictBlue +20-30 to Strength @dictVariable\n@dictBlue All Resistances +20-30 @dictVariable\n@dictBlue Cannot Be Frozen\nRequirements -100%",
                                                 "pressedFrame": 0
                                             }
                                         },

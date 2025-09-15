@@ -66,7 +66,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "지팡이",
+                                        "text": "Staves",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -99,7 +99,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "재앙의 재 (베인 애쉬)",
+                                                "text": "Bane Ash",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -114,7 +114,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 재앙의 재 \n@sst\n\n@dictBlue 공격 속도 +20%\n피해 +50~60% 증가 @dictVariable\n@dictBlue 화염 피해 4 - 6 추가\n+2 온기 (원소술사 전용)\n+5 화염탄 (원소술사 전용)\n마나 +30\n화염 저항 +50%\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Bane Ash \n@sst\n\n@dictBlue +20% Increased Attack Speed\n+50-60% Enhanced Damage @dictVariable\n@dictBlue Adds 4-6 fire damage\n+2 to Warmth (Sorceress Only)\n+5 to Fire Bolt (Sorceress Only)\n+30 to Mana\nFire Resist +50%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -263,7 +263,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "구렁이 군주 (서펀트 로드)",
+                                                "text": "Serpent Lord",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -278,7 +278,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 구렁이 군주 \n@lst\n\n@dictBlue 피해 +30~40% 증가 @dictVariable\n@dictBlue 대상의 방어력 -50%\n독 피해 +12 (3초에 걸쳐)\n적중당 마나 100% 훔침\n마나 +10\n독 저항 +50%\n시야 -1\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Serpent Lord \n@lst\n\n@dictBlue +30-40% Enhanced Damage @dictVariable\n@dictBlue -50% Target Defense\n+12 poison damage over 3 seconds\n100% Mana stolen per hit\n+10 to Mana\nPoison Resist +50%\n-1 to Light Radius\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -427,7 +427,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "라자루스의 첨탑 (스파이어 오브 라자루스)",
+                                                "text": "Spire of Lazarus",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -442,7 +442,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 라자루스의 첨탑 \n@cst\n\n@dictBlue 원소술사 기술 레벨 +1\n번개 피해 1 - 28 추가\n+1 연쇄 번개 (원소술사 전용)\n+2 번개 (원소술사 전용)\n+3 전자기장 (원소술사 전용)\n마력 +15\n마나 재생 43%\n번개 저항 +75%\n피해 5 감소\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Spire of Lazarus \n@cst\n\n@dictBlue +1 to Sorceress Skill Levels\nAdds 1-28 lightning damage\n+1 to Chain Lightning (Sorceress Only)\n+2 to Lightning (Sorceress Only)\n+3 to Static Field (Sorceress Only)\n+15 to Energy\nRegenerate Mana 43%\nLightning Resist +75%\nDamage Reduced by 5\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -564,7 +564,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "불도마뱀 (더 샐러맨더)",
+                                                "text": "The Salamander",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -579,7 +579,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 불도마뱀 \n@bst\n\n@dictBlue 화염 기술 +2\n화염 피해 15 - 32 추가\n+1 화염벽 (원소술사 전용)\n+2 화염구 (원소술사 전용)\n+3 온기 (원소술사 전용)\n화염 저항 +30%\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold The Salamander \n@bst\n\n@dictBlue +2 to Fire Skills\nAdds 15-32 fire damage\n+1 to Fire Wall (Sorceress Only)\n+2 to Fire Ball (Sorceress Only)\n+3 to Warmth (Sorceress Only)\nFire Resist +30%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -728,7 +728,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "무쇠 장봉 (풍사의 철장봉)",
+                                                "text": "The Iron Jang Bong",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -743,7 +743,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 무쇠 장봉 \n@wst\n\n@dictBlue 원소술사 기술 레벨 +2\n시전 속도 +20%\n피해 +100% 증가\n명중률 보너스 50%\n+2 번개 파장 (원소술사 전용)\n+2 불길 (원소술사 전용)\n+3 서릿발 (원소술사 전용)\n방어력 +30\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold The Iron Jang Bong \n@wst\n\n@dictBlue +2 to Sorceress Skill Levels\n+20% Faster Cast Rate\n+100% Enhanced Damage\n50% Bonus to Attack Rating\n+2 to Nova (Sorceress Only)\n+2 to Blaze (Sorceress Only)\n+3 to Frost Nova (Sorceress Only)\n+30 Defense\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -892,7 +892,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "서슬돌기 (레이저스위치)",
+                                                "text": "Razorswitch",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -907,7 +907,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 서슬돌기 \n@8ss\n\n@dictBlue 모든 기술 +1\n시전 속도 +30%\n생명력 +80\n마나 +175\n모든 저항 +50\n마법 피해 15 감소\n공격자가 피해를 15 받음\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Razorswitch \n@8ss\n\n@dictBlue +1 to All Skills\n+30% Faster Cast Rate\n+80 to Life\n+175 to Mana\nAll Resistances +50\nMagic Damage Reduced by 15\nAttacker Takes Damage of 15\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1029,7 +1029,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "늑골분쇄기 (립크래커)",
+                                                "text": "Ribcracker",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1044,7 +1044,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 늑골분쇄기 \n@8ls\n\n@dictBlue 공격 속도 +50%\n타격 회복 속도 +50%\n피해 +200~300% 증가 @dictVariable\n@dictBlue 피해 30 - 65 추가\n강타 확률 +50%\n방어력 +100% 증가\n방어력 +100\n민첩 +15\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Ribcracker \n@8ls\n\n@dictBlue +50% Increased Attack Speed\n+50% Faster Hit Recovery\n+200-300% Enhanced Damage @dictVariable\n@dictBlue Adds 30-65 damage\n+50% Chance of Crushing Blow\n+100% Enhanced Defense\n+100 Defense\n+15 to Dexterity\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1193,7 +1193,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "찬란한 분노 (크로마틱 아이어)",
+                                                "text": "Chromatic Ire",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1208,7 +1208,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 찬란한 분노 \n@8cs\n\n@dictBlue 원소술사 기술 레벨 +3\n시전 속도 +20%\n+1 냉기 숙련 (원소술사 전용)\n+1 번개 숙련 (원소술사 전용)\n+1 화염 숙련 (원소술사 전용)\n최대 생명력 20~25% 증가 @dictVariable\n@dictBlue 모든 저항 +20~40 @dictVariable\n@dictBlue 공격자가 번개 피해를 20 받음\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Chromatic Ire \n@8cs\n\n@dictBlue +3 to Sorceress Skill Levels\n+20% Faster Cast Rate\n+1 to Cold Mastery (Sorceress Only)\n+1 to Lightning Mastery (Sorceress Only)\n+1 to Fire Mastery (Sorceress Only)\nIncrease Maximum Life 20-25% @dictVariable\n@dictBlue All Resistances +20-40 @dictVariable\n@dictBlue Attacker Takes Lightning Damage of 20\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1330,7 +1330,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "왜곡창 (워프스피어)",
+                                                "text": "Warpspear",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1345,7 +1345,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 왜곡창 \n@8bs\n\n@dictBlue 원소술사 기술 레벨 +3\n대상의 방어력 무시\n+3 마력 보호막 (원소술사 전용)\n+3 순간이동 (원소술사 전용)\n+3 염력 (원소술사 전용)\n원거리 공격 방어력 +250\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Warpspear \n@8bs\n\n@dictBlue +3 to Sorceress Skill Levels\nIgnore Target's Defense\n+3 to Energy Shield (Sorceress Only)\n+3 to Teleportation (Sorceress Only)\n+3 to Telekinesis (Sorceress Only)\n+250 Defense vs. Missile\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1494,7 +1494,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "두개골 수집가 (스컬 콜렉터)",
+                                                "text": "Skull Collector",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1509,7 +1509,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 두개골 수집가 \n@8ws\n\n@dictBlue 모든 기술 +2\n최대 마나 20% 증가\n적 처치 시 마나 +20\n마법 아이템 발견 확률 1~99% 증가 (캐릭터 레벨에 비례)\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Skull Collector \n@8ws\n\n@dictBlue +2 to All Skills\nIncrease Maximum Mana 20%\n+20 Mana after each Kill\n1-99% Better Chance of Getting Magic Items (Based on Character Level)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1658,7 +1658,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "온달의 지혜 (온달의 지혜)",
+                                                "text": "Ondal's Wisdom",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1673,7 +1673,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 온달의 지혜 \n@6cs\n\n@dictBlue 모든 기술 +2~4 @dictVariable\n@dictBlue 시전 속도 +45%\n방어력 +450~550 @dictVariable\n@dictBlue 마력 +40~50 @dictVariable\n@dictBlue 마법 피해 5~8 감소 @dictVariable\n@dictBlue 경험치 획득량 +5%\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Ondal's Wisdom \n@6cs\n\n@dictBlue +2 to All Skills-4 @dictVariable\n@dictBlue +45% Faster Cast Rate\n+450-550 Defense @dictVariable\n@dictBlue +40-50 to Energy @dictVariable\n@dictBlue Magic Damage Reduced by 5-8 @dictVariable\n@dictBlue +5% to Experience Gained\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1795,7 +1795,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "망 송의 가르침 (망 송의 레슨)",
+                                                "text": "Mang Song's Lesson",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1810,7 +1810,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 망 송의 가르침 \n@6ws\n\n@dictBlue 모든 기술 +5\n시전 속도 +30%\n적의 번개 저항 -(7~15)% @dictVariable\n@dictBlue 적의 화염 저항 -(7~15)% @dictVariable\n@dictBlue 적의 냉기 저항 -(7~15)% @dictVariable\n@dictBlue 마나 재생 10%\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Mang Song's Lesson \n@6ws\n\n@dictBlue +5 to All Skills\n+30% Faster Cast Rate\n-(7-15)% to Enemy Lightning Resistance @dictVariable\n@dictBlue -(7-15)% to Enemy Fire Resistance @dictVariable\n@dictBlue -(7-15)% to Enemy Cold Resistance @dictVariable\n@dictBlue Regenerate Mana 10%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1944,7 +1944,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "마법봉 (원드)",
+                                        "text": "Wands",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -1977,7 +1977,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "이로의 횃불 (토치 오브 이로)",
+                                                "text": "Torch of Iros",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1992,7 +1992,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 이로의 횃불 \n@wnd\n\n@dictBlue 강령술사 기술 레벨 +1\n화염 피해 5 - 9 추가\n적중당 생명력 6% 훔침\n마력 +10\n마나 재생 5%\n시야 +3\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Torch of Iros \n@wnd\n\n@dictBlue +1 to Necromancer Skill Levels\nAdds 5-9 fire damage\n6% Life stolen per hit\n+10 to Energy\nRegenerate Mana 5%\n+3 to Light Radius\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2114,7 +2114,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "소용돌이 (메일스트럼)",
+                                                "text": "Maelstrom",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2129,7 +2129,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 소용돌이 \n@ywn\n\n@dictBlue 시전 속도 +30%\n번개 피해 1 - 9 추가\n+1~3 공포 (강령술사 전용) @dictVariable\n@dictBlue +1~3 가시 박힌 철관 (강령술사 전용) @dictVariable\n@dictBlue +1~3 시체 폭발 (강령술사 전용) @dictVariable\n@dictBlue +1~3 피해 증폭 (강령술사 전용) @dictVariable\n@dictBlue 마나 +13\n번개 저항 +40%\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Maelstrom \n@ywn\n\n@dictBlue +30% Faster Cast Rate\nAdds 1-9 lightning damage\n+1-3 to Terror (Necromancer Only) @dictVariable\n@dictBlue +1-3 to Iron Maiden (Necromancer Only) @dictVariable\n@dictBlue +1-3 to Corpse Explosion (Necromancer Only) @dictVariable\n@dictBlue +1-3 to Amplify Damage (Necromancer Only) @dictVariable\n@dictBlue +13 to Mana\nLightning Resist +40%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2278,7 +2278,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "새김등뼈 (그레이븐스파인)",
+                                                "text": "Gravenspine",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2293,7 +2293,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 새김등뼈 \n@bwn\n\n@dictBlue 강령술사 기술 레벨 +2\n냉기 피해 4 - 8 추가\n적중당 마나 5% 훔침\n힘 +10\n민첩 +10\n마나 +25~50 @dictVariable\n@dictBlue 언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Gravenspine \n@bwn\n\n@dictBlue +2 to Necromancer Skill Levels\nAdds 4-8 cold damage\n5% Mana stolen per hit\n+10 to Strength\n+10 to Dexterity\n+25-50 to Mana @dictVariable\n@dictBlue +50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2415,7 +2415,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "우메의 탄식 (우메즈 러먼트)",
+                                                "text": "Ume's Lament",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2430,7 +2430,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 우메의 탄식 \n@gwn\n\n@dictBlue 강령술사 기술 레벨 +2\n시전 속도 +20%\n+2 노화 (강령술사 전용)\n+3 공포 (강령술사 전용)\n적중 시 괴물 도주 +50%\n마나 +40\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Ume's Lament \n@gwn\n\n@dictBlue +2 to Necromancer Skill Levels\n+20% Faster Cast Rate\n+2 to Decrepify (Necromancer Only)\n+3 to Terror (Necromancer Only)\nHit Causes Monster to Flee +50%\n+40 to Mana\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2579,7 +2579,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "자해의 가지 (수어사이드 브랜치)",
+                                                "text": "Suicide Branch",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2594,7 +2594,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 자해의 가지 \n@9wn\n\n@dictBlue 모든 기술 +1\n시전 속도 +50%\n생명력 +40\n최대 마나 10% 증가\n모든 저항 +10\n공격자가 피해를 25 받음\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Suicide Branch \n@9wn\n\n@dictBlue +1 to All Skills\n+50% Faster Cast Rate\n+40 to Life\nIncrease Maximum Mana 10%\nAll Resistances +10\nAttacker Takes Damage of 25\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2716,7 +2716,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "카린 파편 (캐린 샤드)",
+                                                "text": "Carin Shard",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2731,7 +2731,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 카린 파편 \n@9yw\n\n@dictBlue 소환 기술 +2 (강령술사 전용)\n강령술사 기술 레벨 +1\n시전 속도 +10%\n타격 회복 속도 +30%\n생명력 +1~123 (캐릭터 레벨에 비례)\n생명력 회복 +5\n마나 +1~123 (캐릭터 레벨에 비례)\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Carin Shard \n@9yw\n\n@dictBlue +2 to Summoning Skills (Necromancer Only)\n+1 to Necromancer Skill Levels\n+10% Faster Cast Rate\n+30% Faster Hit Recovery\n+1-123 to Life (Based on Character Level)\nReflensh Life +5\n+1-123 to Mana (Based on Character Level)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2880,7 +2880,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "레오릭 왕의 팔 (암 오브 킹 로릭)",
+                                                "text": "Arm of King Leoric",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2895,7 +2895,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 레오릭 왕의 팔 \n@9bw\n\n@dictBlue 피격 시 5% 확률로 10 레벨 뼈 영혼 시전\n피격 시 10% 확률로 2 레벨 뼈 감옥 시전\n소환 기술 +2 (강령술사 전용)\n독과 뼈 기술 +2 (강령술사 전용)\n시전 속도 +10%\n+2 해골 마법학자 되살리기 (강령술사 전용)\n+2 공포 (강령술사 전용)\n+3 해골 되살리기 (강령술사 전용)\n+3 해골 숙련 (강령술사 전용)\n마나 +1~123 (캐릭터 레벨에 비례)\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Arm of King Leoric \n@9bw\n\n@dictBlue 5% Chance to cast level 10 Bone Spirit when struck\n10% Chance to cast level 2 Bone Prison when struck\n+2 to Summoning Skills (Necromancer Only)\n+2 to Poison and Bone Skills (Necromancer Only)\n+10% Faster Cast Rate\n+2 to Raise Skeletal Mage (Necromancer Only)\n+2 to Terror (Necromancer Only)\n+3 to Raise Skeleton (Necromancer Only)\n+3 to Skeleton Mastery (Necromancer Only)\n+1-123 to Mana (Based on Character Level)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3017,7 +3017,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "검은손 열쇠 (블랙핸드 키)",
+                                                "text": "Blackhand Key",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3032,7 +3032,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 검은손 열쇠 \n@9gw\n\n@dictBlue 저주 +1 (강령술사 전용)\n강령술사 기술 레벨 +2\n시전 속도 +30%\n생명력 +50\n화염 저항 +37%\n받는 피해의 +20%만큼 마나 회복\n시야 -2\n13 레벨 섬뜩한 호신부 (충전 30회)\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Blackhand Key \n@9gw\n\n@dictBlue +1 to Curses (Necromancer Only)\n+2 to Necromancer Skill Levels\n+30% Faster Cast Rate\n+50 to Life\nFire Resist +37%\n+20% Damage Taken Goes To Mana\n-2 to Light Radius\nLevel 13 Grim Ward (30 Charges)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3181,7 +3181,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "뼈그늘 (본쉐이드)",
+                                                "text": "Boneshade",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3196,7 +3196,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 뼈그늘 \n@7bw\n\n@dictBlue 강령술사 기술 레벨 +2\n시전 속도 +25%\n+1~2 뼈 영혼 (강령술사 전용) @dictVariable\n@dictBlue +2~3 뼈 창 (강령술사 전용) @dictVariable\n@dictBlue +2~3 뼈의 벽 (강령술사 전용) @dictVariable\n@dictBlue +4~5 뼈 갑옷 (강령술사 전용) @dictVariable\n@dictBlue +4~5 이빨 (강령술사 전용) @dictVariable\n@dictBlue 언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Boneshade \n@7bw\n\n@dictBlue +2 to Necromancer Skill Levels\n+25% Faster Cast Rate\n+1-2 to Bone Spirit (Necromancer Only) @dictVariable\n@dictBlue +2-3 to Bone Spear (Necromancer Only) @dictVariable\n@dictBlue +2-3 to Bone Wall (Necromancer Only) @dictVariable\n@dictBlue +4-5 to Bone Armor (Necromancer Only) @dictVariable\n@dictBlue +4-5 to Teeth (Necromancer Only) @dictVariable\n@dictBlue +50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3345,7 +3345,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "죽음의 거미줄 (데쓰 웹)",
+                                                "text": "Death's Web",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3360,7 +3360,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 죽음의 거미줄 \n@7gw\n\n@dictBlue 모든 기술 +2\n독과 뼈 기술 +1~2 (강령술사 전용) @dictVariable\n@dictBlue 적의 독 저항 -(40~50)% @dictVariable\n@dictBlue 적 처치 시 마나 +7~12 @dictVariable\n@dictBlue 적 처치 시 생명력 +7~12 @dictVariable\n@dictBlue 언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Death's Web \n@7gw\n\n@dictBlue +2 to All Skills\n+1-2 to Poison and Bone Skills (Necromancer Only) @dictVariable\n@dictBlue -(40-50)% to Enemy Poison Resistance @dictVariable\n@dictBlue +7-12 Mana after each Kill @dictVariable\n@dictBlue +7-12 Life after each Kill @dictVariable\n@dictBlue +50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3494,7 +3494,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "보주 (오브)",
+                                        "text": "Orbs",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -3527,7 +3527,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "망울 (오큘러스)",
+                                                "text": "The Oculus",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3542,7 +3542,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 망울 \n@oba\n\n@dictBlue 피격 시 25% 확률로 1 레벨 순간이동 시전\n원소술사 기술 레벨 +3\n시전 속도 +30%\n방어력 +20% 증가\n활력 +20\n마력 +20\n모든 저항 +20\n적 처치 시 마나 +5\n마법 아이템 발견 확률 50% 증가",
+                                                "tooltipString": "@dictGold The Oculus \n@oba\n\n@dictBlue 25% Chance to cast level 1 Teleportation when struck\n+3 to Sorceress Skill Levels\n+30% Faster Cast Rate\n+20% Enhanced Defense\n+20 to Vitality\n+20 to Energy\nAll Resistances +20\n+5 Mana after each Kill\n50% Better Chance of Getting Magic Items",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3664,7 +3664,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "에슈타의 성미 (에슈타스 템퍼)",
+                                                "text": "Eschuta's Temper",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3679,7 +3679,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 에슈타의 성미 \n@obc\n\n@dictBlue 원소술사 기술 레벨 +1~3 @dictVariable\n@dictBlue 시전 속도 +40%\n번개 기술 피해 +10~20% @dictVariable\n@dictBlue 화염 기술 피해 +10~20% @dictVariable\n@dictBlue 마력 +20~30 @dictVariable",
+                                                "tooltipString": "@dictGold Eschuta's Temper \n@obc\n\n@dictBlue +1-3 to Sorceress Skill Levels @dictVariable\n@dictBlue +40% Faster Cast Rate\n+10-20% to Lightning Skill Damage @dictVariable\n@dictBlue +10-20% to Fire Skill Damage @dictVariable\n@dictBlue +20-30 to Energy @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3801,7 +3801,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "죽음의 깊이 (데쓰 패썸)",
+                                                "text": "Death's Fathom",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3816,7 +3816,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 죽음의 깊이 \n@obf\n\n@dictBlue 원소술사 기술 레벨 +3\n시전 속도 +20%\n냉기 기술 피해 +15~30% @dictVariable\n@dictBlue 번개 저항 +25~40% @dictVariable\n@dictBlue 화염 저항 +25~40% @dictVariable",
+                                                "tooltipString": "@dictGold Death's Fathom \n@obf\n\n@dictBlue +3 to Sorceress Skill Levels\n+20% Faster Cast Rate\n+15-30% to Cold Skill Damage @dictVariable\n@dictBlue Lightning Resist +25-40% @dictVariable\n@dictBlue Fire Resist +25-40% @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },

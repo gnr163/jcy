@@ -133,7 +133,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword81 (원환)",
+                                                "text": "@Runeword81",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -173,7 +173,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword81\n\n@dictBlue 피해 +33% 증가\n최대 피해 +9\n대상의 방어력 -25%\n명중률 +50\n상처 악화 확률 +100%\n괴물 회복 저지\n적중당 괴물 방어력 -100 감소\n생명력 흡수 -5",
+                                                "tooltipString": "@dictGold@Runeword81\n\n@dictBlue +33% Enhanced Damage\n+9 to Maximum Damage\n-25% Target Defense\n+50 to Attack Rating\n+100% Chance of Open Wounds\nPrevent Monster Heal\n-100 to Monster Defense Per Hit\nDrain Life -5",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -198,7 +198,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 근접 무기\n@dictRequiredLevel: 15",
+                                                "text": "3 Socket Melee Weapons\n@dictRequiredLevel: 15",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -277,7 +277,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword97\n\n@dictBlue 막기 속도 +30%\n피해 +40~80% 증가 @dictVariable\n@dictBlue 명중률 보너스 10%\n화염 피해 17 - 62 추가\n번개 피해 1 - 50 추가\n냉기 피해 3 - 14 추가\n독 피해 +75 (5초에 걸쳐)\n힘 +6\n민첩 +6\n모든 저항 +15",
+                                                "tooltipString": "@dictGold@Runeword97\n\n@dictBlue +30% Faster Block Rate\n+40-80% Enhanced Damage @dictVariable\n@dictBlue 10% Bonus to Attack Rating\nAdds 17-62 fire damage\nAdds 1-50 lightning damage\nAdds 3-14 cold damage\n+75 poison damage over 5 seconds\n+6 to Strength\n+6 to Dexterity\nAll Resistances +15",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -302,7 +302,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 손톱\n@dictRequiredLevel: 23",
+                                                "text": "3 Socket Claws\n@dictRequiredLevel: 23",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -381,7 +381,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword31\n\n@dictBlue 장착 시 15 레벨 가시 오라 효과 적용\n공격 속도 +35%\n악마에게 주는 피해 +320~380% @dictVariable\n@dictBlue 언데드에게 주는 피해 +280%\n독 피해 +75 (5초에 걸쳐)\n적중당 생명력 7% 훔침\n괴물 회복 저지\n모든 능력치 +5~10 @dictVariable\n@dictBlue 적 처치 시 마나 +2\n상점 물품 가격 15% 하락",
+                                                "tooltipString": "@dictGold@Runeword31\n\n@dictBlue Level 15 Thorns Aura When Equipped\n+35% Increased Attack Speed\n+320-380% Damage to Demons @dictVariable\n@dictBlue +280% Damage to Undead\n+75 poison damage over 5 seconds\n7% Life stolen per hit\nPrevent Monster Heal\n+5-10 to all Attributes @dictVariable\n@dictBlue +2 Mana after each Kill\nReduces all Vendor Prices 15%",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -406,7 +406,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 활/쇠뇌\n@dictRequiredLevel: 25",
+                                                "text": "3 Socket Bows/Crossbows\n@dictRequiredLevel: 25",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -445,7 +445,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword65 (왕의 자비)",
+                                                "text": "@Runeword65",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -485,7 +485,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword65\n\n@dictBlue 피해 +100% 증가\n명중률 +150\n악마에게 주는 피해 +100%\n악마에 대한 명중률 +100\n언데드에게 주는 피해 +50%\n언데드에 대한 명중률 +100\n화염 피해 5 - 30 추가\n냉기 피해 3 - 14 추가\n적중당 생명력 7% 훔침",
+                                                "tooltipString": "@dictGold@Runeword65\n\n@dictBlue +100% Enhanced Damage\n+150 to Attack Rating\n+100% Damage to Demons\n+100 to Attack Rating against Demons\n+50% Damage to Undead\n+100 to Attack Rating against Undead\nAdds 5-30 fire damage\nAdds 3-14 cold damage\n7% Life stolen per hit",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -510,7 +510,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 도검/홀(셉터)\n@dictRequiredLevel: 25",
+                                                "text": "3 Socket Swords/Scepters\n@dictRequiredLevel: 25",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -549,7 +549,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword6 (블랙)",
+                                                "text": "@Runeword6",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -589,7 +589,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword6\n\n@dictBlue 공격 속도 +15%\n피해 +120% 증가\n명중률 +200\n냉기 피해 3 - 14 추가\n강타 확률 +40%\n밀쳐내기\n활력 +10\n마법 피해 2 감소\n4 레벨 시체 폭발 (충전 12회)",
+                                                "tooltipString": "@dictGold@Runeword6\n\n@dictBlue +15% Increased Attack Speed\n+120% Enhanced Damage\n+200 to Attack Rating\nAdds 3-14 cold damage\n+40% Chance of Crushing Blow\nKnockback\n+10 to Vitality\nMagic Damage Reduced by 2\nLevel 4 Corpse Explosion (12 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -614,7 +614,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 곤봉/철퇴*/망치\n@dictRequiredLevel: 35",
+                                                "text": "3 Socket Clubs/Maces*/Hammers\n@dictRequiredLevel: 35",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -653,7 +653,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword82 (멜로디)",
+                                                "text": "@Runeword82",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -693,7 +693,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword82\n\n@dictBlue 활과 쇠뇌 기술 +3 (아마존 전용)\n공격 속도 +20%\n피해 +50% 증가\n언데드에게 주는 피해 +300%\n+3 투사체 감속 (아마존 전용)\n+3 흘리기 (아마존 전용)\n+3 치명타 (아마존 전용)\n밀쳐내기\n민첩 +10",
+                                                "tooltipString": "@dictGold@Runeword82\n\n@dictBlue +3 to Bow and Crossbow Skills (Amazon Only)\n+20% Increased Attack Speed\n+50% Enhanced Damage\n+300% Damage to Undead\n+3 to Slow Missiles (Amazon Only)\n+3 to Dodge (Amazon Only)\n+3 to Critical Strike (Amazon Only)\nKnockback\n+10 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -718,7 +718,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 활/쇠뇌\n@dictRequiredLevel: 39",
+                                                "text": "3 Socket Bows/Crossbows\n@dictRequiredLevel: 39",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -797,7 +797,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword172\n\n@dictBlue 타격 시 5% 확률로 1 레벨 폭발적인 속도 시전\n장착 시 1 레벨 광신 오라 효과 적용\n공격 속도 +30%\n피해 +180~200% 증가 @dictVariable\n@dictBlue 언데드에게 주는 피해 +75%\n언데드에 대한 명중률 +50\n민첩 +10",
+                                                "tooltipString": "@dictGold@Runeword172\n\n@dictBlue 5% Chance to cast level 1 Burst of Speed on striking\nLevel 1 Fanaticism Aura When Equipped\n+30% Increased Attack Speed\n+180-200% Enhanced Damage @dictVariable\n@dictBlue +75% Damage to Undead\n+50 to Attack Rating against Undead\n+10 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -822,7 +822,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 무기\n@dictRequiredLevel: 39 @dictLadderOnly",
+                                                "text": "3 Socket Weapons\n@dictRequiredLevel: 39 @dictLadderOnly",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -861,7 +861,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword71 (법률위반)",
+                                                "text": "@Runeword71",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -901,7 +901,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword71\n\n@dictBlue 타격 시 20% 확률로 15 레벨 노화 시전\n장착 시 16~18 레벨 성역 오라 효과 적용 @dictVariable\n@dictBlue 대상의 방어력 -50%\n화염 피해 150 - 210 추가\n냉기 피해 130 - 180 추가\n적중당 생명력 7% 훔침\n처치한 괴물이 안식에 듦\n원거리 공격 방어력 +200~250 @dictVariable\n@dictBlue 민첩 +10\n괴물에게서 얻는 금화 75% 증가",
+                                                "tooltipString": "@dictGold@Runeword71\n\n@dictBlue 20% Chance to cast level 15 Decrepify on striking\nLevel 16-18 Sanctuary Aura When Equipped @dictVariable\n@dictBlue -50% Target Defense\nAdds 150-210 fire damage\nAdds 130-180 cold damage\n7% Life stolen per hit\nSlain Monsters Rest in Peace\n+200-250 Defense vs. Missile @dictVariable\n@dictBlue +10 to Dexterity\n75% Extra Gold from Monsters",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -926,7 +926,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 도검/망치/홀(셉터)\n@dictRequiredLevel: 43",
+                                                "text": "3 Socket Swords\n/Hammers/Scepters\n@dictRequiredLevel: 43",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1005,7 +1005,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword17\n\n@dictBlue 타격 시 10% 확률로 17 레벨 연쇄 번개 시전\n타격 시 7% 확률로 13 레벨 전자기장 시전\n공격 속도 +20%\n피해 +180~220% 증가 @dictVariable\n@dictBlue 대상의 방어력 무시\n적의 번개 저항 -35%\n상처 악화 확률 +25%\n마법 흡수 +9~11 @dictVariable\n@dictBlue 적 처치 시 마나 +2\n18 레벨 영혼 늑대 소환 (충전 30회)",
+                                                "tooltipString": "@dictGold@Runeword17\n\n@dictBlue 10% Chance to cast level 17 Chain Lightning on striking\n7% Chance to cast level 13 Static Field on striking\n+20% Increased Attack Speed\n+180-220% Enhanced Damage @dictVariable\n@dictBlue Ignore Target's Defense\n-35% to Enemy Lightning Resistance\n+25% Chance of Open Wounds\n+9-11 Magic Absorb @dictVariable\n@dictBlue +2 Mana after each Kill\nLevel 18 Summon Spirit Wolf (30 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1030,7 +1030,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 도검/도끼/미늘창\n@dictRequiredLevel: 47",
+                                                "text": "3 Socket Swords/Axes/Polearms\n@dictRequiredLevel: 47",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1069,7 +1069,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword154 (베넘)",
+                                                "text": "@Runeword154",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1109,7 +1109,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword154\n\n@dictBlue 대상의 방어력 무시\n독 피해 +273 (6초에 걸쳐)\n적중당 마나 7% 훔침\n괴물 회복 저지\n적중 시 괴물 도주 +25%\n13 레벨 맹독 확산 (충전 11회)\n15 레벨 맹독 폭발 (충전 27회)",
+                                                "tooltipString": "@dictGold@Runeword154\n\n@dictBlue Ignore Target's Defense\n+273 poison damage over 6 seconds\n7% Mana stolen per hit\nPrevent Monster Heal\nHit Causes Monster to Flee +25%\nLevel 13 Poison Nova (11 Charges)\nLevel 15 Poison Explosion (27 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1134,7 +1134,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 무기\n@dictRequiredLevel: 49",
+                                                "text": "3 Socket Weapons\n@dictRequiredLevel: 49",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1213,7 +1213,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword173\n\n@dictBlue 필살기가 충전을 소모하지 않을 확률 +50%\n무술 +2 (암살자 전용)\n공격 속도 +20%\n피해 +200~250% 증가 @dictVariable\n@dictBlue 명중률 보너스 20%\n적중당 생명력 7% 훔침\n냉기 기술 피해 +8~15% @dictVariable\n@dictBlue 번개 기술 피해 +8~15% @dictVariable\n@dictBlue 화염 기술 피해 +8~15% @dictVariable\n@dictBlue 괴물 회복 저지",
+                                                "tooltipString": "@dictGold@Runeword173\n\n@dictBlue +50% chance for finishing moves to not consume charges\n+2 to Martial Arts (Assassin Only)\n+20% Increased Attack Speed\n+200-250% Enhanced Damage @dictVariable\n@dictBlue 20% Bonus to Attack Rating\n7% Life stolen per hit\n+8-15% to Cold Skill Damage @dictVariable\n@dictBlue +8-15% to Lightning Skill Damage @dictVariable\n@dictBlue +8-15% to Fire Skill Damage @dictVariable\n@dictBlue Prevent Monster Heal",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1238,7 +1238,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 손톱\n@dictRequiredLevel: 53 @dictLadderOnly",
+                                                "text": "3 Socket Claws\n@dictRequiredLevel: 53 @dictLadderOnly",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1277,7 +1277,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword27 (드레곤)",
+                                                "text": "@Runeword27",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1317,7 +1317,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword27\n\n@dictBlue 피격 시 20% 확률로 18 레벨 맹독 시전\n타격 시 12% 확률로 15 레벨 히드라 시전\n장착 시 14 레벨 신성한 불꽃 오라 효과 적용\n방어력 +360\n원거리 공격 방어력 +230\n모든 능력치 +3~5 @dictVariable\n@dictBlue 힘 +0~37 (캐릭터 레벨에 비례)\n마나 +50\n최대 번개 저항 +5%\n피해 7 감소",
+                                                "tooltipString": "@dictGold@Runeword27\n\n@dictBlue 20% Chance to cast level 18 Venom when struck\n12% Chance to cast level 15 Hydra on striking\nLevel 14 Holy Fire Aura When Equipped\n+360 Defense\n+230 Defense vs. Missile\n+3-5 to all Attributes @dictVariable\n@dictBlue +0-37 to Strength (Based on Character Level)\n+50 to Mana\n+5% to Maximum Lightning Resist\nDamage Reduced by 7",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1342,7 +1342,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 갑옷/방패\n@dictRequiredLevel: 61",
+                                                "text": "3 Socket Armors/Shields\n@dictRequiredLevel: 61",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1381,7 +1381,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword44 (원한)",
+                                                "text": "@Runeword44",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1421,7 +1421,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword44\n\n@dictBlue 공격 속도 +40%\n피해 +209% 증가\n대상의 방어력 무시\n대상의 방어력 -25%\n명중률 보너스 20%\n적중당 생명력 6% 훔침\n치명적 공격 +33%\n상처 악화 확률 +66%\n+5 광분 (야만용사 전용)\n괴물 회복 저지",
+                                                "tooltipString": "@dictGold@Runeword44\n\n@dictBlue +40% Increased Attack Speed\n+209% Enhanced Damage\nIgnore Target's Defense\n-25% Target Defense\n20% Bonus to Attack Rating\n6% Life stolen per hit\n+33% Deadly Strike\n+66% Chance of Open Wounds\n+5 to Frenzy (Barbarian Only)\nPrevent Monster Heal",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1446,7 +1446,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 근접 무기\n@dictRequiredLevel: 65",
+                                                "text": "3 Socket Melee Weapons\n@dictRequiredLevel: 65",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1525,7 +1525,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword16\n\n@dictBlue 타격 시 9% 확률로 11 레벨 얼음 보주 시전\n타격 시 11% 확률로 9 레벨 번개 줄기 시전\n공격 속도 +35%\n피해 +290~340% 증가 @dictVariable\n@dictBlue 마법 피해 216 - 471 추가\n상처 악화 확률 +25%\n+1 소용돌이\n힘 +10\n악마 처치 시 생명력 +15",
+                                                "tooltipString": "@dictGold@Runeword16\n\n@dictBlue 9% Chance to cast level 11 Frozen Orb on striking\n11% Chance to cast level 9 Charged Bolt on striking\n+35% Increased Attack Speed\n+290-340% Enhanced Damage @dictVariable\n@dictBlue Adds 216-471 magic damage\n+25% Chance of Open Wounds\n+1 Whirlwind\n+10 to Strength\n+15 Life after each Demon Kill",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1550,7 +1550,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 손톱\n@dictRequiredLevel: 57",
+                                                "text": "3 Socket Claws\n@dictRequiredLevel: 57",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1629,7 +1629,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword106\n\n@dictBlue 타격 시 25% 확률로 15 레벨 맹독 확산 시전\n피격 시 20% 확률로 12 레벨 저항 감소 시전\n장착 시 13~17 레벨 정화 오라 효과 적용 @dictVariable\n@dictBlue 모든 기술 +1~2 @dictVariable\n@dictBlue 공격 속도 +20%\n피해 +220~320% 증가 @dictVariable\n@dictBlue 적의 독 저항 -23%\n치명적 공격 +0~29% (캐릭터 레벨에 비례)\n상처 악화 확률 +25%\n대상 빙결 +3",
+                                                "tooltipString": "@dictGold@Runeword106\n\n@dictBlue 25% Chance to cast level 15 Poison Nova on striking\n20% Chance to cast level 12 Lower Resist when struck\nLevel 13-17 Cleansing Aura When Equipped @dictVariable\n@dictBlue +1 to All Skills-2 @dictVariable\n@dictBlue +20% Increased Attack Speed\n+220-320% Enhanced Damage @dictVariable\n@dictBlue -23% to Enemy Poison Resistance\n+0-29% Deadly Strike (Based on Character Level)\n+25% Chance of Open Wounds\nFreezes Target +3",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1654,7 +1654,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3홈 도검/손톱/단도\n@dictRequiredLevel: 67",
+                                                "text": "3 Socket Swords/Claws/Daggers\n@dictRequiredLevel: 67",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }

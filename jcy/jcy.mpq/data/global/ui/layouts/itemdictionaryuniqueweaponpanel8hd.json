@@ -66,7 +66,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "투척 단도",
+                                        "text": "Throwing Knives",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -99,7 +99,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "죽음조각 (데쓰비트)",
+                                                "text": "Deathbit",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -114,7 +114,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 죽음조각 \n@9tk\n\n@dictBlue 피해 +130~180% 증가 @dictVariable\n@dictBlue 명중률 +200~450 @dictVariable\n@dictBlue 적중당 마나 4~6% 훔침 @dictVariable\n@dictBlue 적중당 생명력 7~9% 훔침 @dictVariable\n@dictBlue 치명적 공격 +40%\n수량 자동 회복",
+                                                "tooltipString": "@dictGold Deathbit \n@9tk\n\n@dictBlue +130-180% Enhanced Damage @dictVariable\n@dictBlue +200-450 to Attack Rating @dictVariable\n@dictBlue 4-6% Mana stolen per hit @dictVariable\n@dictBlue 7-9% Life stolen per hit @dictVariable\n@dictBlue +40% Deadly Strike\nReplenishes quantity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -236,7 +236,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "전쟁표창 (워슈라이크)",
+                                                "text": "Warshrike",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -251,7 +251,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 전쟁표창 \n@7bk\n\n@dictBlue 타격 시 25% 확률로 9 레벨 번개 파장 시전\n공격 속도 +30%\n관통 공격 +50%\n피해 +200~250% 증가 @dictVariable\n@dictBlue 치명적 공격 +50%\n수량 자동 회복",
+                                                "tooltipString": "@dictGold Warshrike \n@7bk\n\n@dictBlue 25% Chance to cast level 9 Nova on striking\n+30% Increased Attack Speed\n+50% Piercing Attack\n+200-250% Enhanced Damage @dictVariable\n@dictBlue +50% Deadly Strike\nReplenishes quantity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -385,7 +385,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "투척 도끼",
+                                        "text": "Throwing Axes",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -418,7 +418,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "무두도끼 (스캘퍼)",
+                                                "text": "The Scalper",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -433,7 +433,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 무두도끼 \n@9ta\n\n@dictBlue 공격 속도 +20%\n피해 +150~200% 증가 @dictVariable\n@dictBlue 명중률 보너스 25%\n적중당 생명력 4~6% 훔침 @dictVariable\n@dictBlue 상처 악화 확률 +33%\n적 처치 시 마나 +4\n수량 자동 회복",
+                                                "tooltipString": "@dictGold The Scalper \n@9ta\n\n@dictBlue +20% Increased Attack Speed\n+150-200% Enhanced Damage @dictVariable\n@dictBlue 25% Bonus to Attack Rating\n4-6% Life stolen per hit @dictVariable\n@dictBlue +33% Chance of Open Wounds\n+4 Mana after each Kill\nReplenishes quantity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -555,7 +555,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "아른날 (김머쉬레드)",
+                                                "text": "Gimmershred",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -570,7 +570,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold 아른날 \n@7ta\n\n@dictBlue 공격 속도 +30%\n피해 +160~210% 증가 @dictVariable\n@dictBlue 화염 피해 218 - 483 추가\n번개 피해 29 - 501 추가\n냉기 피해 176 - 397 추가\n중첩 수량 증가",
+                                                "tooltipString": "@dictGold Gimmershred \n@7ta\n\n@dictBlue +30% Increased Attack Speed\n+160-210% Enhanced Damage @dictVariable\n@dictBlue Adds 218-483 fire damage\nAdds 29-501 lightning damage\nAdds 176-397 cold damage\nIncreased Stack Size",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -692,7 +692,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "난도질 도끼 (래서레이트)",
+                                                "text": "Lacerator",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -707,7 +707,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 난도질 도끼 \n@7b8\n\n@dictBlue 타격 시 33% 확률로 3 레벨 피해 증폭 시전\n공격 속도 +30%\n피해 +150~210% 증가 @dictVariable\n@dictBlue 상처 악화 확률 +33%\n괴물 회복 저지\n적중 시 괴물 도주 +50%\n수량 자동 회복",
+                                                "tooltipString": "@dictGold Lacerator \n@7b8\n\n@dictBlue 33% Chance to cast level 3 Amplify Damage on striking\n+30% Increased Attack Speed\n+150-210% Enhanced Damage @dictVariable\n@dictBlue +33% Chance of Open Wounds\nPrevent Monster Heal\nHit Causes Monster to Flee +50%\nReplenishes quantity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -841,7 +841,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "투창",
+                                        "text": "Javelins",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -874,7 +874,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "악마의 호 (데몬스 아치)",
+                                                "text": "Demon's Arch",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -889,7 +889,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 악마의 호 \n@7s7\n\n@dictBlue 공격 속도 +30%\n피해 +160~210% 증가 @dictVariable\n@dictBlue 화염 피해 232 - 323 추가\n번개 피해 23 - 333 추가\n적중당 생명력 6~12% 훔침 @dictVariable\n@dictBlue 수량 자동 회복",
+                                                "tooltipString": "@dictGold Demon's Arch \n@7s7\n\n@dictBlue +30% Increased Attack Speed\n+160-210% Enhanced Damage @dictVariable\n@dictBlue Adds 232-323 fire damage\nAdds 23-333 lightning damage\n6-12% Life stolen per hit @dictVariable\n@dictBlue Replenishes quantity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1038,7 +1038,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "망령의 비행 (레이쓰 플라이트)",
+                                                "text": "Wraith Flight",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1053,7 +1053,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 망령의 비행 \n@7gl\n\n@dictBlue 피해 +150~190% 증가 @dictVariable\n@dictBlue 적중당 생명력 9~13% 훔침 @dictVariable\n@dictBlue 적 처치 시 마나 +15\n수량 자동 회복\n무형 (수리 불가)",
+                                                "tooltipString": "@dictGold Wraith Flight \n@7gl\n\n@dictBlue +150-190% Enhanced Damage @dictVariable\n@dictBlue 9-13% Life stolen per hit @dictVariable\n@dictBlue +15 Mana after each Kill\nReplenishes quantity\nEthereal (Cannot be Repaired)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1202,7 +1202,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "가고일의 이빨 (가고일스 바이트)",
+                                                "text": "Gargoyle's Bite",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1217,7 +1217,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 가고일의 이빨 \n@7ts\n\n@dictBlue 피해 +180~230% 증가 @dictVariable\n@dictBlue 독 피해 +293 (10초에 걸쳐)\n적중당 생명력 9~15% 훔침 @dictVariable\n@dictBlue 11 레벨 역병 투창 (충전 60회)\n수량 자동 회복",
+                                                "tooltipString": "@dictGold Gargoyle's Bite \n@7ts\n\n@dictBlue +180-230% Enhanced Damage @dictVariable\n@dictBlue +293 poison damage over 10 seconds\n9-15% Life stolen per hit @dictVariable\n@dictBlue Level 11 Plague Javelin (60 Charges)\nReplenishes quantity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1351,7 +1351,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "아마존 전용 투창",
+                                        "text": "Amazon Javelins",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -1384,7 +1384,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "거인의 복수 (타이탄의 리벤지)",
+                                                "text": "Titan's Revenge",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1399,7 +1399,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 거인의 복수 \n@ama\n\n@dictBlue 투창과 창 기술 +2 (아마존 전용)\n아마존 기술 레벨 +2\n달리기/걷기 속도 +30%\n피해 +150~200% 증가 @dictVariable\n@dictBlue 피해 25 - 50 추가\n적중당 생명력 5~9% 훔침 @dictVariable\n@dictBlue 힘 +20\n민첩 +20\n중첩 수량 증가\n수량 자동 회복",
+                                                "tooltipString": "@dictGold Titan's Revenge \n@ama\n\n@dictBlue +2 to Javelin and Spear Skills (Amazon Only)\n+2 to Amazon Skill Levels\n+30% Faster Run/Walk\n+150-200% Enhanced Damage @dictVariable\n@dictBlue Adds 25-50 damage\n5-9% Life stolen per hit @dictVariable\n@dictBlue +20 to Strength\n+20 to Dexterity\nIncreased Stack Size\nReplenishes quantity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1521,7 +1521,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "천둥일격 (선더스트로크)",
+                                                "text": "Thunderstroke",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1536,7 +1536,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 천둥일격 \n@amf\n\n@dictBlue 타격 시 20% 확률로 14 레벨 번개 시전\n투창과 창 기술 +2~4 (아마존 전용) @dictVariable\n@dictBlue 공격 속도 +15%\n피해 +150~200% 증가 @dictVariable\n@dictBlue 번개 피해 1 - 511 추가\n적의 번개 저항 -15%\n+3 번갯불 (아마존 전용)",
+                                                "tooltipString": "@dictGold Thunderstroke \n@amf\n\n@dictBlue 20% Chance to cast level 14 Lightning on striking\n+2-4 to Javelin and Spear Skills (Amazon Only) @dictVariable\n@dictBlue +15% Increased Attack Speed\n+150-200% Enhanced Damage @dictVariable\n@dictBlue Adds 1-511 lightning damage\n-15% to Enemy Lightning Resistance\n+3 to Lightning Bolt (Amazon Only)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1670,7 +1670,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "손톱",
+                                        "text": "Claws",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -1703,7 +1703,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "바르툭의 목 따개 (바르턱스의 촙촙)",
+                                                "text": "Bartuc's Chop Chop",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1718,7 +1718,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 바르툭의 목 따개 \n@9tw\n\n@dictBlue 무술 +1 (암살자 전용)\n암살자 기술 레벨 +2\n타격 회복 속도 +30%\n피해 +150~200% 증가 @dictVariable\n@dictBlue 피해 25 - 50 추가\n명중률 보너스 20%\n적중당 생명력 5~9% 훔침 @dictVariable\n@dictBlue 힘 +20\n민첩 +20",
+                                                "tooltipString": "@dictGold Bartuc's Chop Chop \n@9tw\n\n@dictBlue +1 to Martial Arts (Assassin Only)\n+2 to Assassin Skill Levels\n+30% Faster Hit Recovery\n+150-200% Enhanced Damage @dictVariable\n@dictBlue Adds 25-50 damage\n20% Bonus to Attack Rating\n5-9% Life stolen per hit @dictVariable\n@dictBlue +20 to Strength\n+20 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1840,7 +1840,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "비취 발톱 (제이드 탈런)",
+                                                "text": "Jade Talon",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1855,7 +1855,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 비취 발톱 \n@7wb\n\n@dictBlue 무술 +1~2 (암살자 전용) @dictVariable\n@dictBlue 그림자 단련 +1~2 (암살자 전용) @dictVariable\n@dictBlue 타격 회복 속도 +30%\n피해 +190~240% 증가 @dictVariable\n@dictBlue 적중당 마나 10~15% 훔침 @dictVariable\n@dictBlue 모든 저항 +40~50 @dictVariable",
+                                                "tooltipString": "@dictGold Jade Talon \n@7wb\n\n@dictBlue +1-2 to Martial Arts (Assassin Only) @dictVariable\n@dictBlue +1-2 to Shadow Disciplines (Assassin Only) @dictVariable\n@dictBlue +30% Faster Hit Recovery\n+190-240% Enhanced Damage @dictVariable\n@dictBlue 10-15% Mana stolen per hit @dictVariable\n@dictBlue All Resistances +40-50 @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2004,7 +2004,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "죽음의 그림자 (쉐도우 킬러)",
+                                                "text": "Shadow Killer",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2019,7 +2019,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 죽음의 그림자 \n@7cs\n\n@dictBlue 파괴 불가\n타격 시 33% 확률로 8 레벨 서릿발 시전\n피해 +170~220% 증가 @dictVariable\n@dictBlue 대상의 방어력 -25%\n대상 빙결 +2\n적 처치 시 마나 +10~15 @dictVariable\n@dictBlue 무형 (수리 불가)",
+                                                "tooltipString": "@dictGold Shadow Killer \n@7cs\n\n@dictBlue Indestructible\n33% Chance to cast level 8 Frost Nova on striking\n+170-220% Enhanced Damage @dictVariable\n@dictBlue -25% Target Defense\nFreezes Target +2\n+10-15 Mana after each Kill @dictVariable\n@dictBlue Ethereal (Cannot be Repaired)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2141,7 +2141,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "불도마뱀의 발톱 (파이어리저드의 탤런스)",
+                                                "text": "Firelizard's Talons",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2156,7 +2156,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 불도마뱀의 발톱 \n@7lw\n\n@dictBlue 무술 +1~3 (암살자 전용) @dictVariable\n@dictBlue 공격 속도 +15%\n피해 +200~270% 증가 @dictVariable\n@dictBlue 화염 피해 236 - 480 추가\n+1~2 지옥불의 파동 (암살자 전용) @dictVariable\n@dictBlue +1~2 불의 파동 (암살자 전용) @dictVariable\n@dictBlue 화염 저항 +40~70% @dictVariable",
+                                                "tooltipString": "@dictGold Firelizard's Talons \n@7lw\n\n@dictBlue +1-3 to Martial Arts (Assassin Only) @dictVariable\n@dictBlue +15% Increased Attack Speed\n+200-270% Enhanced Damage @dictVariable\n@dictBlue Adds 236-480 fire damage\n+1-2 to Wake of Inferno (Assassin Only) @dictVariable\n@dictBlue +1-2 to Wake of Fire (Assassin Only) @dictVariable\n@dictBlue Fire Resist +40-70% @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },

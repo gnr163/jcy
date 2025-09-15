@@ -173,7 +173,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword55\n\n@dictBlue 모든 기술 +1\n피해 +160% 증가\n최소 피해 +9\n최대 피해 +9\n치명적 공격 +25%\n명중률 +250\n적중당 생명력 7% 훔침\n힘 +10\n생명력 회복 +10\n적 처치 시 마나 +2\n시야 +1",
+                                                "tooltipString": "@dictGold@Runeword55\n\n@dictBlue +1 to All Skills\n+160% Enhanced Damage\n+9 to Minimum Damage\n+9 to Maximum Damage\n+25% Deadly Strike\n+250 to Attack Rating\n7% Life stolen per hit\n+10 to Strength\nReflensh Life +10\n+2 Mana after each Kill\n+1 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -198,7 +198,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "5홈 근접 무기\n@dictRequiredLevel: 27",
+                                                "text": "5 Socket Melee Weapons\n@dictRequiredLevel: 27",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -277,7 +277,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword92\n\n@dictBlue 적 처치 시 30% 확률로 21 레벨 마법부여 시전\n타격 회복 속도 +40%\n피해 +370% 증가\n대상의 방어력 -25%\n냉기 피해 3 - 14 추가\n적의 화염 저항 -25%\n강타 확률 +40%\n방어력 +200~300 @dictVariable\n@dictBlue 힘 +10\n민첩 +10\n모든 저항 +20~30 @dictVariable\n@dictBlue 착용 조건 -20%",
+                                                "tooltipString": "@dictGold@Runeword92\n\n@dictBlue 30% Chance to cast level 21 Enchant when you Kill an Enemy\n+40% Faster Hit Recovery\n+370% Enhanced Damage\n-25% Target Defense\nAdds 3-14 cold damage\n-25% to Enemy Fire Resistance\n+40% Chance of Crushing Blow\n+200-300 Defense @dictVariable\n@dictBlue +10 to Strength\n+10 to Dexterity\nAll Resistances +20-30 @dictVariable\n@dictBlue Requirements -20%",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -302,7 +302,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "5홈 미늘창/창\n@dictRequiredLevel: 41",
+                                                "text": "5 Socket Polearms/Spears\n@dictRequiredLevel: 41",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -381,7 +381,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword20\n\n@dictBlue 사망 시 100% 확률로 44 레벨 연쇄 번개 시전\n공격 시 25% 확률로 18 레벨 빙하 가시 시전\n파괴 불가\n피해 +300~385% 증가 @dictVariable\n@dictBlue 명중률 보너스 20%\n명중률 +50\n번개 피해 1 - 50 추가\n적중당 마나 7% 훔침\n강타 확률 +50%\n치명적 공격 +0~49% (캐릭터 레벨에 비례)\n시야 +1\n22 레벨 피 골렘 (충전 15회)\n착용 조건 -20%",
+                                                "tooltipString": "@dictGold@Runeword20\n\n@dictBlue 100% Chance to cast level 44 Chain Lightning when you Die\n25% Chance to cast level 18 Glacial Spike on attack\nIndestructible\n+300-385% Enhanced Damage @dictVariable\n@dictBlue 20% Bonus to Attack Rating\n+50 to Attack Rating\nAdds 1-50 lightning damage\n7% Mana stolen per hit\n+50% Chance of Crushing Blow\n+0-49% Deadly Strike (Based on Character Level)\n+1 to Light Radius\nLevel 22 Blood Golem (15 Charges)\nRequirements -20%",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -406,7 +406,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "5홈 도검/도끼\n@dictRequiredLevel: 55",
+                                                "text": "5 Socket Swords/Axes\n@dictRequiredLevel: 55",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -445,7 +445,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword13 (콜 투 암스)",
+                                                "text": "@Runeword13",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -485,7 +485,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword13\n\n@dictBlue 모든 기술 +1\n공격 속도 +40%\n피해 +250~290% 증가 @dictVariable\n@dictBlue 화염 피해 5 - 30 추가\n적중당 생명력 7% 훔침\n+2~6 전투 명령 @dictVariable\n@dictBlue +1~6 전투 지시 @dictVariable\n@dictBlue +1~4 전투의 함성 @dictVariable\n@dictBlue 괴물 회복 저지\n생명력 회복 +12\n마법 아이템 발견 확률 30% 증가",
+                                                "tooltipString": "@dictGold@Runeword13\n\n@dictBlue +1 to All Skills\n+40% Increased Attack Speed\n+250-290% Enhanced Damage @dictVariable\n@dictBlue Adds 5-30 fire damage\n7% Life stolen per hit\n+2-6 Battle Command @dictVariable\n@dictBlue +1-6 Battle Orders @dictVariable\n@dictBlue +1-4 Battle Cry @dictVariable\n@dictBlue Prevent Monster Heal\nReflensh Life +12\n30% Better Chance of Getting Magic Items",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -510,7 +510,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "5홈 무기\n@dictRequiredLevel: 57",
+                                                "text": "5 Socket Weapons\n@dictRequiredLevel: 57",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -549,7 +549,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword47 (깊은 고뇌)",
+                                                "text": "@Runeword47",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -589,7 +589,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword47\n\n@dictBlue 타격 시 35% 확률로 15 레벨 맹독 시전\n공격 속도 +30~40% @dictVariable\n@dictBlue 피해 +340~400 @dictVariable\n@dictBlue 대상의 방어력 무시\n대상의 방어력 -25%\n악마에게 주는 피해 +1~185% (캐릭터 레벨에 비례)\n화염 피해 5 - 30 추가\n적의 독 저항 -(20~25)% @dictVariable\n@dictBlue 치명적 공격 +20%\n괴물 회복 저지\n적 처치 시 마나 +2\n적 처치 시 생명력 +10~15 @dictVariable",
+                                                "tooltipString": "@dictGold@Runeword47\n\n@dictBlue 35% Chance to cast level 15 Venom on striking\n+30-40% Increased Attack Speed @dictVariable\n@dictBlue +340-400 damage @dictVariable\n@dictBlue Ignore Target's Defense\n-25% Target Defense\n+1-185% Damage to Demons (Based on Character Level)\nAdds 5-30 fire damage\n-(20-25)% to Enemy Poison Resistance @dictVariable\n@dictBlue +20% Deadly Strike\nPrevent Monster Heal\n+2 Mana after each Kill\n+10-15 Life after each Kill @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -614,7 +614,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "5홈 도검/도끼\n@dictRequiredLevel: 59",
+                                                "text": "5 Socket Swords/Axes\n@dictRequiredLevel: 59",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -693,7 +693,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword4\n\n@dictBlue 장착 시 9 레벨 광신 오라 효과 적용\n공격 속도 +40%\n피해 +240~270% 증가 @dictVariable\n@dictBlue 강타 확률 +20%\n상처 악화 확률 +25%\n+3 곰인간\n+3 변신술\n괴물 회복 저지\n힘 +25~40 @dictVariable\n@dictBlue 마력 +10\n적 처치 시 마나 +2\n13 레벨 회색곰 소환 (충전 5회)",
+                                                "tooltipString": "@dictGold@Runeword4\n\n@dictBlue Level 9 Fanaticism Aura When Equipped\n+40% Increased Attack Speed\n+240-270% Enhanced Damage @dictVariable\n@dictBlue +20% Chance of Crushing Blow\n+25% Chance of Open Wounds\n+3 Werebear\n+3 Lycanthropy\nPrevent Monster Heal\n+25-40 to Strength @dictVariable\n@dictBlue +10 to Energy\n+2 Mana after each Kill\nLevel 13 Summon Grizzly (5 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -718,7 +718,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "5홈 도끼/망치/홀(셉터)\n@dictRequiredLevel: 63",
+                                                "text": "5 Socket Axes/Hammers/Scepters\n@dictRequiredLevel: 63",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -757,7 +757,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword36 (불멸)",
+                                                "text": "@Runeword36",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -797,7 +797,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword36\n\n@dictBlue 파괴 불가\n피해 +260~310% 증가 @dictVariable\n@dictBlue 최소 피해 +9\n적중당 생명력 7% 훔침\n강타 확률 +20%\n적중 시 대상 실명\n대상 감속 33%\n마나 재생 16%\n생명력 회복 +16\n빙결되지 않음\n마법 아이템 발견 확률 30% 증가\n8 레벨 부활 (충전 88회)",
+                                                "tooltipString": "@dictGold@Runeword36\n\n@dictBlue Indestructible\n+260-310% Enhanced Damage @dictVariable\n@dictBlue +9 to Minimum Damage\n7% Life stolen per hit\n+20% Chance of Crushing Blow\nHit Blinds Target\nSlows Target by 33%\nRegenerate Mana 16%\nReflensh Life +16\nCannot Be Frozen\n30% Better Chance of Getting Magic Items\nLevel 8 Revive (88 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -822,7 +822,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "5홈 근접 무기\n@dictRequiredLevel: 63",
+                                                "text": "5 Socket Melee Weapons\n@dictRequiredLevel: 63",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -901,7 +901,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword25\n\n@dictBlue 타격 시 23% 확률로 12 레벨 화산 시전\n타격 시 5% 확률로 23 레벨 타오르는 바위 시전\n사망 시 100% 확률로 45 레벨 운석 낙하 시전\n공격 시 15% 확률로 22 레벨 번개 파장 시전\n피해 +350% 증가\n대상의 방어력 무시\n마법 피해 100 - 180 추가\n적중당 마나 7% 훔침\n강타 확률 +20%\n치명적 공격 +20%\n괴물 회복 저지\n민첩 +10",
+                                                "tooltipString": "@dictGold@Runeword25\n\n@dictBlue 23% Chance to cast level 12 Volcano on striking\n5% Chance to cast level 23 Molten Boulder on striking\n100% Chance to cast level 45 Meteor when you Die\n15% Chance to cast level 22 Nova on attack\n+350% Enhanced Damage\nIgnore Target's Defense\nAdds 100-180 magic damage\n7% Mana stolen per hit\n+20% Chance of Crushing Blow\n+20% Deadly Strike\nPrevent Monster Heal\n+10 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -926,7 +926,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "5홈 도검/미늘창\n@dictRequiredLevel: 65",
+                                                "text": "5 Socket Swords/Polearms\n@dictRequiredLevel: 65",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1005,7 +1005,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword26\n\n@dictBlue 타격 시 5% 확률로 18 레벨 화산 시전\n장착 시 12 레벨 신성한 빙결 오라 효과 적용\n모든 기술 +2\n공격 속도 +45%\n피해 +330~370% 증가 @dictVariable\n@dictBlue 적의 냉기 저항 -(40~60)% @dictVariable\n@dictBlue 치명적 공격 +20%\n상처 악화 확률 +25%\n괴물 회복 저지\n대상 빙결 +3\n착용 조건 -20%",
+                                                "tooltipString": "@dictGold@Runeword26\n\n@dictBlue 5% Chance to cast level 18 Volcano on striking\nLevel 12 Holy Freeze Aura When Equipped\n+2 to All Skills\n+45% Increased Attack Speed\n+330-370% Enhanced Damage @dictVariable\n@dictBlue -(40-60)% to Enemy Cold Resistance @dictVariable\n@dictBlue +20% Deadly Strike\n+25% Chance of Open Wounds\nPrevent Monster Heal\nFreezes Target +3\nRequirements -20%",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1030,7 +1030,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "5홈 도끼/망치/미늘창\n@dictRequiredLevel: 67",
+                                                "text": "5 Socket Axes/Hammers/Polearms\n@dictRequiredLevel: 67",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1109,7 +1109,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword84\n\n@dictBlue 장착 시 8~12 레벨 집중 오라 효과 적용 @dictVariable\n@dictBlue 모든 기술 +3\n공격 속도 +20%\n관통 공격 +100%\n피해 +325~375% 증가 @dictVariable\n@dictBlue 최대 피해 +9\n명중률 보너스 20%\n냉기 피해 3 - 14 추가\n대상 빙결 +3\n활력 +24\n모든 저항 +40",
+                                                "tooltipString": "@dictGold@Runeword84\n\n@dictBlue Level 8-12 Concentration Aura When Equipped @dictVariable\n@dictBlue +3 to All Skills\n+20% Increased Attack Speed\n+100% Piercing Attack\n+325-375% Enhanced Damage @dictVariable\n@dictBlue +9 to Maximum Damage\n20% Bonus to Attack Rating\nAdds 3-14 cold damage\nFreezes Target +3\n+24 to Vitality\nAll Resistances +40",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1134,7 +1134,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "5홈 활/쇠뇌\n@dictRequiredLevel: 67",
+                                                "text": "5 Socket Bows/Crossbows\n@dictRequiredLevel: 67",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }

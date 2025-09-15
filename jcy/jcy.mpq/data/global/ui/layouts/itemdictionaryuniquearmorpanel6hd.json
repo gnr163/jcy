@@ -66,7 +66,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "신발",
+                                        "text": "Boots",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -99,7 +99,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "다혈질 (핫스퍼)",
+                                                "text": "Hotspur",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -114,7 +114,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 다혈질 \n@lbt\n\n@dictBlue 화염 피해 3 - 6 추가\n방어력 +10~20% 증가 @dictVariable\n@dictBlue 방어력 +6\n생명력 +15\n최대 화염 저항 +15%\n화염 저항 +45%",
+                                                "tooltipString": "@dictGold Hotspur \n@lbt\n\n@dictBlue Adds 3-6 fire damage\n+10-20% Enhanced Defense @dictVariable\n@dictBlue +6 Defense\n+15 to Life\n+15% to Maximum Fire Resist\nFire Resist +45%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -263,7 +263,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "핏덩이발 (고어풋)",
+                                                "text": "Gorefoot",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -278,7 +278,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 핏덩이발 \n@vbt\n\n@dictBlue 달리기/걷기 속도 +20%\n적중당 마나 2% 훔침\n+2 도약 (야만용사 전용)\n방어력 +20~30% 증가 @dictVariable\n@dictBlue 방어력 +12\n공격자가 피해를 2 받음",
+                                                "tooltipString": "@dictGold Gorefoot \n@vbt\n\n@dictBlue +20% Faster Run/Walk\n2% Mana stolen per hit\n+2 to Leap (Barbarian Only)\n+20-30% Enhanced Defense @dictVariable\n@dictBlue +12 Defense\nAttacker Takes Damage of 2",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -427,7 +427,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "크톤의 발 보호대 (트레츠 오브 크던)",
+                                                "text": "Treads of Cthon",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -442,7 +442,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 크톤의 발 보호대 \n@mbt\n\n@dictBlue 달리기/걷기 속도 +30%\n방어력 +30~40% 증가 @dictVariable\n@dictBlue 방어력 +12\n원거리 공격 방어력 +50\n생명력 +10\n지구력 고갈 속도 50% 감소",
+                                                "tooltipString": "@dictGold Treads of Cthon \n@mbt\n\n@dictBlue +30% Faster Run/Walk\n+30-40% Enhanced Defense @dictVariable\n@dictBlue +12 Defense\n+50 Defense vs. Missile\n+10 to Life\n50% Slower Stamina Drain",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -591,7 +591,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "고블린 발가락 (고블린 토우)",
+                                                "text": "Goblin Toe",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -606,7 +606,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 고블린 발가락 \n@tbt\n\n@dictBlue 강타 확률 +25%\n방어력 +50~60% 증가 @dictVariable\n@dictBlue 방어력 +15\n피해 1 감소\n마법 피해 1 감소\n시야 -1",
+                                                "tooltipString": "@dictGold Goblin Toe \n@tbt\n\n@dictBlue +25% Chance of Crushing Blow\n+50-60% Enhanced Defense @dictVariable\n@dictBlue +15 Defense\nDamage Reduced by 1\nMagic Damage Reduced by 1\n-1 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -755,7 +755,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "둔부찢개 (티어헌치)",
+                                                "text": "Tearhaunch",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -770,7 +770,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 둔부찢개 \n@hbt\n\n@dictBlue 달리기/걷기 속도 +20%\n+2 원기 (성기사 전용)\n방어력 +60~80% 증가 @dictVariable\n@dictBlue 방어력 +35\n힘 +5\n민첩 +5\n모든 저항 +10",
+                                                "tooltipString": "@dictGold Tearhaunch \n@hbt\n\n@dictBlue +20% Faster Run/Walk\n+2 to Vigor (Paladin Only)\n+60-80% Enhanced Defense @dictVariable\n@dictBlue +35 Defense\n+5 to Strength\n+5 to Dexterity\nAll Resistances +10",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -919,7 +919,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "지옥불걸음 (인페르노스트라이드)",
+                                                "text": "Infernostride",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -934,7 +934,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 지옥불걸음 \n@xlb\n\n@dictBlue 피격 시 5% 확률로 8 레벨 불길 시전\n달리기/걷기 속도 +20%\n화염 피해 12 - 33 추가\n방어력 +120~150% 증가 @dictVariable\n@dictBlue 방어력 +15\n최대 화염 저항 +10%\n화염 저항 +30%\n괴물에게서 얻는 금화 40~70% 증가 @dictVariable\n@dictBlue 시야 +2",
+                                                "tooltipString": "@dictGold Infernostride \n@xlb\n\n@dictBlue 5% Chance to cast level 8 Blaze when struck\n+20% Faster Run/Walk\nAdds 12-33 fire damage\n+120-150% Enhanced Defense @dictVariable\n@dictBlue +15 Defense\n+10% to Maximum Fire Resist\nFire Resist +30%\n40-70% Extra Gold from Monsters @dictVariable\n@dictBlue +2 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1056,7 +1056,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "물나그네 (워터워크)",
+                                                "text": "Waterwalk",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1071,7 +1071,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 물나그네 \n@xvb\n\n@dictBlue 달리기/걷기 속도 +20%\n방어력 +180~210% 증가 @dictVariable\n@dictBlue 원거리 공격 방어력 +100\n민첩 +15\n생명력 +45~65 @dictVariable\n@dictBlue 최대 지구력 +40\n지구력 회복 속도 50% 증가\n최대 화염 저항 +5%",
+                                                "tooltipString": "@dictGold Waterwalk \n@xvb\n\n@dictBlue +20% Faster Run/Walk\n+180-210% Enhanced Defense @dictVariable\n@dictBlue +100 Defense vs. Missile\n+15 to Dexterity\n+45-65 to Life @dictVariable\n@dictBlue +40 Maximum Stamina\nHeal Stamina Plus 50%\n+5% to Maximum Fire Resist",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1193,7 +1193,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "비단매듭 (실크위버)",
+                                                "text": "Silkweave",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1208,7 +1208,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 비단매듭 \n@xmb\n\n@dictBlue 달리기/걷기 속도 +30%\n방어력 +150~190% 증가 @dictVariable\n@dictBlue 원거리 공격 방어력 +200\n최대 마나 10% 증가\n적 처치 시 마나 +5",
+                                                "tooltipString": "@dictGold Silkweave \n@xmb\n\n@dictBlue +30% Faster Run/Walk\n+150-190% Enhanced Defense @dictVariable\n@dictBlue +200 Defense vs. Missile\nIncrease Maximum Mana 10%\n+5 Mana after each Kill",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1330,7 +1330,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "전쟁 여행자 (워 트래블러)",
+                                                "text": "War Traveler",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1345,7 +1345,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 전쟁 여행자 \n@xtb\n\n@dictBlue 달리기/걷기 속도 +25%\n피해 15 - 25 추가\n방어력 +150~190% 증가 @dictVariable\n@dictBlue 힘 +10\n활력 +10\n지구력 고갈 속도 40% 감소\n공격자가 피해를 5~10 받음 @dictVariable\n@dictBlue 마법 아이템 발견 확률 30~50% 증가 @dictVariable",
+                                                "tooltipString": "@dictGold War Traveler \n@xtb\n\n@dictBlue +25% Faster Run/Walk\nAdds 15-25 damage\n+150-190% Enhanced Defense @dictVariable\n@dictBlue +10 to Strength\n+10 to Vitality\n40% Slower Stamina Drain\nAttacker Takes Damage of 5-10 @dictVariable\n@dictBlue 30-50% Better Chance of Getting Magic Items @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1467,7 +1467,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "선혈 기수 (고어 라이더)",
+                                                "text": "Gore Rider",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1482,7 +1482,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 선혈 기수 \n@xhb\n\n@dictBlue 달리기/걷기 속도 +30%\n강타 확률 +15%\n치명적 공격 +15%\n상처 악화 확률 +10%\n방어력 +160~200% 증가 @dictVariable\n@dictBlue 최대 지구력 +20\n착용 조건 -25%",
+                                                "tooltipString": "@dictGold Gore Rider \n@xhb\n\n@dictBlue +30% Faster Run/Walk\n+15% Chance of Crushing Blow\n+15% Deadly Strike\n+10% Chance of Open Wounds\n+160-200% Enhanced Defense @dictVariable\n@dictBlue +20 Maximum Stamina\nRequirements -25%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1604,7 +1604,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "모래폭풍의 여로 (샌드스톰 트랙)",
+                                                "text": "Sandstorm Trek",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1619,7 +1619,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 모래폭풍의 여로 \n@uvb\n\n@dictBlue 달리기/걷기 속도 +20%\n타격 회복 속도 +20%\n방어력 +140~170% 증가 @dictVariable\n@dictBlue 힘 +10~15 @dictVariable\n@dictBlue 활력 +10~15 @dictVariable\n@dictBlue 최대 지구력 +1~99 (캐릭터 레벨에 비례)\n지구력 고갈 속도 50% 감소\n독 저항 +40~70% @dictVariable\n@dictBlue 내구도 1 회복 (20초마다)",
+                                                "tooltipString": "@dictGold Sandstorm Trek \n@uvb\n\n@dictBlue +20% Faster Run/Walk\n+20% Faster Hit Recovery\n+140-170% Enhanced Defense @dictVariable\n@dictBlue +10-15 to Strength @dictVariable\n@dictBlue +10-15 to Vitality @dictVariable\n@dictBlue +1-99 Maximum Stamina (Based on Character Level)\n50% Slower Stamina Drain\nPoison Resist +40-70% @dictVariable\n@dictBlue Repairs 1 durability in 20 seconds",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1741,7 +1741,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "골수걸음 (메로우워커)",
+                                                "text": "Marrowwalk",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1756,7 +1756,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 골수걸음 \n@umb\n\n@dictBlue 달리기/걷기 속도 +20%\n+1~2 해골 숙련 (강령술사 전용) @dictVariable\n@dictBlue 방어력 +170~200% 증가 @dictVariable\n@dictBlue 힘 +10~20 @dictVariable\n@dictBlue 민첩 +17\n마나 재생 10%\n지구력 회복 속도 10% 증가\n빙결 지속시간 절반으로 감소\n33 레벨 뼈 감옥 (충전 13회)\n12 레벨 생명력 추출 (충전 10회)",
+                                                "tooltipString": "@dictGold Marrowwalk \n@umb\n\n@dictBlue +20% Faster Run/Walk\n+1-2 to Skeleton Mastery (Necromancer Only) @dictVariable\n@dictBlue +170-200% Enhanced Defense @dictVariable\n@dictBlue +10-20 to Strength @dictVariable\n@dictBlue +17 to Dexterity\nRegenerate Mana 10%\nHeal Stamina Plus 10%\nHalf Freeze Duration\nLevel 33 Bone Prison (13 Charges)\nLevel 12 Life Tap (10 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1878,7 +1878,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "그림자 춤꾼 (쉐도우 댄서)",
+                                                "text": "Shadow Dancer",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1893,7 +1893,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold 그림자 춤꾼 \n@uhb\n\n@dictBlue 그림자 단련 +1~2 (암살자 전용) @dictVariable\n@dictBlue 달리기/걷기 속도 +30%\n타격 회복 속도 +30%\n방어력 +70~100% 증가 @dictVariable\n@dictBlue 민첩 +15~25 @dictVariable\n@dictBlue 착용 조건 -20%",
+                                                "tooltipString": "@dictGold Shadow Dancer \n@uhb\n\n@dictBlue +1-2 to Shadow Disciplines (Assassin Only) @dictVariable\n@dictBlue +30% Faster Run/Walk\n+30% Faster Hit Recovery\n+70-100% Enhanced Defense @dictVariable\n@dictBlue +15-25 to Dexterity @dictVariable\n@dictBlue Requirements -20%",
                                                 "pressedFrame": 0
                                             }
                                         },

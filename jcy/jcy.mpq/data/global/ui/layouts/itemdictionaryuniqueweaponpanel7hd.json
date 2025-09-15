@@ -66,7 +66,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "활",
+                                        "text": "Bows",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -99,7 +99,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "눈살 (플럭아이)",
+                                                "text": "Pluckeye",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -114,7 +114,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 눈살 \n@sbw\n\n@dictBlue 피해 +100% 증가\n명중률 +28\n적중당 마나 3% 훔침\n생명력 +10\n적 처치 시 마나 +2\n시야 +2",
+                                                "tooltipString": "@dictGold Pluckeye \n@sbw\n\n@dictBlue +100% Enhanced Damage\n+28 to Attack Rating\n3% Mana stolen per hit\n+10 to Life\n+2 Mana after each Kill\n+2 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -263,7 +263,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "마른시위 (위더스트링)",
+                                                "text": "Witherstring",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -278,7 +278,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 마른시위 \n@hbw\n\n@dictBlue 공격 속도 +30%\n마법 화살 발사\n피해 +40~50% 증가 @dictVariable\n@dictBlue 피해 1 - 3 추가\n명중률 +50",
+                                                "tooltipString": "@dictGold Witherstring \n@hbw\n\n@dictBlue +30% Increased Attack Speed\nFires Magic Arrows\n+40-50% Enhanced Damage @dictVariable\n@dictBlue Adds 1-3 damage\n+50 to Attack Rating",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -427,7 +427,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "큰까마귀 발톱 (레이븐 클러)",
+                                                "text": "Raven Claw",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -442,7 +442,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 큰까마귀 발톱 \n@lbw\n\n@dictBlue 폭발하는 화살 발사\n피해 +60~70% 증가 @dictVariable\n@dictBlue 명중률 보너스 50%\n힘 +3\n민첩 +3",
+                                                "tooltipString": "@dictGold Raven Claw \n@lbw\n\n@dictBlue Fires Explosive Arrows or Bolts\n+60-70% Enhanced Damage @dictVariable\n@dictBlue 50% Bonus to Attack Rating\n+3 to Strength\n+3 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -591,7 +591,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "도적의 활 (로그스 보우)",
+                                                "text": "Rogue's Bow",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -606,7 +606,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 도적의 활 \n@cbw\n\n@dictBlue 공격 속도 +50%\n피해 +40~60% 증가 @dictVariable\n@dictBlue 명중률 +60\n언데드에게 주는 피해 +100%\n치명적 공격 +30%\n모든 저항 +10",
+                                                "tooltipString": "@dictGold Rogue's Bow \n@cbw\n\n@dictBlue +50% Increased Attack Speed\n+40-60% Enhanced Damage @dictVariable\n@dictBlue +60 to Attack Rating\n+100% Damage to Undead\n+30% Deadly Strike\nAll Resistances +10",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -728,7 +728,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "폭풍격 (스톰스트라이크)",
+                                                "text": "Stormstrike",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -743,7 +743,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 폭풍격 \n@sbb\n\n@dictBlue 관통 공격 +25%\n피해 +70~90% 증가 @dictVariable\n@dictBlue 명중률 +28\n번개 피해 1 - 30 추가\n힘 +8\n번개 저항 +25%",
+                                                "tooltipString": "@dictGold Stormstrike \n@sbb\n\n@dictBlue +25% Piercing Attack\n+70-90% Enhanced Damage @dictVariable\n@dictBlue +28 to Attack Rating\nAdds 1-30 lightning damage\n+8 to Strength\nLightning Resist +25%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -865,7 +865,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "슬기매김 (위즌드로우)",
+                                                "text": "Wizendraw",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -880,7 +880,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 슬기매김 \n@lbb\n\n@dictBlue 공격 속도 +20%\n마법 화살 발사\n피해 +70~80% 증가 @dictVariable\n@dictBlue 명중률 +50~100 @dictVariable\n@dictBlue 적의 냉기 저항 -(20~35)% @dictVariable\n@dictBlue 마력 +15\n마나 +30\n냉기 저항 +26%",
+                                                "tooltipString": "@dictGold Wizendraw \n@lbb\n\n@dictBlue +20% Increased Attack Speed\nFires Magic Arrows\n+70-80% Enhanced Damage @dictVariable\n@dictBlue +50-100 to Attack Rating @dictVariable\n@dictBlue -(20-35)% to Enemy Cold Resistance @dictVariable\n@dictBlue +15 to Energy\n+30 to Mana\nCold Resist +26%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1029,7 +1029,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "지옥맞이 (헬캡)",
+                                                "text": "Hellclap",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1044,7 +1044,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 지옥맞이 \n@swb\n\n@dictBlue 화염 기술 +1\n공격 속도 +10%\n피해 +70~90% 증가 @dictVariable\n@dictBlue 명중률 +50~75 @dictVariable\n@dictBlue 화염 피해 15 - (30~50) 추가 @dictVariable\n@dictBlue 민첩 +12\n화염 저항 +40%",
+                                                "tooltipString": "@dictGold Hellclap \n@swb\n\n@dictBlue +1 to Fire Skills\n+10% Increased Attack Speed\n+70-90% Enhanced Damage @dictVariable\n@dictBlue +50-75 to Attack Rating @dictVariable\n@dictBlue Fire Adds 15-(30-50) damage @dictVariable\n@dictBlue +12 to Dexterity\nFire Resist +40%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1166,7 +1166,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "폭발껍질 (블래스트바크)",
+                                                "text": "Blastbark",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1181,7 +1181,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 폭발껍질 \n@lwb\n\n@dictBlue 아마존 기술 레벨 +1\n피해 +70~130% 증가 @dictVariable\n@dictBlue 적중당 마나 3% 훔침\n+2 폭발 화살 (아마존 전용)\n힘 +5",
+                                                "tooltipString": "@dictGold Blastbark \n@lwb\n\n@dictBlue +1 to Amazon Skill Levels\n+70-130% Enhanced Damage @dictVariable\n@dictBlue 3% Mana stolen per hit\n+2 to Exploding Arrow (Amazon Only)\n+5 to Strength",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1303,7 +1303,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "하늘일격 (스카이스트라이크)",
+                                                "text": "Skystrike",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1318,7 +1318,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 하늘일격 \n@8sb\n\n@dictBlue 타격 시 2% 확률로 6 레벨 운석 낙하 시전\n아마존 기술 레벨 +1\n공격 속도 +30%\n피해 +150~200% 증가 @dictVariable\n@dictBlue 명중률 +100\n번개 피해 1 - 250 추가\n마력 +10",
+                                                "tooltipString": "@dictGold Skystrike \n@8sb\n\n@dictBlue 2% Chance to cast level 6 Meteor on striking\n+1 to Amazon Skill Levels\n+30% Increased Attack Speed\n+150-200% Enhanced Damage @dictVariable\n@dictBlue +100 to Attack Rating\nAdds 1-250 lightning damage\n+10 to Energy",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1440,7 +1440,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "파열갈고리 (립후크)",
+                                                "text": "Riphook",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1455,7 +1455,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 파열갈고리 \n@8hb\n\n@dictBlue 공격 속도 +30%\n피해 +180~220% 증가 @dictVariable\n@dictBlue 적중당 생명력 7~10% 훔침 @dictVariable\n@dictBlue 상처 악화 확률 +30%\n대상 감속 30%\n마나 +35",
+                                                "tooltipString": "@dictGold Riphook \n@8hb\n\n@dictBlue +30% Increased Attack Speed\n+180-220% Enhanced Damage @dictVariable\n@dictBlue 7-10% Life stolen per hit @dictVariable\n@dictBlue +30% Chance of Open Wounds\nSlows Target by 30%\n+35 to Mana",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1604,7 +1604,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "쿠코 샤카쿠 (쿠코 샤카쿠)",
+                                                "text": "Kuko Shakaku",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1619,7 +1619,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 쿠코 샤카쿠 \n@8lb\n\n@dictBlue 활과 쇠뇌 기술 +3 (아마존 전용)\n폭발하는 화살 발사\n관통 공격 +50%\n피해 +150~180% 증가 @dictVariable\n@dictBlue 화염 피해 40 - 180 추가\n+3 점화 화살 (아마존 전용)",
+                                                "tooltipString": "@dictGold Kuko Shakaku \n@8lb\n\n@dictBlue +3 to Bow and Crossbow Skills (Amazon Only)\nFires Explosive Arrows or Bolts\n+50% Piercing Attack\n+150-180% Enhanced Damage @dictVariable\n@dictBlue Adds 40-180 fire damage\n+3 to Immolation Arrow (Amazon Only)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1768,7 +1768,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "끝없는 우박 (앤드리스해일)",
+                                                "text": "Endlesshail",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1783,7 +1783,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 끝없는 우박 \n@8cb\n\n@dictBlue 피해 +180~220% 증가 @dictVariable\n@dictBlue 냉기 피해 15 - 30 추가\n+3~5 속사 (아마존 전용) @dictVariable\n@dictBlue 원거리 공격 방어력 +50\n마나 +40\n냉기 저항 +35%",
+                                                "tooltipString": "@dictGold Endlesshail \n@8cb\n\n@dictBlue +180-220% Enhanced Damage @dictVariable\n@dictBlue Adds 15-30 cold damage\n+3-5 to Strafe (Amazon Only) @dictVariable\n@dictBlue +50 Defense vs. Missile\n+40 to Mana\nCold Resist +35%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1905,7 +1905,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "마녀림의 시위 (윗치와일드 스트링)",
+                                                "text": "Witchwild String",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1920,7 +1920,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 마녀림의 시위 \n@8s8\n\n@dictBlue 타격 시 2% 확률로 5 레벨 피해 증폭 시전\n마법 화살 발사\n피해 +150~170% 증가 @dictVariable\n@dictBlue 치명적 공격 +1~99% (캐릭터 레벨에 비례)\n모든 저항 +40\n홈 있음 (2)",
+                                                "tooltipString": "@dictGold Witchwild String \n@8s8\n\n@dictBlue 2% Chance to cast level 5 Amplify Damage on striking\nFires Magic Arrows\n+150-170% Enhanced Damage @dictVariable\n@dictBlue +1-99% Deadly Strike (Based on Character Level)\nAll Resistances +40\nSocketed (2)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2069,7 +2069,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "벼랑몰이 (클리프킬러)",
+                                                "text": "Cliffkiller",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2084,7 +2084,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 벼랑몰이 \n@8l8\n\n@dictBlue 아마존 기술 레벨 +2\n피해 +190~230% 증가 @dictVariable\n@dictBlue 피해 (5~10) - (20~30) 추가 @dictVariable\n@dictBlue 밀쳐내기\n원거리 공격 방어력 +80\n생명력 +50",
+                                                "tooltipString": "@dictGold Cliffkiller \n@8l8\n\n@dictBlue +2 to Amazon Skill Levels\n+190-230% Enhanced Damage @dictVariable\n@dictBlue Adds (5-10)-(20-30) damage @dictVariable\n@dictBlue Knockback\n+80 Defense vs. Missile\n+50 to Life",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2206,7 +2206,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "마술사의 진노 (메이지래쓰)",
+                                                "text": "Magewrath",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2221,7 +2221,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 마술사의 진노 \n@8sw\n\n@dictBlue 아마존 기술 레벨 +1\n피해 +120~150% 증가 @dictVariable\n@dictBlue 피해 25 - 50 추가\n명중률 +200~250 @dictVariable\n@dictBlue 적중당 마나 15% 훔침\n+3 유도 화살 (아마존 전용)\n적중 시 대상 실명\n민첩 +10\n마법 피해 9~13 감소 @dictVariable",
+                                                "tooltipString": "@dictGold Magewrath \n@8sw\n\n@dictBlue +1 to Amazon Skill Levels\n+120-150% Enhanced Damage @dictVariable\n@dictBlue Adds 25-50 damage\n+200-250 to Attack Rating @dictVariable\n@dictBlue 15% Mana stolen per hit\n+3 to Guided Arrow (Amazon Only)\nHit Blinds Target\n+10 to Dexterity\nMagic Damage Reduced by 9-13 @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2343,7 +2343,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "황금일격 활 (골드스트라이크 아치)",
+                                                "text": "Goldstrike Arch",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2358,7 +2358,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 황금일격 활 \n@8lw\n\n@dictBlue 타격 시 5% 확률로 7 레벨 천상의 주먹 시전\n공격 속도 +50%\n피해 +200~250% 증가 @dictVariable\n@dictBlue 명중률 보너스 100~150% @dictVariable\n@dictBlue 악마에게 주는 피해 +100~200% @dictVariable\n@dictBlue 언데드에게 주는 피해 +100~200% @dictVariable\n@dictBlue 생명력 회복 +12",
+                                                "tooltipString": "@dictGold Goldstrike Arch \n@8lw\n\n@dictBlue 5% Chance to cast level 7 Fist of the Heavens on striking\n+50% Increased Attack Speed\n+200-250% Enhanced Damage @dictVariable\n@dictBlue 100-150% Bonus to Attack Rating @dictVariable\n@dictBlue +100-200% Damage to Demons @dictVariable\n@dictBlue +100-200% Damage to Undead @dictVariable\n@dictBlue Reflensh Life +12",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2507,7 +2507,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "수리뿔 (이글혼)",
+                                                "text": "Eaglehorn",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2522,7 +2522,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 수리뿔 \n@6l7\n\n@dictBlue 아마존 기술 레벨 +1\n피해 +200% 증가\n최대 피해 +2~198% 증가 (캐릭터 레벨에 비례)\n대상의 방어력 무시\n명중률 +6~594 (캐릭터 레벨에 비례)\n민첩 +25",
+                                                "tooltipString": "@dictGold Eaglehorn \n@6l7\n\n@dictBlue +1 to Amazon Skill Levels\n+200% Enhanced Damage\n+2-198% Enhanced Maximum Damage (Based on Character Level)\nIgnore Target's Defense\n+6-594 to Attack Rating (Based on Character Level)\n+25 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2671,7 +2671,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "과부제조기 (위도우메이커)",
+                                                "text": "Widowmaker",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2686,7 +2686,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 과부제조기 \n@6sw\n\n@dictBlue 마법 화살 발사\n피해 +150~200% 증가 @dictVariable\n@dictBlue 대상의 방어력 무시\n치명적 공격 +33%\n+3~5 유도 화살 @dictVariable",
+                                                "tooltipString": "@dictGold Widowmaker \n@6sw\n\n@dictBlue Fires Magic Arrows\n+150-200% Enhanced Damage @dictVariable\n@dictBlue Ignore Target's Defense\n+33% Deadly Strike\n+3-5 Guided Arrow @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2835,7 +2835,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "바람살 (윈드포스)",
+                                                "text": "Windforce",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2850,7 +2850,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 바람살 \n@6lw\n\n@dictBlue 공격 속도 +20%\n피해 +250% 증가\n최대 피해 +3~309 (캐릭터 레벨에 비례)\n적중당 마나 6~8% 훔침 @dictVariable\n@dictBlue 밀쳐내기\n힘 +10\n민첩 +5\n지구력 회복 속도 30% 증가",
+                                                "tooltipString": "@dictGold Windforce \n@6lw\n\n@dictBlue +20% Increased Attack Speed\n+250% Enhanced Damage\n+3-309 to Maximum Damage (Based on Character Level)\n6-8% Mana stolen per hit @dictVariable\n@dictBlue Knockback\n+10 to Strength\n+5 to Dexterity\nHeal Stamina Plus 30%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2984,7 +2984,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "아마존 전용 활",
+                                        "text": "Amzaon Bows",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -3017,7 +3017,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "라이칸더의 조준 (라이캔더의 에임)",
+                                                "text": "Lycander's Aim",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3032,7 +3032,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 라이칸더의 조준 \n@am7\n\n@dictBlue 활과 쇠뇌 기술 +2 (아마존 전용)\n아마존 기술 레벨 +2\n공격 속도 +20%\n피해 +150~200% 증가 @dictVariable\n@dictBlue 피해 25 - 50 추가\n적중당 마나 5~8% 훔침 @dictVariable\n@dictBlue 방어력 +20% 증가\n민첩 +20\n마력 +20",
+                                                "tooltipString": "@dictGold Lycander's Aim \n@am7\n\n@dictBlue +2 to Bow and Crossbow Skills (Amazon Only)\n+2 to Amazon Skill Levels\n+20% Increased Attack Speed\n+150-200% Enhanced Damage @dictVariable\n@dictBlue Adds 25-50 damage\n5-8% Mana stolen per hit @dictVariable\n@dictBlue +20% Enhanced Defense\n+20 to Dexterity\n+20 to Energy",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3154,7 +3154,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "핏빛 큰까마귀의 돌진 (블러드 레이븐의 차지)",
+                                                "text": "Blood Raven's Charge",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3169,7 +3169,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 핏빛 큰까마귀의 돌진 \n@amb\n\n@dictBlue 활과 쇠뇌 기술 +2~4 (아마존 전용) @dictVariable\n@dictBlue 폭발하는 화살 발사\n피해 +180~230% 증가 @dictVariable\n@dictBlue 명중률 보너스 200~300% @dictVariable\n@dictBlue 5 레벨 부활 (충전 30회)",
+                                                "tooltipString": "@dictGold Blood Raven's Charge \n@amb\n\n@dictBlue +2-4 to Bow and Crossbow Skills (Amazon Only) @dictVariable\n@dictBlue Fires Explosive Arrows or Bolts\n+180-230% Enhanced Damage @dictVariable\n@dictBlue 200-300% Bonus to Attack Rating @dictVariable\n@dictBlue Level 5 Revive (30 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3303,7 +3303,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "쇠뇌",
+                                        "text": "Crossbows",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -3336,7 +3336,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "납까마귀 (리드크로우)",
+                                                "text": "Leadcrow",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3351,7 +3351,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 납까마귀 \n@lxb\n\n@dictBlue 피해 +70% 증가\n명중률 +40\n치명적 공격 +25%\n민첩 +10\n생명력 +10\n독 저항 +30%",
+                                                "tooltipString": "@dictGold Leadcrow \n@lxb\n\n@dictBlue +70% Enhanced Damage\n+40 to Attack Rating\n+25% Deadly Strike\n+10 to Dexterity\n+10 to Life\nPoison Resist +30%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3473,7 +3473,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "신혈쐐기 (아이커스팅)",
+                                                "text": "Ichorsting",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3488,7 +3488,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 신혈쐐기 \n@mxb\n\n@dictBlue 공격 속도 +20%\n관통 공격 +50%\n피해 +50% 증가\n명중률 +50\n독 피해 +30 (3초에 걸쳐)\n민첩 +20",
+                                                "tooltipString": "@dictGold Ichorsting \n@mxb\n\n@dictBlue +20% Increased Attack Speed\n+50% Piercing Attack\n+50% Enhanced Damage\n+50 to Attack Rating\n+30 poison damage over 3 seconds\n+20 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3610,7 +3610,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "지옥발사기 (헬캐스트)",
+                                                "text": "Hellcast",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3625,7 +3625,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 지옥발사기 \n@hxb\n\n@dictBlue 공격 속도 +20%\n폭발하는 화살 발사\n피해 +70~80% 증가 @dictVariable\n@dictBlue 명중률 +70\n화염 피해 15 - 35 추가\n최대 화염 저항 +15%\n화염 저항 +15%",
+                                                "tooltipString": "@dictGold Hellcast \n@hxb\n\n@dictBlue +20% Increased Attack Speed\nFires Explosive Arrows or Bolts\n+70-80% Enhanced Damage @dictVariable\n@dictBlue +70 to Attack Rating\nAdds 15-35 fire damage\n+15% to Maximum Fire Resist\nFire Resist +15%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3747,7 +3747,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "멸궁 (둠슬링어)",
+                                                "text": "Doomslinger",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3762,7 +3762,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 멸궁 \n@rxb\n\n@dictBlue 아마존 기술 레벨 +1\n공격 속도 +30%\n관통 공격 +35%\n피해 +60~100% 증가 @dictVariable\n@dictBlue 생명력 +15",
+                                                "tooltipString": "@dictGold Doomslinger \n@rxb\n\n@dictBlue +1 to Amazon Skill Levels\n+30% Increased Attack Speed\n+35% Piercing Attack\n+60-100% Enhanced Damage @dictVariable\n@dictBlue +15 to Life",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3884,7 +3884,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "랑거 브리저 (랭거 브리저)",
+                                                "text": "Langer Briser",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3899,7 +3899,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 랑거 브리저 \n@8lx\n\n@dictBlue 피해 +170~200% 증가 @dictVariable\n@dictBlue 최대 피해 +10~30 @dictVariable\n@dictBlue 번개 피해 1 - 212 추가\n상처 악화 확률 +33%\n밀쳐내기\n생명력 +30\n마법 아이템 발견 확률 30~60% 증가 @dictVariable",
+                                                "tooltipString": "@dictGold Langer Briser \n@8lx\n\n@dictBlue +170-200% Enhanced Damage @dictVariable\n@dictBlue +10-30 to Maximum Damage @dictVariable\n@dictBlue Adds 1-212 lightning damage\n+33% Chance of Open Wounds\nKnockback\n+30 to Life\n30-60% Better Chance of Getting Magic Items @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4021,7 +4021,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "고름 쏘개 (퍼스 스피터)",
+                                                "text": "Pus Spitter",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4036,7 +4036,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 고름 쏘개 \n@8mx\n\n@dictBlue 피격 시 9% 확률로 6 레벨 맹독 확산 시전\n타격 시 4% 확률로 1 레벨 저항 감소 시전\n강령술사 기술 레벨 +2\n공격 속도 +10%\n피해 +150~220% 증가 @dictVariable\n@dictBlue 명중률 +5~495 (캐릭터 레벨에 비례)\n독 피해 +150 (8초에 걸쳐)\n착용 조건 -60%",
+                                                "tooltipString": "@dictGold Pus Spitter \n@8mx\n\n@dictBlue 9% Chance to cast level 6 Poison Nova when struck\n4% Chance to cast level 1 Lower Resist on striking\n+2 to Necromancer Skill Levels\n+10% Increased Attack Speed\n+150-220% Enhanced Damage @dictVariable\n@dictBlue +5-495 to Attack Rating (Based on Character Level)\n+150 poison damage over 8 seconds\nRequirements -60%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4185,7 +4185,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "눈보라 포 (부리자-도 캬논)",
+                                                "text": "Buriza-Do Kyanon",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4200,7 +4200,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 눈보라 포 \n@8hx\n\n@dictBlue 공격 속도 +80%\n관통 공격 +100%\n피해 +150~200% 증가 @dictVariable\n@dictBlue 최대 피해 +2~247 (캐릭터 레벨에 비례)\n냉기 피해 32 - 196 추가\n대상 빙결 +3\n방어력 +75~150 @dictVariable\n@dictBlue 민첩 +35",
+                                                "tooltipString": "@dictGold Buriza-Do Kyanon \n@8hx\n\n@dictBlue +80% Increased Attack Speed\n+100% Piercing Attack\n+150-200% Enhanced Damage @dictVariable\n@dictBlue +2-247 to Maximum Damage (Based on Character Level)\nAdds 32-196 cold damage\nFreezes Target +3\n+75-150 Defense @dictVariable\n@dictBlue +35 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4322,7 +4322,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "악마의 기계 (데몬 머신)",
+                                                "text": "Demon Machine",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4337,7 +4337,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 악마의 기계 \n@8rx\n\n@dictBlue 폭발하는 화살 발사\n관통 공격 +66%\n피해 +123% 증가\n최대 피해 +66\n명중률 +632\n방어력 +321\n마나 +36",
+                                                "tooltipString": "@dictGold Demon Machine \n@8rx\n\n@dictBlue Fires Explosive Arrows or Bolts\n+66% Piercing Attack\n+123% Enhanced Damage\n+66 to Maximum Damage\n+632 to Attack Rating\n+321 Defense\n+36 to Mana",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4486,7 +4486,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "지옥포 (헬랙)",
+                                                "text": "Hellrack",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4501,7 +4501,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 지옥포 \n@6hx\n\n@dictBlue 공격 속도 +20%\n피해 +180~230% 증가 @dictVariable\n@dictBlue 명중률 보너스 100~150% @dictVariable\n@dictBlue 화염 피해 63 - 324 추가\n번개 피해 63 - 324 추가\n냉기 피해 63 - 324 추가\n18 레벨 점화 화살 (충전 150회)\n홈 있음 (2)",
+                                                "tooltipString": "@dictGold Hellrack \n@6hx\n\n@dictBlue +20% Increased Attack Speed\n+180-230% Enhanced Damage @dictVariable\n@dictBlue 100-150% Bonus to Attack Rating @dictVariable\n@dictBlue Adds 63-324 fire damage\nAdds 63-324 lightning damage\nAdds 63-324 cold damage\nLevel 18 Immolation Arrow (150 Charges)\nSocketed (2)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4623,7 +4623,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "내장 흡수 (구트 쉬폰)",
+                                                "text": "Gut Siphon",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4638,7 +4638,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 내장 흡수 \n@6rx\n\n@dictBlue 관통 공격 +33%\n피해 +160~220% 증가 @dictVariable\n@dictBlue 적중당 생명력 12~18% 훔침 @dictVariable\n@dictBlue 상처 악화 확률 +33%\n대상 감속 25%",
+                                                "tooltipString": "@dictGold Gut Siphon \n@6rx\n\n@dictBlue +33% Piercing Attack\n+160-220% Enhanced Damage @dictVariable\n@dictBlue 12-18% Life stolen per hit @dictVariable\n@dictBlue +33% Chance of Open Wounds\nSlows Target by 25%",
                                                 "pressedFrame": 0
                                             }
                                         },

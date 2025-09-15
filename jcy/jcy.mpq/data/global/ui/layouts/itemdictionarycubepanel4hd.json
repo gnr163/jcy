@@ -1,6 +1,6 @@
 {
     "type": "VideoOptionsPanel",
-    "name": "ItemDictionaryCubeRerollPanel",
+    "name": "ItemDictionaryCubePanel4",
     "fields": {
         "priority": 9003,
         "rect": "$OptionsPanelRect",
@@ -110,7 +110,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "장비 속성 변경",
+                                        "text": "Reroll Item Attributes",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -143,7 +143,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "희귀 아이템\n최상급 해골\n요르단의 반지",
+                                                "text": "Rare Item\nPerfect Skull\nThe Stone of Jordan",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -153,7 +153,7 @@
                                     "type": "LayoutItemWidget",
                                     "name": "GammaCalibration",
                                     "fields": {
-                                        "marginTop": 96
+                                        "marginTop": 72
                                     },
                                     "children": [
                                         {
@@ -161,7 +161,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  희귀 아이템 (무작위 속성)",
+                                                "text": "->  Random Rare Item\n    of the same type",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -171,7 +171,7 @@
                                     "type": "Widget",
                                     "name": "CubeRecipeOutput",
                                     "fields": {
-                                        "marginTop": 48,
+                                        "marginTop": 24,
                                         "marginLeft": 12
                                     },
                                     "children": [
@@ -213,7 +213,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "희귀 아이템\n최상급 해골 × 6",
+                                                "text": "Rare Item\nPerfect Skull × 6",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -223,7 +223,7 @@
                                     "type": "LayoutItemWidget",
                                     "name": "GammaCalibration",
                                     "fields": {
-                                        "marginTop": 96
+                                        "marginTop": 72
                                     },
                                     "children": [
                                         {
@@ -231,7 +231,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  희귀 아이템 (무작위 속성)",
+                                                "text": "->  Random Rare Item\n    of the same type",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -241,7 +241,7 @@
                                     "type": "Widget",
                                     "name": "CubeRecipeOutput",
                                     "fields": {
-                                        "marginTop": 48,
+                                        "marginTop": 24,
                                         "marginLeft": 12
                                     },
                                     "children": [
@@ -301,7 +301,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @strBSMagic @amu (무작위 속성)",
+                                                "text": "->  Random @strBSMagic @amu",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -371,7 +371,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @strBSMagic @rin (무작위 속성)",
+                                                "text": "->  Random @strBSMagic @rin",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -423,7 +423,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic 아이템\n최상급 보석/해골 × 3",
+                                                "text": "Magic Item\nPerfect Gem or Skull × 3",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -433,7 +433,7 @@
                                     "type": "LayoutItemWidget",
                                     "name": "GammaCalibration",
                                     "fields": {
-                                        "marginTop": 96
+                                        "marginTop": 72
                                     },
                                     "children": [
                                         {
@@ -441,7 +441,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @strBSMagic 아이템 (무작위 속성)",
+                                                "text": "->  Random Magic Item\n    of the same type",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -451,7 +451,7 @@
                                     "type": "Widget",
                                     "name": "CubeRecipeOutput",
                                     "fields": {
-                                        "marginTop": 48,
+                                        "marginTop": 24,
                                         "marginLeft": 12
                                     },
                                     "children": [
@@ -493,7 +493,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic @amu\n최상급 보석 × 6 (종류별로)",
+                                                "text": "@strBSMagic @amu\nPerfect Gem × 6 (Each type)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -503,7 +503,7 @@
                                     "type": "LayoutItemWidget",
                                     "name": "GammaCalibration",
                                     "fields": {
-                                        "marginTop": 96
+                                        "marginTop": 72
                                     },
                                     "children": [
                                         {
@@ -511,7 +511,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @Prismatic @amu (모든 저항)",
+                                                "text": "->  @Prismatic @amu\n    (All Resistances)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -521,7 +521,7 @@
                                     "type": "Widget",
                                     "name": "CubeRecipeOutput",
                                     "fields": {
-                                        "marginTop": 48,
+                                        "marginTop": 24,
                                         "marginLeft": 12
                                     },
                                     "children": [
@@ -534,7 +534,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "고정 접두사\n@dictBlue모든 저항 +16~20% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "Fixed Prefix@dictBlue\nAll Resistances +16-20% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -563,7 +563,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic @rin\n최상급 에메랄드\n해독 물약",
+                                                "text": "@strBSMagic @rin\nPerfect Emerald\nAntidote Potion",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -581,7 +581,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @Jade @rin (독 저항)",
+                                                "text": "->  @Jade @rin (Poison Resist)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -604,7 +604,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "고정 접두사\n@dictBlue독 저항 +21~30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "Fixed Prefix@dictBlue\nPoison Resist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -633,7 +633,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic @rin\n최상급 루비\n폭발 물약",
+                                                "text": "@strBSMagic @rin\nPerfect Ruby\nExploding Potion",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -651,7 +651,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @Garnet @rin (화염 저항)",
+                                                "text": "->  @Garnet @rin (Fire Resist)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -674,7 +674,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "고정 접두사\n@dictBlue화염 저항 +21~30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "Fixed Prefix@dictBlue\nFire Resist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -703,7 +703,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic @rin\n최상급 토파즈\n활력 물약",
+                                                "text": "@strBSMagic @rin\nPerfect Topaz\nRejuvenation Potion",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -721,7 +721,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @Coral @rin (번개 저항)",
+                                                "text": "->  @Coral @rin (Lightning Resist)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -744,7 +744,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "고정 접두사\n@dictBlue번개 저항 +21~30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "Fixed Prefix@dictBlue\nLightning Resist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -773,7 +773,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic @rin\n최상급 사파이어\n해동 물약",
+                                                "text": "@strBSMagic @rin\nPerfect Sapphire\nThawing Potion",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -791,7 +791,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @Cobalt @rin (냉기 저항)",
+                                                "text": "->  @Cobalt @rin (Cold Resist)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -814,7 +814,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "고정 접두사\n@dictBlue냉기 저항 +21~30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "Fixed Prefix@dictBlue\nCold Resist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -843,7 +843,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic 도검\n루비 (등급 무관)\n치유 물약 × 4 (종류 무관)",
+                                                "text": "@strBSMagic Sword\nRuby (Any type)\nHealing Potion × 4 (Any)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -861,7 +861,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  거머리의 도검",
+                                                "text": "->  Sword of the Leech",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -884,7 +884,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "고정 접미사\n@dictBlue적중당 생명력 2~5% 훔침 @dictVariable\n\n@dictWhite@dictItemLevel: 30",
+                                                "tooltipString": "Fixed Suffix@dictBlue\n2-5% Life stolen per hit @dictVariable\n\n@dictWhite@dictItemLevel: 30",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -913,7 +913,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic 방패\n해골 (등급 무관) × 2\n스파이크 클럽 (종류 무관)",
+                                                "text": "@strBSMagic Shield\nSkull (Any type) × 2\nSpiked Club (Any)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -931,7 +931,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  쐐기의 방패",
+                                                "text": "->  Shield of Spikes",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -954,7 +954,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "고정 접미사\n@dictBlue공격자가 피해를 4~6 받음 @dictVariable\n\n@dictWhite@dictItemLevel: 30",
+                                                "tooltipString": "Fixed Suffix@dictBlue\nAttacker Takes Damage of 4-6 @dictVariable\n\n@dictWhite@dictItemLevel: 30",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -983,7 +983,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "지팡이 (종류 무관)\n크리스 (종류 무관)\n허리띠 (종류 무관)\n다이아몬드 (등급 무관)",
+                                                "text": "Staff (Any)\nKris (Any)\nBelt (Any)\nDiamond (Any type)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1001,7 +1001,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @Savage 미늘창",
+                                                "text": "->  @Savage Polearm",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1024,7 +1024,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "고정 접두사\n@dictBlue피해 +66~80% 증가 @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "Fixed Prefix@dictBlue\n+66~80% Enhanced Damage @dictVariable\n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1053,7 +1053,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic 무기\n최하급 보석 × 3",
+                                                "text": "@strBSMagic Weapon\nChpped Gem × 3",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1071,7 +1071,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @strBSMagic 무기 (홈 1~2개)",
+                                                "text": "->  @strBSMagic Weapon (Socketed 1-2)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1094,7 +1094,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictBlue홈 있음 (1~2) @dictVariable\n\n@dictWhite@dictItemLevel: 25",
+                                                "tooltipString": "@dictBlue Socketed (1-2) @dictVariable\n\n@dictWhite@dictItemLevel: 25",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1123,7 +1123,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "홈이 파인 무기\n일반 등급 보석 × 3",
+                                                "text": "Socketed Weapon\nStandard Gem × 3",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1141,7 +1141,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @strBSMagic 무기 (홈 1~2개)",
+                                                "text": "->  @strBSMagic Weapon (Socketed 1-2)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1164,7 +1164,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictBlue홈 있음 (1~2) @dictVariable\n\n@dictWhite@dictItemLevel: 30",
+                                                "tooltipString": "@dictBlue Socketed (1-2) @dictVariable\n\n@dictWhite@dictItemLevel: 30",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1193,7 +1193,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic 무기\n상급 보석 × 3",
+                                                "text": "@strBSMagic Weapon\nFlawless Gem × 3",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1211,7 +1211,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @strBSMagic 무기 (홈 1~2개)",
+                                                "text": "->  @strBSMagic Weapon (Socketed 1-2)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1234,7 +1234,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictBlue홈 있음 (1~2) @dictVariable\n\n@dictWhite@dictItemLevel: 30",
+                                                "tooltipString": "@dictBlue Socketed (1-2) @dictVariable\n\n@dictWhite@dictItemLevel: 30",
                                                 "pressedFrame": 0
                                             }
                                         }

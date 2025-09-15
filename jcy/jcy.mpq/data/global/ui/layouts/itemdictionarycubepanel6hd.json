@@ -1,6 +1,6 @@
 {
     "type": "VideoOptionsPanel",
-    "name": "ItemDictionaryCubeOtherPanel",
+    "name": "ItemDictionaryCubePanel6",
     "fields": {
         "priority": 9003,
         "rect": "$OptionsPanelRect",
@@ -78,7 +78,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "퀘스트 관련",
+                                        "text": "Quest",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -163,7 +163,7 @@
                                                     "y": 50
                                                 },
                                                 "filename": "itemDictionary/cubehelp_redPortalLarge",
-                                                "tooltipString": "젖소방 차원문 생성",
+                                                "tooltipString": "Open Secret Cow Level Portal",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -272,7 +272,7 @@
                                                     "y": 50
                                                 },
                                                 "filename": "itemDictionary/cubehelp_redPortalLarge",
-                                                "tooltipString": "혼돈계 이벤트 차원문 생성",
+                                                "tooltipString": "Open Pandemonium Event Portal",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -381,7 +381,7 @@
                                                     "y": 50
                                                 },
                                                 "filename": "itemDictionary/cubehelp_redPortalLarge",
-                                                "tooltipString": "혼돈계 이벤트 (우버 트리스트럼) 차원문 생성",
+                                                "tooltipString": "Open Pandemonium Event (Uber Tristram) Portal",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -542,7 +542,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "소비 아이템",
+                                        "text": "Consumable",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -575,7 +575,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "치유 물약 (종류 무관) × 3\n마나 물약 (종류 무관) × 3\n최하급 보석",
+                                                "text": "Healing Potion (Any) × 3\nMana Potion (Any) × 3\nChipped Gem",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -593,7 +593,7 @@
                                             "name": "CubeRecipeOutput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  활력 물약",
+                                                "text": "->  Rejuvenation Potion",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -622,7 +622,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "활력 물약 × 3",
+                                                "text": "Rejuvenation Potion × 3",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -640,7 +640,7 @@
                                             "name": "CubeRecipeOutput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  대량의 활력 물약",
+                                                "text": "->  Full Rejuvenation Potion",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -669,7 +669,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "치유 물약 (종류 무관) × 3\n마나 물약 (종류 무관) × 3\n일반 등급 보석",
+                                                "text": "Healing Potion (Any) × 3\nMana Potion (Any) × 3\nStandard Gem",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -687,7 +687,7 @@
                                             "name": "CubeRecipeOutput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  대량의 활력 물약",
+                                                "text": "->  Full Rejuvenation Potion",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -716,7 +716,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "유독 가스 물약\n치유 물약 (종류 무관) × 3",
+                                                "text": "Strangling Gas Potion\nHealing Potion (Any) × 3",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -734,7 +734,7 @@
                                             "name": "CubeRecipeOutput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  해독 물약",
+                                                "text": "->  Antidote Potion",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -763,7 +763,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "화살 × 2",
+                                                "text": "Arrows × 2",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -781,7 +781,7 @@
                                             "name": "CubeRecipeOutput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  쇠뇌용 화살 (랜덤 수량)",
+                                                "text": "->  Bolts (Random Quantity)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -810,7 +810,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "쇠뇌용 화살 × 2",
+                                                "text": "Bolts × 2",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -828,7 +828,7 @@
                                             "name": "CubeRecipeOutput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  화살 (랜덤 수량)",
+                                                "text": "->  Arrows (Random Quantity)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -857,7 +857,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "창 계열 무기\n화살",
+                                                "text": "Spear Class Weapon\nArrows",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -875,7 +875,7 @@
                                             "name": "CubeRecipeOutput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  일반 재벌린 (랜덤 수량)",
+                                                "text": "->  Normal Javelin (Random Quantity)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -904,7 +904,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "도끼 계열 무기\n대거",
+                                                "text": "Axe Class Weapon\nDagger",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -922,7 +922,7 @@
                                             "name": "CubeRecipeOutput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  일반 스로잉 액스 (랜덤 수량)",
+                                                "text": "->  Normal Throwing Axe (Random Quantity)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -946,7 +946,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "장비 수리",
+                                        "text": "Repair",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -979,7 +979,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "무기\n@r09L 룬",
+                                                "text": "Weapon\n@r09L Rune",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -997,7 +997,7 @@
                                             "name": "CubeRecipeOutput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  무기 수리",
+                                                "text": "->  Repair Weapon",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1026,7 +1026,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "무기\n@r09L 룬\n최하급 보석",
+                                                "text": "Weapon\n@r09L Rune\nChipped Gem",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1044,7 +1044,7 @@
                                             "name": "CubeRecipeOutput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  무기 수리 및 충전",
+                                                "text": "->  Repair Weapon and Recharge",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1073,7 +1073,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "방어구\n@r08L 룬",
+                                                "text": "Armor\n@r08L Rune",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1091,7 +1091,7 @@
                                             "name": "CubeRecipeOutput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  방어구 수리",
+                                                "text": "->  Repair Armor",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1120,7 +1120,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "방어구\n@r08L 룬\n최하급 보석",
+                                                "text": "Armor\n@r08L Rune\nChipped Gem",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1138,7 +1138,7 @@
                                             "name": "CubeRecipeOutput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  방어구 수리 및 충전",
+                                                "text": "->  Repair Armor and Recharge",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }

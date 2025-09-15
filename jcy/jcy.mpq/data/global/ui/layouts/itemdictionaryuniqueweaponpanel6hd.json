@@ -66,7 +66,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "곤봉",
+                                        "text": "Clubs",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -99,7 +99,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "쓰러진 참나무 (펠오크)",
+                                                "text": "Felloak",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -114,7 +114,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 쓰러진 참나무 \n@clb\n\n@dictBlue 피해 +70~80% 증가 @dictVariable\n@dictBlue 화염 피해 6 - 8 추가\n밀쳐내기\n번개 저항 +60%\n화염 저항 +20%\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Felloak \n@clb\n\n@dictBlue +70-80% Enhanced Damage @dictVariable\n@dictBlue Adds 6-8 fire damage\nKnockback\nLightning Resist +60%\nFire Resist +20%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -236,7 +236,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "굵은못 (스타우트네일)",
+                                                "text": "Stoutnail",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -251,7 +251,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 굵은못 \n@spc\n\n@dictBlue 피해 +100% 증가\n활력 +7\n마법 피해 2 감소\n공격자가 피해를 3~10 받음 @dictVariable\n@dictBlue 언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Stoutnail \n@spc\n\n@dictBlue +100% Enhanced Damage\n+7 to Vitality\nMagic Damage Reduced by 2\nAttacker Takes Damage of 3-10 @dictVariable\n@dictBlue +50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -373,7 +373,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "어둠의 일족 분쇄자 (다크 클랜 크러셔)",
+                                                "text": "Dark Clan Crusher",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -388,7 +388,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 어둠의 일족 분쇄자 \n@9cl\n\n@dictBlue 드루이드 기술 레벨 +2\n피해 +195% 증가\n명중률 보너스 20~25% @dictVariable\n@dictBlue 악마에게 주는 피해 +200%\n악마에 대한 명중률 +200\n악마 처치 시 생명력 +15\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Dark Clan Crusher \n@9cl\n\n@dictBlue +2 to Druid Skill Levels\n+195% Enhanced Damage\n20-25% Bonus to Attack Rating @dictVariable\n@dictBlue +200% Damage to Demons\n+200 to Attack Rating against Demons\n+15 Life after each Demon Kill\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -537,7 +537,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "살점 분쇄봉 (플레쉬렌더)",
+                                                "text": "Fleshrender",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -552,7 +552,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 살점 분쇄봉 \n@9sp\n\n@dictBlue 변신 기술 +2 (드루이드 전용)\n드루이드 기술 레벨 +1\n피해 +130~200% 증가 @dictVariable\n@dictBlue 피해 35 - 50 추가\n강타 확률 +20%\n치명적 공격 +20%\n상처 악화 확률 +25%\n괴물 회복 저지\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Fleshrender \n@9sp\n\n@dictBlue +2 to Shape Shifting Skills (Druid Only)\n+1 to Druid Skill Levels\n+130-200% Enhanced Damage @dictVariable\n@dictBlue Adds 35-50 damage\n+20% Chance of Crushing Blow\n+20% Deadly Strike\n+25% Chance of Open Wounds\nPrevent Monster Heal\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -674,7 +674,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "노르드의 고기 방망이 (노드의 텐더라이저)",
+                                                "text": "Nord's Tenderizer",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -689,7 +689,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 노르드의 고기 방망이 \n@7cl\n\n@dictBlue 공격 속도 +25%\n피해 +270~330% 증가 @dictVariable\n@dictBlue 명중률 보너스 150~180% @dictVariable\n@dictBlue 냉기 피해 205 - 455 추가\n대상 빙결 +2~4 @dictVariable\n@dictBlue 냉기 흡수 +5~15% @dictVariable\n@dictBlue 16 레벨 눈보라 (충전 12회)\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Nord's Tenderizer \n@7cl\n\n@dictBlue +25% Increased Attack Speed\n+270-330% Enhanced Damage @dictVariable\n@dictBlue 150-180% Bonus to Attack Rating @dictVariable\n@dictBlue Adds 205-455 cold damage\nFreezes Target +2-4 @dictVariable\n@dictBlue Cold Absorb +5-15% @dictVariable\n@dictBlue Level 16 Blizzard (12 Charges)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -811,7 +811,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "악마의 사지 (데몬 림)",
+                                                "text": "Demon Limb",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -826,7 +826,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 악마의 사지 \n@7sp\n\n@dictBlue 피해 +180~230% 증가 @dictVariable\n@dictBlue 악마에게 주는 피해 +123%\n화염 피해 222 - 333 추가\n적중당 생명력 7~13% 훔침 @dictVariable\n@dictBlue 화염 저항 +15~20% @dictVariable\n@dictBlue 23 레벨 마법부여 (충전 20회)\n내구도 1 회복 (20초마다)\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Demon Limb \n@7sp\n\n@dictBlue +180-230% Enhanced Damage @dictVariable\n@dictBlue +123% Damage to Demons\nAdds 222-333 fire damage\n7-13% Life stolen per hit @dictVariable\n@dictBlue Fire Resist +15-20% @dictVariable\n@dictBlue Level 23 Enchant (20 Charges)\nRepairs 1 durability in 20 seconds\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -960,7 +960,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "철퇴",
+                                        "text": "Maces",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -993,7 +993,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "분쇄테 (크러쉬플랜지)",
+                                                "text": "Crushflange",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1008,7 +1008,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 분쇄테 \n@mac\n\n@dictBlue 피해 +50~60% 증가 @dictVariable\n@dictBlue 강타 확률 +33%\n밀쳐내기\n힘 +15\n화염 저항 +50%\n시야 +2\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Crushflange \n@mac\n\n@dictBlue +50-60% Enhanced Damage @dictVariable\n@dictBlue +33% Chance of Crushing Blow\nKnockback\n+15 to Strength\nFire Resist +50%\n+2 to Light Radius\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1157,7 +1157,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "피오름 (블러드라이즈)",
+                                                "text": "Bloodrise",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1172,7 +1172,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 피오름 \n@mst\n\n@dictBlue 공격 속도 +10%\n피해 +120% 증가\n명중률 보너스 50%\n적중당 생명력 5% 훔침\n상처 악화 확률 +25%\n+3 희생 (성기사 전용)\n시야 +2\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Bloodrise \n@mst\n\n@dictBlue +10% Increased Attack Speed\n+120% Enhanced Damage\n50% Bonus to Attack Rating\n5% Life stolen per hit\n+25% Chance of Open Wounds\n+3 to Sacrifice (Paladin Only)\n+2 to Light Radius\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1294,7 +1294,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "장군의 단도리깨 (치우천왕의 철퇴)",
+                                                "text": "The General's Tan Do Li Ga",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1309,7 +1309,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 장군의 단도리깨 \n@fla\n\n@dictBlue 공격 속도 +20%\n피해 +50~60% 증가 @dictVariable\n@dictBlue 피해 1 - 20 추가\n적중당 마나 5% 훔침\n대상 감속 50%\n방어력 +25\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold The General's Tan Do Li Ga \n@fla\n\n@dictBlue +20% Increased Attack Speed\n+50-60% Enhanced Damage @dictVariable\n@dictBlue Adds 1-20 damage\n5% Mana stolen per hit\nSlows Target by 50%\n+25 Defense\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1458,7 +1458,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "외마디 서리 (수어쉬릴 프로스트)",
+                                                "text": "Sureshrill Frost",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1473,7 +1473,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 외마디 서리 \n@9ma\n\n@dictBlue 피해 +150~180% 증가 @dictVariable\n@dictBlue 피해 5 - 10 추가\n냉기 피해 63 - 112 추가\n대상 빙결 +3\n빙결되지 않음\n9 레벨 얼음 보주 (충전 50회)\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Sureshrill Frost \n@9ma\n\n@dictBlue +150-180% Enhanced Damage @dictVariable\n@dictBlue Adds 5-10 damage\nAdds 63-112 cold damage\nFreezes Target +3\nCannot Be Frozen\nLevel 9 Frozen Orb (50 Charges)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1595,7 +1595,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "달내림 (문폴)",
+                                                "text": "Moonfall",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1610,7 +1610,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 달내림 \n@9mt\n\n@dictBlue 타격 시 5% 확률로 6 레벨 운석 낙하 시전\n피해 +120~150% 증가 @dictVariable\n@dictBlue 피해 10 - 15 추가\n화염 피해 55 - 115 추가\n마법 피해 9~12 감소 @dictVariable\n@dictBlue 시야 +2\n11 레벨 운석 낙하 (충전 60회)\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Moonfall \n@9mt\n\n@dictBlue 5% Chance to cast level 6 Meteor on striking\n+120-150% Enhanced Damage @dictVariable\n@dictBlue Adds 10-15 damage\nAdds 55-115 fire damage\nMagic Damage Reduced by 9-12 @dictVariable\n@dictBlue +2 to Light Radius\nLevel 11 Meteor (60 Charges)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1732,7 +1732,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "배질의 소용돌이 (배질의 보어텍스)",
+                                                "text": "Baezil's Vortex",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1747,7 +1747,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 배질의 소용돌이 \n@9fl\n\n@dictBlue 타격 시 5% 확률로 8 레벨 번개 파장 시전\n공격 속도 +20%\n피해 +160~200% 증가 @dictVariable\n@dictBlue 번개 피해 1 - 150 추가\n마나 +100\n번개 저항 +25%\n15 레벨 번개 파장 (충전 80회)\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Baezil's Vortex \n@9fl\n\n@dictBlue 5% Chance to cast level 8 Nova on striking\n+20% Increased Attack Speed\n+160-200% Enhanced Damage @dictVariable\n@dictBlue Adds 1-150 lightning damage\n+100 to Mana\nLightning Resist +25%\nLevel 15 Nova (80 Charges)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1896,7 +1896,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "바라나르의 별 (바라나의 별)",
+                                                "text": "Baranar's Star",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1911,7 +1911,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 바라나르의 별 \n@7mt\n\n@dictBlue 공격 속도 +50%\n피해 +200% 증가\n명중률 보너스 200%\n화염 피해 1 - 200 추가\n번개 피해 1 - 200 추가\n냉기 피해 1 - 200 추가\n힘 +15\n민첩 +15\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Baranar's Star \n@7mt\n\n@dictBlue +50% Increased Attack Speed\n+200% Enhanced Damage\n200% Bonus to Attack Rating\nAdds 1-200 fire damage\nAdds 1-200 lightning damage\nAdds 1-200 cold damage\n+15 to Strength\n+15 to Dexterity\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2060,7 +2060,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "지평선의 회오리 (호라즌의 토네이도)",
+                                                "text": "Horizon's Tornado",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2075,7 +2075,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 지평선의 회오리 \n@7fl\n\n@dictBlue 타격 시 20% 확률로 15 레벨 회오리바람 시전\n공격 속도 +50%\n피해 +230~280% 증가 @dictVariable\n@dictBlue 대상 감속 20%\n착용 조건 -20%\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Horizon's Tornado \n@7fl\n\n@dictBlue 20% Chance to cast level 15 Tornado on striking\n+50% Increased Attack Speed\n+230-280% Enhanced Damage @dictVariable\n@dictBlue Slows Target by 20%\nRequirements -20%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2224,7 +2224,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "폭풍채찍 (스톰래쉬)",
+                                                "text": "Stormlash",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2239,7 +2239,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 폭풍채찍 \n@7fl\n\n@dictBlue 타격 시 20% 확률로 18 레벨 회오리바람 시전\n타격 시 15% 확률로 10 레벨 전자기장 시전\n공격 속도 +30%\n피해 +240~300% 증가 @dictVariable\n@dictBlue 번개 피해 1 - 473 추가\n강타 확률 +33%\n번개 흡수 +3~9 @dictVariable\n@dictBlue 공격자가 번개 피해를 30 받음\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Stormlash \n@7fl\n\n@dictBlue 20% Chance to cast level 18 Tornado on striking\n15% Chance to cast level 10 Static Field on striking\n+30% Increased Attack Speed\n+240-300% Enhanced Damage @dictVariable\n@dictBlue Adds 1-473 lightning damage\n+33% Chance of Crushing Blow\n+3-9 Lightning Absorb @dictVariable\n@dictBlue Attacker Takes Lightning Damage of 30\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2373,7 +2373,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "망치",
+                                        "text": "Hammers",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -2406,7 +2406,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "무쇠돌 (아이언스톤)",
+                                                "text": "Ironstone",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2421,7 +2421,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 무쇠돌 \n@whm\n\n@dictBlue 피해 +100~150% 증가 @dictVariable\n@dictBlue 명중률 +100~150 @dictVariable\n@dictBlue 번개 피해 1 - 10 추가\n힘 +10\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Ironstone \n@whm\n\n@dictBlue +100-150% Enhanced Damage @dictVariable\n@dictBlue +100-150 to Attack Rating @dictVariable\n@dictBlue Adds 1-10 lightning damage\n+10 to Strength\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2570,7 +2570,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "뼈절단기 (본스냅)",
+                                                "text": "Bonesnap",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2585,7 +2585,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 뼈절단기 \n@mau\n\n@dictBlue 피해 +200~300% 증가 @dictVariable\n@dictBlue 언데드에게 주는 피해 +100%\n강타 확률 +40%\n냉기 저항 +30%\n화염 저항 +30%",
+                                                "tooltipString": "@dictGold Bonesnap \n@mau\n\n@dictBlue +200-300% Enhanced Damage @dictVariable\n@dictBlue +100% Damage to Undead\n+40% Chance of Crushing Blow\nCold Resist +30%\nFire Resist +30%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2707,7 +2707,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "강철박이 (스틸드라이버)",
+                                                "text": "Steeldriver",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2722,7 +2722,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 강철박이 \n@gma\n\n@dictBlue 공격 속도 +40%\n피해 +150~250% 증가 @dictVariable\n@dictBlue 지구력 회복 속도 25% 증가\n착용 조건 -50%\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Steeldriver \n@gma\n\n@dictBlue +40% Increased Attack Speed\n+150-250% Enhanced Damage @dictVariable\n@dictBlue Heal Stamina Plus 25%\nRequirements -50%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2871,7 +2871,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "대지진의 망치 (어스쉐이커)",
+                                                "text": "Earthshaker",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2886,7 +2886,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 대지진의 망치 \n@9wh\n\n@dictBlue 타격 시 5% 확률로 7 레벨 균열 시전\n원소 기술 +3 (드루이드 전용)\n공격 속도 +30%\n피해 +180% 증가\n적중 시 대상 실명\n밀쳐내기\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Earthshaker \n@9wh\n\n@dictBlue 5% Chance to cast level 7 Fissure on striking\n+3 to Elemental Skills (Druid Only)\n+30% Increased Attack Speed\n+180% Enhanced Damage\nHit Blinds Target\nKnockback\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3008,7 +3008,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "피나무 그루터기 (블러드트리 스텀프)",
+                                                "text": "Bloodtree Stump",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3023,7 +3023,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 피나무 그루터기 \n@9m9\n\n@dictBlue 숙련 +2 (야만용사 전용)\n피해 +180~220% 증가 @dictVariable\n@dictBlue 강타 확률 +50%\n+3 철퇴 숙련 (야만용사 전용)\n힘 +25\n모든 저항 +20\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Bloodtree Stump \n@9m9\n\n@dictBlue +2 to Masteries (Barbarian Only)\n+180-220% Enhanced Damage @dictVariable\n@dictBlue +50% Chance of Crushing Blow\n+3 to Mace Mastery (Barbarian Only)\n+25 to Strength\nAll Resistances +20\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3145,7 +3145,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "고통의 망치 (게벌 오브 페인)",
+                                                "text": "The Gavel of Pain",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3160,7 +3160,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 고통의 망치 \n@9gm\n\n@dictBlue 피격 시 5% 확률로 1 레벨 가시 박힌 철관 시전\n타격 시 5% 확률로 1 레벨 피해 증폭 시전\n피해 +130~160% 증가 @dictVariable\n@dictBlue 피해 12 - 30 추가\n공격자가 피해를 26 받음\n8 레벨 피해 증폭 (충전 3회)\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold The Gavel of Pain \n@9gm\n\n@dictBlue 5% Chance to cast level 1 Iron Maiden when struck\n5% Chance to cast level 1 Amplify Damage on striking\n+130-160% Enhanced Damage @dictVariable\n@dictBlue Adds 12-30 damage\nAttacker Takes Damage of 26\nLevel 8 Amplify Damage (3 Charges)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3282,7 +3282,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "돌 분쇄자 (스톤 크러셔)",
+                                                "text": "Stone Crusher",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3297,7 +3297,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 돌 분쇄자 \n@uhf\n\n@dictBlue 피해 +280~320% 증가 @dictVariable\n@dictBlue 피해 +10~30 @dictVariable\n@dictBlue 대상의 방어력 -25%\n강타 확률 +40%\n적중당 괴물 방어력 -100 감소\n힘 +20~30 @dictVariable\n@dictBlue 언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Stone Crusher \n@uhf\n\n@dictBlue +280-320% Enhanced Damage @dictVariable\n@dictBlue +10-30 damage @dictVariable\n@dictBlue -25% Target Defense\n+40% Chance of Crushing Blow\n-100 to Monster Defense Per Hit\n+20-30 to Strength @dictVariable\n@dictBlue +50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3419,7 +3419,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "섀퍼의 망치 (쉐퍼의 해머)",
+                                                "text": "Schaefer's Hammer",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3434,7 +3434,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 섀퍼의 망치 \n@uhf\n\n@dictBlue 타격 시 20% 확률로 10 레벨 전자기장 시전\n파괴 불가\n공격 속도 +20%\n피해 +100~130% 증가 @dictVariable\n@dictBlue 최대 피해 +2~198 (캐릭터 레벨에 비례)\n명중률 +8~792 (캐릭터 레벨에 비례)\n번개 피해 50 - 200 추가\n생명력 +50\n번개 저항 +75%\n시야 +1\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Schaefer's Hammer \n@uhf\n\n@dictBlue 20% Chance to cast level 10 Static Field on striking\nIndestructible\n+20% Increased Attack Speed\n+100-130% Enhanced Damage @dictVariable\n@dictBlue +2-198 to Maximum Damage (Based on Character Level)\n+8-792 to Attack Rating (Based on Character Level)\nAdds 50-200 lightning damage\n+50 to Life\nLightning Resist +75%\n+1 to Light Radius\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3583,7 +3583,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "바람망치 (윈드해머)",
+                                                "text": "Windhammer",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3598,7 +3598,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 바람망치 \n@7m7\n\n@dictBlue 타격 시 33% 확률로 22 레벨 돌개바람 시전\n공격 속도 +60%\n피해 +180~230% 증가 @dictVariable\n@dictBlue 강타 확률 +50%\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Windhammer \n@7m7\n\n@dictBlue 33% Chance to cast level 22 Twister on striking\n+60% Increased Attack Speed\n+180-230% Enhanced Damage @dictVariable\n@dictBlue +50% Chance of Crushing Blow\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3747,7 +3747,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "대지 변형자 (어스 쉬프터)",
+                                                "text": "Earth Shifter",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3762,7 +3762,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 대지 변형자 \n@7gm\n\n@dictBlue 타격 시 25% 확률로 14 레벨 균열 시전\n원소 기술 +7 (드루이드 전용)\n공격 속도 +10%\n시전 속도 +10%\n피해 +250~300% 증가 @dictVariable\n@dictBlue 강타 확률 +33%\n14 레벨 화산 (충전 30회)\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Earth Shifter \n@7gm\n\n@dictBlue 25% Chance to cast level 14 Fissure on striking\n+7 to Elemental Skills (Druid Only)\n+10% Increased Attack Speed\n+10% Faster Cast Rate\n+250-300% Enhanced Damage @dictVariable\n@dictBlue +33% Chance of Crushing Blow\nLevel 14 Volcano (30 Charges)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3884,7 +3884,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "두개골 분쇄망치 (크레이니엄 배셔)",
+                                                "text": "The Cranium Basher",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3899,7 +3899,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 두개골 분쇄망치 \n@7gm\n\n@dictBlue 파괴 불가\n타격 시 4% 확률로 1 레벨 피해 증폭 시전\n공격 속도 +20%\n피해 +200~240% 증가 @dictVariable\n@dictBlue 최소 피해 +20\n강타 확률 +75%\n힘 +25\n모든 저항 +25\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold The Cranium Basher \n@7gm\n\n@dictBlue Indestructible\n4% Chance to cast level 1 Amplify Damage on striking\n+20% Increased Attack Speed\n+200-240% Enhanced Damage @dictVariable\n@dictBlue +20 to Minimum Damage\n+75% Chance of Crushing Blow\n+25 to Strength\nAll Resistances +25\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4033,7 +4033,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "홀 (셉터)",
+                                        "text": "Scepters",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -4066,7 +4066,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "종을 울리는 자 (넬 스트라이커)",
+                                                "text": "Knell Striker",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4081,7 +4081,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 종을 울리는 자 \n@scp\n\n@dictBlue 피해 +70~80% 증가 @dictVariable\n@dictBlue 명중률 +35\n강타 확률 +25%\n마나 +15\n화염 저항 +20%\n독 저항 +20%\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Knell Striker \n@scp\n\n@dictBlue +70-80% Enhanced Damage @dictVariable\n@dictBlue +35 to Attack Rating\n+25% Chance of Crushing Blow\n+15 to Mana\nFire Resist +20%\nPoison Resist +20%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4230,7 +4230,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "녹슨손잡이 (러스트핸들)",
+                                                "text": "Rusthandle",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4245,7 +4245,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 녹슨손잡이 \n@gsc\n\n@dictBlue 성기사 기술 레벨 +1\n피해 +50~60% 증가 @dictVariable\n@dictBlue 피해 3 - 7 추가\n언데드에게 주는 피해 +100~110% @dictVariable\n@dictBlue 적중당 생명력 8% 훔침\n+1~3 복수 (성기사 전용) @dictVariable\n@dictBlue +3 가시 (성기사 전용)\n마법 피해 1 감소",
+                                                "tooltipString": "@dictGold Rusthandle \n@gsc\n\n@dictBlue +1 to Paladin Skill Levels\n+50-60% Enhanced Damage @dictVariable\n@dictBlue Adds 3-7 damage\n+100-110% Damage to Undead @dictVariable\n@dictBlue 8% Life stolen per hit\n+1-3 to Vengeance (Paladin Only) @dictVariable\n@dictBlue +3 to Thorns (Paladin Only)\nMagic Damage Reduced by 1",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4394,7 +4394,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "폭풍눈 (스톰아이)",
+                                                "text": "Stormeye",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4409,7 +4409,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 폭풍눈 \n@wsp\n\n@dictBlue 피해 +80~120% 증가 @dictVariable\n@dictBlue 번개 피해 1 - 6 추가\n냉기 피해 3 - 5 추가\n+1 천상의 주먹 (성기사 전용)\n+3 신성한 충격 (성기사 전용)\n+3~5 번개 저항 (성기사 전용) @dictVariable\n@dictBlue 생명력 회복 +10\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Stormeye \n@wsp\n\n@dictBlue +80-120% Enhanced Damage @dictVariable\n@dictBlue Adds 1-6 lightning damage\nAdds 3-5 cold damage\n+1 to Fist of the Heavens (Paladin Only)\n+3 to Holy Shock (Paladin Only)\n+3-5 to Resist Lightning (Paladin Only) @dictVariable\n@dictBlue Reflensh Life +10\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4558,7 +4558,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "자카룸의 손 (자카럼의 핸드)",
+                                                "text": "Zakarum's Hand",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4573,7 +4573,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 자카룸의 손 \n@9sc\n\n@dictBlue 타격 시 6% 확률로 5 레벨 눈보라 시전\n공격 속도 +30%\n피해 +180~220% 증가 @dictVariable\n@dictBlue 대상의 방어력 무시\n적중당 마나 8% 훔침\n+2 신성한 충격 (성기사 전용)\n+2 신성한 빙결 (성기사 전용)\n마나 재생 10%\n지구력 회복 속도 15% 증가\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Zakarum's Hand \n@9sc\n\n@dictBlue 6% Chance to cast level 5 Blizzard on striking\n+30% Increased Attack Speed\n+180-220% Enhanced Damage @dictVariable\n@dictBlue Ignore Target's Defense\n8% Mana stolen per hit\n+2 to Holy Shock (Paladin Only)\n+2 to Holy Freeze (Paladin Only)\nRegenerate Mana 10%\nHeal Stamina Plus 15%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4722,7 +4722,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "썩은 뿌리개 (페티드 스프링클러)",
+                                                "text": "The Fetid Sprinkler",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4737,7 +4737,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 썩은 뿌리개 \n@9qs\n\n@dictBlue 타격 시 5% 확률로 1 레벨 노화 시전\n타격 시 10% 확률로 1 레벨 혼란 시전\n성기사 기술 레벨 +2\n피해 +160~190% 증가 @dictVariable\n@dictBlue 피해 15 - 25 추가\n명중률 +150~200 @dictVariable\n@dictBlue 독 피해 +160 (4초에 걸쳐)\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold The Fetid Sprinkler \n@9qs\n\n@dictBlue 5% Chance to cast level 1 Decrepify on striking\n10% Chance to cast level 1 Confuse on striking\n+2 to Paladin Skill Levels\n+160-190% Enhanced Damage @dictVariable\n@dictBlue Adds 15-25 damage\n+150-200 to Attack Rating @dictVariable\n@dictBlue +160 poison damage over 4 seconds\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4859,7 +4859,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "축복받은 빛의 손 (핸드 오브 블레스드 라이트)",
+                                                "text": "Hand of Blessed Light",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4874,7 +4874,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 축복받은 빛의 손 \n@9ws\n\n@dictBlue 타격 시 5% 확률로 4 레벨 천상의 주먹 시전\n성기사 기술 레벨 +2\n피해 +130~160% 증가 @dictVariable\n@dictBlue 피해 20 - 45 추가\n명중률 보너스 100%\n+2 천상의 주먹 (성기사 전용)\n+4 신성한 빛줄기 (성기사 전용)\n방어력 +50\n마나 재생 15%\n시야 +4\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Hand of Blessed Light \n@9ws\n\n@dictBlue 5% Chance to cast level 4 Fist of the Heavens on striking\n+2 to Paladin Skill Levels\n+130-160% Enhanced Damage @dictVariable\n@dictBlue Adds 20-45 damage\n100% Bonus to Attack Rating\n+2 to Fist of the Heavens (Paladin Only)\n+4 to Holy Bolt (Paladin Only)\n+50 Defense\nRegenerate Mana 15%\n+4 to Light Radius\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4996,7 +4996,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "천상의 빛 (헤븐의 라이트)",
+                                                "text": "Heaven's Light",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5011,7 +5011,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 천상의 빛 \n@7sc\n\n@dictBlue 성기사 기술 레벨 +2~3 @dictVariable\n@dictBlue 공격 속도 +20%\n피해 +250~300% 증가 @dictVariable\n@dictBlue 대상의 방어력 -33%\n강타 확률 +33%\n악마 처치 시 생명력 +15~20 @dictVariable\n@dictBlue 시야 +3\n언데드에게 주는 피해 +50%\n홈 있음 (1~2) @dictVariable",
+                                                "tooltipString": "@dictGold Heaven's Light \n@7sc\n\n@dictBlue +2-3 to Paladin Skill Levels @dictVariable\n@dictBlue +20% Increased Attack Speed\n+250-300% Enhanced Damage @dictVariable\n@dictBlue -33% Target Defense\n+33% Chance of Crushing Blow\n+15-20 Life after each Demon Kill @dictVariable\n@dictBlue +3 to Light Radius\n+50% Damage to Undead\nSocketed (1-2) @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5160,7 +5160,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "구원자 (리디머르)",
+                                                "text": "The Redeemer",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5175,7 +5175,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 구원자 \n@7sc\n\n@dictBlue 성기사 기술 레벨 +2\n피해 +250~300% 증가 @dictVariable\n@dictBlue 피해 +60~120 @dictVariable\n@dictBlue 대상의 방어력 -33%\n악마에게 주는 피해 +200~250% @dictVariable\n@dictBlue +2~4 속죄 (성기사 전용) @dictVariable\n@dictBlue +2~4 신성한 빛줄기 (성기사 전용) @dictVariable\n@dictBlue 시야 +3\n착용 조건 -60%\n언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold The Redeemer \n@7sc\n\n@dictBlue +2 to Paladin Skill Levels\n+250-300% Enhanced Damage @dictVariable\n@dictBlue +60-120 damage @dictVariable\n@dictBlue -33% Target Defense\n+200-250% Damage to Demons @dictVariable\n@dictBlue +2-4 to Redemption (Paladin Only) @dictVariable\n@dictBlue +2-4 to Holy Bolt (Paladin Only) @dictVariable\n@dictBlue +3 to Light Radius\nRequirements -60%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5297,7 +5297,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "아스트레온의 무쇠 호신부 (애스트리언의 아이언 워드)",
+                                                "text": "Astreon's Iron Ward",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5312,7 +5312,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 아스트레온의 무쇠 호신부 \n@7ws\n\n@dictBlue 전투 기술 +2~4 (성기사 전용) @dictVariable\n@dictBlue 공격 속도 +10%\n피해 +240~290% 증가 @dictVariable\n@dictBlue 피해 +40~85 @dictVariable\n@dictBlue 명중률 보너스 150~200% @dictVariable\n@dictBlue 마법 피해 80 - 240 추가\n강타 확률 +33%\n대상 감속 25%\n피해 4~7 감소 @dictVariable\n@dictBlue 언데드에게 주는 피해 +50%",
+                                                "tooltipString": "@dictGold Astreon's Iron Ward \n@7ws\n\n@dictBlue +2-4 to Combat Skills (Paladin Only) @dictVariable\n@dictBlue +10% Increased Attack Speed\n+240-290% Enhanced Damage @dictVariable\n@dictBlue +40-85 damage @dictVariable\n@dictBlue 150-200% Bonus to Attack Rating @dictVariable\n@dictBlue Adds 80-240 magic damage\n+33% Chance of Crushing Blow\nSlows Target by 25%\nDamage Reduced by 4-7 @dictVariable\n@dictBlue +50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },

@@ -66,7 +66,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "반지",
+                                        "text": "Rings",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -99,7 +99,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "나겔링 반지 (나겔링)",
+                                                "text": "Nagelring",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -114,7 +114,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 나겔링 반지 \n@rin\n\n@dictBlue 명중률 +50~75 @dictVariable\n@dictBlue 마법 피해 3 감소\n공격자가 피해를 3 받음\n마법 아이템 발견 확률 15~30% 증가 @dictVariable",
+                                                "tooltipString": "@dictGold Nagelring \n@rin\n\n@dictBlue +50-75 to Attack Rating @dictVariable\n@dictBlue Magic Damage Reduced by 3\nAttacker Takes Damage of 3\n15-30% Better Chance of Getting Magic Items @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -211,7 +211,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "마날드 치유 반지 (머날드 힐)",
+                                                "text": "Manald Heal",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -226,7 +226,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 마날드 치유 반지 \n@rin\n\n@dictBlue 적중당 마나 4~7% 훔침 @dictVariable\n@dictBlue 생명력 +20\n생명력 회복 +5~8 @dictVariable\n@dictBlue 마나 재생 20%",
+                                                "tooltipString": "@dictGold Manald Heal \n@rin\n\n@dictBlue 4-7% Mana stolen per hit @dictVariable\n@dictBlue +20 to Life\nReflensh Life +5-8 @dictVariable\n@dictBlue Regenerate Mana 20%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -323,7 +323,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "요르단의 반지 (더 스톤 오브 조던)",
+                                                "text": "Stone of Jordan",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -338,7 +338,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 요르단의 반지 \n@rin\n\n@dictBlue 모든 기술 +1\n번개 피해 1 - 12 추가\n마나 +20\n최대 마나 25% 증가",
+                                                "tooltipString": "@dictGold Stone of Jordan \n@rin\n\n@dictBlue +1 to All Skills\nAdds 1-12 lightning damage\n+20 to Mana\nIncrease Maximum Mana 25%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -435,7 +435,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "왜성 (드와프 스타)",
+                                                "text": "Dwarf Star",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -450,7 +450,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 왜성 \n@rin\n\n@dictBlue 생명력 +40\n최대 지구력 +40\n지구력 회복 속도 15% 증가\n화염 흡수 +15%\n마법 피해 12~15 감소 @dictVariable\n@dictBlue 괴물에게서 얻는 금화 100% 증가",
+                                                "tooltipString": "@dictGold Dwarf Star \n@rin\n\n@dictBlue +40 to Life\n+40 Maximum Stamina\nHeal Stamina Plus 15%\nFire Absorb +15%\nMagic Damage Reduced by 12-15 @dictVariable\n@dictBlue 100% Extra Gold from Monsters",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -547,7 +547,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "칠흑 서리 (레이븐 프로스트)",
+                                                "text": "Raven Frost",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -562,7 +562,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 칠흑 서리 \n@rin\n\n@dictBlue 명중률 +150~250 @dictVariable\n@dictBlue 냉기 피해 15 - 45 추가\n민첩 +15~20 @dictVariable\n@dictBlue 마나 +40\n냉기 흡수 +20%\n빙결되지 않음",
+                                                "tooltipString": "@dictGold Raven Frost \n@rin\n\n@dictBlue +150-250 to Attack Rating @dictVariable\n@dictBlue Adds 15-45 cold damage\n+15-20 to Dexterity @dictVariable\n@dictBlue +40 to Mana\nCold Absorb +20%\nCannot Be Frozen",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -659,7 +659,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "불카토스의 결혼 반지 (발카서스의 웨딩 밴드)",
+                                                "text": "Bul-Kathos' Wedding Band",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -674,7 +674,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 불카토스의 결혼 반지 \n@rin\n\n@dictBlue 모든 기술 +1\n적중당 생명력 3~5% 훔침 @dictVariable\n@dictBlue 생명력 +0~49 (캐릭터 레벨에 비례)\n최대 지구력 +50",
+                                                "tooltipString": "@dictGold Bul-Kathos' Wedding Band \n@rin\n\n@dictBlue +1 to All Skills\n3-5% Life stolen per hit @dictVariable\n@dictBlue +0-49 to Life (Based on Character Level)\n+50 Maximum Stamina",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -771,7 +771,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "부패의 바람 (캐리언 윈드)",
+                                                "text": "Carrion Wind",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -786,7 +786,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 부패의 바람 \n@rin\n\n@dictBlue 피격 시 10% 확률로 10 레벨 맹독 확산 시전\n타격 시 8% 확률로 13 레벨 돌개바람 시전\n적중당 생명력 6~9% 훔침 @dictVariable\n@dictBlue 원거리 공격 방어력 +100~160 @dictVariable\n@dictBlue 독 저항 +55%\n받는 피해의 +10%만큼 마나 회복\n21 레벨 맹독 덩굴 (충전 15회)",
+                                                "tooltipString": "@dictGold Carrion Wind \n@rin\n\n@dictBlue 10% Chance to cast level 10 Poison Nova when struck\n8% Chance to cast level 13 Twister on striking\n6-9% Life stolen per hit @dictVariable\n@dictBlue +100-160 Defense vs. Missile @dictVariable\n@dictBlue Poison Resist +55%\n+10% Damage Taken Goes To Mana\nLevel 21 Poison Creeper (15 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -883,7 +883,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "자연의 평화 (네이춰스 피스)",
+                                                "text": "Nature's Peace",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -898,7 +898,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 자연의 평화 \n@rin\n\n@dictBlue 처치한 괴물이 안식에 듦\n괴물 회복 저지\n독 저항 +20~30% @dictVariable\n@dictBlue 피해 7~11 감소 @dictVariable\n@dictBlue 5 레벨 참나무 현자 (충전 27회)",
+                                                "tooltipString": "@dictGold Nature's Peace \n@rin\n\n@dictBlue Slain Monsters Rest in Peace\nPrevent Monster Heal\nPoison Resist +20-30% @dictVariable\n@dictBlue Damage Reduced by 7-11 @dictVariable\n@dictBlue Level 5 Oak Sage (27 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -995,7 +995,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "위습 투사기 (위스프 프로젝터)",
+                                                "text": "Wisp Projector",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1010,7 +1010,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 위습 투사기 \n@rin\n\n@dictBlue 타격 시 10% 확률로 16 레벨 번개 시전\n번개 흡수 +10~20% @dictVariable\n@dictBlue 마법 아이템 발견 확률 10~20% 증가 @dictVariable\n@dictBlue 7 레벨 가시의 영혼 (충전 11회)\n5 레벨 울버린의 심장 (충전 13회)\n2 레벨 참나무 현자 (충전 15회)",
+                                                "tooltipString": "@dictGold Wisp Projector \n@rin\n\n@dictBlue 10% Chance to cast level 16 Lightning on striking\nLightning Absorb +10-20% @dictVariable\n@dictBlue 10-20% Better Chance of Getting Magic Items @dictVariable\n@dictBlue Level 7 Spirit of Barbs (11 Charges)\nLevel 5 Heart of Wolverine (13 Charges)\nLevel 2 Oak Sage (15 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1092,7 +1092,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "목걸이",
+                                        "text": "Amulets",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -1125,7 +1125,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "노코잔 유물 (노코잔 렐릭)",
+                                                "text": "Nokozan Relic",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1140,7 +1140,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 노코잔 유물 \n@amu\n\n@dictBlue 타격 회복 속도 +20%\n화염 피해 3 - 6 추가\n최대 화염 저항 +10%\n화염 저항 +50%\n시야 +3",
+                                                "tooltipString": "@dictGold Nokozan Relic \n@amu\n\n@dictBlue +20% Faster Hit Recovery\nAdds 3-6 fire damage\n+10% to Maximum Fire Resist\nFire Resist +50%\n+3 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1237,7 +1237,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "에틀리크의 눈 (더 아이 오브 에틀릭)",
+                                                "text": "Eye of Etlich",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1252,7 +1252,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 에틀리크의 눈 \n@amu\n\n@dictBlue 모든 기술 +1\n냉기 피해 (1~2) - (3~5) 추가 @dictVariable\n@dictBlue 적중당 생명력 3~7% 훔침 @dictVariable\n@dictBlue 원거리 공격 방어력 +10~40 @dictVariable\n@dictBlue 시야 +1~5 @dictVariable",
+                                                "tooltipString": "@dictGold Eye of Etlich \n@amu\n\n@dictBlue +1 to All Skills\nAdds (1-2)-(3-5) cold damage @dictVariable\n@dictBlue 3-7% Life stolen per hit @dictVariable\n@dictBlue +10-40 Defense vs. Missile @dictVariable\n@dictBlue +1-5 to Light Radius @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1349,7 +1349,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "마힘오크 수집품 (더 마힘 오크 큐리오우)",
+                                                "text": "Mahim-Oak Curio",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1364,7 +1364,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 마힘오크 수집품 \n@amu\n\n@dictBlue 명중률 보너스 10%\n방어력 +10% 증가\n방어력 +10\n모든 능력치 +10\n모든 저항 +10",
+                                                "tooltipString": "@dictGold Mahim-Oak Curio \n@amu\n\n@dictBlue 10% Bonus to Attack Rating\n+10% Enhanced Defense\n+10 Defense\n+10 to all Attributes\nAll Resistances +10",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1461,7 +1461,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "사라센의 기회 (사라센의 찬스)",
+                                                "text": "Saracen's Chance",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1476,7 +1476,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 사라센의 기회 \n@amu\n\n@dictBlue 피격 시 10% 확률로 2 레벨 가시 박힌 철관 시전\n모든 능력치 +12\n모든 저항 +15~25 @dictVariable",
+                                                "tooltipString": "@dictGold Saracen's Chance \n@amu\n\n@dictBlue 10% Chance to cast level 2 Iron Maiden when struck\n+12 to all Attributes\nAll Resistances +15-25 @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1573,7 +1573,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "고양이 눈 (캐츠 아이)",
+                                                "text": "The Cat's Eye",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1588,7 +1588,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 고양이 눈 \n@amu\n\n@dictBlue 달리기/걷기 속도 +30%\n공격 속도 +20%\n방어력 +100\n원거리 공격 방어력 +100\n민첩 +25",
+                                                "tooltipString": "@dictGold The Cat's Eye \n@amu\n\n@dictBlue +30% Faster Run/Walk\n+20% Increased Attack Speed\n+100 Defense\n+100 Defense vs. Missile\n+25 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1685,7 +1685,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "초승달",
+                                                "text": "Crescent Moon",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1700,7 +1700,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 초승달 \n@amu\n\n@dictBlue 적중당 마나 11~15% 훔침 @dictVariable\n@dictBlue 적중당 생명력 3~6% 훔침 @dictVariable\n@dictBlue 마나 +45\n마법 피해 10 감소\n받는 피해의 +10%만큼 마나 회복\n시야 -2",
+                                                "tooltipString": "@dictGold Crescent Moon \n@amu\n\n@dictBlue 11-15% Mana stolen per hit @dictVariable\n@dictBlue 3-6% Life stolen per hit @dictVariable\n@dictBlue +45 to Mana\nMagic Damage Reduced by 10\n+10% Damage Taken Goes To Mana\n-2 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1797,7 +1797,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "아트마의 스카라베 (아트마의 스캐럽)",
+                                                "text": "Atma's Scarab",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1812,7 +1812,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 아트마의 스카라베 \n@amu\n\n@dictBlue 타격 시 5% 확률로 2 레벨 피해 증폭 시전\n명중률 보너스 20%\n독 피해 +40 (4초에 걸쳐)\n독 저항 +75%\n공격자가 피해를 5 받음\n시야 +3",
+                                                "tooltipString": "@dictGold Atma's Scarab \n@amu\n\n@dictBlue 5% Chance to cast level 2 Amplify Damage on striking\n20% Bonus to Attack Rating\n+40 poison damage over 4 seconds\nPoison Resist +75%\nAttacker Takes Damage of 5\n+3 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1909,7 +1909,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "떠오르는 태양 (라이징 선)",
+                                                "text": "Rising Sun",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1924,7 +1924,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 떠오르는 태양 \n@amu\n\n@dictBlue 피격 시 2% 확률로 13~19 레벨 운석 낙하 시전 @dictVariable\n@dictBlue 화염 기술 +2\n화염 피해 24 - 48 추가\n생명력 회복 +10\n화염 피해 흡수 +0~74 (캐릭터 레벨에 비례)\n시야 +4",
+                                                "tooltipString": "@dictGold Rising Sun \n@amu\n\n@dictBlue 2% Chance to cast level 13-19 Meteor when struck @dictVariable\n@dictBlue +2 to Fire Skills\nAdds 24-48 fire damage\nReflensh Life +10\n+0-74 Absorbs Fire Damage (Based on Character Level)\n+4 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2021,7 +2021,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "대군주의 진노 (하이로드의 래쓰)",
+                                                "text": "Highlord's Wrath",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2036,7 +2036,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 대군주의 진노 \n@amu\n\n@dictBlue 모든 기술 +1\n공격 속도 +20%\n번개 피해 1 - 30 추가\n치명적 공격 +0~37% (캐릭터 레벨에 비례)\n번개 저항 +35%\n공격자가 번개 피해를 15 받음",
+                                                "tooltipString": "@dictGold Highlord's Wrath \n@amu\n\n@dictBlue +1 to All Skills\n+20% Increased Attack Speed\nAdds 1-30 lightning damage\n+0-37% Deadly Strike (Based on Character Level)\nLightning Resist +35%\nAttacker Takes Lightning Damage of 15",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2133,7 +2133,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "천사의 찬송가 (세라프의 힘)",
+                                                "text": "Seraph's Hymn",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2148,7 +2148,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 천사의 찬송가 \n@amu\n\n@dictBlue 모든 기술 +2\n방어 오라 +1~2 (성기사 전용) @dictVariable\n@dictBlue 악마에게 주는 피해 +25~50% @dictVariable\n@dictBlue 악마에 대한 명중률 +150~250 @dictVariable\n@dictBlue 언데드에게 주는 피해 +25~50% @dictVariable\n@dictBlue 언데드에 대한 명중률 +150~250 @dictVariable\n@dictBlue 시야 +2",
+                                                "tooltipString": "@dictGold Seraph's Hymn \n@amu\n\n@dictBlue +2 to All Skills\n+1-2 to Defensive Auras (Paladin Only) @dictVariable\n@dictBlue +25-50% Damage to Demons @dictVariable\n@dictBlue +150-250 to Attack Rating against Demons @dictVariable\n@dictBlue +25-50% Damage to Undead @dictVariable\n@dictBlue +150-250 to Attack Rating against Undead @dictVariable\n@dictBlue +2 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2245,7 +2245,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "마라의 만화경 (마라의 컬라이더스코프)",
+                                                "text": "Mara's Kaleidoscope",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2260,7 +2260,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 마라의 만화경 \n@amu\n\n@dictBlue 모든 기술 +2\n모든 능력치 +5\n모든 저항 +20~30 @dictVariable",
+                                                "tooltipString": "@dictGold Mara's Kaleidoscope \n@amu\n\n@dictBlue +2 to All Skills\n+5 to all Attributes\nAll Resistances +20-30 @dictVariable",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2357,7 +2357,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "금속 격자 (메탈그리드)",
+                                                "text": "Metalgrid",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2372,7 +2372,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold 금속 격자 \n@amu\n\n@dictBlue 명중률 +400~450 @dictVariable\n@dictBlue 방어력 +300~350 @dictVariable\n@dictBlue 모든 저항 +25~35 @dictVariable\n@dictBlue 22 레벨 강철 골렘 (충전 11회)\n12 레벨 가시 박힌 철관 (충전 20회)",
+                                                "tooltipString": "@dictGold Metalgrid \n@amu\n\n@dictBlue +400-450 to Attack Rating @dictVariable\n@dictBlue +300-350 Defense @dictVariable\n@dictBlue All Resistances +25-35 @dictVariable\n@dictBlue Level 22 Iron Golem (11 Charges)\nLevel 12 Iron Maiden (20 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         },

@@ -1,6 +1,6 @@
 {
     "type": "VideoOptionsPanel",
-    "name": "ItemDictionaryCubeCraftPanel",
+    "name": "ItemDictionaryCubePanel5",
     "fields": {
         "priority": 9003,
         "rect": "$OptionsPanelRect",
@@ -103,7 +103,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "힛 파워 계열",
+                                        "text": "Hit Power Type",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -238,7 +238,7 @@
                                                     "y": 49
                                                 },
                                                 "filename": "items/armor/helmet/full_helm",
-                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n원거리 공격 방어력 +25~50 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n+25-50 Defense vs. Missile @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -373,7 +373,7 @@
                                                     "y": 49
                                                 },
                                                 "filename": "items/armor/boot/chain_boots",
-                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n근접 공격 방어력 +25~50 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n+25-50 Defense vs. Melee @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -508,7 +508,7 @@
                                                     "y": 49
                                                 },
                                                 "filename": "items/armor/glove/bracers_m",
-                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n밀쳐내기@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\nKnockback@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -643,7 +643,7 @@
                                                     "y": 98
                                                 },
                                                 "filename": "items/armor/belt/heavy_belt",
-                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n받는 피해의 5~10%만큼 마나 회복 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n+5-10% Damage Taken Goes To Mana @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -778,7 +778,7 @@
                                                     "y": -49
                                                 },
                                                 "filename": "items/armor/shield/gothic_shield",
-                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n막기 확률 5~10% 증가 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n5-10% Increased Chance of Blocking @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -917,7 +917,7 @@
                                                     "y": 0
                                                 },
                                                 "filename": "items/armor/armor/field_plate",
-                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n타격 회복 속도 +10~20% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n+10-20% Faster Hit Recovery @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1052,7 +1052,7 @@
                                                     "y": 98
                                                 },
                                                 "filename": "items/misc/amulet/amulet1",
-                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n적중 시 괴물 도주 3~11% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\nHit Causes Monster to Flee +3-11% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1183,7 +1183,7 @@
                                                     "y": 98
                                                 },
                                                 "filename": "items/misc/ring/ring1",
-                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n민첩 +1~5 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n+1-5 to Dexterity @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1216,7 +1216,7 @@
                                                     "y": 0
                                                 },
                                                 "filename": "items/weapon/mace/mace",
-                                                "tooltipString": "@dictBlue@strBSMagic 철퇴, 지팡이 계열 무기 (원소술사 전용 보주 제외)",
+                                                "tooltipString": "@dictBlue@strBSMagic Mace, Staff Class Weapon (Except Orb)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1318,7 +1318,7 @@
                                                     "y": 0
                                                 },
                                                 "filename": "items/weapon/mace/mace",
-                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n피해 +35~60% 증가 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftHitPowerCommon@dictBlue\n35-60% Enhanced Damage @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1346,7 +1346,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "블러드 계열",
+                                        "text": "Blood Type",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -1481,7 +1481,7 @@
                                                     "y": 49
                                                 },
                                                 "filename": "items/armor/helmet/helm",
-                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n치명적 공격 +5~10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftBloodCommon\nÿc+35-10% Deadly Strike @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1616,7 +1616,7 @@
                                                     "y": 49
                                                 },
                                                 "filename": "items/armor/boot/light_plate_boots",
-                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n생명력 회복 +5~10 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\nReplenish Life +5-10 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1751,7 +1751,7 @@
                                                     "y": 49
                                                 },
                                                 "filename": "items/armor/glove/heavy_gloves",
-                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n강타 확률 +5~10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n+5-10% Chance of Crushing Blow @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1886,7 +1886,7 @@
                                                     "y": 98
                                                 },
                                                 "filename": "items/armor/belt/belt_m",
-                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n상처 악화 확률 +5~10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n+5-10% Chance of Open Wounds @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -2021,7 +2021,7 @@
                                                     "y": 0
                                                 },
                                                 "filename": "items/armor/shield/spiked_shield",
-                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n공격자가 피해를 4~7 받음 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\nAttacker Takes Damage of 4-7 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -2156,7 +2156,7 @@
                                                     "y": 0
                                                 },
                                                 "filename": "items/armor/armor/plate_mail",
-                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n악마 처치 시 생명력 +1~3 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n+1-3 Life after each Demon Kill @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -2291,7 +2291,7 @@
                                                     "y": 98
                                                 },
                                                 "filename": "items/misc/amulet/amulet1",
-                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n달리기/걷기 속도 +5~10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n+5-10% Faster Run/Walk @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -2422,7 +2422,7 @@
                                                     "y": 98
                                                 },
                                                 "filename": "items/misc/ring/ring1",
-                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n힘 +1~5 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n+1-5 to Strength @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -2455,7 +2455,7 @@
                                                     "y": 0
                                                 },
                                                 "filename": "items/weapon/axe/hand_axe",
-                                                "tooltipString": "@dictBlue@strBSMagic 도끼 계열 무기",
+                                                "tooltipString": "@dictBlue@strBSMagic Axe Class Weapon",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2557,7 +2557,7 @@
                                                     "y": 0
                                                 },
                                                 "filename": "items/weapon/axe/hand_axe",
-                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n피해 +30~60% 증가 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftBloodCommon@dictBlue\n30-60% Enhanced Damage @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -2585,7 +2585,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "캐스터 계열",
+                                        "text": "Caster Type",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -2720,7 +2720,7 @@
                                                     "y": 49
                                                 },
                                                 "filename": "items/armor/helmet/mask",
-                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n적중당 마나 1~4% 훔침 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n1-4% Mana stolen per hit @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -2855,7 +2855,7 @@
                                                     "y": 49
                                                 },
                                                 "filename": "items/armor/boot/leather_boots",
-                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n최대 마나 2~5% 증가 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\nIncrease Maximum Mana 2-5% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -2990,7 +2990,7 @@
                                                     "y": 49
                                                 },
                                                 "filename": "items/armor/glove/gloves_l",
-                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n적 처치 시 마나 +1~3 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n+1-3 to Mana after each Kill @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -3125,7 +3125,7 @@
                                                     "y": 98
                                                 },
                                                 "filename": "items/armor/belt/light_belt",
-                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n시전 속도 +5~10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n+5-10% Faster Cast Rate @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -3260,7 +3260,7 @@
                                                     "y": 49
                                                 },
                                                 "filename": "items/armor/shield/small_shield",
-                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n막기 확률 5~10% 증가 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n5-10% Increased Chance of Blocking @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -3395,7 +3395,7 @@
                                                     "y": 0
                                                 },
                                                 "filename": "items/armor/armor/light_plate",
-                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n적 처치 시 마나 +1~3 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n+1-3 to Mana after each Kill @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -3530,7 +3530,7 @@
                                                     "y": 98
                                                 },
                                                 "filename": "items/misc/amulet/amulet1",
-                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n시전 속도 +5~10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n+5-10% Faster Cast Rate @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -3661,7 +3661,7 @@
                                                     "y": 98
                                                 },
                                                 "filename": "items/misc/ring/ring1",
-                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n마력 +1~5 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n+1-5 to Energy @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -3694,7 +3694,7 @@
                                                     "y": 0
                                                 },
                                                 "filename": "items/weapon/scepter/scepter",
-                                                "tooltipString": "@dictBlue@strBSMagic 홀(셉터) / 지팡이 계열 무기",
+                                                "tooltipString": "@dictBlue@strBSMagic Scepter / Staff Class Weapon",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3796,7 +3796,7 @@
                                                     "y": 0
                                                 },
                                                 "filename": "items/weapon/scepter/scepter",
-                                                "tooltipString": "@dictCraftCasterCommon@dictBlue\n최대 마나 1~5% 증가 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftCasterCommon\nÿcIncrease Maximum Mana 1-5% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -3824,7 +3824,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "세이프티 계열",
+                                        "text": "Safety Type",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -3959,7 +3959,7 @@
                                                     "y": 49
                                                 },
                                                 "filename": "items/armor/helmet/crown",
-                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n방어력 +10~30% 증가 @dictVariable@dictBlue\n번개 저항 +5~10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n+10-30% Enhanced Defense @dictVariable@dictBlue\nLightning Resist +5-10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -4094,7 +4094,7 @@
                                                     "y": 49
                                                 },
                                                 "filename": "items/armor/boot/plate_boots",
-                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n방어력 +10~30% 증가 @dictVariable@dictBlue\n화염 저항 +5~10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n+10-30% Enhanced Defense @dictVariable@dictBlue\nFire Resist +5-10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -4229,7 +4229,7 @@
                                                     "y": 49
                                                 },
                                                 "filename": "items/armor/glove/gaunlets_h",
-                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n방어력 +10~30% 증가 @dictVariable@dictBlue\n냉기 저항 +5~10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n+10-30% Enhanced Defense @dictVariable@dictBlue\nCold Resist +5-10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -4364,7 +4364,7 @@
                                                     "y": 98
                                                 },
                                                 "filename": "items/armor/belt/sash_l",
-                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n방어력 +10~30% 증가 @dictVariable@dictBlue\n독 저항 +5~10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n+10-30% Enhanced Defense @dictVariable@dictBlue\nPoison Resist +5-10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -4499,7 +4499,7 @@
                                                     "y": 0
                                                 },
                                                 "filename": "items/armor/shield/kite_shield",
-                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n방어력 +10~30% 증가 @dictVariable@dictBlue\n마법 저항 +5~10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n+10-30% Enhanced Defense @dictVariable@dictBlue\nMagic Resist +5-10% @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -4634,7 +4634,7 @@
                                                     "y": 0
                                                 },
                                                 "filename": "items/armor/armor/breast_plate",
-                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n방어력 +10~30% 증가 @dictVariable@dictBlue\n빙결 지속시간 절반으로 감소@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n+10-30% Enhanced Defense @dictVariable@dictBlue\nHalf Freeze Duration@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -4769,7 +4769,7 @@
                                                     "y": 98
                                                 },
                                                 "filename": "items/misc/amulet/amulet1",
-                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n막기 확률 1~10% 증가 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n1-10% Increased Chance of Blocking @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -4900,7 +4900,7 @@
                                                     "y": 98
                                                 },
                                                 "filename": "items/misc/ring/ring1",
-                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n활력 +1~5 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n+1-5 to Vitality @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -4933,7 +4933,7 @@
                                                     "y": 0
                                                 },
                                                 "filename": "items/weapon/javelin/javelin",
-                                                "tooltipString": "@dictBlue@strBSMagic 창 계열 무기",
+                                                "tooltipString": "@dictBlue@strBSMagic Spear Class Weapon",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5035,7 +5035,7 @@
                                                     "y": 0
                                                 },
                                                 "filename": "items/weapon/javelin/javelin",
-                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n방어력 +5~10% 증가 @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
+                                                "tooltipString": "@dictCraftSafetyCommon@dictBlue\n+5-10% Enhanced Defense @dictVariable@dictBlue\n\n@dictCraftAdditionalProperties",
                                                 "pressedFrame": 0
                                             }
                                         }

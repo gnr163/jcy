@@ -1,6 +1,6 @@
 {
     "type": "VideoOptionsPanel",
-    "name": "ItemDictionaryCubeUpgradePanel",
+    "name": "ItemDictionaryCubePanel3",
     "fields": {
         "priority": 9003,
         "rect": "$OptionsPanelRect",
@@ -107,7 +107,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "장비 강화 (노말 -> 익셉셔널)",
+                                        "text": "Upgrade Item (Normal -> Exceptional)",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -140,7 +140,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "노말 유니크/세트 무기\n@r08L + @r12L\n최상급 에메랄드",
+                                                "text": "Normal Unique/Set Weapon\n@r08L + @r12L\nPerfect Emerald",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -161,7 +161,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  익셉셔널 유니크/세트 무기",
+                                                "text": "->  Exceptional Unique/Set Weapon",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -190,7 +190,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "노말 유니크/세트 방어구\n@r07L + @r13L\n최상급 다이아몬드",
+                                                "text": "Normal Unique/Set Armor\n@r07L + @r13L\nPerfect Diamond",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -211,7 +211,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  익셉셔널 유니크/세트 방어구",
+                                                "text": "->  Exceptional Unique/Set Armor",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -240,7 +240,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "노말 희귀 무기\n@r09L + @r11L\n최상급 사파이어",
+                                                "text": "Normal Rare Weapon\n@r09L + @r11L\nPerfect Sapphire",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -261,7 +261,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  익셉셔널 희귀 무기",
+                                                "text": "->  Exceptional Rare Weapon",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -290,7 +290,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "노말 희귀 방어구\n@r08L + @r10\n최상급 자수정",
+                                                "text": "Normal Rare Armor\n@r08L + @r10\nPerfect Amethyst",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -311,7 +311,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  익셉셔널 희귀 방어구",
+                                                "text": "->  Exceptional Rare Armor",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -335,7 +335,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "장비 강화 (익셉셔널 -> 엘리트)",
+                                        "text": "Upgrade Item (Exceptional -> Elite)",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -368,7 +368,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "익셉셔널 유니크/세트 무기\n@r17L + @r21L\n최상급 에메랄드",
+                                                "text": "Exceptional Unique/Set Weapon\n@r17L + @r21L\nPerfect Emerald",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -389,7 +389,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  엘리트 유니크/세트 무기",
+                                                "text": "->  Elite Unique/Set Weapon",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -418,7 +418,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "익셉셔널 유니크/세트 방어구\n@r18L + @r20L\n최상급 다이아몬드",
+                                                "text": "Exceptional Unique/Set Armor\n@r18L + @r20L\nPerfect Diamond",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -439,7 +439,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  엘리트 유니크/세트 방어구",
+                                                "text": "->  Elite Unique/Set Armor",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -468,7 +468,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "익셉셔널 희귀 무기\n@r19L + @r22L\n최상급 사파이어",
+                                                "text": "Exceptional Rare Weapon\n@r19L + @r22L\nPerfect Sapphire",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -489,7 +489,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  엘리트 희귀 무기",
+                                                "text": "->  Elite Rare Weapon",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -518,7 +518,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "익셉셔널 희귀 방어구\n@r18L + @r21L\n최상급 자수정",
+                                                "text": "Exceptional Rare Armor\n@r18L + @r21L\nPerfect Amethyst",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -539,7 +539,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  엘리트 희귀 방어구",
+                                                "text": "->  Elite Rare Armor",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -563,7 +563,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "품질 개선",
+                                        "text": "Quality Improvement",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -596,7 +596,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "질 낮은/손상된/조잡한 일반 무기\n@r02L 룬\n최하급 보석",
+                                                "text": "Low Quality Weapon\n@r02L Rune\nChipped Gem",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -617,7 +617,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  일반 무기 (@dictItemLevel: 1)",
+                                                "text": "->  Normal Weapon (@dictItemLevel: 1)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -646,7 +646,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "질 낮은/손상된/조잡한 일반 방어구\n@r01L 룬\n최하급 보석",
+                                                "text": "Low Quality Armor\n@r01L Rune\nChipped Gem",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -667,7 +667,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  일반 방어구 (@dictItemLevel: 1)",
+                                                "text": "->  Normal Armor (@dictItemLevel: 1)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
