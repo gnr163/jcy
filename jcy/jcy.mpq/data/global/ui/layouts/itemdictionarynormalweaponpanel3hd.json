@@ -76,7 +76,7 @@
                                             "name": "BaseItemLevelReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "- @dictNoticeSockets",
+                                                "text": "@dictNoticeSockets",
                                                 "style": "$StyleDictionaryNotice"
                                             }
                                         }
@@ -92,7 +92,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassPolearm@dictS",
+                                        "text": "@dictClassPolearm",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -788,7 +788,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassSpear@dictS",
+                                        "text": "@dictClassSpear",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -1372,7 +1372,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassAmazonSpear@dictS",
+                                        "text": "@dictClassAmazonSpear",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [

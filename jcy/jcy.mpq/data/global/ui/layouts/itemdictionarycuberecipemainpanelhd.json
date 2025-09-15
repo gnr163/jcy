@@ -1,5 +1,5 @@
 {
-    "type": "SettingsPanel", "name": "ItemDictionaryNormalArmorMainPanel",
+    "type": "SettingsPanel", "name": "ItemDictionaryCubeRecipeMainPanel",
     "fields": {
         "priority": 9002,
         "fitToParent": true
@@ -35,7 +35,7 @@
                             "type": "TextBoxWidget", "name": "Title",
                             "fields": {
                                 "rect": { "x": 0, "y": 45, "width": 1950, "height": 103 },
-                                "text": "@dictTextNormalArmors",
+                                "text": "@dictTextCubeRecipes",
                                 "style": "$StyleTitleBlock"
                             }
                         },
@@ -45,7 +45,7 @@
                                 "rect": { "x": 1868, "y": 8 },
                                 "filename": "PANEL\\closebtn_4x",
                                 "hoveredFrame": 3,
-								"onClickMessage": "PanelManager:ClosePanel:ItemDictionaryNormalArmorMainPanel",
+								"onClickMessage": "PanelManager:ClosePanel:ItemDictionaryCubeRecipeMainPanel",
                                 "tooltipString": "@strClose",
                                 "sound": "cursor_close_window_hd",
                                 "acceptsEscKeyEverywhere": true,
@@ -69,14 +69,14 @@
             "fields": {
                 "rect": "$SettingsPanelTabsRect",
                 "anchor": { "x": 0.5 },
-                "tabCount": 4,
+                "tabCount": 6,
                 "tabSize": { "x": 266, "y": 121 },
                 "tabPadding": { "x": 2, "y": 0 },
                 "unavailableTabsLeaveGaps": false,
                 "tabSizingMethod": "fixedCenter",
                 "filename": "Controller/Panel/Stash/V2/StashTabs",
-                "inactiveFrames": [ 1, 1, 1, 1 ],
-                "activeFrames": [ 0, 0, 0, 0 ],
+                "inactiveFrames": [ 1, 1, 1, 1, 1, 1 ],
+                "activeFrames": [ 0, 0, 0, 0, 0, 0 ],
                 "activeTextColor": "$TabsActiveTextColor",
                 "inactiveTextColor": "$TabsInactiveTextColor",
                 "tabTextOffset": { "x": 0, "y": -4 },
@@ -87,12 +87,14 @@
                     "fontColor": "$FontColorWhite",
                     "spacing": {"leading":0.9, "kerning":0.95}
                 },
-                "textStrings": [ "@dictClassHelm", "@dictClassArmor", "@dictClassShield", "@other" ],
+                "textStrings": [ "@dictClassGems/@dictClassRunes", "@dictClassSocketing", "@dictClassUpgrade", "@dictClassReroll", "@dictClassCrafting", "@dictClassOthers" ],
                 "tabMessages": [
-                    "SettingsPanelMessage:CheckChanges:ItemDictionaryNormalArmorPanel1",
-                    "SettingsPanelMessage:CheckChanges:ItemDictionaryNormalArmorPanel2",
-                    "SettingsPanelMessage:CheckChanges:ItemDictionaryNormalArmorPanel3",
-                    "SettingsPanelMessage:CheckChanges:ItemDictionaryNormalArmorPanel4"
+                    "SettingsPanelMessage:CheckChanges:ItemDictionaryCubeRuneGemPanel",
+                    "SettingsPanelMessage:CheckChanges:ItemDictionaryCubeSocketPanel",
+                    "SettingsPanelMessage:CheckChanges:ItemDictionaryCubeUpgradePanel",
+                    "SettingsPanelMessage:CheckChanges:ItemDictionaryCubeRerollPanel",
+					"SettingsPanelMessage:CheckChanges:ItemDictionaryCubeCraftPanel",
+					"SettingsPanelMessage:CheckChanges:ItemDictionaryCubeOtherPanel"
                 ]
             }
         },

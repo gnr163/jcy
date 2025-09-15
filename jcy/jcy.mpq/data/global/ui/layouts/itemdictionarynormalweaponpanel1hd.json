@@ -76,7 +76,7 @@
                                             "name": "BaseItemLevelReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "- @dictNoticeSockets",
+                                                "text": "@dictNoticeSockets",
                                                 "style": "$StyleDictionaryNotice"
                                             }
                                         }
@@ -92,7 +92,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassDagger@dictS",
+                                        "text": "@dictClassDagger",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -540,7 +540,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassSword@dictS",
+                                        "text": "@dictClassSword",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [

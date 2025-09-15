@@ -76,7 +76,7 @@
                                             "name": "BaseItemLevelReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "- @dictNoticeSockets",
+                                                "text": "@dictNoticeSockets",
                                                 "style": "$StyleDictionaryNotice"
                                             }
                                         }
@@ -92,7 +92,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassClub@dictS",
+                                        "text": "@dictClassClub",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -332,7 +332,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassMace@dictS",
+                                        "text": "@dictClassMace",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -680,7 +680,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassHammer@dictS",
+                                        "text": "@dictClassHammer",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -1032,7 +1032,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassScepter@dictS",
+                                        "text": "@dictClassScepter",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [

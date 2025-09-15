@@ -67,7 +67,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassGlove@dictS",
+                                        "text": "@dictClassGlove",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -611,7 +611,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassBelt@dictS",
+                                        "text": "@dictClassBelt",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -1135,7 +1135,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassBoot@dictS",
+                                        "text": "@dictClassBoot",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [

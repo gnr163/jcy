@@ -260,7 +260,7 @@
                                             0,
                                             0
                                         ],
-                                        "onClickMessage": "PanelManager:OpenPanel:ItemDictionaryUniqueWeaponMainPanelChn",
+                                        "onClickMessage": "PanelManager:OpenPanel:ItemDictionaryUniqueWeaponMainPanel",
                                         "textColor": "$FontColorLightTeal",
                                         "text/style": "$StyleFEButtonText",
                                         "acceptsReturnKey": true,
@@ -279,7 +279,7 @@
                                             0,
                                             0
                                         ],
-                                        "onClickMessage": "PanelManager:OpenPanel:ItemDictionaryUniqueArmorMainPanelChn",
+                                        "onClickMessage": "PanelManager:OpenPanel:ItemDictionaryUniqueArmorMainPanel",
                                         "textColor": "$FontColorLightTeal",
                                         "text/style": "$StyleFEButtonText",
                                         "acceptsReturnKey": true,
@@ -304,7 +304,7 @@
                                             0,
                                             0
                                         ],
-                                        "onClickMessage": "PanelManager:OpenPanel:ItemDictionaryRunewordMainPanelChn",
+                                        "onClickMessage": "PanelManager:OpenPanel:ItemDictionaryRunewordMainPanel",
                                         "textColor": "$FontColorLightTeal",
                                         "text/style": "$StyleFEButtonText",
                                         "acceptsReturnKey": true,
@@ -323,7 +323,7 @@
                                             0,
                                             0
                                         ],
-                                        "onClickMessage": "PanelManager:OpenPanel:ItemDictionarySetItemMainPanelChn",
+                                        "onClickMessage": "PanelManager:OpenPanel:ItemDictionarySetItemMainPanel",
                                         "textColor": "$FontColorLightTeal",
                                         "text/style": "$StyleFEButtonText",
                                         "acceptsReturnKey": true,
@@ -348,7 +348,7 @@
                                             0,
                                             0
                                         ],
-                                        "onClickMessage": "PanelManager:OpenPanel:ItemDictionaryCubeRecipeMainPanelChn",
+                                        "onClickMessage": "PanelManager:OpenPanel:ItemDictionaryCubeRecipeMainPanel",
                                         "textColor": "$FontColorLightTeal",
                                         "text/style": "$StyleFEButtonText",
                                         "acceptsReturnKey": true,

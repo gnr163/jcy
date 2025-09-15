@@ -76,7 +76,7 @@
                                             "name": "BaseItemLevelReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "- @dictNoticeSockets\n- @dictNoticeBlockChance",
+                                                "text": "@dictNoticeSockets\n@dictNoticeBlockChance",
                                                 "style": "$StyleDictionaryNotice"
                                             }
                                         }
@@ -92,7 +92,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassShield@dictS",
+                                        "text": "@dictClassShield",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -976,7 +976,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassPaladinShield@dictS",
+                                        "text": "@dictClassPaladinShield",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -1536,7 +1536,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "ItemTypeWithDivider",
                                     "fields": {
-                                        "text": "@dictClassShrunkenHead@dictS",
+                                        "text": "@dictClassShrunkenHead",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
