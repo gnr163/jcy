@@ -66,7 +66,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "한손 도검",
+                                        "text": "@dictClassOneHandedSword",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -99,7 +99,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "릭소트의 날카로움 (릭잣즈 킨)",
+                                                "text": "@dictUniqueItemName25",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -114,7 +114,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 릭소트의 날카로움 \n@ssd\n\n@dictBlue 피해 +100% 증가\n최소 피해 +5\n명중률 보너스 20%\n강타 확률 +25%\n방어력 +25\n시야 +2",
+                                                "tooltipString": "@dictGold @dictUniqueItemName25 \n@ssd\n\n@dictBlue @dictUniqueItemInfo25",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -263,7 +263,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "피의 초승달 (블러드 크레센트)",
+                                                "text": "@dictUniqueItemName26",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -278,7 +278,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 피의 초승달 \n@scm\n\n@dictBlue 공격 속도 +15%\n피해 +60~80% 증가 @dictVariable\n@dictBlue 적중당 생명력 15% 훔침\n상처 악화 확률 +33%\n생명력 +15\n모든 저항 +15\n시야 +4",
+                                                "tooltipString": "@dictGold @dictUniqueItemName26 \n@scm\n\n@dictBlue @dictUniqueItemInfo26",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -400,7 +400,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "크린티즈의 꼬챙이 (스큐어 오브 크린티즈)",
+                                                "text": "@dictUniqueItemName27",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -415,7 +415,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 크린티즈의 꼬챙이 \n@sbr\n\n@dictBlue 피해 +50% 증가\n피해 3 - 7 추가\n대상의 방어력 무시\n적중당 마나 7% 훔침\n힘 +10\n민첩 +10",
+                                                "tooltipString": "@dictGold @dictUniqueItemName27 \n@sbr\n\n@dictBlue @dictUniqueItemInfo27",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -537,7 +537,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "서광칼낫 (글림싸이드)",
+                                                "text": "@dictUniqueItemName28",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -552,7 +552,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 서광칼낫 \n@flc\n\n@dictBlue 공격 속도 +20%\n피해 +60~100% 증가 @dictVariable\n@dictBlue 냉기 피해 3 - 5 추가\n방어력 +20\n마나 +30\n시야 +3",
+                                                "tooltipString": "@dictGold @dictUniqueItemName28 \n@flc\n\n@dictBlue @dictUniqueItemInfo28",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -674,7 +674,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "그리스월드의 날 (그리스월즈엣지)",
+                                                "text": "@dictUniqueItemName30",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -689,7 +689,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 그리스월드의 날 \n@bsd\n\n@dictBlue 공격 속도 +10%\n피해 +80~120% 증가 @dictVariable\n@dictBlue 명중률 +100\n화염 피해 (10~12) - (15~25) 추가 @dictVariable\n@dictBlue 밀쳐내기\n힘 +12",
+                                                "tooltipString": "@dictGold @dictUniqueItemName30 \n@bsd\n\n@dictBlue @dictUniqueItemInfo30",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -811,7 +811,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "지옥역병 (헬플레이그)",
+                                                "text": "@dictUniqueItemName31",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -826,7 +826,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 지옥역병 \n@lsd\n\n@dictBlue 화염 기술 +2\n피해 +70~80% 증가 @dictVariable\n@dictBlue 화염 피해 25 - 75 추가\n독 피해 28 - 56 추가 (6초에 걸쳐) @dictVariable\n@dictBlue 적중당 마나 5% 훔침\n적중당 생명력 5% 훔침",
+                                                "tooltipString": "@dictGold @dictUniqueItemName31 \n@lsd\n\n@dictBlue @dictUniqueItemInfo31",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -948,7 +948,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "컬웬의 날붙이 (컬웬즈 포인트)",
+                                                "text": "@dictUniqueItemName32",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -963,7 +963,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 컬웬의 날붙이 \n@wsd\n\n@dictBlue 모든 기술 +1\n공격 속도 +20%\n타격 회복 속도 +20%\n피해 +70~80% 증가 @dictVariable\n@dictBlue 명중률 +60\n독 지속시간 50% 감소",
+                                                "tooltipString": "@dictGold @dictUniqueItemName32 \n@wsd\n\n@dictBlue @dictUniqueItemInfo32",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1112,7 +1112,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "유혈자 (블러드레터)",
+                                                "text": "@dictUniqueItemName154",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1127,7 +1127,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 유혈자 \n@9ss\n\n@dictBlue 공격 속도 +20%\n피해 +140% 증가\n피해 12 - 45 추가\n명중률 +90\n적중당 생명력 8% 훔침\n+1~3 소용돌이 (야만용사 전용) @dictVariable\n@dictBlue +2~4 칼 숙련 (야만용사 전용) @dictVariable\n@dictBlue 지구력 고갈 속도 10% 감소",
+                                                "tooltipString": "@dictGold @dictUniqueItemName154 \n@9ss\n\n@dictBlue @dictUniqueItemInfo154",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1276,7 +1276,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "얼음강철 눈 (콜드스틸 아이)",
+                                                "text": "@dictUniqueItemName155",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1291,7 +1291,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 얼음강철 눈 \n@9sm\n\n@dictBlue 공격 속도 +20%\n피해 +200~250% 증가 @dictVariable\n@dictBlue 적중당 마나 6% 훔침\n치명적 공격 +50%\n적중 시 대상 실명\n대상 감속 30%",
+                                                "tooltipString": "@dictGold @dictUniqueItemName155 \n@9sm\n\n@dictBlue @dictUniqueItemInfo155",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1413,7 +1413,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "사술불길 (헥스파이어)",
+                                                "text": "@dictUniqueItemName156",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1428,7 +1428,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 사술불길 \n@9sb\n\n@dictBlue 화염 기술 +3\n피해 +140~160% 증가 @dictVariable\n@dictBlue 피해 35 - 40 추가\n대상의 방어력 무시\n최대 화염 저항 +10%\n화염 저항 +25%\n6 레벨 히드라 (충전 36회)",
+                                                "tooltipString": "@dictGold @dictUniqueItemName156 \n@9sb\n\n@dictBlue @dictUniqueItemInfo156",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1550,7 +1550,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "알리바바의 칼날 (블레이드 오브 알리바바)",
+                                                "text": "@dictUniqueItemName157",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1565,7 +1565,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 알리바바의 칼날 \n@9fc\n\n@dictBlue 피해 +60~120% 증가 @dictVariable\n@dictBlue 민첩 +5~15 @dictVariable\n@dictBlue 마나 +15\n괴물에게서 얻는 금화 2~247% 증가 (캐릭터 레벨에 비례)\n마법 아이템 발견 확률 1~99% 증가 (캐릭터 레벨에 비례)\n홈 있음 (2)",
+                                                "tooltipString": "@dictGold @dictUniqueItemName157 \n@9fc\n\n@dictBlue @dictUniqueItemInfo157",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1714,7 +1714,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "긴터의 균열 (진저스 리프트)",
+                                                "text": "@dictUniqueItemName158",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1729,7 +1729,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 긴터의 균열 \n@9cr\n\n@dictBlue 공격 속도 +30%\n피해 +100~150% 증가 @dictVariable\n@dictBlue 마법 피해 50 - 120 추가\n마법 피해 7~12 감소 @dictVariable\n@dictBlue 내구도 1 회복 (5초마다)",
+                                                "tooltipString": "@dictGold @dictUniqueItemName158 \n@9cr\n\n@dictBlue @dictUniqueItemInfo158",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1851,7 +1851,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "머리분쇄기 (헤드스트라이커)",
+                                                "text": "@dictUniqueItemName159",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1866,7 +1866,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 머리분쇄기 \n@9bs\n\n@dictBlue 피해 +150% 증가\n최대 피해 +1~99 (캐릭터 레벨에 비례)\n치명적 공격 +1~148% (캐릭터 레벨에 비례)\n괴물 회복 저지\n힘 +15",
+                                                "tooltipString": "@dictGold @dictUniqueItemName159 \n@9bs\n\n@dictBlue @dictUniqueItemInfo159",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2015,7 +2015,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "역병 유발자 (플레이그 베어러)",
+                                                "text": "@dictUniqueItemName160",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2030,7 +2030,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 역병 유발자 \n@9ls\n\n@dictBlue 타격 시 5% 확률로 4 레벨 맹독 확산 시전\n피해 +150% 증가\n피해 10 - 45 추가\n독 피해 +300 (8초에 걸쳐)\n독 저항 +45%\n+5 광견병 (드루이드 전용)",
+                                                "tooltipString": "@dictGold @dictUniqueItemName160 \n@9ls\n\n@dictBlue @dictUniqueItemInfo160",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2152,7 +2152,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "아틀란티안 (애틀랜티언)",
+                                                "text": "@dictUniqueItemName161",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2167,7 +2167,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 아틀란티안 \n@9wd\n\n@dictBlue 성기사 기술 레벨 +2\n피해 +200~250% 증가 @dictVariable\n@dictBlue 명중률 보너스 50%\n방어력 +75\n힘 +16\n민첩 +12\n활력 +8",
+                                                "tooltipString": "@dictGold @dictUniqueItemName161 \n@9wd\n\n@dictBlue @dictUniqueItemInfo161",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2316,7 +2316,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "신령 학살자 (진 슬레이어)",
+                                                "text": "@dictUniqueItemName290",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2331,7 +2331,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 신령 학살자 \n@7sm\n\n@dictBlue 피해 +190~240% 증가 @dictVariable\n@dictBlue 악마에게 주는 피해 +100~150% @dictVariable\n@dictBlue 악마에 대한 명중률 +200~300 @dictVariable\n@dictBlue 화염 피해 250 - 500 추가\n적중당 마나 3~6% 훔침 @dictVariable\n@dictBlue 번개 흡수 +3~7 @dictVariable\n@dictBlue 홈 있음 (1~2) @dictVariable",
+                                                "tooltipString": "@dictGold @dictUniqueItemName290 \n@7sm\n\n@dictBlue @dictUniqueItemInfo290",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2453,7 +2453,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "핏빛 달 (블러드문)",
+                                                "text": "@dictUniqueItemName289",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2468,7 +2468,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold 핏빛 달 \n@7sb\n\n@dictBlue 피해 +210~260% 증가 @dictVariable\n@dictBlue 적중당 생명력 10~15% 훔침 @dictVariable\n@dictBlue 상처 악화 확률 +50%\n적 처치 시 생명력 +7~13 @dictVariable\n@dictBlue 15 레벨 피 골렘 (충전 9회)",
+                                                "tooltipString": "@dictGold @dictUniqueItemName289 \n@7sb\n\n@dictBlue @dictUniqueItemInfo289",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2590,7 +2590,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "라이트세이버 (라이트세이버)",
+                                                "text": "@dictUniqueItemName259",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2605,7 +2605,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 라이트세이버 \n@7cr\n\n@dictBlue 공격 시 5% 확률로 14~20 레벨 연쇄 번개 시전 @dictVariable\n@dictBlue 공격 속도 +20%\n피해 +150~200% 증가 @dictVariable\n@dictBlue 피해 10 - 30 추가\n대상의 방어력 무시\n마법 피해 60 - 120 추가\n번개 피해 1 - 200 추가\n적중당 마나 5~7% 훔침 @dictVariable\n@dictBlue 번개 흡수 +25%\n시야 +7",
+                                                "tooltipString": "@dictGold @dictUniqueItemName259 \n@7cr\n\n@dictBlue @dictUniqueItemInfo259",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2727,7 +2727,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "푸른 서슬 (에이져래쓰)",
+                                                "text": "@dictUniqueItemName301",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2742,7 +2742,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 푸른 서슬 \n@7cr\n\n@dictBlue 장착 시 10~13 레벨 성역 오라 효과 적용 @dictVariable\n@dictBlue 모든 기술 +1\n공격 속도 +30%\n피해 +230~270% 증가 @dictVariable\n@dictBlue 마법 피해 250 - 500 추가\n냉기 피해 250 - 500 추가\n모든 능력치 +5~10 @dictVariable\n@dictBlue 시야 +3",
+                                                "tooltipString": "@dictGold @dictUniqueItemName301 \n@7cr\n\n@dictBlue @dictUniqueItemInfo301",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2864,7 +2864,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "서리바람 (프로스트윈드)",
+                                                "text": "@dictUniqueItemName365",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2879,7 +2879,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold 서리바람 \n@7ls\n\n@dictBlue 공격 속도 +25%\n피해 +180~230% 증가 @dictVariable\n@dictBlue 냉기 피해 237 - 486 추가\n+7~14 극지 돌풍 @dictVariable\n@dictBlue 대상 빙결 +4\n냉기 흡수 +7~15% @dictVariable\n@dictBlue 빙결 지속시간 절반으로 감소",
+                                                "tooltipString": "@dictGold @dictUniqueItemName365 \n@7ls\n\n@dictBlue @dictUniqueItemInfo365",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3013,7 +3013,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "양손 도검",
+                                        "text": "@dictClassTwoHandedSword",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -3046,7 +3046,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "그림자송곳니 (쉐도우 팽)",
+                                                "text": "@dictUniqueItemName33",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3061,7 +3061,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 그림자송곳니 \n@2hs\n\n@dictBlue 피해 +100% 증가\n냉기 피해 10 - 30 추가\n적중당 마나 9% 훔침\n적중당 생명력 9% 훔침\n냉기 저항 +20%\n시야 -2",
+                                                "tooltipString": "@dictGold @dictUniqueItemName33 \n@2hs\n\n@dictBlue @dictUniqueItemInfo33",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3183,7 +3183,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "영혼난도 (소울플레이)",
+                                                "text": "@dictUniqueItemName34",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3198,7 +3198,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 영혼난도 \n@clm\n\n@dictBlue 공격 속도 +10%\n피해 +70~100% 증가 @dictVariable\n@dictBlue 적중당 마나 4~10% 훔침 @dictVariable\n@dictBlue 적중당 생명력 4% 훔침\n모든 저항 +5",
+                                                "tooltipString": "@dictGold @dictUniqueItemName34 \n@clm\n\n@dictBlue @dictUniqueItemInfo34",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3347,7 +3347,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "키네밀의 송곳 (키네밀즈 얼)",
+                                                "text": "@dictUniqueItemName35",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3362,7 +3362,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 키네밀의 송곳 \n@gis\n\n@dictBlue 피해 +80~100% 증가 @dictVariable\n@dictBlue 명중률 +100~150 @dictVariable\n@dictBlue 화염 피해 6 - (20~40) 추가 @dictVariable\n@dictBlue +6 신성한 불꽃 (성기사 전용)\n마나 +20",
+                                                "tooltipString": "@dictGold @dictUniqueItemName35 \n@gis\n\n@dictBlue @dictUniqueItemInfo35",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3484,7 +3484,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "검은혀 (블랙텅)",
+                                                "text": "@dictUniqueItemName36",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3499,7 +3499,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 검은혀 \n@bsw\n\n@dictBlue 피해 +50~60% 증가 @dictVariable\n@dictBlue 명중률 +50\n독 피해 +113 (6초에 걸쳐)\n괴물 회복 저지\n독 저항 +50%",
+                                                "tooltipString": "@dictGold @dictUniqueItemName36 \n@bsw\n\n@dictBlue @dictUniqueItemInfo36",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3621,7 +3621,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "톱날검 (립서어)",
+                                                "text": "@dictUniqueItemName37",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3636,7 +3636,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 톱날검 \n@flb\n\n@dictBlue 피해 +80~100% 증가 @dictVariable\n@dictBlue 최대 피해 +15\n적중당 마나 6% 훔침\n상처 악화 확률 +80%",
+                                                "tooltipString": "@dictGold @dictUniqueItemName37 \n@flb\n\n@dictBlue @dictUniqueItemInfo37",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3785,7 +3785,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "장로 (더 페이트리악)",
+                                                "text": "@dictUniqueItemName38",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3800,7 +3800,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 장로 \n@gsd\n\n@dictBlue 피해 +100~120% 증가 @dictVariable\n@dictBlue 적중 시 대상 실명\n힘 +10\n피해 3 감소\n마법 피해 3 감소\n괴물에게서 얻는 금화 100% 증가",
+                                                "tooltipString": "@dictGold @dictUniqueItemName38 \n@gsd\n\n@dictBlue @dictUniqueItemInfo38",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3922,7 +3922,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "공포 구토자 (크래인트 보미르)",
+                                                "text": "@dictUniqueItemName162",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3937,7 +3937,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 공포 구토자 \n@92h\n\n@dictBlue 달리기/걷기 속도 +20%\n공격 속도 +50%\n피해 +160~200% 증가 @dictVariable\n@dictBlue 대상 감속 35%\n적중당 괴물 방어력 -70 감소\n받는 물리 피해 10% 감소",
+                                                "tooltipString": "@dictGold @dictUniqueItemName162 \n@92h\n\n@dictBlue @dictUniqueItemInfo162",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4059,7 +4059,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "얼음의 왕 (빙 쯔 왕)",
+                                                "text": "@dictUniqueItemName163",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4074,7 +4074,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 얼음의 왕 \n@9cm\n\n@dictBlue 타격 시 5% 확률로 3 레벨 얼음 보주 시전\n피해 +130~160% 증가 @dictVariable\n@dictBlue 냉기 피해 50 - 140 추가\n대상 빙결 +2\n힘 +20\n착용 조건 -30%",
+                                                "tooltipString": "@dictGold @dictUniqueItemName163 \n@9cm\n\n@dictBlue @dictUniqueItemInfo163",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4196,7 +4196,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "지독한 껍질 (바일 하스크)",
+                                                "text": "@dictUniqueItemName164",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4211,7 +4211,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 지독한 껍질 \n@9gs\n\n@dictBlue 타격 시 6% 확률로 1 레벨 피해 증폭 시전\n피해 +150~200% 증가 @dictVariable\n@dictBlue 언데드에게 주는 피해 +7~742% (캐릭터 레벨에 비례)\n언데드에 대한 명중률 +10~990 (캐릭터 레벨에 비례)\n독 피해 +250 (6초에 걸쳐)\n독 저항 +50%",
+                                                "tooltipString": "@dictGold @dictUniqueItemName164 \n@9gs\n\n@dictBlue @dictUniqueItemInfo164",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4360,7 +4360,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "구름가르개 (클라우드크랙)",
+                                                "text": "@dictUniqueItemName165",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4375,7 +4375,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 구름가르개 \n@9b9\n\n@dictBlue 타격 시 6% 확률로 7 레벨 천상의 주먹 시전\n방어 오라 +2 (성기사 전용)\n공격 오라 +2 (성기사 전용)\n피해 +150~200% 증가 @dictVariable\n@dictBlue 번개 피해 1 - 240 추가\n방어력 +30\n최대 번개 저항 +10%\n공격자가 번개 피해를 15 받음\n시야 +2",
+                                                "tooltipString": "@dictGold @dictUniqueItemName165 \n@9b9\n\n@dictBlue @dictUniqueItemInfo165",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4497,7 +4497,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "죽음나락 불길 (토즈팰러 플렘)",
+                                                "text": "@dictUniqueItemName166",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4512,7 +4512,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 죽음나락 불길 \n@9fb\n\n@dictBlue 공격 시 10% 확률로 6 레벨 화염구 시전\n피해 +120~160% 증가 @dictVariable\n@dictBlue 화염 피해 50 - 200 추가\n화염 저항 +40%\n화염 흡수 +10\n10 레벨 마법부여 (충전 45회)\n10 레벨 화염벽 (충전 20회)",
+                                                "tooltipString": "@dictGold @dictUniqueItemName166 \n@9fb\n\n@dictBlue @dictUniqueItemInfo166",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4634,7 +4634,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "검막이 (소드가드)",
+                                                "text": "@dictUniqueItemName167",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4649,7 +4649,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 검막이 \n@9gd\n\n@dictBlue 타격 회복 속도 +20%\n막기 확률 20% 증가\n피해 +170~180% 증가 @dictVariable\n@dictBlue 방어력 +5~495 (캐릭터 레벨에 비례)\n근접 공격 방어력 +200\n원거리 공격 방어력 +100\n모든 저항 +10~20 @dictVariable\n@dictBlue 받는 피해의 +30%만큼 마나 회복\n착용 조건 -50%",
+                                                "tooltipString": "@dictGold @dictUniqueItemName167 \n@9gd\n\n@dictBlue @dictUniqueItemInfo167",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4798,7 +4798,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "기염검 (플레임벨로우)",
+                                                "text": "@dictUniqueItemName353",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4813,7 +4813,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 기염검 \n@7gs\n\n@dictBlue 타격 시 12% 확률로 16 레벨 화염폭풍 시전\n화염 기술 +3\n피해 +170~240% 증가 @dictVariable\n@dictBlue 화염 피해 233 - 482 추가\n+12~18 지옥불 @dictVariable\n@dictBlue 힘 +10~20 @dictVariable\n@dictBlue 활력 +5~10 @dictVariable\n@dictBlue 화염 흡수 +20~30% @dictVariable",
+                                                "tooltipString": "@dictGold @dictUniqueItemName353 \n@7gs\n\n@dictBlue @dictUniqueItemInfo353",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4962,7 +4962,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "궤멸자 (둠브링거)",
+                                                "text": "@dictUniqueItemName260",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -4977,7 +4977,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold 궤멸자 \n@7b7\n\n@dictBlue 타격 시 8% 확률로 3 레벨 약화 시전\n피해 +180~250% 증가 @dictVariable\n@dictBlue 피해 30 - 100 추가\n명중률 보너스 40%\n적중당 생명력 5~7% 훔침 @dictVariable\n@dictBlue 최대 생명력 20% 증가",
+                                                "tooltipString": "@dictGold @dictUniqueItemName260 \n@7b7\n\n@dictBlue @dictUniqueItemInfo260",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5126,7 +5126,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "한아비 (그랜드파더)",
+                                                "text": "@dictUniqueItemName261",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -5141,7 +5141,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold 한아비 \n@7gd\n\n@dictBlue 피해 +150~250% 증가 @dictVariable\n@dictBlue 최대 피해 +2~247 (캐릭터 레벨에 비례)\n명중률 보너스 50%\n모든 능력치 +20\n생명력 +80",
+                                                "tooltipString": "@dictGold @dictUniqueItemName261 \n@7gd\n\n@dictBlue @dictUniqueItemInfo261",
                                                 "pressedFrame": 0
                                             }
                                         },

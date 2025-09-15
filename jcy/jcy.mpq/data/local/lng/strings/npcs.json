@@ -71,7 +71,7 @@
     "id": 51000,
     "Key": "dictCredit",
     "enUS": "Item Dictionary Mod ver 2.7\nCreated by jeffjks\nModify By jcymeow",
-    "zhTW": "Item Dictionary Mod ver 2.7\nCreated by jeffjks\n修改 桔橙柚",
+    "zhTW": "Item Dictionary Mod ver 2.7\nCreated by jeffjks\n修改 桔橙柚 數據:d2r.world",
     "deDE": "Item Dictionary Mod ver 2.7\nCreated by jeffjks\nModify By jcymeow",
     "esES": "Item Dictionary Mod ver 2.7\nCreated by jeffjks\nModify By jcymeow",
     "frFR": "Item Dictionary Mod ver 2.7\nCreated by jeffjks\nModify By jcymeow",
@@ -82,7 +82,7 @@
     "jaJP": "Item Dictionary Mod ver 2.7\nCreated by jeffjks\nModify By jcymeow",
     "ptBR": "Item Dictionary Mod ver 2.7\nCreated by jeffjks\nModify By jcymeow",
     "ruRU": "Item Dictionary Mod ver 2.7\nCreated by jeffjks\nModify By jcymeow",
-    "zhCN": "Item Dictionary Mod ver 2.7\nCreated by jeffjks\n修改 桔橙柚"
+    "zhCN": "Item Dictionary Mod ver 2.7\nCreated by jeffjks\n修改 桔橙柚 数据:凯恩之角D2数据库"
   },
   {
     "id": 51001,
@@ -246,7 +246,7 @@
     "esES": "One-Handed Sword",
     "frFR": "One-Handed Sword",
     "itIT": "One-Handed Sword",
-    "koKR": "도검",
+    "koKR": "한손 도검",
     "plPL": "One-Handed Sword",
     "esMX": "One-Handed Sword",
     "jaJP": "One-Handed Sword",
@@ -5476,19 +5476,19 @@
   {
     "id": 51318,
     "Key": "dictUniqueItemInfo25",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+100% Enhanced Damage\n+5 to Minimum Damage\n20% Bonus to Attack Rating\n+25% Chance of Crushing Blow\n+25 Defense\n+2 to Light Radius",
+    "zhTW": "+100%傷害強化\n+5 最小傷害\n+25%機率造成粉碎打擊\n20%準確率加成\n+25防禦\n照亮範圍+2",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +100% 증가\n최소 피해 +5\n명중률 보너스 20%\n강타 확률 +25%\n방어력 +25\n시야 +2",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+100%强化伤害\n+5 最小伤害\n20%加成命中值\n+25%几率粉碎打击\n+25防御\n+2 照亮范围"
   },
   {
     "id": 51319,
@@ -5510,19 +5510,19 @@
   {
     "id": 51320,
     "Key": "dictUniqueItemInfo26",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+15% Increased Attack Speed\n+60-80% Enhanced Damage @dictVariable\n@dictBlue 15% Life stolen per hit\n+33% Chance of Open Wounds\n+15 to Life\nAll Resistances +15\n+4 to Light Radius",
+    "zhTW": "+60-80%傷害強化\n+33%機率造成開放傷口\n攻擊速度+15%\n擊中竊取15%生命\n所有抗性+15\n+15生命\n照亮範圍+4",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "공격 속도 +15%\n피해 +60~80% 증가 @dictVariable\n@dictBlue 적중당 생명력 15% 훔침\n상처 악화 확률 +33%\n생명력 +15\n모든 저항 +15\n시야 +4",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+15%提高攻击速度\n+(60~80)%强化伤害\n15% 击中时偷取生命\n+33%几率造成开创性伤口\n+15生命\n+4照亮范围\n+15 所有抗性"
   },
   {
     "id": 51321,
@@ -5544,19 +5544,19 @@
   {
     "id": 51322,
     "Key": "dictUniqueItemInfo27",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+50% Enhanced Damage\nAdds 3-7 damage\nIgnore Target's Defense\n7% Mana stolen per hit\n+10 to Strength\n+10 to Dexterity",
+    "zhTW": "+50%傷害強化\n附加3- 7傷害\n無視目標防禦\n擊中竊取7%法力\n+10敏捷\n+10力量",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +50% 증가\n피해 3 - 7 추가\n대상의 방어력 무시\n적중당 마나 7% 훔침\n힘 +10\n민첩 +10",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+50%强化伤害\n+3-7伤害\n忽略目标的防御\n7%击中时偷取法力\n+10力量\n+10敏捷"
   },
   {
     "id": 51323,
@@ -5578,19 +5578,19 @@
   {
     "id": 51324,
     "Key": "dictUniqueItemInfo28",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+20% Increased Attack Speed\n+60-100% Enhanced Damage @dictVariable\n@dictBlue Adds 3-5 cold damage\n+20 Defense\n+30 to Mana\n+3 to Light Radius",
+    "zhTW": "+60-100%傷害強化\n附加3-5冰寒傷害\n攻擊速度+20%\n+20防禦\n+30法力\n照亮範圍+3",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "공격 속도 +20%\n피해 +60~100% 증가 @dictVariable\n@dictBlue 냉기 피해 3 - 5 추가\n방어력 +20\n마나 +30\n시야 +3",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+20%提高攻击速度\n+(60~100)%强化伤害\n+3-5冰霜伤害\n+20防御\n+30法力\n+3照亮范围"
   },
   {
     "id": 51325,
@@ -5646,19 +5646,19 @@
   {
     "id": 51328,
     "Key": "dictUniqueItemInfo30",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+10% Increased Attack Speed\n+80-120% Enhanced Damage @dictVariable\n@dictBlue +100 to Attack Rating\nAdds (10-12)-(15-25) fire damage @dictVariable\n@dictBlue Knockback\n+12 to Strength",
+    "zhTW": "+80-120%傷害強化\n附加 10-12-15-25 火焰傷害\n攻擊速度+10%\n+100準確率\n+12力量\n擊退",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "공격 속도 +10%\n피해 +80~120% 증가 @dictVariable\n@dictBlue 명중률 +100\n화염 피해 (10~12) - (15~25) 추가 @dictVariable\n@dictBlue 밀쳐내기\n힘 +12",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+10%提高攻击速度\n+(80~120)%强化伤害\n+100命中值\n+(10~12)最小火焰伤害\n+(15~25)最大火焰伤害\n击退\n+12力量"
   },
   {
     "id": 51329,
@@ -5680,23 +5680,24 @@
   {
     "id": 51330,
     "Key": "dictUniqueItemInfo31",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+2 to Fire Skills\n+70-80% Enhanced Damage @dictVariable\n@dictBlue Adds 25-75 fire damage\nAdds 28-56 poison damage over 6 seconds @dictVariable\n@dictBlue 5% Mana stolen per hit\n5% Life stolen per hit",
+    "zhTW": "+70-80%傷害強化\n+2火焰技能\n附加 25-75火焰傷害\n附加 28-56毒素傷害，時效6秒\n擊中竊取5%生命\n擊中竊取 5%法力",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "화염 기술 +2\n피해 +70~80% 증가 @dictVariable\n@dictBlue 화염 피해 25 - 75 추가\n독 피해 28 - 56 추가 (6초에 걸쳐) @dictVariable\n@dictBlue 적중당 마나 5% 훔침\n적중당 생명력 5% 훔침",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+2火焰技能\n+(70~80)%强化伤害\n+25-75火焰伤害\n+(28~56)毒素伤害，持续6秒\n5%击中时偷取法力\n5%击中时偷取生命"
   },
   {
     "id": 51331,
     "Key": "dictUniqueItemName32",
+    "enUS": "Culwen's Point",
     "zhTW": "庫爾溫的尖刃",
     "deDE": "Culwens Spitze",
     "esES": "Puya de Culwen",
@@ -5713,19 +5714,19 @@
   {
     "id": 51332,
     "Key": "dictUniqueItemInfo32",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+1 to All Skills\n+20% Increased Attack Speed\n+20% Faster Hit Recovery\n+70-80% Enhanced Damage @dictVariable\n@dictBlue +60 to Attack Rating\nPoison Length Reduced by 50%",
+    "zhTW": "+70-80%傷害強化\n+1所有技能\n中毒的時效縮短50%\n攻擊速度+20%\n+20%打擊恢復\n+60準確率",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "모든 기술 +1\n공격 속도 +20%\n타격 회복 속도 +20%\n피해 +70~80% 증가 @dictVariable\n@dictBlue 명중률 +60\n독 지속시간 50% 감소",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+(1~1)所有技能等级\n+20%提高攻击速度\n+20%更快速打击回复\n+(70~80)%强化伤害\n+60命中值\n中毒时间缩短50%"
   },
   {
     "id": 51333,
@@ -5747,19 +5748,19 @@
   {
     "id": 51334,
     "Key": "dictUniqueItemInfo33",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+100% Enhanced Damage\nAdds 10-30 cold damage\n9% Mana stolen per hit\n9% Life stolen per hit\nCold Resist +20%\n-2 to Light Radius",
+    "zhTW": "+100%傷害強化\n附加10-30冰寒傷害\n擊中竊取9%法力\n擊中竊取9%生命\n冰寒抗性+20%\n照亮範圍-2",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +100% 증가\n냉기 피해 10 - 30 추가\n적중당 마나 9% 훔침\n적중당 생명력 9% 훔침\n냉기 저항 +20%\n시야 -2",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+100%强化伤害\n+10-30冰霜伤害\n9%击中时偷取法力\n9%击中时偷取生命\n冰霜抗性+20%\n-2 照亮范围"
   },
   {
     "id": 51335,
@@ -5781,19 +5782,19 @@
   {
     "id": 51336,
     "Key": "dictUniqueItemInfo34",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+10% Increased Attack Speed\n+70-100% Enhanced Damage @dictVariable\n@dictBlue 4-10% Mana stolen per hit @dictVariable\n@dictBlue 4% Life stolen per hit\nAll Resistances +5",
+    "zhTW": "+70-100%傷害強化\n攻擊速度+10%\n擊中竊取4%生命\n擊中竊取410%法力\n所有抗性+5",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "공격 속도 +10%\n피해 +70~100% 증가 @dictVariable\n@dictBlue 적중당 마나 4~10% 훔침 @dictVariable\n@dictBlue 적중당 생명력 4% 훔침\n모든 저항 +5",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+10%提高攻击速度\n+(70~100)%强化伤害\n(4~10)%击中时偷取法力\n4%击中时偷取生命\n+5所有抗性"
   },
   {
     "id": 51337,
@@ -5815,19 +5816,19 @@
   {
     "id": 51338,
     "Key": "dictUniqueItemInfo35",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+80-100% Enhanced Damage @dictVariable\n@dictBlue +100-150 to Attack Rating @dictVariable\n@dictBlue Fire Adds 6-(20-40) damage @dictVariable\n@dictBlue +6 to Holy Fire (Paladin Only)\n+20 to Mana",
+    "zhTW": "+80-100%傷害強化\n+100-150準確率\n附加6- 20-40火焰傷害\n+20法力\n+6至神聖火焰（只限聖騎士）",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +80~100% 증가 @dictVariable\n@dictBlue 명중률 +100~150 @dictVariable\n@dictBlue 화염 피해 6 - (20~40) 추가 @dictVariable\n@dictBlue +6 신성한 불꽃 (성기사 전용)\n마나 +20",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+(80~100)%强化伤害\n+(100~150)命中值\n+6 最小火焰伤害\n+(20~40)最大火焰伤害\n+6 至神圣之火（仅限圣骑士）\n+20法力"
   },
   {
     "id": 51339,
@@ -5849,19 +5850,19 @@
   {
     "id": 51340,
     "Key": "dictUniqueItemInfo36",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+50-60% Enhanced Damage @dictVariable\n@dictBlue +50 to Attack Rating\n+113 poison damage over 6 seconds\nPrevent Monster Heal\nPoison Resist +50%",
+    "zhTW": "+50-60%傷害強\n+113 毒素傷害，時效6秒\n防止怪物自療\n+50準確率\n毒素抗性+50%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +50~60% 증가 @dictVariable\n@dictBlue 명중률 +50\n독 피해 +113 (6초에 걸쳐)\n괴물 회복 저지\n독 저항 +50%",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+(50~60)%强化伤害\n+50命中值\n+113毒素伤害，持续6秒\n防止怪物治愈\n毒素抗性+50%"
   },
   {
     "id": 51341,
@@ -5883,19 +5884,19 @@
   {
     "id": 51342,
     "Key": "dictUniqueItemInfo37",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+80-100% Enhanced Damage @dictVariable\n@dictBlue +15 to Maximum Damage\n6% Mana stolen per hit\n+80% Chance of Open Wounds",
+    "zhTW": "+80-100%傷害強化\n+15最大傷害\n+80%機率造成開放傷口\n擊中竊取6%法力",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +80~100% 증가 @dictVariable\n@dictBlue 최대 피해 +15\n적중당 마나 6% 훔침\n상처 악화 확률 +80%",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+(80~100)%强化伤害\n+15最大伤害\n6%击中时偷取法力\n+80%几率造成开创性伤口"
   },
   {
     "id": 51343,
@@ -5917,19 +5918,19 @@
   {
     "id": 51344,
     "Key": "dictUniqueItemInfo38",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+100-120% Enhanced Damage @dictVariable\n@dictBlue Hit Blinds Target\n+10 to Strength\nDamage Reduced by 3\nMagic Damage Reduced by 3\n100% Extra Gold from Monsters",
+    "zhTW": "+100-120%傷害強化\n擊中使目標目盲\n+10力量\n怪物金幣掉落量提高100%\n魔法傷害降低3\n傷害降低3",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +100~120% 증가 @dictVariable\n@dictBlue 적중 시 대상 실명\n힘 +10\n피해 3 감소\n마법 피해 3 감소\n괴물에게서 얻는 금화 100% 증가",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+(100~120)%强化伤害\n命中可致盲目标\n+10力量\n伤害降低3\n魔法伤害降低3\n100%怪物额外掉落金币"
   },
   {
     "id": 51345,
@@ -9793,19 +9794,19 @@
   {
     "id": 51572,
     "Key": "dictUniqueItemInfo154",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+20% Increased Attack Speed\n+140% Enhanced Damage\nAdds 12-45 damage\n+90 to Attack Rating\n8% Life stolen per hit\n+1-3 to Whirlwind (Barbarian Only) @dictVariable\n@dictBlue +2-4 to Blade Mastery (Barbarian Only) @dictVariable\n@dictBlue 10% Slower Stamina Drain",
+    "zhTW": "+140%傷害強化\n附加12- 45傷害\n+90準確率\n攻擊速度+20%\n精力消耗減緩10%\n擊中竊取8%生命\n+1-3至旋風斬（只限野蠻人）\n+2-4至利刃專精（只限野蠻人）",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "공격 속도 +20%\n피해 +140% 증가\n피해 12 - 45 추가\n명중률 +90\n적중당 생명력 8% 훔침\n+1~3 소용돌이 (야만용사 전용) @dictVariable\n@dictBlue +2~4 칼 숙련 (야만용사 전용) @dictVariable\n@dictBlue 지구력 고갈 속도 10% 감소",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+20%提高攻击速度\n+140%强化伤害\n+12-45 伤害\n+90命中值\n8%击中时偷取生命\n+(2~4）至刀剑精通(仅限野蛮人）\n+(1~3）至旋风斩(仅限野蛮人）\n10%降低耐力消粍"
   },
   {
     "id": 51573,
@@ -9827,19 +9828,19 @@
   {
     "id": 51574,
     "Key": "dictUniqueItemInfo155",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+20% Increased Attack Speed\n+200-250% Enhanced Damage @dictVariable\n@dictBlue 6% Mana stolen per hit\n+50% Deadly Strike\nHit Blinds Target\nSlows Target by 30%",
+    "zhTW": "+200-250%傷害強化\n+50%致命打擊\n攻擊速度+20%\n擊中竊取6%法力\n使目標減慢30%\n擊中使目標目盲",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "공격 속도 +20%\n피해 +200~250% 증가 @dictVariable\n@dictBlue 적중당 마나 6% 훔침\n치명적 공격 +50%\n적중 시 대상 실명\n대상 감속 30%",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+20%提高攻击速度\n+(200~250)%强化伤害\n6%击中时偷取法力\n+50%致死打击\n命中可致盲目标\n使目标减速30%"
   },
   {
     "id": 51575,
@@ -9861,19 +9862,19 @@
   {
     "id": 51576,
     "Key": "dictUniqueItemInfo156",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+3 to Fire Skills\n+140-160% Enhanced Damage @dictVariable\n@dictBlue Adds 35-40 damage\nIgnore Target's Defense\n+10% to Maximum Fire Resist\nFire Resist +25%\nLevel 6 Hydra (36 Charges)",
+    "zhTW": "+140-160%傷害強化\n附加 35- 40傷害\n+3火焰技能\n等級б多頭蛇（36次)\n無視目標防禦\n火焰抗性+25%\n火焰抗性上限+10%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "화염 기술 +3\n피해 +140~160% 증가 @dictVariable\n@dictBlue 피해 35 - 40 추가\n대상의 방어력 무시\n최대 화염 저항 +10%\n화염 저항 +25%\n6 레벨 히드라 (충전 36회)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+3火焰技能\n+(140~160)%强化伤害\n+35-40伤害\n忽略目标的防御\n+10%火焰抗性上限\n火焰抗性+25%\n6级多头蛇(36/36次充能）"
   },
   {
     "id": 51577,
@@ -9895,19 +9896,19 @@
   {
     "id": 51578,
     "Key": "dictUniqueItemInfo157",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+60-120% Enhanced Damage @dictVariable\n@dictBlue +5-15 to Dexterity @dictVariable\n@dictBlue +15 to Mana\n2-247% Extra Gold from Monsters (Based on Character Level)\n1-99% Better Chance of Getting Magic Items (Based on Character Level)\nSocketed (2)",
+    "zhTW": "+60-120%傷害強化\n怪物金幣掉落量提高（2-247)%（依角色等級而定）[2.5* clvl]\n尋獲魔法物品機率提高（1-99)%（依角色等級而定）[1*clvl]\n+15法力\n+5-15敏捷\n鑲孔（2)",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +60~120% 증가 @dictVariable\n@dictBlue 민첩 +5~15 @dictVariable\n@dictBlue 마나 +15\n괴물에게서 얻는 금화 2~247% 증가 (캐릭터 레벨에 비례)\n마법 아이템 발견 확률 1~99% 증가 (캐릭터 레벨에 비례)\n홈 있음 (2)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+(60~120)%强化伤害\n+(5~15）敏捷\n+15法力\n(2~247)%怪物额外掉落金币(基于角色等级）\n(1~99)%额外几率获得魔法物品(基于角色等级）\n镶孔 (2)"
   },
   {
     "id": 51579,
@@ -9929,19 +9930,19 @@
   {
     "id": 51580,
     "Key": "dictUniqueItemInfo158",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+30% Increased Attack Speed\n+100-150% Enhanced Damage @dictVariable\n@dictBlue Adds 50-120 magic damage\nMagic Damage Reduced by 7-12 @dictVariable\n@dictBlue Repairs 1 durability in 5 seconds",
+    "zhTW": "+100-150%傷害強化\n附加 50-120魔法傷害\n攻擊速度+30%\n魔法傷害降低7-12\n每5秒修復1點耐久度",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "공격 속도 +30%\n피해 +100~150% 증가 @dictVariable\n@dictBlue 마법 피해 50 - 120 추가\n마법 피해 7~12 감소 @dictVariable\n@dictBlue 내구도 1 회복 (5초마다)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+30%提高攻击速度\n+(100~150)%强化伤害\n+50-120魔法伤害\n魔法伤害降低（7~12）\n每5秒修复1点耐久度"
   },
   {
     "id": 51581,
@@ -9963,19 +9964,19 @@
   {
     "id": 51582,
     "Key": "dictUniqueItemInfo159",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+150% Enhanced Damage\n+1-99 to Maximum Damage (Based on Character Level)\n+1-148% Deadly Strike (Based on Character Level)\nPrevent Monster Heal\n+15 to Strength",
+    "zhTW": "+150%傷害強化\n+(1-99) 最大傷害（依角色等級而定）[1* clvl]\n+(1-148)%致命打擊(依角色等級而定）[1.5*clvl]\n防止怪物自療\n+15力量",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +150% 증가\n최대 피해 +1~99 (캐릭터 레벨에 비례)\n치명적 공격 +1~148% (캐릭터 레벨에 비례)\n괴물 회복 저지\n힘 +15",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+150%强化伤害\n+(1~99)最大伤害(湛于角色等级）\n+(1~148)%致死打击(基于角色等级)\n防止怪物治愈\n+15力量"
   },
   {
     "id": 51583,
@@ -9997,19 +9998,19 @@
   {
     "id": 51584,
     "Key": "dictUniqueItemInfo160",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "5% Chance to cast level 4 Poison Nova on striking\n+150% Enhanced Damage\nAdds 10-45 damage\n+300 poison damage over 8 seconds\nPoison Resist +45%\n+5 to Rabies (Druid Only)",
+    "zhTW": "+150%傷害強化\n附加10-45傷害\n+300毒素傷害，時效8秒\n擊中時有5%機率施展等級4劇毒新星\n毒素抗性+45%\n+5至狂犬撕咬（只限德魯伊）",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 시 5% 확률로 4 레벨 맹독 확산 시전\n피해 +150% 증가\n피해 10 - 45 추가\n독 피해 +300 (8초에 걸쳐)\n독 저항 +45%\n+5 광견병 (드루이드 전용)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "5%几率在击中时施放4级剧毒新星\n+150%强化伤害\n+10-45伤害\n+300毒素伤害，持续8秒\n+5至狂犬(仅限德鲁伊）\n毒素抗性+45%"
   },
   {
     "id": 51585,
@@ -10031,19 +10032,19 @@
   {
     "id": 51586,
     "Key": "dictUniqueItemInfo161",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+2 to Paladin Skill Levels\n+200-250% Enhanced Damage @dictVariable\n@dictBlue 50% Bonus to Attack Rating\n+75 Defense\n+16 to Strength\n+12 to Dexterity\n+8 to Vitality",
+    "zhTW": "+200-250%傷害強化\n+2聖騎士技能等級\n50%準確率加成\n+75防禦\n+8 體能\n+12敏捷\n+16力量",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "성기사 기술 레벨 +2\n피해 +200~250% 증가 @dictVariable\n@dictBlue 명중률 보너스 50%\n방어력 +75\n힘 +16\n민첩 +12\n활력 +8",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+2圣骑士技能等级\n+(200~250)%强化伤害\n50%加成命中值\n+75防御\n+16力量\n+12敏捷\n+8 活力"
   },
   {
     "id": 51587,
@@ -10065,19 +10066,19 @@
   {
     "id": 51588,
     "Key": "dictUniqueItemInfo162",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+20% Faster Run/Walk\n+50% Increased Attack Speed\n+160-200% Enhanced Damage @dictVariable\n@dictBlue Slows Target by 35%\n-70 to Monster Defense Per Hit\nPhysical Damage Received Reduced by 10%",
+    "zhTW": "+160-200%傷害強化\n攻擊速度+50%\n使目標減慢35%\n擊中使怪物防禦-70\n+20%跑步/行走速度\n受到的物理傷害降低10%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "달리기/걷기 속도 +20%\n공격 속도 +50%\n피해 +160~200% 증가 @dictVariable\n@dictBlue 대상 감속 35%\n적중당 괴물 방어력 -70 감소\n받는 물리 피해 10% 감소",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+20%更快速跑步/步行\n+50%提高攻击速度\n+(160~200)%强化伤害\n使目标减速35%\n-70每一击降低的怪物防御\n受到的物理伤害降低10%"
   },
   {
     "id": 51589,
@@ -10099,19 +10100,19 @@
   {
     "id": 51590,
     "Key": "dictUniqueItemInfo163",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "5% Chance to cast level 3 Frozen Orb on striking\n+130-160% Enhanced Damage @dictVariable\n@dictBlue Adds 50-140 cold damage\nFreezes Target +2\n+20 to Strength\nRequirements -30%",
+    "zhTW": "+130-160%傷害強化\n附加50-140冰寒傷害\n擊中時有5%機率施展等級3冰封球\n凍結目標+2\n需求-30%\n+20力量",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 시 5% 확률로 3 레벨 얼음 보주 시전\n피해 +130~160% 증가 @dictVariable\n@dictBlue 냉기 피해 50 - 140 추가\n대상 빙결 +2\n힘 +20\n착용 조건 -30%",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "5%几率在击中时施放3级冰封球\n+(130~160)%强化伤害\n+50-140 冰霜伤害\n冻结目标\n+20力量\n需求 -30%"
   },
   {
     "id": 51591,
@@ -10133,19 +10134,19 @@
   {
     "id": 51592,
     "Key": "dictUniqueItemInfo164",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "6% Chance to cast level 1 Amplify Damage on striking\n+150-200% Enhanced Damage @dictVariable\n@dictBlue +7-742% Damage to Undead (Based on Character Level)\n+10-990 to Attack Rating against Undead (Based on Character Level)\n+250 poison damage over 6 seconds\nPoison Resist +50%",
+    "zhTW": "+150-200%傷害強化\n+(7-742)%對不死怪物的傷害（依角色等級而定）[7.5* clvl]\n+(10-990)對不死怪物的準確率(依角色等級而定）[10*clvl]\n+250毒素傷害，時效6秒\n擊中時有6%機率施展等級1傷害加深\n毒素抗性+50%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 시 6% 확률로 1 레벨 피해 증폭 시전\n피해 +150~200% 증가 @dictVariable\n@dictBlue 언데드에게 주는 피해 +7~742% (캐릭터 레벨에 비례)\n언데드에 대한 명중률 +10~990 (캐릭터 레벨에 비례)\n독 피해 +250 (6초에 걸쳐)\n독 저항 +50%",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "6%几率在击中时施放1级伤害加深\n+(150~200)%强化伤害\n+(7~742)%对亡灵的伤害(基于角色等级)\n+(10~990）对亡灵的命中值(基于角色等级）\n+250毒素伤害，持续6秒\n毒素抗性+50%"
   },
   {
     "id": 51593,
@@ -10167,19 +10168,19 @@
   {
     "id": 51594,
     "Key": "dictUniqueItemInfo165",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "6% Chance to cast level 7 Fist of the Heavens on striking\n+2 to Defensive Auras (Paladin Only)\n+2 to Offensive Auras (Paladin Only)\n+150-200% Enhanced Damage @dictVariable\n@dictBlue Adds 1-240 lightning damage\n+30 Defense\n+10% to Maximum Lightning Resist\nAttacker Takes Lightning Damage of 15\n+2 to Light Radius",
+    "zhTW": "+150-200%傷害強化\n擊中時有6%機率施展等級7天堂之拳\n附加1-240電擊傷害\n電擊抗性上限+10%\n+30防禦\n攻擊者受到15點電擊傷害\n+2防禦靈氣（只限聖騎士）\n+2攻擊靈氣（只限聖騎士）\n照亮範圍+2",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 시 6% 확률로 7 레벨 천상의 주먹 시전\n방어 오라 +2 (성기사 전용)\n공격 오라 +2 (성기사 전용)\n피해 +150~200% 증가 @dictVariable\n@dictBlue 번개 피해 1 - 240 추가\n방어력 +30\n최대 번개 저항 +10%\n공격자가 번개 피해를 15 받음\n시야 +2",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "6%几率在击中时施放7级天堂之拳\n+2攻击光环（仅限圣骑士）\n+2 防御光环(仅限圣骑士）\n+(150~200)%强化伤害\n+1-240闪电伤害\n+30防御\n+10%闪电抗性上限\n攻击者受到15点闪电伤害\n+2 照亮范围"
   },
   {
     "id": 51595,
@@ -10201,19 +10202,19 @@
   {
     "id": 51596,
     "Key": "dictUniqueItemInfo166",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "10% Chance to cast level 6 Fire Ball on attack\n+120-160% Enhanced Damage @dictVariable\n@dictBlue Adds 50-200 fire damage\nFire Resist +40%\n+10 Fire Absorb\nLevel 10 Enchant (45 Charges)\nLevel 10 Fire Wall (20 Charges)",
+    "zhTW": "+120-160%傷害強化\n附加50-200火焰傷害\n攻擊時有10%機率施展等級6火球術\n等級10火牆術（20次）\n等級10附魔(45次）\n+10火焰吸收\n火焰抗性+40%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "공격 시 10% 확률로 6 레벨 화염구 시전\n피해 +120~160% 증가 @dictVariable\n@dictBlue 화염 피해 50 - 200 추가\n화염 저항 +40%\n화염 흡수 +10\n10 레벨 마법부여 (충전 45회)\n10 레벨 화염벽 (충전 20회)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "10%几率在攻击时施放6级火球术\n+(120~160)%强化伤害\n+50-200火焰伤害\n火焰抗性+40%\n+10火焰伤害吸收\n10级附魔火焰（45/45次充能）\n10级火焰墙（20/20次充能）"
   },
   {
     "id": 51597,
@@ -10235,19 +10236,19 @@
   {
     "id": 51598,
     "Key": "dictUniqueItemInfo167",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+20% Faster Hit Recovery\n20% Increased Chance of Blocking\n+170-180% Enhanced Damage @dictVariable\n@dictBlue +5-495 Defense (Based on Character Level)\n+200 Defense vs. Melee\n+100 Defense vs. Missile\nAll Resistances +10-20 @dictVariable\n@dictBlue +30% Damage Taken Goes To Mana\nRequirements -50%",
+    "zhTW": "+170-180%傷害強化\n+(5-495)防禦(依角色等級而定）[5*clvl]\n+30%受到的傷害轉為法力\n需求-50%\n所有抗性+10-20\n+20%打擊恢復\n格擋機率提高20%\n+100對遠程防禦\n+200對近戰防禦",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 회복 속도 +20%\n막기 확률 20% 증가\n피해 +170~180% 증가 @dictVariable\n@dictBlue 방어력 +5~495 (캐릭터 레벨에 비례)\n근접 공격 방어력 +200\n원거리 공격 방어력 +100\n모든 저항 +10~20 @dictVariable\n@dictBlue 받는 피해의 +30%만큼 마나 회복\n착용 조건 -50%",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+20%更快速打击回复\n20%格挡几率提高\n+(170~180)%强化伤害\n+(5~495）防御(基于角色等级)\n+200近战防御\n+100远程防御\n+30%受到的伤害转换为法力\n需求-50%\n+(10~20） 所有抗性"
   },
   {
     "id": 51599,
@@ -13295,19 +13296,19 @@
   {
     "id": 51778,
     "Key": "dictUniqueItemInfo259",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "5% Chance to cast level 14-20 Chain Lightning on attack @dictVariable\n@dictBlue +20% Increased Attack Speed\n+150-200% Enhanced Damage @dictVariable\n@dictBlue Adds 10-30 damage\nIgnore Target's Defense\nAdds 60-120 magic damage\nAdds 1-200 lightning damage\n5-7% Mana stolen per hit @dictVariable\n@dictBlue Lightning Absorb +25%\n+7 to Light Radius",
+    "zhTW": "+150-200%傷害強化\n附加 10- 30 傷害\n附加60-120魔法傷害\n附加1-200電擊傷害\n擊中竊取5-7%法力\n攻擊時有5%機率施展等級14-20連鎖閃電\n攻擊速度+20%\n無視目標防禦\n電擊吸收+25%\n照亮範圍+7",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "공격 시 5% 확률로 14~20 레벨 연쇄 번개 시전 @dictVariable\n@dictBlue 공격 속도 +20%\n피해 +150~200% 증가 @dictVariable\n@dictBlue 피해 10 - 30 추가\n대상의 방어력 무시\n마법 피해 60 - 120 추가\n번개 피해 1 - 200 추가\n적중당 마나 5~7% 훔침 @dictVariable\n@dictBlue 번개 흡수 +25%\n시야 +7",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "5%几率在攻击时施放0级连锁闪电\n+20%提高攻击速度\n+(150~200)%强化伤害\n+10-30 伤害\n忽略目标的防御\n+60-120魔法伤害\n+1-200闪电伤害\n(5~7)%击中时偷取法力\n闪电伤害吸收+25%\n+7照亮范围"
   },
   {
     "id": 51779,
@@ -13329,19 +13330,19 @@
   {
     "id": 51780,
     "Key": "dictUniqueItemInfo260",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "8% Chance to cast level 3 Weaken on striking\n+180-250% Enhanced Damage @dictVariable\n@dictBlue Adds 30-100 damage\n40% Bonus to Attack Rating\n5-7% Life stolen per hit @dictVariable\n@dictBlue Increase Maximum Life 20%",
+    "zhTW": "+180-250%傷害強化\n附加 30-100 傷害\n擊中時有8%機率施展等級3削弱\n40%準確率加成\n生命上限提高20%\n擊中竊取5-7%生命\n永不毀損",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 시 8% 확률로 3 레벨 약화 시전\n피해 +180~250% 증가 @dictVariable\n@dictBlue 피해 30 - 100 추가\n명중률 보너스 40%\n적중당 생명력 5~7% 훔침 @dictVariable\n@dictBlue 최대 생명력 20% 증가",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "8%几率在击中时施放3级削弱\n不可摧毀\n+(180~250)%强化伤害\n+ 30-100 伤害\n40%加成命中值\n(5~7)%击中时偷取生命\n+20%生命最大值"
   },
   {
     "id": 51781,
@@ -13363,19 +13364,19 @@
   {
     "id": 51782,
     "Key": "dictUniqueItemInfo261",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+150-250% Enhanced Damage @dictVariable\n@dictBlue +2-247 to Maximum Damage (Based on Character Level)\n50% Bonus to Attack Rating\n+20 to all Attributes\n+80 to Life",
+    "zhTW": "+150-250%傷害強化\n+(2-247)最大傷害(依角色等級而定)[2.5*clvl]\n50%準確率加成\n+(2-247）最大傷害\n+80生命\n+20所有屬性\n永不毀損",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +150~250% 증가 @dictVariable\n@dictBlue 최대 피해 +2~247 (캐릭터 레벨에 비례)\n명중률 보너스 50%\n모든 능력치 +20\n생명력 +80",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "不可摧毁\n+(150~250)%强化伤害\n+(2~247)最大伤害(基于角色等级)\n50% 加成命中值\n+20所有属性\n+80生命"
   },
   {
     "id": 51783,
@@ -14247,19 +14248,19 @@
   {
     "id": 51834,
     "Key": "dictUniqueItemInfo289",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+210-260% Enhanced Damage @dictVariable\n@dictBlue 10-15% Life stolen per hit @dictVariable\n@dictBlue +50% Chance of Open Wounds\n+7-13 Life after each Kill @dictVariable\n@dictBlue Level 15 Blood Golem (9 Charges)",
+    "zhTW": "+210-260%傷害強化\n擊中竊取10-15%生命\n+50%機率造成開放傷口\n+7-13擊殺生命恢復\n等級15鮮血魔像（9次）",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +210~260% 증가 @dictVariable\n@dictBlue 적중당 생명력 10~15% 훔침 @dictVariable\n@dictBlue 상처 악화 확률 +50%\n적 처치 시 생명력 +7~13 @dictVariable\n@dictBlue 15 레벨 피 골렘 (충전 9회)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+(210~260)%强化伤害\n(10~15)%击中时偷取生命\n+50%几率造成开创性伤口\n+(7~13)每次消灭恢复的生命\n15级黑暗傀儡(9/9次充能)"
   },
   {
     "id": 51835,
@@ -14281,19 +14282,19 @@
   {
     "id": 51836,
     "Key": "dictUniqueItemInfo290",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+190-240% Enhanced Damage @dictVariable\n@dictBlue +100-150% Damage to Demons @dictVariable\n@dictBlue +200-300 to Attack Rating against Demons @dictVariable\n@dictBlue Adds 250-500 fire damage\n3-6% Mana stolen per hit @dictVariable\n@dictBlue +3-7 Lightning Absorb @dictVariable\n@dictBlue Socketed (1-2) @dictVariable",
+    "zhTW": "+190-240%傷害強化\n+100-150%對惡魔的傷害\n附加250-500火焰傷害\n擊中竊取3-6%法力\n+3-7電擊吸收\n+200-300對惡魔的準確率\n鑲孔（1-2）",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +190~240% 증가 @dictVariable\n@dictBlue 악마에게 주는 피해 +100~150% @dictVariable\n@dictBlue 악마에 대한 명중률 +200~300 @dictVariable\n@dictBlue 화염 피해 250 - 500 추가\n적중당 마나 3~6% 훔침 @dictVariable\n@dictBlue 번개 흡수 +3~7 @dictVariable\n@dictBlue 홈 있음 (1~2) @dictVariable",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+(190~240)%强化伤害\n+(100~150)%对恶魔的伤害\n+(200~300)对恶魔的命中值\n+250-500火焰伤害\n(3~6)%击中时偷取法力\n+(3~7)闪电伤害吸收\n镶孔(1~2)"
   },
   {
     "id": 51837,
@@ -14655,19 +14656,19 @@
   {
     "id": 51858,
     "Key": "dictUniqueItemInfo301",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "Level 10-13 Sanctuary Aura When Equipped @dictVariable\n@dictBlue +1 to All Skills\n+30% Increased Attack Speed\n+230-270% Enhanced Damage @dictVariable\n@dictBlue Adds 250-500 magic damage\nAdds 250-500 cold damage\n+5-10 to all Attributes @dictVariable\n@dictBlue +3 to Light Radius",
+    "zhTW": "+230-270%傷害強化\n攻擊速度+30%\n附加 250-500魔法傷害\n附加 250-500冰寒傷害\n+1所有技能\n+5-10所有屬性\n裝備時賦予等級10-13庇護靈氣\n照亮範圍+3",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "장착 시 10~13 레벨 성역 오라 효과 적용 @dictVariable\n@dictBlue 모든 기술 +1\n공격 속도 +30%\n피해 +230~270% 증가 @dictVariable\n@dictBlue 마법 피해 250 - 500 추가\n냉기 피해 250 - 500 추가\n모든 능력치 +5~10 @dictVariable\n@dictBlue 시야 +3",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "装备时获得(10~13)级庇护之光光环\n+(1~1)所有技能等级\n+30%提高攻击速度\n+(230~270)%强化伤害\n+250-500魔法伤害\n+250-500 冰霜伤害\n+(5~10) 所有属性\n+3照亮范围"
   },
   {
     "id": 51859,
@@ -16423,19 +16424,19 @@
   {
     "id": 51962,
     "Key": "dictUniqueItemInfo353",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "12% Chance to cast level 16 Firestorm on striking\n+3 to Fire Skills\n+170-240% Enhanced Damage @dictVariable\n@dictBlue Adds 233-482 fire damage\n+12-18 Inferno @dictVariable\n@dictBlue +10-20 to Strength @dictVariable\n@dictBlue +5-10 to Vitality @dictVariable\n@dictBlue Fire Absorb +20-30% @dictVariable",
+    "zhTW": "+170-240%傷害強化\n附加 233-482火焰傷害\n+3火焰技能\n+12-18至煉獄之火\n+10-20力量\n+5-10體能\n擊中時有12%機率施展等級16火焰風暴\n火焰吸收+20-30%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 시 12% 확률로 16 레벨 화염폭풍 시전\n화염 기술 +3\n피해 +170~240% 증가 @dictVariable\n@dictBlue 화염 피해 233 - 482 추가\n+12~18 지옥불 @dictVariable\n@dictBlue 힘 +10~20 @dictVariable\n@dictBlue 활력 +5~10 @dictVariable\n@dictBlue 화염 흡수 +20~30% @dictVariable",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "12%几率在击中时施放16级火焰风暴\n+3火焰技能\n+(170~240)%强化伤害\n+233-482 火焰伤害\n+(12~18) 至地狱火\n+(10~20)力量\n+(5~10）活力\n火焰伤害吸收+(20~30)%"
   },
   {
     "id": 51963,
@@ -16831,19 +16832,19 @@
   {
     "id": 51986,
     "Key": "dictUniqueItemInfo365",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+25% Increased Attack Speed\n+180-230% Enhanced Damage @dictVariable\n@dictBlue Adds 237-486 cold damage\n+7-14 Arctic Blast @dictVariable\n@dictBlue Freezes Target +4\nCold Absorb +7-15% @dictVariable\n@dictBlue Half Freeze Duration",
+    "zhTW": "+180-230%傷害強化\n附加237-486冰寒傷害\n+7-14至極地寒風\n凍結目標+4\n冰寒吸收+7-15%\n被凍結的時效減半\n攻擊速度+25%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "공격 속도 +25%\n피해 +180~230% 증가 @dictVariable\n@dictBlue 냉기 피해 237 - 486 추가\n+7~14 극지 돌풍 @dictVariable\n@dictBlue 대상 빙결 +4\n냉기 흡수 +7~15% @dictVariable\n@dictBlue 빙결 지속시간 절반으로 감소",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+25%提高攻击速度\n+(180~230)%强化伤害\n+237-486 冰霜伤害\n+(7~14）至极地冰暴\n冻结目标\n冰霜伤害吸收+(7~15)%\n冻结时间减半"
   },
   {
     "id": 51987,
