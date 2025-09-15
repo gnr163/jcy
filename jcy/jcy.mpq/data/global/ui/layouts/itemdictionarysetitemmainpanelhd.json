@@ -69,7 +69,7 @@
             "fields": {
                 "rect": "$SettingsPanelTabsRect",
                 "anchor": { "x": 0.5 },
-                "tabCount": 2,
+                "tabCount": 6,
                 "tabSize": { "x": 266, "y": 121 },
                 "tabPadding": { "x": 2, "y": 0 },
                 "unavailableTabsLeaveGaps": false,
@@ -87,15 +87,19 @@
                     "fontColor": "$FontColorWhite",
                     "spacing": {"leading":0.9, "kerning":0.95}
                 },
-                "textStrings": [ "@dictClassOriginal", "@dictClassExpansion" ],
+                "textStrings": [ "@dictClassSpecific", "@dictClass2Item", "@dictClass3Item", "@dictClass4Item", "@dictClass5Item", "@dictClass6Item"],
                 "tabMessages": [
                     "SettingsPanelMessage:CheckChanges:ItemDictionarySetItemPanel1",
-                    "SettingsPanelMessage:CheckChanges:ItemDictionarySetItemPanel2"
+                    "SettingsPanelMessage:CheckChanges:ItemDictionarySetItemPanel2",
+                    "SettingsPanelMessage:CheckChanges:ItemDictionarySetItemPanel3",
+                    "SettingsPanelMessage:CheckChanges:ItemDictionarySetItemPanel4",
+                    "SettingsPanelMessage:CheckChanges:ItemDictionarySetItemPanel5",
+                    "SettingsPanelMessage:CheckChanges:ItemDictionarySetItemPanel6"
                 ]
             }
         },
         {
-            "type": "Widget", "name": "CenterSection", // Credit
+            "type": "Widget", "name": "CenterSection", 
             "fields": {
                 "anchor": { "x": 0.5, "y": 0.0 },
                 "rect": { "x": -1920, "y": 0 }
