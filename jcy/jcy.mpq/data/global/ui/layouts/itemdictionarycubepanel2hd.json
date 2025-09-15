@@ -361,7 +361,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Add 1 Socket",
+                                                "text": "->  Add 1 @dictClassSocket",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }

@@ -133,7 +133,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword151",
+                                                "text": "@dictRunewordName151",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -151,7 +151,7 @@
                                             "name": "ItemType",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@r19L + @r16L + @r06L + @r02L + @r01L + @r15L",
+                                                "text": "@r19L + @r16L + @r06L\n + @r02L + @r01L + @r15L",
                                                 "style": "$StyleDictionaryRunewordRune"
                                             }
                                         }
@@ -173,7 +173,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword151\n\n@dictBlue 18% Chance to cast level 18 Taunt on striking\n+3 to Combat Skills (Barbarian Only)\n+20-30% Increased Attack Speed @dictVariable\n@dictBlue +300-350% Enhanced Damage @dictVariable\n@dictBlue +9 to Maximum Damage\n+50 to Attack Rating\n+75% Damage to Undead\n+50 to Attack Rating against Undead\n8-10% Life stolen per hit @dictVariable\n@dictBlue Prevent Monster Heal\n+10 to Strength\n+10 to Vitality\nDamage Reduced by 8\n+1 to Light Radius\nRequirements -20%",
+                                                "tooltipString": "@dictGold@dictRunewordName151\n\n@dictBlue 18% Chance to cast level 18 Taunt on striking\n+3 to Combat Skills (Barbarian Only)\n+20-30% Increased Attack Speed @dictVariable\n@dictBlue +300-350% Enhanced Damage @dictVariable\n@dictBlue +9 to Maximum Damage\n+50 to Attack Rating\n+75% Damage to Undead\n+50 to Attack Rating against Undead\n8-10% Life stolen per hit @dictVariable\n@dictBlue Prevent Monster Heal\n+10 to Strength\n+10 to Vitality\nDamage Reduced by 8\n+1 to Light Radius\nRequirements -20%",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -198,7 +198,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "6 Socket Swords\n@dictRequiredLevel: 41",
+                                                "text": "6 @dictClassSocket @dictClassSword\n@dictRequiredLevel: 41",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -237,7 +237,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword126",
+                                                "text": "@dictRunewordName126",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -255,7 +255,7 @@
                                             "name": "ItemType",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@r14L + @r02L + @r15L + @r24L + @r03L + @r26L",
+                                                "text": "@r14L + @r02L + @r15L\n + @r24L + @r03L + @r26L",
                                                 "style": "$StyleDictionaryRunewordRune"
                                             }
                                         }
@@ -277,7 +277,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword126\n\n@dictBlue +2 to All Skills\n+20% Increased Attack Speed\n+20% Faster Hit Recovery\n+200% Enhanced Damage\n+75% Damage to Undead\n+50 to Attack Rating against Undead\n11% Mana stolen per hit\nHit Blinds Target +33\nHit Causes Monster to Flee +25%\nAll Resistances +75\n+2 Mana after each Kill\n30% Better Chance of Getting Magic Items\nRequirements -20%",
+                                                "tooltipString": "@dictGold@dictRunewordName126\n\n@dictBlue +2 to All Skills\n+20% Increased Attack Speed\n+20% Faster Hit Recovery\n+200% Enhanced Damage\n+75% Damage to Undead\n+50 to Attack Rating against Undead\n11% Mana stolen per hit\nHit Blinds Target +33\nHit Causes Monster to Flee +25%\nAll Resistances +75\n+2 Mana after each Kill\n30% Better Chance of Getting Magic Items\nRequirements -20%",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -302,7 +302,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "6 Socket Weapons\n@dictRequiredLevel: 55",
+                                                "text": "6 @dictClassSocket @dictClassWeapons\n@dictRequiredLevel: 55",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -341,7 +341,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword69",
+                                                "text": "@dictRunewordName69",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -359,7 +359,7 @@
                                             "name": "ItemType",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@r31L + @r23L + @r31L + @r29L + @r31L + @r30L",
+                                                "text": "@r31L + @r23L + @r31L\n + @r29L + @r31L + @r30L",
                                                 "style": "$StyleDictionaryRunewordRune"
                                             }
                                         }
@@ -381,7 +381,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword69\n\n@dictBlue 6% Chance to cast level 11 Fade when struck\n10% Chance to cast level 18 Life Tap on striking\n20% Chance to cast level 20 Charged Bolt on striking\nLevel 17 Might Aura When Equipped\n+330-375% Enhanced Damage @dictVariable\n@dictBlue Ignore Target's Defense\n+60-70% Chance of Crushing Blow @dictVariable\n@dictBlue Prevent Monster Heal\nHit Blinds Target\n0-49% Better Chance of Getting Magic Items (Based on Character Level)",
+                                                "tooltipString": "@dictGold@dictRunewordName69\n\n@dictBlue 6% Chance to cast level 11 Fade when struck\n10% Chance to cast level 18 Life Tap on striking\n20% Chance to cast level 20 Charged Bolt on striking\nLevel 17 Might Aura When Equipped\n+330-375% Enhanced Damage @dictVariable\n@dictBlue Ignore Target's Defense\n+60-70% Chance of Crushing Blow @dictVariable\n@dictBlue Prevent Monster Heal\nHit Blinds Target\n0-49% Better Chance of Getting Magic Items (Based on Character Level)",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -406,7 +406,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "6 Socket Swords/Axes/Hammers\n@dictRequiredLevel: 65",
+                                                "text": "6 @dictClassSocket @dictClassSword/@dictClassAxe/@dictClassHammer\n@dictRequiredLevel: 65",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -445,7 +445,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword94",
+                                                "text": "@dictRunewordName94",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -463,7 +463,7 @@
                                             "name": "ItemType",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@r33L + @r24L + @r20L + @r17L + @r16L + @r04L",
+                                                "text": "@r33L + @r24L + @r20L\n + @r17L + @r16L + @r04L",
                                                 "style": "$StyleDictionaryRunewordRune"
                                             }
                                         }
@@ -485,7 +485,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword94\n\n@dictBlue Indestructible\n24% Chance to cast level 10 Weaken when struck\n+4 to All Skills\n+65% Faster Cast Rate\n+60% Faster Hit Recovery\nKnockback\n+10 to Vitality\n+10 to Energy\nIncrease Maximum Life 15-25% @dictVariable\n@dictBlue Regenerate Mana 15-30% @dictVariable\n@dictBlue All Resistances +60-70 @dictVariable\n@dictBlue 75% Extra Gold from Monsters\n30% Better Chance of Getting Magic Items",
+                                                "tooltipString": "@dictGold@dictRunewordName94\n\n@dictBlue Indestructible\n24% Chance to cast level 10 Weaken when struck\n+4 to All Skills\n+65% Faster Cast Rate\n+60% Faster Hit Recovery\nKnockback\n+10 to Vitality\n+10 to Energy\nIncrease Maximum Life 15-25% @dictVariable\n@dictBlue Regenerate Mana 15-30% @dictVariable\n@dictBlue All Resistances +60-70 @dictVariable\n@dictBlue 75% Extra Gold from Monsters\n30% Better Chance of Getting Magic Items",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -510,7 +510,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "6 Socket Staffs\n@dictRequiredLevel: 69",
+                                                "text": "6 @dictClassSocket @dictClassStaff\n@dictRequiredLevel: 69",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -549,7 +549,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword11",
+                                                "text": "@dictRunewordName11",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -567,7 +567,7 @@
                                             "name": "ItemType",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@r26L + @r15L + @r01L + @r02L + @r33L + @r05L",
+                                                "text": "@r26L + @r15L + @r01L\n + @r02L + @r33L + @r05L",
                                                 "style": "$StyleDictionaryRunewordRune"
                                             }
                                         }
@@ -589,7 +589,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword11\n\n@dictBlue 50% Chance to cast level 20 Poison Nova when you Kill an Enemy\nIndestructible\n+60% Increased Attack Speed\n+350-400% Enhanced Damage @dictVariable\n@dictBlue -25% Target Defense\n+50 to Attack Rating\n+200% Damage to Undead\n+50 to Attack Rating against Undead\n7% Mana stolen per hit\n12-15% Life stolen per hit @dictVariable\n@dictBlue Prevent Monster Heal\n+30 to all Attributes\n+1 to Light Radius\nRequirements -20%",
+                                                "tooltipString": "@dictGold@dictRunewordName11\n\n@dictBlue 50% Chance to cast level 20 Poison Nova when you Kill an Enemy\nIndestructible\n+60% Increased Attack Speed\n+350-400% Enhanced Damage @dictVariable\n@dictBlue -25% Target Defense\n+50 to Attack Rating\n+200% Damage to Undead\n+50 to Attack Rating against Undead\n7% Mana stolen per hit\n12-15% Life stolen per hit @dictVariable\n@dictBlue Prevent Monster Heal\n+30 to all Attributes\n+1 to Light Radius\nRequirements -20%",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -614,7 +614,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "6 Socket Weapons\n@dictRequiredLevel: 69",
+                                                "text": "6 @dictClassSocket @dictClassWeapons\n@dictRequiredLevel: 69",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }

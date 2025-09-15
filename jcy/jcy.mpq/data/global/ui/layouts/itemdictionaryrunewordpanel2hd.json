@@ -133,7 +133,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword81",
+                                                "text": "@dictRunewordName81",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -173,7 +173,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword81\n\n@dictBlue +33% Enhanced Damage\n+9 to Maximum Damage\n-25% Target Defense\n+50 to Attack Rating\n+100% Chance of Open Wounds\nPrevent Monster Heal\n-100 to Monster Defense Per Hit\nDrain Life -5",
+                                                "tooltipString": "@dictGold@dictRunewordName81\n\n@dictBlue +33% Enhanced Damage\n+9 to Maximum Damage\n-25% Target Defense\n+50 to Attack Rating\n+100% Chance of Open Wounds\nPrevent Monster Heal\n-100 to Monster Defense Per Hit\nDrain Life -5",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -198,7 +198,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Melee Weapons\n@dictRequiredLevel: 15",
+                                                "text": "3 @dictClassSocket @dictClassMeleeWeapons\n@dictRequiredLevel: 15",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -237,7 +237,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword97",
+                                                "text": "@dictRunewordName97",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -277,7 +277,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword97\n\n@dictBlue +30% Faster Block Rate\n+40-80% Enhanced Damage @dictVariable\n@dictBlue 10% Bonus to Attack Rating\nAdds 17-62 fire damage\nAdds 1-50 lightning damage\nAdds 3-14 cold damage\n+75 poison damage over 5 seconds\n+6 to Strength\n+6 to Dexterity\nAll Resistances +15",
+                                                "tooltipString": "@dictGold@dictRunewordName97\n\n@dictBlue +30% Faster Block Rate\n+40-80% Enhanced Damage @dictVariable\n@dictBlue 10% Bonus to Attack Rating\nAdds 17-62 fire damage\nAdds 1-50 lightning damage\nAdds 3-14 cold damage\n+75 poison damage over 5 seconds\n+6 to Strength\n+6 to Dexterity\nAll Resistances +15",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -302,7 +302,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Claws\n@dictRequiredLevel: 23",
+                                                "text": "3 @dictClassSocket @dictClassClaw\n@dictRequiredLevel: 23",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -341,7 +341,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword31",
+                                                "text": "@dictRunewordName31",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -381,7 +381,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword31\n\n@dictBlue Level 15 Thorns Aura When Equipped\n+35% Increased Attack Speed\n+320-380% Damage to Demons @dictVariable\n@dictBlue +280% Damage to Undead\n+75 poison damage over 5 seconds\n7% Life stolen per hit\nPrevent Monster Heal\n+5-10 to all Attributes @dictVariable\n@dictBlue +2 Mana after each Kill\nReduces all Vendor Prices 15%",
+                                                "tooltipString": "@dictGold@dictRunewordName31\n\n@dictBlue Level 15 Thorns Aura When Equipped\n+35% Increased Attack Speed\n+320-380% Damage to Demons @dictVariable\n@dictBlue +280% Damage to Undead\n+75 poison damage over 5 seconds\n7% Life stolen per hit\nPrevent Monster Heal\n+5-10 to all Attributes @dictVariable\n@dictBlue +2 Mana after each Kill\nReduces all Vendor Prices 15%",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -406,7 +406,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Bows/Crossbows\n@dictRequiredLevel: 25",
+                                                "text": "3 @dictClassSocket @dictClassBow/@dictClassCrossbow\n@dictRequiredLevel: 25",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -445,7 +445,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword65",
+                                                "text": "@dictRunewordName65",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -485,7 +485,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword65\n\n@dictBlue +100% Enhanced Damage\n+150 to Attack Rating\n+100% Damage to Demons\n+100 to Attack Rating against Demons\n+50% Damage to Undead\n+100 to Attack Rating against Undead\nAdds 5-30 fire damage\nAdds 3-14 cold damage\n7% Life stolen per hit",
+                                                "tooltipString": "@dictGold@dictRunewordName65\n\n@dictBlue +100% Enhanced Damage\n+150 to Attack Rating\n+100% Damage to Demons\n+100 to Attack Rating against Demons\n+50% Damage to Undead\n+100 to Attack Rating against Undead\nAdds 5-30 fire damage\nAdds 3-14 cold damage\n7% Life stolen per hit",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -510,7 +510,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Swords/Scepters\n@dictRequiredLevel: 25",
+                                                "text": "3 @dictClassSocket @dictClassSword/@dictClassScepter\n@dictRequiredLevel: 25",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -549,7 +549,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword6",
+                                                "text": "@dictRunewordName6",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -589,7 +589,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword6\n\n@dictBlue +15% Increased Attack Speed\n+120% Enhanced Damage\n+200 to Attack Rating\nAdds 3-14 cold damage\n+40% Chance of Crushing Blow\nKnockback\n+10 to Vitality\nMagic Damage Reduced by 2\nLevel 4 Corpse Explosion (12 Charges)",
+                                                "tooltipString": "@dictGold@dictRunewordName6\n\n@dictBlue +15% Increased Attack Speed\n+120% Enhanced Damage\n+200 to Attack Rating\nAdds 3-14 cold damage\n+40% Chance of Crushing Blow\nKnockback\n+10 to Vitality\nMagic Damage Reduced by 2\nLevel 4 Corpse Explosion (12 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -614,7 +614,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Clubs/Maces*/Hammers\n@dictRequiredLevel: 35",
+                                                "text": "3 @dictClassSocket @dictClassClub/@dictClassMace*/@dictClassHammer\n@dictRequiredLevel: 35",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -653,7 +653,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword82",
+                                                "text": "@dictRunewordName82",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -693,7 +693,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword82\n\n@dictBlue +3 to Bow and Crossbow Skills (Amazon Only)\n+20% Increased Attack Speed\n+50% Enhanced Damage\n+300% Damage to Undead\n+3 to Slow Missiles (Amazon Only)\n+3 to Dodge (Amazon Only)\n+3 to Critical Strike (Amazon Only)\nKnockback\n+10 to Dexterity",
+                                                "tooltipString": "@dictGold@dictRunewordName82\n\n@dictBlue +3 to Bow and Crossbow Skills (Amazon Only)\n+20% Increased Attack Speed\n+50% Enhanced Damage\n+300% Damage to Undead\n+3 to Slow Missiles (Amazon Only)\n+3 to Dodge (Amazon Only)\n+3 to Critical Strike (Amazon Only)\nKnockback\n+10 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -718,7 +718,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Bows/Crossbows\n@dictRequiredLevel: 39",
+                                                "text": "3 @dictClassSocket @dictClassBow/@dictClassCrossbow\n@dictRequiredLevel: 39",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -757,7 +757,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword172",
+                                                "text": "@dictRunewordName172",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -797,7 +797,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword172\n\n@dictBlue 5% Chance to cast level 1 Burst of Speed on striking\nLevel 1 Fanaticism Aura When Equipped\n+30% Increased Attack Speed\n+180-200% Enhanced Damage @dictVariable\n@dictBlue +75% Damage to Undead\n+50 to Attack Rating against Undead\n+10 to Dexterity",
+                                                "tooltipString": "@dictGold@dictRunewordName172\n\n@dictBlue 5% Chance to cast level 1 Burst of Speed on striking\nLevel 1 Fanaticism Aura When Equipped\n+30% Increased Attack Speed\n+180-200% Enhanced Damage @dictVariable\n@dictBlue +75% Damage to Undead\n+50 to Attack Rating against Undead\n+10 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -822,7 +822,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Weapons\n@dictRequiredLevel: 39 @dictLadderOnly",
+                                                "text": "3 @dictClassSocket @dictClassWeapons\n@dictRequiredLevel: 39 @dictLadderOnly",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -861,7 +861,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword71",
+                                                "text": "@dictRunewordName71",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -901,7 +901,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword71\n\n@dictBlue 20% Chance to cast level 15 Decrepify on striking\nLevel 16-18 Sanctuary Aura When Equipped @dictVariable\n@dictBlue -50% Target Defense\nAdds 150-210 fire damage\nAdds 130-180 cold damage\n7% Life stolen per hit\nSlain Monsters Rest in Peace\n+200-250 Defense vs. Missile @dictVariable\n@dictBlue +10 to Dexterity\n75% Extra Gold from Monsters",
+                                                "tooltipString": "@dictGold@dictRunewordName71\n\n@dictBlue 20% Chance to cast level 15 Decrepify on striking\nLevel 16-18 Sanctuary Aura When Equipped @dictVariable\n@dictBlue -50% Target Defense\nAdds 150-210 fire damage\nAdds 130-180 cold damage\n7% Life stolen per hit\nSlain Monsters Rest in Peace\n+200-250 Defense vs. Missile @dictVariable\n@dictBlue +10 to Dexterity\n75% Extra Gold from Monsters",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -926,7 +926,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Swords\n/Hammers/Scepters\n@dictRequiredLevel: 43",
+                                                "text": "3 @dictClassSocket @dictClassSword\n/@dictClassHammer/@dictClassScepter\n@dictRequiredLevel: 43",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -965,7 +965,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword17",
+                                                "text": "@dictRunewordName17",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1005,7 +1005,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword17\n\n@dictBlue 10% Chance to cast level 17 Chain Lightning on striking\n7% Chance to cast level 13 Static Field on striking\n+20% Increased Attack Speed\n+180-220% Enhanced Damage @dictVariable\n@dictBlue Ignore Target's Defense\n-35% to Enemy Lightning Resistance\n+25% Chance of Open Wounds\n+9-11 Magic Absorb @dictVariable\n@dictBlue +2 Mana after each Kill\nLevel 18 Summon Spirit Wolf (30 Charges)",
+                                                "tooltipString": "@dictGold@dictRunewordName17\n\n@dictBlue 10% Chance to cast level 17 Chain Lightning on striking\n7% Chance to cast level 13 Static Field on striking\n+20% Increased Attack Speed\n+180-220% Enhanced Damage @dictVariable\n@dictBlue Ignore Target's Defense\n-35% to Enemy Lightning Resistance\n+25% Chance of Open Wounds\n+9-11 Magic Absorb @dictVariable\n@dictBlue +2 Mana after each Kill\nLevel 18 Summon Spirit Wolf (30 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1030,7 +1030,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Swords/Axes/Polearms\n@dictRequiredLevel: 47",
+                                                "text": "3 @dictClassSocket @dictClassSword/@dictClassAxe/@dictClassPolearm\n@dictRequiredLevel: 47",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1069,7 +1069,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword154",
+                                                "text": "@dictRunewordName154",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1109,7 +1109,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword154\n\n@dictBlue Ignore Target's Defense\n+273 poison damage over 6 seconds\n7% Mana stolen per hit\nPrevent Monster Heal\nHit Causes Monster to Flee +25%\nLevel 13 Poison Nova (11 Charges)\nLevel 15 Poison Explosion (27 Charges)",
+                                                "tooltipString": "@dictGold@dictRunewordName154\n\n@dictBlue Ignore Target's Defense\n+273 poison damage over 6 seconds\n7% Mana stolen per hit\nPrevent Monster Heal\nHit Causes Monster to Flee +25%\nLevel 13 Poison Nova (11 Charges)\nLevel 15 Poison Explosion (27 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1134,7 +1134,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Weapons\n@dictRequiredLevel: 49",
+                                                "text": "3 @dictClassSocket @dictClassWeapons\n@dictRequiredLevel: 49",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1173,7 +1173,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword173",
+                                                "text": "@dictRunewordName173",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1213,7 +1213,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword173\n\n@dictBlue +50% chance for finishing moves to not consume charges\n+2 to Martial Arts (Assassin Only)\n+20% Increased Attack Speed\n+200-250% Enhanced Damage @dictVariable\n@dictBlue 20% Bonus to Attack Rating\n7% Life stolen per hit\n+8-15% to Cold Skill Damage @dictVariable\n@dictBlue +8-15% to Lightning Skill Damage @dictVariable\n@dictBlue +8-15% to Fire Skill Damage @dictVariable\n@dictBlue Prevent Monster Heal",
+                                                "tooltipString": "@dictGold@dictRunewordName173\n\n@dictBlue +50% chance for finishing moves to not consume charges\n+2 to Martial Arts (Assassin Only)\n+20% Increased Attack Speed\n+200-250% Enhanced Damage @dictVariable\n@dictBlue 20% Bonus to Attack Rating\n7% Life stolen per hit\n+8-15% to Cold Skill Damage @dictVariable\n@dictBlue +8-15% to Lightning Skill Damage @dictVariable\n@dictBlue +8-15% to Fire Skill Damage @dictVariable\n@dictBlue Prevent Monster Heal",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1238,7 +1238,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Claws\n@dictRequiredLevel: 53 @dictLadderOnly",
+                                                "text": "3 @dictClassSocket @dictClassClaw\n@dictRequiredLevel: 53 @dictLadderOnly",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1277,7 +1277,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword27",
+                                                "text": "@dictRunewordName27",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1317,7 +1317,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword27\n\n@dictBlue 20% Chance to cast level 18 Venom when struck\n12% Chance to cast level 15 Hydra on striking\nLevel 14 Holy Fire Aura When Equipped\n+360 Defense\n+230 Defense vs. Missile\n+3-5 to all Attributes @dictVariable\n@dictBlue +0-37 to Strength (Based on Character Level)\n+50 to Mana\n+5% to Maximum Lightning Resist\nDamage Reduced by 7",
+                                                "tooltipString": "@dictGold@dictRunewordName27\n\n@dictBlue 20% Chance to cast level 18 Venom when struck\n12% Chance to cast level 15 Hydra on striking\nLevel 14 Holy Fire Aura When Equipped\n+360 Defense\n+230 Defense vs. Missile\n+3-5 to all Attributes @dictVariable\n@dictBlue +0-37 to Strength (Based on Character Level)\n+50 to Mana\n+5% to Maximum Lightning Resist\nDamage Reduced by 7",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1342,7 +1342,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Armors/Shields\n@dictRequiredLevel: 61",
+                                                "text": "3 @dictClassSocket @dictClassArmor/@dictClassShield\n@dictRequiredLevel: 61",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1381,7 +1381,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword44",
+                                                "text": "@dictRunewordName44",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1421,7 +1421,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword44\n\n@dictBlue +40% Increased Attack Speed\n+209% Enhanced Damage\nIgnore Target's Defense\n-25% Target Defense\n20% Bonus to Attack Rating\n6% Life stolen per hit\n+33% Deadly Strike\n+66% Chance of Open Wounds\n+5 to Frenzy (Barbarian Only)\nPrevent Monster Heal",
+                                                "tooltipString": "@dictGold@dictRunewordName44\n\n@dictBlue +40% Increased Attack Speed\n+209% Enhanced Damage\nIgnore Target's Defense\n-25% Target Defense\n20% Bonus to Attack Rating\n6% Life stolen per hit\n+33% Deadly Strike\n+66% Chance of Open Wounds\n+5 to Frenzy (Barbarian Only)\nPrevent Monster Heal",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1446,7 +1446,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Melee Weapons\n@dictRequiredLevel: 65",
+                                                "text": "3 @dictClassSocket @dictClassMeleeWeapons\n@dictRequiredLevel: 65",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1485,7 +1485,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword16",
+                                                "text": "@dictRunewordName16",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1525,7 +1525,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword16\n\n@dictBlue 9% Chance to cast level 11 Frozen Orb on striking\n11% Chance to cast level 9 Charged Bolt on striking\n+35% Increased Attack Speed\n+290-340% Enhanced Damage @dictVariable\n@dictBlue Adds 216-471 magic damage\n+25% Chance of Open Wounds\n+1 Whirlwind\n+10 to Strength\n+15 Life after each Demon Kill",
+                                                "tooltipString": "@dictGold@dictRunewordName16\n\n@dictBlue 9% Chance to cast level 11 Frozen Orb on striking\n11% Chance to cast level 9 Charged Bolt on striking\n+35% Increased Attack Speed\n+290-340% Enhanced Damage @dictVariable\n@dictBlue Adds 216-471 magic damage\n+25% Chance of Open Wounds\n+1 Whirlwind\n+10 to Strength\n+15 Life after each Demon Kill",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1550,7 +1550,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Claws\n@dictRequiredLevel: 57",
+                                                "text": "3 @dictClassSocket @dictClassClaw\n@dictRequiredLevel: 57",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
@@ -1589,7 +1589,7 @@
                                             "name": "Runewordname",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@Runeword106",
+                                                "text": "@dictRunewordName106",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -1629,7 +1629,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@Runeword106\n\n@dictBlue 25% Chance to cast level 15 Poison Nova on striking\n20% Chance to cast level 12 Lower Resist when struck\nLevel 13-17 Cleansing Aura When Equipped @dictVariable\n@dictBlue +1 to All Skills-2 @dictVariable\n@dictBlue +20% Increased Attack Speed\n+220-320% Enhanced Damage @dictVariable\n@dictBlue -23% to Enemy Poison Resistance\n+0-29% Deadly Strike (Based on Character Level)\n+25% Chance of Open Wounds\nFreezes Target +3",
+                                                "tooltipString": "@dictGold@dictRunewordName106\n\n@dictBlue 25% Chance to cast level 15 Poison Nova on striking\n20% Chance to cast level 12 Lower Resist when struck\nLevel 13-17 Cleansing Aura When Equipped @dictVariable\n@dictBlue +1 to All Skills-2 @dictVariable\n@dictBlue +20% Increased Attack Speed\n+220-320% Enhanced Damage @dictVariable\n@dictBlue -23% to Enemy Poison Resistance\n+0-29% Deadly Strike (Based on Character Level)\n+25% Chance of Open Wounds\nFreezes Target +3",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1654,7 +1654,7 @@
                                             "name": "RunewordReq",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "3 Socket Swords/Claws/Daggers\n@dictRequiredLevel: 67",
+                                                "text": "3 @dictClassSocket @dictClassSword/@dictClassClaw/@dictClassDagger\n@dictRequiredLevel: 67",
                                                 "style": "$StyleDictionaryRunewordDescription"
                                             }
                                         }
