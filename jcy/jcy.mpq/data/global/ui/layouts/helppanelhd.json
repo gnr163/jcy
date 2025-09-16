@@ -357,6 +357,25 @@
                                     },
                                     "type": "ButtonWidget",
                                     "name": "CubeRecipeDictionary"
+                                },
+                                {
+                                    "fields": {
+                                        "filename": "PauseMenu\\PauseButton",
+                                        "hoveredFrame": 3,
+                                        "textString": "@dictTextBreakPoints",
+                                        "pressLabelOffset": [
+                                            0,
+                                            0
+                                        ],
+                                        "onClickMessage": "PanelManager:OpenPanel:ItemDictionaryBreakPointMainPanel",
+                                        "textColor": "$FontColorLightTeal",
+                                        "text/style": "$StyleFEButtonText",
+                                        "acceptsReturnKey": true,
+                                        "focusOnMouseOver": true,
+                                        "sound": "select"
+                                    },
+                                    "type": "ButtonWidget",
+                                    "name": "BreakPointDictionary"
                                 }
                             ]
                         }
