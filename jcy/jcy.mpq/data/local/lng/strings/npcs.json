@@ -20725,19 +20725,19 @@
   {
     "id": 52215,
     "Key": "dictRunewordInfo72",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+3 to Fire Skills\nAdds 5-30 fire damage\n+3 to Inferno (Sorceress Only)\n+3 to Warmth (Sorceress Only)\n+3 to Fire Bolt (Sorceress Only)\n+2-198 Defense (Based on Character Level)\nCold Resist +33%\n+2 Mana after each Kill",
+    "zhTW": "附加5-30火焰傷害\n+3火焰技能\n+3至火焰彈（只限魔法使）\n+3至煉獄之火（只限魔法使）\n+3至暖流（只限魔法使）\n+2 擊殺法力恢復\n+(2-198)防禦(依角色等級而定）[2* clvl]\n冰寒抗性+33%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "화염 기술 +3\n화염 피해 5 - 30 추가\n+3 지옥불 (원소술사 전용)\n+3 온기 (원소술사 전용)\n+3 화염탄 (원소술사 전용)\n방어력 +2~198 (캐릭터 레벨에 비례)\n냉기 저항 +33%\n적 처치 시 마나 +2",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+3火焰技能\n+5-30火焰伤害\n+3至地狱火（仅限法师）\n+3至火焰弹（仅限法师）\n+3至暖身术（仅限法师）\n+(2~198)防御(基于角色等级）\n冰霜抗性+33%\n+2每次消灭恢复的法力"
   },
   {
     "id": 52216,
@@ -20827,19 +20827,19 @@
   {
     "id": 52221,
     "Key": "dictRunewordInfo75",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+1 to All Skills\n+10 to Energy\nLightning Resist +30%\nDamage Reduced by 7\n+2 Mana after each Kill\n+2 to Light Radius",
+    "zhTW": "+1所有技能等級\n+10能量\n+2擊殺法力恢復\n電擊抗性+30%\n傷害降低7\n照亮範圍+2",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "모든 기술 +1\n마력 +10\n번개 저항 +30%\n피해 7 감소\n적 처치 시 마나 +2\n시야 +2",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+(1~1) 所有技能等级\n+10 能量\n闪电抗性 +30%\n伤害降低 7\n+2 每次消灭恢复的法力"
   },
   {
     "id": 52222,
@@ -21235,19 +21235,19 @@
   {
     "id": 52245,
     "Key": "dictRunewordInfo88",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+50% Enhanced Defense\n+10 Defense\n+30 Defense vs. Missile\n+5 to Strength\n+2 Mana after each Kill\n-33% Extra Gold from Monsters\n-3 to Light Radius\nLevel 13 Cloak of Shadows (9 Charges)",
+    "zhTW": "+50%防禦強化\n+10防禦\n+30對遠程防禦\n等級13魔影斗蓬(9 次）\n+2擊殺法力恢復\n+5力量\n怪物金幣掉落量提高-33%\n照亮範圍-3",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "방어력 +50% 증가\n방어력 +10\n원거리 공격 방어력 +30\n힘 +5\n적 처치 시 마나 +2\n괴물에게서 얻는 금화 -33% 증가\n시야 -3\n13 레벨 그림자 망토 (충전 9회)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+50%强化防御\n+10防御\n+30远程防御\n+5力量\n+2每次消灭恢复的法力\n-33%怪物额外掉落金币\n-3照亮范围\n13级暗影斗篷(9/9次充能）"
   },
   {
     "id": 52246,
@@ -22051,19 +22051,19 @@
   {
     "id": 52293,
     "Key": "dictRunewordInfo112",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+25% Faster Hit Recovery\n+140-170% Enhanced Defense @dictVariable\n@dictBlue All Resistances +25-35 @dictVariable\n@dictBlue Damage Reduced by 3\nMagic Damage Reduced by 17\n+2 Mana after each Kill\n+1 to Light Radius\nRepairs 1 durability in 4 seconds",
+    "zhTW": "+25%打擊恢復\n+140-170%防禦強化\n所有抗性+25-35\n傷害降低3\n魔法傷害降低17\n+2擊殺法力恢復\n照亮範圍+1\n每4秒修復1點耐久度",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 회복 속도 +25%\n방어력 +140~170% 증가 @dictVariable\n@dictBlue 모든 저항 +25~35 @dictVariable\n@dictBlue 피해 3 감소\n마법 피해 17 감소\n적 처치 시 마나 +2\n시야 +1\n내구도 1 회복 (4초마다)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+25% 更快速打击回复\n+(140~170)% 强化防御\n伤害降低 3\n魔法伤害降低 17\n+2 每次消灭恢复的法力\n+1 照亮范围\n每 4 秒修复 1 点耐久度\n+(25~35) 所有抗性"
   },
   {
     "id": 52294,
@@ -22323,19 +22323,19 @@
   {
     "id": 52309,
     "Key": "dictRunewordInfo120",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+40% Faster Block Rate\n20% Increased Chance of Blocking\nRegenerate Mana 15%\nAll Resistances +25\nCannot Be Frozen\n50% Extra Gold from Monsters\n25% Better Chance of Getting Magic Items",
+    "zhTW": "格擋機率提高20%\n+40%格擋速度\n所有抗性+25\n法力恢復15%\n無法凍結\n怪物金幣掉落量提高50%\n尋獲魔法物品機率提高25%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "막기 속도 +40%\n막기 확률 20% 증가\n마나 재생 15%\n모든 저항 +25\n빙결되지 않음\n괴물에게서 얻는 금화 50% 증가\n마법 아이템 발견 확률 25% 증가",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+40% 更快速格挡\n20% 格挡几率提高\n15% 法力回复\n无法被冻结\n50% 怪物额外掉落金币\n25% 额外几率获得魔法物品\n+25 所有抗性"
   },
   {
     "id": 52310,
@@ -22595,19 +22595,19 @@
   {
     "id": 52325,
     "Key": "dictRunewordInfo128",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+20% Faster Hit Recovery\n+75% Enhanced Defense\n+280 Defense vs. Missile\n+10 to Energy\nAll Resistances +50\n-1 to Light Radius\nLevel 6 Weaken (18 Charges)",
+    "zhTW": "+75%防禦強化\n+280對遠程防禦\n所有抗性+50\n+20%打擊恢復\n等級б削弱（(18 次）\n+10能量\n照亮範圍-1",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 회복 속도 +20%\n방어력 +75% 증가\n원거리 공격 방어력 +280\n마력 +10\n모든 저항 +50\n시야 -1\n6 레벨 약화 (충전 18회)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+20% 更快速打击回复\n+75% 强化防御\n+280 远程防御\n+10 能量\n-1 照亮范围\n6级削弱 (18/18 次充能)\n+50 所有抗性"
   },
   {
     "id": 52326,
@@ -22697,19 +22697,19 @@
   {
     "id": 52331,
     "Key": "dictRunewordInfo131",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+1 to All Skills\n+10% Faster Cast Rate\n+20% Faster Block Rate\n+60-100% Enhanced Defense @dictVariable\n@dictBlue +10 to Energy\nRegenerate Mana 15%\n50% Extra Gold from Monsters\n20% Better Chance of Getting Magic Items\n+3 to Light Radius",
+    "zhTW": "+1所有技能\n+10%施法速度\n+20%格擋速度\n+60-100%防禦強化\n+10能量\n法力恢復15%\n怪物金幣掉落量提高50%\n尋獲魔法物品機率提高20%\n照亮範圍+3",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "모든 기술 +1\n시전 속도 +10%\n막기 속도 +20%\n방어력 +60~100% 증가 @dictVariable\n@dictBlue 마력 +10\n마나 재생 15%\n괴물에게서 얻는 금화 50% 증가\n마법 아이템 발견 확률 20% 증가\n시야 +3",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+(1~1) 所有技能等级\n+10% 更快速施法\n+20% 更快速格挡\n+(60~100)% 强化防御\n+10 能量\n15% 法力回复\n50% 怪物额外掉落金币\n20% 额外几率获得魔法物品\n+3 照亮范围"
   },
   {
     "id": 52332,
@@ -22765,19 +22765,19 @@
   {
     "id": 52335,
     "Key": "dictRunewordInfo133",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+25% Faster Run/Walk\n+25% Faster Cast Rate\n+25% Faster Hit Recovery\n+6 to Dexterity\nRegenerate Mana 15%\n+15 Maximum Stamina\nPoison Resist +30%\nMagic Damage Reduced by 3",
+    "zhTW": "魔法傷害降低3\n+6 敏捷\n+15精力上限\n毒素抗性+30%\n法力恢復15%\n+25%跑步/行走速度\n+25%施法速度\n+25%打擊恢復",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "달리기/걷기 속도 +25%\n시전 속도 +25%\n타격 회복 속도 +25%\n민첩 +6\n마나 재생 15%\n최대 지구력 +15\n독 저항 +30%\n마법 피해 3 감소",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+25%更快速跑步/步行\n+25%更快速施法\n+25% 更快速打击回复\n+6敏捷\n15% 法力回复\n+15 最大耐力\n毒素抗性+30%\n魔法伤害降低3"
   },
   {
     "id": 52336,
@@ -22799,19 +22799,19 @@
   {
     "id": 52337,
     "Key": "dictRunewordInfo134",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+25% Increased Attack Speed\n+20% Enhanced Damage\n+3 to Minimum Damage\n+3 to Maximum Damage\n+50 to Attack Rating\n+50% Chance of Open Wounds\n+2 Mana after each Kill\n+1 to Light Radius",
+    "zhTW": "+20%傷害強化\n+3 最小傷害\n+3最大傷害\n+50準確率\n+50%機率造成開放傷口\n攻擊速度+25%\n+2 擊殺法力恢復\n照亮範圍+1",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "공격 속도 +25%\n피해 +20% 증가\n최소 피해 +3\n최대 피해 +3\n명중률 +50\n상처 악화 확률 +50%\n적 처치 시 마나 +2\n시야 +1",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+25% 提高攻击速度\n+20%强化伤害\n+3最小伤害\n+3最大伤害\n+50命中值\n+50%几率造成开创性伤口\n+2每次消灭恢复的法力\n+1照亮范围"
   },
   {
     "id": 52338,
@@ -22969,19 +22969,19 @@
   {
     "id": 52347,
     "Key": "dictRunewordInfo139",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+35% Enhanced Damage\n7% Life stolen per hit\n+25% Chance of Crushing Blow\n+20 to Strength\n+10 to Vitality\n+2 Mana after each Kill",
+    "zhTW": "+35%傷害強化\n+25%機率造成粉碎打擊\n擊中竊取7%生命\n+2擊殺法力恢復\n+20力量\n+10體能",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +35% 증가\n적중당 생명력 7% 훔침\n강타 확률 +25%\n힘 +20\n활력 +10\n적 처치 시 마나 +2",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+35% 强化伤害\n7% 击中时偷取生命\n+25% 几率粉碎打击\n+20 力量\n+10 活力\n+2 每次消灭恢复的法力"
   },
   {
     "id": 52348,
@@ -23751,19 +23751,19 @@
   {
     "id": 52393,
     "Key": "dictRunewordInfo162",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+3 to Poison and Bone Skills (Necromancer Only)\n+20% Faster Cast Rate\n+2 to Bone Spear (Necromancer Only)\n+4 to Skeleton Mastery (Necromancer Only)\n+3 to Bone Armor (Necromancer Only)\nHit Causes Monster to Flee +25%\n+10 to Vitality\n+13 to Mana\nMagic Damage Reduced by 4",
+    "zhTW": "+25%機率擊中使怪物逃跑\n+10體能\n+3毒素與骸骨技能（只限死靈法師）\n+3至骸骨護甲（只限死靈法師）\n+2至骨矛（只限死靈法師）\n+4至骷髏專精（只限死靈法師）\n魔法傷害降低4\n+20%施法速度\n+13法力",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "독과 뼈 기술 +3 (강령술사 전용)\n시전 속도 +20%\n+2 뼈 창 (강령술사 전용)\n+4 해골 숙련 (강령술사 전용)\n+3 뼈 갑옷 (강령술사 전용)\n적중 시 괴물 도주 +25%\n활력 +10\n마나 +13\n마법 피해 4 감소",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+3 毒素和白骨术(仅限死灵法师)\n+20% 更快速施法\n+3 至尖刺护盾 (仅限死灵法师)\n+2 至骨矛 (仅限死灵法师)\n+4 至亡灵精通 (仅限死灵法师)\n+25% 几率命中使怪物逃跑\n+10 活力\n+13 法力\n魔法伤害降低 4"
   },
   {
     "id": 52394,
@@ -23785,19 +23785,19 @@
   {
     "id": 52395,
     "Key": "dictRunewordInfo163",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "10% Chance to cast level 9 Tornado on striking\n+20% Faster Run/Walk\n+40% Increased Attack Speed\n+15% Faster Hit Recovery\n+120-160% Enhanced Damage @dictVariable\n@dictBlue -50% Target Defense\n+50 to Attack Rating\nHit Blinds Target\n+1 to Light Radius\nLevel 13 Twister (127 Charges)",
+    "zhTW": "擊中時有10%機率施展等級9龍捲風\n+20%跑步/行走速度\n攻擊速度+40%\n+15%打擊恢復\n+120-160%傷害強化\n-50%目標防禦\n+50準確率\n擊中使目標目盲\n照亮範圍+1\n等級13 旋風術(127 次)",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 시 10% 확률로 9 레벨 회오리바람 시전\n달리기/걷기 속도 +20%\n공격 속도 +40%\n타격 회복 속도 +15%\n피해 +120~160% 증가 @dictVariable\n@dictBlue 대상의 방어력 -50%\n명중률 +50\n적중 시 대상 실명\n시야 +1\n13 레벨 돌개바람 (충전 127회)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "10% 几率在击中时施放9级龙卷风\n+20% 更快速跑步/步行\n+40% 提高攻击速度\n+15% 更快速打击回复\n+(120~160)% 强化伤害\n-50% 目标防御\n+50 命中值\n命中可致盲目标\n+1 照亮范围\n13级小旋风 (127/127 次充能)"
   },
   {
     "id": 52396,
@@ -24023,19 +24023,19 @@
   {
     "id": 52409,
     "Key": "dictRunewordInfo170",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "7% Chance to cast level 1 Twister when struck\n+25% Faster Run/Walk\n+25% Increased Attack Speed\n+33% Enhanced Damage\n-25% Target Defense\n+66 to Attack Rating\nAdds 1-50 lightning damage\n+25 Defense",
+    "zhTW": "+33%傷害強化\n+66準確率\n附加1-50電擊傷害\n-25%目標防禦\n+25防禦\n+25%跑步/行走速度\n攻擊速度+25%\n被擊中時有7%機率施展等級1旋風術",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피격 시 7% 확률로 1 레벨 돌개바람 시전\n달리기/걷기 속도 +25%\n공격 속도 +25%\n피해 +33% 증가\n대상의 방어력 -25%\n명중률 +66\n번개 피해 1 - 50 추가\n방어력 +25",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "7%几率在被击中时施放1级小旋风\n+25%更快速跑步/步行\n+25%提高攻击速度\n+33%强化伤害\n-25%目标防御\n+66命中值\n+1-50闪电伤害\n+25防御"
   },
   {
     "id": 52410,
