@@ -66,7 +66,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "FCR",
+                                        "text": "@ModStr4u",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -84,28 +84,7 @@
                         },
                         {
                             "type": "TableRowWidget",
-                            "name": "Row ItemNameDisplayMode",
-                            "children": [
-                                {
-                                    "type": "LayoutItemWidget",
-                                    "name": "UniqueTextWrapper",
-                                    "fields": {
-                                        "marginTop": 12,
-                                        "marginBottom": 12
-                                    },
-                                    "children": [
-                                        {
-                                            "type": "TextBoxWidget",
-                                            "name": "Uniquename",
-                                            "fields": {
-                                                "fitToText": true,
-                                                "text": "",
-                                                "style": "$StyleDictionaryCategory"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -159,28 +138,7 @@
                         },
                         {
                             "type": "TableRowWidget",
-                            "name": "Row ItemNameDisplayMode",
-                            "children": [
-                                {
-                                    "type": "LayoutItemWidget",
-                                    "name": "UniqueTextWrapper",
-                                    "fields": {
-                                        "marginTop": 12,
-                                        "marginBottom": 12
-                                    },
-                                    "children": [
-                                        {
-                                            "type": "TextBoxWidget",
-                                            "name": "BaseItemLevelReq",
-                                            "fields": {
-                                                "fitToText": true,
-                                                "text": "",
-                                                "style": "$StyleDictionaryItemDescription"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -208,28 +166,7 @@
                         },
                         {
                             "type": "TableRowWidget",
-                            "name": "Row ItemNameDisplayMode",
-                            "children": [
-                                {
-                                    "type": "LayoutItemWidget",
-                                    "name": "UniqueTextWrapper",
-                                    "fields": {
-                                        "marginTop": 12,
-                                        "marginBottom": 12
-                                    },
-                                    "children": [
-                                        {
-                                            "type": "TextBoxWidget",
-                                            "name": "Uniquename",
-                                            "fields": {
-                                                "fitToText": true,
-                                                "text": "",
-                                                "style": "$StyleDictionaryCategory"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -283,28 +220,7 @@
                         },
                         {
                             "type": "TableRowWidget",
-                            "name": "Row ItemNameDisplayMode",
-                            "children": [
-                                {
-                                    "type": "LayoutItemWidget",
-                                    "name": "UniqueTextWrapper",
-                                    "fields": {
-                                        "marginTop": 12,
-                                        "marginBottom": 12
-                                    },
-                                    "children": [
-                                        {
-                                            "type": "TextBoxWidget",
-                                            "name": "BaseItemLevelReq",
-                                            "fields": {
-                                                "fitToText": true,
-                                                "text": "",
-                                                "style": "$StyleDictionaryItemDescription"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -332,28 +248,7 @@
                         },
                         {
                             "type": "TableRowWidget",
-                            "name": "Row ItemNameDisplayMode",
-                            "children": [
-                                {
-                                    "type": "LayoutItemWidget",
-                                    "name": "UniqueTextWrapper",
-                                    "fields": {
-                                        "marginTop": 12,
-                                        "marginBottom": 12
-                                    },
-                                    "children": [
-                                        {
-                                            "type": "TextBoxWidget",
-                                            "name": "Uniquename",
-                                            "fields": {
-                                                "fitToText": true,
-                                                "text": "单手挥击武器",
-                                                "style": "$StyleDictionaryCategory"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -407,28 +302,7 @@
                         },
                         {
                             "type": "TableRowWidget",
-                            "name": "Row ItemNameDisplayMode",
-                            "children": [
-                                {
-                                    "type": "LayoutItemWidget",
-                                    "name": "UniqueTextWrapper",
-                                    "fields": {
-                                        "marginTop": 12,
-                                        "marginBottom": 12
-                                    },
-                                    "children": [
-                                        {
-                                            "type": "TextBoxWidget",
-                                            "name": "BaseItemLevelReq",
-                                            "fields": {
-                                                "fitToText": true,
-                                                "text": "",
-                                                "style": "$StyleDictionaryItemDescription"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
+                            "name": "Row ItemNameDisplayMode"
                         }
                     ]
                 }

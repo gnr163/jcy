@@ -544,6 +544,10 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
                         }
                     ]
                 }

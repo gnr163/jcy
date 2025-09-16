@@ -66,7 +66,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "FCR",
+                                        "text": "@ModStr4u",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -84,28 +84,7 @@
                         },
                         {
                             "type": "TableRowWidget",
-                            "name": "Row ItemNameDisplayMode",
-                            "children": [
-                                {
-                                    "type": "LayoutItemWidget",
-                                    "name": "UniqueTextWrapper",
-                                    "fields": {
-                                        "marginTop": 12,
-                                        "marginBottom": 12
-                                    },
-                                    "children": [
-                                        {
-                                            "type": "TextBoxWidget",
-                                            "name": "Uniquename",
-                                            "fields": {
-                                                "fitToText": true,
-                                                "text": "",
-                                                "style": "$StyleDictionaryCategory"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -178,7 +157,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "狼人形态",
+                                                "text": "@Skillname224",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -257,7 +236,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "熊人形态",
+                                                "text": "@Skillname229",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -360,7 +339,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "单手挥击武器",
+                                                "text": "@DictOneHandedSwingWeapon",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -439,7 +418,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "其他武器",
+                                                "text": "@DictOtherWeapon",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -518,7 +497,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "狼人形态",
+                                                "text": "@Skillname224",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -597,7 +576,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "熊人形态",
+                                                "text": "@Skillname229",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -779,7 +758,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "狼人形态",
+                                                "text": "@Skillname224",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -858,7 +837,7 @@
                                             "name": "Uniquename",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "熊人形态",
+                                                "text": "@Skillname229",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }

@@ -29394,6 +29394,57 @@
   },
   {
     "id": 52725,
+    "Key": "DictOneHandedSwingWeapon",
+    "enUS": "One-Hand Swing Weapon",
+    "zhTW": "單手揮舞武器",
+    "deDE": "One-Hand Swing Weapon",
+    "esES": "One-Hand Swing Weapon",
+    "frFR": "One-Hand Swing Weapon",
+    "itIT": "One-Hand Swing Weapon",
+    "koKR": "One-Hand Swing Weapon",
+    "plPL": "One-Hand Swing Weapon",
+    "esMX": "One-Hand Swing Weapon",
+    "jaJP": "One-Hand Swing Weapon",
+    "ptBR": "One-Hand Swing Weapon",
+    "ruRU": "One-Hand Swing Weapon",
+    "zhCN": "单手挥击武器"
+  },
+  {
+    "id": 52726,
+    "Key": "DictOtherWeapon",
+    "enUS": "Other Weapon",
+    "zhTW": "其他武器",
+    "deDE": "Other Weapon",
+    "esES": "Other Weapon",
+    "frFR": "Other Weapon",
+    "itIT": "Other Weapon",
+    "koKR": "Other Weapon",
+    "plPL": "Other Weapon",
+    "esMX": "Other Weapon",
+    "jaJP": "Other Weapon",
+    "ptBR": "Other Weapon",
+    "ruRU": "Other Weapon",
+    "zhCN": "其他武器"
+  },
+  {
+    "id": 52727,
+    "Key": "DictVampireShape",
+    "enUS": "Vampire",
+    "zhTW": "吸血鬼",
+    "deDE": "Vampire",
+    "esES": "Vampire",
+    "frFR": "Vampire",
+    "itIT": "Vampire",
+    "koKR": "Vampire",
+    "plPL": "Vampire",
+    "esMX": "Vampire",
+    "jaJP": "Vampire",
+    "ptBR": "Vampire",
+    "ruRU": "Vampire",
+    "zhCN": "吸血鬼"
+  },
+  {
+    "id": 52728,
     "Key": "DictRogueScout",
     "enUS": "Rogue Scout",
     "zhTW": "俠盜斥候",
@@ -29410,7 +29461,7 @@
     "zhCN": "流亡者斥候"
   },
   {
-    "id": 52726,
+    "id": 52729,
     "Key": "DictDesertMerc",
     "enUS": "Desert Mercenary",
     "zhTW": "沙漠傭兵",
@@ -29427,7 +29478,7 @@
     "zhCN": "沙漠佣兵"
   },
   {
-    "id": 52727,
+    "id": 52730,
     "Key": "DictIronWolf",
     "enUS": "Iron Wolf",
     "zhTW": "鐵狼衛士",
@@ -29444,7 +29495,7 @@
     "zhCN": "铁狼"
   },
   {
-    "id": 52728,
+    "id": 52731,
     "Key": "DictBarbarian",
     "enUS": "Barbarian",
     "zhTW": "野蠻人",
