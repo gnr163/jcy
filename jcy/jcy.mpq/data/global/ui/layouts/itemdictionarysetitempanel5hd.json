@@ -2373,7 +2373,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "战争领主的荣耀",
+                                        "text": "@dictSetName33",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -2406,7 +2406,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "战争领主的权威",
+                                                "text": "@dictSetItemName131",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2420,8 +2420,8 @@
                                             "type": "ButtonWidget",
                                             "name": "ItemImageButton",
                                             "fields": {
-                                                "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGreen Telling of Beads \n@amu\n\n@dictSetTellingofBeads\n\n@dictSetTheDisciple",
+                                                "filename": "itemDictionary/grid_2x1",
+                                                "tooltipString": "@dictGreen @dictSetItemName131 \n@hbl\n\n@dictSetWarlordsAuthority\n\n@dictSetWarlordsGlory",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2430,7 +2430,34 @@
                                             "name": "GammaCalibration",
                                             "fields": {
                                                 "rect": "$StyleDictionaryDefaultImageRect",
-                                                "filename": "items/misc/amulet/amulet3"
+                                                "filename": "items/armor/belt/girdle_h",
+                                                "useAdvancedColoring": true,
+                                                "recolorRange": {
+                                                    "hue": [
+                                                        0.035,
+                                                        0.042
+                                                    ],
+                                                    "saturation": [
+                                                        0,
+                                                        0.501
+                                                    ],
+                                                    "value": [
+                                                        0,
+                                                        0.501
+                                                    ]
+                                                },
+                                                "hsvTransform": [
+                                                    0.0,
+                                                    -0.55,
+                                                    -0.35,
+                                                    0.0
+                                                ],
+                                                "tintTransform": [
+                                                    0.0,
+                                                    0.0,
+                                                    0.0,
+                                                    0.0
+                                                ]
                                             }
                                         }
                                     ]
@@ -2454,7 +2481,7 @@
                                             "name": "ItemInfoText",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictBaseItem: @amu",
+                                                "text": "@dictBaseItem: @hbl",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -2479,7 +2506,7 @@
                                             "name": "ItemInfoText",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictRequiredLevel: 30",
+                                                "text": "@dictRequiredLevel: 0",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -2533,7 +2560,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "战争领主的碾压者",
+                                                "text": "@dictSetItemName130",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2547,8 +2574,8 @@
                                             "type": "ButtonWidget",
                                             "name": "ItemImageButton",
                                             "fields": {
-                                                "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGreen Dark Adherent \n@uui\n\n@dictSetDarkAdherent\n\n@dictSetTheDisciple",
+                                                "filename": "itemDictionary/grid_2x2",
+                                                "tooltipString": "@dictGreen @dictSetItemName130 \n@hbt\n\n@dictSetWarlordsCrushers\n\n@dictSetWarlordsGlory",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2557,12 +2584,12 @@
                                             "name": "GammaCalibration",
                                             "fields": {
                                                 "rect": "$StyleDictionaryDefaultImageRect",
-                                                "filename": "items/armor/armor/quilted_armor",
+                                                "filename": "items/armor/boot/plate_boots",
                                                 "useAdvancedColoring": true,
                                                 "recolorRange": {
                                                     "hue": [
-                                                        0.05,
-                                                        0.08
+                                                        0.035,
+                                                        0.042
                                                     ],
                                                     "saturation": [
                                                         0,
@@ -2574,16 +2601,16 @@
                                                     ]
                                                 },
                                                 "hsvTransform": [
-                                                    -0.47,
-                                                    0.2,
-                                                    0.6,
+                                                    0.0,
+                                                    -0.55,
+                                                    -0.35,
                                                     0.0
                                                 ],
                                                 "tintTransform": [
-                                                    0.595,
-                                                    0.96,
-                                                    0.98,
-                                                    0.4
+                                                    0.0,
+                                                    0.0,
+                                                    0.0,
+                                                    0.0
                                                 ]
                                             }
                                         }
@@ -2608,7 +2635,7 @@
                                             "name": "ItemInfoText",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictBaseItem: @uui\n@strchrdef: 666~882",
+                                                "text": "@dictBaseItem: @hbt\n@strchrdef: 666~882",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -2687,7 +2714,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "战争领主的斗篷",
+                                                "text": "@dictSetItemName129",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2701,8 +2728,8 @@
                                             "type": "ButtonWidget",
                                             "name": "ItemImageButton",
                                             "fields": {
-                                                "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen Laying of Hands \n@ulg\n\n@dictSetLayingofHands\n\n@dictSetTheDisciple",
+                                                "filename": "itemDictionary/grid_2x3",
+                                                "tooltipString": "@dictGreen @dictSetItemName129 \n@ful\n\n@dictSetWarlordsMantle\n\n@dictSetWarlordsGlory",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2711,33 +2738,33 @@
                                             "name": "GammaCalibration",
                                             "fields": {
                                                 "rect": "$StyleDictionaryDefaultImageRect",
-                                                "filename": "items/armor/glove/gloves_l",
+                                                "filename": "items/armor/armor/full_plate_mail",
                                                 "useAdvancedColoring": true,
                                                 "recolorRange": {
                                                     "hue": [
-                                                        0.05,
-                                                        0.06
+                                                        0.035,
+                                                        0.042
                                                     ],
                                                     "saturation": [
-                                                        0.5,
+                                                        0,
                                                         0.501
                                                     ],
                                                     "value": [
-                                                        0.585,
-                                                        0.415
+                                                        0,
+                                                        0.501
                                                     ]
                                                 },
                                                 "hsvTransform": [
-                                                    -0.47,
-                                                    0.2,
-                                                    0.6,
+                                                    0.0,
+                                                    -0.55,
+                                                    -0.35,
                                                     0.0
                                                 ],
                                                 "tintTransform": [
-                                                    0.595,
-                                                    0.96,
-                                                    0.98,
-                                                    0.4
+                                                    0.0,
+                                                    0.0,
+                                                    0.0,
+                                                    0.0
                                                 ]
                                             }
                                         }
@@ -2762,7 +2789,7 @@
                                             "name": "ItemInfoText",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictBaseItem: @ulg\n@strchrdef: 79~87",
+                                                "text": "@dictBaseItem: @ful\n@strchrdef: 79~87",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -2841,7 +2868,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "战争领主的欲望",
+                                                "text": "@dictSetItemName128",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -2855,8 +2882,8 @@
                                             "type": "ButtonWidget",
                                             "name": "ItemImageButton",
                                             "fields": {
-                                                "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGreen Credendum \n@umc\n\n@dictSetCredendum\n\n@dictSetTheDisciple",
+                                                "filename": "itemDictionary/grid_2x2",
+                                                "tooltipString": "@dictGreen @dictSetItemName128 \n@ghm\n\n@dictSetWarlordsLust\n\n@dictSetWarlordsGlory",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2865,33 +2892,33 @@
                                             "name": "GammaCalibration",
                                             "fields": {
                                                 "rect": "$StyleDictionaryDefaultImageRect",
-                                                "filename": "items/armor/belt/belt_m",
+                                                "filename": "items/armor/helmet/great_helm",
                                                 "useAdvancedColoring": true,
                                                 "recolorRange": {
                                                     "hue": [
-                                                        0.05,
-                                                        0.06
+                                                        0.035,
+                                                        0.042
                                                     ],
                                                     "saturation": [
-                                                        0.5,
+                                                        0,
                                                         0.501
                                                     ],
                                                     "value": [
-                                                        0.585,
-                                                        0.415
+                                                        0,
+                                                        0.501
                                                     ]
                                                 },
                                                 "hsvTransform": [
-                                                    -0.47,
-                                                    0.2,
-                                                    0.6,
+                                                    0.0,
+                                                    -0.55,
+                                                    -0.35,
                                                     0.0
                                                 ],
                                                 "tintTransform": [
-                                                    0.595,
-                                                    0.96,
-                                                    0.98,
-                                                    0.4
+                                                    0.0,
+                                                    0.0,
+                                                    0.0,
+                                                    0.0
                                                 ]
                                             }
                                         }
@@ -2916,7 +2943,7 @@
                                             "name": "ItemInfoText",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictBaseItem: @umc\n@strchrdef: 108~115, @dictBeltSize: +12@dictBeltSlots",
+                                                "text": "@dictBaseItem: @ghm\n@strchrdef: 30~35",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -2941,7 +2968,7 @@
                                             "name": "ItemInfoText",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@StrHDHelpDurabilityStatus: 16\n@dictRequiredStrength: 106, @dictRequiredLevel: 65",
+                                                "text": "@StrHDHelpDurabilityStatus: 40\n@dictRequiredStrength: 63",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -2995,7 +3022,7 @@
                                             "name": "ItemName",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "战争领主的征服",
+                                                "text": "@dictSetItemName127",
                                                 "style": "$StyleDictionaryCategory"
                                             }
                                         }
@@ -3010,7 +3037,7 @@
                                             "name": "ItemImageButton",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGreen Rite of Passage \n@xlb\n\n@dictSetRiteofPassage\n\n@dictSetTheDisciple",
+                                                "tooltipString": "@dictGreen @dictSetItemName127 \n@hgl\n\n@dictSetWarlordsConquest\n\n@dictSetWarlordsGlory",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3019,12 +3046,12 @@
                                             "name": "GammaCalibration",
                                             "fields": {
                                                 "rect": "$StyleDictionaryDefaultImageRect",
-                                                "filename": "items/armor/boot/leather_boots",
+                                                "filename": "items/armor/glove/gaunlets_h",
                                                 "useAdvancedColoring": true,
                                                 "recolorRange": {
                                                     "hue": [
-                                                        0,
-                                                        0.501
+                                                        0.035,
+                                                        0.042
                                                     ],
                                                     "saturation": [
                                                         0,
@@ -3036,16 +3063,16 @@
                                                     ]
                                                 },
                                                 "hsvTransform": [
-                                                    -0.47,
-                                                    0.2,
-                                                    0.6,
+                                                    0.0,
+                                                    -0.55,
+                                                    -0.35,
                                                     0.0
                                                 ],
                                                 "tintTransform": [
-                                                    0.595,
-                                                    0.96,
-                                                    0.98,
-                                                    0.4
+                                                    0.0,
+                                                    0.0,
+                                                    0.0,
+                                                    0.0
                                                 ]
                                             }
                                         }
@@ -3070,7 +3097,7 @@
                                             "name": "ItemInfoText",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictBaseItem: @xlb\n@strchrdef: 53~60, @dictKickDamage: 26 - 46",
+                                                "text": "@dictBaseItem: @hgl\n@strchrdef: 12~15",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -3095,7 +3122,7 @@
                                             "name": "ItemInfoText",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@StrHDHelpDurabilityStatus: 12\n@dictRequiredStrength: 20, @dictRequiredLevel: 29",
+                                                "text": "@StrHDHelpDurabilityStatus: 24\n@dictRequiredStrength: 60",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
