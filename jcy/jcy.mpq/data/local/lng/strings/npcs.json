@@ -18617,19 +18617,19 @@
   {
     "id": 52091,
     "Key": "dictRunewordInfo6",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+15% Increased Attack Speed\n+120% Enhanced Damage\n+200 to Attack Rating\nAdds 3-14 cold damage\n+40% Chance of Crushing Blow\nKnockback\n+10 to Vitality\nMagic Damage Reduced by 2\nLevel 4 Corpse Explosion (12 Charges)",
+    "zhTW": "+120%傷害強化\n+40%機率造成粉碎打擊\n+200準確率\n附加3-14冰寒傷害\n+10體能\n攻擊速度+15%\n擊退\n魔法傷害降低2\n等級4屍爆（12次)",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "공격 속도 +15%\n피해 +120% 증가\n명중률 +200\n냉기 피해 3 - 14 추가\n강타 확률 +40%\n밀쳐내기\n활력 +10\n마법 피해 2 감소\n4 레벨 시체 폭발 (충전 12회)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+15% 提高攻击速度\n+120% 强化伤害\n+200 命中值\n+ 3-14 冰霜伤害\n+40% 几率粉碎打击\n击退\n+10 活力\n魔法伤害降低 2\n4级邪爆 (12/12 次充能)"
   },
   {
     "id": 52092,
@@ -18957,19 +18957,19 @@
   {
     "id": 52111,
     "Key": "dictRunewordInfo16",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "9% Chance to cast level 11 Frozen Orb on striking\n11% Chance to cast level 9 Charged Bolt on striking\n+35% Increased Attack Speed\n+290-340% Enhanced Damage @dictVariable\n@dictBlue Adds 216-471 magic damage\n+25% Chance of Open Wounds\n+1 Whirlwind\n+10 to Strength\n+15 Life after each Demon Kill",
+    "zhTW": "擊中時有9%機率施展等級11冰封球\n擊中時有11%機率施展等級9電能彈\n攻擊速度+35%\n+290-340%傷害強化\n附加 216-471魔法傷害\n+25%機率造成開放傷口\n+1至旋風斬\n+10力量\n+15擊殺惡魔生命恢復",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 시 9% 확률로 11 레벨 얼음 보주 시전\n타격 시 11% 확률로 9 레벨 번개 줄기 시전\n공격 속도 +35%\n피해 +290~340% 증가 @dictVariable\n@dictBlue 마법 피해 216 - 471 추가\n상처 악화 확률 +25%\n+1 소용돌이\n힘 +10\n악마 처치 시 생명력 +15",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "9% 几率在击中时施放11级冰封球\n11% 几率在击中时施放9级电荷弹\n+35% 提高攻击速度\n+(290~340)% 强化伤害\n+ 216-471 魔法伤害\n+25% 几率造成开创性伤口\n+1 至旋风斩\n+10 力量\n+15 每次消灭恶魔恢复的生命"
   },
   {
     "id": 52112,
@@ -18991,19 +18991,19 @@
   {
     "id": 52113,
     "Key": "dictRunewordInfo17",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "10% Chance to cast level 17 Chain Lightning on striking\n7% Chance to cast level 13 Static Field on striking\n+20% Increased Attack Speed\n+180-220% Enhanced Damage @dictVariable\n@dictBlue Ignore Target's Defense\n-35% to Enemy Lightning Resistance\n+25% Chance of Open Wounds\n+9-11 Magic Absorb @dictVariable\n@dictBlue +2 Mana after each Kill\nLevel 18 Summon Spirit Wolf (30 Charges)",
+    "zhTW": "擊中時有10%機率施展等級17連鎖閃電\n擊中時有7%機率施展等級13靜電力場\n攻擊速度+20%\n+180-220%傷害強化\n無視目標防禦\n敵人電擊抗性-35%\n+25%機率造成開放傷口\n+9-11魔法吸收\n+2擊殺法力恢復\n等級18召喚幽靈狼（30次）",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 시 10% 확률로 17 레벨 연쇄 번개 시전\n타격 시 7% 확률로 13 레벨 전자기장 시전\n공격 속도 +20%\n피해 +180~220% 증가 @dictVariable\n@dictBlue 대상의 방어력 무시\n적의 번개 저항 -35%\n상처 악화 확률 +25%\n마법 흡수 +9~11 @dictVariable\n@dictBlue 적 처치 시 마나 +2\n18 레벨 영혼 늑대 소환 (충전 30회)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "7% 几率在击中时施放13级静电场\n10% 几率在击中时施放17级连锁闪电\n+20% 提高攻击速度\n+(180~220)% 强化伤害\n忽略目标的防御\n-35% 敌人的闪电抗性\n+25% 几率造成开创性伤口\n+(9~11) 魔法伤害吸收\n+2 每次消灭恢复的法力\n18级召唤灵狼 (30/30 次充能)"
   },
   {
     "id": 52114,
@@ -19297,13 +19297,13 @@
   {
     "id": 52131,
     "Key": "dictRunewordInfo27",
-    "enUS": "",
+    "enUS": "20% Chance to cast level 18 Venom when struck\n12% Chance to cast level 15 Hydra on striking\nLevel 14 Holy Fire Aura When Equipped\n+360 Defense\n+230 Defense vs. Missile\n+3-5 to all Attributes @dictVariable\n@dictBlue +0-37 to Strength (Based on Character Level)\n+50 to Mana\n+5% to Maximum Lightning Resist\nDamage Reduced by 7",
     "zhTW": "",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피격 시 20% 확률로 18 레벨 맹독 시전\n타격 시 12% 확률로 15 레벨 히드라 시전\n장착 시 14 레벨 신성한 불꽃 오라 효과 적용\n방어력 +360\n원거리 공격 방어력 +230\n모든 능력치 +3~5 @dictVariable\n@dictBlue 힘 +0~37 (캐릭터 레벨에 비례)\n마나 +50\n최대 번개 저항 +5%\n피해 7 감소",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
@@ -19433,19 +19433,19 @@
   {
     "id": 52139,
     "Key": "dictRunewordInfo31",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "Level 15 Thorns Aura When Equipped\n+35% Increased Attack Speed\n+320-380% Damage to Demons @dictVariable\n@dictBlue +280% Damage to Undead\n+75 poison damage over 5 seconds\n7% Life stolen per hit\nPrevent Monster Heal\n+5-10 to all Attributes @dictVariable\n@dictBlue +2 Mana after each Kill\nReduces all Vendor Prices 15%",
+    "zhTW": "裝備時賦予等級15荊棘靈氣\n攻擊速度+35%\n+320-380%對惡魔的傷害\n+280%對不死怪物的傷害\n+75毒素傷害，時效5秒\n擊中竊取7%生命\n防止怪物自療\n+5-10所有屬性\n+2 擊殺法力恢復\n所有商人的價格降低15%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "장착 시 15 레벨 가시 오라 효과 적용\n공격 속도 +35%\n악마에게 주는 피해 +320~380% @dictVariable\n@dictBlue 언데드에게 주는 피해 +280%\n독 피해 +75 (5초에 걸쳐)\n적중당 생명력 7% 훔침\n괴물 회복 저지\n모든 능력치 +5~10 @dictVariable\n@dictBlue 적 처치 시 마나 +2\n상점 물품 가격 15% 하락",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "装备时获得15级荆棘光环\n+35% 提高攻击速度\n+(320~380)% 对恶魔的伤害\n+280% 对亡灵的伤害\n+75 毒素伤害，持续5秒\n7% 击中时偷取生命\n防止怪物治愈\n+(5~10) 所有属性\n+2 每次消灭恢复的法力\n所有商人的收费减少 15%"
   },
   {
     "id": 52140,
@@ -19875,19 +19875,19 @@
   {
     "id": 52165,
     "Key": "dictRunewordInfo44",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+40% Increased Attack Speed\n+209% Enhanced Damage\nIgnore Target's Defense\n-25% Target Defense\n20% Bonus to Attack Rating\n6% Life stolen per hit\n+33% Deadly Strike\n+66% Chance of Open Wounds\n+5 to Frenzy (Barbarian Only)\nPrevent Monster Heal",
+    "zhTW": "+209%傷害強化\n攻擊速度+40%\n防止怪物自療\n+66%機率造成開放傷口\n+33%致命打擊\n無視目標防禦\n-25%目標防禦\n20%準確率加成\n擊中竊取6%生命\n+5至狂亂連擊（只限野蠻人）",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "공격 속도 +40%\n피해 +209% 증가\n대상의 방어력 무시\n대상의 방어력 -25%\n명중률 보너스 20%\n적중당 생명력 6% 훔침\n치명적 공격 +33%\n상처 악화 확률 +66%\n+5 광분 (야만용사 전용)\n괴물 회복 저지",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+40% 提高攻击速度\n+209% 强化伤害\n忽略目标的防御\n-25% 目标防御\n20% 加成命中值\n6% 击中时偷取生命\n+33% 致死打击\n+66% 几率造成开创性伤口\n防止怪物治愈\n+5 至狂乱 (仅限野蛮人)"
   },
   {
     "id": 52166,
@@ -20589,19 +20589,19 @@
   {
     "id": 52207,
     "Key": "dictRunewordInfo65",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+100% Enhanced Damage\n+150 to Attack Rating\n+100% Damage to Demons\n+100 to Attack Rating against Demons\n+50% Damage to Undead\n+100 to Attack Rating against Undead\nAdds 5-30 fire damage\nAdds 3-14 cold damage\n7% Life stolen per hit",
+    "zhTW": "+100%傷害強化\n+100%對惡魔的傷害\n+50%對不死怪物的傷害\n附加5-30火焰傷害\n附加3-14冰寒傷害\n+150準確率\n+100對惡魔的準確率\n+100對不死怪物的準確率\n擊中竊取 7%生命",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +100% 증가\n명중률 +150\n악마에게 주는 피해 +100%\n악마에 대한 명중률 +100\n언데드에게 주는 피해 +50%\n언데드에 대한 명중률 +100\n화염 피해 5 - 30 추가\n냉기 피해 3 - 14 추가\n적중당 생명력 7% 훔침",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+100% 强化伤害\n+150 命中值\n+100% 对恶魔的伤害\n+100 对恶魔的命中值\n+50% 对亡灵的伤害\n+100 对亡灵的命中值\n+ 5-30 火焰伤害\n+ 3-14 冰霜伤害\n7% 击中时偷取生命"
   },
   {
     "id": 52208,
@@ -20793,19 +20793,19 @@
   {
     "id": 52219,
     "Key": "dictRunewordInfo71",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "20% Chance to cast level 15 Decrepify on striking\nLevel 16-18 Sanctuary Aura When Equipped @dictVariable\n@dictBlue -50% Target Defense\nAdds 150-210 fire damage\nAdds 130-180 cold damage\n7% Life stolen per hit\nSlain Monsters Rest in Peace\n+200-250 Defense vs. Missile @dictVariable\n@dictBlue +10 to Dexterity\n75% Extra Gold from Monsters",
+    "zhTW": "擊中時有20%機率施展等級15衰老\n裝備時賦予等級16-18庇護靈氣\n-50%目標防禦\n附加150-210火焰傷害\n附加130-180冰寒傷害\n擊中竊取7%生命\n殺死的怪物就此安息\n+200-250對遠程防禦\n+10敏捷\n怪物金幣掉落量提高75%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 시 20% 확률로 15 레벨 노화 시전\n장착 시 16~18 레벨 성역 오라 효과 적용 @dictVariable\n@dictBlue 대상의 방어력 -50%\n화염 피해 150 - 210 추가\n냉기 피해 130 - 180 추가\n적중당 생명력 7% 훔침\n처치한 괴물이 안식에 듦\n원거리 공격 방어력 +200~250 @dictVariable\n@dictBlue 민첩 +10\n괴물에게서 얻는 금화 75% 증가",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "20% 几率在击中时施放15级衰老\n装备时获得(16~18)级庇护之光光环\n-50% 目标防御\n+ 150-210 火焰伤害\n+ 130-180 冰霜伤害\n7% 击中时偷取生命\n消灭的怪物就此安息\n+(200~250) 远程防御\n+10 敏捷\n75% 怪物额外掉落金币"
   },
   {
     "id": 52220,
@@ -21099,19 +21099,19 @@
   {
     "id": 52237,
     "Key": "dictRunewordInfo81",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+33% Enhanced Damage\n+9 to Maximum Damage\n-25% Target Defense\n+50 to Attack Rating\n+100% Chance of Open Wounds\nPrevent Monster Heal\n-100 to Monster Defense Per Hit\nDrain Life -5",
+    "zhTW": "+33% 傷害強化\n+9 最大傷害\n+100%機率造成開放傷口\n-25%目標防禦\n擊中使怪物防禦-100\n防止怪物自療\n+50準磪確率\n吸取生命-5",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +33% 증가\n최대 피해 +9\n대상의 방어력 -25%\n명중률 +50\n상처 악화 확률 +100%\n괴물 회복 저지\n적중당 괴물 방어력 -100 감소\n생명력 흡수 -5",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+33% 强化伤害\n+9 最大伤害\n-25% 目标防御\n+50 命中值\n+100% 几率造成开创性伤口\n防止怪物治愈\n-100 每一击降低的怪物防御\n抽取生命 -5"
   },
   {
     "id": 52238,
@@ -21133,19 +21133,19 @@
   {
     "id": 52239,
     "Key": "dictRunewordInfo82",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+3 to Bow and Crossbow Skills (Amazon Only)\n+20% Increased Attack Speed\n+50% Enhanced Damage\n+300% Damage to Undead\n+3 to Slow Missiles (Amazon Only)\n+3 to Dodge (Amazon Only)\n+3 to Critical Strike (Amazon Only)\nKnockback\n+10 to Dexterity",
+    "zhTW": "+50% 傷害強化\n+300%對不死怪物的傷害\n+3弓與弩技能（只限亞馬遜）\n+3至致命攻勢\n（只限亞馬遜）\n+3至閃躲(只限亞馬遜）\n+3至緩箭術（只限亞馬遜）\n攻擊速度+20%\n+10敏捷\n擊退",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "활과 쇠뇌 기술 +3 (아마존 전용)\n공격 속도 +20%\n피해 +50% 증가\n언데드에게 주는 피해 +300%\n+3 투사체 감속 (아마존 전용)\n+3 흘리기 (아마존 전용)\n+3 치명타 (아마존 전용)\n밀쳐내기\n민첩 +10",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+3 弓和弩技能(仅限亚马逊)\n+20% 提高攻击速度\n+50% 强化伤害\n+300% 对亡灵的伤害\n+3 至危险攻击 (仅限亚马逊)\n+3 至闪避 (仅限亚马逊)\n+3 至飞矢减速 (仅限亚马逊)\n击退\n+10 敏捷"
   },
   {
     "id": 52240,
@@ -21643,19 +21643,19 @@
   {
     "id": 52269,
     "Key": "dictRunewordInfo97",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+30% Faster Block Rate\n+40-80% Enhanced Damage @dictVariable\n@dictBlue 10% Bonus to Attack Rating\nAdds 17-62 fire damage\nAdds 1-50 lightning damage\nAdds 3-14 cold damage\n+75 poison damage over 5 seconds\n+6 to Strength\n+6 to Dexterity\nAll Resistances +15",
+    "zhTW": "+30%格擋速度\n+40-80%傷害強化\n10%準確率加成\n附加12-32 火焰傷害\n附加1-50電擊傷害\n附加3-14冰寒傷害\n+75毒素傷害，時效5秒\n+6力量\n+6敏捷\n所有抗性+15",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "막기 속도 +30%\n피해 +40~80% 증가 @dictVariable\n@dictBlue 명중률 보너스 10%\n화염 피해 17 - 62 추가\n번개 피해 1 - 50 추가\n냉기 피해 3 - 14 추가\n독 피해 +75 (5초에 걸쳐)\n힘 +6\n민첩 +6\n모든 저항 +15",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+30% 更快速格挡\n+(40~80)% 强化伤害\n10% 加成命中值\n+ 12-32 火焰伤害\n+ 1-50 闪电伤害\n+ 3-14 冰霜伤害\n+75 毒素伤害，持续5秒\n+6 力量\n+6 敏捷\n+15 所有抗性"
   },
   {
     "id": 52270,
@@ -21949,19 +21949,19 @@
   {
     "id": 52287,
     "Key": "dictRunewordInfo106",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "25% Chance to cast level 15 Poison Nova on striking\n20% Chance to cast level 12 Lower Resist when struck\nLevel 13-17 Cleansing Aura When Equipped @dictVariable\n@dictBlue +1 to All Skills-2 @dictVariable\n@dictBlue +20% Increased Attack Speed\n+220-320% Enhanced Damage @dictVariable\n@dictBlue -23% to Enemy Poison Resistance\n+0-29% Deadly Strike (Based on Character Level)\n+25% Chance of Open Wounds\nFreezes Target +3",
+    "zhTW": "被擊中時有20%機率施展等級12降低抗性\n擊中時有25%機率施展等級15劇毒新星\n裝備時賦予等級13-17淨化靈氣\n+1-2所有技能\n攻擊速度+20%\n+220-320%傷害強化\n敵人毒素抗性-23%\n+(0-37)%致命打擊(依角色等級而定）[0.375*clvl]\n+25%機率造成開放傷口\n凍結目標+3",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 시 25% 확률로 15 레벨 맹독 확산 시전\n피격 시 20% 확률로 12 레벨 저항 감소 시전\n장착 시 13~17 레벨 정화 오라 효과 적용 @dictVariable\n@dictBlue 모든 기술 +1~2 @dictVariable\n@dictBlue 공격 속도 +20%\n피해 +220~320% 증가 @dictVariable\n@dictBlue 적의 독 저항 -23%\n치명적 공격 +0~29% (캐릭터 레벨에 비례)\n상처 악화 확률 +25%\n대상 빙결 +3",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "20% 几率在被击中时施放12级降低抗性\n25% 几率在击中时施放15级剧毒新星\n装备时获得(13~17)级净化光环\n+(1~2) 所有技能等级\n+20% 提高攻击速度\n+(220~320)% 强化伤害\n-23% 敌人的毒素抗性\n+(0~37)% 致死打击(基于角色等级)\n+25% 几率造成开创性伤口\n冻结目标"
   },
   {
     "id": 52288,
@@ -23581,19 +23581,19 @@
   {
     "id": 52383,
     "Key": "dictRunewordInfo154",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "Ignore Target's Defense\n+273 poison damage over 6 seconds\n7% Mana stolen per hit\nPrevent Monster Heal\nHit Causes Monster to Flee +25%\nLevel 13 Poison Nova (11 Charges)\nLevel 15 Poison Explosion (27 Charges)",
+    "zhTW": "+25%機率擊中使怪物逃跑\n防止怪物自療\n無視目標防禦\n擊中竊取 7%法力\n等級15毒爆（27次）\n等級13劇毒新星（11次）\n+273毒素傷害，時效6秒",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "대상의 방어력 무시\n독 피해 +273 (6초에 걸쳐)\n적중당 마나 7% 훔침\n괴물 회복 저지\n적중 시 괴물 도주 +25%\n13 레벨 맹독 확산 (충전 11회)\n15 레벨 맹독 폭발 (충전 27회)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "忽略目标的防御\n+273 毒素伤害，持续6秒\n7% 击中时偷取法力\n防止怪物治愈\n+25% 几率命中使怪物逃跑\n15级毒爆 (27/27 次充能)\n13级剧毒新星 (11/11 次充能)"
   },
   {
     "id": 52384,
@@ -24193,19 +24193,19 @@
   {
     "id": 52419,
     "Key": "dictRunewordInfo172",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "5% Chance to cast level 1 Burst of Speed on striking\nLevel 1 Fanaticism Aura When Equipped\n+30% Increased Attack Speed\n+180-200% Enhanced Damage @dictVariable\n@dictBlue +75% Damage to Undead\n+50 to Attack Rating against Undead\n+10 to Dexterity",
+    "zhTW": "擊中時有5%機率施展等級1速度爆發\n裝備時賦予等級1狂熱靈氣\n攻擊速度+30%\n+180-200%傷害強化\n+75%對不死怪物的傷害\n+50對不死怪物的準確率\n+10敏捷",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 시 5% 확률로 1 레벨 폭발적인 속도 시전\n장착 시 1 레벨 광신 오라 효과 적용\n공격 속도 +30%\n피해 +180~200% 증가 @dictVariable\n@dictBlue 언데드에게 주는 피해 +75%\n언데드에 대한 명중률 +50\n민첩 +10",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "5% 几率在击中时施放1级速度爆发\n装备时获得1级狂热光环\n+30% 提高攻击速度\n+(180~200)% 强化伤害\n+75% 对亡灵的伤害\n+50 对亡灵的命中值\n+10 敏捷"
   },
   {
     "id": 52420,
@@ -24227,19 +24227,19 @@
   {
     "id": 52421,
     "Key": "dictRunewordInfo173",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+50% chance for finishing moves to not consume charges\n+2 to Martial Arts (Assassin Only)\n+20% Increased Attack Speed\n+200-250% Enhanced Damage @dictVariable\n@dictBlue 20% Bonus to Attack Rating\n7% Life stolen per hit\n+8-15% to Cold Skill Damage @dictVariable\n@dictBlue +8-15% to Lightning Skill Damage @dictVariable\n@dictBlue +8-15% to Fire Skill Damage @dictVariable\n@dictBlue Prevent Monster Heal",
+    "zhTW": "+50%機率使終結技不消耗集氣的力量\n+2武學技藝（只限刺客）\n攻擊速度+20%\n+200-250%傷害強化\n20%準確率加成\n擊中竊取7%生命\n+8-15%冰寒技能傷害\n+8-15%閃電技能傷害\n+8-15%火焰技能傷害\n防止怪物自療",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "필살기가 충전을 소모하지 않을 확률 +50%\n무술 +2 (암살자 전용)\n공격 속도 +20%\n피해 +200~250% 증가 @dictVariable\n@dictBlue 명중률 보너스 20%\n적중당 생명력 7% 훔침\n냉기 기술 피해 +8~15% @dictVariable\n@dictBlue 번개 기술 피해 +8~15% @dictVariable\n@dictBlue 화염 기술 피해 +8~15% @dictVariable\n@dictBlue 괴물 회복 저지",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+50% 几率终结技不消耗充能层数\n+2 武学技艺(仅限刺客)\n+20% 提高攻击速度\n+(200~250)% 强化伤害\n20% 加成命中值\n+(8~15)% 火焰技能伤害\n+(8~15)% 冰霜技能伤害\n+(8~15)% 闪电技能伤害\n7% 击中时偷取生命\n防止怪物治愈"
   },
   {
     "id": 52422,
