@@ -87,6 +87,15 @@ class FileOperations:
             except Exception as e:
                 print(e)
         return (count, total)
+    
+    def getFileOrTmp(self, path):
+        tmp = path + ".tmp"
+        if os.path.exists(path):
+            return path
+        elif os.path.exists(tmp):
+            return tmp
+        else:
+            return None
 
     def toggle_droped_highlight(self, isEnabled: bool):
         """
@@ -2673,6 +2682,7 @@ class FileOperations:
                 # 1.load
                 file_data = None
                 file_path = os.path.join(MOD_PATH, _file)
+                file_path = self.getFileOrTmp(file_path)
                 with open(file_path, 'r', encoding='utf-8') as f:
                     file_data = json.load(f)
 
