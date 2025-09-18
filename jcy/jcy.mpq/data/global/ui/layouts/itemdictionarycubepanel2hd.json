@@ -107,7 +107,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "Add Sockets",
+                                        "text": "@dictAddSockets",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -140,7 +140,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Normal Armor\n@r07L + @r10L\nPerfect Topaz",
+                                                "text": "@dictTextNormalArmors\n@r07L + @r10L\n@dictPerfectTopaz",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -161,7 +161,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Add Random Sockets",
+                                                "text": "->  @dictAddRandomSockets",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -190,7 +190,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Normal Weapon\n@r08L + @r11L\nPerfect Amethyst",
+                                                "text": "@dictTextNormalWeapons\n@r08L + @r11L\n@dictPerfectAmethyst",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -211,7 +211,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Add Random Sockets",
+                                                "text": "->  @dictAddRandomSockets",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -240,7 +240,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Normal Helm\n@r08L + @r10L\nPerfect Sapphire",
+                                                "text": "@dictTextNormalHelmets\n@r08L + @r10L\n@dictPerfectSapphire",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -261,7 +261,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Add Random Sockets",
+                                                "text": "->  @dictAddRandomSockets",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -290,7 +290,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Normal Shield\n@r07L + @r11L\nPerfect Ruby",
+                                                "text": "@dictTextNormalShields\n@r07L + @r11L\n@dictPerfectRuby",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -311,7 +311,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Add Random Sockets",
+                                                "text": "->  @dictAddRandomSockets",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -340,7 +340,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Rare Item\nPerfect Skull × 3\nStone of Jordan",
+                                                "text": "@dictClassRareItem\n@dictPerfectSkull × 3\n@dictUniqueItemName122",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -361,7 +361,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Add 1 @dictClassSocket",
+                                                "text": "->  @dictAddOneSocket",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -385,7 +385,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "Remove Socketed Items",
+                                        "text": "@dictRemoveAllItemsFromSockets",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -418,7 +418,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Any Socketed Item\n@r15L Rune\nScroll of Town Portal",
+                                                "text": "@dictAnySocketedItem\n@r15L\n@tsc",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -439,7 +439,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Remove all items from sockets",
+                                                "text": "->  @dictRemoveAllItemsFromSockets",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }

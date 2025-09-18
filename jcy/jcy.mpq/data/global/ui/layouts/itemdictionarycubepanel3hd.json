@@ -107,7 +107,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "Upgrade Item (Normal -> Exceptional)",
+                                        "text": "@dictUpgradeItem (@dictNormalGrade -> @dictExceptionalGrade)",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -140,7 +140,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Normal Unique/Set Weapon\n@r08L + @r12L\nPerfect Emerald",
+                                                "text": "@dictNormalGrade @dictUniqueAndSet @dictClassWeapons\n@r08L + @r12L\n@dictPerfectEmerald",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -161,7 +161,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Exceptional Unique/Set Weapon",
+                                                "text": "->  @dictExceptionalGrade @dictUniqueAndSet @dictClassWeapons",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -190,7 +190,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Normal Unique/Set Armor\n@r07L + @r13L\nPerfect Diamond",
+                                                "text": "@dictNormalGrade @dictUniqueAndSet @dictClassArmors\n@r07L + @r13L\n@dictPerfectDiamond",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -211,7 +211,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Exceptional Unique/Set Armor",
+                                                "text": "->  @dictExceptionalGrade @dictUniqueAndSet @dictClassArmors",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -240,7 +240,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Normal Rare Weapon\n@r09L + @r11L\nPerfect Sapphire",
+                                                "text": "@dictNormalGrade @dictRare @dictClassWeapons\n@r09L + @r11L\n@dictPerfectSapphire",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -261,7 +261,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Exceptional Rare Weapon",
+                                                "text": "->  @dictExceptionalGrade @dictRare @dictClassWeapons",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -290,7 +290,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Normal Rare Armor\n@r08L + @r10\nPerfect Amethyst",
+                                                "text": "@dictNormalGrade @dictRare @dictClassArmors\n@r08L + @r10L\n@dictPerfectAmethyst",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -311,7 +311,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Exceptional Rare Armor",
+                                                "text": "->  @dictExceptionalGrade @dictRare @dictClassArmors",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -335,7 +335,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "Upgrade Item (Exceptional -> Elite)",
+                                        "text": "@dictUpgradeItem (@dictExceptionalGrade -> @dictElitelGrade)",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -368,7 +368,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Exceptional Unique/Set Weapon\n@r17L + @r21L\nPerfect Emerald",
+                                                "text": "@dictExceptionalGrade @dictUniqueAndSet @dictClassWeapons\n@r17L + @r21L\n@dictPerfectEmerald",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -389,7 +389,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Elite Unique/Set Weapon",
+                                                "text": "->  @dictElitelGrade @dictUniqueAndSet @dictClassWeapons",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -418,7 +418,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Exceptional Unique/Set Armor\n@r18L + @r20L\nPerfect Diamond",
+                                                "text": "@dictExceptionalGrade @dictUniqueAndSet @dictClassArmors\n@r18L + @r20L\n@dictPerfectDiamond",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -439,7 +439,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Elite Unique/Set Armor",
+                                                "text": "->  @dictElitelGrade @dictUniqueAndSet @dictClassArmors",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -468,7 +468,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Exceptional Rare Weapon\n@r19L + @r22L\nPerfect Sapphire",
+                                                "text": "@dictExceptionalGrade @dictRare @dictClassWeapons\n@r19L + @r22L\n@dictPerfectSapphire",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -489,7 +489,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Elite Rare Weapon",
+                                                "text": "->  @dictElitelGrade @dictRare @dictClassWeapons",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -518,7 +518,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Exceptional Rare Armor\n@r18L + @r21L\nPerfect Amethyst",
+                                                "text": "@dictExceptionalGrade @dictRare @dictClassArmors\n@r18L + @r21L\n@dictPerfectAmethyst",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -539,7 +539,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Elite Rare Armor",
+                                                "text": "->  @dictElitelGrade @dictRare @dictClassArmors",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -596,7 +596,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Low Quality Weapon\n@r02L Rune\nChipped Gem",
+                                                "text": "@dictLowQualityWeapon\n@r02L\n@dictChippedGem",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -617,7 +617,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Normal Weapon (@dictItemLevel: 1)",
+                                                "text": "->  @dictNormalQualityWeapon (@dictItemLevel: 1)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -646,7 +646,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Low Quality Armor\n@r01L Rune\nChipped Gem",
+                                                "text": "@dictLowQualityArmor\n@r01L\n@dictChippedGem",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -667,7 +667,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Normal Armor (@dictItemLevel: 1)",
+                                                "text": "->  @dictNormalQualityArmor (@dictItemLevel: 1)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }

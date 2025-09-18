@@ -43,7 +43,7 @@
                         "filename": "Panel\\Modals\\ModalButton",
                         "focusIndicatorFilename": "Controller/HoverImages/ModalButton_NoGap_Hover",
                         "hoveredFrame": 3,
-                        "onClickMessage": "ModalMessage:Confirm:https://bbs.d.163.com/forum.php?mod=viewthread&tid=175138826&fromuid=994977",
+                        "onClickMessage": "ModalMessage:Confirm:https://bbs.d.163.com/forum.php?mod=viewthread&tid=175119207",
                         "textColor": "$LightButtonTextColor",
                         "text/style" : "$StyleFEButtonText",
                         "textString": "凯恩之角"
