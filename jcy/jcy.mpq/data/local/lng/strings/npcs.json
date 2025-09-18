@@ -18447,19 +18447,19 @@
   {
     "id": 52081,
     "Key": "dictRunewordInfo1",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+50% Enhanced Defense\nCold Resist +43%\nLightning Resist +48%\nFire Resist +48%\nPoison Resist +48%\n+10% Damage Taken Goes To Mana",
+    "zhTW": "+50%防禦強化\n冰寒抗性+43%\n火焰抗性+48%\n電擊抗性+48%\n毒素抗性+48%\n+10%受到的傷害轉為法力",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "방어력 +50% 증가\n냉기 저항 +43%\n번개 저항 +48%\n화염 저항 +48%\n독 저항 +48%\n받는 피해의 +10%만큼 마나 회복",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+50% 强化防御\n冰霜抗性 +43%\n闪电抗性 +48%\n火焰抗性 +48%\n毒素抗性 +48%\n+10% 受到的伤害转换为法力"
   },
   {
     "id": 52082,
@@ -18685,19 +18685,19 @@
   {
     "id": 52095,
     "Key": "dictRunewordInfo8",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "15% Chance to cast level 10 Bone Armor when struck\n15% Chance to cast level 10 Bone Spear on striking\n+2 to Necromancer Skill Levels\n+100-150 to Mana @dictVariable\n@dictBlue All Resistances +30\nDamage Reduced by 7",
+    "zhTW": "被擊中時有15%機率施展等級10骸骨護甲\n擊中時有15%機率施展等級10骨矛\n+2死靈法師技能等級\n+100-150法力命\n所有抗性+30\n傷害降低7",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피격 시 15% 확률로 10 레벨 뼈 갑옷 시전\n타격 시 15% 확률로 10 레벨 뼈 창 시전\n강령술사 기술 레벨 +2\n마나 +100~150 @dictVariable\n@dictBlue 모든 저항 +30\n피해 7 감소",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "15% 几率在击中时施放10级骨矛\n15% 几率在被击中时施放10级尖刺护盾\n+2 死灵法师技能等级\n+(100~150) 法力\n伤害降低 7\n+30 所有抗性"
   },
   {
     "id": 52096,
@@ -19143,6 +19143,40 @@
   },
   {
     "id": 52122,
+    "Key": "dictRunewordName22",
+    "enUS": "Delirium",
+    "zhTW": "精神錯亂",
+    "deDE": "Delirium",
+    "esES": "Delirio",
+    "frFR": "Délire",
+    "itIT": "Delirio",
+    "koKR": "착란",
+    "plPL": "Delirium",
+    "esMX": "Delirio",
+    "jaJP": "デリリアム",
+    "ptBR": "Delírios",
+    "ruRU": "Бред",
+    "zhCN": "迷狂"
+  },
+  {
+    "id": 52123,
+    "Key": "dictRunewordInfo22",
+    "enUS": "1% Chance to cast level 50 Delirium when struck\n6% Chance to cast level 14 Mind Blast when struck\n14% Chance to cast level 13 Terror when struck\n11% Chance to cast level 18 Confuse on striking\n+2 to All Skills\n+261 Defense\n+10 to Vitality\n50% Extra Gold from Monsters\n25% Better Chance of Getting Magic Items\nLevel 17 Attract (60 Charges)",
+    "zhTW": "被擊中時有1%機率施展等級50精神錯亂\n被擊中時有6%機率施展等級14心靈震爆\n被擊中時有14%機率施展等級13恐懼\n擊中時有11%機率施展等級18混亂\n+2所有技能\n+261防禦\n+10體能\n怪物金幣掉落量提高50%\n尋獲魔法物品機率提高25%\n等級17致命吸引(60次）",
+    "deDE": "",
+    "esES": "",
+    "frFR": "",
+    "itIT": "",
+    "koKR": "피격 시 1% 확률로 50 레벨 착란 시전\n피격 시 6% 확률로 14 레벨 정신 폭발 시전\n피격 시 14% 확률로 13 레벨 공포 시전\n타격 시 11% 확률로 18 레벨 혼란 시전\n모든 기술 +2\n방어력 +261\n활력 +10\n괴물에게서 얻는 금화 50% 증가\n마법 아이템 발견 확률 25% 증가\n17 레벨 유혹 (충전 60회)",
+    "plPL": "",
+    "esMX": "",
+    "jaJP": "",
+    "ptBR": "",
+    "ruRU": "",
+    "zhCN": "11% 几率在击中时施放18级迷乱\n14% 几率在被击中时施放13级恐惧\n6% 几率在被击中时施放14级心灵爆震\n1% 几率在被击中时施放50级迷狂\n+(2~2) 所有技能等级\n+261 防御\n+10 活力\n50% 怪物额外掉落金币\n25% 额外几率获得魔法物品\n17级吸引 (60/60 次充能)"
+  },
+  {
+    "id": 52124,
     "Key": "dictRunewordName23",
     "enUS": "Desire",
     "zhTW": "渴望",
@@ -19159,7 +19193,7 @@
     "zhCN": "欲望"
   },
   {
-    "id": 52123,
+    "id": 52125,
     "Key": "dictRunewordInfo23",
     "enUS": "",
     "zhTW": "",
@@ -19176,7 +19210,7 @@
     "zhCN": ""
   },
   {
-    "id": 52124,
+    "id": 52126,
     "Key": "dictRunewordName24",
     "enUS": "Despair",
     "zhTW": "絕望",
@@ -19193,7 +19227,7 @@
     "zhCN": "绝望"
   },
   {
-    "id": 52125,
+    "id": 52127,
     "Key": "dictRunewordInfo24",
     "enUS": "",
     "zhTW": "",
@@ -19210,7 +19244,7 @@
     "zhCN": ""
   },
   {
-    "id": 52126,
+    "id": 52128,
     "Key": "dictRunewordName25",
     "enUS": "Destruction",
     "zhTW": "毀滅",
@@ -19227,7 +19261,7 @@
     "zhCN": "毁灭"
   },
   {
-    "id": 52127,
+    "id": 52129,
     "Key": "dictRunewordInfo25",
     "enUS": "",
     "zhTW": "",
@@ -19244,7 +19278,7 @@
     "zhCN": ""
   },
   {
-    "id": 52128,
+    "id": 52130,
     "Key": "dictRunewordName26",
     "enUS": "Doom",
     "zhTW": "末日",
@@ -19261,7 +19295,7 @@
     "zhCN": "厄运"
   },
   {
-    "id": 52129,
+    "id": 52131,
     "Key": "dictRunewordInfo26",
     "enUS": "",
     "zhTW": "",
@@ -19278,7 +19312,7 @@
     "zhCN": ""
   },
   {
-    "id": 52130,
+    "id": 52132,
     "Key": "dictRunewordName27",
     "enUS": "Dragon",
     "zhTW": "飛龍",
@@ -19295,10 +19329,10 @@
     "zhCN": "巨龙"
   },
   {
-    "id": 52131,
-    "Key": "dictRunewordInfo27",
+    "id": 52133,
+    "Key": "dictRunewordInfo27Armor",
     "enUS": "20% Chance to cast level 18 Venom when struck\n12% Chance to cast level 15 Hydra on striking\nLevel 14 Holy Fire Aura When Equipped\n+360 Defense\n+230 Defense vs. Missile\n+3-5 to all Attributes @dictVariable\n@dictBlue +0-37 to Strength (Based on Character Level)\n+50 to Mana\n+5% to Maximum Lightning Resist\nDamage Reduced by 7",
-    "zhTW": "",
+    "zhTW": "被擊中時有20%機率施展等級18淬毒\n擊中時有12%機率施展等級15多頭蛇\n裝備時賦予等級14神聖火焰靈氣\n+360防禦\n+230對遠程防禦\n+3-5所有屬性\n+(0.375-37.125)力量(依角色等級而定）[0.375*clvl]\n法力上限提高5%\n電擊抗性上限+5%\n傷害降低7",
     "deDE": "",
     "esES": "",
     "frFR": "",
@@ -19309,10 +19343,27 @@
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "12% 几率在击中时施放15级多头蛇\n20% 几率在被击中时施放18级涂毒\n装备时获得14级神圣之火光环\n+360 防御\n+230 远程防御\n+(3~5) 所有属性\n+(0~37) 力量(基于角色等级)\n+5% 法力最大值\n+10% 闪电抗性上限\n伤害降低 14"
   },
   {
-    "id": 52132,
+    "id": 52134,
+    "Key": "dictRunewordInfo27Shield",
+    "enUS": "20% Chance to cast level 18 Venom when struck\n12% Chance to cast level 15 Hydra on striking\nLevel 14 Holy Fire Aura When Equipped\n+360 Defense\n+230 Defense vs. Missile\n+3-5 to all Attributes @dictVariable\n@dictBlue +0-37 to Strength (Based on Character Level)\n+50 to Mana\n+5% to Maximum Lightning Resist\nDamage Reduced by 7",
+    "zhTW": "被擊中時有20%機率施展等級18淬毒\n擊中時有12%機率施展等級15多頭蛇\n裝備時賦予等級14神聖火焰靈氣\n+360防禦\n+230對遠程防禦\n+3-5所有屬性\n+(0.375-37.125)力量(依角色等級而定）[0.375*clvl]\n+50法力\n電擊抗性上限+5%\n傷害降低7",
+    "deDE": "",
+    "esES": "",
+    "frFR": "",
+    "itIT": "",
+    "koKR": "피격 시 20% 확률로 18 레벨 맹독 시전\n타격 시 12% 확률로 15 레벨 히드라 시전\n장착 시 14 레벨 신성한 불꽃 오라 효과 적용\n방어력 +360\n원거리 공격 방어력 +230\n모든 능력치 +3~5 @dictVariable\n@dictBlue 힘 +0~37 (캐릭터 레벨에 비례)\n마나 +50\n최대 번개 저항 +5%\n피해 7 감소",
+    "plPL": "",
+    "esMX": "",
+    "jaJP": "",
+    "ptBR": "",
+    "ruRU": "",
+    "zhCN": "12% 几率在击中时施放15级多头蛇\n20% 几率在被击中时施放18级涂毒\n装备时获得14级神圣之火光环\n+360 防御\n+230 远程防御\n+(3~5) 所有属性\n+(0~37) 力量(基于角色等级)\n+50 法力\n+10% 闪电抗性上限\n伤害降低 14"
+  },
+  {
+    "id": 52135,
     "Key": "dictRunewordName28",
     "enUS": "Dread",
     "zhTW": "恐懼",
@@ -19329,7 +19380,7 @@
     "zhCN": "惊惧"
   },
   {
-    "id": 52133,
+    "id": 52136,
     "Key": "dictRunewordInfo28",
     "enUS": "",
     "zhTW": "",
@@ -19346,7 +19397,7 @@
     "zhCN": ""
   },
   {
-    "id": 52134,
+    "id": 52137,
     "Key": "dictRunewordName29",
     "enUS": "Dream",
     "zhTW": "夢境",
@@ -19363,24 +19414,41 @@
     "zhCN": "梦境"
   },
   {
-    "id": 52135,
-    "Key": "dictRunewordInfo29",
-    "enUS": "",
-    "zhTW": "",
+    "id": 52138,
+    "Key": "dictRunewordInfo29Helmet",
+    "enUS": "10% Chance to cast level 15 Confuse when struck\nLevel 15 Holy Shock Aura When Equipped\n+20-30% Faster Hit Recovery @dictVariable\n@dictBlue +30% Enhanced Defense\n+150-220 Defense @dictVariable\n@dictBlue +10 to Vitality\nIncrease Maximum Life 5%\n+0-61 to Mana (Based on Character Level)\nAll Resistances +5-20 @dictVariable\n@dictBlue 12-25% Better Chance of Getting Magic Items @dictVariable",
+    "zhTW": "被擊中時有10%機率施展等級15混亂\n裝備時賦予等級15神聖電擊靈氣\n+20-30%打擊恢復\n+30%防禦強化\n+150-220防禦\n+10體能\n生命上限提高5%\n+(0.625-61.875)法力(依角色等級而定）[0.625* clvl]\n所有抗性+5-20\n尋獲魔法物品機率提高12-25%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피격 시 10% 확률로 15 레벨 혼란 시전\n장착 시 15 레벨 신성한 충격 오라 효과 적용\n타격 회복 속도 +20~30% @dictVariable\n@dictBlue 방어력 +30% 증가\n방어력 +150~220 @dictVariable\n@dictBlue 활력 +10\n최대 생명력 5% 증가\n마나 +0~61 (캐릭터 레벨에 비례)\n모든 저항 +5~20 @dictVariable\n@dictBlue 마법 아이템 발견 확률 12~25% 증가 @dictVariable",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "10% 几率在被击中时施放15级迷乱\n装备时获得15级神圣之雷光环\n+(20~30)% 更快速打击回复\n+60% 强化防御\n+(150~220) 防御\n+20 活力\n+5% 生命最大值\n+(0~61) 法力(基于角色等级)\n(12~25)% 额外几率获得魔法物品\n+(5~20) 所有抗性"
   },
   {
-    "id": 52136,
+    "id": 52139,
+    "Key": "dictRunewordInfo29Sheild",
+    "enUS": "10% Chance to cast level 15 Confuse when struck\nLevel 15 Holy Shock Aura When Equipped\n+20-30% Faster Hit Recovery @dictVariable\n@dictBlue +30% Enhanced Defense\n+150-220 Defense @dictVariable\n@dictBlue +10 to Vitality\n+50 to Life\n+0-61 to Mana (Based on Character Level)\nAll Resistances +5-20 @dictVariable\n@dictBlue 12-25% Better Chance of Getting Magic Items @dictVariable",
+    "zhTW": "被擊中時有10%機率施展等級15混亂\n裝備時賦予等級15神聖電擊靈氣\n+20-30%打擊恢復\n+30%防禦強化\n+150-220防禦\n+10體能\n+50生命（只限盾牌）\n+(0.625-61.875)法力(依角色等級而定）[0.625* clvl]\n所有抗性+5-20\n尋獲魔法物品機率提高12-25%",
+    "deDE": "",
+    "esES": "",
+    "frFR": "",
+    "itIT": "",
+    "koKR": "피격 시 10% 확률로 15 레벨 혼란 시전\n장착 시 15 레벨 신성한 충격 오라 효과 적용\n타격 회복 속도 +20~30% @dictVariable\n@dictBlue 방어력 +30% 증가\n방어력 +150~220 @dictVariable\n@dictBlue 활력 +10\n생명력 +50\n마나 +0~61 (캐릭터 레벨에 비례)\n모든 저항 +5~20 @dictVariable\n@dictBlue 마법 아이템 발견 확률 12~25% 증가 @dictVariable",
+    "plPL": "",
+    "esMX": "",
+    "jaJP": "",
+    "ptBR": "",
+    "ruRU": "",
+    "zhCN": "10% 几率在被击中时施放15级迷乱\n装备时获得15级神圣之雷光环\n+(20~30)% 更快速打击回复\n+(150~220) 防御\n+50 生命\n+(0~61) 法力(基于角色等级)\n(12~25)% 额外几率获得魔法物品\n+(5~20) 所有抗性"
+  },
+  {
+    "id": 52140,
     "Key": "dictRunewordName30",
     "enUS": "Duress",
     "zhTW": "強制",
@@ -19397,24 +19465,24 @@
     "zhCN": "强压"
   },
   {
-    "id": 52137,
+    "id": 52141,
     "Key": "dictRunewordInfo30",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+40% Faster Hit Recovery\n+10-20% Enhanced Damage @dictVariable\n@dictBlue Adds 37-133 cold damage\n+15% Chance of Crushing Blow\n+33% Chance of Open Wounds\n+150-200% Enhanced Defense @dictVariable\n@dictBlue 20% Slower Stamina Drain\nCold Resist +45%\nLightning Resist +15%\nFire Resist +15%\nPoison Resist +15%",
+    "zhTW": "+40%打擊恢復\n+10-20%傷害強化\n附加37-133 冰寒傷害\n+15%機率造成粉碎打擊\n+33%機率造成開放傷口\n+150-200%防禦強化\n精力消耗減緩-20%\n冰寒抗性+45%\n電擊抗性+15%\n火焰抗性+15%\n毒素抗性+15%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 회복 속도 +40%\n피해 +10~20% 증가 @dictVariable\n@dictBlue 냉기 피해 37 - 133 추가\n강타 확률 +15%\n상처 악화 확률 +33%\n방어력 +150~200% 증가 @dictVariable\n@dictBlue 지구력 고갈 속도 20% 감소\n냉기 저항 +45%\n번개 저항 +15%\n화염 저항 +15%\n독 저항 +15%",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+40% 更快速打击回复\n+(10~20)% 强化伤害\n+ 37-133 冰霜伤害\n+15% 几率粉碎打击\n+33% 几率造成开创性伤口\n+(150~200)% 强化防御\n-20% 降低耐力消耗\n冰霜抗性 +45%\n闪电抗性 +15%\n火焰抗性 +15%\n毒素抗性 +15%"
   },
   {
-    "id": 52138,
+    "id": 52142,
     "Key": "dictRunewordName31",
     "enUS": "Edge",
     "zhTW": "邊緣",
@@ -19431,7 +19499,7 @@
     "zhCN": "锐锋"
   },
   {
-    "id": 52139,
+    "id": 52143,
     "Key": "dictRunewordInfo31",
     "enUS": "Level 15 Thorns Aura When Equipped\n+35% Increased Attack Speed\n+320-380% Damage to Demons @dictVariable\n@dictBlue +280% Damage to Undead\n+75 poison damage over 5 seconds\n7% Life stolen per hit\nPrevent Monster Heal\n+5-10 to all Attributes @dictVariable\n@dictBlue +2 Mana after each Kill\nReduces all Vendor Prices 15%",
     "zhTW": "裝備時賦予等級15荊棘靈氣\n攻擊速度+35%\n+320-380%對惡魔的傷害\n+280%對不死怪物的傷害\n+75毒素傷害，時效5秒\n擊中竊取7%生命\n防止怪物自療\n+5-10所有屬性\n+2 擊殺法力恢復\n所有商人的價格降低15%",
@@ -19448,7 +19516,7 @@
     "zhCN": "装备时获得15级荆棘光环\n+35% 提高攻击速度\n+(320~380)% 对恶魔的伤害\n+280% 对亡灵的伤害\n+75 毒素伤害，持续5秒\n7% 击中时偷取生命\n防止怪物治愈\n+(5~10) 所有属性\n+2 每次消灭恢复的法力\n所有商人的收费减少 15%"
   },
   {
-    "id": 52140,
+    "id": 52144,
     "Key": "dictRunewordName32",
     "enUS": "Elation",
     "zhTW": "興高彩烈",
@@ -19465,7 +19533,7 @@
     "zhCN": "欢欣"
   },
   {
-    "id": 52141,
+    "id": 52145,
     "Key": "dictRunewordInfo32",
     "enUS": "",
     "zhTW": "",
@@ -19482,7 +19550,7 @@
     "zhCN": ""
   },
   {
-    "id": 52142,
+    "id": 52146,
     "Key": "dictRunewordName33",
     "enUS": "Enigma",
     "zhTW": "謎團",
@@ -19499,24 +19567,24 @@
     "zhCN": "谜团"
   },
   {
-    "id": 52143,
+    "id": 52147,
     "Key": "dictRunewordInfo33",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+2 to All Skills\n+45% Faster Run/Walk\n+1 Teleportation\n+750-775 Defense @dictVariable\n@dictBlue +0-74 to Strength (Based on Character Level)\nIncrease Maximum Life 5%\nPhysical Damage Received Reduced by 8%\n+14 Life after each Kill\n+15% Damage Taken Goes To Mana\n1-99% Better Chance of Getting Magic Items (Based on Character Level)",
+    "zhTW": "+2所有技能\n+45%跑步/行走速度\n+1至傳送術\n+750-775防禦\n+(0-74)力量(依角色等級而定）[0.75*clvl]\n生命上限提高5%\n受到的物理傷害降低8%\n+14擊殺生命恢復\n+15%受到的傷害轉為法力\n尋獲魔法物品機率提高（1-99)%（依角色等級而定）[1*clvl]",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "모든 기술 +2\n달리기/걷기 속도 +45%\n+1 순간이동\n방어력 +750~775 @dictVariable\n@dictBlue 힘 +0~74 (캐릭터 레벨에 비례)\n최대 생명력 5% 증가\n받는 물리 피해 8% 감소\n적 처치 시 생명력 +14\n받는 피해의 +15%만큼 마나 회복\n마법 아이템 발견 확률 1~99% 증가 (캐릭터 레벨에 비례)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+(2~2) 所有技能等级\n+45% 更快速跑步/步行\n+1 至传送术\n+(750~775) 防御\n+(0~74) 力量(基于角色等级)\n+5% 生命最大值\n受到的物理伤害降低 8%\n+14 每次消灭恢复的生命\n+15% 受到的伤害转换为法力\n(1~99)% 额外几率获得魔法物品(基于角色等级)"
   },
   {
-    "id": 52144,
+    "id": 52148,
     "Key": "dictRunewordName34",
     "enUS": "Enlightenment",
     "zhTW": "教化",
@@ -19533,24 +19601,24 @@
     "zhCN": "启迪"
   },
   {
-    "id": 52145,
+    "id": 52149,
     "Key": "dictRunewordInfo34",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "5% Chance to cast level 15 Blaze when struck\n5% Chance to cast level 15 Fire Ball on attack\n+2 to Sorceress Skill Levels\n+1 Warmth\n+30% Enhanced Defense\nFire Resist +30%\nDamage Reduced by 7",
+    "zhTW": "被擊中時有5%機率施展等級15熾烈之徑\n擊中時有5%機率施展等級15火球術\n+2魔法使技能等級\n+1至暖流\n+30%防禦強化\n火焰抗性+30%\n傷害降低7",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피격 시 5% 확률로 15 레벨 불길 시전\n공격 시 5% 확률로 15 레벨 화염구 시전\n원소술사 기술 레벨 +2\n+1 온기\n방어력 +30% 증가\n화염 저항 +30%\n피해 7 감소",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "5% 几率在击中时施放15级火球术\n5% 几率在被击中时施放15级足跟火\n+2 巫师技能等级\n+1 至暖身术\n+30% 强化防御\n火焰抗性 +30%\n伤害降低 7"
   },
   {
-    "id": 52146,
+    "id": 52150,
     "Key": "dictRunewordName35",
     "enUS": "Envy",
     "zhTW": "羨慕",
@@ -19567,7 +19635,7 @@
     "zhCN": "羡慕"
   },
   {
-    "id": 52147,
+    "id": 52151,
     "Key": "dictRunewordInfo35",
     "enUS": "",
     "zhTW": "",
@@ -19584,7 +19652,7 @@
     "zhCN": ""
   },
   {
-    "id": 52148,
+    "id": 52152,
     "Key": "dictRunewordName36",
     "enUS": "Eternity",
     "zhTW": "永恆",
@@ -19601,7 +19669,7 @@
     "zhCN": "永恒"
   },
   {
-    "id": 52149,
+    "id": 52153,
     "Key": "dictRunewordInfo36",
     "enUS": "",
     "zhTW": "",
@@ -19618,7 +19686,7 @@
     "zhCN": ""
   },
   {
-    "id": 52150,
+    "id": 52154,
     "Key": "dictRunewordName37",
     "enUS": "Exile",
     "zhTW": "流亡",
@@ -19635,7 +19703,7 @@
     "zhCN": "流放"
   },
   {
-    "id": 52151,
+    "id": 52155,
     "Key": "dictRunewordInfo37",
     "enUS": "",
     "zhTW": "",
@@ -19652,7 +19720,7 @@
     "zhCN": ""
   },
   {
-    "id": 52152,
+    "id": 52156,
     "Key": "dictRunewordName38",
     "enUS": "Faith",
     "zhTW": "信心",
@@ -19669,7 +19737,7 @@
     "zhCN": "信念"
   },
   {
-    "id": 52153,
+    "id": 52157,
     "Key": "dictRunewordInfo38",
     "enUS": "",
     "zhTW": "",
@@ -19686,7 +19754,7 @@
     "zhCN": ""
   },
   {
-    "id": 52154,
+    "id": 52158,
     "Key": "dictRunewordName39",
     "enUS": "Famine",
     "zhTW": "饑荒",
@@ -19703,7 +19771,7 @@
     "zhCN": "饥荒"
   },
   {
-    "id": 52155,
+    "id": 52159,
     "Key": "dictRunewordInfo39",
     "enUS": "",
     "zhTW": "",
@@ -19720,7 +19788,7 @@
     "zhCN": ""
   },
   {
-    "id": 52156,
+    "id": 52160,
     "Key": "dictRunewordName40",
     "enUS": "Flickering Flame",
     "zhTW": "閃爍火焰",
@@ -19737,24 +19805,24 @@
     "zhCN": "闪烁火焰"
   },
   {
-    "id": 52157,
+    "id": 52161,
     "Key": "dictRunewordInfo40",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "Level 4-8 Resist Fire Aura When Equipped @dictVariable\n@dictBlue +3 to Fire Skills\n-(10-15)% to Enemy Fire Resistance @dictVariable\n@dictBlue +30% Enhanced Defense\n+30 Defense vs. Missile\n+50-75 to Mana @dictVariable\n@dictBlue +5% to Maximum Fire Resist\nHalf Freeze Duration\nPoison Length Reduced by 50%",
+    "zhTW": "裝備時賦予等級48抗火靈氣\n+3火焰技能\n敵人火焰抗性-10-15%\n+30%防禦強化\n+30對遠程防禦\n+50-75法力命\n被凍結的時效減半\n火焰抗性上限+5%\n中毒的時效縮短50%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "장착 시 4~8 레벨 화염 저항 오라 효과 적용 @dictVariable\n@dictBlue 화염 기술 +3\n적의 화염 저항 -(10~15)% @dictVariable\n@dictBlue 방어력 +30% 증가\n원거리 공격 방어력 +30\n마나 +50~75 @dictVariable\n@dictBlue 최대 화염 저항 +5%\n빙결 지속시간 절반으로 감소\n독 지속시간 50% 감소",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "装备时获得(4~8)级抗火光环\n+3 火焰技能\n-(10~15)% 敌人的火焰抗性\n+30% 强化防御\n+30 远程防御\n+(50~75) 法力\n+5% 火焰抗性上限\n冻结时间减半\n中毒时间缩短 50%"
   },
   {
-    "id": 52158,
+    "id": 52162,
     "Key": "dictRunewordName41",
     "enUS": "Fortitude",
     "zhTW": "剛毅",
@@ -19771,7 +19839,7 @@
     "zhCN": "刚毅"
   },
   {
-    "id": 52159,
+    "id": 52163,
     "Key": "dictRunewordInfo41",
     "enUS": "",
     "zhTW": "",
@@ -19788,7 +19856,7 @@
     "zhCN": ""
   },
   {
-    "id": 52160,
+    "id": 52164,
     "Key": "dictRunewordName42",
     "enUS": "Fortune",
     "zhTW": "機運",
@@ -19805,7 +19873,7 @@
     "zhCN": "鸿运"
   },
   {
-    "id": 52161,
+    "id": 52165,
     "Key": "dictRunewordInfo42",
     "enUS": "",
     "zhTW": "",
@@ -19822,7 +19890,7 @@
     "zhCN": ""
   },
   {
-    "id": 52162,
+    "id": 52166,
     "Key": "dictRunewordName43",
     "enUS": "Friendship",
     "zhTW": "友情",
@@ -19839,7 +19907,7 @@
     "zhCN": "友谊"
   },
   {
-    "id": 52163,
+    "id": 52167,
     "Key": "dictRunewordInfo43",
     "enUS": "",
     "zhTW": "",
@@ -19856,7 +19924,7 @@
     "zhCN": ""
   },
   {
-    "id": 52164,
+    "id": 52168,
     "Key": "dictRunewordName44",
     "enUS": "Fury",
     "zhTW": "狂怒",
@@ -19873,7 +19941,7 @@
     "zhCN": "愤怒"
   },
   {
-    "id": 52165,
+    "id": 52169,
     "Key": "dictRunewordInfo44",
     "enUS": "+40% Increased Attack Speed\n+209% Enhanced Damage\nIgnore Target's Defense\n-25% Target Defense\n20% Bonus to Attack Rating\n6% Life stolen per hit\n+33% Deadly Strike\n+66% Chance of Open Wounds\n+5 to Frenzy (Barbarian Only)\nPrevent Monster Heal",
     "zhTW": "+209%傷害強化\n攻擊速度+40%\n防止怪物自療\n+66%機率造成開放傷口\n+33%致命打擊\n無視目標防禦\n-25%目標防禦\n20%準確率加成\n擊中竊取6%生命\n+5至狂亂連擊（只限野蠻人）",
@@ -19890,7 +19958,7 @@
     "zhCN": "+40% 提高攻击速度\n+209% 强化伤害\n忽略目标的防御\n-25% 目标防御\n20% 加成命中值\n6% 击中时偷取生命\n+33% 致死打击\n+66% 几率造成开创性伤口\n防止怪物治愈\n+5 至狂乱 (仅限野蛮人)"
   },
   {
-    "id": 52166,
+    "id": 52170,
     "Key": "dictRunewordName45",
     "enUS": "Gloom",
     "zhTW": "幽暗",
@@ -19907,24 +19975,24 @@
     "zhCN": "阴霾"
   },
   {
-    "id": 52167,
+    "id": 52171,
     "Key": "dictRunewordInfo45",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "15% Chance to cast level 3 Dim Vision when struck\n+10% Faster Hit Recovery\n+200-260% Enhanced Defense @dictVariable\n@dictBlue +10 to Strength\nAll Resistances +45\nHalf Freeze Duration\n+5% Damage Taken Goes To Mana\n-3 to Light Radius",
+    "zhTW": "被擊中時有15%機率施展等級3昏暗視野\n+10%打擊恢復\n+200-260%防禦強化\n+10力量\n所有抗性+45\n被凍結的時效減半\n+5%受到的傷害轉為法力\n照亮範圍-3",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피격 시 15% 확률로 3 레벨 시야 흐리기 시전\n타격 회복 속도 +10%\n방어력 +200~260% 증가 @dictVariable\n@dictBlue 힘 +10\n모든 저항 +45\n빙결 지속시간 절반으로 감소\n받는 피해의 +5%만큼 마나 회복\n시야 -3",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "15% 几率在被击中时施放3级微暗灵视\n+10% 更快速打击回复\n+(200~260)% 强化防御\n+10 力量\n冻结时间减半\n+5% 受到的伤害转换为法力\n-3 照亮范围\n+45 所有抗性"
   },
   {
-    "id": 52168,
+    "id": 52172,
     "Key": "dictRunewordName46",
     "enUS": "Glory",
     "zhTW": "榮譽",
@@ -19941,7 +20009,7 @@
     "zhCN": "光华"
   },
   {
-    "id": 52169,
+    "id": 52173,
     "Key": "dictRunewordInfo46",
     "enUS": "",
     "zhTW": "",
@@ -19958,7 +20026,7 @@
     "zhCN": ""
   },
   {
-    "id": 52170,
+    "id": 52174,
     "Key": "dictRunewordName47",
     "enUS": "Grief",
     "zhTW": "悔恨",
@@ -19975,7 +20043,7 @@
     "zhCN": "悔恨"
   },
   {
-    "id": 52171,
+    "id": 52175,
     "Key": "dictRunewordInfo47",
     "enUS": "",
     "zhTW": "",
@@ -19992,7 +20060,7 @@
     "zhCN": ""
   },
   {
-    "id": 52172,
+    "id": 52176,
     "Key": "dictRunewordName48",
     "enUS": "Hand of Justice",
     "zhTW": "正義之手",
@@ -20009,7 +20077,7 @@
     "zhCN": "正义之手"
   },
   {
-    "id": 52173,
+    "id": 52177,
     "Key": "dictRunewordInfo48",
     "enUS": "",
     "zhTW": "",
@@ -20026,7 +20094,7 @@
     "zhCN": ""
   },
   {
-    "id": 52174,
+    "id": 52178,
     "Key": "dictRunewordName49",
     "enUS": "Harmony",
     "zhTW": "和諧",
@@ -20043,7 +20111,7 @@
     "zhCN": "和谐"
   },
   {
-    "id": 52175,
+    "id": 52179,
     "Key": "dictRunewordInfo49",
     "enUS": "",
     "zhTW": "",
@@ -20060,7 +20128,7 @@
     "zhCN": ""
   },
   {
-    "id": 52176,
+    "id": 52180,
     "Key": "dictRunewordName50",
     "enUS": "Hatred",
     "zhTW": "憎恨",
@@ -20077,7 +20145,7 @@
     "zhCN": "憎恨"
   },
   {
-    "id": 52177,
+    "id": 52181,
     "Key": "dictRunewordInfo50",
     "enUS": "",
     "zhTW": "",
@@ -20094,7 +20162,7 @@
     "zhCN": ""
   },
   {
-    "id": 52178,
+    "id": 52182,
     "Key": "dictRunewordName51",
     "enUS": "Heart of the Oak",
     "zhTW": "橡樹之心",
@@ -20111,7 +20179,7 @@
     "zhCN": "橡树之心"
   },
   {
-    "id": 52179,
+    "id": 52183,
     "Key": "dictRunewordInfo51",
     "enUS": "",
     "zhTW": "",
@@ -20128,7 +20196,7 @@
     "zhCN": ""
   },
   {
-    "id": 52180,
+    "id": 52184,
     "Key": "dictRunewordName52",
     "enUS": "Heaven's Will",
     "zhTW": "天堂意志",
@@ -20145,7 +20213,7 @@
     "zhCN": "天堂意志"
   },
   {
-    "id": 52181,
+    "id": 52185,
     "Key": "dictRunewordInfo52",
     "enUS": "",
     "zhTW": "",
@@ -20162,7 +20230,7 @@
     "zhCN": ""
   },
   {
-    "id": 52182,
+    "id": 52186,
     "Key": "dictRunewordName53",
     "enUS": "Holy Tears",
     "zhTW": "神聖之淚",
@@ -20179,7 +20247,7 @@
     "zhCN": "神圣之泪"
   },
   {
-    "id": 52183,
+    "id": 52187,
     "Key": "dictRunewordInfo53",
     "enUS": "",
     "zhTW": "",
@@ -20196,7 +20264,7 @@
     "zhCN": ""
   },
   {
-    "id": 52184,
+    "id": 52188,
     "Key": "dictRunewordName54",
     "enUS": "Holy Thunder",
     "zhTW": "神聖雷擊",
@@ -20213,7 +20281,7 @@
     "zhCN": "圣雷"
   },
   {
-    "id": 52185,
+    "id": 52189,
     "Key": "dictRunewordInfo54",
     "enUS": "",
     "zhTW": "",
@@ -20230,7 +20298,7 @@
     "zhCN": ""
   },
   {
-    "id": 52186,
+    "id": 52190,
     "Key": "dictRunewordName55",
     "enUS": "Honor",
     "zhTW": "榮耀",
@@ -20247,7 +20315,7 @@
     "zhCN": "荣耀"
   },
   {
-    "id": 52187,
+    "id": 52191,
     "Key": "dictRunewordInfo55",
     "enUS": "",
     "zhTW": "",
@@ -20264,7 +20332,7 @@
     "zhCN": ""
   },
   {
-    "id": 52188,
+    "id": 52192,
     "Key": "dictRunewordName56",
     "enUS": "Revenge",
     "zhTW": "報復",
@@ -20281,7 +20349,7 @@
     "zhCN": "报复"
   },
   {
-    "id": 52189,
+    "id": 52193,
     "Key": "dictRunewordInfo56",
     "enUS": "",
     "zhTW": "",
@@ -20298,7 +20366,7 @@
     "zhCN": ""
   },
   {
-    "id": 52190,
+    "id": 52194,
     "Key": "dictRunewordName57",
     "enUS": "Humility",
     "zhTW": "謙恭",
@@ -20315,7 +20383,7 @@
     "zhCN": "谦逊"
   },
   {
-    "id": 52191,
+    "id": 52195,
     "Key": "dictRunewordInfo57",
     "enUS": "",
     "zhTW": "",
@@ -20332,7 +20400,7 @@
     "zhCN": ""
   },
   {
-    "id": 52192,
+    "id": 52196,
     "Key": "dictRunewordName58",
     "enUS": "Hunger",
     "zhTW": "飢餓",
@@ -20349,7 +20417,7 @@
     "zhCN": "饥饿"
   },
   {
-    "id": 52193,
+    "id": 52197,
     "Key": "dictRunewordInfo58",
     "enUS": "",
     "zhTW": "",
@@ -20366,7 +20434,7 @@
     "zhCN": ""
   },
   {
-    "id": 52194,
+    "id": 52198,
     "Key": "dictRunewordName59",
     "enUS": "Ice",
     "zhTW": "寒冰",
@@ -20383,7 +20451,7 @@
     "zhCN": "寒冰"
   },
   {
-    "id": 52195,
+    "id": 52199,
     "Key": "dictRunewordInfo59",
     "enUS": "",
     "zhTW": "",
@@ -20400,7 +20468,7 @@
     "zhCN": ""
   },
   {
-    "id": 52196,
+    "id": 52200,
     "Key": "dictRunewordName60",
     "enUS": "Infinity",
     "zhTW": "無限",
@@ -20417,7 +20485,7 @@
     "zhCN": "无限"
   },
   {
-    "id": 52197,
+    "id": 52201,
     "Key": "dictRunewordInfo60",
     "enUS": "",
     "zhTW": "",
@@ -20434,7 +20502,7 @@
     "zhCN": ""
   },
   {
-    "id": 52198,
+    "id": 52202,
     "Key": "dictRunewordName61",
     "enUS": "Innocence",
     "zhTW": "純真",
@@ -20451,7 +20519,7 @@
     "zhCN": "无辜"
   },
   {
-    "id": 52199,
+    "id": 52203,
     "Key": "dictRunewordInfo61",
     "enUS": "",
     "zhTW": "",
@@ -20468,7 +20536,7 @@
     "zhCN": ""
   },
   {
-    "id": 52200,
+    "id": 52204,
     "Key": "dictRunewordName62",
     "enUS": "Insight",
     "zhTW": "靈光",
@@ -20485,7 +20553,7 @@
     "zhCN": "眼光"
   },
   {
-    "id": 52201,
+    "id": 52205,
     "Key": "dictRunewordInfo62",
     "enUS": "",
     "zhTW": "",
@@ -20502,7 +20570,7 @@
     "zhCN": ""
   },
   {
-    "id": 52202,
+    "id": 52206,
     "Key": "dictRunewordName63",
     "enUS": "Jealousy",
     "zhTW": "妒忌",
@@ -20519,7 +20587,7 @@
     "zhCN": "嫉妒"
   },
   {
-    "id": 52203,
+    "id": 52207,
     "Key": "dictRunewordInfo63",
     "enUS": "",
     "zhTW": "",
@@ -20536,7 +20604,7 @@
     "zhCN": ""
   },
   {
-    "id": 52204,
+    "id": 52208,
     "Key": "dictRunewordName64",
     "enUS": "Judgement",
     "zhTW": "審判",
@@ -20553,7 +20621,7 @@
     "zhCN": "审判"
   },
   {
-    "id": 52205,
+    "id": 52209,
     "Key": "dictRunewordInfo64",
     "enUS": "",
     "zhTW": "",
@@ -20570,7 +20638,7 @@
     "zhCN": ""
   },
   {
-    "id": 52206,
+    "id": 52210,
     "Key": "dictRunewordName65",
     "enUS": "King's Grace",
     "zhTW": "王者的慈悲",
@@ -20587,7 +20655,7 @@
     "zhCN": "王恩"
   },
   {
-    "id": 52207,
+    "id": 52211,
     "Key": "dictRunewordInfo65",
     "enUS": "+100% Enhanced Damage\n+150 to Attack Rating\n+100% Damage to Demons\n+100 to Attack Rating against Demons\n+50% Damage to Undead\n+100 to Attack Rating against Undead\nAdds 5-30 fire damage\nAdds 3-14 cold damage\n7% Life stolen per hit",
     "zhTW": "+100%傷害強化\n+100%對惡魔的傷害\n+50%對不死怪物的傷害\n附加5-30火焰傷害\n附加3-14冰寒傷害\n+150準確率\n+100對惡魔的準確率\n+100對不死怪物的準確率\n擊中竊取 7%生命",
@@ -20604,7 +20672,7 @@
     "zhCN": "+100% 强化伤害\n+150 命中值\n+100% 对恶魔的伤害\n+100 对恶魔的命中值\n+50% 对亡灵的伤害\n+100 对亡灵的命中值\n+ 5-30 火焰伤害\n+ 3-14 冰霜伤害\n7% 击中时偷取生命"
   },
   {
-    "id": 52208,
+    "id": 52212,
     "Key": "dictRunewordName66",
     "enUS": "Kingslayer",
     "zhTW": "弒王者",
@@ -20621,7 +20689,7 @@
     "zhCN": "弑君者"
   },
   {
-    "id": 52209,
+    "id": 52213,
     "Key": "dictRunewordInfo66",
     "enUS": "",
     "zhTW": "",
@@ -20638,7 +20706,7 @@
     "zhCN": ""
   },
   {
-    "id": 52210,
+    "id": 52214,
     "Key": "dictRunewordName67",
     "enUS": "Knight's Vigil",
     "zhTW": "騎士守望",
@@ -20655,7 +20723,7 @@
     "zhCN": "骑士之印"
   },
   {
-    "id": 52211,
+    "id": 52215,
     "Key": "dictRunewordInfo67",
     "enUS": "",
     "zhTW": "",
@@ -20672,7 +20740,7 @@
     "zhCN": ""
   },
   {
-    "id": 52212,
+    "id": 52216,
     "Key": "dictRunewordName68",
     "enUS": "Knowledge",
     "zhTW": "學識",
@@ -20689,7 +20757,7 @@
     "zhCN": "知识"
   },
   {
-    "id": 52213,
+    "id": 52217,
     "Key": "dictRunewordInfo68",
     "enUS": "",
     "zhTW": "",
@@ -20706,7 +20774,7 @@
     "zhCN": ""
   },
   {
-    "id": 52214,
+    "id": 52218,
     "Key": "dictRunewordName69",
     "enUS": "Last Wish",
     "zhTW": "最後遺願",
@@ -20723,7 +20791,7 @@
     "zhCN": "临终之愿"
   },
   {
-    "id": 52215,
+    "id": 52219,
     "Key": "dictRunewordInfo69",
     "enUS": "",
     "zhTW": "",
@@ -20740,7 +20808,7 @@
     "zhCN": ""
   },
   {
-    "id": 52216,
+    "id": 52220,
     "Key": "dictRunewordName70",
     "enUS": "Law",
     "zhTW": "律法",
@@ -20757,7 +20825,7 @@
     "zhCN": "律法"
   },
   {
-    "id": 52217,
+    "id": 52221,
     "Key": "dictRunewordInfo70",
     "enUS": "",
     "zhTW": "",
@@ -20774,7 +20842,7 @@
     "zhCN": ""
   },
   {
-    "id": 52218,
+    "id": 52222,
     "Key": "dictRunewordName71",
     "enUS": "Lawbringer",
     "zhTW": "執法者",
@@ -20791,7 +20859,7 @@
     "zhCN": "执法者"
   },
   {
-    "id": 52219,
+    "id": 52223,
     "Key": "dictRunewordInfo71",
     "enUS": "20% Chance to cast level 15 Decrepify on striking\nLevel 16-18 Sanctuary Aura When Equipped @dictVariable\n@dictBlue -50% Target Defense\nAdds 150-210 fire damage\nAdds 130-180 cold damage\n7% Life stolen per hit\nSlain Monsters Rest in Peace\n+200-250 Defense vs. Missile @dictVariable\n@dictBlue +10 to Dexterity\n75% Extra Gold from Monsters",
     "zhTW": "擊中時有20%機率施展等級15衰老\n裝備時賦予等級16-18庇護靈氣\n-50%目標防禦\n附加150-210火焰傷害\n附加130-180冰寒傷害\n擊中竊取7%生命\n殺死的怪物就此安息\n+200-250對遠程防禦\n+10敏捷\n怪物金幣掉落量提高75%",
@@ -20808,7 +20876,7 @@
     "zhCN": "20% 几率在击中时施放15级衰老\n装备时获得(16~18)级庇护之光光环\n-50% 目标防御\n+ 150-210 火焰伤害\n+ 130-180 冰霜伤害\n7% 击中时偷取生命\n消灭的怪物就此安息\n+(200~250) 远程防御\n+10 敏捷\n75% 怪物额外掉落金币"
   },
   {
-    "id": 52220,
+    "id": 52224,
     "Key": "dictRunewordName72",
     "enUS": "Leaf",
     "zhTW": "葉子",
@@ -20825,7 +20893,7 @@
     "zhCN": "叶子"
   },
   {
-    "id": 52221,
+    "id": 52225,
     "Key": "dictRunewordInfo72",
     "enUS": "+3 to Fire Skills\nAdds 5-30 fire damage\n+3 to Inferno (Sorceress Only)\n+3 to Warmth (Sorceress Only)\n+3 to Fire Bolt (Sorceress Only)\n+2-198 Defense (Based on Character Level)\nCold Resist +33%\n+2 Mana after each Kill",
     "zhTW": "附加5-30火焰傷害\n+3火焰技能\n+3至火焰彈（只限魔法使）\n+3至煉獄之火（只限魔法使）\n+3至暖流（只限魔法使）\n+2 擊殺法力恢復\n+(2-198)防禦(依角色等級而定）[2* clvl]\n冰寒抗性+33%",
@@ -20842,7 +20910,7 @@
     "zhCN": "+3火焰技能\n+5-30火焰伤害\n+3至地狱火（仅限法师）\n+3至火焰弹（仅限法师）\n+3至暖身术（仅限法师）\n+(2~198)防御(基于角色等级）\n冰霜抗性+33%\n+2每次消灭恢复的法力"
   },
   {
-    "id": 52222,
+    "id": 52226,
     "Key": "dictRunewordName73",
     "enUS": "Lightning",
     "zhTW": "閃電",
@@ -20859,7 +20927,7 @@
     "zhCN": "闪电"
   },
   {
-    "id": 52223,
+    "id": 52227,
     "Key": "dictRunewordInfo73",
     "enUS": "",
     "zhTW": "",
@@ -20876,7 +20944,7 @@
     "zhCN": ""
   },
   {
-    "id": 52224,
+    "id": 52228,
     "Key": "dictRunewordName74",
     "enUS": "Lionheart",
     "zhTW": "獅子心",
@@ -20893,24 +20961,24 @@
     "zhCN": "狮心"
   },
   {
-    "id": 52225,
+    "id": 52229,
     "Key": "dictRunewordInfo74",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+20% Enhanced Damage\n+25 to Strength\n+15 to Dexterity\n+20 to Vitality\n+10 to Energy\n+50 to Life\nAll Resistances +30\nRequirements -15%",
+    "zhTW": "+20%傷害強化\n需求-15%\n+25力量\n+10 能量\n+20體能\n+15敏捷\n+50生命\n所有抗性+30",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피해 +20% 증가\n힘 +25\n민첩 +15\n활력 +20\n마력 +10\n생명력 +50\n모든 저항 +30\n착용 조건 -15%",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+20% 强化伤害\n+25 力量\n+15 敏捷\n+20 活力\n+10 能量\n+50 生命\n+30 所有抗性\n需求 -15%"
   },
   {
-    "id": 52226,
+    "id": 52230,
     "Key": "dictRunewordName75",
     "enUS": "Lore",
     "zhTW": "知識",
@@ -20927,7 +20995,7 @@
     "zhCN": "学识"
   },
   {
-    "id": 52227,
+    "id": 52231,
     "Key": "dictRunewordInfo75",
     "enUS": "+1 to All Skills\n+10 to Energy\nLightning Resist +30%\nDamage Reduced by 7\n+2 Mana after each Kill\n+2 to Light Radius",
     "zhTW": "+1所有技能等級\n+10能量\n+2擊殺法力恢復\n電擊抗性+30%\n傷害降低7\n照亮範圍+2",
@@ -20944,7 +21012,7 @@
     "zhCN": "+(1~1) 所有技能等级\n+10 能量\n闪电抗性 +30%\n伤害降低 7\n+2 每次消灭恢复的法力"
   },
   {
-    "id": 52228,
+    "id": 52232,
     "Key": "dictRunewordName76",
     "enUS": "Love",
     "zhTW": "愛情",
@@ -20961,7 +21029,7 @@
     "zhCN": "爱情"
   },
   {
-    "id": 52229,
+    "id": 52233,
     "Key": "dictRunewordInfo76",
     "enUS": "",
     "zhTW": "",
@@ -20978,7 +21046,7 @@
     "zhCN": ""
   },
   {
-    "id": 52230,
+    "id": 52234,
     "Key": "dictRunewordName77",
     "enUS": "Loyalty",
     "zhTW": "忠誠",
@@ -20995,7 +21063,7 @@
     "zhCN": "忠诚"
   },
   {
-    "id": 52231,
+    "id": 52235,
     "Key": "dictRunewordInfo77",
     "enUS": "",
     "zhTW": "",
@@ -21012,7 +21080,7 @@
     "zhCN": ""
   },
   {
-    "id": 52232,
+    "id": 52236,
     "Key": "dictRunewordName78",
     "enUS": "Lust",
     "zhTW": "慾望",
@@ -21029,7 +21097,7 @@
     "zhCN": "欲望"
   },
   {
-    "id": 52233,
+    "id": 52237,
     "Key": "dictRunewordInfo78",
     "enUS": "",
     "zhTW": "",
@@ -21046,7 +21114,7 @@
     "zhCN": ""
   },
   {
-    "id": 52234,
+    "id": 52238,
     "Key": "dictRunewordName79",
     "enUS": "Madness",
     "zhTW": "瘋狂",
@@ -21063,7 +21131,7 @@
     "zhCN": "疯狂"
   },
   {
-    "id": 52235,
+    "id": 52239,
     "Key": "dictRunewordInfo79",
     "enUS": "",
     "zhTW": "",
@@ -21080,7 +21148,7 @@
     "zhCN": ""
   },
   {
-    "id": 52236,
+    "id": 52240,
     "Key": "dictRunewordName81",
     "enUS": "Malice",
     "zhTW": "怨恨",
@@ -21097,7 +21165,7 @@
     "zhCN": "怨恨"
   },
   {
-    "id": 52237,
+    "id": 52241,
     "Key": "dictRunewordInfo81",
     "enUS": "+33% Enhanced Damage\n+9 to Maximum Damage\n-25% Target Defense\n+50 to Attack Rating\n+100% Chance of Open Wounds\nPrevent Monster Heal\n-100 to Monster Defense Per Hit\nDrain Life -5",
     "zhTW": "+33% 傷害強化\n+9 最大傷害\n+100%機率造成開放傷口\n-25%目標防禦\n擊中使怪物防禦-100\n防止怪物自療\n+50準磪確率\n吸取生命-5",
@@ -21114,7 +21182,7 @@
     "zhCN": "+33% 强化伤害\n+9 最大伤害\n-25% 目标防御\n+50 命中值\n+100% 几率造成开创性伤口\n防止怪物治愈\n-100 每一击降低的怪物防御\n抽取生命 -5"
   },
   {
-    "id": 52238,
+    "id": 52242,
     "Key": "dictRunewordName82",
     "enUS": "Melody",
     "zhTW": "旋律",
@@ -21131,7 +21199,7 @@
     "zhCN": "旋律"
   },
   {
-    "id": 52239,
+    "id": 52243,
     "Key": "dictRunewordInfo82",
     "enUS": "+3 to Bow and Crossbow Skills (Amazon Only)\n+20% Increased Attack Speed\n+50% Enhanced Damage\n+300% Damage to Undead\n+3 to Slow Missiles (Amazon Only)\n+3 to Dodge (Amazon Only)\n+3 to Critical Strike (Amazon Only)\nKnockback\n+10 to Dexterity",
     "zhTW": "+50% 傷害強化\n+300%對不死怪物的傷害\n+3弓與弩技能（只限亞馬遜）\n+3至致命攻勢\n（只限亞馬遜）\n+3至閃躲(只限亞馬遜）\n+3至緩箭術（只限亞馬遜）\n攻擊速度+20%\n+10敏捷\n擊退",
@@ -21148,7 +21216,7 @@
     "zhCN": "+3 弓和弩技能(仅限亚马逊)\n+20% 提高攻击速度\n+50% 强化伤害\n+300% 对亡灵的伤害\n+3 至危险攻击 (仅限亚马逊)\n+3 至闪避 (仅限亚马逊)\n+3 至飞矢减速 (仅限亚马逊)\n击退\n+10 敏捷"
   },
   {
-    "id": 52240,
+    "id": 52244,
     "Key": "dictRunewordName83",
     "enUS": "Memory",
     "zhTW": "記憶",
@@ -21165,7 +21233,7 @@
     "zhCN": "回忆"
   },
   {
-    "id": 52241,
+    "id": 52245,
     "Key": "dictRunewordInfo83",
     "enUS": "",
     "zhTW": "",
@@ -21182,7 +21250,7 @@
     "zhCN": ""
   },
   {
-    "id": 52242,
+    "id": 52246,
     "Key": "dictRunewordName84",
     "enUS": "Mist",
     "zhTW": "迷霧",
@@ -21199,7 +21267,7 @@
     "zhCN": "迷雾"
   },
   {
-    "id": 52243,
+    "id": 52247,
     "Key": "dictRunewordInfo84",
     "enUS": "",
     "zhTW": "",
@@ -21216,7 +21284,7 @@
     "zhCN": ""
   },
   {
-    "id": 52244,
+    "id": 52248,
     "Key": "dictRunewordName85",
     "enUS": "Morning",
     "zhTW": "清晨",
@@ -21233,7 +21301,7 @@
     "zhCN": "清晨"
   },
   {
-    "id": 52245,
+    "id": 52249,
     "Key": "dictRunewordInfo85",
     "enUS": "",
     "zhTW": "",
@@ -21250,7 +21318,7 @@
     "zhCN": ""
   },
   {
-    "id": 52246,
+    "id": 52250,
     "Key": "dictRunewordName86",
     "enUS": "Mystery",
     "zhTW": "神秘",
@@ -21267,7 +21335,7 @@
     "zhCN": "谜题"
   },
   {
-    "id": 52247,
+    "id": 52251,
     "Key": "dictRunewordInfo86",
     "enUS": "",
     "zhTW": "",
@@ -21284,7 +21352,7 @@
     "zhCN": ""
   },
   {
-    "id": 52248,
+    "id": 52252,
     "Key": "dictRunewordName87",
     "enUS": "Myth",
     "zhTW": "神話",
@@ -21301,24 +21369,24 @@
     "zhCN": "神话"
   },
   {
-    "id": 52249,
+    "id": 52253,
     "Key": "dictRunewordInfo87",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "3% Chance to cast level 1 Howl when struck\n10% Chance to cast level 1 Taunt on striking\n+2 to Barbarian Skill Levels\n+30 Defense vs. Missile\nReflensh Life +10\nAttacker Takes Damage of 14\nRequirements -15%",
+    "zhTW": "被擊中時有3%機率施展等級1狂嗥\n擊中時有10%機率施展等級1嘲諷\n+2野蠻人技能等級\n+30對遠程防禦\n生命回復+10\n攻擊者反傷：14\n需求-15%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피격 시 3% 확률로 1 레벨 포효 시전\n타격 시 10% 확률로 1 레벨 도발 시전\n야만용사 기술 레벨 +2\n원거리 공격 방어력 +30\n생명력 회복 +10\n공격자가 피해를 14 받음\n착용 조건 -15%",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "10% 几率在击中时施放1级嘲讽\n3% 几率在被击中时施放1级狂嗥\n+2 野蛮人技能等级\n+30 远程防御\n补充生命 +10\n攻击者受到 14 点伤害\n需求 -15%"
   },
   {
-    "id": 52250,
+    "id": 52254,
     "Key": "dictRunewordName88",
     "enUS": "Nadir",
     "zhTW": "天底",
@@ -21335,7 +21403,7 @@
     "zhCN": "天底"
   },
   {
-    "id": 52251,
+    "id": 52255,
     "Key": "dictRunewordInfo88",
     "enUS": "+50% Enhanced Defense\n+10 Defense\n+30 Defense vs. Missile\n+5 to Strength\n+2 Mana after each Kill\n-33% Extra Gold from Monsters\n-3 to Light Radius\nLevel 13 Cloak of Shadows (9 Charges)",
     "zhTW": "+50%防禦強化\n+10防禦\n+30對遠程防禦\n等級13魔影斗蓬(9 次）\n+2擊殺法力恢復\n+5力量\n怪物金幣掉落量提高-33%\n照亮範圍-3",
@@ -21352,7 +21420,7 @@
     "zhCN": "+50%强化防御\n+10防御\n+30远程防御\n+5力量\n+2每次消灭恢复的法力\n-33%怪物额外掉落金币\n-3照亮范围\n13级暗影斗篷(9/9次充能）"
   },
   {
-    "id": 52252,
+    "id": 52256,
     "Key": "dictRunewordName89",
     "enUS": "Nature's Kingdom",
     "zhTW": "自然王國",
@@ -21369,7 +21437,7 @@
     "zhCN": "自然王国"
   },
   {
-    "id": 52253,
+    "id": 52257,
     "Key": "dictRunewordInfo89",
     "enUS": "",
     "zhTW": "",
@@ -21386,7 +21454,7 @@
     "zhCN": ""
   },
   {
-    "id": 52254,
+    "id": 52258,
     "Key": "dictRunewordName90",
     "enUS": "Night",
     "zhTW": "夜晚",
@@ -21403,7 +21471,7 @@
     "zhCN": "黑夜"
   },
   {
-    "id": 52255,
+    "id": 52259,
     "Key": "dictRunewordInfo90",
     "enUS": "",
     "zhTW": "",
@@ -21420,7 +21488,7 @@
     "zhCN": ""
   },
   {
-    "id": 52256,
+    "id": 52260,
     "Key": "dictRunewordName91",
     "enUS": "Oath",
     "zhTW": "誓約",
@@ -21437,7 +21505,7 @@
     "zhCN": "誓言"
   },
   {
-    "id": 52257,
+    "id": 52261,
     "Key": "dictRunewordInfo91",
     "enUS": "",
     "zhTW": "",
@@ -21454,7 +21522,7 @@
     "zhCN": ""
   },
   {
-    "id": 52258,
+    "id": 52262,
     "Key": "dictRunewordName92",
     "enUS": "Obedience",
     "zhTW": "遵從",
@@ -21471,7 +21539,7 @@
     "zhCN": "顺从"
   },
   {
-    "id": 52259,
+    "id": 52263,
     "Key": "dictRunewordInfo92",
     "enUS": "",
     "zhTW": "",
@@ -21488,7 +21556,7 @@
     "zhCN": ""
   },
   {
-    "id": 52260,
+    "id": 52264,
     "Key": "dictRunewordName93",
     "enUS": "Oblivion",
     "zhTW": "湮沒",
@@ -21505,7 +21573,7 @@
     "zhCN": "湮灭"
   },
   {
-    "id": 52261,
+    "id": 52265,
     "Key": "dictRunewordInfo93",
     "enUS": "",
     "zhTW": "",
@@ -21522,7 +21590,7 @@
     "zhCN": ""
   },
   {
-    "id": 52262,
+    "id": 52266,
     "Key": "dictRunewordName94",
     "enUS": "Obsession",
     "zhTW": "執念",
@@ -21539,7 +21607,7 @@
     "zhCN": "执着"
   },
   {
-    "id": 52263,
+    "id": 52267,
     "Key": "dictRunewordInfo94",
     "enUS": "",
     "zhTW": "",
@@ -21556,7 +21624,7 @@
     "zhCN": ""
   },
   {
-    "id": 52264,
+    "id": 52268,
     "Key": "dictRunewordName95",
     "enUS": "Passion",
     "zhTW": "熱情",
@@ -21573,7 +21641,7 @@
     "zhCN": "热情"
   },
   {
-    "id": 52265,
+    "id": 52269,
     "Key": "dictRunewordInfo95",
     "enUS": "",
     "zhTW": "",
@@ -21590,7 +21658,7 @@
     "zhCN": ""
   },
   {
-    "id": 52266,
+    "id": 52270,
     "Key": "dictRunewordName96",
     "enUS": "Patience",
     "zhTW": "耐心",
@@ -21607,7 +21675,7 @@
     "zhCN": "耐心"
   },
   {
-    "id": 52267,
+    "id": 52271,
     "Key": "dictRunewordInfo96",
     "enUS": "",
     "zhTW": "",
@@ -21624,7 +21692,7 @@
     "zhCN": ""
   },
   {
-    "id": 52268,
+    "id": 52272,
     "Key": "dictRunewordName97",
     "enUS": "Pattern",
     "zhTW": "圖紋",
@@ -21641,7 +21709,7 @@
     "zhCN": "典范"
   },
   {
-    "id": 52269,
+    "id": 52273,
     "Key": "dictRunewordInfo97",
     "enUS": "+30% Faster Block Rate\n+40-80% Enhanced Damage @dictVariable\n@dictBlue 10% Bonus to Attack Rating\nAdds 17-62 fire damage\nAdds 1-50 lightning damage\nAdds 3-14 cold damage\n+75 poison damage over 5 seconds\n+6 to Strength\n+6 to Dexterity\nAll Resistances +15",
     "zhTW": "+30%格擋速度\n+40-80%傷害強化\n10%準確率加成\n附加12-32 火焰傷害\n附加1-50電擊傷害\n附加3-14冰寒傷害\n+75毒素傷害，時效5秒\n+6力量\n+6敏捷\n所有抗性+15",
@@ -21658,7 +21726,7 @@
     "zhCN": "+30% 更快速格挡\n+(40~80)% 强化伤害\n10% 加成命中值\n+ 12-32 火焰伤害\n+ 1-50 闪电伤害\n+ 3-14 冰霜伤害\n+75 毒素伤害，持续5秒\n+6 力量\n+6 敏捷\n+15 所有抗性"
   },
   {
-    "id": 52270,
+    "id": 52274,
     "Key": "dictRunewordName98",
     "enUS": "Peace",
     "zhTW": "和平",
@@ -21675,24 +21743,24 @@
     "zhCN": "平和"
   },
   {
-    "id": 52271,
+    "id": 52275,
     "Key": "dictRunewordInfo98",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "4% Chance to cast level 5 Slow Missiles when struck\n2% Chance to cast level 15 Valkyrie on striking\n+2 to Amazon Skill Levels\n+20% Faster Hit Recovery\n+2 Critical Strike\nCold Resist +30%\nAttacker Takes Damage of 14",
+    "zhTW": "被擊中時有4%機率施展等級5緩箭術\n擊中時有2%機率施展等級15女武神\n+2亞馬遜技能等級\n+20%打擊恢復\n+2至致命攻勢\n冰寒抗性+30%\n攻擊者反傷：14",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피격 시 4% 확률로 5 레벨 투사체 감속 시전\n타격 시 2% 확률로 15 레벨 발키리 시전\n아마존 기술 레벨 +2\n타격 회복 속도 +20%\n+2 치명타\n냉기 저항 +30%\n공격자가 피해를 14 받음",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "2% 几率在击中时施放15级女武神\n4% 几率在被击中时施放5级飞矢减速\n+2 亚马逊技能等级\n+20% 更快速打击回复\n+2 至危险攻击\n冰霜抗性 +30%\n攻击者受到 14 点伤害"
   },
   {
-    "id": 52272,
+    "id": 52276,
     "Key": "dictRunewordName99",
     "enUS": "Voice of Reason",
     "zhTW": "理性之聲",
@@ -21709,7 +21777,7 @@
     "zhCN": "理智之声"
   },
   {
-    "id": 52273,
+    "id": 52277,
     "Key": "dictRunewordInfo99",
     "enUS": "",
     "zhTW": "",
@@ -21726,7 +21794,7 @@
     "zhCN": ""
   },
   {
-    "id": 52274,
+    "id": 52278,
     "Key": "dictRunewordName100",
     "enUS": "Penitence",
     "zhTW": "懺悔",
@@ -21743,7 +21811,7 @@
     "zhCN": "忏悔"
   },
   {
-    "id": 52275,
+    "id": 52279,
     "Key": "dictRunewordInfo100",
     "enUS": "",
     "zhTW": "",
@@ -21760,7 +21828,7 @@
     "zhCN": ""
   },
   {
-    "id": 52276,
+    "id": 52280,
     "Key": "dictRunewordName101",
     "enUS": "Peril",
     "zhTW": "危害",
@@ -21777,7 +21845,7 @@
     "zhCN": "灾劫"
   },
   {
-    "id": 52277,
+    "id": 52281,
     "Key": "dictRunewordInfo101",
     "enUS": "",
     "zhTW": "",
@@ -21794,7 +21862,7 @@
     "zhCN": ""
   },
   {
-    "id": 52278,
+    "id": 52282,
     "Key": "dictRunewordName102",
     "enUS": "Pestilence",
     "zhTW": "疫病",
@@ -21811,7 +21879,7 @@
     "zhCN": "疾病"
   },
   {
-    "id": 52279,
+    "id": 52283,
     "Key": "dictRunewordInfo102",
     "enUS": "",
     "zhTW": "",
@@ -21828,7 +21896,7 @@
     "zhCN": ""
   },
   {
-    "id": 52280,
+    "id": 52284,
     "Key": "dictRunewordName103",
     "enUS": "Phoenix",
     "zhTW": "鳳凰",
@@ -21845,7 +21913,7 @@
     "zhCN": "凤凰"
   },
   {
-    "id": 52281,
+    "id": 52285,
     "Key": "dictRunewordInfo103",
     "enUS": "",
     "zhTW": "",
@@ -21862,7 +21930,7 @@
     "zhCN": ""
   },
   {
-    "id": 52282,
+    "id": 52286,
     "Key": "dictRunewordName104",
     "enUS": "Piety",
     "zhTW": "虔誠",
@@ -21879,7 +21947,7 @@
     "zhCN": "虔敬"
   },
   {
-    "id": 52283,
+    "id": 52287,
     "Key": "dictRunewordInfo104",
     "enUS": "",
     "zhTW": "",
@@ -21896,7 +21964,7 @@
     "zhCN": ""
   },
   {
-    "id": 52284,
+    "id": 52288,
     "Key": "dictRunewordName105",
     "enUS": "Pillar of Faith",
     "zhTW": "信念之柱",
@@ -21913,7 +21981,7 @@
     "zhCN": "信念之柱"
   },
   {
-    "id": 52285,
+    "id": 52289,
     "Key": "dictRunewordInfo105",
     "enUS": "",
     "zhTW": "",
@@ -21930,7 +21998,7 @@
     "zhCN": ""
   },
   {
-    "id": 52286,
+    "id": 52290,
     "Key": "dictRunewordName106",
     "enUS": "Plague",
     "zhTW": "瘟疫",
@@ -21947,7 +22015,7 @@
     "zhCN": "瘟疫"
   },
   {
-    "id": 52287,
+    "id": 52291,
     "Key": "dictRunewordInfo106",
     "enUS": "25% Chance to cast level 15 Poison Nova on striking\n20% Chance to cast level 12 Lower Resist when struck\nLevel 13-17 Cleansing Aura When Equipped @dictVariable\n@dictBlue +1 to All Skills-2 @dictVariable\n@dictBlue +20% Increased Attack Speed\n+220-320% Enhanced Damage @dictVariable\n@dictBlue -23% to Enemy Poison Resistance\n+0-29% Deadly Strike (Based on Character Level)\n+25% Chance of Open Wounds\nFreezes Target +3",
     "zhTW": "被擊中時有20%機率施展等級12降低抗性\n擊中時有25%機率施展等級15劇毒新星\n裝備時賦予等級13-17淨化靈氣\n+1-2所有技能\n攻擊速度+20%\n+220-320%傷害強化\n敵人毒素抗性-23%\n+(0-37)%致命打擊(依角色等級而定）[0.375*clvl]\n+25%機率造成開放傷口\n凍結目標+3",
@@ -21964,7 +22032,7 @@
     "zhCN": "20% 几率在被击中时施放12级降低抗性\n25% 几率在击中时施放15级剧毒新星\n装备时获得(13~17)级净化光环\n+(1~2) 所有技能等级\n+20% 提高攻击速度\n+(220~320)% 强化伤害\n-23% 敌人的毒素抗性\n+(0~37)% 致死打击(基于角色等级)\n+25% 几率造成开创性伤口\n冻结目标"
   },
   {
-    "id": 52288,
+    "id": 52292,
     "Key": "dictRunewordName107",
     "enUS": "Praise",
     "zhTW": "頌揚",
@@ -21981,7 +22049,7 @@
     "zhCN": "赞美"
   },
   {
-    "id": 52289,
+    "id": 52293,
     "Key": "dictRunewordInfo107",
     "enUS": "",
     "zhTW": "",
@@ -21998,7 +22066,7 @@
     "zhCN": ""
   },
   {
-    "id": 52290,
+    "id": 52294,
     "Key": "dictRunewordName108",
     "enUS": "Prayer",
     "zhTW": "祈禱",
@@ -22015,7 +22083,7 @@
     "zhCN": "祈祷"
   },
   {
-    "id": 52291,
+    "id": 52295,
     "Key": "dictRunewordInfo108",
     "enUS": "",
     "zhTW": "",
@@ -22032,7 +22100,7 @@
     "zhCN": ""
   },
   {
-    "id": 52292,
+    "id": 52296,
     "Key": "dictRunewordName109",
     "enUS": "Pride",
     "zhTW": "驕傲",
@@ -22049,7 +22117,7 @@
     "zhCN": "骄傲"
   },
   {
-    "id": 52293,
+    "id": 52297,
     "Key": "dictRunewordInfo109",
     "enUS": "",
     "zhTW": "",
@@ -22066,7 +22134,7 @@
     "zhCN": ""
   },
   {
-    "id": 52294,
+    "id": 52298,
     "Key": "dictRunewordName110",
     "enUS": "Principle",
     "zhTW": "原則",
@@ -22083,24 +22151,24 @@
     "zhCN": "信条"
   },
   {
-    "id": 52295,
+    "id": 52299,
     "Key": "dictRunewordInfo110",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "100% Chance to cast level 5 Holy Bolt on striking\n+2 to Paladin Skill Levels\n+50% Damage to Undead\n+100-150 to Life @dictVariable\n@dictBlue 15% Slower Stamina Drain\n+5% to Maximum Poison Resist\nFire Resist +30%",
+    "zhTW": "擊中時有100%機率施展等級5聖光彈\n+2聖騎士技能等級\n+50%對不死怪物的傷害\n+100-150生命\n精力消耗減緩15%\n毒素抗性上限+5%\n火焰抗性+30%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 시 100% 확률로 5 레벨 신성한 빛줄기 시전\n성기사 기술 레벨 +2\n언데드에게 주는 피해 +50%\n생명력 +100~150 @dictVariable\n@dictBlue 지구력 고갈 속도 15% 감소\n최대 독 저항 +5%\n화염 저항 +30%",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "100% 几率在击中时施放5级圣光弹\n+2 圣骑士技能等级\n+50% 对亡灵的伤害\n+(100~150) 生命\n15% 降低耐力消耗\n+5% 毒素抗性上限\n火焰抗性 +30%"
   },
   {
-    "id": 52296,
+    "id": 52300,
     "Key": "dictRunewordName111",
     "enUS": "Prowess in Battle",
     "zhTW": "勇戰之力",
@@ -22117,7 +22185,7 @@
     "zhCN": "战力"
   },
   {
-    "id": 52297,
+    "id": 52301,
     "Key": "dictRunewordInfo111",
     "enUS": "",
     "zhTW": "",
@@ -22134,7 +22202,7 @@
     "zhCN": ""
   },
   {
-    "id": 52298,
+    "id": 52302,
     "Key": "dictRunewordName112",
     "enUS": "Prudence",
     "zhTW": "謹慎",
@@ -22151,7 +22219,7 @@
     "zhCN": "谨慎"
   },
   {
-    "id": 52299,
+    "id": 52303,
     "Key": "dictRunewordInfo112",
     "enUS": "+25% Faster Hit Recovery\n+140-170% Enhanced Defense @dictVariable\n@dictBlue All Resistances +25-35 @dictVariable\n@dictBlue Damage Reduced by 3\nMagic Damage Reduced by 17\n+2 Mana after each Kill\n+1 to Light Radius\nRepairs 1 durability in 4 seconds",
     "zhTW": "+25%打擊恢復\n+140-170%防禦強化\n所有抗性+25-35\n傷害降低3\n魔法傷害降低17\n+2擊殺法力恢復\n照亮範圍+1\n每4秒修復1點耐久度",
@@ -22168,7 +22236,7 @@
     "zhCN": "+25% 更快速打击回复\n+(140~170)% 强化防御\n伤害降低 3\n魔法伤害降低 17\n+2 每次消灭恢复的法力\n+1 照亮范围\n每 4 秒修复 1 点耐久度\n+(25~35) 所有抗性"
   },
   {
-    "id": 52300,
+    "id": 52304,
     "Key": "dictRunewordName113",
     "enUS": "Punishment",
     "zhTW": "懲罰",
@@ -22185,7 +22253,7 @@
     "zhCN": "惩罚"
   },
   {
-    "id": 52301,
+    "id": 52305,
     "Key": "dictRunewordInfo113",
     "enUS": "",
     "zhTW": "",
@@ -22202,7 +22270,7 @@
     "zhCN": ""
   },
   {
-    "id": 52302,
+    "id": 52306,
     "Key": "dictRunewordName114",
     "enUS": "Purity",
     "zhTW": "純潔",
@@ -22219,7 +22287,7 @@
     "zhCN": "纯洁"
   },
   {
-    "id": 52303,
+    "id": 52307,
     "Key": "dictRunewordInfo114",
     "enUS": "",
     "zhTW": "",
@@ -22236,7 +22304,7 @@
     "zhCN": ""
   },
   {
-    "id": 52304,
+    "id": 52308,
     "Key": "dictRunewordName115",
     "enUS": "Question",
     "zhTW": "疑問",
@@ -22253,7 +22321,7 @@
     "zhCN": "质问"
   },
   {
-    "id": 52305,
+    "id": 52309,
     "Key": "dictRunewordInfo115",
     "enUS": "",
     "zhTW": "",
@@ -22270,7 +22338,7 @@
     "zhCN": ""
   },
   {
-    "id": 52306,
+    "id": 52310,
     "Key": "dictRunewordName116",
     "enUS": "Radiance",
     "zhTW": "光輝",
@@ -22287,24 +22355,24 @@
     "zhCN": "光辉"
   },
   {
-    "id": 52307,
+    "id": 52311,
     "Key": "dictRunewordInfo116",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+75% Enhanced Defense\n+30 Defense vs. Missile\n+10 to Vitality\n+10 to Energy\n+33 to Mana\nDamage Reduced by 7\nMagic Damage Reduced by 3\n+15% Damage Taken Goes To Mana\n+5 to Light Radius",
+    "zhTW": "+75% 防禦強化\n+30 對遠程防禦\n+10 能量\n+10 體能\n+15%受到的傷害轉為法力\n魔法傷害降低3\n+33法力\n傷害降低7\n照亮範圍+5",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "방어력 +75% 증가\n원거리 공격 방어력 +30\n활력 +10\n마력 +10\n마나 +33\n피해 7 감소\n마법 피해 3 감소\n받는 피해의 +15%만큼 마나 회복\n시야 +5",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+75% 强化防御\n+30 远程防御\n+10 活力\n+10 能量\n+33 法力\n伤害降低 7\n魔法伤害降低 3\n+15% 受到的伤害转换为法力\n+5 照亮范围"
   },
   {
-    "id": 52308,
+    "id": 52312,
     "Key": "dictRunewordName117",
     "enUS": "Rain",
     "zhTW": "降雨",
@@ -22321,24 +22389,24 @@
     "zhCN": "暴雨"
   },
   {
-    "id": 52309,
+    "id": 52313,
     "Key": "dictRunewordInfo117",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "5% Chance to cast level 15 Cyclone Armor when struck\n5% Chance to cast level 15 Twister on striking\n+2 to Druid Skill Levels\n+100-150 to Mana @dictVariable\n@dictBlue Lightning Resist +30%\nMagic Damage Reduced by 7\n+15% Damage Taken Goes To Mana",
+    "zhTW": "被擊中時有5%機率施展等級15氣旋護甲\n擊中時有5%機率施展等級15旋風術\n+2 德魯伊技能等級\n+100-150法力\n電擊抗性+30%\n魔法傷害降低7\n+15%受到的傷害轉為法力",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피격 시 5% 확률로 15 레벨 회오리 갑옷 시전\n타격 시 5% 확률로 15 레벨 돌개바람 시전\n드루이드 기술 레벨 +2\n마나 +100~150 @dictVariable\n@dictBlue 번개 저항 +30%\n마법 피해 7 감소\n받는 피해의 +15%만큼 마나 회복",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "5% 几率在击中时施放15级小旋风\n5% 几率在被击中时施放15级气旋护甲\n+2 德鲁伊技能等级\n+(100~150) 法力\n闪电抗性 +30%\n魔法伤害降低 7\n+15% 受到的伤害转换为法力"
   },
   {
-    "id": 52310,
+    "id": 52314,
     "Key": "dictRunewordName118",
     "enUS": "Reason",
     "zhTW": "理由",
@@ -22355,7 +22423,7 @@
     "zhCN": "理性"
   },
   {
-    "id": 52311,
+    "id": 52315,
     "Key": "dictRunewordInfo118",
     "enUS": "",
     "zhTW": "",
@@ -22372,7 +22440,7 @@
     "zhCN": ""
   },
   {
-    "id": 52312,
+    "id": 52316,
     "Key": "dictRunewordName119",
     "enUS": "Red",
     "zhTW": "鮮紅",
@@ -22389,7 +22457,7 @@
     "zhCN": "绯红"
   },
   {
-    "id": 52313,
+    "id": 52317,
     "Key": "dictRunewordInfo119",
     "enUS": "",
     "zhTW": "",
@@ -22406,7 +22474,7 @@
     "zhCN": ""
   },
   {
-    "id": 52314,
+    "id": 52318,
     "Key": "dictRunewordName120",
     "enUS": "Rhyme",
     "zhTW": "聲韻",
@@ -22423,7 +22491,7 @@
     "zhCN": "韵律"
   },
   {
-    "id": 52315,
+    "id": 52319,
     "Key": "dictRunewordInfo120",
     "enUS": "+40% Faster Block Rate\n20% Increased Chance of Blocking\nRegenerate Mana 15%\nAll Resistances +25\nCannot Be Frozen\n50% Extra Gold from Monsters\n25% Better Chance of Getting Magic Items",
     "zhTW": "格擋機率提高20%\n+40%格擋速度\n所有抗性+25\n法力恢復15%\n無法凍結\n怪物金幣掉落量提高50%\n尋獲魔法物品機率提高25%",
@@ -22440,7 +22508,7 @@
     "zhCN": "+40% 更快速格挡\n20% 格挡几率提高\n15% 法力回复\n无法被冻结\n50% 怪物额外掉落金币\n25% 额外几率获得魔法物品\n+25 所有抗性"
   },
   {
-    "id": 52316,
+    "id": 52320,
     "Key": "dictRunewordName121",
     "enUS": "Rift",
     "zhTW": "裂隙",
@@ -22457,7 +22525,7 @@
     "zhCN": "裂隙"
   },
   {
-    "id": 52317,
+    "id": 52321,
     "Key": "dictRunewordInfo121",
     "enUS": "",
     "zhTW": "",
@@ -22474,7 +22542,7 @@
     "zhCN": ""
   },
   {
-    "id": 52318,
+    "id": 52322,
     "Key": "dictRunewordName122",
     "enUS": "Sanctuary",
     "zhTW": "聖堂",
@@ -22491,24 +22559,24 @@
     "zhCN": "庇护"
   },
   {
-    "id": 52319,
+    "id": 52323,
     "Key": "dictRunewordInfo122",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+20% Faster Hit Recovery\n+20% Faster Block Rate\n20% Increased Chance of Blocking\n+130-160% Enhanced Defense @dictVariable\n@dictBlue +250 Defense vs. Missile\n+20 to Dexterity\nAll Resistances +50-70 @dictVariable\n@dictBlue Magic Damage Reduced by 7\nLevel 12 Slow Missiles (60 Charges)",
+    "zhTW": "+20%打擊恢復\n+20%格擋速度\n格擋機率提高20%\n+130-160%防禦強化\n+250對遠程防禦\n+20敏捷\n所有抗性+50-70\n魔法傷害降低7\n等級12緩箭術(60 次）",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 회복 속도 +20%\n막기 속도 +20%\n막기 확률 20% 증가\n방어력 +130~160% 증가 @dictVariable\n@dictBlue 원거리 공격 방어력 +250\n민첩 +20\n모든 저항 +50~70 @dictVariable\n@dictBlue 마법 피해 7 감소\n12 레벨 투사체 감속 (충전 60회)",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+20% 更快速打击回复\n+20% 更快速格挡\n20% 格挡几率提高\n+(130~160)% 强化防御\n+250 远程防御\n+20 敏捷\n魔法伤害降低 7\n12级飞矢减速 (60/60 次充能)\n+(50~70) 所有抗性"
   },
   {
-    "id": 52320,
+    "id": 52324,
     "Key": "dictRunewordName123",
     "enUS": "Serendipity",
     "zhTW": "機緣",
@@ -22525,7 +22593,7 @@
     "zhCN": "奇遇"
   },
   {
-    "id": 52321,
+    "id": 52325,
     "Key": "dictRunewordInfo123",
     "enUS": "",
     "zhTW": "",
@@ -22542,7 +22610,7 @@
     "zhCN": ""
   },
   {
-    "id": 52322,
+    "id": 52326,
     "Key": "dictRunewordName124",
     "enUS": "Shadow",
     "zhTW": "暗影",
@@ -22559,7 +22627,7 @@
     "zhCN": "阴影"
   },
   {
-    "id": 52323,
+    "id": 52327,
     "Key": "dictRunewordInfo124",
     "enUS": "",
     "zhTW": "",
@@ -22576,7 +22644,7 @@
     "zhCN": ""
   },
   {
-    "id": 52324,
+    "id": 52328,
     "Key": "dictRunewordName125",
     "enUS": "Shadow of Doubt",
     "zhTW": "懷疑之影",
@@ -22593,7 +22661,7 @@
     "zhCN": "疑虑之影"
   },
   {
-    "id": 52325,
+    "id": 52329,
     "Key": "dictRunewordInfo125",
     "enUS": "",
     "zhTW": "",
@@ -22610,7 +22678,7 @@
     "zhCN": ""
   },
   {
-    "id": 52326,
+    "id": 52330,
     "Key": "dictRunewordName126",
     "enUS": "Silence",
     "zhTW": "寂靜",
@@ -22627,7 +22695,7 @@
     "zhCN": "沉默"
   },
   {
-    "id": 52327,
+    "id": 52331,
     "Key": "dictRunewordInfo126",
     "enUS": "",
     "zhTW": "",
@@ -22644,7 +22712,7 @@
     "zhCN": ""
   },
   {
-    "id": 52328,
+    "id": 52332,
     "Key": "dictRunewordName127",
     "enUS": "Siren's Song",
     "zhTW": "賽蓮之歌",
@@ -22661,7 +22729,7 @@
     "zhCN": "海妖之歌"
   },
   {
-    "id": 52329,
+    "id": 52333,
     "Key": "dictRunewordInfo127",
     "enUS": "",
     "zhTW": "",
@@ -22678,7 +22746,7 @@
     "zhCN": ""
   },
   {
-    "id": 52330,
+    "id": 52334,
     "Key": "dictRunewordName128",
     "enUS": "Smoke",
     "zhTW": "煙霧",
@@ -22695,7 +22763,7 @@
     "zhCN": "烟雾"
   },
   {
-    "id": 52331,
+    "id": 52335,
     "Key": "dictRunewordInfo128",
     "enUS": "+20% Faster Hit Recovery\n+75% Enhanced Defense\n+280 Defense vs. Missile\n+10 to Energy\nAll Resistances +50\n-1 to Light Radius\nLevel 6 Weaken (18 Charges)",
     "zhTW": "+75%防禦強化\n+280對遠程防禦\n所有抗性+50\n+20%打擊恢復\n等級б削弱（(18 次）\n+10能量\n照亮範圍-1",
@@ -22712,7 +22780,7 @@
     "zhCN": "+20% 更快速打击回复\n+75% 强化防御\n+280 远程防御\n+10 能量\n-1 照亮范围\n6级削弱 (18/18 次充能)\n+50 所有抗性"
   },
   {
-    "id": 52332,
+    "id": 52336,
     "Key": "dictRunewordName129",
     "enUS": "Sorrow",
     "zhTW": "哀傷",
@@ -22729,7 +22797,7 @@
     "zhCN": "悲伤"
   },
   {
-    "id": 52333,
+    "id": 52337,
     "Key": "dictRunewordInfo129",
     "enUS": "",
     "zhTW": "",
@@ -22746,7 +22814,7 @@
     "zhCN": ""
   },
   {
-    "id": 52334,
+    "id": 52338,
     "Key": "dictRunewordName130",
     "enUS": "Spirit",
     "zhTW": "精神",
@@ -22763,7 +22831,7 @@
     "zhCN": "精神"
   },
   {
-    "id": 52335,
+    "id": 52339,
     "Key": "dictRunewordInfo130",
     "enUS": "",
     "zhTW": "",
@@ -22780,7 +22848,7 @@
     "zhCN": ""
   },
   {
-    "id": 52336,
+    "id": 52340,
     "Key": "dictRunewordName131",
     "enUS": "Splendor",
     "zhTW": "燦爛",
@@ -22797,7 +22865,7 @@
     "zhCN": "壮美"
   },
   {
-    "id": 52337,
+    "id": 52341,
     "Key": "dictRunewordInfo131",
     "enUS": "+1 to All Skills\n+10% Faster Cast Rate\n+20% Faster Block Rate\n+60-100% Enhanced Defense @dictVariable\n@dictBlue +10 to Energy\nRegenerate Mana 15%\n50% Extra Gold from Monsters\n20% Better Chance of Getting Magic Items\n+3 to Light Radius",
     "zhTW": "+1所有技能\n+10%施法速度\n+20%格擋速度\n+60-100%防禦強化\n+10能量\n法力恢復15%\n怪物金幣掉落量提高50%\n尋獲魔法物品機率提高20%\n照亮範圍+3",
@@ -22814,7 +22882,7 @@
     "zhCN": "+(1~1) 所有技能等级\n+10% 更快速施法\n+20% 更快速格挡\n+(60~100)% 强化防御\n+10 能量\n15% 法力回复\n50% 怪物额外掉落金币\n20% 额外几率获得魔法物品\n+3 照亮范围"
   },
   {
-    "id": 52338,
+    "id": 52342,
     "Key": "dictRunewordName132",
     "enUS": "Starlight",
     "zhTW": "星光",
@@ -22831,7 +22899,7 @@
     "zhCN": "星光"
   },
   {
-    "id": 52339,
+    "id": 52343,
     "Key": "dictRunewordInfo132",
     "enUS": "",
     "zhTW": "",
@@ -22848,7 +22916,7 @@
     "zhCN": ""
   },
   {
-    "id": 52340,
+    "id": 52344,
     "Key": "dictRunewordName133",
     "enUS": "Stealth",
     "zhTW": "隱密",
@@ -22865,7 +22933,7 @@
     "zhCN": "隐秘"
   },
   {
-    "id": 52341,
+    "id": 52345,
     "Key": "dictRunewordInfo133",
     "enUS": "+25% Faster Run/Walk\n+25% Faster Cast Rate\n+25% Faster Hit Recovery\n+6 to Dexterity\nRegenerate Mana 15%\n+15 Maximum Stamina\nPoison Resist +30%\nMagic Damage Reduced by 3",
     "zhTW": "魔法傷害降低3\n+6 敏捷\n+15精力上限\n毒素抗性+30%\n法力恢復15%\n+25%跑步/行走速度\n+25%施法速度\n+25%打擊恢復",
@@ -22882,7 +22950,7 @@
     "zhCN": "+25%更快速跑步/步行\n+25%更快速施法\n+25% 更快速打击回复\n+6敏捷\n15% 法力回复\n+15 最大耐力\n毒素抗性+30%\n魔法伤害降低3"
   },
   {
-    "id": 52342,
+    "id": 52346,
     "Key": "dictRunewordName134",
     "enUS": "Steel",
     "zhTW": "鋼鐵",
@@ -22899,7 +22967,7 @@
     "zhCN": "钢铁"
   },
   {
-    "id": 52343,
+    "id": 52347,
     "Key": "dictRunewordInfo134",
     "enUS": "+25% Increased Attack Speed\n+20% Enhanced Damage\n+3 to Minimum Damage\n+3 to Maximum Damage\n+50 to Attack Rating\n+50% Chance of Open Wounds\n+2 Mana after each Kill\n+1 to Light Radius",
     "zhTW": "+20%傷害強化\n+3 最小傷害\n+3最大傷害\n+50準確率\n+50%機率造成開放傷口\n攻擊速度+25%\n+2 擊殺法力恢復\n照亮範圍+1",
@@ -22916,7 +22984,7 @@
     "zhCN": "+25% 提高攻击速度\n+20%强化伤害\n+3最小伤害\n+3最大伤害\n+50命中值\n+50%几率造成开创性伤口\n+2每次消灭恢复的法力\n+1照亮范围"
   },
   {
-    "id": 52344,
+    "id": 52348,
     "Key": "dictRunewordName135",
     "enUS": "Still Water",
     "zhTW": "寂靜之水",
@@ -22933,7 +23001,7 @@
     "zhCN": "止水"
   },
   {
-    "id": 52345,
+    "id": 52349,
     "Key": "dictRunewordInfo135",
     "enUS": "",
     "zhTW": "",
@@ -22950,7 +23018,7 @@
     "zhCN": ""
   },
   {
-    "id": 52346,
+    "id": 52350,
     "Key": "dictRunewordName136",
     "enUS": "Sting",
     "zhTW": "螫刺",
@@ -22967,7 +23035,7 @@
     "zhCN": "钉刺"
   },
   {
-    "id": 52347,
+    "id": 52351,
     "Key": "dictRunewordInfo136",
     "enUS": "",
     "zhTW": "",
@@ -22984,7 +23052,7 @@
     "zhCN": ""
   },
   {
-    "id": 52348,
+    "id": 52352,
     "Key": "dictRunewordName137",
     "enUS": "Stone",
     "zhTW": "石塊",
@@ -23001,7 +23069,7 @@
     "zhCN": "磐石"
   },
   {
-    "id": 52349,
+    "id": 52353,
     "Key": "dictRunewordInfo137",
     "enUS": "",
     "zhTW": "",
@@ -23018,7 +23086,7 @@
     "zhCN": ""
   },
   {
-    "id": 52350,
+    "id": 52354,
     "Key": "dictRunewordName138",
     "enUS": "Storm",
     "zhTW": "風暴",
@@ -23035,7 +23103,7 @@
     "zhCN": "风暴"
   },
   {
-    "id": 52351,
+    "id": 52355,
     "Key": "dictRunewordInfo138",
     "enUS": "",
     "zhTW": "",
@@ -23052,7 +23120,7 @@
     "zhCN": ""
   },
   {
-    "id": 52352,
+    "id": 52356,
     "Key": "dictRunewordName139",
     "enUS": "Strength",
     "zhTW": "力量",
@@ -23069,7 +23137,7 @@
     "zhCN": "力量"
   },
   {
-    "id": 52353,
+    "id": 52357,
     "Key": "dictRunewordInfo139",
     "enUS": "+35% Enhanced Damage\n7% Life stolen per hit\n+25% Chance of Crushing Blow\n+20 to Strength\n+10 to Vitality\n+2 Mana after each Kill",
     "zhTW": "+35%傷害強化\n+25%機率造成粉碎打擊\n擊中竊取7%生命\n+2擊殺法力恢復\n+20力量\n+10體能",
@@ -23086,7 +23154,7 @@
     "zhCN": "+35% 强化伤害\n7% 击中时偷取生命\n+25% 几率粉碎打击\n+20 力量\n+10 活力\n+2 每次消灭恢复的法力"
   },
   {
-    "id": 52354,
+    "id": 52358,
     "Key": "dictRunewordName140",
     "enUS": "Tempest",
     "zhTW": "暴風雨",
@@ -23103,7 +23171,7 @@
     "zhCN": "暴风雨"
   },
   {
-    "id": 52355,
+    "id": 52359,
     "Key": "dictRunewordInfo140",
     "enUS": "",
     "zhTW": "",
@@ -23120,7 +23188,7 @@
     "zhCN": ""
   },
   {
-    "id": 52356,
+    "id": 52360,
     "Key": "dictRunewordName141",
     "enUS": "Temptation",
     "zhTW": "誘惑",
@@ -23137,7 +23205,7 @@
     "zhCN": "诱惑"
   },
   {
-    "id": 52357,
+    "id": 52361,
     "Key": "dictRunewordInfo141",
     "enUS": "",
     "zhTW": "",
@@ -23154,7 +23222,7 @@
     "zhCN": ""
   },
   {
-    "id": 52358,
+    "id": 52362,
     "Key": "dictRunewordName142",
     "enUS": "Terror",
     "zhTW": "恐佈",
@@ -23171,7 +23239,7 @@
     "zhCN": "恐惧"
   },
   {
-    "id": 52359,
+    "id": 52363,
     "Key": "dictRunewordInfo142",
     "enUS": "",
     "zhTW": "",
@@ -23188,7 +23256,7 @@
     "zhCN": ""
   },
   {
-    "id": 52360,
+    "id": 52364,
     "Key": "dictRunewordName143",
     "enUS": "Thirst",
     "zhTW": "飢渴",
@@ -23205,7 +23273,7 @@
     "zhCN": "渴求"
   },
   {
-    "id": 52361,
+    "id": 52365,
     "Key": "dictRunewordInfo143",
     "enUS": "",
     "zhTW": "",
@@ -23222,7 +23290,7 @@
     "zhCN": ""
   },
   {
-    "id": 52362,
+    "id": 52366,
     "Key": "dictRunewordName144",
     "enUS": "Thought",
     "zhTW": "思維",
@@ -23239,7 +23307,7 @@
     "zhCN": "思绪"
   },
   {
-    "id": 52363,
+    "id": 52367,
     "Key": "dictRunewordInfo144",
     "enUS": "",
     "zhTW": "",
@@ -23256,7 +23324,7 @@
     "zhCN": ""
   },
   {
-    "id": 52364,
+    "id": 52368,
     "Key": "dictRunewordName145",
     "enUS": "Thunder",
     "zhTW": "雷霆",
@@ -23273,7 +23341,7 @@
     "zhCN": "雷霆"
   },
   {
-    "id": 52365,
+    "id": 52369,
     "Key": "dictRunewordInfo145",
     "enUS": "",
     "zhTW": "",
@@ -23290,7 +23358,7 @@
     "zhCN": ""
   },
   {
-    "id": 52366,
+    "id": 52370,
     "Key": "dictRunewordName146",
     "enUS": "Time",
     "zhTW": "時間",
@@ -23307,7 +23375,7 @@
     "zhCN": "时光"
   },
   {
-    "id": 52367,
+    "id": 52371,
     "Key": "dictRunewordInfo146",
     "enUS": "",
     "zhTW": "",
@@ -23324,7 +23392,7 @@
     "zhCN": ""
   },
   {
-    "id": 52368,
+    "id": 52372,
     "Key": "dictRunewordName147",
     "enUS": "Tradition",
     "zhTW": "傳統",
@@ -23341,7 +23409,7 @@
     "zhCN": "传统"
   },
   {
-    "id": 52369,
+    "id": 52373,
     "Key": "dictRunewordInfo147",
     "enUS": "",
     "zhTW": "",
@@ -23358,7 +23426,7 @@
     "zhCN": ""
   },
   {
-    "id": 52370,
+    "id": 52374,
     "Key": "dictRunewordName148",
     "enUS": "Treachery",
     "zhTW": "背信",
@@ -23375,24 +23443,24 @@
     "zhCN": "背叛"
   },
   {
-    "id": 52371,
+    "id": 52375,
     "Key": "dictRunewordInfo148",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "5% Chance to cast level 15 Fade when struck\n25% Chance to cast level 15 Venom on striking\n+2 to Assassin Skill Levels\n+45% Increased Attack Speed\n+20% Faster Hit Recovery\nCold Resist +30%\n50% Extra Gold from Monsters",
+    "zhTW": "被擊中時有5%機率施展等級15影散\n擊中時有25%機率施展等級15淬毒\n+2刺客技能等級\n攻擊速度+45%\n+20%打擊恢復\n冰寒抗性+30%\n怪物金幣掉落量提高50%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "피격 시 5% 확률로 15 레벨 흐리기 시전\n타격 시 25% 확률로 15 레벨 맹독 시전\n암살자 기술 레벨 +2\n공격 속도 +45%\n타격 회복 속도 +20%\n냉기 저항 +30%\n괴물에게서 얻는 금화 50% 증가",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "25% 几率在击中时施放15级涂毒\n5% 几率在被击中时施放15级消隐\n+2 刺客技能等级\n+45% 提高攻击速度\n+20% 更快速打击回复\n冰霜抗性 +30%\n50% 怪物额外掉落金币"
   },
   {
-    "id": 52372,
+    "id": 52376,
     "Key": "dictRunewordName149",
     "enUS": "Trust",
     "zhTW": "信任",
@@ -23409,7 +23477,7 @@
     "zhCN": "信任"
   },
   {
-    "id": 52373,
+    "id": 52377,
     "Key": "dictRunewordInfo149",
     "enUS": "",
     "zhTW": "",
@@ -23426,7 +23494,7 @@
     "zhCN": ""
   },
   {
-    "id": 52374,
+    "id": 52378,
     "Key": "dictRunewordName150",
     "enUS": "Truth",
     "zhTW": "真理",
@@ -23443,7 +23511,7 @@
     "zhCN": "真理"
   },
   {
-    "id": 52375,
+    "id": 52379,
     "Key": "dictRunewordInfo150",
     "enUS": "",
     "zhTW": "",
@@ -23460,7 +23528,7 @@
     "zhCN": ""
   },
   {
-    "id": 52376,
+    "id": 52380,
     "Key": "dictRunewordName151",
     "enUS": "Unbending Will",
     "zhTW": "不屈意志",
@@ -23477,7 +23545,7 @@
     "zhCN": "不屈之志"
   },
   {
-    "id": 52377,
+    "id": 52381,
     "Key": "dictRunewordInfo151",
     "enUS": "",
     "zhTW": "",
@@ -23494,7 +23562,7 @@
     "zhCN": ""
   },
   {
-    "id": 52378,
+    "id": 52382,
     "Key": "dictRunewordName152",
     "enUS": "Valor",
     "zhTW": "英勇",
@@ -23511,7 +23579,7 @@
     "zhCN": "勇气"
   },
   {
-    "id": 52379,
+    "id": 52383,
     "Key": "dictRunewordInfo152",
     "enUS": "",
     "zhTW": "",
@@ -23528,7 +23596,7 @@
     "zhCN": ""
   },
   {
-    "id": 52380,
+    "id": 52384,
     "Key": "dictRunewordName153",
     "enUS": "Vengeance",
     "zhTW": "復仇",
@@ -23545,7 +23613,7 @@
     "zhCN": "复仇"
   },
   {
-    "id": 52381,
+    "id": 52385,
     "Key": "dictRunewordInfo153",
     "enUS": "",
     "zhTW": "",
@@ -23562,7 +23630,7 @@
     "zhCN": ""
   },
   {
-    "id": 52382,
+    "id": 52386,
     "Key": "dictRunewordName154",
     "enUS": "Venom",
     "zhTW": "劇毒",
@@ -23579,7 +23647,7 @@
     "zhCN": "毒液"
   },
   {
-    "id": 52383,
+    "id": 52387,
     "Key": "dictRunewordInfo154",
     "enUS": "Ignore Target's Defense\n+273 poison damage over 6 seconds\n7% Mana stolen per hit\nPrevent Monster Heal\nHit Causes Monster to Flee +25%\nLevel 13 Poison Nova (11 Charges)\nLevel 15 Poison Explosion (27 Charges)",
     "zhTW": "+25%機率擊中使怪物逃跑\n防止怪物自療\n無視目標防禦\n擊中竊取 7%法力\n等級15毒爆（27次）\n等級13劇毒新星（11次）\n+273毒素傷害，時效6秒",
@@ -23596,7 +23664,7 @@
     "zhCN": "忽略目标的防御\n+273 毒素伤害，持续6秒\n7% 击中时偷取法力\n防止怪物治愈\n+25% 几率命中使怪物逃跑\n15级毒爆 (27/27 次充能)\n13级剧毒新星 (11/11 次充能)"
   },
   {
-    "id": 52384,
+    "id": 52388,
     "Key": "dictRunewordName155",
     "enUS": "Victory",
     "zhTW": "勝利",
@@ -23613,7 +23681,7 @@
     "zhCN": "胜利"
   },
   {
-    "id": 52385,
+    "id": 52389,
     "Key": "dictRunewordInfo155",
     "enUS": "",
     "zhTW": "",
@@ -23630,7 +23698,7 @@
     "zhCN": ""
   },
   {
-    "id": 52386,
+    "id": 52390,
     "Key": "dictRunewordName156",
     "enUS": "Voice",
     "zhTW": "聲音",
@@ -23647,7 +23715,7 @@
     "zhCN": "声音"
   },
   {
-    "id": 52387,
+    "id": 52391,
     "Key": "dictRunewordInfo156",
     "enUS": "",
     "zhTW": "",
@@ -23664,7 +23732,7 @@
     "zhCN": ""
   },
   {
-    "id": 52388,
+    "id": 52392,
     "Key": "dictRunewordName157",
     "enUS": "Void",
     "zhTW": "虛無",
@@ -23681,7 +23749,7 @@
     "zhCN": "虚空"
   },
   {
-    "id": 52389,
+    "id": 52393,
     "Key": "dictRunewordInfo157",
     "enUS": "",
     "zhTW": "",
@@ -23698,7 +23766,7 @@
     "zhCN": ""
   },
   {
-    "id": 52390,
+    "id": 52394,
     "Key": "dictRunewordName158",
     "enUS": "War",
     "zhTW": "戰爭",
@@ -23715,7 +23783,7 @@
     "zhCN": "战争"
   },
   {
-    "id": 52391,
+    "id": 52395,
     "Key": "dictRunewordInfo158",
     "enUS": "",
     "zhTW": "",
@@ -23732,7 +23800,7 @@
     "zhCN": ""
   },
   {
-    "id": 52392,
+    "id": 52396,
     "Key": "dictRunewordName159",
     "enUS": "Water",
     "zhTW": "清水",
@@ -23749,7 +23817,7 @@
     "zhCN": "源水"
   },
   {
-    "id": 52393,
+    "id": 52397,
     "Key": "dictRunewordInfo159",
     "enUS": "",
     "zhTW": "",
@@ -23766,7 +23834,7 @@
     "zhCN": ""
   },
   {
-    "id": 52394,
+    "id": 52398,
     "Key": "dictRunewordName160",
     "enUS": "Wealth",
     "zhTW": "財富",
@@ -23783,24 +23851,24 @@
     "zhCN": "财富"
   },
   {
-    "id": 52395,
+    "id": 52399,
     "Key": "dictRunewordInfo160",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+10 to Dexterity\n+2 Mana after each Kill\n300% Extra Gold from Monsters\n100% Better Chance of Getting Magic Items",
+    "zhTW": "怪物金幣掉落量提高300%\n尋獲魔法物品機率提高100%\n+2擊殺法力恢復\n+10敏捷",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "민첩 +10\n적 처치 시 마나 +2\n괴물에게서 얻는 금화 300% 증가\n마법 아이템 발견 확률 100% 증가",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+10 敏捷\n+2 每次消灭恢复的法力\n300% 怪物额外掉落金币\n100% 额外几率获得魔法物品"
   },
   {
-    "id": 52396,
+    "id": 52400,
     "Key": "dictRunewordName161",
     "enUS": "Whisper",
     "zhTW": "低語",
@@ -23817,7 +23885,7 @@
     "zhCN": "低语"
   },
   {
-    "id": 52397,
+    "id": 52401,
     "Key": "dictRunewordInfo161",
     "enUS": "",
     "zhTW": "",
@@ -23834,7 +23902,7 @@
     "zhCN": ""
   },
   {
-    "id": 52398,
+    "id": 52402,
     "Key": "dictRunewordName162",
     "enUS": "White",
     "zhTW": "蒼白",
@@ -23851,7 +23919,7 @@
     "zhCN": "白色"
   },
   {
-    "id": 52399,
+    "id": 52403,
     "Key": "dictRunewordInfo162",
     "enUS": "+3 to Poison and Bone Skills (Necromancer Only)\n+20% Faster Cast Rate\n+2 to Bone Spear (Necromancer Only)\n+4 to Skeleton Mastery (Necromancer Only)\n+3 to Bone Armor (Necromancer Only)\nHit Causes Monster to Flee +25%\n+10 to Vitality\n+13 to Mana\nMagic Damage Reduced by 4",
     "zhTW": "+25%機率擊中使怪物逃跑\n+10體能\n+3毒素與骸骨技能（只限死靈法師）\n+3至骸骨護甲（只限死靈法師）\n+2至骨矛（只限死靈法師）\n+4至骷髏專精（只限死靈法師）\n魔法傷害降低4\n+20%施法速度\n+13法力",
@@ -23868,7 +23936,7 @@
     "zhCN": "+3 毒素和白骨术(仅限死灵法师)\n+20% 更快速施法\n+3 至尖刺护盾 (仅限死灵法师)\n+2 至骨矛 (仅限死灵法师)\n+4 至亡灵精通 (仅限死灵法师)\n+25% 几率命中使怪物逃跑\n+10 活力\n+13 法力\n魔法伤害降低 4"
   },
   {
-    "id": 52400,
+    "id": 52404,
     "Key": "dictRunewordName163",
     "enUS": "Wind",
     "zhTW": "輕風",
@@ -23885,7 +23953,7 @@
     "zhCN": "疾风"
   },
   {
-    "id": 52401,
+    "id": 52405,
     "Key": "dictRunewordInfo163",
     "enUS": "10% Chance to cast level 9 Tornado on striking\n+20% Faster Run/Walk\n+40% Increased Attack Speed\n+15% Faster Hit Recovery\n+120-160% Enhanced Damage @dictVariable\n@dictBlue -50% Target Defense\n+50 to Attack Rating\nHit Blinds Target\n+1 to Light Radius\nLevel 13 Twister (127 Charges)",
     "zhTW": "擊中時有10%機率施展等級9龍捲風\n+20%跑步/行走速度\n攻擊速度+40%\n+15%打擊恢復\n+120-160%傷害強化\n-50%目標防禦\n+50準確率\n擊中使目標目盲\n照亮範圍+1\n等級13 旋風術(127 次)",
@@ -23902,7 +23970,7 @@
     "zhCN": "10% 几率在击中时施放9级龙卷风\n+20% 更快速跑步/步行\n+40% 提高攻击速度\n+15% 更快速打击回复\n+(120~160)% 强化伤害\n-50% 目标防御\n+50 命中值\n命中可致盲目标\n+1 照亮范围\n13级小旋风 (127/127 次充能)"
   },
   {
-    "id": 52402,
+    "id": 52406,
     "Key": "dictRunewordName164",
     "enUS": "Wings of Hope",
     "zhTW": "希望之翼",
@@ -23919,7 +23987,7 @@
     "zhCN": "希望之翼"
   },
   {
-    "id": 52403,
+    "id": 52407,
     "Key": "dictRunewordInfo164",
     "enUS": "",
     "zhTW": "",
@@ -23936,7 +24004,7 @@
     "zhCN": ""
   },
   {
-    "id": 52404,
+    "id": 52408,
     "Key": "dictRunewordName165",
     "enUS": "Wisdom",
     "zhTW": "智慧",
@@ -23953,24 +24021,24 @@
     "zhCN": "智慧"
   },
   {
-    "id": 52405,
+    "id": 52409,
     "Key": "dictRunewordInfo165",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+33% Piercing Attack\n15-25% Bonus to Attack Rating @dictVariable\n@dictBlue 4-8% Mana stolen per hit @dictVariable\n@dictBlue +30% Enhanced Defense\n+10 to Energy\n15% Slower Stamina Drain\nCannot Be Frozen\n+5 Mana after each Kill\n+15% Damage Taken Goes To Mana",
+    "zhTW": "+33%穿透攻擊\n15-25%準確率加成\n擊中竊取48%法力\n+30%防禦強化\n+10 能量\n精力消耗減緩15%\n無法凍結\n+5擊殺法力恢復\n+15%受到的傷害轉為法力",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "관통 공격 +33%\n명중률 보너스 15~25% @dictVariable\n@dictBlue 적중당 마나 4~8% 훔침 @dictVariable\n@dictBlue 방어력 +30% 증가\n마력 +10\n지구력 고갈 속도 15% 감소\n빙결되지 않음\n적 처치 시 마나 +5\n받는 피해의 +15%만큼 마나 회복",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+33% 穿刺攻击\n(15~25)% 加成命中值\n(4~8)% 击中时偷取法力\n+30% 强化防御\n+10 能量\n15% 降低耐力消耗\n无法被冻结\n+5 每次消灭恢复的法力\n+15% 受到的伤害转换为法力"
   },
   {
-    "id": 52406,
+    "id": 52410,
     "Key": "dictRunewordName166",
     "enUS": "Woe",
     "zhTW": "悲痛",
@@ -23987,7 +24055,7 @@
     "zhCN": "灾祸"
   },
   {
-    "id": 52407,
+    "id": 52411,
     "Key": "dictRunewordInfo166",
     "enUS": "",
     "zhTW": "",
@@ -24004,7 +24072,7 @@
     "zhCN": ""
   },
   {
-    "id": 52408,
+    "id": 52412,
     "Key": "dictRunewordName167",
     "enUS": "Wonder",
     "zhTW": "驚奇",
@@ -24021,7 +24089,7 @@
     "zhCN": "奇迹"
   },
   {
-    "id": 52409,
+    "id": 52413,
     "Key": "dictRunewordInfo167",
     "enUS": "",
     "zhTW": "",
@@ -24038,7 +24106,7 @@
     "zhCN": ""
   },
   {
-    "id": 52410,
+    "id": 52414,
     "Key": "dictRunewordName168",
     "enUS": "Wrath",
     "zhTW": "憤怒",
@@ -24055,7 +24123,7 @@
     "zhCN": "怒火"
   },
   {
-    "id": 52411,
+    "id": 52415,
     "Key": "dictRunewordInfo168",
     "enUS": "",
     "zhTW": "",
@@ -24072,7 +24140,7 @@
     "zhCN": ""
   },
   {
-    "id": 52412,
+    "id": 52416,
     "Key": "dictRunewordName169",
     "enUS": "Youth",
     "zhTW": "年輕",
@@ -24089,7 +24157,7 @@
     "zhCN": "青春"
   },
   {
-    "id": 52413,
+    "id": 52417,
     "Key": "dictRunewordInfo169",
     "enUS": "",
     "zhTW": "",
@@ -24106,7 +24174,7 @@
     "zhCN": ""
   },
   {
-    "id": 52414,
+    "id": 52418,
     "Key": "dictRunewordName170",
     "enUS": "Zephyr",
     "zhTW": "和風",
@@ -24123,7 +24191,7 @@
     "zhCN": "和风"
   },
   {
-    "id": 52415,
+    "id": 52419,
     "Key": "dictRunewordInfo170",
     "enUS": "7% Chance to cast level 1 Twister when struck\n+25% Faster Run/Walk\n+25% Increased Attack Speed\n+33% Enhanced Damage\n-25% Target Defense\n+66 to Attack Rating\nAdds 1-50 lightning damage\n+25 Defense",
     "zhTW": "+33%傷害強化\n+66準確率\n附加1-50電擊傷害\n-25%目標防禦\n+25防禦\n+25%跑步/行走速度\n攻擊速度+25%\n被擊中時有7%機率施展等級1旋風術",
@@ -24140,7 +24208,7 @@
     "zhCN": "7%几率在被击中时施放1级小旋风\n+25%更快速跑步/步行\n+25%提高攻击速度\n+33%强化伤害\n-25%目标防御\n+66命中值\n+1-50闪电伤害\n+25防御"
   },
   {
-    "id": 52416,
+    "id": 52420,
     "Key": "dictRunewordName171",
     "enUS": "Hustle",
     "zhTW": "催促",
@@ -24157,24 +24225,24 @@
     "zhCN": "喧嚣"
   },
   {
-    "id": 52417,
+    "id": 52421,
     "Key": "dictRunewordInfo171",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+65% Faster Run/Walk\n+40% Increased Attack Speed\n+20% Faster Hit Recovery\n+6 Evade\n+10 to Dexterity\n50% Slower Stamina Drain\nAll Resistances +10",
+    "zhTW": "+65%跑步/行走速度\n攻擊速度+40%\n+20%打擊恢復\n+6 至閃避\n精力消耗減緩50%\n所有抗性+10\n+10敏捷",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "달리기/걷기 속도 +65%\n공격 속도 +40%\n타격 회복 속도 +20%\n+6 피하기\n민첩 +10\n지구력 고갈 속도 50% 감소\n모든 저항 +10",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "装备时获得1级狂热光环\n+65% 更快速跑步/步行\n+20% 更快速打击回复\n+6 至回避\n+10 敏捷\n50% 降低耐力消耗\n+10 所有抗性"
   },
   {
-    "id": 52418,
+    "id": 52422,
     "Key": "dictRunewordName172",
     "enUS": "Hustle",
     "zhTW": "催促",
@@ -24191,7 +24259,7 @@
     "zhCN": "喧嚣"
   },
   {
-    "id": 52419,
+    "id": 52423,
     "Key": "dictRunewordInfo172",
     "enUS": "5% Chance to cast level 1 Burst of Speed on striking\nLevel 1 Fanaticism Aura When Equipped\n+30% Increased Attack Speed\n+180-200% Enhanced Damage @dictVariable\n@dictBlue +75% Damage to Undead\n+50 to Attack Rating against Undead\n+10 to Dexterity",
     "zhTW": "擊中時有5%機率施展等級1速度爆發\n裝備時賦予等級1狂熱靈氣\n攻擊速度+30%\n+180-200%傷害強化\n+75%對不死怪物的傷害\n+50對不死怪物的準確率\n+10敏捷",
@@ -24208,7 +24276,7 @@
     "zhCN": "5% 几率在击中时施放1级速度爆发\n装备时获得1级狂热光环\n+30% 提高攻击速度\n+(180~200)% 强化伤害\n+75% 对亡灵的伤害\n+50 对亡灵的命中值\n+10 敏捷"
   },
   {
-    "id": 52420,
+    "id": 52424,
     "Key": "dictRunewordName173",
     "enUS": "Mosaic",
     "zhTW": "嵌飾",
@@ -24225,7 +24293,7 @@
     "zhCN": "模糊"
   },
   {
-    "id": 52421,
+    "id": 52425,
     "Key": "dictRunewordInfo173",
     "enUS": "+50% chance for finishing moves to not consume charges\n+2 to Martial Arts (Assassin Only)\n+20% Increased Attack Speed\n+200-250% Enhanced Damage @dictVariable\n@dictBlue 20% Bonus to Attack Rating\n7% Life stolen per hit\n+8-15% to Cold Skill Damage @dictVariable\n@dictBlue +8-15% to Lightning Skill Damage @dictVariable\n@dictBlue +8-15% to Fire Skill Damage @dictVariable\n@dictBlue Prevent Monster Heal",
     "zhTW": "+50%機率使終結技不消耗集氣的力量\n+2武學技藝（只限刺客）\n攻擊速度+20%\n+200-250%傷害強化\n20%準確率加成\n擊中竊取7%生命\n+8-15%冰寒技能傷害\n+8-15%閃電技能傷害\n+8-15%火焰技能傷害\n防止怪物自療",
@@ -24242,7 +24310,7 @@
     "zhCN": "+50% 几率终结技不消耗充能层数\n+2 武学技艺(仅限刺客)\n+20% 提高攻击速度\n+(200~250)% 强化伤害\n20% 加成命中值\n+(8~15)% 火焰技能伤害\n+(8~15)% 冰霜技能伤害\n+(8~15)% 闪电技能伤害\n7% 击中时偷取生命\n防止怪物治愈"
   },
   {
-    "id": 52422,
+    "id": 52426,
     "Key": "dictRunewordName174",
     "enUS": "Metamorphosis",
     "zhTW": "變化",
@@ -24259,24 +24327,24 @@
     "zhCN": "变形"
   },
   {
-    "id": 52423,
+    "id": 52427,
     "Key": "dictRunewordInfo174",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "Werewolf strikes grant Mark for 180 seconds\nMark of the Wolf\n30% Bonus to Attack Rating\nIncrease Maximum Life 40%\n\nWerebear strikes grant Mark for 180 seconds\nMark of the Bear\n+25% Increased Attack Speed\nPhysical Damage Received Reduced by 20%\n\n+5 to Shape Shifting Skills (Druid Only)\n+25% Chance of Crushing Blow\n+50-80% Enhanced Defense @dictVariable\n@dictBlue +10 to Strength\n+10 to Vitality\nAll Resistances +10\nCannot Be Frozen",
+    "zhTW": "狼人變化的攻擊會賦予印記，持續180秒\n  狼之印記：\n  30%準確率加成\n  生命上限提高40%\n熊人變化的攻擊會賦予印記，持續180秒\n  熊之印記：\n  攻擊速度+25%\n  受到的物理傷害降低20%\n+5變形技能（只限德魯伊）\n+25%機率造成粉碎打擊\n+50-80%防禦強化\n+10力量\n+10 體能\n所有抗性+10\n無法凍結",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "늑대인간 공격이 180초 동안 징표 효과 부여\n늑대의 징표:\n명중률 보너스 30%\n최대 생명력 40% 증가\n\n곰인간 공격이 180초 동안 징표 효과 부여\n곰의 징표:\n공격 속도 +25%\n받는 물리 피해 20% 감소\n\n변신 기술 +5 (드루이드 전용)\n강타 확률 +25%\n방어력 +50~80% 증가 @dictVariable\n@dictBlue 힘 +10\n활력 +10\n모든 저항 +10\n빙결되지 않음",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "击中时施放1级巨熊印记,持续180秒\n  巨熊印记:\n  攻击速度 +25%\n  受到的物理伤害降低 20%\n击中时施放1级恶狼印记,持续180秒\n  恶狼印记:\n  30%命中率加成\n  生命上限提高40%\n+5 变形技能(仅限德鲁伊)\n+25% 几率粉碎打击\n+(50~80)% 强化防御\n+10 力量\n+10 活力\n无法被冻结\n+10 所有抗性"
   },
   {
-    "id": 52424,
+    "id": 52428,
     "Key": "dictRunewordName175",
     "enUS": "Ground",
     "zhTW": "接地",
@@ -24293,24 +24361,24 @@
     "zhCN": "接地"
   },
   {
-    "id": 52425,
+    "id": 52429,
     "Key": "dictRunewordInfo175",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+20% Faster Hit Recovery\n+75-100% Enhanced Defense @dictVariable\n@dictBlue +10 to Vitality\nIncrease Maximum Life 5%\nLightning Resist +40-60% @dictVariable\n@dictBlue Lightning Absorb +10-15% @dictVariable",
+    "zhTW": "+20%打擊恢復\n+75-100%防禦強化\n+10體能\n生命上限提高5%\n電擊抗性+40-60%\n電擊吸收+10-15%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 회복 속도 +20%\n방어력 +75~100% 증가 @dictVariable\n@dictBlue 활력 +10\n최대 생명력 5% 증가\n번개 저항 +40~60% @dictVariable\n@dictBlue 번개 흡수 +10~15% @dictVariable",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+20% 更快速打击回复\n+(75~100)% 强化防御\n+10 活力\n+5% 生命最大值\n闪电抗性 +(40~60)%\n闪电伤害吸收 +(10~15)%"
   },
   {
-    "id": 52426,
+    "id": 52430,
     "Key": "dictRunewordName176",
     "enUS": "Temper",
     "zhTW": "和緩",
@@ -24327,24 +24395,24 @@
     "zhCN": "淬火"
   },
   {
-    "id": 52427,
+    "id": 52431,
     "Key": "dictRunewordInfo176",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+20% Faster Hit Recovery\n+75-100% Enhanced Defense @dictVariable\n@dictBlue +10 to Vitality\nIncrease Maximum Life 5%\nFire Resist +40-60% @dictVariable\n@dictBlue Fire Absorb +10-15% @dictVariable",
+    "zhTW": "+20%打擊恢復\n+75-100%防禦強化\n+10體能\n生命上限提高5%\n火焰抗性+40-60%\n火焰吸收+10-15%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 회복 속도 +20%\n방어력 +75~100% 증가 @dictVariable\n@dictBlue 활력 +10\n최대 생명력 5% 증가\n화염 저항 +40~60% @dictVariable\n@dictBlue 화염 흡수 +10~15% @dictVariable",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+20% 更快速打击回复\n+(75~100)% 强化防御\n+10 活力\n+5% 生命最大值\n火焰抗性 +(40~60)%\n火焰伤害吸收 +(10~15)%"
   },
   {
-    "id": 52428,
+    "id": 52432,
     "Key": "dictRunewordName177",
     "enUS": "Hearth",
     "zhTW": "火爐",
@@ -24361,24 +24429,24 @@
     "zhCN": "壁炉"
   },
   {
-    "id": 52429,
+    "id": 52433,
     "Key": "dictRunewordInfo177",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+20% Faster Hit Recovery\n+75-100% Enhanced Defense @dictVariable\n@dictBlue +10 to Vitality\nIncrease Maximum Life 5%\nCold Resist +40-60% @dictVariable\n@dictBlue Cold Absorb +10-15% @dictVariable\n@dictBlue Cannot Be Frozen",
+    "zhTW": "+20%打擊恢復\n+75-100%防禦強化\n+10體能\n生命上限提高5%\n冰寒抗性+40-60%\n冰寒吸收+10-15%\n無法凍結",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 회복 속도 +20%\n방어력 +75~100% 증가 @dictVariable\n@dictBlue 활력 +10\n최대 생명력 5% 증가\n냉기 저항 +40~60% @dictVariable\n@dictBlue 냉기 흡수 +10~15% @dictVariable\n@dictBlue 빙결되지 않음",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+20% 更快速打击回复\n+(75~100)% 强化防御\n+10 活力\n+5% 生命最大值\n冰霜抗性 +(40~60)%\n冰霜伤害吸收 +(10~15)%\n无法被冻结"
   },
   {
-    "id": 52430,
+    "id": 52434,
     "Key": "dictRunewordName178",
     "enUS": "Cure",
     "zhTW": "治癒",
@@ -24395,24 +24463,24 @@
     "zhCN": "解药"
   },
   {
-    "id": 52431,
+    "id": 52435,
     "Key": "dictRunewordInfo178",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "Level 1 Cleansing Aura When Equipped\n+20% Faster Hit Recovery\n+75-100% Enhanced Defense @dictVariable\n@dictBlue +10 to Vitality\nIncrease Maximum Life 5%\nPoison Resist +40-60% @dictVariable\n@dictBlue Poison Length Reduced by 50%",
+    "zhTW": "裝備時賦予等級1淨化靈氣\n+20%打擊恢復\n+75-100%防禦強化\n+10體能\n生命上限提高5%\n毒素抗性+40-60%\n中毒的時效縮短50%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "장착 시 1 레벨 정화 오라 효과 적용\n타격 회복 속도 +20%\n방어력 +75~100% 증가 @dictVariable\n@dictBlue 활력 +10\n최대 생명력 5% 증가\n독 저항 +40~60% @dictVariable\n@dictBlue 독 지속시간 50% 감소",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "装备时获得1级净化光环\n+20% 更快速打击回复\n+(75~100)% 强化防御\n+10 活力\n+5% 生命最大值\n毒素抗性 +(40~60)%\n中毒时间缩短 50%"
   },
   {
-    "id": 52432,
+    "id": 52436,
     "Key": "dictRunewordName179",
     "enUS": "Bulwark",
     "zhTW": "壁壘",
@@ -24429,24 +24497,24 @@
     "zhCN": "壁垒"
   },
   {
-    "id": 52433,
+    "id": 52437,
     "Key": "dictRunewordInfo179",
-    "enUS": "",
-    "zhTW": "",
+    "enUS": "+20% Faster Hit Recovery\n4-6% Life stolen per hit @dictVariable\n@dictBlue +75-100% Enhanced Defense @dictVariable\n@dictBlue +10 to Vitality\nIncrease Maximum Life 5%\nReflensh Life +30\nDamage Reduced by 7\nPhysical Damage Received Reduced by 10-15% @dictVariable",
+    "zhTW": "+20%打擊恢復\n擊中竊取46%生命\n+75-100%防禦強化\n+10體能\n生命上限提高5%\n生命回復+30\n傷害降低7\n受到的物理傷害降低10-15%",
     "deDE": "",
     "esES": "",
     "frFR": "",
     "itIT": "",
-    "koKR": "",
+    "koKR": "타격 회복 속도 +20%\n적중당 생명력 4~6% 훔침 @dictVariable\n@dictBlue 방어력 +75~100% 증가 @dictVariable\n@dictBlue 활력 +10\n최대 생명력 5% 증가\n생명력 회복 +30\n피해 7 감소\n받는 물리 피해 10~15% 감소 @dictVariable",
     "plPL": "",
     "esMX": "",
     "jaJP": "",
     "ptBR": "",
     "ruRU": "",
-    "zhCN": ""
+    "zhCN": "+20% 更快速打击回复\n(4~6)% 击中时偷取生命\n+(75~100)% 强化防御\n+10 活力\n+5% 生命最大值\n补充生命 +30\n受到的物理伤害降低 (10~15)%\n伤害降低 7"
   },
   {
-    "id": 52434,
+    "id": 52438,
     "Key": "dictSetName1",
     "enUS": "Civerb's Vestments",
     "zhTW": "克維雷布的法衣",
@@ -24463,7 +24531,7 @@
     "zhCN": "希弗伯的法衣"
   },
   {
-    "id": 52435,
+    "id": 52439,
     "Key": "dictSetName2",
     "enUS": "Hsarus' Defense",
     "zhTW": "海沙魯的鐵禦",
@@ -24480,7 +24548,7 @@
     "zhCN": "萨鲁斯的防御"
   },
   {
-    "id": 52436,
+    "id": 52440,
     "Key": "dictSetName3",
     "enUS": "Cleglaw's Brace",
     "zhTW": "克雷德勞的防備",
@@ -24497,7 +24565,7 @@
     "zhCN": "克雷格劳的支柱"
   },
   {
-    "id": 52437,
+    "id": 52441,
     "Key": "dictSetName4",
     "enUS": "Iratha's Finery",
     "zhTW": "依雷撒的華服",
@@ -24514,7 +24582,7 @@
     "zhCN": "艾蕾萨的华服"
   },
   {
-    "id": 52438,
+    "id": 52442,
     "Key": "dictSetName5",
     "enUS": "Isenhart's Armory",
     "zhTW": "依森哈特的軍械",
@@ -24531,7 +24599,7 @@
     "zhCN": "依森哈特的武器库"
   },
   {
-    "id": 52439,
+    "id": 52443,
     "Key": "dictSetName6",
     "enUS": "Vidala's Rig",
     "zhTW": "維達拉的配備",
@@ -24548,7 +24616,7 @@
     "zhCN": "维达拉的配装"
   },
   {
-    "id": 52440,
+    "id": 52444,
     "Key": "dictSetName7",
     "enUS": "Milabrega's Regalia",
     "zhTW": "米拉伯佳戰裝",
@@ -24565,7 +24633,7 @@
     "zhCN": "米拉伯佳的王权"
   },
   {
-    "id": 52441,
+    "id": 52445,
     "Key": "dictSetName8",
     "enUS": "Cathan's Traps",
     "zhTW": "卡珊的衣著",
@@ -24582,7 +24650,7 @@
     "zhCN": "卡珊的计谋"
   },
   {
-    "id": 52442,
+    "id": 52446,
     "Key": "dictSetName9",
     "enUS": "Tancred's Battlegear",
     "zhTW": "坦克雷的戰裝",
@@ -24599,7 +24667,7 @@
     "zhCN": "坦克雷的圣战装"
   },
   {
-    "id": 52443,
+    "id": 52447,
     "Key": "dictSetName10",
     "enUS": "Sigon's Complete Steel",
     "zhTW": "西剛的全套鋼甲",
@@ -24616,7 +24684,7 @@
     "zhCN": "西刚的全身甲胄"
   },
   {
-    "id": 52444,
+    "id": 52448,
     "Key": "dictSetName11",
     "enUS": "Infernal Tools",
     "zhTW": "煉獄器具",
@@ -24633,7 +24701,7 @@
     "zhCN": "地狱工具"
   },
   {
-    "id": 52445,
+    "id": 52449,
     "Key": "dictSetName12",
     "enUS": "Berserker's Arsenal",
     "zhTW": "狂戰士的武裝",
@@ -24650,7 +24718,7 @@
     "zhCN": "狂战士的兵械"
   },
   {
-    "id": 52446,
+    "id": 52450,
     "Key": "dictSetName13",
     "enUS": "Death's Disguise",
     "zhTW": "死亡的偽裝",
@@ -24667,7 +24735,7 @@
     "zhCN": "死神的伪装"
   },
   {
-    "id": 52447,
+    "id": 52451,
     "Key": "dictSetName14",
     "enUS": "Angelic Raiment",
     "zhTW": "天使的衣裝",
@@ -24684,7 +24752,7 @@
     "zhCN": "天使的装束"
   },
   {
-    "id": 52448,
+    "id": 52452,
     "Key": "dictSetName15",
     "enUS": "Arctic Gear",
     "zhTW": "北極裝備",
@@ -24701,7 +24769,7 @@
     "zhCN": "北极装备"
   },
   {
-    "id": 52449,
+    "id": 52453,
     "Key": "dictSetName16",
     "enUS": "Arcanna's Tricks",
     "zhTW": "阿卡娜的詭計",
@@ -24718,7 +24786,7 @@
     "zhCN": "阿卡娜的诡计"
   },
   {
-    "id": 52450,
+    "id": 52454,
     "Key": "dictSetName17",
     "enUS": "Natalya's Odium",
     "zhTW": "娜塔亞的非難",
@@ -24735,7 +24803,7 @@
     "zhCN": "娜塔亚的杀意"
   },
   {
-    "id": 52451,
+    "id": 52455,
     "Key": "dictSetName18",
     "enUS": "Aldur's Watchtower",
     "zhTW": "艾爾多的守衛",
@@ -24752,7 +24820,7 @@
     "zhCN": "艾尔多的警戒塔"
   },
   {
-    "id": 52452,
+    "id": 52456,
     "Key": "dictSetName19",
     "enUS": "Immortal King",
     "zhTW": "不朽之王",
@@ -24769,7 +24837,7 @@
     "zhCN": "不朽之王"
   },
   {
-    "id": 52453,
+    "id": 52457,
     "Key": "dictSetName20",
     "enUS": "Tal Rasha's Wrappings",
     "zhTW": "塔拉夏的外袍",
@@ -24786,7 +24854,7 @@
     "zhCN": "塔·拉夏的裹尸布"
   },
   {
-    "id": 52454,
+    "id": 52458,
     "Key": "dictSetName21",
     "enUS": "Griswold's Legacy",
     "zhTW": "格里斯瓦德的傳奇",
@@ -24803,7 +24871,7 @@
     "zhCN": "格里斯沃尔德的遗产"
   },
   {
-    "id": 52455,
+    "id": 52459,
     "Key": "dictSetName22",
     "enUS": "Trang-Oul's Avatar",
     "zhTW": "塔格奧的化身",
@@ -24820,7 +24888,7 @@
     "zhCN": "塔格奥的化身"
   },
   {
-    "id": 52456,
+    "id": 52460,
     "Key": "dictSetName23",
     "enUS": "M'avina's Battle Hymn",
     "zhTW": "馬維娜之戰鬥詩歌",
@@ -24837,7 +24905,7 @@
     "zhCN": "艾维娜的战斗诗歌"
   },
   {
-    "id": 52457,
+    "id": 52461,
     "Key": "dictSetName24",
     "enUS": "The Disciple",
     "zhTW": "門徒",
@@ -24854,7 +24922,7 @@
     "zhCN": "门徒"
   },
   {
-    "id": 52458,
+    "id": 52462,
     "Key": "dictSetName25",
     "enUS": "Heaven's Brethren",
     "zhTW": "天堂的同胞",
@@ -24871,7 +24939,7 @@
     "zhCN": "天堂同袍"
   },
   {
-    "id": 52459,
+    "id": 52463,
     "Key": "dictSetName26",
     "enUS": "Orphan's Call",
     "zhTW": "孤兒的呼喚",
@@ -24888,7 +24956,7 @@
     "zhCN": "孤儿的号令"
   },
   {
-    "id": 52460,
+    "id": 52464,
     "Key": "dictSetName27",
     "enUS": "Hwanin's Majesty",
     "zhTW": "桓因的威嚴",
@@ -24905,7 +24973,7 @@
     "zhCN": "桓因的威严"
   },
   {
-    "id": 52461,
+    "id": 52465,
     "Key": "dictSetName28",
     "enUS": "Sazabi's Grand Tribute",
     "zhTW": "沙薩比的崇高禮讚",
@@ -24922,7 +24990,7 @@
     "zhCN": "圣·沙略的伟大颂词"
   },
   {
-    "id": 52462,
+    "id": 52466,
     "Key": "dictSetName29",
     "enUS": "Bul-Kathos' Children",
     "zhTW": "布爾凱索的子嗣",
@@ -24939,7 +25007,7 @@
     "zhCN": "布尔凯索的子嗣"
   },
   {
-    "id": 52463,
+    "id": 52467,
     "Key": "dictSetName30",
     "enUS": "Cow King's Leathers",
     "zhTW": "牛王皮甲",
@@ -24956,7 +25024,7 @@
     "zhCN": "牛魔王之革"
   },
   {
-    "id": 52464,
+    "id": 52468,
     "Key": "dictSetName31",
     "enUS": "Naj's Ancient Vestige",
     "zhTW": "娜吉的上古遺物",
@@ -24973,7 +25041,7 @@
     "zhCN": "诺吉的古代遗物"
   },
   {
-    "id": 52465,
+    "id": 52469,
     "Key": "dictSetName32",
     "enUS": "Sander's Folly",
     "zhTW": "山德的愚行",
@@ -24990,7 +25058,7 @@
     "zhCN": "山德的愚行"
   },
   {
-    "id": 52466,
+    "id": 52470,
     "Key": "dictSetName33",
     "enUS": "Warlord's Glory",
     "zhTW": "戰爭領主的榮耀",
@@ -25007,7 +25075,7 @@
     "zhCN": "战争领主的荣耀"
   },
   {
-    "id": 52467,
+    "id": 52471,
     "Key": "dictSetItemName0",
     "enUS": "Civerb's Ward",
     "zhTW": "克維雷布的防護",
@@ -25024,7 +25092,7 @@
     "zhCN": "希弗伯的防护"
   },
   {
-    "id": 52468,
+    "id": 52472,
     "Key": "dictSetItemInfo0",
     "enUS": "",
     "zhTW": "",
@@ -25041,7 +25109,7 @@
     "zhCN": ""
   },
   {
-    "id": 52469,
+    "id": 52473,
     "Key": "dictSetItemName1",
     "enUS": "Civerb's Icon",
     "zhTW": "克維雷布的聖像",
@@ -25058,7 +25126,7 @@
     "zhCN": "希弗伯的圣像"
   },
   {
-    "id": 52470,
+    "id": 52474,
     "Key": "dictSetItemInfo1",
     "enUS": "",
     "zhTW": "",
@@ -25075,7 +25143,7 @@
     "zhCN": ""
   },
   {
-    "id": 52471,
+    "id": 52475,
     "Key": "dictSetItemName2",
     "enUS": "Civerb's Cudgel",
     "zhTW": "克維雷布的短棍",
@@ -25092,7 +25160,7 @@
     "zhCN": "希弗伯的短棍"
   },
   {
-    "id": 52472,
+    "id": 52476,
     "Key": "dictSetItemInfo2",
     "enUS": "",
     "zhTW": "",
@@ -25109,7 +25177,7 @@
     "zhCN": ""
   },
   {
-    "id": 52473,
+    "id": 52477,
     "Key": "dictSetItemName3",
     "enUS": "Hsarus' Iron Heel",
     "zhTW": "海沙魯的鐵跟",
@@ -25126,7 +25194,7 @@
     "zhCN": "萨鲁斯的铁踵"
   },
   {
-    "id": 52474,
+    "id": 52478,
     "Key": "dictSetItemInfo3",
     "enUS": "",
     "zhTW": "",
@@ -25143,7 +25211,7 @@
     "zhCN": ""
   },
   {
-    "id": 52475,
+    "id": 52479,
     "Key": "dictSetItemName4",
     "enUS": "Hsarus' Iron Fist",
     "zhTW": "海沙魯的鐵拳",
@@ -25160,7 +25228,7 @@
     "zhCN": "萨鲁斯的铁拳"
   },
   {
-    "id": 52476,
+    "id": 52480,
     "Key": "dictSetItemInfo4",
     "enUS": "",
     "zhTW": "",
@@ -25177,7 +25245,7 @@
     "zhCN": ""
   },
   {
-    "id": 52477,
+    "id": 52481,
     "Key": "dictSetItemName5",
     "enUS": "Hsarus' Iron Stay",
     "zhTW": "海沙魯的鐵扣",
@@ -25194,7 +25262,7 @@
     "zhCN": "萨鲁斯的铁固腰"
   },
   {
-    "id": 52478,
+    "id": 52482,
     "Key": "dictSetItemInfo5",
     "enUS": "",
     "zhTW": "",
@@ -25211,7 +25279,7 @@
     "zhCN": ""
   },
   {
-    "id": 52479,
+    "id": 52483,
     "Key": "dictSetItemName6",
     "enUS": "Cleglaw's Tooth",
     "zhTW": "克雷德勞之牙",
@@ -25228,7 +25296,7 @@
     "zhCN": "克雷格劳之牙"
   },
   {
-    "id": 52480,
+    "id": 52484,
     "Key": "dictSetItemInfo6",
     "enUS": "",
     "zhTW": "",
@@ -25245,7 +25313,7 @@
     "zhCN": ""
   },
   {
-    "id": 52481,
+    "id": 52485,
     "Key": "dictSetItemName7",
     "enUS": "Cleglaw's Claw",
     "zhTW": "克雷德勞之爪",
@@ -25262,7 +25330,7 @@
     "zhCN": "克雷格劳之爪"
   },
   {
-    "id": 52482,
+    "id": 52486,
     "Key": "dictSetItemInfo7",
     "enUS": "",
     "zhTW": "",
@@ -25279,7 +25347,7 @@
     "zhCN": ""
   },
   {
-    "id": 52483,
+    "id": 52487,
     "Key": "dictSetItemName8",
     "enUS": "Cleglaw's Pincers",
     "zhTW": "克雷德勞之鉗",
@@ -25296,7 +25364,7 @@
     "zhCN": "克雷格劳之钳"
   },
   {
-    "id": 52484,
+    "id": 52488,
     "Key": "dictSetItemInfo8",
     "enUS": "",
     "zhTW": "",
@@ -25313,7 +25381,7 @@
     "zhCN": ""
   },
   {
-    "id": 52485,
+    "id": 52489,
     "Key": "dictSetItemName9",
     "enUS": "Iratha's Collar",
     "zhTW": "依雷撒的項圈",
@@ -25330,7 +25398,7 @@
     "zhCN": "艾蕾萨的护颈圈"
   },
   {
-    "id": 52486,
+    "id": 52490,
     "Key": "dictSetItemInfo9",
     "enUS": "",
     "zhTW": "",
@@ -25347,7 +25415,7 @@
     "zhCN": ""
   },
   {
-    "id": 52487,
+    "id": 52491,
     "Key": "dictSetItemName10",
     "enUS": "Iratha's Cuff",
     "zhTW": "依雷撒的袖銬",
@@ -25364,7 +25432,7 @@
     "zhCN": "艾蕾萨的袖手套"
   },
   {
-    "id": 52488,
+    "id": 52492,
     "Key": "dictSetItemInfo10",
     "enUS": "",
     "zhTW": "",
@@ -25381,7 +25449,7 @@
     "zhCN": ""
   },
   {
-    "id": 52489,
+    "id": 52493,
     "Key": "dictSetItemName11",
     "enUS": "Iratha's Coil",
     "zhTW": "依雷撒的盤頂",
@@ -25398,7 +25466,7 @@
     "zhCN": "艾蕾萨的铁围盔"
   },
   {
-    "id": 52490,
+    "id": 52494,
     "Key": "dictSetItemInfo11",
     "enUS": "",
     "zhTW": "",
@@ -25415,7 +25483,7 @@
     "zhCN": ""
   },
   {
-    "id": 52491,
+    "id": 52495,
     "Key": "dictSetItemName12",
     "enUS": "Iratha's Cord",
     "zhTW": "依雷撒的腰繩",
@@ -25432,7 +25500,7 @@
     "zhCN": "艾蕾萨的束带"
   },
   {
-    "id": 52492,
+    "id": 52496,
     "Key": "dictSetItemInfo12",
     "enUS": "",
     "zhTW": "",
@@ -25449,7 +25517,7 @@
     "zhCN": ""
   },
   {
-    "id": 52493,
+    "id": 52497,
     "Key": "dictSetItemName13",
     "enUS": "Isenhart's Lightbrand",
     "zhTW": "依森哈特的光之烙鐵",
@@ -25466,7 +25534,7 @@
     "zhCN": "依森哈特的光之烙印"
   },
   {
-    "id": 52494,
+    "id": 52498,
     "Key": "dictSetItemInfo13",
     "enUS": "",
     "zhTW": "",
@@ -25483,7 +25551,7 @@
     "zhCN": ""
   },
   {
-    "id": 52495,
+    "id": 52499,
     "Key": "dictSetItemName14",
     "enUS": "Isenhart's Parry",
     "zhTW": "依森哈特的招架",
@@ -25500,7 +25568,7 @@
     "zhCN": "依森哈特的格挡"
   },
   {
-    "id": 52496,
+    "id": 52500,
     "Key": "dictSetItemInfo14",
     "enUS": "",
     "zhTW": "",
@@ -25517,7 +25585,7 @@
     "zhCN": ""
   },
   {
-    "id": 52497,
+    "id": 52501,
     "Key": "dictSetItemName15",
     "enUS": "Isenhart's Case",
     "zhTW": "依森哈特的外殼",
@@ -25534,7 +25602,7 @@
     "zhCN": "依森哈特的胸胄"
   },
   {
-    "id": 52498,
+    "id": 52502,
     "Key": "dictSetItemInfo15",
     "enUS": "",
     "zhTW": "",
@@ -25551,7 +25619,7 @@
     "zhCN": ""
   },
   {
-    "id": 52499,
+    "id": 52503,
     "Key": "dictSetItemName16",
     "enUS": "Isenhart's Horns",
     "zhTW": "依森哈特的角盔",
@@ -25568,7 +25636,7 @@
     "zhCN": "依森哈特的号角"
   },
   {
-    "id": 52500,
+    "id": 52504,
     "Key": "dictSetItemInfo16",
     "enUS": "",
     "zhTW": "",
@@ -25585,7 +25653,7 @@
     "zhCN": ""
   },
   {
-    "id": 52501,
+    "id": 52505,
     "Key": "dictSetItemName17",
     "enUS": "Vidala's Barb",
     "zhTW": "維達拉的倒刺",
@@ -25602,7 +25670,7 @@
     "zhCN": "维达拉的倒刺"
   },
   {
-    "id": 52502,
+    "id": 52506,
     "Key": "dictSetItemInfo17",
     "enUS": "",
     "zhTW": "",
@@ -25619,7 +25687,7 @@
     "zhCN": ""
   },
   {
-    "id": 52503,
+    "id": 52507,
     "Key": "dictSetItemName18",
     "enUS": "Vidala's Fetlock",
     "zhTW": "維達拉的足距",
@@ -25636,7 +25704,7 @@
     "zhCN": "维达拉的扣带靴"
   },
   {
-    "id": 52504,
+    "id": 52508,
     "Key": "dictSetItemInfo18",
     "enUS": "",
     "zhTW": "",
@@ -25653,7 +25721,7 @@
     "zhCN": ""
   },
   {
-    "id": 52505,
+    "id": 52509,
     "Key": "dictSetItemName19",
     "enUS": "Vidala's Ambush",
     "zhTW": "維達拉的突襲",
@@ -25670,7 +25738,7 @@
     "zhCN": "维达拉的突袭"
   },
   {
-    "id": 52506,
+    "id": 52510,
     "Key": "dictSetItemInfo19",
     "enUS": "",
     "zhTW": "",
@@ -25687,7 +25755,7 @@
     "zhCN": ""
   },
   {
-    "id": 52507,
+    "id": 52511,
     "Key": "dictSetItemName20",
     "enUS": "Vidala's Snare",
     "zhTW": "維達拉的圈套",
@@ -25704,7 +25772,7 @@
     "zhCN": "维达拉的陷阱"
   },
   {
-    "id": 52508,
+    "id": 52512,
     "Key": "dictSetItemInfo20",
     "enUS": "",
     "zhTW": "",
@@ -25721,7 +25789,7 @@
     "zhCN": ""
   },
   {
-    "id": 52509,
+    "id": 52513,
     "Key": "dictSetItemName21",
     "enUS": "Milabrega's Orb",
     "zhTW": "米拉伯佳之球",
@@ -25738,7 +25806,7 @@
     "zhCN": "米拉伯佳的宝球"
   },
   {
-    "id": 52510,
+    "id": 52514,
     "Key": "dictSetItemInfo21",
     "enUS": "",
     "zhTW": "",
@@ -25755,7 +25823,7 @@
     "zhCN": ""
   },
   {
-    "id": 52511,
+    "id": 52515,
     "Key": "dictSetItemName22",
     "enUS": "Milabrega's Rod",
     "zhTW": "米拉伯佳節杖",
@@ -25772,7 +25840,7 @@
     "zhCN": "米拉伯佳的权杖"
   },
   {
-    "id": 52512,
+    "id": 52516,
     "Key": "dictSetItemInfo22",
     "enUS": "",
     "zhTW": "",
@@ -25789,7 +25857,7 @@
     "zhCN": ""
   },
   {
-    "id": 52513,
+    "id": 52517,
     "Key": "dictSetItemName23",
     "enUS": "Milabrega's Diadem",
     "zhTW": "米拉伯佳權冠",
@@ -25806,7 +25874,7 @@
     "zhCN": "米拉伯佳的权冠"
   },
   {
-    "id": 52514,
+    "id": 52518,
     "Key": "dictSetItemInfo23",
     "enUS": "",
     "zhTW": "",
@@ -25823,7 +25891,7 @@
     "zhCN": ""
   },
   {
-    "id": 52515,
+    "id": 52519,
     "Key": "dictSetItemName24",
     "enUS": "Milabrega's Robe",
     "zhTW": "米拉伯佳外袍",
@@ -25840,7 +25908,7 @@
     "zhCN": "米拉伯佳的袍甲"
   },
   {
-    "id": 52516,
+    "id": 52520,
     "Key": "dictSetItemInfo24",
     "enUS": "",
     "zhTW": "",
@@ -25857,7 +25925,7 @@
     "zhCN": ""
   },
   {
-    "id": 52517,
+    "id": 52521,
     "Key": "dictSetItemName25",
     "enUS": "Cathan's Rule",
     "zhTW": "卡珊的尺杖",
@@ -25874,7 +25942,7 @@
     "zhCN": "卡珊的统治"
   },
   {
-    "id": 52518,
+    "id": 52522,
     "Key": "dictSetItemInfo25",
     "enUS": "",
     "zhTW": "",
@@ -25891,7 +25959,7 @@
     "zhCN": ""
   },
   {
-    "id": 52519,
+    "id": 52523,
     "Key": "dictSetItemName26",
     "enUS": "Cathan's Mesh",
     "zhTW": "卡珊的網衣",
@@ -25908,7 +25976,7 @@
     "zhCN": "卡珊的札甲"
   },
   {
-    "id": 52520,
+    "id": 52524,
     "Key": "dictSetItemInfo26",
     "enUS": "",
     "zhTW": "",
@@ -25925,7 +25993,7 @@
     "zhCN": ""
   },
   {
-    "id": 52521,
+    "id": 52525,
     "Key": "dictSetItemName27",
     "enUS": "Cathan's Visage",
     "zhTW": "卡珊的容貌",
@@ -25942,7 +26010,7 @@
     "zhCN": "卡珊的面甲"
   },
   {
-    "id": 52522,
+    "id": 52526,
     "Key": "dictSetItemInfo27",
     "enUS": "",
     "zhTW": "",
@@ -25959,7 +26027,7 @@
     "zhCN": ""
   },
   {
-    "id": 52523,
+    "id": 52527,
     "Key": "dictSetItemName28",
     "enUS": "Cathan's Sigil",
     "zhTW": "卡珊的魔咒",
@@ -25976,7 +26044,7 @@
     "zhCN": "卡珊的符徽"
   },
   {
-    "id": 52524,
+    "id": 52528,
     "Key": "dictSetItemInfo28",
     "enUS": "",
     "zhTW": "",
@@ -25993,7 +26061,7 @@
     "zhCN": ""
   },
   {
-    "id": 52525,
+    "id": 52529,
     "Key": "dictSetItemName29",
     "enUS": "Cathan's Seal",
     "zhTW": "卡珊的封印",
@@ -26010,7 +26078,7 @@
     "zhCN": "卡珊的印章"
   },
   {
-    "id": 52526,
+    "id": 52530,
     "Key": "dictSetItemInfo29",
     "enUS": "",
     "zhTW": "",
@@ -26027,7 +26095,7 @@
     "zhCN": ""
   },
   {
-    "id": 52527,
+    "id": 52531,
     "Key": "dictSetItemName30",
     "enUS": "Tancred's Crowbill",
     "zhTW": "坦克雷的鴉嘴鎬",
@@ -26044,7 +26112,7 @@
     "zhCN": "坦克雷的鸦嘴锄"
   },
   {
-    "id": 52528,
+    "id": 52532,
     "Key": "dictSetItemInfo30",
     "enUS": "",
     "zhTW": "",
@@ -26061,7 +26129,7 @@
     "zhCN": ""
   },
   {
-    "id": 52529,
+    "id": 52533,
     "Key": "dictSetItemName31",
     "enUS": "Tancred's Spine",
     "zhTW": "坦克雷的脊柱",
@@ -26078,7 +26146,7 @@
     "zhCN": "坦克雷的脊柱"
   },
   {
-    "id": 52530,
+    "id": 52534,
     "Key": "dictSetItemInfo31",
     "enUS": "",
     "zhTW": "",
@@ -26095,7 +26163,7 @@
     "zhCN": ""
   },
   {
-    "id": 52531,
+    "id": 52535,
     "Key": "dictSetItemName32",
     "enUS": "Tancred's Hobnails",
     "zhTW": "坦克雷的釘靴",
@@ -26112,7 +26180,7 @@
     "zhCN": "坦克雷的钉头鞋"
   },
   {
-    "id": 52532,
+    "id": 52536,
     "Key": "dictSetItemInfo32",
     "enUS": "",
     "zhTW": "",
@@ -26129,7 +26197,7 @@
     "zhCN": ""
   },
   {
-    "id": 52533,
+    "id": 52537,
     "Key": "dictSetItemName33",
     "enUS": "Tancred's Weird",
     "zhTW": "坦克雷的怪誕",
@@ -26146,7 +26214,7 @@
     "zhCN": "坦克雷的怪诞"
   },
   {
-    "id": 52534,
+    "id": 52538,
     "Key": "dictSetItemInfo33",
     "enUS": "",
     "zhTW": "",
@@ -26163,7 +26231,7 @@
     "zhCN": ""
   },
   {
-    "id": 52535,
+    "id": 52539,
     "Key": "dictSetItemName34",
     "enUS": "Tancred's Skull",
     "zhTW": "坦克雷的顱骨",
@@ -26180,7 +26248,7 @@
     "zhCN": "坦克雷的头骨"
   },
   {
-    "id": 52536,
+    "id": 52540,
     "Key": "dictSetItemInfo34",
     "enUS": "",
     "zhTW": "",
@@ -26197,7 +26265,7 @@
     "zhCN": ""
   },
   {
-    "id": 52537,
+    "id": 52541,
     "Key": "dictSetItemName35",
     "enUS": "Sigon's Gage",
     "zhTW": "西剛的挑戰",
@@ -26214,7 +26282,7 @@
     "zhCN": "西刚的挑战"
   },
   {
-    "id": 52538,
+    "id": 52542,
     "Key": "dictSetItemInfo35",
     "enUS": "",
     "zhTW": "",
@@ -26231,7 +26299,7 @@
     "zhCN": ""
   },
   {
-    "id": 52539,
+    "id": 52543,
     "Key": "dictSetItemName36",
     "enUS": "Sigon's Visor",
     "zhTW": "西剛的護面",
@@ -26248,7 +26316,7 @@
     "zhCN": "西刚的面甲"
   },
   {
-    "id": 52540,
+    "id": 52544,
     "Key": "dictSetItemInfo36",
     "enUS": "",
     "zhTW": "",
@@ -26265,7 +26333,7 @@
     "zhCN": ""
   },
   {
-    "id": 52541,
+    "id": 52545,
     "Key": "dictSetItemName37",
     "enUS": "Sigon's Shelter",
     "zhTW": "西剛的庇護",
@@ -26282,7 +26350,7 @@
     "zhCN": "西刚的遮蔽"
   },
   {
-    "id": 52542,
+    "id": 52546,
     "Key": "dictSetItemInfo37",
     "enUS": "",
     "zhTW": "",
@@ -26299,7 +26367,7 @@
     "zhCN": ""
   },
   {
-    "id": 52543,
+    "id": 52547,
     "Key": "dictSetItemName38",
     "enUS": "Sigon's Sabot",
     "zhTW": "西剛的硬靴",
@@ -26316,7 +26384,7 @@
     "zhCN": "西刚的木底鞋"
   },
   {
-    "id": 52544,
+    "id": 52548,
     "Key": "dictSetItemInfo38",
     "enUS": "",
     "zhTW": "",
@@ -26333,7 +26401,7 @@
     "zhCN": ""
   },
   {
-    "id": 52545,
+    "id": 52549,
     "Key": "dictSetItemName39",
     "enUS": "Sigon's Wrap",
     "zhTW": "西剛的裹腰",
@@ -26350,7 +26418,7 @@
     "zhCN": "西刚的腰带"
   },
   {
-    "id": 52546,
+    "id": 52550,
     "Key": "dictSetItemInfo39",
     "enUS": "",
     "zhTW": "",
@@ -26367,7 +26435,7 @@
     "zhCN": ""
   },
   {
-    "id": 52547,
+    "id": 52551,
     "Key": "dictSetItemName40",
     "enUS": "Sigon's Guard",
     "zhTW": "西剛的守護",
@@ -26384,7 +26452,7 @@
     "zhCN": "西刚的守护"
   },
   {
-    "id": 52548,
+    "id": 52552,
     "Key": "dictSetItemInfo40",
     "enUS": "",
     "zhTW": "",
@@ -26401,7 +26469,7 @@
     "zhCN": ""
   },
   {
-    "id": 52549,
+    "id": 52553,
     "Key": "dictSetItemName41",
     "enUS": "Infernal Cranium",
     "zhTW": "煉獄頭骨",
@@ -26418,7 +26486,7 @@
     "zhCN": "地狱颅骨"
   },
   {
-    "id": 52550,
+    "id": 52554,
     "Key": "dictSetItemInfo41",
     "enUS": "",
     "zhTW": "",
@@ -26435,7 +26503,7 @@
     "zhCN": ""
   },
   {
-    "id": 52551,
+    "id": 52555,
     "Key": "dictSetItemName42",
     "enUS": "Infernal Torch",
     "zhTW": "煉獄火炬",
@@ -26452,7 +26520,7 @@
     "zhCN": "地狱火炬"
   },
   {
-    "id": 52552,
+    "id": 52556,
     "Key": "dictSetItemInfo42",
     "enUS": "",
     "zhTW": "",
@@ -26469,7 +26537,7 @@
     "zhCN": ""
   },
   {
-    "id": 52553,
+    "id": 52557,
     "Key": "dictSetItemName43",
     "enUS": "Infernal Sign",
     "zhTW": "煉獄符印",
@@ -26486,7 +26554,7 @@
     "zhCN": "地狱印记"
   },
   {
-    "id": 52554,
+    "id": 52558,
     "Key": "dictSetItemInfo43",
     "enUS": "",
     "zhTW": "",
@@ -26503,7 +26571,7 @@
     "zhCN": ""
   },
   {
-    "id": 52555,
+    "id": 52559,
     "Key": "dictSetItemName44",
     "enUS": "Berserker's Headgear",
     "zhTW": "狂戰士頭盔",
@@ -26520,7 +26588,7 @@
     "zhCN": "狂战士的头盔"
   },
   {
-    "id": 52556,
+    "id": 52560,
     "Key": "dictSetItemInfo44",
     "enUS": "",
     "zhTW": "",
@@ -26537,7 +26605,7 @@
     "zhCN": ""
   },
   {
-    "id": 52557,
+    "id": 52561,
     "Key": "dictSetItemName45",
     "enUS": "Berserker's Hauberk",
     "zhTW": "狂戰士鎖子甲",
@@ -26554,7 +26622,7 @@
     "zhCN": "狂战士的半身甲"
   },
   {
-    "id": 52558,
+    "id": 52562,
     "Key": "dictSetItemInfo45",
     "enUS": "",
     "zhTW": "",
@@ -26571,7 +26639,7 @@
     "zhCN": ""
   },
   {
-    "id": 52559,
+    "id": 52563,
     "Key": "dictSetItemName46",
     "enUS": "Berserker's Hatchet",
     "zhTW": "狂戰士手斧",
@@ -26588,7 +26656,7 @@
     "zhCN": "狂战士的手斧"
   },
   {
-    "id": 52560,
+    "id": 52564,
     "Key": "dictSetItemInfo46",
     "enUS": "",
     "zhTW": "",
@@ -26605,7 +26673,7 @@
     "zhCN": ""
   },
   {
-    "id": 52561,
+    "id": 52565,
     "Key": "dictSetItemName47",
     "enUS": "Death's Hand",
     "zhTW": "死亡之手",
@@ -26622,7 +26690,7 @@
     "zhCN": "死神之手"
   },
   {
-    "id": 52562,
+    "id": 52566,
     "Key": "dictSetItemInfo47",
     "enUS": "",
     "zhTW": "",
@@ -26639,7 +26707,7 @@
     "zhCN": ""
   },
   {
-    "id": 52563,
+    "id": 52567,
     "Key": "dictSetItemName48",
     "enUS": "Death's Guard",
     "zhTW": "死亡之護",
@@ -26656,7 +26724,7 @@
     "zhCN": "死神之卫"
   },
   {
-    "id": 52564,
+    "id": 52568,
     "Key": "dictSetItemInfo48",
     "enUS": "",
     "zhTW": "",
@@ -26673,7 +26741,7 @@
     "zhCN": ""
   },
   {
-    "id": 52565,
+    "id": 52569,
     "Key": "dictSetItemName49",
     "enUS": "Death's Touch",
     "zhTW": "死亡之觸",
@@ -26690,7 +26758,7 @@
     "zhCN": "死神之触"
   },
   {
-    "id": 52566,
+    "id": 52570,
     "Key": "dictSetItemInfo49",
     "enUS": "",
     "zhTW": "",
@@ -26707,7 +26775,7 @@
     "zhCN": ""
   },
   {
-    "id": 52567,
+    "id": 52571,
     "Key": "dictSetItemName50",
     "enUS": "Angelic Sickle",
     "zhTW": "天使的鐮刀",
@@ -26724,7 +26792,7 @@
     "zhCN": "天使的镰刀"
   },
   {
-    "id": 52568,
+    "id": 52572,
     "Key": "dictSetItemInfo50",
     "enUS": "",
     "zhTW": "",
@@ -26741,7 +26809,7 @@
     "zhCN": ""
   },
   {
-    "id": 52569,
+    "id": 52573,
     "Key": "dictSetItemName51",
     "enUS": "Angelic Mantle",
     "zhTW": "天使的披風",
@@ -26758,7 +26826,7 @@
     "zhCN": "天使的披风"
   },
   {
-    "id": 52570,
+    "id": 52574,
     "Key": "dictSetItemInfo51",
     "enUS": "",
     "zhTW": "",
@@ -26775,7 +26843,7 @@
     "zhCN": ""
   },
   {
-    "id": 52571,
+    "id": 52575,
     "Key": "dictSetItemName52",
     "enUS": "Angelic Halo",
     "zhTW": "天使的光暈",
@@ -26792,7 +26860,7 @@
     "zhCN": "天使的光环"
   },
   {
-    "id": 52572,
+    "id": 52576,
     "Key": "dictSetItemInfo52",
     "enUS": "",
     "zhTW": "",
@@ -26809,7 +26877,7 @@
     "zhCN": ""
   },
   {
-    "id": 52573,
+    "id": 52577,
     "Key": "dictSetItemName53",
     "enUS": "Angelic Wings",
     "zhTW": "天使的翅膀",
@@ -26826,7 +26894,7 @@
     "zhCN": "天使的飞翼"
   },
   {
-    "id": 52574,
+    "id": 52578,
     "Key": "dictSetItemInfo53",
     "enUS": "",
     "zhTW": "",
@@ -26843,7 +26911,7 @@
     "zhCN": ""
   },
   {
-    "id": 52575,
+    "id": 52579,
     "Key": "dictSetItemName54",
     "enUS": "Arctic Horn",
     "zhTW": "北極號角",
@@ -26860,7 +26928,7 @@
     "zhCN": "北极号角"
   },
   {
-    "id": 52576,
+    "id": 52580,
     "Key": "dictSetItemInfo54",
     "enUS": "",
     "zhTW": "",
@@ -26877,7 +26945,7 @@
     "zhCN": ""
   },
   {
-    "id": 52577,
+    "id": 52581,
     "Key": "dictSetItemName55",
     "enUS": "Arctic Furs",
     "zhTW": "北極毛皮",
@@ -26894,7 +26962,7 @@
     "zhCN": "北极毛皮"
   },
   {
-    "id": 52578,
+    "id": 52582,
     "Key": "dictSetItemInfo55",
     "enUS": "",
     "zhTW": "",
@@ -26911,7 +26979,7 @@
     "zhCN": ""
   },
   {
-    "id": 52579,
+    "id": 52583,
     "Key": "dictSetItemName56",
     "enUS": "Arctic Binding",
     "zhTW": "北極捆索",
@@ -26928,7 +26996,7 @@
     "zhCN": "北极束带"
   },
   {
-    "id": 52580,
+    "id": 52584,
     "Key": "dictSetItemInfo56",
     "enUS": "",
     "zhTW": "",
@@ -26945,7 +27013,7 @@
     "zhCN": ""
   },
   {
-    "id": 52581,
+    "id": 52585,
     "Key": "dictSetItemName57",
     "enUS": "Arctic Mitts",
     "zhTW": "北極手套",
@@ -26962,7 +27030,7 @@
     "zhCN": "北极手套"
   },
   {
-    "id": 52582,
+    "id": 52586,
     "Key": "dictSetItemInfo57",
     "enUS": "",
     "zhTW": "",
@@ -26979,7 +27047,7 @@
     "zhCN": ""
   },
   {
-    "id": 52583,
+    "id": 52587,
     "Key": "dictSetItemName58",
     "enUS": "Arcanna's Sign",
     "zhTW": "阿卡娜的符印",
@@ -26996,7 +27064,7 @@
     "zhCN": "阿卡娜的符号"
   },
   {
-    "id": 52584,
+    "id": 52588,
     "Key": "dictSetItemInfo58",
     "enUS": "",
     "zhTW": "",
@@ -27013,7 +27081,7 @@
     "zhCN": ""
   },
   {
-    "id": 52585,
+    "id": 52589,
     "Key": "dictSetItemName59",
     "enUS": "Arcanna's Deathwand",
     "zhTW": "阿卡娜的死亡之杖",
@@ -27030,7 +27098,7 @@
     "zhCN": "阿卡娜的死亡之杖"
   },
   {
-    "id": 52586,
+    "id": 52590,
     "Key": "dictSetItemInfo59",
     "enUS": "",
     "zhTW": "",
@@ -27047,7 +27115,7 @@
     "zhCN": ""
   },
   {
-    "id": 52587,
+    "id": 52591,
     "Key": "dictSetItemName60",
     "enUS": "Arcanna's Head",
     "zhTW": "阿卡娜的頭",
@@ -27064,7 +27132,7 @@
     "zhCN": "阿卡娜的头"
   },
   {
-    "id": 52588,
+    "id": 52592,
     "Key": "dictSetItemInfo60",
     "enUS": "",
     "zhTW": "",
@@ -27081,7 +27149,7 @@
     "zhCN": ""
   },
   {
-    "id": 52589,
+    "id": 52593,
     "Key": "dictSetItemName61",
     "enUS": "Arcanna's Flesh",
     "zhTW": "阿卡娜的血肉",
@@ -27098,7 +27166,7 @@
     "zhCN": "阿卡娜的血肉"
   },
   {
-    "id": 52590,
+    "id": 52594,
     "Key": "dictSetItemInfo61",
     "enUS": "",
     "zhTW": "",
@@ -27115,7 +27183,7 @@
     "zhCN": ""
   },
   {
-    "id": 52591,
+    "id": 52595,
     "Key": "dictSetItemName62",
     "enUS": "Natalya's Totem",
     "zhTW": "娜塔亞的圖騰",
@@ -27132,7 +27200,7 @@
     "zhCN": "娜塔亚的徽记"
   },
   {
-    "id": 52592,
+    "id": 52596,
     "Key": "dictSetItemInfo62",
     "enUS": "",
     "zhTW": "",
@@ -27149,7 +27217,7 @@
     "zhCN": ""
   },
   {
-    "id": 52593,
+    "id": 52597,
     "Key": "dictSetItemName63",
     "enUS": "Natalya's Mark",
     "zhTW": "娜塔亞的印記",
@@ -27166,7 +27234,7 @@
     "zhCN": "娜塔亚的标记"
   },
   {
-    "id": 52594,
+    "id": 52598,
     "Key": "dictSetItemInfo63",
     "enUS": "",
     "zhTW": "",
@@ -27183,7 +27251,7 @@
     "zhCN": ""
   },
   {
-    "id": 52595,
+    "id": 52599,
     "Key": "dictSetItemName64",
     "enUS": "Natalya's Shadow",
     "zhTW": "娜塔亞的影子",
@@ -27200,7 +27268,7 @@
     "zhCN": "娜塔亚的阴影"
   },
   {
-    "id": 52596,
+    "id": 52600,
     "Key": "dictSetItemInfo64",
     "enUS": "",
     "zhTW": "",
@@ -27217,7 +27285,7 @@
     "zhCN": ""
   },
   {
-    "id": 52597,
+    "id": 52601,
     "Key": "dictSetItemName65",
     "enUS": "Natalya's Soul",
     "zhTW": "娜塔亞的靈魂",
@@ -27234,7 +27302,7 @@
     "zhCN": "娜塔亚的灵魂"
   },
   {
-    "id": 52598,
+    "id": 52602,
     "Key": "dictSetItemInfo65",
     "enUS": "",
     "zhTW": "",
@@ -27251,7 +27319,7 @@
     "zhCN": ""
   },
   {
-    "id": 52599,
+    "id": 52603,
     "Key": "dictSetItemName66",
     "enUS": "Aldur's Stony Gaze",
     "zhTW": "艾爾多的冷酷凝視",
@@ -27268,7 +27336,7 @@
     "zhCN": "艾尔多的冷酷凝视"
   },
   {
-    "id": 52600,
+    "id": 52604,
     "Key": "dictSetItemInfo66",
     "enUS": "",
     "zhTW": "",
@@ -27285,7 +27353,7 @@
     "zhCN": ""
   },
   {
-    "id": 52601,
+    "id": 52605,
     "Key": "dictSetItemName67",
     "enUS": "Aldur's Deception",
     "zhTW": "艾爾多的欺暪",
@@ -27302,7 +27370,7 @@
     "zhCN": "艾尔多的欺骗"
   },
   {
-    "id": 52602,
+    "id": 52606,
     "Key": "dictSetItemInfo67",
     "enUS": "",
     "zhTW": "",
@@ -27319,7 +27387,7 @@
     "zhCN": ""
   },
   {
-    "id": 52603,
+    "id": 52607,
     "Key": "dictSetItemName68",
     "enUS": "Aldur's Gauntlet",
     "zhTW": "艾爾多的護手",
@@ -27336,7 +27404,7 @@
     "zhCN": "艾尔多的护手"
   },
   {
-    "id": 52604,
+    "id": 52608,
     "Key": "dictSetItemInfo68",
     "enUS": "",
     "zhTW": "",
@@ -27353,7 +27421,7 @@
     "zhCN": ""
   },
   {
-    "id": 52605,
+    "id": 52609,
     "Key": "dictSetItemName69",
     "enUS": "Aldur's Advance",
     "zhTW": "艾爾多的進擊",
@@ -27370,7 +27438,7 @@
     "zhCN": "艾尔多的成长"
   },
   {
-    "id": 52606,
+    "id": 52610,
     "Key": "dictSetItemInfo69",
     "enUS": "",
     "zhTW": "",
@@ -27387,7 +27455,7 @@
     "zhCN": ""
   },
   {
-    "id": 52607,
+    "id": 52611,
     "Key": "dictSetItemName70",
     "enUS": "Immortal King's Will",
     "zhTW": "不朽之王的意志",
@@ -27404,7 +27472,7 @@
     "zhCN": "不朽之王的意志"
   },
   {
-    "id": 52608,
+    "id": 52612,
     "Key": "dictSetItemInfo70",
     "enUS": "",
     "zhTW": "",
@@ -27421,7 +27489,7 @@
     "zhCN": ""
   },
   {
-    "id": 52609,
+    "id": 52613,
     "Key": "dictSetItemName71",
     "enUS": "Immortal King's Soul Cage",
     "zhTW": "不朽之王的靈魂牢籠",
@@ -27438,7 +27506,7 @@
     "zhCN": "不朽之王的灵魂之笼"
   },
   {
-    "id": 52610,
+    "id": 52614,
     "Key": "dictSetItemInfo71",
     "enUS": "",
     "zhTW": "",
@@ -27455,7 +27523,7 @@
     "zhCN": ""
   },
   {
-    "id": 52611,
+    "id": 52615,
     "Key": "dictSetItemName72",
     "enUS": "Immortal King's Detail",
     "zhTW": "不朽之王的扈從",
@@ -27472,7 +27540,7 @@
     "zhCN": "不朽之王的功业"
   },
   {
-    "id": 52612,
+    "id": 52616,
     "Key": "dictSetItemInfo72",
     "enUS": "",
     "zhTW": "",
@@ -27489,7 +27557,7 @@
     "zhCN": ""
   },
   {
-    "id": 52613,
+    "id": 52617,
     "Key": "dictSetItemName73",
     "enUS": "Immortal King's Forge",
     "zhTW": "不朽之王的熔爐",
@@ -27506,7 +27574,7 @@
     "zhCN": "不朽之王的锤炼"
   },
   {
-    "id": 52614,
+    "id": 52618,
     "Key": "dictSetItemInfo73",
     "enUS": "",
     "zhTW": "",
@@ -27523,7 +27591,7 @@
     "zhCN": ""
   },
   {
-    "id": 52615,
+    "id": 52619,
     "Key": "dictSetItemName74",
     "enUS": "Immortal King's Pillar",
     "zhTW": "不朽之王之柱",
@@ -27540,7 +27608,7 @@
     "zhCN": "不朽之王的基石"
   },
   {
-    "id": 52616,
+    "id": 52620,
     "Key": "dictSetItemInfo74",
     "enUS": "",
     "zhTW": "",
@@ -27557,7 +27625,7 @@
     "zhCN": ""
   },
   {
-    "id": 52617,
+    "id": 52621,
     "Key": "dictSetItemName75",
     "enUS": "Immortal King's Stone Crusher",
     "zhTW": "不朽之王的碎魂者",
@@ -27574,7 +27642,7 @@
     "zhCN": "不朽之王的碎石锤"
   },
   {
-    "id": 52618,
+    "id": 52622,
     "Key": "dictSetItemInfo75",
     "enUS": "",
     "zhTW": "",
@@ -27591,7 +27659,7 @@
     "zhCN": ""
   },
   {
-    "id": 52619,
+    "id": 52623,
     "Key": "dictSetItemName76",
     "enUS": "Tal Rasha's Fine-Spun Cloth",
     "zhTW": "塔拉夏的精織腰布",
@@ -27608,7 +27676,7 @@
     "zhCN": "塔·拉夏的精织带"
   },
   {
-    "id": 52620,
+    "id": 52624,
     "Key": "dictSetItemInfo76",
     "enUS": "",
     "zhTW": "",
@@ -27625,7 +27693,7 @@
     "zhCN": ""
   },
   {
-    "id": 52621,
+    "id": 52625,
     "Key": "dictSetItemName77",
     "enUS": "Tal Rasha's Adjudication",
     "zhTW": "塔拉夏的判決",
@@ -27642,7 +27710,7 @@
     "zhCN": "塔·拉夏的裁决"
   },
   {
-    "id": 52622,
+    "id": 52626,
     "Key": "dictSetItemInfo77",
     "enUS": "",
     "zhTW": "",
@@ -27659,7 +27727,7 @@
     "zhCN": ""
   },
   {
-    "id": 52623,
+    "id": 52627,
     "Key": "dictSetItemName78",
     "enUS": "Tal Rasha's Lidless Eye",
     "zhTW": "塔拉夏的警惕之眼",
@@ -27676,7 +27744,7 @@
     "zhCN": "塔·拉夏的无睑之眼"
   },
   {
-    "id": 52624,
+    "id": 52628,
     "Key": "dictSetItemInfo78",
     "enUS": "",
     "zhTW": "",
@@ -27693,7 +27761,7 @@
     "zhCN": ""
   },
   {
-    "id": 52625,
+    "id": 52629,
     "Key": "dictSetItemName79",
     "enUS": "Tal Rasha's Guardianship",
     "zhTW": "塔拉夏的守護",
@@ -27710,7 +27778,7 @@
     "zhCN": "塔·拉夏的守护"
   },
   {
-    "id": 52626,
+    "id": 52630,
     "Key": "dictSetItemInfo79",
     "enUS": "",
     "zhTW": "",
@@ -27727,7 +27795,7 @@
     "zhCN": ""
   },
   {
-    "id": 52627,
+    "id": 52631,
     "Key": "dictSetItemName80",
     "enUS": "Tal Rasha's Horadric Crest",
     "zhTW": "塔拉夏的赫拉迪姆之冠",
@@ -27744,7 +27812,7 @@
     "zhCN": "塔·拉夏的赫拉迪姆之冠"
   },
   {
-    "id": 52628,
+    "id": 52632,
     "Key": "dictSetItemInfo80",
     "enUS": "",
     "zhTW": "",
@@ -27761,7 +27829,7 @@
     "zhCN": ""
   },
   {
-    "id": 52629,
+    "id": 52633,
     "Key": "dictSetItemName81",
     "enUS": "Griswold's Valor",
     "zhTW": "格里斯瓦德的勇氣",
@@ -27778,7 +27846,7 @@
     "zhCN": "格里斯沃尔德的勇气"
   },
   {
-    "id": 52630,
+    "id": 52634,
     "Key": "dictSetItemInfo81",
     "enUS": "",
     "zhTW": "",
@@ -27795,7 +27863,7 @@
     "zhCN": ""
   },
   {
-    "id": 52631,
+    "id": 52635,
     "Key": "dictSetItemName82",
     "enUS": "Griswold's Heart",
     "zhTW": "格里斯瓦德之心",
@@ -27812,7 +27880,7 @@
     "zhCN": "格里斯沃尔德的赤诚"
   },
   {
-    "id": 52632,
+    "id": 52636,
     "Key": "dictSetItemInfo82",
     "enUS": "",
     "zhTW": "",
@@ -27829,7 +27897,7 @@
     "zhCN": ""
   },
   {
-    "id": 52633,
+    "id": 52637,
     "Key": "dictSetItemName83",
     "enUS": "Griswold's Redemption",
     "zhTW": "格里斯瓦德的救贖",
@@ -27846,7 +27914,7 @@
     "zhCN": "格里斯沃尔德的救赎"
   },
   {
-    "id": 52634,
+    "id": 52638,
     "Key": "dictSetItemInfo83",
     "enUS": "",
     "zhTW": "",
@@ -27863,7 +27931,7 @@
     "zhCN": ""
   },
   {
-    "id": 52635,
+    "id": 52639,
     "Key": "dictSetItemName84",
     "enUS": "Griswold's Honor",
     "zhTW": "格里斯瓦德的榮耀",
@@ -27880,7 +27948,7 @@
     "zhCN": "格里斯沃尔德的荣耀"
   },
   {
-    "id": 52636,
+    "id": 52640,
     "Key": "dictSetItemInfo84",
     "enUS": "",
     "zhTW": "",
@@ -27897,7 +27965,7 @@
     "zhCN": ""
   },
   {
-    "id": 52637,
+    "id": 52641,
     "Key": "dictSetItemName85",
     "enUS": "Trang-Oul's Guise",
     "zhTW": "塔格奧之容",
@@ -27914,7 +27982,7 @@
     "zhCN": "塔格奥的伪装"
   },
   {
-    "id": 52638,
+    "id": 52642,
     "Key": "dictSetItemInfo85",
     "enUS": "",
     "zhTW": "",
@@ -27931,7 +27999,7 @@
     "zhCN": ""
   },
   {
-    "id": 52639,
+    "id": 52643,
     "Key": "dictSetItemName86",
     "enUS": "Trang-Oul's Scales",
     "zhTW": "塔格奧之鱗",
@@ -27948,7 +28016,7 @@
     "zhCN": "塔格奥的鳞片"
   },
   {
-    "id": 52640,
+    "id": 52644,
     "Key": "dictSetItemInfo86",
     "enUS": "",
     "zhTW": "",
@@ -27965,7 +28033,7 @@
     "zhCN": ""
   },
   {
-    "id": 52641,
+    "id": 52645,
     "Key": "dictSetItemName87",
     "enUS": "Trang-Oul's Wing",
     "zhTW": "塔格奧之翼",
@@ -27982,7 +28050,7 @@
     "zhCN": "塔格奥的飞翼"
   },
   {
-    "id": 52642,
+    "id": 52646,
     "Key": "dictSetItemInfo87",
     "enUS": "",
     "zhTW": "",
@@ -27999,7 +28067,7 @@
     "zhCN": ""
   },
   {
-    "id": 52643,
+    "id": 52647,
     "Key": "dictSetItemName88",
     "enUS": "Trang-Oul's Claws",
     "zhTW": "塔格奧之爪",
@@ -28016,7 +28084,7 @@
     "zhCN": "塔格奥的利爪"
   },
   {
-    "id": 52644,
+    "id": 52648,
     "Key": "dictSetItemInfo88",
     "enUS": "",
     "zhTW": "",
@@ -28033,7 +28101,7 @@
     "zhCN": ""
   },
   {
-    "id": 52645,
+    "id": 52649,
     "Key": "dictSetItemName89",
     "enUS": "Trang-Oul's Girth",
     "zhTW": "塔格奧之腹",
@@ -28050,7 +28118,7 @@
     "zhCN": "塔格奥的肚带"
   },
   {
-    "id": 52646,
+    "id": 52650,
     "Key": "dictSetItemInfo89",
     "enUS": "",
     "zhTW": "",
@@ -28067,7 +28135,7 @@
     "zhCN": ""
   },
   {
-    "id": 52647,
+    "id": 52651,
     "Key": "dictSetItemName90",
     "enUS": "M'avina's True Sight",
     "zhTW": "馬維娜的真實之眼",
@@ -28084,7 +28152,7 @@
     "zhCN": "艾维娜的真视"
   },
   {
-    "id": 52648,
+    "id": 52652,
     "Key": "dictSetItemInfo90",
     "enUS": "",
     "zhTW": "",
@@ -28101,7 +28169,7 @@
     "zhCN": ""
   },
   {
-    "id": 52649,
+    "id": 52653,
     "Key": "dictSetItemName91",
     "enUS": "M'avina's Embrace",
     "zhTW": "馬維娜的擁抱",
@@ -28118,7 +28186,7 @@
     "zhCN": "艾维娜的拥抱"
   },
   {
-    "id": 52650,
+    "id": 52654,
     "Key": "dictSetItemInfo91",
     "enUS": "",
     "zhTW": "",
@@ -28135,7 +28203,7 @@
     "zhCN": ""
   },
   {
-    "id": 52651,
+    "id": 52655,
     "Key": "dictSetItemName92",
     "enUS": "M'avina's Icy Clutch",
     "zhTW": "馬維娜的冰握",
@@ -28152,7 +28220,7 @@
     "zhCN": "艾维娜的冰握"
   },
   {
-    "id": 52652,
+    "id": 52656,
     "Key": "dictSetItemInfo92",
     "enUS": "",
     "zhTW": "",
@@ -28169,7 +28237,7 @@
     "zhCN": ""
   },
   {
-    "id": 52653,
+    "id": 52657,
     "Key": "dictSetItemName93",
     "enUS": "M'avina's Tenet",
     "zhTW": "馬維娜的教義",
@@ -28186,7 +28254,7 @@
     "zhCN": "艾维娜的教义"
   },
   {
-    "id": 52654,
+    "id": 52658,
     "Key": "dictSetItemInfo93",
     "enUS": "",
     "zhTW": "",
@@ -28203,7 +28271,7 @@
     "zhCN": ""
   },
   {
-    "id": 52655,
+    "id": 52659,
     "Key": "dictSetItemName94",
     "enUS": "M'avina's Caster",
     "zhTW": "馬維娜的強弓",
@@ -28220,7 +28288,7 @@
     "zhCN": "艾维娜的施展"
   },
   {
-    "id": 52656,
+    "id": 52660,
     "Key": "dictSetItemInfo94",
     "enUS": "",
     "zhTW": "",
@@ -28237,7 +28305,7 @@
     "zhCN": ""
   },
   {
-    "id": 52657,
+    "id": 52661,
     "Key": "dictSetItemName95",
     "enUS": "Telling of Beads",
     "zhTW": "誦唸珠",
@@ -28254,7 +28322,7 @@
     "zhCN": "赐福念珠"
   },
   {
-    "id": 52658,
+    "id": 52662,
     "Key": "dictSetItemInfo95",
     "enUS": "",
     "zhTW": "",
@@ -28271,7 +28339,7 @@
     "zhCN": ""
   },
   {
-    "id": 52659,
+    "id": 52663,
     "Key": "dictSetItemName96",
     "enUS": "Laying of Hands",
     "zhTW": "按手禮",
@@ -28288,7 +28356,7 @@
     "zhCN": "按手礼套"
   },
   {
-    "id": 52660,
+    "id": 52664,
     "Key": "dictSetItemInfo96",
     "enUS": "",
     "zhTW": "",
@@ -28305,7 +28373,7 @@
     "zhCN": ""
   },
   {
-    "id": 52661,
+    "id": 52665,
     "Key": "dictSetItemName97",
     "enUS": "Rite of Passage",
     "zhTW": "入門式",
@@ -28322,7 +28390,7 @@
     "zhCN": "皈依之道"
   },
   {
-    "id": 52662,
+    "id": 52666,
     "Key": "dictSetItemInfo97",
     "enUS": "",
     "zhTW": "",
@@ -28339,7 +28407,7 @@
     "zhCN": ""
   },
   {
-    "id": 52663,
+    "id": 52667,
     "Key": "dictSetItemName98",
     "enUS": "Dark Adherent",
     "zhTW": "隱門徒",
@@ -28356,7 +28424,7 @@
     "zhCN": "隐秘教徒"
   },
   {
-    "id": 52664,
+    "id": 52668,
     "Key": "dictSetItemInfo98",
     "enUS": "",
     "zhTW": "",
@@ -28373,7 +28441,7 @@
     "zhCN": ""
   },
   {
-    "id": 52665,
+    "id": 52669,
     "Key": "dictSetItemName99",
     "enUS": "Credendum",
     "zhTW": "守信條",
@@ -28390,7 +28458,7 @@
     "zhCN": "信念腰带"
   },
   {
-    "id": 52666,
+    "id": 52670,
     "Key": "dictSetItemInfo99",
     "enUS": "",
     "zhTW": "",
@@ -28407,7 +28475,7 @@
     "zhCN": ""
   },
   {
-    "id": 52667,
+    "id": 52671,
     "Key": "dictSetItemName100",
     "enUS": "Dangoon's Teaching",
     "zhTW": "檀君的教導",
@@ -28424,7 +28492,7 @@
     "zhCN": "覃君的教导"
   },
   {
-    "id": 52668,
+    "id": 52672,
     "Key": "dictSetItemInfo100",
     "enUS": "",
     "zhTW": "",
@@ -28441,7 +28509,7 @@
     "zhCN": ""
   },
   {
-    "id": 52669,
+    "id": 52673,
     "Key": "dictSetItemName101",
     "enUS": "Taebaek's Glory",
     "zhTW": "太白山的榮光",
@@ -28458,7 +28526,7 @@
     "zhCN": "泰白的荣耀"
   },
   {
-    "id": 52670,
+    "id": 52674,
     "Key": "dictSetItemInfo101",
     "enUS": "",
     "zhTW": "",
@@ -28475,7 +28543,7 @@
     "zhCN": ""
   },
   {
-    "id": 52671,
+    "id": 52675,
     "Key": "dictSetItemName102",
     "enUS": "Haemosu's Adamant",
     "zhTW": "解慕漱的堅決",
@@ -28492,7 +28560,7 @@
     "zhCN": "解慕苏的坚定"
   },
   {
-    "id": 52672,
+    "id": 52676,
     "Key": "dictSetItemInfo102",
     "enUS": "",
     "zhTW": "",
@@ -28509,7 +28577,7 @@
     "zhCN": ""
   },
   {
-    "id": 52673,
+    "id": 52677,
     "Key": "dictSetItemName103",
     "enUS": "Ondal's Almighty",
     "zhTW": "溫達的全靈",
@@ -28526,7 +28594,7 @@
     "zhCN": "温达的全灵"
   },
   {
-    "id": 52674,
+    "id": 52678,
     "Key": "dictSetItemInfo103",
     "enUS": "",
     "zhTW": "",
@@ -28543,7 +28611,7 @@
     "zhCN": ""
   },
   {
-    "id": 52675,
+    "id": 52679,
     "Key": "dictSetItemName104",
     "enUS": "Guillaume's Face",
     "zhTW": "吉永之臉",
@@ -28560,7 +28628,7 @@
     "zhCN": "威廉的威容"
   },
   {
-    "id": 52676,
+    "id": 52680,
     "Key": "dictSetItemInfo104",
     "enUS": "",
     "zhTW": "",
@@ -28577,7 +28645,7 @@
     "zhCN": ""
   },
   {
-    "id": 52677,
+    "id": 52681,
     "Key": "dictSetItemName105",
     "enUS": "Wilhelm's Pride",
     "zhTW": "威廉的自尊",
@@ -28594,7 +28662,7 @@
     "zhCN": "威廉的骄傲"
   },
   {
-    "id": 52678,
+    "id": 52682,
     "Key": "dictSetItemInfo105",
     "enUS": "",
     "zhTW": "",
@@ -28611,7 +28679,7 @@
     "zhCN": ""
   },
   {
-    "id": 52679,
+    "id": 52683,
     "Key": "dictSetItemName106",
     "enUS": "Magnus' Skin",
     "zhTW": "馬格納斯之皮",
@@ -28628,7 +28696,7 @@
     "zhCN": "雄主的皮手套"
   },
   {
-    "id": 52680,
+    "id": 52684,
     "Key": "dictSetItemInfo106",
     "enUS": "",
     "zhTW": "",
@@ -28645,7 +28713,7 @@
     "zhCN": ""
   },
   {
-    "id": 52681,
+    "id": 52685,
     "Key": "dictSetItemName107",
     "enUS": "Whitstan's Guard",
     "zhTW": "惠斯坦的守護",
@@ -28662,7 +28730,7 @@
     "zhCN": "威斯顿之御"
   },
   {
-    "id": 52682,
+    "id": 52686,
     "Key": "dictSetItemInfo107",
     "enUS": "",
     "zhTW": "",
@@ -28679,7 +28747,7 @@
     "zhCN": ""
   },
   {
-    "id": 52683,
+    "id": 52687,
     "Key": "dictSetItemName108",
     "enUS": "Hwanin's Splendor",
     "zhTW": "桓因的光輝",
@@ -28696,7 +28764,7 @@
     "zhCN": "桓因的壮美"
   },
   {
-    "id": 52684,
+    "id": 52688,
     "Key": "dictSetItemInfo108",
     "enUS": "",
     "zhTW": "",
@@ -28713,7 +28781,7 @@
     "zhCN": ""
   },
   {
-    "id": 52685,
+    "id": 52689,
     "Key": "dictSetItemName109",
     "enUS": "Hwanin's Refuge",
     "zhTW": "桓因的庇佑",
@@ -28730,7 +28798,7 @@
     "zhCN": "桓因的庇佑"
   },
   {
-    "id": 52686,
+    "id": 52690,
     "Key": "dictSetItemInfo109",
     "enUS": "",
     "zhTW": "",
@@ -28747,7 +28815,7 @@
     "zhCN": ""
   },
   {
-    "id": 52687,
+    "id": 52691,
     "Key": "dictSetItemName110",
     "enUS": "Hwanin's Blessing",
     "zhTW": "桓因的祝福",
@@ -28764,7 +28832,7 @@
     "zhCN": "桓因的祝福"
   },
   {
-    "id": 52688,
+    "id": 52692,
     "Key": "dictSetItemInfo110",
     "enUS": "",
     "zhTW": "",
@@ -28781,7 +28849,7 @@
     "zhCN": ""
   },
   {
-    "id": 52689,
+    "id": 52693,
     "Key": "dictSetItemName111",
     "enUS": "Hwanin's Justice",
     "zhTW": "桓因的制裁",
@@ -28798,7 +28866,7 @@
     "zhCN": "桓因的圣裁"
   },
   {
-    "id": 52690,
+    "id": 52694,
     "Key": "dictSetItemInfo111",
     "enUS": "",
     "zhTW": "",
@@ -28815,7 +28883,7 @@
     "zhCN": ""
   },
   {
-    "id": 52691,
+    "id": 52695,
     "Key": "dictSetItemName112",
     "enUS": "Sazabi's Cobalt Redeemer",
     "zhTW": "沙薩比的救贖鈷劍",
@@ -28832,7 +28900,7 @@
     "zhCN": "圣·沙略的济世之剑"
   },
   {
-    "id": 52692,
+    "id": 52696,
     "Key": "dictSetItemInfo112",
     "enUS": "",
     "zhTW": "",
@@ -28849,7 +28917,7 @@
     "zhCN": ""
   },
   {
-    "id": 52693,
+    "id": 52697,
     "Key": "dictSetItemName113",
     "enUS": "Sazabi's Ghost Liberator",
     "zhTW": "沙薩比的解靈框體",
@@ -28866,7 +28934,7 @@
     "zhCN": "圣·沙略的魂灵解救者"
   },
   {
-    "id": 52694,
+    "id": 52698,
     "Key": "dictSetItemInfo113",
     "enUS": "",
     "zhTW": "",
@@ -28883,7 +28951,7 @@
     "zhCN": ""
   },
   {
-    "id": 52695,
+    "id": 52699,
     "Key": "dictSetItemName114",
     "enUS": "Sazabi's Mental Sheath",
     "zhTW": "沙薩比的精神護罩",
@@ -28900,7 +28968,7 @@
     "zhCN": "圣·沙略的心灵庇护"
   },
   {
-    "id": 52696,
+    "id": 52700,
     "Key": "dictSetItemInfo114",
     "enUS": "",
     "zhTW": "",
@@ -28917,7 +28985,7 @@
     "zhCN": ""
   },
   {
-    "id": 52697,
+    "id": 52701,
     "Key": "dictSetItemName115",
     "enUS": "Bul-Kathos' Sacred Charge",
     "zhTW": "布爾凱索的神聖職責",
@@ -28934,7 +29002,7 @@
     "zhCN": "布尔凯索的神圣职责"
   },
   {
-    "id": 52698,
+    "id": 52702,
     "Key": "dictSetItemInfo115",
     "enUS": "",
     "zhTW": "",
@@ -28951,7 +29019,7 @@
     "zhCN": ""
   },
   {
-    "id": 52699,
+    "id": 52703,
     "Key": "dictSetItemName116",
     "enUS": "Bul-Kathos' Tribal Guardian",
     "zhTW": "布爾凱索的部族守護",
@@ -28968,7 +29036,7 @@
     "zhCN": "布尔凯索的部族守护"
   },
   {
-    "id": 52700,
+    "id": 52704,
     "Key": "dictSetItemInfo116",
     "enUS": "",
     "zhTW": "",
@@ -28985,7 +29053,7 @@
     "zhCN": ""
   },
   {
-    "id": 52701,
+    "id": 52705,
     "Key": "dictSetItemName117",
     "enUS": "Cow King's Horns",
     "zhTW": "牛王之角",
@@ -29002,7 +29070,7 @@
     "zhCN": "牛魔王之角"
   },
   {
-    "id": 52702,
+    "id": 52706,
     "Key": "dictSetItemInfo117",
     "enUS": "",
     "zhTW": "",
@@ -29019,7 +29087,7 @@
     "zhCN": ""
   },
   {
-    "id": 52703,
+    "id": 52707,
     "Key": "dictSetItemName118",
     "enUS": "Cow King's Hide",
     "zhTW": "牛王之皮",
@@ -29036,7 +29104,7 @@
     "zhCN": "牛魔王之皮"
   },
   {
-    "id": 52704,
+    "id": 52708,
     "Key": "dictSetItemInfo118",
     "enUS": "",
     "zhTW": "",
@@ -29053,7 +29121,7 @@
     "zhCN": ""
   },
   {
-    "id": 52705,
+    "id": 52709,
     "Key": "dictSetItemName119",
     "enUS": "Cow King's Hooves",
     "zhTW": "牛王之蹄",
@@ -29070,7 +29138,7 @@
     "zhCN": "牛魔王之蹄"
   },
   {
-    "id": 52706,
+    "id": 52710,
     "Key": "dictSetItemInfo119",
     "enUS": "",
     "zhTW": "",
@@ -29087,7 +29155,7 @@
     "zhCN": ""
   },
   {
-    "id": 52707,
+    "id": 52711,
     "Key": "dictSetItemName120",
     "enUS": "Naj's Puzzler",
     "zhTW": "娜吉的解謎杖",
@@ -29104,7 +29172,7 @@
     "zhCN": "诺吉的解密棒"
   },
   {
-    "id": 52708,
+    "id": 52712,
     "Key": "dictSetItemInfo120",
     "enUS": "",
     "zhTW": "",
@@ -29121,7 +29189,7 @@
     "zhCN": ""
   },
   {
-    "id": 52709,
+    "id": 52713,
     "Key": "dictSetItemName121",
     "enUS": "Naj's Light Plate",
     "zhTW": "娜吉的輕鎧",
@@ -29138,7 +29206,7 @@
     "zhCN": "诺吉的轻铠甲"
   },
   {
-    "id": 52710,
+    "id": 52714,
     "Key": "dictSetItemInfo121",
     "enUS": "",
     "zhTW": "",
@@ -29155,7 +29223,7 @@
     "zhCN": ""
   },
   {
-    "id": 52711,
+    "id": 52715,
     "Key": "dictSetItemName122",
     "enUS": "Naj's Circlet",
     "zhTW": "娜吉的頭環",
@@ -29172,7 +29240,7 @@
     "zhCN": "诺吉的头环"
   },
   {
-    "id": 52712,
+    "id": 52716,
     "Key": "dictSetItemInfo122",
     "enUS": "",
     "zhTW": "",
@@ -29189,7 +29257,7 @@
     "zhCN": ""
   },
   {
-    "id": 52713,
+    "id": 52717,
     "Key": "dictSetItemName123",
     "enUS": "Sander's Paragon",
     "zhTW": "山德的模範",
@@ -29206,7 +29274,7 @@
     "zhCN": "山德的崇拜"
   },
   {
-    "id": 52714,
+    "id": 52718,
     "Key": "dictSetItemInfo123",
     "enUS": "",
     "zhTW": "",
@@ -29223,7 +29291,7 @@
     "zhCN": ""
   },
   {
-    "id": 52715,
+    "id": 52719,
     "Key": "dictSetItemName124",
     "enUS": "Sander's Riprap",
     "zhTW": "山德的碎石",
@@ -29240,7 +29308,7 @@
     "zhCN": "山德的石碓"
   },
   {
-    "id": 52716,
+    "id": 52720,
     "Key": "dictSetItemInfo124",
     "enUS": "",
     "zhTW": "",
@@ -29257,7 +29325,7 @@
     "zhCN": ""
   },
   {
-    "id": 52717,
+    "id": 52721,
     "Key": "dictSetItemName125",
     "enUS": "McAuley's Taboo",
     "zhTW": "麥克奧雷的禁忌",
@@ -29274,7 +29342,7 @@
     "zhCN": "麦克奥雷的禁忌"
   },
   {
-    "id": 52718,
+    "id": 52722,
     "Key": "dictSetItemInfo125",
     "enUS": "",
     "zhTW": "",
@@ -29291,7 +29359,7 @@
     "zhCN": ""
   },
   {
-    "id": 52719,
+    "id": 52723,
     "Key": "dictSetItemName126",
     "enUS": "McAuley's Superstition",
     "zhTW": "麥克奧雷的迷信",
@@ -29308,7 +29376,7 @@
     "zhCN": "麦克奥雷的迷信"
   },
   {
-    "id": 52720,
+    "id": 52724,
     "Key": "dictSetItemInfo126",
     "enUS": "",
     "zhTW": "",
@@ -29325,7 +29393,7 @@
     "zhCN": ""
   },
   {
-    "id": 52721,
+    "id": 52725,
     "Key": "dictSetItemName127",
     "enUS": "Warlord's Conquest",
     "zhTW": "戰爭領主的征服",
@@ -29342,7 +29410,7 @@
     "zhCN": "战争领主的征服"
   },
   {
-    "id": 52722,
+    "id": 52726,
     "Key": "dictSetItemInfo127",
     "enUS": "",
     "zhTW": "",
@@ -29359,7 +29427,7 @@
     "zhCN": ""
   },
   {
-    "id": 52723,
+    "id": 52727,
     "Key": "dictSetItemName128",
     "enUS": "Warlord's Lust",
     "zhTW": "戰爭領主的慾望",
@@ -29376,7 +29444,7 @@
     "zhCN": "战争领主的欲望"
   },
   {
-    "id": 52724,
+    "id": 52728,
     "Key": "dictSetItemInfo128",
     "enUS": "",
     "zhTW": "",
@@ -29393,7 +29461,7 @@
     "zhCN": ""
   },
   {
-    "id": 52725,
+    "id": 52729,
     "Key": "dictSetItemName129",
     "enUS": "Warlord's Mantle",
     "zhTW": "戰爭領主的鬥篷",
@@ -29410,7 +29478,7 @@
     "zhCN": "战争领主的斗篷"
   },
   {
-    "id": 52726,
+    "id": 52730,
     "Key": "dictSetItemInfo129",
     "enUS": "",
     "zhTW": "",
@@ -29427,7 +29495,7 @@
     "zhCN": ""
   },
   {
-    "id": 52727,
+    "id": 52731,
     "Key": "dictSetItemName130",
     "enUS": "Warlord's Crushers",
     "zhTW": "戰爭領主的輾壓者",
@@ -29444,7 +29512,7 @@
     "zhCN": "战争领主的碾压者"
   },
   {
-    "id": 52728,
+    "id": 52732,
     "Key": "dictSetItemInfo130",
     "enUS": "",
     "zhTW": "",
@@ -29461,7 +29529,7 @@
     "zhCN": ""
   },
   {
-    "id": 52729,
+    "id": 52733,
     "Key": "dictSetItemName131",
     "enUS": "Warlord's Authority",
     "zhTW": "戰爭領主的權威",
@@ -29478,7 +29546,7 @@
     "zhCN": "战争领主的权威"
   },
   {
-    "id": 52730,
+    "id": 52734,
     "Key": "dictSetItemInfo131",
     "enUS": "",
     "zhTW": "",
@@ -29495,7 +29563,7 @@
     "zhCN": ""
   },
   {
-    "id": 52731,
+    "id": 52735,
     "Key": "DictOneHandedSwingWeapon",
     "enUS": "One-Hand Swing Weapon",
     "zhTW": "單手揮舞武器",
@@ -29512,7 +29580,7 @@
     "zhCN": "单手挥击武器"
   },
   {
-    "id": 52732,
+    "id": 52736,
     "Key": "DictOtherWeapon",
     "enUS": "Other Weapon",
     "zhTW": "其他武器",
@@ -29529,7 +29597,7 @@
     "zhCN": "其他武器"
   },
   {
-    "id": 52733,
+    "id": 52737,
     "Key": "DictVampireShape",
     "enUS": "Vampire",
     "zhTW": "吸血鬼",
@@ -29546,7 +29614,7 @@
     "zhCN": "吸血鬼"
   },
   {
-    "id": 52734,
+    "id": 52738,
     "Key": "DictRogueScout",
     "enUS": "Rogue Scout",
     "zhTW": "俠盜斥候",
@@ -29563,7 +29631,7 @@
     "zhCN": "流亡者斥候"
   },
   {
-    "id": 52735,
+    "id": 52739,
     "Key": "DictDesertMerc",
     "enUS": "Desert Mercenary",
     "zhTW": "沙漠傭兵",
@@ -29580,7 +29648,7 @@
     "zhCN": "沙漠佣兵"
   },
   {
-    "id": 52736,
+    "id": 52740,
     "Key": "DictIronWolf",
     "enUS": "Iron Wolf",
     "zhTW": "鐵狼衛士",
@@ -29597,7 +29665,7 @@
     "zhCN": "铁狼"
   },
   {
-    "id": 52737,
+    "id": 52741,
     "Key": "DictBarbarian",
     "enUS": "Barbarian",
     "zhTW": "野蠻人",
