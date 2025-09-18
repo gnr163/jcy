@@ -1005,7 +1005,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName179\n\n@dictBlue @dictRunewordName179",
+                                                "tooltipString": "@dictGold@dictRunewordName179\n\n@dictBlue @dictRunewordInfo179",
                                                 "pressedFrame": 0
                                             }
                                         }

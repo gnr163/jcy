@@ -173,7 +173,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName55\n\n@dictBlue +1 to All Skills\n+160% Enhanced Damage\n+9 to Minimum Damage\n+9 to Maximum Damage\n+25% Deadly Strike\n+250 to Attack Rating\n7% Life stolen per hit\n+10 to Strength\nReflensh Life +10\n+2 Mana after each Kill\n+1 to Light Radius",
+                                                "tooltipString": "@dictGold@dictRunewordName55\n\n@dictBlue @dictRunewordInfo55",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -277,7 +277,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName92\n\n@dictBlue 30% Chance to cast level 21 Enchant when you Kill an Enemy\n+40% Faster Hit Recovery\n+370% Enhanced Damage\n-25% Target Defense\nAdds 3-14 cold damage\n-25% to Enemy Fire Resistance\n+40% Chance of Crushing Blow\n+200-300 Defense @dictVariable\n@dictBlue +10 to Strength\n+10 to Dexterity\nAll Resistances +20-30 @dictVariable\n@dictBlue Requirements -20%",
+                                                "tooltipString": "@dictGold@dictRunewordName92\n\n@dictBlue @dictRunewordInfo92",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -381,7 +381,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName20\n\n@dictBlue 100% Chance to cast level 44 Chain Lightning when you Die\n25% Chance to cast level 18 Glacial Spike on attack\nIndestructible\n+300-385% Enhanced Damage @dictVariable\n@dictBlue 20% Bonus to Attack Rating\n+50 to Attack Rating\nAdds 1-50 lightning damage\n7% Mana stolen per hit\n+50% Chance of Crushing Blow\n+0-49% Deadly Strike (Based on Character Level)\n+1 to Light Radius\nLevel 22 Blood Golem (15 Charges)\nRequirements -20%",
+                                                "tooltipString": "@dictGold@dictRunewordName20\n\n@dictBlue @dictRunewordInfo20",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -485,7 +485,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName13\n\n@dictBlue +1 to All Skills\n+40% Increased Attack Speed\n+250-290% Enhanced Damage @dictVariable\n@dictBlue Adds 5-30 fire damage\n7% Life stolen per hit\n+2-6 Battle Command @dictVariable\n@dictBlue +1-6 Battle Orders @dictVariable\n@dictBlue +1-4 Battle Cry @dictVariable\n@dictBlue Prevent Monster Heal\nReflensh Life +12\n30% Better Chance of Getting Magic Items",
+                                                "tooltipString": "@dictGold@dictRunewordName13\n\n@dictBlue @dictRunewordInfo13",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -589,7 +589,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName47\n\n@dictBlue 35% Chance to cast level 15 Venom on striking\n+30-40% Increased Attack Speed @dictVariable\n@dictBlue +340-400 damage @dictVariable\n@dictBlue Ignore Target's Defense\n-25% Target Defense\n+1-185% Damage to Demons (Based on Character Level)\nAdds 5-30 fire damage\n-(20-25)% to Enemy Poison Resistance @dictVariable\n@dictBlue +20% Deadly Strike\nPrevent Monster Heal\n+2 Mana after each Kill\n+10-15 Life after each Kill @dictVariable",
+                                                "tooltipString": "@dictGold@dictRunewordName47\n\n@dictBlue @dictRunewordInfo47",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -693,7 +693,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName4\n\n@dictBlue Level 9 Fanaticism Aura When Equipped\n+40% Increased Attack Speed\n+240-270% Enhanced Damage @dictVariable\n@dictBlue +20% Chance of Crushing Blow\n+25% Chance of Open Wounds\n+3 Werebear\n+3 Lycanthropy\nPrevent Monster Heal\n+25-40 to Strength @dictVariable\n@dictBlue +10 to Energy\n+2 Mana after each Kill\nLevel 13 Summon Grizzly (5 Charges)",
+                                                "tooltipString": "@dictGold@dictRunewordName4\n\n@dictBlue @dictRunewordInfo4",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -797,7 +797,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName36\n\n@dictBlue Indestructible\n+260-310% Enhanced Damage @dictVariable\n@dictBlue +9 to Minimum Damage\n7% Life stolen per hit\n+20% Chance of Crushing Blow\nHit Blinds Target\nSlows Target by 33%\nRegenerate Mana 16%\nReflensh Life +16\nCannot Be Frozen\n30% Better Chance of Getting Magic Items\nLevel 8 Revive (88 Charges)",
+                                                "tooltipString": "@dictGold@dictRunewordName36\n\n@dictBlue @dictRunewordInfo36",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -901,7 +901,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName25\n\n@dictBlue 23% Chance to cast level 12 Volcano on striking\n5% Chance to cast level 23 Molten Boulder on striking\n100% Chance to cast level 45 Meteor when you Die\n15% Chance to cast level 22 Nova on attack\n+350% Enhanced Damage\nIgnore Target's Defense\nAdds 100-180 magic damage\n7% Mana stolen per hit\n+20% Chance of Crushing Blow\n+20% Deadly Strike\nPrevent Monster Heal\n+10 to Dexterity",
+                                                "tooltipString": "@dictGold@dictRunewordName25\n\n@dictBlue @dictRunewordInfo25",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1005,7 +1005,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName26\n\n@dictBlue 5% Chance to cast level 18 Volcano on striking\nLevel 12 Holy Freeze Aura When Equipped\n+2 to All Skills\n+45% Increased Attack Speed\n+330-370% Enhanced Damage @dictVariable\n@dictBlue -(40-60)% to Enemy Cold Resistance @dictVariable\n@dictBlue +20% Deadly Strike\n+25% Chance of Open Wounds\nPrevent Monster Heal\nFreezes Target +3\nRequirements -20%",
+                                                "tooltipString": "@dictGold@dictRunewordName26\n\n@dictBlue @dictRunewordInfo26",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1109,7 +1109,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName84\n\n@dictBlue Level 8-12 Concentration Aura When Equipped @dictVariable\n@dictBlue +3 to All Skills\n+20% Increased Attack Speed\n+100% Piercing Attack\n+325-375% Enhanced Damage @dictVariable\n@dictBlue +9 to Maximum Damage\n20% Bonus to Attack Rating\nAdds 3-14 cold damage\nFreezes Target +3\n+24 to Vitality\nAll Resistances +40",
+                                                "tooltipString": "@dictGold@dictRunewordName84\n\n@dictBlue @dictRunewordInfo84",
                                                 "pressedFrame": 0
                                             }
                                         }

@@ -173,7 +173,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName151\n\n@dictBlue 18% Chance to cast level 18 Taunt on striking\n+3 to Combat Skills (Barbarian Only)\n+20-30% Increased Attack Speed @dictVariable\n@dictBlue +300-350% Enhanced Damage @dictVariable\n@dictBlue +9 to Maximum Damage\n+50 to Attack Rating\n+75% Damage to Undead\n+50 to Attack Rating against Undead\n8-10% Life stolen per hit @dictVariable\n@dictBlue Prevent Monster Heal\n+10 to Strength\n+10 to Vitality\nDamage Reduced by 8\n+1 to Light Radius\nRequirements -20%",
+                                                "tooltipString": "@dictGold@dictRunewordName151\n\n@dictBlue @dictRunewordInfo151",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -277,7 +277,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName126\n\n@dictBlue +2 to All Skills\n+20% Increased Attack Speed\n+20% Faster Hit Recovery\n+200% Enhanced Damage\n+75% Damage to Undead\n+50 to Attack Rating against Undead\n11% Mana stolen per hit\nHit Blinds Target +33\nHit Causes Monster to Flee +25%\nAll Resistances +75\n+2 Mana after each Kill\n30% Better Chance of Getting Magic Items\nRequirements -20%",
+                                                "tooltipString": "@dictGold@dictRunewordName126\n\n@dictBlue @dictRunewordInfo126",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -381,7 +381,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName69\n\n@dictBlue 6% Chance to cast level 11 Fade when struck\n10% Chance to cast level 18 Life Tap on striking\n20% Chance to cast level 20 Charged Bolt on striking\nLevel 17 Might Aura When Equipped\n+330-375% Enhanced Damage @dictVariable\n@dictBlue Ignore Target's Defense\n+60-70% Chance of Crushing Blow @dictVariable\n@dictBlue Prevent Monster Heal\nHit Blinds Target\n0-49% Better Chance of Getting Magic Items (Based on Character Level)",
+                                                "tooltipString": "@dictGold@dictRunewordName69\n\n@dictBlue @dictRunewordInfo69",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -485,7 +485,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName94\n\n@dictBlue Indestructible\n24% Chance to cast level 10 Weaken when struck\n+4 to All Skills\n+65% Faster Cast Rate\n+60% Faster Hit Recovery\nKnockback\n+10 to Vitality\n+10 to Energy\nIncrease Maximum Life 15-25% @dictVariable\n@dictBlue Regenerate Mana 15-30% @dictVariable\n@dictBlue All Resistances +60-70 @dictVariable\n@dictBlue 75% Extra Gold from Monsters\n30% Better Chance of Getting Magic Items",
+                                                "tooltipString": "@dictGold@dictRunewordName94\n\n@dictBlue @dictRunewordInfo94",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -589,7 +589,7 @@
                                                     "scale": 0.75
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictGold@dictRunewordName11\n\n@dictBlue 50% Chance to cast level 20 Poison Nova when you Kill an Enemy\nIndestructible\n+60% Increased Attack Speed\n+350-400% Enhanced Damage @dictVariable\n@dictBlue -25% Target Defense\n+50 to Attack Rating\n+200% Damage to Undead\n+50 to Attack Rating against Undead\n7% Mana stolen per hit\n12-15% Life stolen per hit @dictVariable\n@dictBlue Prevent Monster Heal\n+30 to all Attributes\n+1 to Light Radius\nRequirements -20%",
+                                                "tooltipString": "@dictGold@dictRunewordName11\n\n@dictBlue @dictRunewordInfo11",
                                                 "pressedFrame": 0
                                             }
                                         }
