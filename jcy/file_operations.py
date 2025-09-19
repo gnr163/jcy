@@ -116,38 +116,20 @@ class FileOperations:
         count += 1
         return (count, total)
 
-    def common_npcs_50005(self, value):
-        """修改npcs.json.50005 属性值(下一个恐怖区域)"""
-        npcs = os.path.join(MOD_PATH, r"data/local/lng/strings/npcs.json")
-        try:
-            json_data = None
-            with open(npcs, 'r', encoding='utf-8-sig') as f:
-                json_data = json.load(f)
+    def common_next_terror_zone(self, value):
+        """修改hudwarningsfakehd.json(下一个恐怖区域)"""
+        
+        json_path = os.path.join(MOD_PATH, r"data/global/ui/layouts/hudwarningsfakehd.json")
+        
+        with open(json_path, 'r', encoding='utf-8') as f:
+            json_data = json.load(f)
 
-            for npc in json_data:
-                if npc["id"] == 50005:
-                    npc["enUS"] = value
-                    npc["zhTW"] = value
-                    npc["deDE"] = value
-                    npc["esES"] = value
-                    npc["frFR"] = value
-                    npc["itIT"] = value
-                    npc["koKR"] = value
-                    npc["plPL"] = value
-                    npc["esMX"] = value
-                    npc["jaJP"] = value
-                    npc["ptBR"] = value
-                    npc["ruRU"] = value
-                    npc["zhCN"] = value
-
-                if npc["id"] > 50005:
-                    break
-
-            with open(npcs, 'w', encoding='utf-8-sig') as f:
-                json.dump(json_data, f, ensure_ascii=False, indent=2)
-            return (1, 1)
-        except Exception as e:
-            print(e)
+        json_data["children"][2]["children"][0]["fields"]["text"] = value
+        
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(json_data, f, ensure_ascii=False, indent=4)
+        
+        return (1, 1)
 
 
     def getFileOrTmp(self, path):
@@ -494,7 +476,7 @@ class FileOperations:
 
     def toggle_terror_zone(self, isEnabled: bool):
         """清理恐怖区域预告"""
-        return self.common_npcs_50005("")
+        return self.common_next_terror_zone("")
 
 
     def toggle_low_quality(self, isEnabled: bool):
@@ -2761,5 +2743,5 @@ class FileOperations:
         if data["status"] == "ok":
             zone = data["data"][0]["zone"]
             zoneName = TERROR_ZONE_DICT[zone]
-            self.common_npcs_50005(zoneName[LANG])
+            self.common_next_terror_zone(zoneName[LANG])
 

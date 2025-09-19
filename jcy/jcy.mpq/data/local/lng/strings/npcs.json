@@ -68,23 +68,6 @@
     "zhCN": "开关迷你血条"
   },
   {
-    "id": 50005,
-    "Key": "JcyNextTerrorZoneInfo",
-    "enUS": "遥远的绿洲",
-    "zhTW": "遥远的绿洲",
-    "deDE": "遥远的绿洲",
-    "esES": "遥远的绿洲",
-    "frFR": "遥远的绿洲",
-    "itIT": "遥远的绿洲",
-    "koKR": "遥远的绿洲",
-    "plPL": "遥远的绿洲",
-    "esMX": "遥远的绿洲",
-    "jaJP": "遥远的绿洲",
-    "ptBR": "遥远的绿洲",
-    "ruRU": "遥远的绿洲",
-    "zhCN": "遥远的绿洲"
-  },
-  {
     "id": 51000,
     "Key": "dictCredit",
     "enUS": "Item Dictionary Mod ver 2.7\nCreated by jeffjks\nModify By jcymeow",
