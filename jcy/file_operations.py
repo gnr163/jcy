@@ -88,6 +88,68 @@ class FileOperations:
                 print(e)
         return (count, total)
     
+    def common_switch_hudwarnings(self, name: str, isEnabled: bool):
+        """开关 HUDWarnings控件"""
+        
+        _files = [
+            r"data/global/ui/layouts/hudwarningshd.json",
+        ]
+        count = 0
+        total = len(_files)
+        
+        # 1.load
+        json_data = None
+        json_path = os.path.join(MOD_PATH, _files[0])
+        with open(json_path, 'r', encoding='utf-8') as f:
+            json_data = json.load(f)
+
+        # 2.modify 
+        for child in json_data["children"]:
+            if(child["name"] == name):
+                child["fields"]["message"] = child["fields"]["default"] if isEnabled else ""
+            pass
+                
+        # 3.write
+        with open(json_path, 'w', encoding="utf-8") as f:
+            json.dump(json_data, f, ensure_ascii=False, indent=4)
+
+        count += 1
+        return (count, total)
+
+    def common_npcs_50005(self, value):
+        """修改npcs.json.50005 属性值(下一个恐怖区域)"""
+        npcs = os.path.join(MOD_PATH, r"data/local/lng/strings/npcs.json")
+        try:
+            json_data = None
+            with open(npcs, 'r', encoding='utf-8-sig') as f:
+                json_data = json.load(f)
+
+            for npc in json_data:
+                if npc["id"] == 50005:
+                    npc["enUS"] = value
+                    npc["zhTW"] = value
+                    npc["deDE"] = value
+                    npc["esES"] = value
+                    npc["frFR"] = value
+                    npc["itIT"] = value
+                    npc["koKR"] = value
+                    npc["plPL"] = value
+                    npc["esMX"] = value
+                    npc["jaJP"] = value
+                    npc["ptBR"] = value
+                    npc["ruRU"] = value
+                    npc["zhCN"] = value
+
+                if npc["id"] > 50005:
+                    break
+
+            with open(npcs, 'w', encoding='utf-8-sig') as f:
+                json.dump(json_data, f, ensure_ascii=False, indent=2)
+            return (1, 1)
+        except Exception as e:
+            print(e)
+
+
     def getFileOrTmp(self, path):
         tmp = path + ".tmp"
         if os.path.exists(path):
@@ -413,89 +475,27 @@ class FileOperations:
         return self.common_rename(_files, isEnabled)
     
     def toggle_weapon_swap(self, isEnabled: bool):
-        """正副手防呆提示"""
-        _files = (
-            r"data/global/ui/layouts/hudwarningsfake.json",
-            r"data/global/ui/layouts/hudwarningsfakehd.json",
-            r"data/global/ui/layouts/ui_new_weaponswaphd.json",
-            r"data/hd/global/ui/panel/Inventory/weapon_swap.lowend.sprite",
-            r"data/hd/global/ui/panel/Inventory/weapon_swap.sprite",
-        )
-        return self.common_rename(_files, isEnabled)
-    
+        """开启正副手防呆"""
+        name = "OpenWeaponSwap"
+        return self.common_switch_hudwarnings(name, isEnabled)
+
+
     def toggle_minihp_bar(self, isEnabled: bool):
         """默认开启迷你血条"""
-        _files = [
-            r"data/global/ui/layouts/hudwarningshd.json",
-        ]
-        count = 0
-        total = len(_files)
-        keyword = "OpenMiniHp"
+        name = "OpenMiniHp"
+        return self.common_switch_hudwarnings(name, isEnabled)
 
-        # 1.load
-        json_data = None
-        json_path = os.path.join(MOD_PATH, _files[0])
-        with open(json_path, 'r', encoding='utf-8') as f:
-            json_data = json.load(f)
-
-        # 2.modify 
-        if isEnabled:
-            if not any(keyword == child["name"] for child in json_data["children"]):
-                json_data["children"].insert(-2, {
-                    "type": "TimerWidget",
-                    "name": "OpenMiniHp",
-                    "fields": {
-                        "time": 1,
-                        "message": "PanelManager:OpenPanel:minihp"
-                    }
-                })
-        else:
-            json_data["children"] = [child for child in json_data["children"] if child["name"] != keyword]
-                
-        # 3.write
-        with open(json_path, 'w', encoding="utf-8") as f:
-            json.dump(json_data, f, ensure_ascii=False, indent=4)
-
-
-        count += 1
-        return (count, total)
     
     def toggle_mini_cube(self, isEnabled: bool):
         """默认开启迷你盒子"""
-        _files = [
-            r"data/global/ui/layouts/hudwarningshd.json",
-        ]
-        count = 0
-        total = len(_files)
-        keyword = "OpenMiniCute"
-
-        # 1.load
-        json_data = None
-        json_path = os.path.join(MOD_PATH, _files[0])
-        with open(json_path, 'r', encoding='utf-8') as f:
-            json_data = json.load(f)
-
-        # 2.modify 
-        if isEnabled:
-            if not any(keyword == child["name"] for child in json_data["children"]):
-                json_data["children"].insert(-2, {
-                    "type": "TimerWidget",
-                    "name": "OpenMiniCute",
-                    "fields": {
-                        "time": 1,
-                        "message": "PanelManager:OpenPanel:HoradricCubeMiniLayout"
-                    }
-                })
-        else:
-            json_data["children"] = [child for child in json_data["children"] if child["name"] != keyword]
-                
-        # 3.write
-        with open(json_path, 'w', encoding="utf-8") as f:
-            json.dump(json_data, f, ensure_ascii=False, indent=4)
+        name = "OpenMiniCute"
+        return self.common_switch_hudwarnings(name, isEnabled)
 
 
-        count += 1
-        return (count, total)
+    def toggle_terror_zone(self, isEnabled: bool):
+        """清理恐怖区域预告"""
+        return self.common_npcs_50005("")
+
 
     def toggle_low_quality(self, isEnabled: bool):
         """
@@ -558,9 +558,8 @@ class FileOperations:
         开关 Esc退出
         """
         files_escape = (
-            r"data/global/ui/layouts/hudpanelhd.json",
             r"data/global/ui/layouts/pauselayout.json", 
-            r"data/global/ui/layouts/pauselayouthd.json",
+            r"data/global/ui/layouts/pauselayouthd.json"
         )
 
         return self.common_rename(files_escape, isEnabled) 
@@ -2698,6 +2697,14 @@ class FileOperations:
         return (count, total)
 
 
+    def select_server(self, radio: str):
+        """删除恐怖地带文件"""
+        count = 0
+        if TERROR_ZONE_PATH.exists():
+            TERROR_ZONE_PATH.unlink
+            count += 1
+        return (count, "重启控制器生效!")
+
     def sync_app_data(self):
         """
         APP_VERSION -> npcs.json.50001
@@ -2714,11 +2721,31 @@ class FileOperations:
                 if npc["id"] == 50001:
                     npc["enUS"] = APP_VERSION
                     npc["zhTW"] = APP_VERSION
+                    npc["deDE"] = APP_VERSION
+                    npc["esES"] = APP_VERSION
+                    npc["frFR"] = APP_VERSION
+                    npc["itIT"] = APP_VERSION
+                    npc["koKR"] = APP_VERSION
+                    npc["plPL"] = APP_VERSION
+                    npc["esMX"] = APP_VERSION
+                    npc["jaJP"] = APP_VERSION
+                    npc["ptBR"] = APP_VERSION
+                    npc["ruRU"] = APP_VERSION
                     npc["zhCN"] = APP_VERSION
 
                 if npc["id"] == 50002:
                     npc["enUS"] = APP_DATE
                     npc["zhTW"] = APP_DATE
+                    npc["deDE"] = APP_DATE
+                    npc["esES"] = APP_DATE
+                    npc["frFR"] = APP_DATE
+                    npc["itIT"] = APP_DATE
+                    npc["koKR"] = APP_DATE
+                    npc["plPL"] = APP_DATE
+                    npc["esMX"] = APP_DATE
+                    npc["jaJP"] = APP_DATE
+                    npc["ptBR"] = APP_DATE
+                    npc["ruRU"] = APP_DATE
                     npc["zhCN"] = APP_DATE
 
                 if npc["id"] > 50002:
@@ -2729,3 +2756,10 @@ class FileOperations:
             return (1, 1)
         except Exception as e:
             print(e)
+
+    def nextTerrorZone(self, data: dict):
+        if data["status"] == "ok":
+            zone = data["data"][0]["zone"]
+            zoneName = TERROR_ZONE_DICT[zone]
+            self.common_npcs_50005(zoneName[LANG])
+

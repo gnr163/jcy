@@ -179,7 +179,8 @@
             "name": "OpenWeaponSwap",
             "fields": {
                 "time": 1,
-                "message": "PanelManager:OpenPanel:UI_New_WeaponSwap"
+                "message": "PanelManager:OpenPanel:UI_New_WeaponSwap",
+                "default": "PanelManager:OpenPanel:UI_New_WeaponSwap"
             }
         },
         {
@@ -187,7 +188,8 @@
             "name": "OpenMiniHp",
             "fields": {
                 "time": 1,
-                "message": "PanelManager:OpenPanel:minihp"
+                "message": "PanelManager:OpenPanel:minihp",
+                "default": "PanelManager:OpenPanel:minihp"
             }
         },
         {
@@ -195,7 +197,8 @@
             "name": "OpenMiniCute",
             "fields": {
                 "time": 1,
-                "message": "PanelManager:OpenPanel:HoradricCubeMiniLayout"
+                "message": "PanelManager:OpenPanel:HoradricCubeMiniLayout",
+                "default": "PanelManager:OpenPanel:HoradricCubeMiniLayout"
             }
         },
         {

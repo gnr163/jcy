@@ -78,9 +78,9 @@ class FeatureController:
         else:
             print("[DEBUG] 配置已是最新版本")
 
-        
         # 恐怖区域更新
-        self.terror_zone_fetcher = TerrorZoneFetcher()
+        self.terror_zone_fetcher = TerrorZoneFetcher(self)
+
         # 初始化 UI（内部需要用到 current_states）
         self.feature_config.all_features_config
         self.feature_view = FeatureView(master, self.feature_config.all_features_config, self)
@@ -89,6 +89,7 @@ class FeatureController:
         self.feature_state_manager.load_settings()
         self.current_states = copy.deepcopy(self.feature_state_manager.loaded_states)
         self.feature_view.update_ui_state(self.current_states)
+
 
     def _upgrade_config(self):
         """执行完整的配置升级流程"""
@@ -232,7 +233,8 @@ class FeatureController:
             "147": self.file_operations.toggle_minihp_bar,
             # "默认开启迷你盒子"
             "148": self.file_operations.toggle_mini_cube,
-
+            # "恐怖区域预告写入游戏(需要控制器保持运行)"
+            "199": self.file_operations.toggle_terror_zone,
             
             
             # 佣兵图标位置
@@ -249,6 +251,8 @@ class FeatureController:
             "206": self.file_operations.select_rune_skin,
             # HUD面板尺寸
             "207": self.file_operations.select_hudpanel_size,
+            # 恐怖地带服务器
+            "299": self.file_operations.select_server,
 
 
             #角色特效
@@ -351,10 +355,11 @@ class FeatureController:
         subprocess.Popen(f'explorer "{CONFIG_PATH}"')  # 打开目录（Windows）
 
 class TerrorZoneFetcher:
-    def __init__(self, n_times_per_hour=5):
+    def __init__(self, controller: FeatureController, n_times_per_hour=5):
         self.running = False
         self.first = True
         self.thread = None
+        self.controller = controller
         self.n_times_per_hour = n_times_per_hour
 
     def fetch_once_with_retry(self, max_retries=9):
@@ -364,7 +369,11 @@ class TerrorZoneFetcher:
         randint = random.randint(0, 1)
         for attempt in range(1, max_retries + 1):
             try:
-                api = TERROR_ZONE_API[randint % 2]
+                api_server = self.controller.current_states["299"]
+                if "default" == api_server:
+                    api = TERROR_ZONE_API[api_server][randint % 2]
+                else:
+                    api = TERROR_ZONE_API[api_server]
                 print(f"[尝试] 第 {attempt} 次抓取 {api}")
                 response = requests.get(api, timeout=10)
                 response.raise_for_status()
@@ -427,6 +436,9 @@ class TerrorZoneFetcher:
                 try:
                     with open(TERROR_ZONE_PATH, "w", encoding="utf-8") as f:
                         json.dump(data, f, ensure_ascii=False, indent=2)
+                        # 写恐怖区域预告
+                        if(self.controller.current_states["199"]):
+                            self.controller.file_operations.nextTerrorZone(data)
                     print(f"[保存] 数据已保存到 {TERROR_ZONE_PATH}")
                 except Exception as e:
                     print(f"[错误] 保存数据失败: {e}")
