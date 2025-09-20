@@ -21,7 +21,7 @@ LANG = ZHCN
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.2.0"
+APP_VERSION = "v1.2.0B"
 
 # 发布日期
 APP_DATE = "20250920"
@@ -49,9 +49,10 @@ REGION_NAME_MAP = {
 # Unicode私有区字符 for 屏蔽道具
 UE01A = "" * 41
 
+# 恐怖区域API
 TERROR_ZONE_API = {
-    "default" : ("https://asia.d2tz.info/terror_zone?mode=online", "https://api.d2tz.info/terror_zone?mode=online"),
-    "1": "https://api.aws.d2-trade.com/api/query/tz_online"
+    "default" : ["https://asia.d2tz.info/terror_zone?mode=online", "https://api.d2tz.info/terror_zone?mode=online"],
+    "1": ["https://api.aws.d2-trade.com/api/query/tz_online"]
 }
     
 

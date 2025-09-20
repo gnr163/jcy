@@ -369,11 +369,11 @@ class TerrorZoneFetcher:
         randint = random.randint(0, 1)
         for attempt in range(1, max_retries + 1):
             try:
-                api_server = self.controller.current_states["299"]
-                if "default" == api_server:
-                    api = TERROR_ZONE_API[api_server][randint % 2]
-                else:
-                    api = TERROR_ZONE_API[api_server]
+                # 区服配置
+                server_cfg = self.controller.current_states["299"]
+                api_array = TERROR_ZONE_API[server_cfg]
+                api = api_array[randint % len(api_array)]
+
                 print(f"[尝试] 第 {attempt} 次抓取 {api}")
                 response = requests.get(api, timeout=10)
                 response.raise_for_status()
