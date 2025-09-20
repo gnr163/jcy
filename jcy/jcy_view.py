@@ -41,6 +41,7 @@ class FeatureView:
         
         self.feature_vars = {} 
         self.group_radio_buttons = {} 
+        self.notebooke = None
         self.tz_tab = None
         self.tray_icon = None
         
@@ -174,6 +175,7 @@ class FeatureView:
 
         # 绑定事件
         notebook.bind("<<NotebookTabChanged>>", self.on_tab_changed)
+        self.notebook = notebook
 
     def _create_tray_icon(self):
         """创建支持双击的系统托盘图标"""
@@ -357,6 +359,13 @@ class FeatureView:
             elif fid in self.all_features_config["checktable"]:
                 value = current_states.get(fid, {})
                 var.set(value)
+
+    def visible(self):
+        """国服,隐藏多开器Tab"""
+        language = getLanguage()
+        if ZHCN == language:
+            self.notebook.hide(0)
+
 
 class LabeledRadioGroup(ttk.LabelFrame):
     def __init__(self, master, feature_id, data, default_selected=None, command=None, **kwargs):

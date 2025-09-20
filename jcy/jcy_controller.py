@@ -63,6 +63,7 @@ class FeatureController:
 
         # 根据服务器初始化语言
         initLanguage(self.current_states.get("299"))
+        self.feature_view.visible()
 
     def getCurrentState(self, key):
         return self.current_states.get(key)
