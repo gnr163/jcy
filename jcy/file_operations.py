@@ -3,7 +3,6 @@ import os
 import shutil
 import re
 from jcy_constants import *
-from jcy_model import FeatureConfig
 from jcy_paths import *
 
 
@@ -11,8 +10,8 @@ class FileOperations:
     """
     负责处理所有文件相关的操作，如复制和删除。
     """
-    def __init__(self, config: FeatureConfig):
-        self.config = config
+    def __init__(self, controller):
+        self.controller = controller
 
     def common_encode_private_use_chars(self, text):
         r"""
@@ -2743,5 +2742,5 @@ class FileOperations:
         if data["status"] == "ok":
             zone = data["data"][0]["zone"]
             zoneName = TERROR_ZONE_DICT[zone]
-            self.common_next_terror_zone(zoneName[LANG])
+            self.common_next_terror_zone(zoneName[getLanguage()].replace("、", "\n").replace(",", "\n"))
 

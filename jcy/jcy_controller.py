@@ -20,42 +20,13 @@ from jcy_model import FeatureConfig, FeatureStateManager
 from jcy_paths import *
 from jcy_view import FeatureView
 
-# ---- UAC ----
-def is_admin():
-    """UAC检查"""
-    try:
-        return ctypes.windll.shell32.IsUserAnAdmin()
-    except:
-        return False
-    
-if not is_admin():
-    # 重新以管理员权限启动自己
-    ctypes.windll.shell32.ShellExecuteW(
-        None, "runas", sys.executable, " ".join(sys.argv), None, 1)
-    sys.exit(0)
-
-# ---- 单例检查----
-kernel32 = ctypes.windll.kernel32
-user32 = ctypes.windll.user32
-mutex = kernel32.CreateMutexW(None, False, MUTEX_NAME)
-if kernel32.GetLastError() == ERROR_ALREADY_EXISTS:
-    print("已有实例运行中, 显示实例窗口...")
-    # 查找已有实例的主窗口
-    hwnd = user32.FindWindowW(None, APP_FULL_NAME)  
-    if hwnd:
-        # 发送自定义消息通知已有实例显示窗口
-        user32.SendMessageW(hwnd, WM_SHOW_WINDOW, 0, 0)
-        # 激活已有实例窗口
-        user32.ShowWindow(hwnd, 1)  # SW_SHOWNORMAL
-    sys.exit(0)
-
 class FeatureController:
     def __init__(self, master):
         self.master = master
         self.current_states = {}
         self.dialogs = "" 
         self.feature_config = FeatureConfig()
-        self.file_operations = FileOperations(self.feature_config)
+        self.file_operations = FileOperations(self)
         self.feature_state_manager = FeatureStateManager(self.feature_config)
 
         # 无配置文件,以默认文件为准
@@ -81,15 +52,21 @@ class FeatureController:
         # 恐怖区域更新
         self.terror_zone_fetcher = TerrorZoneFetcher(self)
 
-        # 初始化 UI（内部需要用到 current_states）
+        # 初始化 UI (根据jcy_model, 并设置默认值)
         self.feature_config.all_features_config
         self.feature_view = FeatureView(master, self.feature_config.all_features_config, self)
 
-        # ???
+        # 加载配置文件,按照配置更新到UI
         self.feature_state_manager.load_settings()
         self.current_states = copy.deepcopy(self.feature_state_manager.loaded_states)
         self.feature_view.update_ui_state(self.current_states)
 
+        # 根据服务器初始化语言
+        initLanguage(self.current_states.get("299"))
+
+    def getCurrentState(self, key):
+        return self.current_states.get(key)
+    
 
     def _upgrade_config(self):
         """执行完整的配置升级流程"""
@@ -354,6 +331,7 @@ class FeatureController:
     def open_appdata(self):
         subprocess.Popen(f'explorer "{CONFIG_PATH}"')  # 打开目录（Windows）
 
+
 class TerrorZoneFetcher:
     def __init__(self, controller: FeatureController, n_times_per_hour=5):
         self.running = False
@@ -437,7 +415,7 @@ class TerrorZoneFetcher:
                     with open(TERROR_ZONE_PATH, "w", encoding="utf-8") as f:
                         json.dump(data, f, ensure_ascii=False, indent=2)
                         # 写恐怖区域预告
-                        if(self.controller.current_states["199"]):
+                        if self.controller.getCurrentState("199"):
                             self.controller.file_operations.nextTerrorZone(data)
                     print(f"[保存] 数据已保存到 {TERROR_ZONE_PATH}")
                 except Exception as e:
@@ -463,6 +441,27 @@ if not getattr(sys, 'frozen', False):
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 if __name__ == "__main__":
+    # ---- UAC ---- 
+    if not ctypes.windll.shell32.IsUserAnAdmin():
+        ctypes.windll.shell32.ShellExecuteW(
+            None, "runas", sys.executable, " ".join(sys.argv), None, 1)
+        sys.exit(0)
+
+    # ---- 单例检查 ----
+    kernel32 = ctypes.windll.kernel32
+    user32 = ctypes.windll.user32
+    mutex = kernel32.CreateMutexW(None, False, MUTEX_NAME)
+    if kernel32.GetLastError() == ERROR_ALREADY_EXISTS:
+        print("已有实例运行中, 显示实例窗口...")
+        # 查找已有实例的主窗口
+        hwnd = user32.FindWindowW(None, APP_FULL_NAME)  
+        if hwnd:
+            # 发送自定义消息通知已有实例显示窗口
+            user32.SendMessageW(hwnd, WM_SHOW_WINDOW, 0, 0)
+            # 激活已有实例窗口
+            user32.ShowWindow(hwnd, 1)  # SW_SHOWNORMAL
+        sys.exit(0)
+
     root = tk.Tk()
 
     app = FeatureController(root)
@@ -479,7 +478,7 @@ if __name__ == "__main__":
             formatted_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(raw_time)) if raw_time else "未知时间"
             
             zone_info = TERROR_ZONE_DICT.get(zone_key, {})
-            zone_name = zone_info.get(LANG, zone_info.get(ENUS)) if zone_info else f"未知区域（{zone_key}）"
+            zone_name = zone_info.get(getLanguage(), zone_info.get(ENUS)) if zone_info else f"未知区域（{zone_key}）"
             message = f"{formatted_time} {zone_name}"
         except Exception as e:
             print("[通知构造异常]", e)

@@ -958,7 +958,7 @@ class TerrorZoneUI(tk.Frame):
                         continue
                     zone_info = TERROR_ZONE_DICT.get(zone_key)
                     if isinstance(zone_info, dict):
-                        name = zone_info.get(LANG, zone_info.get(ENUS))
+                        name = zone_info.get(getLanguage(), zone_info.get(ENUS))
                     else:
                         name = "未知名称"
                     self.tree.insert("", "end", values=(formatted_time, name))
