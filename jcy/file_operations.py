@@ -2,6 +2,7 @@ import json
 import os
 import shutil
 import re
+import time
 from jcy_constants import *
 from jcy_paths import *
 
@@ -2740,7 +2741,12 @@ class FileOperations:
 
     def nextTerrorZone(self, data: dict):
         if data["status"] == "ok":
-            zone = data["data"][0]["zone"]
-            zoneName = TERROR_ZONE_DICT[zone]
-            self.common_next_terror_zone(zoneName[getLanguage()].replace("、", "\n").replace(",", "\n"))
+            rec = data["data"][0]
+            raw_time = rec.get("time")
+            zone_key = rec.get("zone")
+            formatted_time = time.strftime('%H:%M:%S', time.localtime(raw_time)) if raw_time else "未知时间"
+            zone_info = TERROR_ZONE_DICT.get(zone_key, {})
+            zone_name = zone_info.get(getLanguage(), zone_info.get(ENUS)) if zone_info else f"未知区域（{zone_key}）"
+            formatted_name = zone_name.replace("、", "\n").replace(",", "\n")
+            self.common_next_terror_zone(f"{formatted_time}\n{formatted_name}")
 
