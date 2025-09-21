@@ -61,17 +61,17 @@ TERROR_ZONE_DICT = {
   "1-1": {
     "zhCN": "鲜血荒地、 邪恶洞穴",
     "zhTW": "鮮血荒地、 邪惡洞窟",
-    "enUS": "Blood Moor and Den of Evil"
+    "enUS": "Blood Moor, Den of Evil"
   },
   "1-2": {
     "zhCN": "冰冷之原、洞穴",
     "zhTW": "冰冷之原、洞穴",
-    "enUS": "Cold Plains and The Cave"
+    "enUS": "Cold Plains, The Cave"
   },
   "1-3": {
     "zhCN": "埋骨之地、墓穴、寝陵",
     "zhTW": "埋骨之地、墓穴、大陵墓",
-    "enUS": "Burial Grounds, The Crypt and The Mausoleum"
+    "enUS": "Burial Grounds, The Crypt, The Mausoleum"
   },
   "1-4": {
     "zhCN": "石块旷野",
@@ -86,12 +86,12 @@ TERROR_ZONE_DICT = {
   "1-6": {
     "zhCN": "黑暗森林、地下通道",
     "zhTW": "黑暗森林、地底通道",
-    "enUS": "Dark Wood and Underground Passage"
+    "enUS": "Dark Wood, Underground Passage"
   },
   "1-7": {
     "zhCN": "黑色沼泽、 洞坑",
     "zhTW": "黑色荒地、 地洞",
-    "enUS": "Black Marsh and The Hole"
+    "enUS": "Black Marsh, The Hole"
   },
   "1-8": {
     "zhCN": "被遗忘的高塔",
@@ -106,12 +106,12 @@ TERROR_ZONE_DICT = {
   "1-10": {
     "zhCN": "监牢、营房",
     "zhTW": "監牢、兵營",
-    "enUS": "Jail and Barracks"
+    "enUS": "Jail, Barracks"
   },
   "1-11": {
     "zhCN": "大教堂、地下墓穴",
     "zhTW": "大教堂、地下墓穴",
-    "enUS": "Cathedral and Catacombs"
+    "enUS": "Cathedral, Catacombs"
   },
   "1-12": {
     "zhCN": "哞哞农场",
@@ -126,12 +126,12 @@ TERROR_ZONE_DICT = {
   "2-2": {
     "zhCN": "碎石荒野、碎石古墓",
     "zhTW": "碎石荒地、古老石墓",
-    "enUS": "Rocky Waste and Stony Tomb"
+    "enUS": "Rocky Waste, Stony Tomb"
   },
   "2-3": {
     "zhCN": "干燥高地、亡者大殿",
     "zhTW": "乾土高地、死亡之殿",
-    "enUS": "Dry Hills and Halls of the Dead"
+    "enUS": "Dry Hills, Halls of the Dead"
   },
   "2-4": {
     "zhCN": "偏远绿洲",
@@ -146,7 +146,7 @@ TERROR_ZONE_DICT = {
   "2-6": {
     "zhCN": "失落之城、群蛇峡谷、利爪腹蛇神殿",
     "zhTW": "失落古城、群蛇峽谷、利爪蛇魔神殿",
-    "enUS": "Lost City, Valley of Snakes and Claw Viper Temple"
+    "enUS": "Lost City, Valley of Snakes, Claw Viper Temple"
   },
   "2-7": {
     "zhCN": "神秘避难所",
@@ -156,17 +156,17 @@ TERROR_ZONE_DICT = {
   "2-8": {
     "zhCN": "塔•拉夏之墓、塔•拉夏的墓室",
     "zhTW": "塔拉夏的古墓、塔拉夏的密室",
-    "enUS": "Tal Rasha's Tombs and Tal Rasha's Chamber"
+    "enUS": "Tal Rasha's Tombs, Tal Rasha's Chamber"
   },
   "3-1": {
     "zhCN": "蜘蛛森林、蜘蛛洞穴",
     "zhTW": "蜘蛛森林、蜘蛛洞窟",
-    "enUS": "Spider Forest and Spider Cavern"
+    "enUS": "Spider Forest, Spider Cavern"
   },
   "3-2": {
     "zhCN": "剥皮魔丛林、剥皮魔监牢",
     "zhTW": "剝皮叢林、剝皮地牢",
-    "enUS": "Flayer Jungle and Flayer Dungeon"
+    "enUS": "Flayer Jungle, Flayer Dungeon"
   },
   "3-3": {
     "zhCN": "庞大湿地",
@@ -176,7 +176,7 @@ TERROR_ZONE_DICT = {
   "3-4": {
     "zhCN": "库拉斯特集市、毁灭的神庙、废弃的礼拜堂",
     "zhTW": "庫拉斯特市集、荒廢的神殿、廢棄的寺院",
-    "enUS": "Kurast Bazaar, Ruined Temple and Disused Fane"
+    "enUS": "Kurast Bazaar, Ruined Temple, Disused Fane"
   },
   "3-5": {
     "zhCN": "崔凡克",
@@ -191,12 +191,12 @@ TERROR_ZONE_DICT = {
   "4-1": {
     "zhCN": "外围荒原、绝望平原",
     "zhTW": "外圍荒原、絕望平原",
-    "enUS": "Outer Steppes and Plains of Despair"
+    "enUS": "Outer Steppes, Plains of Despair"
   },
   "4-2": {
     "zhCN": "火焰之河、神罚之城",
     "zhTW": "火焰之河、罪罰之城",
-    "enUS": "River of Flame and City of the Damned"
+    "enUS": "River of Flame, City of the Damned"
   },
   "4-3": {
     "zhCN": "混沌避难所",
@@ -206,37 +206,37 @@ TERROR_ZONE_DICT = {
   "5-1": {
     "zhCN": "血腥丘陵、冰冻高地、亚巴顿",
     "zhTW": "血腥丘陵、冰凍高地、亞巴頓",
-    "enUS": "Bloody Foothills, Frigid Highlands and Abaddon"
+    "enUS": "Bloody Foothills, Frigid Highlands, Abaddon"
   },
   "5-2": {
     "zhCN": "冰川小径、漂流洞窟",
     "zhTW": "冰河小径、漂泊者洞窟",
-    "enUS": "Glacial Trail and Drifter Cavern"
+    "enUS": "Glacial Trail, Drifter Cavern"
   },
   "5-3": {
     "zhCN": "先祖之路、寒冰地窖",
     "zhTW": "先祖之路、冰窖",
-    "enUS": "Ancient's Way and Icy Cellar"
+    "enUS": "Ancient's Way, Icy Cellar"
   },
   "5-4": {
     "zhCN": "亚瑞特高原、阿克隆深渊",
     "zhTW": "亞瑞特高原、冥河地穴",
-    "enUS": "Arreat Plateau and Pit of Acheron"
+    "enUS": "Arreat Plateau, Pit of Acheron"
   },
   "5-5": {
     "zhCN": "水晶通道、冰冻之河",
     "zhTW": "水晶通道、冰凍之河",
-    "enUS": "Crystalline Passage and Frozen River"
+    "enUS": "Crystalline Passage, Frozen River"
   },
   "5-6": {
     "zhCN": "尼拉塞克的神殿、痛楚大厅、苦痛大厅、沃特大厅",
     "zhTW": "尼拉塞克神殿、怨慟之廳、苦痛之廳、沃特之廳",
-    "enUS": "Nihlathak's Temple and Temple Halls"
+    "enUS": "Nihlathak's Temple, Temple Halls"
   },
   "5-7": {
     "zhCN": "世界之石要塞、毁灭王座、世界之石大殿",
     "zhTW": "世界之石要塞、毀滅王座、世界之石大殿",
-    "enUS": "Worldstone Keep, Throne of Destruction and Worldstone Chamber"
+    "enUS": "Worldstone Keep, Throne of Destruction, Worldstone Chamber"
   }
 }
 

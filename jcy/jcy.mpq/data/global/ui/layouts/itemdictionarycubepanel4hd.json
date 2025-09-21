@@ -110,7 +110,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "Reroll Item Attributes",
+                                        "text": "@dictRerollItemAttributes",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
@@ -143,7 +143,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Rare Item\nPerfect Skull\nThe Stone of Jordan",
+                                                "text": "@dictClassRareItem\n@dictSkull5\n@dictUniqueItemName122",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -161,7 +161,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Random Rare Item\n    of the same type",
+                                                "text": "->  @dictClassRareItem\n    (@dictRandomAttribute)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -198,6 +198,10 @@
                         },
                         {
                             "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
+                        },
+                        {
+                            "type": "TableRowWidget",
                             "name": "Row ItemNameDisplayMode",
                             "children": [
                                 {
@@ -213,7 +217,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Rare Item\nPerfect Skull × 6",
+                                                "text": "@dictClassRareItem\n@dictSkull5 × 6",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -231,7 +235,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Random Rare Item\n    of the same type",
+                                                "text": "->  @dictClassRareItem\n    (@dictRandomAttribute)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -261,6 +265,10 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -301,7 +309,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Random @strBSMagic @amu",
+                                                "text": "->  @strBSMagic @amu \n    (@dictRandomAttribute)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -331,6 +339,10 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -371,7 +383,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Random @strBSMagic @rin",
+                                                "text": "->  @strBSMagic @rin \n    (@dictRandomAttribute)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -408,6 +420,10 @@
                         },
                         {
                             "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
+                        },
+                        {
+                            "type": "TableRowWidget",
                             "name": "Row ItemNameDisplayMode",
                             "children": [
                                 {
@@ -423,7 +439,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Magic Item\nPerfect Gem or Skull × 3",
+                                                "text": "@dictClassMagicItem\n@dictPerfectGemSkull × 3",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -441,7 +457,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Random Magic Item\n    of the same type",
+                                                "text": "->  @dictClassMagicItem\n    (@dictRandomAttribute)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -478,6 +494,10 @@
                         },
                         {
                             "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
+                        },
+                        {
+                            "type": "TableRowWidget",
                             "name": "Row ItemNameDisplayMode",
                             "children": [
                                 {
@@ -493,7 +513,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic @amu\nPerfect Gem × 6 (Each type)",
+                                                "text": "@strBSMagic @amu\n@dictPerfectGem × 6 (@dictEachtype)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -511,7 +531,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @Prismatic @amu\n    (All Resistances)",
+                                                "text": "->  @Prismatic @amu\n    (@dictAllResistances)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -534,13 +554,17 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "Fixed Prefix@dictBlue\nAll Resistances +16-20% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictAllResistances +16-20% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -563,7 +587,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic @rin\nPerfect Emerald\nAntidote Potion",
+                                                "text": "@strBSMagic @rin\n@dictEmerald5\n@dictItemAntidotePotion",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -581,7 +605,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @Jade @rin (Poison Resist)",
+                                                "text": "->  @Jade @rin \n    (@dictPoisonResist)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -604,13 +628,17 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "Fixed Prefix@dictBlue\nPoison Resist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictPoisonResist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -633,7 +661,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic @rin\nPerfect Ruby\nExploding Potion",
+                                                "text": "@strBSMagic @rin\n@dictRuby5\n@dictItemExplodingPotion",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -651,7 +679,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @Garnet @rin (Fire Resist)",
+                                                "text": "->  @Garnet @rin \n    (@dictFireResist)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -674,13 +702,17 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "Fixed Prefix@dictBlue\nFire Resist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictFireResist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -703,7 +735,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic @rin\nPerfect Topaz\nRejuvenation Potion",
+                                                "text": "@strBSMagic @rin\n@dictTopaz5\n@dictItemRejuvenationPotion",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -721,7 +753,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @Coral @rin (Lightning Resist)",
+                                                "text": "->  @Coral @rin \n    (@dictLightningResist)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -744,13 +776,17 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "Fixed Prefix@dictBlue\nLightning Resist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictLightningResist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -773,7 +809,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic @rin\nPerfect Sapphire\nThawing Potion",
+                                                "text": "@strBSMagic @rin\n@dictSapphire5\n@dictItemThawingPotion",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -791,7 +827,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @Cobalt @rin (Cold Resist)",
+                                                "text": "->  @Cobalt @rin \n    (@dictColdResist)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -814,13 +850,17 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "Fixed Prefix@dictBlue\nCold Resist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictColdResist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -843,7 +883,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic Sword\nRuby (Any type)\nHealing Potion × 4 (Any)",
+                                                "text": "@strBSMagic @dictClassSword\n@dictRuby3 (@dictAnyType)\n@dictItemHealingPotion × 4 (@dictAny)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -861,7 +901,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Sword of the Leech",
+                                                "text": "->  @dictSwordOfTheLeech",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -884,13 +924,17 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "Fixed Suffix@dictBlue\n2-5% Life stolen per hit @dictVariable\n\n@dictWhite@dictItemLevel: 30",
+                                                "tooltipString": "@dictFixedSuffix@dictBlue\n@dictSwordOfTheLeechModifiers @dictVariable\n\n@dictWhite@dictItemLevel: 30",
                                                 "pressedFrame": 0
                                             }
                                         }
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -913,7 +957,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic Shield\nSkull (Any type) × 2\nSpiked Club (Any)",
+                                                "text": "@strBSMagic @dictClassShield\n@dictSkull3 (@dictAnyType) × 2\n@dictClassSpikedClub (@dictAny)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -931,7 +975,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  Shield of Spikes",
+                                                "text": "->  @dictShieldofSpikes",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -954,13 +998,17 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "Fixed Suffix@dictBlue\nAttacker Takes Damage of 4-6 @dictVariable\n\n@dictWhite@dictItemLevel: 30",
+                                                "tooltipString": "@dictFixedSuffix@dictBlue\n@dictShieldofSpikesModifiers @dictVariable\n\n@dictWhite@dictItemLevel: 30",
                                                 "pressedFrame": 0
                                             }
                                         }
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -983,7 +1031,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Staff (Any)\nKris (Any)\nBelt (Any)\nDiamond (Any type)",
+                                                "text": "@dictClassStaff (@dictAny)\n@dictClassKris (@dictAny)\n@dictClassBelt (@dictAny)\n@dictDiamond3 (@dictAnyType)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1001,7 +1049,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @Savage Polearm",
+                                                "text": "->  @dictSavagePolearm",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1024,13 +1072,17 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "Fixed Prefix@dictBlue\n+66~80% Enhanced Damage @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictSavagePolearmModifiers @dictVariable\n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -1053,7 +1105,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic Weapon\nChpped Gem × 3",
+                                                "text": "@strBSMagic @dictClassWeapons\n@dictChippedGem × 3",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1071,7 +1123,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @strBSMagic Weapon (Socketed 1-2)",
+                                                "text": "->  @strBSMagic @dictClassWeapons (@dictClassSocket 1-2)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1094,13 +1146,17 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictBlue Socketed (1-2) @dictVariable\n\n@dictWhite@dictItemLevel: 25",
+                                                "tooltipString": "@dictBlue @dictClassSocket (1-2) @dictVariable\n\n@dictWhite@dictItemLevel: 25",
                                                 "pressedFrame": 0
                                             }
                                         }
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -1123,7 +1179,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "Socketed Weapon\nStandard Gem × 3",
+                                                "text": "@strBSMagic @dictClassWeapons\n@dictStandardGem × 3",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1141,7 +1197,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @strBSMagic Weapon (Socketed 1-2)",
+                                                "text": "->  @strBSMagic @dictClassWeapons (@dictClassSocket 1-2)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1164,13 +1220,17 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictBlue Socketed (1-2) @dictVariable\n\n@dictWhite@dictItemLevel: 30",
+                                                "tooltipString": "@dictBlue @dictClassSocket (1-2) @dictVariable\n\n@dictWhite@dictItemLevel: 30",
                                                 "pressedFrame": 0
                                             }
                                         }
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row ItemNameDisplayMode"
                         },
                         {
                             "type": "TableRowWidget",
@@ -1193,7 +1253,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@strBSMagic Weapon\nFlawless Gem × 3",
+                                                "text": "@strBSMagic @dictClassWeapons\n@dictFlawlessGem × 3",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1211,7 +1271,7 @@
                                             "name": "CubeRecipeResult",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "->  @strBSMagic Weapon (Socketed 1-2)",
+                                                "text": "->  @strBSMagic @dictClassWeapons (@dictClassSocket 1-2)",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -1234,7 +1294,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictBlue Socketed (1-2) @dictVariable\n\n@dictWhite@dictItemLevel: 30",
+                                                "tooltipString": "@dictBlue @dictClassSocket (1-2) @dictVariable\n\n@dictWhite@dictItemLevel: 30",
                                                 "pressedFrame": 0
                                             }
                                         }

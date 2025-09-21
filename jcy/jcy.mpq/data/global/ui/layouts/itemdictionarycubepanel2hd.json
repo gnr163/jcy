@@ -140,7 +140,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictTextNormalArmors\n@r07L + @r10L\n@dictPerfectTopaz",
+                                                "text": "@dictTextNormalArmors\n@r07L + @r10L\n@dictTopaz5",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -190,7 +190,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictTextNormalWeapons\n@r08L + @r11L\n@dictPerfectAmethyst",
+                                                "text": "@dictTextNormalWeapons\n@r08L + @r11L\n@dictAmethyst5",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -240,7 +240,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictTextNormalHelmets\n@r08L + @r10L\n@dictPerfectSapphire",
+                                                "text": "@dictTextNormalHelmets\n@r08L + @r10L\n@dictSapphire5",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -290,7 +290,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictTextNormalShields\n@r07L + @r11L\n@dictPerfectRuby",
+                                                "text": "@dictTextNormalShields\n@r07L + @r11L\n@dictRuby5",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -340,7 +340,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictClassRareItem\n@dictPerfectSkull × 3\n@dictUniqueItemName122",
+                                                "text": "@dictClassRareItem\n@dictSkull5 × 3\n@dictUniqueItemName122",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }

@@ -233,7 +233,7 @@ class FeatureController:
             "299": self.file_operations.select_server,
 
 
-            #角色特效
+            # 角色特效
             "301": self.file_operations.select_character_effects,
             # 属性词条特效
             "302": self.file_operations.select_entry_effects,

@@ -140,7 +140,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictNormalGrade @dictUniqueAndSet @dictClassWeapons\n@r08L + @r12L\n@dictPerfectEmerald",
+                                                "text": "@dictNormalGrade @dictUniqueAndSet @dictClassWeapons\n@r08L + @r12L\n@dictEmerald5",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -190,7 +190,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictNormalGrade @dictUniqueAndSet @dictClassArmors\n@r07L + @r13L\n@dictPerfectDiamond",
+                                                "text": "@dictNormalGrade @dictUniqueAndSet @dictClassArmors\n@r07L + @r13L\n@dictDiamond5",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -240,7 +240,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictNormalGrade @dictRare @dictClassWeapons\n@r09L + @r11L\n@dictPerfectSapphire",
+                                                "text": "@dictNormalGrade @dictRare @dictClassWeapons\n@r09L + @r11L\n@dictSapphire5",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -290,7 +290,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictNormalGrade @dictRare @dictClassArmors\n@r08L + @r10L\n@dictPerfectAmethyst",
+                                                "text": "@dictNormalGrade @dictRare @dictClassArmors\n@r08L + @r10L\n@dictAmethyst5",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -368,7 +368,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictExceptionalGrade @dictUniqueAndSet @dictClassWeapons\n@r17L + @r21L\n@dictPerfectEmerald",
+                                                "text": "@dictExceptionalGrade @dictUniqueAndSet @dictClassWeapons\n@r17L + @r21L\n@dictEmerald5",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -418,7 +418,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictExceptionalGrade @dictUniqueAndSet @dictClassArmors\n@r18L + @r20L\n@dictPerfectDiamond",
+                                                "text": "@dictExceptionalGrade @dictUniqueAndSet @dictClassArmors\n@r18L + @r20L\n@dictDiamond5",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -468,7 +468,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictExceptionalGrade @dictRare @dictClassWeapons\n@r19L + @r22L\n@dictPerfectSapphire",
+                                                "text": "@dictExceptionalGrade @dictRare @dictClassWeapons\n@r19L + @r22L\n@dictSapphire5",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -518,7 +518,7 @@
                                             "name": "CubeRecipeInput",
                                             "fields": {
                                                 "fitToText": true,
-                                                "text": "@dictExceptionalGrade @dictRare @dictClassArmors\n@r18L + @r21L\n@dictPerfectAmethyst",
+                                                "text": "@dictExceptionalGrade @dictRare @dictClassArmors\n@r18L + @r21L\n@dictAmethyst5",
                                                 "style": "$StyleDictionaryItemDescription"
                                             }
                                         }
@@ -563,7 +563,7 @@
                                     "type": "TextBoxWidget",
                                     "name": "Gameplay Options",
                                     "fields": {
-                                        "text": "Quality Improvement",
+                                        "text": "@dictQualityImprovement",
                                         "style": "$StyleSettingsTitle"
                                     },
                                     "children": [
