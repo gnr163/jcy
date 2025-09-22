@@ -197,7 +197,7 @@
             "name": "OpenMiniCute",
             "fields": {
                 "time": 1,
-                "message": "PanelManager:OpenPanel:HoradricCubeMiniLayout",
+                "message": "",
                 "default": "PanelManager:OpenPanel:HoradricCubeMiniLayout"
             }
         },

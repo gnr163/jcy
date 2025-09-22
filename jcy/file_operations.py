@@ -351,76 +351,6 @@ class FileOperations:
 
         return self.common_rename(files_chest_highlight, isEnabled)
 
-    def toggle_roomtiles_arrow(self, isEnabled: bool):
-        """
-        开关 入口八方箭头
-        """
-        files_entrance_arrow = (
-            r"data/hd/objects/env_pillars/Arcane_tome.json",
-            r"data/hd/objects/env_pillars/Seven_tombs_receptacle.json",
-            r"data/hd/objects/env_stone/Stone_alpha.json",
-            r"data/hd/objects/env_wood/inifuss_tree.json",
-            r"data/hd/roomtiles/act_1_catacombs_down.json",
-            r"data/hd/roomtiles/act_1_crypt_down.json",
-            r"data/hd/roomtiles/act_1_jail_down.json",
-            r"data/hd/roomtiles/act_1_jail_up.json",
-            r"data/hd/roomtiles/act_1_wilderness_to_cave_cliff_l.json",
-            r"data/hd/roomtiles/act_1_wilderness_to_cave_cliff_r.json",
-            r"data/hd/roomtiles/act_1_wilderness_to_cave_floor_l.json",
-            r"data/hd/roomtiles/act_1_wilderness_to_cave_floor_r.json",
-            r"data/hd/roomtiles/act_1_wilderness_to_tower.json",
-            r"data/hd/roomtiles/act_2_desert_to_lair.json",
-            r"data/hd/roomtiles/act_2_desert_to_sewer_trap.json",
-            r"data/hd/roomtiles/act_2_desert_to_tomb_l_1.json",
-            r"data/hd/roomtiles/act_2_desert_to_tomb_l_2.json",
-            r"data/hd/roomtiles/act_2_desert_to_tomb_r_1.json",
-            r"data/hd/roomtiles/act_2_desert_to_tomb_r_2.json",
-            r"data/hd/roomtiles/act_2_desert_to_tomb_viper.json",
-            r"data/hd/roomtiles/act_2_lair_down.json",
-            r"data/hd/roomtiles/act_2_sewer_down.json",
-            r"data/hd/roomtiles/act_2_tomb_down.json",
-            r"data/hd/roomtiles/act_3_dungeon_down.json",
-            r"data/hd/roomtiles/act_3_jungle_to_dungeon_fort.json",
-            r"data/hd/roomtiles/act_3_jungle_to_dungeon_hole.json",
-            r"data/hd/roomtiles/act_3_jungle_to_spider.json",
-            r"data/hd/roomtiles/act_3_kurast_to_temple.json",
-            r"data/hd/roomtiles/act_3_mephisto_down_l.json",
-            r"data/hd/roomtiles/act_3_mephisto_down_r.json",
-            r"data/hd/roomtiles/act_3_sewer_down.json",
-            r"data/hd/roomtiles/act_4_mesa_to_lava.json",
-            r"data/hd/roomtiles/act_5_baal_temple_down_l.json",
-            r"data/hd/roomtiles/act_5_baal_temple_down_r.json",
-            r"data/hd/roomtiles/act_5_barricade_down_wall_l.json",
-            r"data/hd/roomtiles/act_5_barricade_down_wall_r.json",
-            r"data/hd/roomtiles/act_5_ice_caves_down_floor.json",
-            r"data/hd/roomtiles/act_5_ice_caves_down_l.json",
-            r"data/hd/roomtiles/act_5_ice_caves_down_r.json",
-            r"data/hd/roomtiles/act_5_temple_down.json",
-        )
-
-        return self.common_rename(files_entrance_arrow, isEnabled)
-
-    def toggle_waypoint_arrow(self, isEnabled: bool):
-        """
-        开关 小站八方箭头
-        """
-        files_entrance_arrow = (
-            r"data/hd/objects/waypoint_portals/sewer_waypoint.json",
-            r"data/hd/objects/waypoint_portals/temple_waypoint.json",
-            r"data/hd/objects/waypoint_portals/travincal_waypoint.json",
-            r"data/hd/objects/waypoint_portals/waypoint_act_2.json",
-            r"data/hd/objects/waypoint_portals/waypoint_act_3.json",
-            r"data/hd/objects/waypoint_portals/waypoint_baal.json",
-            r"data/hd/objects/waypoint_portals/waypoint_cellar.json",
-            r"data/hd/objects/waypoint_portals/waypoint_exp.json",
-            r"data/hd/objects/waypoint_portals/waypoint_ice_cave.json",
-            r"data/hd/objects/waypoint_portals/waypoint_inside_act_1.json",
-            r"data/hd/objects/waypoint_portals/waypoint_outside_act_1.json",
-            r"data/hd/objects/waypoint_portals/waypoint_outside_act_4.json",
-            r"data/hd/objects/waypoint_portals/waypoint_wilderness.json",
-        )
-
-        return self.common_rename(files_entrance_arrow, isEnabled)
     
     def toggle_a2hire_female(self, isEnabled: bool):
         """A2佣兵 女性化"""
@@ -523,17 +453,6 @@ class FileOperations:
                     os.remove(temp_path)
         return (count, total)
 
-    def toggle_no_mosaic_sin(self, isEnabled: bool):
-        """
-        开关 马赛克护眼
-        """
-        files_no_mosaic_sin = (
-            r"data/hd/missiles/ground_fire_medium.json",
-            r"data/hd/missiles/ground_fire_small.json",
-            r"data/hd/missiles/missiles.json",
-        )
-
-        return self.common_rename(files_no_mosaic_sin, isEnabled)
 
     def toggle_escape(self, isEnabled: bool):
         """
@@ -573,358 +492,6 @@ class FileOperations:
 
         return self.common_rename(files_missiles_throw, isEnabled)
 
-    def toggle_hd_env_presets(self, isEnabled: bool):
-        """
-        开关 地形变化 (A2贤者之谷小站, A3崔凡克, A4混沌庇护所, A5毁灭王座)
-        """
-        files_hd_env_presets = (
-            r"data/hd/env/preset/act2/outdoors/kingwarp.json",
-            r"data/hd/env/preset/act3/travincal/travn.json",
-            r"data/hd/env/preset/act4/diab/entry1.json",
-            r"data/hd/env/preset/expansion/baallair/wthrone.json",
-        )
-        
-        return self.common_rename(files_hd_env_presets, isEnabled)
-
-    def toggle_lava_river_flow(self, isEnabled: bool):
-        """
-        开关 屏蔽火焰之河岩浆特效
-        """
-        files_lava_effect = (
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge1_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge1_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge1_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge1_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge1_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge3_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge3_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge3_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge3_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge3_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge4_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge4_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge4_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge4_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge4_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridgelava_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridgelava_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridgelava_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridgelava_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridgelava_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_entry1_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_entry1_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_entry1_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_entry1_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_entry1_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_center_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_center_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_center_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_center_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_center_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge1_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge1_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge1_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge1_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge1_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn1_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn1_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn1_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn1_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn1_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings1_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings1_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings1_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings1_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings1_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw1_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw1_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw1_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw1_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw1_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgee_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgee_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgee_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgee_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgee_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgew_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgew_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgew_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgew_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgew_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_heart_center_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_heart_center_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_heart_center_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_heart_center_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_heart_center_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw2_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw2_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw2_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw2_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw2_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavax_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavax_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavax_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavax_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavax_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa1_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa1_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa1_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa1_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa1_lod4.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa_lod0.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa_lod1.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa_lod2.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa_lod3.model",
-            r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa_lod4.model",
-        )
-
-        return self.common_empty_file(files_lava_effect, isEnabled)
-
-    def toggle_load_screen_panel(self, isEnabled: bool):
-        """
-        开关 删除进门动画
-        """
-        files_load_screen_panel = [
-            r"data/global/ui/layouts/loadscreenpanel.json",
-            r"data/global/ui/layouts/loadscreenpanelhd.json",
-        ]
-
-        return self.common_rename(files_load_screen_panel, isEnabled)
 
     def toggle_experience_bar(self, isEnabled: bool):
         """
@@ -1046,24 +613,8 @@ class FileOperations:
         return (count, total)
     
     def toggle_pointer(self, isEnabled: bool):
-        """
-        "A1兵营/A4火焰之河/A5尼拉塞克/BOSS 指引"
-        """
+        """BOSS 指引"""
         paths = [
-            #
-            r"data/hd/env/preset/act1/court/courte.json",
-            r"data/hd/env/preset/act1/court/courtn.json",
-            r"data/hd/env/preset/act1/court/courtw.json",
-            #
-            r"data/hd/env/preset/act4/diab/bridge1.json",
-            r"data/hd/env/preset/act4/diab/bridge2.json",
-            r"data/hd/env/preset/act4/diab/bridge3.json",
-            r"data/hd/env/preset/act4/diab/bridge4.json",
-            #
-            r"data/hd/env/preset/expansion/wildtemple/nihle.json",
-            r"data/hd/env/preset/expansion/wildtemple/nihln.json",
-            r"data/hd/env/preset/expansion/wildtemple/nihls.json",
-            r"data/hd/env/preset/expansion/wildtemple/nihlw.json",
             #
             r"data/hd/character/enemy/hephasto.json",
             r"data/hd/character/enemy/izual.json",
@@ -1078,54 +629,6 @@ class FileOperations:
 
         return self.common_rename(paths, isEnabled)
 
-    def toggle_hd_local_video(self, isEnabled: bool):
-        """
-        开/关 屏蔽动画
-        """
-        files_hd_local_video = [
-            #
-            r"data/global/video/act2/act02start.webm",
-            r"data/global/video/act3/act03start.webm",
-            r"data/global/video/act4/act04end.webm",
-            r"data/global/video/act4/act04start.webm",
-            r"data/global/video/act5/d2x_out.webm",
-            r"data/global/video/bliznorth.webm",
-            r"data/global/video/d2intro.webm",
-            r"data/global/video/d2x_intro.webm",
-            r"data/global/video/new_bliz.webm",
-            #
-            r"data/hd/global/video/act2/act02start.webm",
-            r"data/hd/global/video/act3/act03start.webm",
-            r"data/hd/global/video/act4/act04end.webm",
-            r"data/hd/global/video/act4/act04start.webm",
-            r"data/hd/global/video/act5/d2x_out.webm",
-            r"data/hd/global/video/blizzardlogos.webm",
-            r"data/hd/global/video/creditsloop.webm",
-            r"data/hd/global/video/d2intro.webm",
-            r"data/hd/global/video/d2x_intro.webm",
-            r"data/hd/global/video/logoanim.webm",
-            r"data/hd/global/video/logoloop.webm",
-            #
-            r"data/hd/local/video/act2/act02start.flac",
-            r"data/hd/local/video/act3/act03start.flac",
-            r"data/hd/local/video/act4/act04end.flac",
-            r"data/hd/local/video/act4/act04start.flac",
-            r"data/hd/local/video/act5/d2x_out.flac",
-            r"data/hd/local/video/blizzardlogos.flac",
-            r"data/hd/local/video/d2intro.flac",
-            r"data/hd/local/video/d2x_intro.flac",
-            r"data/hd/local/video/logoanim.flac",
-            #
-            r"data/local/video/act2/act02start.flac",
-            r"data/local/video/act3/act03start.flac",
-            r"data/local/video/act4/act04end.flac",
-            r"data/local/video/act4/act04start.flac",
-            r"data/local/video/act5/d2x_out.flac",
-            r"data/local/video/d2intro.flac",
-            r"data/local/video/d2x_intro.flac",
-        ]
-
-        return self.common_empty_file(files_hd_local_video, isEnabled)
 
     def toggle_quick_game(self, isEnabled: bool):
         """
@@ -1564,15 +1067,6 @@ class FileOperations:
             print(e)
         return (count, total)
     
-    def toggle_fade_dummy(self, isEnabled: bool):
-        """
-        屏蔽影散隐身效果
-        """
-        files_diab_bridge = [
-            r"data/global/excel/itemstatcost.txt",
-        ]
-
-        return self.common_rename(files_diab_bridge, isEnabled);
 
     def toggle_necroskeleton(self, isEnabled: bool):
         """
@@ -1584,18 +1078,6 @@ class FileOperations:
 
         return self.common_rename(files_necroskeleton, isEnabled)
     
-    def toggle_circlet(self, isEnabled: bool):
-        """
-        隐藏头盔类装备外观
-        """
-        files__circlet = [
-            r"data/hd/items/armor/circlet/circlet.json",
-            r"data/hd/items/armor/circlet/coronet.json",
-            r"data/hd/items/armor/circlet/diadem.json",
-            r"data/hd/items/armor/circlet/tiara.json",
-        ]
-
-        return self.common_rename(files__circlet, isEnabled)
 
     def toggle_env_vis(self, isEnabled: bool):
         """
@@ -1961,35 +1443,6 @@ class FileOperations:
 
         return self.common_rename(files_common_shrine, isEnabled)
 
-    def toggle_lightningbolt_big(self, isEnabled: bool):
-        """
-        屏蔽雷云风暴吓人特效
-        """
-        files_lightningbolt_big = [
-            r"data/hd/missiles/lightningbolt_big.json",
-        ]
-
-        return self.common_rename(files_lightningbolt_big, isEnabled)
-    
-    def toggle_electric_nova(self, isEnabled: bool):
-        """
-        降低闪电新星亮度
-        """
-        files_electric_nova = [
-            r"data/hd/missiles/electric_nova.json",
-        ]
-
-        return self.common_rename(files_electric_nova, isEnabled)
-
-    def toggle_shenk(self, isEnabled: bool):
-        """
-        # "屏蔽 A5督军山克死亡特效",
-        """
-        _files = [
-            r"data/global/excel/missiles.txt",
-        ]
-
-        return self.common_rename(_files, isEnabled)
     
     def select_hireables_panel(self, radio: str):
         """
@@ -2464,6 +1917,557 @@ class FileOperations:
             print(e)
 
         return (count, 2)
+    
+    def hide_environmental_effects(self, keys: list):
+        """屏蔽环境特效"""
+        
+        # 文件
+        _files = {
+            # 动画
+            "1" : [
+                # 
+                r"data/global/ui/layouts/loadscreenpanel.json",
+                r"data/global/ui/layouts/loadscreenpanelhd.json",
+                #
+                r"data/global/video/act2/act02start.webm",
+                r"data/global/video/act3/act03start.webm",
+                r"data/global/video/act4/act04end.webm",
+                r"data/global/video/act4/act04start.webm",
+                r"data/global/video/act5/d2x_out.webm",
+                r"data/global/video/bliznorth.webm",
+                r"data/global/video/d2intro.webm",
+                r"data/global/video/d2x_intro.webm",
+                r"data/global/video/new_bliz.webm",
+                #
+                r"data/hd/global/video/act2/act02start.webm",
+                r"data/hd/global/video/act3/act03start.webm",
+                r"data/hd/global/video/act4/act04end.webm",
+                r"data/hd/global/video/act4/act04start.webm",
+                r"data/hd/global/video/act5/d2x_out.webm",
+                r"data/hd/global/video/blizzardlogos.webm",
+                r"data/hd/global/video/creditsloop.webm",
+                r"data/hd/global/video/d2intro.webm",
+                r"data/hd/global/video/d2x_intro.webm",
+                r"data/hd/global/video/logoanim.webm",
+                r"data/hd/global/video/logoloop.webm",
+                #
+                r"data/hd/local/video/act2/act02start.flac",
+                r"data/hd/local/video/act3/act03start.flac",
+                r"data/hd/local/video/act4/act04end.flac",
+                r"data/hd/local/video/act4/act04start.flac",
+                r"data/hd/local/video/act5/d2x_out.flac",
+                r"data/hd/local/video/blizzardlogos.flac",
+                r"data/hd/local/video/d2intro.flac",
+                r"data/hd/local/video/d2x_intro.flac",
+                r"data/hd/local/video/logoanim.flac",
+                #
+                r"data/local/video/act2/act02start.flac",
+                r"data/local/video/act3/act03start.flac",
+                r"data/local/video/act4/act04end.flac",
+                r"data/local/video/act4/act04start.flac",
+                r"data/local/video/act5/d2x_out.flac",
+                r"data/local/video/d2intro.flac",
+                r"data/local/video/d2x_intro.flac",
+            ],
+            # A3崔凡克议会墙壁
+            "2":[
+                r"data/hd/env/preset/act3/travincal/travn.json",
+            ],
+            # A4火焰之河岩浆
+            "3":[
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge1_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge1_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge1_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge1_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge1_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge3_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge3_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge3_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge3_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge3_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge4_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge4_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge4_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge4_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridge4_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridgelava_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridgelava_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridgelava_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridgelava_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_bridgelava_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_entry1_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_entry1_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_entry1_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_entry1_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_entry1_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_center_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_center_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_center_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_center_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_center_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_heart_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge1_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge1_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge1_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge1_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge1_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_winge2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn1_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn1_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn1_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn1_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn1_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingn2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings1_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings1_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings1_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings1_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings1_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wings2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw1_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw1_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw1_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw1_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw1_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/diab_wingw2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaew_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavae_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavans_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavan_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavas_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/expansion_lavaw_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgee_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgee_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgee_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgee_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgee_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgew_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgew_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgew_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgew_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_forgew_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_heart_center_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_heart_center_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_heart_center_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_heart_center_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_heart_center_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaew_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavae_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanew_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavane_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansew_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanse_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavansw_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavans_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavanw_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavan_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasew_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavase_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavasw_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavas_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw2_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw2_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw2_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw2_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw2_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavaw_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavax_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavax_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavax_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavax_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_lavax_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa1_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa1_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa1_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa1_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa1_lod4.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa_lod0.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa_lod1.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa_lod2.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa_lod3.model",
+                r"data/hd/env/model/act4/lava/act4_lava_river_flow/lava_warpmesa_lod4.model",
+            ],
+            # A4混沌避难所大门
+            "4": [
+                r"data/hd/env/preset/act4/diab/entry1.json",
+            ],
+            # A5督军山克死亡
+            "5": [
+                r"data/global/excel/missiles.txt",
+            ],
+            # A5毁灭王座石柱
+            "6": [
+                r"data/hd/env/preset/expansion/baallair/wthrone.json",
+            ]
+        }
+
+        funcs = []
+        for i in range(1, 7):
+            key = str(i)
+            files = _files[key]
+            sub = self.common_rename(files, key in keys)
+            funcs.append(sub)
+
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
+    
+    def hide_character_effects(self, keys: list):
+        """屏蔽角色特效"""
+        
+        # 文件
+        _files = {
+            # 刺客-武学亮度
+            "1" : [
+                r"data/hd/missiles/ground_fire_medium.json",
+                r"data/hd/missiles/ground_fire_small.json",
+                r"data/hd/missiles/missiles.json",
+            ],
+            # 刺客-影散隐身
+            "2":[
+                r"data/global/excel/itemstatcost.txt",
+            ],
+            # 法师-雷云风暴吓人
+            "3":[
+                r"data/hd/missiles/lightningbolt_big.json",
+            ],
+            # 法师-闪电新星亮度
+            "4": [
+                r"data/hd/missiles/electric_nova.json",
+            ],
+            # 头饰-外观
+            "5": [
+                r"data/hd/items/armor/circlet/circlet.json",
+                r"data/hd/items/armor/circlet/coronet.json",
+                r"data/hd/items/armor/circlet/diadem.json",
+                r"data/hd/items/armor/circlet/tiara.json",
+            ]
+        }
+
+        funcs = []
+        for i in range(1, len(_files)+1):
+            key = str(i)
+            files = _files[key]
+            sub = self.common_rename(files, key in keys)
+            funcs.append(sub)
+
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
+    
+    def show_environmental_pointer(self, keys: list):
+        """开启环境指引"""
+        
+        # 文件
+        _files = {
+            # 出/入口
+            "1" : [
+                r"data/hd/objects/env_pillars/Arcane_tome.json",
+                r"data/hd/objects/env_pillars/Seven_tombs_receptacle.json",
+                r"data/hd/objects/env_stone/Stone_alpha.json",
+                r"data/hd/objects/env_wood/inifuss_tree.json",
+                r"data/hd/roomtiles/act_1_catacombs_down.json",
+                r"data/hd/roomtiles/act_1_crypt_down.json",
+                r"data/hd/roomtiles/act_1_jail_down.json",
+                r"data/hd/roomtiles/act_1_jail_up.json",
+                r"data/hd/roomtiles/act_1_wilderness_to_cave_cliff_l.json",
+                r"data/hd/roomtiles/act_1_wilderness_to_cave_cliff_r.json",
+                r"data/hd/roomtiles/act_1_wilderness_to_cave_floor_l.json",
+                r"data/hd/roomtiles/act_1_wilderness_to_cave_floor_r.json",
+                r"data/hd/roomtiles/act_1_wilderness_to_tower.json",
+                r"data/hd/roomtiles/act_2_desert_to_lair.json",
+                r"data/hd/roomtiles/act_2_desert_to_sewer_trap.json",
+                r"data/hd/roomtiles/act_2_desert_to_tomb_l_1.json",
+                r"data/hd/roomtiles/act_2_desert_to_tomb_l_2.json",
+                r"data/hd/roomtiles/act_2_desert_to_tomb_r_1.json",
+                r"data/hd/roomtiles/act_2_desert_to_tomb_r_2.json",
+                r"data/hd/roomtiles/act_2_desert_to_tomb_viper.json",
+                r"data/hd/roomtiles/act_2_lair_down.json",
+                r"data/hd/roomtiles/act_2_sewer_down.json",
+                r"data/hd/roomtiles/act_2_tomb_down.json",
+                r"data/hd/roomtiles/act_3_dungeon_down.json",
+                r"data/hd/roomtiles/act_3_jungle_to_dungeon_fort.json",
+                r"data/hd/roomtiles/act_3_jungle_to_dungeon_hole.json",
+                r"data/hd/roomtiles/act_3_jungle_to_spider.json",
+                r"data/hd/roomtiles/act_3_kurast_to_temple.json",
+                r"data/hd/roomtiles/act_3_mephisto_down_l.json",
+                r"data/hd/roomtiles/act_3_mephisto_down_r.json",
+                r"data/hd/roomtiles/act_3_sewer_down.json",
+                r"data/hd/roomtiles/act_4_mesa_to_lava.json",
+                r"data/hd/roomtiles/act_5_baal_temple_down_l.json",
+                r"data/hd/roomtiles/act_5_baal_temple_down_r.json",
+                r"data/hd/roomtiles/act_5_barricade_down_wall_l.json",
+                r"data/hd/roomtiles/act_5_barricade_down_wall_r.json",
+                r"data/hd/roomtiles/act_5_ice_caves_down_floor.json",
+                r"data/hd/roomtiles/act_5_ice_caves_down_l.json",
+                r"data/hd/roomtiles/act_5_ice_caves_down_r.json",
+                r"data/hd/roomtiles/act_5_temple_down.json",
+            ],
+            # 小站
+            "2":[
+                r"data/hd/objects/waypoint_portals/sewer_waypoint.json",
+                r"data/hd/objects/waypoint_portals/temple_waypoint.json",
+                r"data/hd/objects/waypoint_portals/travincal_waypoint.json",
+                r"data/hd/objects/waypoint_portals/waypoint_act_2.json",
+                r"data/hd/objects/waypoint_portals/waypoint_act_3.json",
+                r"data/hd/objects/waypoint_portals/waypoint_baal.json",
+                r"data/hd/objects/waypoint_portals/waypoint_cellar.json",
+                r"data/hd/objects/waypoint_portals/waypoint_exp.json",
+                r"data/hd/objects/waypoint_portals/waypoint_ice_cave.json",
+                r"data/hd/objects/waypoint_portals/waypoint_inside_act_1.json",
+                r"data/hd/objects/waypoint_portals/waypoint_outside_act_1.json",
+                r"data/hd/objects/waypoint_portals/waypoint_outside_act_4.json",
+                r"data/hd/objects/waypoint_portals/waypoint_wilderness.json",
+            ],
+            # A1兵营
+            "3":[
+                r"data/hd/env/preset/act1/court/courte.json",
+                r"data/hd/env/preset/act1/court/courtn.json",
+                r"data/hd/env/preset/act1/court/courtw.json",
+            ],
+            # A2贤者小站
+            "4": [
+                r"data/hd/env/preset/act2/outdoors/kingwarp.json",
+            ],
+            # A4火焰之河
+            "5": [
+                r"data/hd/env/preset/act4/diab/bridge1.json",
+                r"data/hd/env/preset/act4/diab/bridge2.json",
+                r"data/hd/env/preset/act4/diab/bridge3.json",
+                r"data/hd/env/preset/act4/diab/bridge4.json",
+            ],
+            # A5尼拉塞克
+            "6": [
+                r"data/hd/env/preset/expansion/wildtemple/nihle.json",
+                r"data/hd/env/preset/expansion/wildtemple/nihln.json",
+                r"data/hd/env/preset/expansion/wildtemple/nihls.json",
+                r"data/hd/env/preset/expansion/wildtemple/nihlw.json",
+            ]
+        }
+
+        funcs = []
+        for i in range(1, 7):
+            key = str(i)
+            files = _files[key]
+            sub = self.common_rename(files, key in keys)
+            funcs.append(sub)
+
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
+    
 
     def toggle_quick_buy(self, isEnabled:bool):
         """

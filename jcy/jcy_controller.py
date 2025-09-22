@@ -155,36 +155,24 @@ class FeatureController:
             "118": self.file_operations.toggle_sound,
             # "技能图标(头顶:熊之印记/狼之印记 脚下:附魔/速度爆发+影散/BO 右侧:刺客聚气)",
             "119": self.file_operations.toggle_skill_logo,
-            # "A1兵营/A4火焰之河/A5尼拉塞克/BOSS 指引",
+            # "BOSS 指引",
             "120": self.file_operations.toggle_pointer,
             # "交互对象增加蓝色火苗",
             "121": self.file_operations.toggle_chest_highlight, 
-            # "马赛克护眼",
-            "122": self.file_operations.toggle_no_mosaic_sin,
+
             # "6BOSS钥匙皮肤+掉落光柱",
             "124": self.file_operations.toggle_mephisto_key,
-            # "屏蔽 开场/过场/结束动画",
-            "125": self.file_operations.toggle_hd_local_video,
+
             # "屏蔽 地狱火炬火焰风暴特效",
             "126": self.file_operations.toggle_hellfire_torch,
-            # "屏蔽 A4火焰之河岩浆特效",
-            "127": self.file_operations.toggle_lava_river_flow,
-            # "屏蔽 A5督军山克死亡特效",
-            "128": self.file_operations.toggle_shenk,
-            # "屏蔽 开门动画,极速进站",
-            "129": self.file_operations.toggle_load_screen_panel,
-            # "展示 A2贤者之谷小站塔墓标记 & 屏蔽 A3崔凡克议会墙屋/A4混沌庇护所大门/A5毁灭王座石柱",
-            "130": self.file_operations.toggle_hd_env_presets,
+            
+
             # "经验条变色",
             "131": self.file_operations.toggle_experience_bar,
-            # "屏蔽 影散隐身特效",
-            "132": self.file_operations.toggle_fade_dummy,
-            # "屏蔽 头环类装备外观",
-            "133": self.file_operations.toggle_circlet,
-            # "屏蔽 雷云风暴吓人特效",
-            "134": self.file_operations.toggle_lightningbolt_big,
-            # "降低 闪电新星亮度",
-            "135": self.file_operations.toggle_electric_nova,
+
+
+
+
             # "怪物血条D3风格",
             "136": self.file_operations.toggle_monster_health,
             # "死灵召唤骷髅 火焰刀+圣盾特效",
@@ -197,10 +185,8 @@ class FeatureController:
             "140": self.file_operations.toggle_hurricane,
             # "左键快速购买",
             "141": self.file_operations.toggle_quick_buy,
-            # "入口 箭头指引",
-            "142": self.file_operations.toggle_roomtiles_arrow,
-            # "小站 箭头指引",
-            "143": self.file_operations.toggle_waypoint_arrow,
+
+
             # "A2佣兵 女性化"
             "144": self.file_operations.toggle_a2hire_female,
             # "A5佣兵 火焰刀"
@@ -239,6 +225,12 @@ class FeatureController:
             "302": self.file_operations.select_entry_effects,
             # 装备名称特效
             "303": self.file_operations.select_item_name_effects,
+            # 屏蔽环境特效
+            "304": self.file_operations.hide_environmental_effects,
+            # 开启环境指引
+            "305": self.file_operations.show_environmental_pointer,
+            # 屏蔽角色特效
+            "306": self.file_operations.hide_character_effects,
 
             # 照亮范围
             "401": self.file_operations.modify_character_player,
