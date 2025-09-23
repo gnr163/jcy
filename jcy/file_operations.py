@@ -352,40 +352,6 @@ class FileOperations:
         return self.common_rename(files_chest_highlight, isEnabled)
 
     
-    def toggle_a2hire_female(self, isEnabled: bool):
-        """A2佣兵 女性化"""
-
-        _files = (
-            # 佣兵昵称
-            r"data/local/lng/strings/mercenaries.json",
-            # 佣兵头像
-            r"data/hd/global/ui/hireables/act2hireableicon.lowend.sprite",
-            r"data/hd/global/ui/hireables/act2hireableicon.sprite",
-            # 佣兵模型
-            r"data/hd/character/enemy/act2hire.json",
-            r"data/hd/character/enemy/act2hire_female/act2hire_female_state_machine.json",
-            r"data/hd/character/enemy/act2hire_female/act2hire_female_variant.json",
-            # 声音文件
-            r"data/hd/global/sfx/monster/guard/monster_guard_death_1_hd.flac",
-            r"data/hd/global/sfx/monster/guard/monster_guard_death_2_hd.flac",
-            r"data/hd/global/sfx/monster/guard/monster_guard_death_3_hd.flac",
-            r"data/hd/global/sfx/monster/guard/monster_guard_gethit_1_hd.flac",
-            r"data/hd/global/sfx/monster/guard/monster_guard_gethit_2_hd.flac",
-            r"data/hd/global/sfx/monster/guard/monster_guard_gethit_3_hd.flac",
-            r"data/hd/global/sfx/monster/guard/monster_guard_gethit_4_hd.flac",
-        )
-
-        return self.common_rename(_files, isEnabled)
-
-    def toggle_a5hire_sword(self, isEnabled: bool):
-        """A5佣兵火焰刀"""
-        _files = (
-            r"data/hd/character/enemy/act5hire1.json",
-            r"data/hd/items/weapon/sword/act5hire1_bastard_sword.json",
-            r"data/hd/items/weapon/sword/act5hire1_long_sword.json",
-        )
-        return self.common_rename(_files, isEnabled)
-    
     def toggle_weapon_swap(self, isEnabled: bool):
         """开启正副手防呆"""
         name = "OpenWeaponSwap"
@@ -464,34 +430,7 @@ class FileOperations:
         )
 
         return self.common_rename(files_escape, isEnabled) 
-
-    def toggle_missiles_javelin(self, isEnabled: bool):
-        """
-        投掷标枪->闪电枪特效
-        """
-        files_missiles_javelin = (
-            r"data/hd/missiles/glaive.json",
-            r"data/hd/missiles/javelin.json",
-            r"data/hd/missiles/maiden_javelin_missile.json",
-            r"data/hd/missiles/short_spear_missile.json",
-            r"data/hd/missiles/throwing_spear_missile.json",
-        )
-
-        return self.common_rename(files_missiles_javelin, isEnabled)
     
-    def toggle_missiles_throw(self, isEnabled: bool):
-        """
-        投掷飞刀->闪电尾特效
-        """
-        files_missiles_throw = (
-            r"data/hd/missiles/balanced_axe_missile.json",
-            r"data/hd/missiles/balanced_knife_missile.json",
-            r"data/hd/missiles/missile_dagger.json",
-            r"data/hd/missiles/missile_hand_axe.json",
-        )
-
-        return self.common_rename(files_missiles_throw, isEnabled)
-
 
     def toggle_experience_bar(self, isEnabled: bool):
         """
@@ -1068,17 +1007,6 @@ class FileOperations:
         return (count, total)
     
 
-    def toggle_necroskeleton(self, isEnabled: bool):
-        """
-        骷髅火焰刀+圣盾特效
-        """
-        files_necroskeleton = [
-            r"data/hd/character/enemy/necroskeleton.json"
-        ]
-
-        return self.common_rename(files_necroskeleton, isEnabled)
-    
-
     def toggle_env_vis(self, isEnabled: bool):
         """
         画面变亮
@@ -1420,17 +1348,6 @@ class FileOperations:
 
         return self.common_rename(files_monster_health, isEnabled)
     
-    def toggle_hurricane(self, isEnabled: bool):
-        """
-        德鲁伊飓风术特效
-        """
-        files_hurricane = [
-            r"data/hd/missiles/expansion_hurricane_rocks.json",
-            r"data/hd/missiles/expansion_hurricane_tree.json",
-            r"data/hd/missiles/expansion_hurricane_swoosh.json",
-        ]
-
-        return self.common_rename(files_hurricane, isEnabled)
     
     def toggle_shrine(self, isEnabled: bool):
         """
@@ -2366,6 +2283,87 @@ class FileOperations:
         
         return summary
     
+
+    def show_character_effects(self, keys: list):
+        """开启角色特效"""
+        
+        # 文件
+        _files = {
+            # 死灵-骷髅火刀圣盾
+            "1" : [
+                r"data/hd/character/enemy/necroskeleton.json",
+            ],
+            # 德鲁伊-飓风术
+            "2":[
+                r"data/hd/missiles/expansion_hurricane_rocks.json",
+                r"data/hd/missiles/expansion_hurricane_tree.json",
+                r"data/hd/missiles/expansion_hurricane_swoosh.json",
+            ],
+            # 标枪闪电枪
+            "3":[
+                r"data/hd/missiles/glaive.json",
+                r"data/hd/missiles/javelin.json",
+                r"data/hd/missiles/maiden_javelin_missile.json",
+                r"data/hd/missiles/short_spear_missile.json",
+                r"data/hd/missiles/throwing_spear_missile.json",
+            ],
+            # 飞斧闪电尾
+            "4": [
+                r"data/hd/missiles/balanced_axe_missile.json",
+                r"data/hd/missiles/balanced_knife_missile.json",
+                r"data/hd/missiles/missile_dagger.json",
+                r"data/hd/missiles/missile_hand_axe.json",
+            ],
+            # A2女性佣兵
+            "5": [
+                # 佣兵昵称
+                r"data/local/lng/strings/mercenaries.json",
+                # 佣兵头像
+                r"data/hd/global/ui/hireables/act2hireableicon.lowend.sprite",
+                r"data/hd/global/ui/hireables/act2hireableicon.sprite",
+                # 佣兵模型
+                r"data/hd/character/enemy/act2hire.json",
+                r"data/hd/character/enemy/act2hire_female/act2hire_female_state_machine.json",
+                r"data/hd/character/enemy/act2hire_female/act2hire_female_variant.json",
+                # 声音文件
+                r"data/hd/global/sfx/monster/guard/monster_guard_death_1_hd.flac",
+                r"data/hd/global/sfx/monster/guard/monster_guard_death_2_hd.flac",
+                r"data/hd/global/sfx/monster/guard/monster_guard_death_3_hd.flac",
+                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_1_hd.flac",
+                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_2_hd.flac",
+                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_3_hd.flac",
+                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_4_hd.flac",
+            ],
+            # A5火焰刀佣兵
+            "6": [
+                r"data/hd/character/enemy/act5hire1.json",
+                r"data/hd/items/weapon/sword/act5hire1_bastard_sword.json",
+                r"data/hd/items/weapon/sword/act5hire1_long_sword.json",
+            ]
+        }
+
+        funcs = []
+        for i in range(1, len(_files)+1):
+            key = str(i)
+            files = _files[key]
+            sub = self.common_rename(files, key in keys)
+            funcs.append(sub)
+
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
+    
+
+    def manage_tool(self, keys: list):
+        """控制器管理"""
+        
+        for i in range(1, 5):
+            key = str(i)
+            APP_CONFIG[key] = key in keys
+
+        return (1, 1, "重启控制器生效!")
+    
     def show_environmental_pointer(self, keys: list):
         """开启环境指引"""
         
@@ -2683,13 +2681,22 @@ class FileOperations:
         return (count, total)
 
 
+    def select_language(self, radio: str):
+        """删除恐怖地带文件"""
+        count = 0
+        if TERROR_ZONE_PATH.exists():
+            TERROR_ZONE_PATH.unlink
+            count += 1
+        return (count, 1, "重启控制器生效!")
+    
+
     def select_server(self, radio: str):
         """删除恐怖地带文件"""
         count = 0
         if TERROR_ZONE_PATH.exists():
             TERROR_ZONE_PATH.unlink
             count += 1
-        return (count, "重启控制器生效!")
+        return (count, 1, "重启控制器生效!")
 
     def sync_app_data(self):
         """
@@ -2750,7 +2757,8 @@ class FileOperations:
             zone_key = rec.get("zone")
             formatted_time = time.strftime('%I:%M %p', time.localtime(raw_time)) if raw_time else "未知时间"
             zone_info = TERROR_ZONE_DICT.get(zone_key, {})
-            zone_name = zone_info.get(getLanguage(), zone_info.get(ENUS)) if zone_info else f"未知区域（{zone_key}）"
+            language = APP_LANGUAGE[self.controller.current_states["298"]]
+            zone_name = zone_info.get(language) if zone_info else f"未知区域（{zone_key}）"
             formatted_name = zone_name.replace("、", "\n").replace(",", "\n")
             self.common_next_terror_zone(f"{formatted_time}\n{formatted_name}")
 

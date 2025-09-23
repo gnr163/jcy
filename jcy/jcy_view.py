@@ -22,7 +22,6 @@ from jcy_paths import *
 from PIL import Image, ImageTk
 from tkinter import filedialog, messagebox, scrolledtext, ttk
 
-
 class FeatureView:
     """
     UI控制
@@ -77,7 +76,7 @@ class FeatureView:
         notebook.add(launcher_tab, text="D2R多开器")
 
         # --- Terror Zone ---
-        self.tz_tab = TerrorZoneUI(notebook, fetcher = self.controller.terror_zone_fetcher)
+        self.tz_tab = TerrorZoneUI(notebook, self.controller, fetcher = self.controller.terror_zone_fetcher)
         notebook.add(self.tz_tab, text="恐怖区域")
         
         # --- checkbutton ---
@@ -95,21 +94,79 @@ class FeatureView:
         # --- radiogroup ---
         radiogroup_tab = ttk.Frame(notebook)
         notebook.add(radiogroup_tab, text=" 单选特效 ")
+
         radiogroup_features = self.all_features_config.get("radiogroup", {})
+
+        total_columns = 10  # 每行总列数
+        current_row = 0
+        current_col = 0
+
         for fid, info in radiogroup_features.items():
-            group = LabeledRadioGroup(radiogroup_tab, feature_id=fid, data=info, default_selected="default", command=self.controller.execute_feature_action)
-            group.pack(anchor="n", fill="x", padx=20, pady=10)
+            colspan = info.get("colspan", total_columns)  # 默认占满整行
+            group = LabeledRadioGroup(
+                radiogroup_tab,
+                feature_id=fid,
+                data=info,
+                default_selected="default",
+                command=self.controller.execute_feature_action
+            )
+
+            # 如果当前行剩余列不足，换行
+            if current_col + colspan > total_columns:
+                current_row += 1
+                current_col = 0
+
+            # 放置控件
+            group.grid(row=current_row, column=current_col, columnspan=colspan,
+                    sticky="nsew", padx=10, pady=5)
+
+            # 更新当前列索引
+            current_col += colspan
+
+            # 保存引用
             self.feature_vars[fid] = group
 
+        # 均分每列权重，让控件按比例拉伸
+        for i in range(total_columns):
+            radiogroup_tab.grid_columnconfigure(i, weight=1)
+
         
+        # # --- checkgroup ---
+        # checkgroup_tab = ttk.Frame(notebook)
+        # notebook.add(checkgroup_tab, text=" 多选特效 ")
+        # checkgroup_features = self.all_features_config.get("checkgroup", {})
+        # for fid, info in checkgroup_features.items():
+        #     group = LabeledCheckGroup(checkgroup_tab, feature_id=fid, data=info, default_selected=[], command=self.controller.execute_feature_action)
+        #     group.pack(anchor="n", fill="x", padx=20, pady=10)
+        #     self.feature_vars[fid] = group
         # --- checkgroup ---
         checkgroup_tab = ttk.Frame(notebook)
         notebook.add(checkgroup_tab, text=" 多选特效 ")
         checkgroup_features = self.all_features_config.get("checkgroup", {})
+
+        row, col = 0, 0
+        max_cols = 10
+
         for fid, info in checkgroup_features.items():
-            group = LabeledCheckGroup(checkgroup_tab, feature_id=fid, data=info, default_selected=[], command=self.controller.execute_feature_action)
-            group.pack(anchor="n", fill="x", padx=20, pady=10)
+            colspan = info.get("colspan", 10)
+            group = LabeledCheckGroup(
+                checkgroup_tab,
+                feature_id=fid,
+                data=info,
+                default_selected=[],
+                command=self.controller.execute_feature_action
+            )
+            group.grid(row=row, column=col, columnspan=colspan, sticky="ew", padx=10, pady=10)
             self.feature_vars[fid] = group
+
+            col += colspan
+            if col >= max_cols:
+                row += 1
+                col = 0
+
+        # 让 10 列自动伸缩
+        for i in range(max_cols):
+            checkgroup_tab.columnconfigure(i, weight=1)
 
 
         # --- spinbox ---
@@ -361,9 +418,10 @@ class FeatureView:
                 var.set(value)
 
     def visible(self):
-        """国服,隐藏多开器Tab"""
-        language = getLanguage()
-        if ZHCN == language:
+        if not "2" in self.controller.current_states["399"]:
+            self.notebook.hide(1)
+
+        if not "1" in self.controller.current_states["399"]:
             self.notebook.hide(0)
 
 
@@ -930,9 +988,10 @@ class D2RLauncherApp(tk.Frame):
         webbrowser.open(url)
         
 class TerrorZoneUI(tk.Frame):
-    def __init__(self, master=None, fetcher=None):
+    def __init__(self, master, controller, fetcher=None):
         super().__init__(master)
         self.master = master
+        self.controller = controller
         self.fetcher = fetcher  # TerrorZoneFetcher实例
         self.pack(fill=tk.BOTH, expand=True)
         
@@ -967,7 +1026,8 @@ class TerrorZoneUI(tk.Frame):
                         continue
                     zone_info = TERROR_ZONE_DICT.get(zone_key)
                     if isinstance(zone_info, dict):
-                        name = zone_info.get(getLanguage(), zone_info.get(ENUS))
+                        language = APP_LANGUAGE[self.controller.current_states["298"]]
+                        name = zone_info.get(language)
                     else:
                         name = "未知名称"
                     self.tree.insert("", "end", values=(formatted_time, name))

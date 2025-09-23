@@ -23,20 +23,24 @@ from jcy_view import FeatureView
 class FeatureController:
     def __init__(self, master):
         self.master = master
-        self.current_states = {}
+        # self.current_states = {}
         self.dialogs = "" 
-        self.feature_config = FeatureConfig()
-        self.file_operations = FileOperations(self)
-        self.feature_state_manager = FeatureStateManager(self.feature_config)
 
         # 无配置文件,以默认文件为准
         if not os.path.exists(USER_SETTINGS_PATH):
             os.makedirs(os.path.dirname(USER_SETTINGS_PATH), exist_ok=True)
             shutil.copyfile(DEFAULT_SETTINGS_PATH, USER_SETTINGS_PATH)
 
+        # 加载配置文件
+        self.feature_config = FeatureConfig()
+        self.feature_state_manager = FeatureStateManager(self.feature_config)
+        self.feature_state_manager.load_settings()
+        self.current_states = copy.deepcopy(self.feature_state_manager.loaded_states)
+
+        # 文件操作类
+        self.file_operations = FileOperations(self)
         # 同步APP信息到JSON
         self.file_operations.sync_app_data()
-
         # 注册控制器方法
         self._setup_feature_handlers()
 
@@ -46,6 +50,7 @@ class FeatureController:
         print(f"[DEBUG] 需要升级: {need_upgrade}")
         if need_upgrade:
             self._upgrade_config()
+            self.current_states = copy.deepcopy(self.feature_state_manager.loaded_states)
         else:
             print("[DEBUG] 配置已是最新版本")
 
@@ -56,13 +61,10 @@ class FeatureController:
         self.feature_config.all_features_config
         self.feature_view = FeatureView(master, self.feature_config.all_features_config, self)
 
-        # 加载配置文件,按照配置更新到UI
-        self.feature_state_manager.load_settings()
-        self.current_states = copy.deepcopy(self.feature_state_manager.loaded_states)
+        # 按照配置更新到UI
         self.feature_view.update_ui_state(self.current_states)
 
-        # 根据服务器初始化语言
-        initLanguage(self.current_states.get("299"))
+        # 按配置显/隐面板
         self.feature_view.visible()
 
     def getCurrentState(self, key):
@@ -175,22 +177,16 @@ class FeatureController:
 
             # "怪物血条D3风格",
             "136": self.file_operations.toggle_monster_health,
-            # "死灵召唤骷髅 火焰刀+圣盾特效",
-            "137": self.file_operations.toggle_necroskeleton,
-            # "投掷标枪->闪电枪特效",
-            "138": self.file_operations.toggle_missiles_javelin,
-            # "投掷飞刀->闪电尾特效",
-            "139": self.file_operations.toggle_missiles_throw,
-            # "德鲁伊飓风术 特效",
-            "140": self.file_operations.toggle_hurricane,
+
+
+
+
             # "左键快速购买",
             "141": self.file_operations.toggle_quick_buy,
 
 
-            # "A2佣兵 女性化"
-            "144": self.file_operations.toggle_a2hire_female,
-            # "A5佣兵 火焰刀"
-            "145": self.file_operations.toggle_a5hire_sword,
+
+
             # "正副手防呆提示"
             "146": self.file_operations.toggle_weapon_swap,
             # "默认开启迷你血条"
@@ -216,6 +212,8 @@ class FeatureController:
             # HUD面板尺寸
             "207": self.file_operations.select_hudpanel_size,
             # 恐怖地带服务器
+            "298": self.file_operations.select_language,
+            # 恐怖地带服务器
             "299": self.file_operations.select_server,
 
 
@@ -231,6 +229,10 @@ class FeatureController:
             "305": self.file_operations.show_environmental_pointer,
             # 屏蔽角色特效
             "306": self.file_operations.hide_character_effects,
+            # 开启角色特效
+            "307": self.file_operations.show_character_effects,
+            # 控制器管理
+            "399": self.file_operations.manage_tool,
 
             # 照亮范围
             "401": self.file_operations.modify_character_player,
@@ -258,7 +260,7 @@ class FeatureController:
                 changes_detected = True
                 if feature_id in self._handlers:
                     result = self._handlers[feature_id](current_value) 
-                    self.dialogs += f"{description} = {'开启' if current_value else '关闭'} 操作文件数量 {result[0]}/{result[1]} \n"
+                    self.dialogs += f"{description} = {'开启' if current_value else '关闭'} 操作文件数量 {result[0]}/{result[1]} {result[2] if len(result) > 2 else ''}\n"
 
 
 
@@ -271,7 +273,7 @@ class FeatureController:
                 selected_description = next((param_dict[current_value] for param_dict in info["params"] if current_value in param_dict), current_value)
                 if fid in self._handlers:
                     result = self._handlers[fid](current_value)
-                    self.dialogs += f"{info['text']} = {selected_description} 操作文件数量 {result[0]}/{result[1]} \n"
+                    self.dialogs += f"{info['text']} = {selected_description} 操作文件数量 {result[0]}/{result[1]} {result[2] if len(result) > 2 else ''}\n"
 
 
         # -------------------- 多选功能 (CheckGroup) --------------------
@@ -282,7 +284,7 @@ class FeatureController:
                 changes_detected = True
                 if fid in self._handlers:
                     result = self._handlers[fid](current_value)
-                    self.dialogs += f"{info['text']} 操作文件数量 {result[0]}/{result[1]} \n"
+                    self.dialogs += f"{info['text']} 操作文件数量 {result[0]}/{result[1]} {result[2] if len(result) > 2 else ''}\n"
 
 
         #  -------------------- 区间功能 (Spinbox) --------------------
@@ -293,7 +295,7 @@ class FeatureController:
                 changes_detected = True
                 if feature_id in self._handlers:
                     result = self._handlers[feature_id](current_value) 
-                    self.dialogs += f"{description} = {current_value} 操作文件数量 {result[0]}/{result[1]} \n"
+                    self.dialogs += f"{description} = {current_value} 操作文件数量 {result[0]}/{result[1]} {result[2] if len(result) > 2 else ''}\n"
 
         # -- 屏蔽道具 --
         for fid, info in self.feature_config.all_features_config["checktable"].items():
@@ -303,7 +305,7 @@ class FeatureController:
                 changes_detected = True
                 if fid in self._handlers:
                     result = self._handlers[fid](current_value)
-                    self.dialogs += f"{info} 操作文件数量 {result[0]}/{result[1]} \n"
+                    self.dialogs += f"{info} 操作文件数量 {result[0]}/{result[1]} {result[2] if len(result) > 2 else ''}\n"
         
 
         # 保存当前状态到 settings.json
@@ -326,12 +328,11 @@ class FeatureController:
 
 
 class TerrorZoneFetcher:
-    def __init__(self, controller: FeatureController, n_times_per_hour=5):
+    def __init__(self, controller: FeatureController):
         self.running = False
         self.first = True
         self.thread = None
         self.controller = controller
-        self.n_times_per_hour = n_times_per_hour
 
     def fetch_once_with_retry(self, max_retries=9):
         """
@@ -372,7 +373,7 @@ class TerrorZoneFetcher:
                 print(f"[异常] 第 {attempt} 次抓取失败: {e}")
 
             randint += 1
-            time.sleep(random.randint(3, 10))
+            time.sleep(random.randint(5 * attempt, 10 * attempt))
 
         print("[错误] 所有尝试均失败或数据未更新")
         return None
@@ -407,15 +408,20 @@ class TerrorZoneFetcher:
                 try:
                     with open(TERROR_ZONE_PATH, "w", encoding="utf-8") as f:
                         json.dump(data, f, ensure_ascii=False, indent=2)
+                        
                         # 写恐怖区域预告
-                        if self.controller.getCurrentState("199"):
+                        if "4" in self.controller.current_states["399"]:
                             self.controller.file_operations.nextTerrorZone(data)
+                        else:
+                            self.controller.file_operations.common_next_terror_zone("")
+
                     print(f"[保存] 数据已保存到 {TERROR_ZONE_PATH}")
                 except Exception as e:
                     print(f"[错误] 保存数据失败: {e}")
 
-                if callback:
-                    callback(data)
+                if "3" in self.controller.current_states["399"]:
+                    if callback:
+                        callback(data)
             else:
                 print("[提示] 当前时间点抓取失败，等待下个整点再尝试")
 
@@ -456,10 +462,8 @@ if __name__ == "__main__":
         sys.exit(0)
 
     root = tk.Tk()
-
-    app = FeatureController(root)
-
     root.iconbitmap(LOGO_PATH)
+    app = FeatureController(root)
     
     # 恐怖区域数据更新回调
     def notify_fetch_success(data):
@@ -471,7 +475,8 @@ if __name__ == "__main__":
             formatted_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(raw_time)) if raw_time else "未知时间"
             
             zone_info = TERROR_ZONE_DICT.get(zone_key, {})
-            zone_name = zone_info.get(getLanguage(), zone_info.get(ENUS)) if zone_info else f"未知区域（{zone_key}）"
+            language = APP_LANGUAGE[app.current_states["298"]]
+            zone_name = zone_info.get(language) if zone_info else f"未知区域（{zone_key}）"
             message = f"{formatted_time} {zone_name}"
         except Exception as e:
             print("[通知构造异常]", e)

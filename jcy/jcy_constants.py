@@ -21,16 +21,35 @@ LANG = None
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.2.1"
+APP_VERSION = "v1.2.1B"
 
 # 发布日期
-APP_DATE = "20250926"
+APP_DATE = "20250923"
 
 # 控制器全称
 APP_FULL_NAME = f"{APP_NAME}_{APP_VERSION}"
 
 # APP大小
 APP_SIZE = "750x700"
+
+# APP配置
+APP_CONFIG = {
+    # 显示"D2R多开器"面板
+    "1": True,
+    # 显示"恐怖区域"面板
+    "2": True,
+    # 开启"恐怖区域"Win系统通知
+    "3": True,
+    # 开启"恐怖区域"游戏内预告
+    "4": True
+}
+
+# APP语言
+APP_LANGUAGE = {
+    "default": ZHCN,
+    "1" : ZHTW,
+    "2" : ENUS
+}
 
 # 区服地址
 REGION_DOMAIN_MAP = {
@@ -390,24 +409,12 @@ __all__ = [
     'APP_FULL_NAME',
     'APP_DATE',
     'APP_SIZE',
+    'APP_CONFIG',
+    'APP_LANGUAGE',
     'REGION_DOMAIN_MAP',
     'REGION_NAME_MAP',
     'UE01A',
     'TERROR_ZONE_API',
     'TERROR_ZONE_DICT',
-    'SET_ITEM_INDEX',
-    'initLanguage',
-    'getLanguage'
+    'SET_ITEM_INDEX'
 ]
-
-def initLanguage(language):
-    global LANG
-    if "default" == language:
-        LANG = ZHTW
-    elif "1" == language:
-        LANG = ZHCN
-    else:
-        LANG = ENUS
-
-def getLanguage():
-    return LANG
