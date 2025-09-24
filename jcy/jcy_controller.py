@@ -193,8 +193,8 @@ class FeatureController:
             "147": self.file_operations.toggle_minihp_bar,
             # "默认开启迷你盒子"
             "148": self.file_operations.toggle_mini_cube,
-            # "恐怖区域预告写入游戏(需要控制器保持运行)"
-            "199": self.file_operations.toggle_terror_zone,
+            # 隐藏任务日志提示按钮
+            "149": self.file_operations.hide_quest_button,
             
             
             # 佣兵图标位置
@@ -411,9 +411,9 @@ class TerrorZoneFetcher:
                         
                         # 写恐怖区域预告
                         if "4" in self.controller.current_states["399"]:
-                            self.controller.file_operations.nextTerrorZone(data)
+                            self.controller.file_operations.writeTerrorZone(data)
                         else:
-                            self.controller.file_operations.common_next_terror_zone("")
+                            self.controller.file_operations.writeTerrorZone("")
 
                     print(f"[保存] 数据已保存到 {TERROR_ZONE_PATH}")
                 except Exception as e:

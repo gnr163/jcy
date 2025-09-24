@@ -116,21 +116,6 @@ class FileOperations:
         count += 1
         return (count, total)
 
-    def common_next_terror_zone(self, value):
-        """修改hudwarningsfakehd.json(下一个恐怖区域)"""
-        
-        json_path = os.path.join(MOD_PATH, r"data/global/ui/layouts/hudwarningsfakehd.json")
-        
-        with open(json_path, 'r', encoding='utf-8') as f:
-            json_data = json.load(f)
-
-        json_data["children"][2]["children"][0]["fields"]["text"] = value
-        
-        with open(json_path, 'w', encoding='utf-8') as f:
-            json.dump(json_data, f, ensure_ascii=False, indent=4)
-        
-        return (1, 1)
-
 
     def getFileOrTmp(self, path):
         tmp = path + ".tmp"
@@ -369,10 +354,45 @@ class FileOperations:
         name = "OpenMiniCute"
         return self.common_switch_hudwarnings(name, isEnabled)
 
+    def hide_quest_button(self, isEnabled: bool):
+        """隐藏任务按钮"""
+        
+        _files = [
+            r"data/global/ui/layouts/hudpanel.json",
+            r"data/global/ui/layouts/hudpanelhd.json"
+        ]
 
-    def toggle_terror_zone(self, isEnabled: bool):
-        """清理恐怖区域预告"""
-        return self.common_next_terror_zone("")
+        _QuestAlert = [
+            {"type":"LevelUpButtonWidget","name":"QuestAlert","fields":{"type":"quests","labels":["@CfgQuestLog","@CfgQuestLog"],"isFloating":True,"tooltipOffset":{"y":-12},"rect":{"x":43,"y":-95},"filename":"PANEL/level","socketFilename":"PANEL/levelsocket","socketOffset":{"x":-3,"y":-2},"leftPanelOffset":{"x":320},"leftPanel800BonusOffset":{"x":80},"disabledFrame":2,"disabledTint":{"a":1}},"children":[{"type":"TextBoxWidget","name":"Label","fields":{"rect":{"x":15,"y":-19},"style":{"alignment":{"h":"center"}}}}]},
+            {"type":"LevelUpButtonWidget","name":"QuestAlert","fields":{"type":"quests","labels":["@CfgQuestLog","@CfgQuestLog"],"isFloating":True,"rect":{"x":406,"y":-164},"filename":"PANEL/HUD_02/quest_button","leftPanelOffset":{"x":1080},"newStatsButtonOverlapOffset":{"y":-210},"hoveredFrame":3,"disabledFrame":2,"disabledTint":{"a":1}},"children":[{"type":"TextBoxWidget","name":"Label","fields":{"anchor":{"x":0.5},"rect":{"y":-3},"fontType":"16pt","style":{"pointSize":"$XMediumLargeFontSize","alignment":{"v":"bottom","h":"center"},"spacing":"$MinimumSpacing","dropShadow":"$DefaultDropShadow"}}}]}
+        ]
+
+        count = 0
+        total = len(_files)
+
+        for i, file in enumerate(_files) :
+            try:
+                path = os.path.join(MOD_PATH, file)
+                
+                with open(path, 'r', encoding='utf-8') as f:
+                    json_data = json.load(f)
+
+                node = json_data["children"][-1]
+                if isEnabled:
+                    if node["name"] == "QuestAlert":
+                        json_data["children"].pop()
+                else:
+                    if node["name"] != "QuestAlert":
+                        json_data["children"].append(_QuestAlert[i])
+
+                with open(path, 'w', encoding='utf-8') as f:
+                    json.dump(json_data, f, ensure_ascii=False, indent=4)
+
+                count += 1
+            except Exception as e:
+                print(e)
+        
+        return (count, total)
 
 
     def toggle_low_quality(self, isEnabled: bool):
@@ -2750,15 +2770,37 @@ class FileOperations:
         except Exception as e:
             print(e)
 
-    def nextTerrorZone(self, data: dict):
-        if data["status"] == "ok":
-            rec = data["data"][0]
-            raw_time = rec.get("time")
-            zone_key = rec.get("zone")
-            formatted_time = time.strftime('%I:%M %p', time.localtime(raw_time)) if raw_time else "未知时间"
-            zone_info = TERROR_ZONE_DICT.get(zone_key, {})
-            language = APP_LANGUAGE[self.controller.current_states["298"]]
-            zone_name = zone_info.get(language) if zone_info else f"未知区域（{zone_key}）"
-            formatted_name = zone_name.replace("、", "\n").replace(",", "\n")
-            self.common_next_terror_zone(f"{formatted_time}\n{formatted_name}")
+    def writeTerrorZone(self, data: dict|str):
+        """写入游戏TZ预报
+        - dict -> 解析 -> 写入
+        - str -> 写入
+        """
+
+        info = data
+        # 解析tzjson
+        if isinstance(data, dict):
+            if data["status"] == "ok":
+                rec = data["data"][0]
+                raw_time = rec.get("time")
+                zone_key = rec.get("zone")
+                formatted_time = time.strftime('%I:%M %p', time.localtime(raw_time)) if raw_time else "未知时间"
+                zone_info = TERROR_ZONE_DICT.get(zone_key, {})
+                language = APP_LANGUAGE[self.controller.current_states["298"]]
+                zone_name = zone_info.get(language) if zone_info else f"未知区域（{zone_key}）"
+                formatted_name = zone_name.replace("、", "\n").replace(",", "\n")
+                info = f"{formatted_time}\n{formatted_name}"
+
+        # 写tz
+        try:
+            json_path = os.path.join(MOD_PATH, r"data/global/ui/layouts/hudwarningsfakehd.json")
+            with open(json_path, 'r', encoding='utf-8') as f:
+                json_data = json.load(f)
+            json_data["children"][2]["children"][0]["fields"]["text"] = info
+            with open(json_path, 'w', encoding='utf-8') as f:
+                json.dump(json_data, f, ensure_ascii=False, indent=4)
+        except Exception as e:
+            print("[writeTerrorZone 写入异常]", e)
+        
+        return (1, 1)
+
 
