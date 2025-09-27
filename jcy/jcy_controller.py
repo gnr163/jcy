@@ -334,7 +334,7 @@ class TerrorZoneFetcher:
         self.thread = None
         self.controller = controller
 
-    def fetch_once_with_retry(self, max_retries=9):
+    def fetch_once_with_retry(self, max_retries=20):
         """
         爬取TZ最新数据
         """

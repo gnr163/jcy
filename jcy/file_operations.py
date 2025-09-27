@@ -22,34 +22,17 @@ class FileOperations:
             return '\\u%04X' % ord(m.group(0))
         return re.sub(r'[\uE000-\uF8FF]', repl, text)
 
-    def common_empty_file(self, files: list, isEnabled: bool):
-        """
-        公共方法 遍历处理files列表
-        True: 创建 文件名 空文件
-        False: 删除 文件名文件
-        """
-        count = 0
 
-        for file in files:
-            target_file = os.path.join(MOD_PATH, file)
-            try:
-                if isEnabled:
-                    with open(target_file, 'w') as f:
-                        pass
-                else:
-                    os.remove(target_file)
-                count += 1
-            except Exception as e:
-                print(e);
-
-        return (count, len(files))
-    
-    def common_rename(self, files: list, isEnabled: bool):
+    def common_rename(self, files: list, isEnabled: bool = False):
         """
         公共方法 遍历处理files列表
         True: 文件名.tmp -> 文件名
         False: 文件名 -> 文件名.tmp
         """
+
+        if list is None:
+            return (0, 0)
+
         count = 0
         for file in files:
             try:
@@ -67,28 +50,9 @@ class FileOperations:
                 print(e)
 
         return (count, len(files))
-    
-    def common_swap(self, files: list, isEnabled: bool):
-        """
-        公共方法 遍历处理files列表
-        True files[0] -> files[2]
-        False files[1] -> files[2]
-        """
-        count = 0
-        total = len(files)
 
-        for file in files:
-            try:
-                true_file = os.path.join(MOD_PATH, file[0]) 
-                false_file = os.path.join(MOD_PATH, file[1]) 
-                target_file = os.path.join(MOD_PATH, file[2])
-                shutil.copy2(true_file if isEnabled else false_file, target_file)
-                count += 1
-            except Exception as e:
-                print(e)
-        return (count, total)
-    
-    def common_switch_hudwarnings(self, name: str, isEnabled: bool):
+
+    def common_switch_hudwarnings(self, name: str, isEnabled: bool = False):
         """开关 HUDWarnings控件"""
         
         _files = [
@@ -117,16 +81,7 @@ class FileOperations:
         return (count, total)
 
 
-    def getFileOrTmp(self, path):
-        tmp = path + ".tmp"
-        if os.path.exists(path):
-            return path
-        elif os.path.exists(tmp):
-            return tmp
-        else:
-            return None
-
-    def toggle_droped_highlight(self, isEnabled: bool):
+    def toggle_droped_highlight(self, isEnabled: bool = False):
         """
         开关 掉落光柱
         """
@@ -150,7 +105,8 @@ class FileOperations:
 
         return self.common_rename(files_droped_highlight, isEnabled)
 
-    def toggle_chest_highlight(self, isEnabled: bool):
+
+    def toggle_chest_highlight(self, isEnabled: bool = False):
         """
         开关 箱子高亮
         """
@@ -337,24 +293,25 @@ class FileOperations:
         return self.common_rename(files_chest_highlight, isEnabled)
 
     
-    def toggle_weapon_swap(self, isEnabled: bool):
+    def toggle_weapon_swap(self, isEnabled: bool = False):
         """开启正副手防呆"""
         name = "OpenWeaponSwap"
         return self.common_switch_hudwarnings(name, isEnabled)
 
 
-    def toggle_minihp_bar(self, isEnabled: bool):
+    def toggle_minihp_bar(self, isEnabled: bool = False):
         """默认开启迷你血条"""
         name = "OpenMiniHp"
         return self.common_switch_hudwarnings(name, isEnabled)
 
     
-    def toggle_mini_cube(self, isEnabled: bool):
+    def toggle_mini_cube(self, isEnabled: bool = False):
         """默认开启迷你盒子"""
         name = "OpenMiniCute"
         return self.common_switch_hudwarnings(name, isEnabled)
 
-    def hide_quest_button(self, isEnabled: bool):
+
+    def hide_quest_button(self, isEnabled: bool = False):
         """隐藏任务按钮"""
         
         _files = [
@@ -395,7 +352,7 @@ class FileOperations:
         return (count, total)
 
 
-    def toggle_low_quality(self, isEnabled: bool):
+    def toggle_low_quality(self, isEnabled: bool = False):
         """
         屏蔽 劣等的/損壞的/破舊的 武器装备
         """
@@ -440,7 +397,7 @@ class FileOperations:
         return (count, total)
 
 
-    def toggle_escape(self, isEnabled: bool):
+    def toggle_escape(self, isEnabled: bool = False):
         """
         开关 Esc退出
         """
@@ -452,7 +409,7 @@ class FileOperations:
         return self.common_rename(files_escape, isEnabled) 
     
 
-    def toggle_experience_bar(self, isEnabled: bool):
+    def toggle_experience_bar(self, isEnabled: bool = False):
         """
         开关 经验条变色
         """
@@ -462,8 +419,9 @@ class FileOperations:
         )
 
         return self.common_rename(files_experience_bar, isEnabled)
-    
-    def toggle_sound(self, isEnabled: bool):
+
+
+    def toggle_sound(self, isEnabled: bool = False):
         """
         开关 咒符/符文/技能结束提示音
         """
@@ -473,8 +431,9 @@ class FileOperations:
         )
 
         return self.common_rename(files_sound, isEnabled)
-    
-    def toggle_hd_global_palette_randtransforms_json(self, isEnabled: bool):
+
+
+    def toggle_hd_global_palette_randtransforms_json(self, isEnabled: bool = False):
         """
         开关 变色精英怪
         """
@@ -484,7 +443,8 @@ class FileOperations:
 
         return self.common_rename(files_random_elite, isEnabled)
 
-    def toggle_global_excel_affixes(self, isEnabled: bool):
+
+    def toggle_global_excel_affixes(self, isEnabled: bool = False):
         """
         开关 特殊词缀装备变色
         """
@@ -496,7 +456,8 @@ class FileOperations:
 
         return self.common_rename(files_global_excel_affixes, isEnabled)
 
-    def toggle_mephisto_key(self, isEnabled: bool):
+
+    def toggle_mephisto_key(self, isEnabled: bool = False):
         """
         开关 6BOSS钥匙皮肤
         """
@@ -505,7 +466,8 @@ class FileOperations:
         )
         return self.common_rename(files_key, isEnabled)
 
-    def toggle_hellfire_torch(self, isEnabled: bool):
+
+    def toggle_hellfire_torch(self, isEnabled: bool = False):
         """
         "126": "屏蔽 地狱火炬火焰风暴特效",
         """
@@ -570,8 +532,9 @@ class FileOperations:
                 if os.path.exists(temp_path):
                     os.remove(temp_path)
         return (count, total)
-    
-    def toggle_pointer(self, isEnabled: bool):
+
+
+    def toggle_pointer(self, isEnabled: bool = False):
         """BOSS 指引"""
         paths = [
             #
@@ -589,7 +552,7 @@ class FileOperations:
         return self.common_rename(paths, isEnabled)
 
 
-    def toggle_quick_game(self, isEnabled: bool):
+    def toggle_quick_game(self, isEnabled: bool = False):
         """
         点击角色快速建立最高难度游戏
         """
@@ -598,8 +561,9 @@ class FileOperations:
         ]
 
         return self.common_rename(files_quick_game, isEnabled)
-    
-    def toggle_context_menu(self, isEnabled: bool):
+
+
+    def toggle_context_menu(self, isEnabled: bool = False):
         """
         更大的好友菜单
         """
@@ -609,7 +573,8 @@ class FileOperations:
 
         return self.common_rename(files_context_menu, isEnabled);
 
-    def toggle_character_enemy(self, isEnabled: bool):
+
+    def toggle_character_enemy(self, isEnabled: bool = False):
         """
         怪物光源+危险标识
         """
@@ -748,7 +713,8 @@ class FileOperations:
 
         return self.common_rename(files_danger_enemy, isEnabled)
 
-    def toggle_skill_logo(self, isEnabled: bool):
+
+    def toggle_skill_logo(self, isEnabled: bool = False):
         """
         技能图标
         """
@@ -782,7 +748,8 @@ class FileOperations:
 
         return self.common_rename(files_skill_logo, isEnabled)
 
-    def select_town_portal(self, radio: str):
+
+    def select_town_portal(self, radio: str = "default"):
         """
         传送门皮肤
         """
@@ -824,7 +791,8 @@ class FileOperations:
                     os.remove(temp_path)
         return (count, total)
 
-    def select_teleport_skin(self, radio: str):
+
+    def select_teleport_skin(self, radio: str = "default"):
         """
         传送术皮肤
         """
@@ -854,7 +822,8 @@ class FileOperations:
                 print(e)
         return (count, total)
 
-    def select_arrow_skin(self, radio: str):
+
+    def select_arrow_skin(self, radio: str = "default"):
         """
         箭皮肤
         """
@@ -897,8 +866,9 @@ class FileOperations:
                 if os.path.exists(temp_path):
                     os.remove(temp_path)
         return (count, total)
-    
-    def select_enemy_arrow_skin(self, radio: str):
+
+
+    def select_enemy_arrow_skin(self, radio: str = "default"):
         """
         老鼠刺针/剥皮吹箭样式
         """
@@ -942,7 +912,8 @@ class FileOperations:
                     os.remove(temp_path)
         return (count, total)
 
-    def modify_character_player(self, val: str):
+
+    def modify_character_player(self, val: int = 0):
         """
         角色光源
         """
@@ -982,8 +953,9 @@ class FileOperations:
             except Exception as e:
                 print(e)
         return (count, total)
-    
-    def modify_rune_rectangle(self, val: int):
+
+
+    def modify_rune_rectangle(self, val: int = 0):
         """
         符文名称大小
         """
@@ -1025,9 +997,9 @@ class FileOperations:
         except Exception as e:
             print(e)
         return (count, total)
-    
 
-    def toggle_env_vis(self, isEnabled: bool):
+
+    def toggle_env_vis(self, isEnabled: bool = False):
         """
         画面变亮
         """
@@ -1359,17 +1331,18 @@ class FileOperations:
         ]
         
         return self.common_rename(files_env_vis, isEnabled)
-    
-    def toggle_monster_health(self, isEnabled: bool):
+
+
+    def toggle_monster_health(self, isEnabled: bool = False):
         """怪物血条D3风格"""
         files_monster_health = [
             r"data/global/ui/layouts/hudmonsterhealthhd.json",
         ]
 
         return self.common_rename(files_monster_health, isEnabled)
-    
-    
-    def toggle_shrine(self, isEnabled: bool):
+
+
+    def toggle_shrine(self, isEnabled: bool = False):
         """
         经验/宝石祭坛特效
         """
@@ -1380,8 +1353,8 @@ class FileOperations:
 
         return self.common_rename(files_common_shrine, isEnabled)
 
-    
-    def select_hireables_panel(self, radio: str):
+
+    def select_hireables_panel(self, radio: str = "default"):
         """
         佣兵图标位置
         """
@@ -1406,11 +1379,15 @@ class FileOperations:
                 shutil.copy2(src_path, dst_path)
             count += 1
         return (count, total)
-    
+
+
     def select_character_effects(self, keys: list):
         """
         角色特效
         """
+
+        if list is None:
+            return (0, 0)
 
         params = {
             "1": {
@@ -1646,8 +1623,12 @@ class FileOperations:
 
         return (count, total)
 
+
     def select_entry_effects(self, keys: list):
         """属性词条特效"""
+
+        if list is None:
+            return (0, 0)
 
         count = 0
         handler_abbr = "1" in keys
@@ -1693,8 +1674,13 @@ class FileOperations:
 
         return (count, 1)
 
+
     def select_item_name_effects(self, keys: list):
         """装备特效"""
+
+        if list is None:
+            return (0, 0)
+
         count = 0
         handler_grade = "0" in keys
         handler_weight = "1" in keys
@@ -1854,10 +1840,14 @@ class FileOperations:
             print(e)
 
         return (count, 2)
-    
+
+
     def hide_environmental_effects(self, keys: list):
         """屏蔽环境特效"""
         
+        if list is None:
+            return (0, 0)
+
         # 文件
         _files = {
             # 动画
@@ -2258,9 +2248,13 @@ class FileOperations:
         summary = tuple(sum(values) for values in zip(*results))
         
         return summary
-    
+
+
     def hide_character_effects(self, keys: list):
         """屏蔽角色特效"""
+
+        if list is None:
+            return (0, 0)
         
         # 文件
         _files = {
@@ -2302,10 +2296,13 @@ class FileOperations:
         summary = tuple(sum(values) for values in zip(*results))
         
         return summary
-    
+
 
     def show_character_effects(self, keys: list):
         """开启角色特效"""
+
+        if list is None:
+            return (0, 0)
         
         # 文件
         _files = {
@@ -2373,20 +2370,27 @@ class FileOperations:
         summary = tuple(sum(values) for values in zip(*results))
         
         return summary
-    
+
 
     def manage_tool(self, keys: list):
         """控制器管理"""
         
+        if list is None:
+            return (0, 0)
+
         for i in range(1, 5):
             key = str(i)
             APP_CONFIG[key] = key in keys
 
         return (1, 1, "重启控制器生效!")
-    
+
+
     def show_environmental_pointer(self, keys: list):
         """开启环境指引"""
         
+        if list is None:
+            return (0, 0)
+
         # 文件
         _files = {
             # 出/入口
@@ -2485,9 +2489,9 @@ class FileOperations:
         summary = tuple(sum(values) for values in zip(*results))
         
         return summary
-    
 
-    def toggle_quick_buy(self, isEnabled:bool):
+
+    def toggle_quick_buy(self, isEnabled: bool = False):
         """
         左键快速购买
         """
@@ -2496,7 +2500,8 @@ class FileOperations:
         ]
 
         return self.common_rename(_files, isEnabled)
-    
+
+
     def load_filter_config(self):
         """
         读取道具过滤配置&相应item-names数据
@@ -2531,7 +2536,8 @@ class FileOperations:
             ])
         
         return data
-    
+
+
     def modify_item_names(self, data):
         """
         修改 道具屏蔽
@@ -2557,8 +2563,9 @@ class FileOperations:
             json.dump(item_names_data, f, ensure_ascii=False, indent=2)
 
         return (1, 1)
-    
-    def select_rune_skin(self, radio: str):
+
+
+    def select_rune_skin(self, radio: str = "default"):
         """
         符文皮肤
         """
@@ -2653,8 +2660,9 @@ class FileOperations:
                 except Exception as e:
                     print(e)
         return (count, total)
-    
-    def select_hudpanel_size(self, radio: str):
+
+
+    def select_hudpanel_size(self, radio: str = "default"):
         """HUD面板尺寸"""
 
         rects = [
@@ -2685,7 +2693,9 @@ class FileOperations:
                 # 1.load
                 file_data = None
                 file_path = os.path.join(MOD_PATH, _file)
-                file_path = self.getFileOrTmp(file_path)
+                if not os.path.exists(file_path):
+                    file_path = file_path + ".tmp"
+
                 with open(file_path, 'r', encoding='utf-8') as f:
                     file_data = json.load(f)
 
@@ -2701,7 +2711,7 @@ class FileOperations:
         return (count, total)
 
 
-    def select_language(self, radio: str):
+    def select_language(self, radio: str = "default"):
         """删除恐怖地带文件"""
         count = 0
         if TERROR_ZONE_PATH.exists():
@@ -2710,13 +2720,14 @@ class FileOperations:
         return (count, 1, "重启控制器生效!")
     
 
-    def select_server(self, radio: str):
+    def select_server(self, radio: str = "default"):
         """删除恐怖地带文件"""
         count = 0
         if TERROR_ZONE_PATH.exists():
             TERROR_ZONE_PATH.unlink
             count += 1
         return (count, 1, "重启控制器生效!")
+
 
     def sync_app_data(self):
         """
@@ -2770,6 +2781,7 @@ class FileOperations:
         except Exception as e:
             print(e)
 
+
     def writeTerrorZone(self, data: dict|str):
         """写入游戏TZ预报
         - dict -> 解析 -> 写入
@@ -2802,5 +2814,3 @@ class FileOperations:
             print("[writeTerrorZone 写入异常]", e)
         
         return (1, 1)
-
-
