@@ -73,6 +73,8 @@ ACCOUNTS_JSON = "accounts.json"
 SETTINGS_JSON = "settings.json"
 # 恐怖地带文件
 TERROR_ZONE_JSON = "terror_zone.json"
+# 窗口配置文件
+WIN_JSON = "win.json"
 # --- ASSETS文件 ---
 # LOGO
 BEAR_ICO = "bear.ico"
@@ -95,6 +97,8 @@ ACCOUNTS_PATH = CONFIG_PATH / ACCOUNTS_JSON
 USER_SETTINGS_PATH = CONFIG_PATH / SETTINGS_JSON
 # 恐怖地带文件
 TERROR_ZONE_PATH = CONFIG_PATH / TERROR_ZONE_JSON
+# 窗口配置文件
+WIN_PATH = CONFIG_PATH / WIN_JSON
 # LOGO
 LOGO_PATH = get_assets_file(BEAR_ICO)
 # 抖内微信码
@@ -193,6 +197,7 @@ __all__ = [
     'ACCOUNTS_PATH',
     'USER_SETTINGS_PATH',
     'TERROR_ZONE_PATH',
+    'WIN_PATH',
     'LOGO_PATH',
     'DONATE_WECHAT_PATH',
     'HELP_PATH',

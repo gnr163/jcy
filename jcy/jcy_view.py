@@ -323,7 +323,13 @@ class FeatureView:
     def _quit_app(self, icon=None, item=None):
         """退出应用程序"""
         self._cleanup_tray_icon()
-        
+
+        # 保存win配置
+        self.save_window_geometry()
+
+        # 清空tz预告信息
+        self.controller.file_operations.writeTerrorZone("")
+
         # 使用after来在主线程中安全执行退出
         self.master.after(100, self._final_quit)
 
@@ -417,7 +423,32 @@ class FeatureView:
                 value = current_states.get(fid, {})
                 var.set(value)
 
+
+    def save_window_geometry(self):
+        """保存窗口配置"""
+        self.master.update_idletasks()       # 确保 geometry 是最新
+        geom = self.master.geometry()         # 格式: "800x600+100+200"
+        size, x, y = geom.split('+')[0], geom.split('+')[1], geom.split('+')[2]
+        width, height = size.split('x')
+        data = {
+            "x": int(x),
+            "y": int(y),
+            "width": int(width),
+            "height": int(height)
+        }
+        self.controller.file_operations.save_win_config(data)
+
+    def load_window_geometry(self):
+        """加载窗口配置"""
+        data = self.controller.file_operations.load_win_config()
+        if data is not None:
+            self.master.geometry(f"{data['width']}x{data['height']}+{data['x']}+{data['y']}")
+
+
     def visible(self):
+        """窗口终始化"""
+        self.load_window_geometry()
+
         if not "2" in self.controller.current_states["399"]:
             self.notebook.hide(1)
 
@@ -489,7 +520,7 @@ class LabeledCheckGroup(ttk.LabelFrame):
 
 class TableWithCheckbox(tk.Frame):
     """
-    Scroll‑able checkbox table:
+    Scroll-able checkbox table:
         - columns:  ['英文', '简体', '繁體', ...]
         - data:     [[id, col1, col2, ...], ...]
         - config_dict / config_key: 用来读写 {id: bool} 状态到外部字典
@@ -501,12 +532,11 @@ class TableWithCheckbox(tk.Frame):
                  **kwargs):
         super().__init__(master, **kwargs)
 
-        # ---------- 外部状态 ----------
         self.columns      = columns
         self.data         = data
         self.config_dict  = config_dict or {}
         self.config_key   = config_key
-        self.on_change = on_change
+        self.on_change    = on_change
 
         if self.config_key and self.config_key not in self.config_dict:
             self.config_dict[self.config_key] = {}
@@ -522,27 +552,53 @@ class TableWithCheckbox(tk.Frame):
         hbar.pack(side="bottom", fill="x")
         canvas.pack(side="left", fill="both", expand=True)
 
-        # 内层表格 Frame
         self._tbl = tk.Frame(canvas)
         tbl_window = canvas.create_window((0, 0), window=self._tbl, anchor="nw")
 
-        # 自动调整 scrollregion & 宽度
-        def _on_config(event):
+        # ---------- 替换这部分开始 ----------
+        def _on_config(event=None):
+            # 当内层 Frame 尺寸变化时更新 scrollregion（不再在这里设置 window 宽度）
             canvas.configure(scrollregion=canvas.bbox("all"))
-            canvas.itemconfigure(tbl_window, width=canvas.winfo_width())  # 拉伸填充
+
         self._tbl.bind("<Configure>", _on_config)
+
+        canvas.bind("<Configure>", lambda e: canvas.itemconfigure(tbl_window, width=e.width))
+
+        # 在构建完所有控件后做一次初始刷新（延迟很短，确保 geometry 已计算）
+        def _initial_update():
+            # 强制布局计算后再读 bbox/winfo_width
+            self._tbl.update_idletasks()
+            canvas.update_idletasks()
+            canvas.configure(scrollregion=canvas.bbox("all"))
+            canvas.itemconfigure(tbl_window, width=canvas.winfo_width())
 
         # ---------- 构建表格 ----------
         self.vars    = []
         self.row_ids = []
 
-        # 表头
-        tk.Label(self._tbl, text="屏蔽", width=6, borderwidth=1,
-                 relief="solid").grid(row=0, column=0, sticky="nsew")
+        # 全选框变量 + 函数
+        self._select_all_var = tk.BooleanVar(value=False)
+
+        def _toggle_all():
+            new_state = self._select_all_var.get()
+            for var in self.vars:
+                var.set(new_state)
+            if self.on_change:
+                self.on_change(self.get())  # 只通知外部
+
+        # 表头第0列改为全选框（包Frame）
+        frame = tk.Frame(self._tbl, borderwidth=1, relief="solid")
+        frame.grid(row=0, column=0, sticky="nsew")
+        tk.Checkbutton(frame,
+                    text="屏蔽",
+                    variable=self._select_all_var,
+                    command=_toggle_all).pack(expand=True, fill="both")
+
+        # 其他表头
         for j, col in enumerate(columns, start=1):
             tk.Label(self._tbl, text=col, width=col_width, wraplength=wrap_px,
-                     borderwidth=1, relief="solid", anchor="w"
-                     ).grid(row=0, column=j, sticky="nsew")
+                    borderwidth=1, relief="solid", anchor="w"
+                    ).grid(row=0, column=j, sticky="nsew")
 
         # 表体
         for i, row in enumerate(data, start=1):
@@ -552,22 +608,25 @@ class TableWithCheckbox(tk.Frame):
             var = tk.BooleanVar(value=self.state_dict.get(rid, False))
             self.vars.append(var)
 
-            tk.Checkbutton(
-                self._tbl,
-                variable=var,
-                command=self._make_callback()
-            ).grid(row=i, column=0, sticky="nsew")
+            # 包Frame
+            frame = tk.Frame(self._tbl, borderwidth=1, relief="solid")
+            frame.grid(row=i, column=0, sticky="nsew")
+            tk.Checkbutton(frame,
+                        variable=var,
+                        command=self._make_callback(),
+                        anchor="center").pack(expand=True, fill="both")
 
             for j, text in enumerate(row[1:], start=1):
                 tk.Label(self._tbl, text=text, width=col_width,
-                         wraplength=wrap_px, borderwidth=1, relief="solid",
-                         anchor="w").grid(row=i, column=j, sticky="nsew")
+                        wraplength=wrap_px, borderwidth=1, relief="solid",
+                        anchor="w").grid(row=i, column=j, sticky="nsew")
 
         # 列均分伸缩
         for c in range(len(columns) + 1):
             self._tbl.grid_columnconfigure(c, weight=1)
 
-    # ---------- 公共接口 ----------
+        self.after(1, _initial_update)
+
     def get(self):
         """返回 {id: bool}"""
         return {rid: var.get() for rid, var in zip(self.row_ids, self.vars)}
@@ -576,6 +635,8 @@ class TableWithCheckbox(tk.Frame):
         """根据字典批量设定勾选状态"""
         for rid, var in zip(self.row_ids, self.vars):
             var.set(state_dict.get(rid, False))
+        # 同步表头全选状态
+        self._select_all_var.set(all(var.get() for var in self.vars))
 
     def update_config(self):
         """把当前勾选同步进外部 config_dict"""
@@ -585,8 +646,11 @@ class TableWithCheckbox(tk.Frame):
     def _make_callback(self):
         def callback():
             if self.on_change:
-                self.on_change(self.get())  # 获取当前表格勾选状态并传回 controller
+                self.on_change(self.get())
+            # 行点击时自动刷新表头全选状态
+            self._select_all_var.set(all(var.get() for var in self.vars))
         return callback
+
 
 class D2RLauncherApp(tk.Frame):
     """

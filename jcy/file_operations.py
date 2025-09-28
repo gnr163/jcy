@@ -2814,3 +2814,18 @@ class FileOperations:
             print("[writeTerrorZone 写入异常]", e)
         
         return (1, 1)
+
+    def save_win_config(self, data):
+        """保存窗口配置"""
+        with open(WIN_PATH, "w", encoding="utf-8") as f:
+            json.dump(data, f)
+
+    def load_win_config(self):
+        """加载窗口配置"""
+        if os.path.exists(WIN_PATH):
+            try:
+                with open(WIN_PATH, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                return data
+            except Exception as e:
+                print(e)
