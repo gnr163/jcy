@@ -226,6 +226,16 @@ class FeatureController:
             LIGHT_REDIUS: self.file_operations.modify_character_player,
             # 弓/弩箭皮肤
             ARROW: self.file_operations.select_arrow_skin,
+            # 魔法师
+            SOR_SETTING: self.file_operations.sorceress_setting,
+            # 死灵法师
+            NEC_SETTING: self.file_operations.necromancer_setting,
+            # 德鲁伊
+            DRU_SETTING: self.file_operations.druid_setting,
+            # 刺客
+            ASN_SETTING: self.file_operations.assassin_setting,
+            # 佣兵
+            MERCENARY: self.file_operations.select_mercenary_skin,
         }
 
     def apply_settings(self):

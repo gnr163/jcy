@@ -935,6 +935,78 @@ class FileOperations:
         return (count, total)
 
 
+    def select_mercenary_skin(self, keys: list):
+        """选择佣兵皮肤"""
+        if keys is None:
+            return (0, 0)
+
+        # 文件
+        _files = {
+            # A1白毛罗格
+            "1" : [
+                # 
+                r"data/hd/character/enemy/roguehire/roguehire_state_machine.json",
+                # 
+                r"data/hd/character/npc/navi/textures/navi_body_alb.texture",
+                r"data/hd/character/npc/navi/textures/navi_body_nrm.texture",
+                r"data/hd/character/npc/navi/textures/navi_body_orm.texture",
+                r"data/hd/character/npc/navi/textures/navi_body_sss.texture",
+                r"data/hd/character/npc/navi/textures/navi_hair_alb.texture",
+                r"data/hd/character/npc/navi/textures/navi_hair_flow.texture",
+                r"data/hd/character/npc/navi/textures/navi_hair_hrt.texture",
+                r"data/hd/character/npc/navi/textures/navi_head_alb.texture",
+                r"data/hd/character/npc/navi/textures/navi_head_nrm.texture",
+                r"data/hd/character/npc/navi/textures/navi_head_orm.texture",
+                r"data/hd/character/npc/navi/textures/navi_head_sss.texture",
+                r"data/hd/character/npc/navi/textures/navi_outfit_alb.texture",
+                r"data/hd/character/npc/navi/textures/navi_outfit_nrm.texture",
+                r"data/hd/character/npc/navi/textures/navi_outfit_orm.texture",
+                r"data/hd/character/npc/navi/textures/navi_quiver_alb.texture",
+                r"data/hd/character/npc/navi/textures/navi_quiver_nrm.texture",
+                r"data/hd/character/npc/navi/textures/navi_quiver_orm.texture",
+                # 
+                r"data/hd/character/npc/rogue1/textures/rogue_armormed_alb.texture"
+            ],
+            # A2女性佣兵
+            "2":[
+                # 佣兵昵称
+                r"data/local/lng/strings/mercenaries.json",
+                # 佣兵头像
+                r"data/hd/global/ui/hireables/act2hireableicon.lowend.sprite",
+                r"data/hd/global/ui/hireables/act2hireableicon.sprite",
+                # 佣兵模型
+                r"data/hd/character/enemy/act2hire.json",
+                r"data/hd/character/enemy/act2hire_female/act2hire_female_state_machine.json",
+                r"data/hd/character/enemy/act2hire_female/act2hire_female_variant.json",
+                # 声音文件
+                r"data/hd/global/sfx/monster/guard/monster_guard_death_1_hd.flac",
+                r"data/hd/global/sfx/monster/guard/monster_guard_death_2_hd.flac",
+                r"data/hd/global/sfx/monster/guard/monster_guard_death_3_hd.flac",
+                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_1_hd.flac",
+                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_2_hd.flac",
+                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_3_hd.flac",
+                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_4_hd.flac",
+            ],
+            # A5火焰刀佣兵
+            "5":[
+                r"data/hd/character/enemy/act5hire1.json",
+                r"data/hd/items/weapon/sword/act5hire1_bastard_sword.json",
+                r"data/hd/items/weapon/sword/act5hire1_long_sword.json",
+            ]
+        }
+
+        funcs = []
+        for key in ["1", "2", "5"]:
+            files = _files[key]
+            sub = self.common_rename(files, key in keys)
+            funcs.append(sub)
+
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
+
+
     def modify_character_player(self, val: int = 0):
         """
         角色光源
@@ -2290,24 +2362,8 @@ class FileOperations:
         
         # 文件
         _files = {
-            # 刺客-武学亮度
-            "1" : [
-                r"data/hd/missiles/ground_fire_medium.json",
-                r"data/hd/missiles/ground_fire_small.json",
-                r"data/hd/missiles/missiles.json",
-            ],
-            # 刺客-影散隐身
-            "2":[
-                r"data/global/excel/itemstatcost.txt",
-            ],
-            # 法师-雷云风暴吓人
-            "3":[
-                r"data/hd/missiles/lightningbolt_big.json",
-            ],
-            # 法师-闪电新星亮度
-            "4": [
-                r"data/hd/missiles/electric_nova.json",
-            ],
+            
+            
             # 头饰-外观
             "5": [
                 r"data/hd/items/armor/circlet/circlet.json",
@@ -2338,16 +2394,8 @@ class FileOperations:
         
         # 文件
         _files = {
-            # 死灵-骷髅火刀圣盾
-            "1" : [
-                r"data/hd/character/enemy/necroskeleton.json",
-            ],
-            # 德鲁伊-飓风术
-            "2":[
-                r"data/hd/missiles/expansion_hurricane_rocks.json",
-                r"data/hd/missiles/expansion_hurricane_tree.json",
-                r"data/hd/missiles/expansion_hurricane_swoosh.json",
-            ],
+            
+            
             # 标枪闪电枪
             "3":[
                 r"data/hd/missiles/glaive.json",
@@ -2363,32 +2411,7 @@ class FileOperations:
                 r"data/hd/missiles/missile_dagger.json",
                 r"data/hd/missiles/missile_hand_axe.json",
             ],
-            # A2女性佣兵
-            "5": [
-                # 佣兵昵称
-                r"data/local/lng/strings/mercenaries.json",
-                # 佣兵头像
-                r"data/hd/global/ui/hireables/act2hireableicon.lowend.sprite",
-                r"data/hd/global/ui/hireables/act2hireableicon.sprite",
-                # 佣兵模型
-                r"data/hd/character/enemy/act2hire.json",
-                r"data/hd/character/enemy/act2hire_female/act2hire_female_state_machine.json",
-                r"data/hd/character/enemy/act2hire_female/act2hire_female_variant.json",
-                # 声音文件
-                r"data/hd/global/sfx/monster/guard/monster_guard_death_1_hd.flac",
-                r"data/hd/global/sfx/monster/guard/monster_guard_death_2_hd.flac",
-                r"data/hd/global/sfx/monster/guard/monster_guard_death_3_hd.flac",
-                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_1_hd.flac",
-                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_2_hd.flac",
-                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_3_hd.flac",
-                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_4_hd.flac",
-            ],
-            # A5火焰刀佣兵
-            "6": [
-                r"data/hd/character/enemy/act5hire1.json",
-                r"data/hd/items/weapon/sword/act5hire1_bastard_sword.json",
-                r"data/hd/items/weapon/sword/act5hire1_long_sword.json",
-            ]
+
         }
 
         funcs = []
@@ -3154,6 +3177,106 @@ class FileOperations:
         for i in range(1, 5):
             key = str(i)
             files = _files[key]
+            sub = self.common_rename(files, key in keys)
+            funcs.append(sub)
+
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
+    
+    def sorceress_setting(self, keys: list):
+        """魔法使设置"""
+        if keys is None:
+            return (0, 0)
+        
+        _files = {
+            # 取消雷云风暴吓人特效
+            "1":[
+                r"data/hd/missiles/lightningbolt_big.json",
+            ],
+            # 降低闪电新星亮度
+            "2": [
+                r"data/hd/missiles/electric_nova.json",
+            ],
+        }
+
+        funcs = []
+        for key, files in _files.items():
+            sub = self.common_rename(files, key in keys)
+            funcs.append(sub)
+
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
+    
+    def necromancer_setting(self, keys: list):
+        """死灵法师设置"""
+        if keys is None:
+            return (0, 0)
+        
+        _files = {
+            # 骷髅火刀圣盾
+            "1" : [
+                r"data/hd/character/enemy/necroskeleton.json",
+            ],
+        }
+
+        funcs = []
+        for key, files in _files.items():
+            sub = self.common_rename(files, key in keys)
+            funcs.append(sub)
+
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
+    
+    def druid_setting(self, keys: list):
+        """德鲁伊设置"""
+        if keys is None:
+            return (0, 0)
+        
+        _files = {
+            # 德鲁伊-飓风术
+            "1":[
+                r"data/hd/missiles/expansion_hurricane_rocks.json",
+                r"data/hd/missiles/expansion_hurricane_tree.json",
+                r"data/hd/missiles/expansion_hurricane_swoosh.json",
+            ],
+        }
+
+        funcs = []
+        for key, files in _files.items():
+            sub = self.common_rename(files, key in keys)
+            funcs.append(sub)
+
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
+    
+    def assassin_setting(self, keys: list):
+        """刺客设置"""
+        if keys is None:
+            return (0, 0)
+        
+        _files = {
+            # 马赛克护眼
+            "1" : [
+                r"data/hd/missiles/ground_fire_medium.json",
+                r"data/hd/missiles/ground_fire_small.json",
+                r"data/hd/missiles/missiles.json",
+            ],
+            # 取消影散隐身效果
+            "2":[
+                r"data/global/excel/itemstatcost.txt",
+            ],
+        }
+
+        funcs = []
+        for key, files in _files.items():
             sub = self.common_rename(files, key in keys)
             funcs.append(sub)
 
