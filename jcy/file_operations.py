@@ -1790,6 +1790,8 @@ class FileOperations:
 
                 # 备份 ZHCN->BAK
                 item[BAK] = item[ZHCN]
+                # 网易国服语言配置 ZHCN
+                item[ZHCN] = item[self.controller.current_states.get("netease-language", BAK)]
                 
             # write temp file
             item_names_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json.tmp")
@@ -1835,8 +1837,11 @@ class FileOperations:
                             arr.append(" ÿcI")
                             arr.append(item.get("enUS"))
                         item[lng] = ''.join(arr)
+                
                 # 备份 ZHCN->BAK
                 item[BAK] = item[ZHCN]
+                # 网易国服语言配置 ZHCN
+                item[ZHCN] = item[self.controller.current_states.get("netease-language", BAK)]
 
             item_runes_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-runes.json.tmp")
             with open(item_runes_tmp, 'w', encoding="utf-8-sig") as f:
@@ -2567,7 +2572,9 @@ class FileOperations:
             item_name[ZHTW] = UE01A + item_name[ZHTW].removeprefix(UE01A) if filter else item_name[ZHTW].removeprefix(UE01A)
             item_name[ENUS] = UE01A + item_name[ENUS].removeprefix(UE01A) if filter else item_name[ENUS].removeprefix(UE01A)
             # 备份过滤 ZHCN->BAK
-            item_name[BAK] = item[ZHCN]
+            item_name[BAK] = item_name[ZHCN]
+            # 网易国服语言配置 ZHCN
+            item_name[ZHCN] = item_name[self.controller.current_states.get("netease-language", BAK)]
         # 3.write
         with open(item_names_path, 'w', encoding='utf-8-sig') as f:
             json.dump(item_names_data, f, ensure_ascii=False, indent=2)
