@@ -12,6 +12,7 @@ ERROR_ALREADY_EXISTS = 183
 WM_SHOW_WINDOW = 0x5000
 
 # 语言
+BAK = 'bak'
 ENUS = 'enUS'
 ZHCN = 'zhCN'
 ZHTW = 'zhTW'
@@ -70,8 +71,8 @@ UE01A = "" * 41
 
 # 恐怖区域API
 TERROR_ZONE_API = {
-    "default" : ["https://asia.d2tz.info/terror_zone?mode=online", "https://api.d2tz.info/terror_zone?mode=online"],
-    "1": ["https://api.aws.d2-trade.com/api/query/tz_online"]
+    "1" : ["https://asia.d2tz.info/terror_zone?mode=online", "https://api.d2tz.info/terror_zone?mode=online"],
+    "2": ["https://api.aws.d2-trade.com/api/query/tz_online"]
 }
     
 
@@ -401,9 +402,10 @@ __all__ = [
     'MUTEX_NAME',
     'ERROR_ALREADY_EXISTS',
     'WM_SHOW_WINDOW',
-    'ENUS',
+    'BAK',
     'ZHCN',
     'ZHTW',
+    'ENUS',
     'APP_NAME',
     'APP_VERSION',
     'APP_FULL_NAME',

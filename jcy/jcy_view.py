@@ -30,6 +30,8 @@ class FeatureView:
         self.master = master
         self.all_features_config = all_features_config
         self.controller = controller
+        # <tab_name, frame>
+        self.tab_map = {}
 
         master.title(APP_FULL_NAME)
         master.geometry(APP_SIZE)
@@ -70,21 +72,26 @@ class FeatureView:
         # 创建 Notebook 
         notebook = ttk.Notebook(self.master)
         notebook.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+        self.notebook = notebook
+
+        # 动态Tab
+        for config in self.controller.feature_config.all_features_config.get("tabs"):
+            self._create_tab(config)
 
         # --- D2R多开器 ---
         launcher_tab = D2RLauncherApp(notebook)
-        notebook.add(launcher_tab, text="D2R多开器")
+        self.add_tab(launcher_tab, "D2R多开器")
 
         # --- Terror Zone ---
         self.tz_tab = TerrorZoneUI(notebook, self.controller, fetcher = self.controller.terror_zone_fetcher)
-        notebook.add(self.tz_tab, text="恐怖区域")
+        self.add_tab(self.tz_tab, "恐怖区域")
         
         # --- checkbutton ---
         tab = None
         for i, (fid, description) in enumerate(self.all_features_config.get("checkbutton", {}).items()):
             if i % 20 == 0 :
                 tab = ttk.Frame(notebook)
-                notebook.add(tab, text=" 功能特效 ")
+                self.add_tab(tab, f"功能特效{(i/20)+1}")
             var = tk.BooleanVar()
             self.feature_vars[fid] = var
             chk = ttk.Checkbutton(tab, text=description, variable=var, command=lambda f=fid, v=var: self.controller.execute_feature_action(f, v.get()))
@@ -93,7 +100,7 @@ class FeatureView:
 
         # --- radiogroup ---
         radiogroup_tab = ttk.Frame(notebook)
-        notebook.add(radiogroup_tab, text=" 单选特效 ")
+        self.add_tab(radiogroup_tab, "单选特效")
 
         radiogroup_features = self.all_features_config.get("radiogroup", {})
 
@@ -131,17 +138,9 @@ class FeatureView:
             radiogroup_tab.grid_columnconfigure(i, weight=1)
 
         
-        # # --- checkgroup ---
-        # checkgroup_tab = ttk.Frame(notebook)
-        # notebook.add(checkgroup_tab, text=" 多选特效 ")
-        # checkgroup_features = self.all_features_config.get("checkgroup", {})
-        # for fid, info in checkgroup_features.items():
-        #     group = LabeledCheckGroup(checkgroup_tab, feature_id=fid, data=info, default_selected=[], command=self.controller.execute_feature_action)
-        #     group.pack(anchor="n", fill="x", padx=20, pady=10)
-        #     self.feature_vars[fid] = group
         # --- checkgroup ---
         checkgroup_tab = ttk.Frame(notebook)
-        notebook.add(checkgroup_tab, text=" 多选特效 ")
+        self.add_tab(checkgroup_tab, "多选特效")
         checkgroup_features = self.all_features_config.get("checkgroup", {})
 
         row, col = 0, 0
@@ -171,7 +170,7 @@ class FeatureView:
 
         # --- spinbox ---
         range_tab = ttk.Frame(notebook)
-        notebook.add(range_tab, text=" 区间特效 ")
+        self.add_tab(range_tab, "区间特效")
         range_features = self.all_features_config.get("spinbox", {})
         for fid, description in range_features.items():
             label_frame = ttk.LabelFrame(range_tab, text=description)
@@ -188,7 +187,7 @@ class FeatureView:
 
         # --- checktable ---
         filter_tab = ttk.Frame(notebook)
-        notebook.add(filter_tab, text=" 道具屏蔽 ")
+        self.add_tab(filter_tab, "道具屏蔽")
 
         columns = ["Key", "enUS", "简体中文", "繁體中文"]
         data = self.controller.file_operations.load_filter_config()
@@ -205,7 +204,7 @@ class FeatureView:
 
         # -- Donate --
         donate_tab = ttk.Frame(notebook)
-        notebook.add(donate_tab, text="免责声明")
+        self.add_tab(donate_tab, "免责声明")
 
         try:
             image = Image.open(DONATE_WECHAT_PATH)
@@ -233,6 +232,69 @@ class FeatureView:
         # 绑定事件
         notebook.bind("<<NotebookTabChanged>>", self.on_tab_changed)
         self.notebook = notebook
+
+    def _create_tab(self, config):
+        tab = ttk.Frame(self.notebook)
+        self.add_tab(tab, config.get("text"))
+
+        total_columns = 10  # 每行总列数
+        current_row = 0
+        current_col = 0
+
+        # radiogroup_features = self.all_features_config.get("radiogroup", {})
+        for child in config.get("children"):
+            fid = child.get("fid")
+            type = child.get("type")
+            colspan = child.get("colspan", total_columns)  # 默认占满整行
+            
+            if "RadioGroup" == type:
+                group = LabeledRadioGroup(
+                    tab,
+                    feature_id=fid,
+                    data=child,
+                    command=self.controller.execute_feature_action
+                )
+                # 如果当前行剩余列不足，换行
+                if current_col + colspan > total_columns:
+                    current_row += 1
+                    current_col = 0
+                # 放置控件
+                group.grid(row=current_row, column=current_col, columnspan=colspan,
+                        sticky="nsew", padx=10, pady=5)
+                # 更新当前列索引
+                current_col += colspan
+                # 保存引用
+                self.feature_vars[fid] = group
+            
+            elif "CheckGroup" == type:
+                group = LabeledCheckGroup(
+                    tab,
+                    feature_id=fid,
+                    data=child,
+                    command=self.controller.execute_feature_action
+                )
+                # 如果当前行剩余列不足，换行
+                if current_col + colspan > total_columns:
+                    current_row += 1
+                    current_col = 0
+                # 控件
+                group.grid(row=current_row, column=current_col, columnspan=colspan, 
+                           sticky="ew", padx=10, pady=5)
+                # 更新当前列索引
+                current_col += colspan
+                self.feature_vars[fid] = group
+
+            elif "Separator" == type:
+                current_row += 1  
+                sep = ttk.Separator(tab, orient='horizontal')
+                sep.grid(row=current_row, column=0, columnspan=total_columns,
+                        sticky="ew", pady=10)
+                current_row += 1  
+                current_col = 0   # 回到第一列
+
+        # 均分每列权重，让控件按比例拉伸
+        for i in range(total_columns):
+            tab.grid_columnconfigure(i, weight=1)
 
     def _create_tray_icon(self):
         """创建支持双击的系统托盘图标"""
@@ -406,6 +468,13 @@ class FeatureView:
         """
         根据加载的设置更新 UI 元素的状态。
         """
+        tab_fids = [
+            child["fid"]
+            for tab in self.all_features_config.get("tabs", [])
+            for child in tab.get("children", [])
+            if "fid" in child
+        ]
+        
         for fid, var in self.feature_vars.items():
             if fid in self.all_features_config["checkbutton"]:
                 value = current_states.get(fid, False)
@@ -421,6 +490,9 @@ class FeatureView:
                 var.set(value) 
             elif fid in self.all_features_config["checktable"]:
                 value = current_states.get(fid, {})
+                var.set(value)
+            elif fid in tab_fids:
+                value = current_states.get(fid)
                 var.set(value)
 
 
@@ -444,16 +516,36 @@ class FeatureView:
         if data is not None:
             self.master.geometry(f"{data['width']}x{data['height']}+{data['x']}+{data['y']}")
 
+    def add_tab(self, tab, tab_name: str):
+        """添加Tab"""
+        if self.notebook:
+            self.notebook.add(tab, text=tab_name)
+            self.tab_map[tab_name] = tab
+
+
+    def hide_tab(self, tab_name: str):
+        """隐藏Tab"""
+        tab = self.tab_map.get(tab_name)
+        if tab and str(tab) in self.notebook.tabs():
+            self.notebook.tab(tab, state="hidden")
+
+
+    def show_tab(self, tab_name: str):
+        """显示Tab"""
+        tab = self.tab_map.get(tab_name)
+        if tab and str(tab) in self.notebook.tabs():
+            self.notebook.tab(tab, state="normal")        
+
 
     def visible(self):
         """窗口终始化"""
         self.load_window_geometry()
 
         if not "2" in self.controller.current_states["399"]:
-            self.notebook.hide(1)
+            self.hide_tab("恐怖区域")
 
         if not "1" in self.controller.current_states["399"]:
-            self.notebook.hide(0)
+            self.hide_tab("D2R多开器")
 
 
 class LabeledRadioGroup(ttk.LabelFrame):
@@ -511,6 +603,8 @@ class LabeledCheckGroup(ttk.LabelFrame):
         # return sorted([key for key, var in self.vars.items() if var.get()])
 
     def set(self, selected_keys):
+        if selected_keys is None:
+            selected_keys = []
         for key, var in self.vars.items():
             var.set(key in selected_keys)
 
@@ -1090,7 +1184,7 @@ class TerrorZoneUI(tk.Frame):
                         continue
                     zone_info = TERROR_ZONE_DICT.get(zone_key)
                     if isinstance(zone_info, dict):
-                        language = APP_LANGUAGE[self.controller.current_states["298"]]
+                        language =self.controller.current_states["tz-language"]
                         name = zone_info.get(language)
                     else:
                         name = "未知名称"

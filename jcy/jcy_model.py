@@ -11,13 +11,63 @@ class FeatureConfig:
     """
     def __init__(self):
         self.all_features_config = {
+            "tabs":[
+                {
+                    "text": "总体设置",
+                    "children":[
+                        {
+                            "fid": "tz-server",
+                            "type": "RadioGroup",
+                            "text": "恐怖区域-服务器",
+                            "colspan": 4,
+                            "params": [
+                                {"1":"暴雪国际服"},
+                                {"2":"网易国服"}
+                            ]
+                        },
+                        {
+                            "fid":"tz-language",
+                            "type": "RadioGroup",
+                            "text": "恐怖区域-语言",
+                            "colspan": 6,
+                            "params": [
+                                {"zhCN":"简体中文-zhCN"},
+                                {"zhTW":"繁體中文-zhTW"},
+                                {"enUS":"英文-enUS"}
+                            ]
+                        },
+                        {
+                            "fid":"tz-next",
+                            "type": "CheckGroup",
+                            "text": "恐怖区域-预告",
+                            "colspan": 4,
+                            "params": [
+                                {"1":"Win系统通知"},
+                                {"2":"游戏内预告"}
+                            ]
+                        },
+                        {
+                            "type": "Separator"
+                        },
+                        {
+                            "fid":"netease-language",
+                            "type": "RadioGroup",
+                            "text": "网易国服语言(装备/道具/符文/符文之语)",
+                            "colspan": 10,
+                            "params": [
+                                {"bak":"国服简中-zhCN"},
+                                {"zhTW":"国际繁中-zhTW"},
+                                {"enUS":"英文-enUS"}
+                            ]
+                        },
+                    ]
+                }
+            ],
             "checkbutton": {
                 "101": "点击角色快速建立最高难度游戏",
                 "102": "Esc=存儲並離開",
                 "103": "更大的好友菜单",
                 "104": "特殊词缀蓝装变色(红/绿)",
-                
-                
                 "106": "经验祭坛/宝石祭坛 特效标识",
                 "141": "左键快速购买",
                 "113": "蓝色/金色/暗金色精英怪随机染色",
@@ -29,50 +79,16 @@ class FeatureConfig:
                 "120": "BOSS 指引",
                 "112": "画面变亮",
                 "121": "交互对象增加蓝色火苗",
-                
-
                 "124": "6BOSS钥匙皮肤+掉落光柱",
-                
                 "126": "屏蔽 地狱火炬火焰风暴特效",
-                
-                
-                
-                
                 "131": "经验条变色",
-                
-                
-                
                 "136": "怪物血条D3风格",
-
-
-
-
-
                 "147": "默认开启迷你血条",
                 "148": "默认开启迷你盒子",
                 "146": "正副手防呆提示",
                 "149": "隐藏任务日志提示按钮"
-
-
             },
             "radiogroup": {
-                "299": {
-                    "text": "恐怖区域-服务器",
-                    "colspan": 4,
-                    "params": [
-                        {"default":"暴雪国际服"},
-                        {"1":"网易国服"}
-                    ]
-                },
-                "298": {
-                    "text": "恐怖区域-语言",
-                    "colspan": 6,
-                    "params": [
-                        {"default":"简体中文-zhCN"},
-                        {"1":"繁體中文-zhTW"},
-                        {"2":"英文-enUS"}
-                    ]
-                },
                 "201": {
                     "text": "佣兵图标位置",
                     "colspan": 10,

@@ -23,7 +23,6 @@ from jcy_view import FeatureView
 class FeatureController:
     def __init__(self, master):
         self.master = master
-        # self.current_states = {}
         self.dialogs = "" 
 
         # 无配置文件,以默认文件为准
@@ -161,32 +160,16 @@ class FeatureController:
             "120": self.file_operations.toggle_pointer,
             # "交互对象增加蓝色火苗",
             "121": self.file_operations.toggle_chest_highlight, 
-
             # "6BOSS钥匙皮肤+掉落光柱",
             "124": self.file_operations.toggle_mephisto_key,
-
             # "屏蔽 地狱火炬火焰风暴特效",
             "126": self.file_operations.toggle_hellfire_torch,
-            
-
             # "经验条变色",
             "131": self.file_operations.toggle_experience_bar,
-
-
-
-
             # "怪物血条D3风格",
             "136": self.file_operations.toggle_monster_health,
-
-
-
-
             # "左键快速购买",
             "141": self.file_operations.toggle_quick_buy,
-
-
-
-
             # "正副手防呆提示"
             "146": self.file_operations.toggle_weapon_swap,
             # "默认开启迷你血条"
@@ -195,8 +178,8 @@ class FeatureController:
             "148": self.file_operations.toggle_mini_cube,
             # 隐藏任务日志提示按钮
             "149": self.file_operations.hide_quest_button,
-            
-            
+
+
             # 佣兵图标位置
             "201": self.file_operations.select_hireables_panel,
             # 传送门皮肤
@@ -211,10 +194,6 @@ class FeatureController:
             "206": self.file_operations.select_rune_skin,
             # HUD面板尺寸
             "207": self.file_operations.select_hudpanel_size,
-            # 恐怖地带服务器
-            "298": self.file_operations.select_language,
-            # 恐怖地带服务器
-            "299": self.file_operations.select_server,
 
 
             # 角色特效
@@ -241,6 +220,15 @@ class FeatureController:
 
             # 道具屏蔽
             "501": self.file_operations.modify_item_names,
+            
+            # 恐怖区域-服务器
+            "tz-server": self.file_operations.select_server,
+            # 恐怖区域-语言
+            "tz-language": self.file_operations.select_language,
+            # 恐怖区域-预告
+            "tz-next": self.file_operations.void,
+            # 装备道具-语言
+            "netease-language": self.file_operations.select_netease_language,
         }
 
     def apply_settings(self):
@@ -251,6 +239,26 @@ class FeatureController:
         """
         self.dialogs = "" # 每次应用设置前清空 dialogs
         changes_detected = False
+
+        # -------------------- 自定义面板功能 --------------------
+        for tab in self.feature_config.all_features_config.get("tabs"):
+            for child in tab.get("children"):
+                fid = child.get("fid")
+                text = child.get("text")
+                type = child.get("type")
+
+                current_value = self.current_states.get(fid)
+                loaded_value = self.feature_state_manager.loaded_states.get(fid)
+                if current_value is not None and current_value != loaded_value:
+                    changes_detected = True
+                    if fid in self._handlers:
+                        result = self._handlers[fid](current_value) 
+                        if "radio" == type:
+                            selected_description = next((param_dict[current_value] for param_dict in child["params"] if current_value in param_dict), current_value)
+                            self.dialogs += f"{text} = {selected_description} 操作文件数量 {result[0]}/{result[1]} {result[2] if len(result) > 2 else ''}\n"
+                        else:
+                            self.dialogs += f"{text} 操作文件数量 {result[0]}/{result[1]} {result[2] if len(result) > 2 else ''}\n"
+
 
         # -------------------- 独立功能 (Checkbutton) --------------------
         for feature_id, description in self.feature_config.all_features_config["checkbutton"].items():
@@ -342,7 +350,7 @@ class TerrorZoneFetcher:
         for attempt in range(1, max_retries + 1):
             try:
                 # 区服配置
-                server_cfg = self.controller.current_states["299"]
+                server_cfg = self.controller.current_states["tz-server"]
                 api_array = TERROR_ZONE_API[server_cfg]
                 api = api_array[randint % len(api_array)]
 
@@ -409,8 +417,8 @@ class TerrorZoneFetcher:
                     with open(TERROR_ZONE_PATH, "w", encoding="utf-8") as f:
                         json.dump(data, f, ensure_ascii=False, indent=2)
                         
-                        # 写恐怖区域预告
-                        if "4" in self.controller.current_states["399"]:
+                        # 游戏内预告
+                        if "2" in self.controller.current_states["tz-next"]:
                             self.controller.file_operations.writeTerrorZone(data)
                         else:
                             self.controller.file_operations.writeTerrorZone("")
@@ -419,7 +427,8 @@ class TerrorZoneFetcher:
                 except Exception as e:
                     print(f"[错误] 保存数据失败: {e}")
 
-                if "3" in self.controller.current_states["399"]:
+                # Win系统通知
+                if "1" in self.controller.current_states["tz-next"]:
                     if callback:
                         callback(data)
             else:
@@ -475,7 +484,7 @@ if __name__ == "__main__":
             formatted_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(raw_time)) if raw_time else "未知时间"
             
             zone_info = TERROR_ZONE_DICT.get(zone_key, {})
-            language = APP_LANGUAGE[app.current_states["298"]]
+            language = app.current_states["tz-language"]
             zone_name = zone_info.get(language) if zone_info else f"未知区域（{zone_key}）"
             message = f"{formatted_time} {zone_name}"
         except Exception as e:

@@ -14,6 +14,10 @@ class FileOperations:
     def __init__(self, controller):
         self.controller = controller
 
+    def void(self, param):
+        "空方法"
+        return (0, 0)
+
     def common_encode_private_use_chars(self, text):
         r"""
         替换所有私用区字符为 \uXXXX 形式
@@ -1676,7 +1680,7 @@ class FileOperations:
 
 
     def select_item_name_effects(self, keys: list):
-        """装备特效"""
+        """装备名称特效"""
 
         if list is None:
             return (0, 0)
@@ -1690,43 +1694,43 @@ class FileOperations:
         handler_max = "5" in keys
         handler_mark = "6" in keys
 
-        # load settings.json
-        user_config_data = load_user_config()
+        # 道具过滤
+        item_filter_config = self.controller.current_states["501"]
 
-        # load jcy/item-names.json
+        # load 道具配置
         jcy_item_names_data = None
         jcy_item_names_json = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.json")
         with open(jcy_item_names_json, 'r', encoding='utf-8') as f:
             jcy_item_names_data = json.load(f)
 
-        # load jcy/item-runes.json
+        # load 符文配置
         jcy_item_runes_data = None
         jcy_item_runes_json = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-runes.json")
         with open(jcy_item_runes_json, 'r', encoding='utf-8') as f:
             jcy_item_runes_data = json.load(f)
 
         try:
-            # item-names.templet.json -> item-names.json
+            # 道具模版->道具
             item_names_data = None
             item_names_templet = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.templet.json")
             with open(item_names_templet, 'r', encoding='utf-8-sig') as f:
                 item_names_data = json.load(f)
 
             for item in item_names_data:
-                # CASE.过滤道具
                 id = str(item["id"])
                 Key = item["Key"]
-                if id in user_config_data["501"]:
-                    filter = user_config_data["501"].get(id)
-                    item["enUS"] = UE01A + item["enUS"] if filter else item["enUS"]
-                    item["zhCN"] = UE01A + item["zhCN"] if filter else item["zhCN"]
-                    item["zhTW"] = UE01A + item["zhTW"] if filter else item["zhTW"]
+
+                # CASE.过滤道具
+                if id in item_filter_config:
+                    item[ZHCN] = UE01A + item[ZHCN] if filter else item[ZHCN]
+                    item[ZHTW] = UE01A + item[ZHTW] if filter else item[ZHTW]
+                    item[ENUS] = UE01A + item[ENUS] if filter else item[ENUS]
 
                 # CASE.底材
                 elif len(Key) == 3:
                     data = jcy_item_names_data.get(Key)
                     if data is not None:
-                        for lng in ("zhCN", "zhTW", "enUS"):
+                        for lng in [ZHCN, ZHTW, ENUS]:
                             arr = []
                             arr.append(item[lng])
                             if handler_grade:
@@ -1753,12 +1757,12 @@ class FileOperations:
                                     arr.append(defense)
                                     arr.append("]")
                             item[lng] = ''.join(arr)
-                
+
                 # CASE.装备
                 else:
                     data = jcy_item_names_data.get(Key)
                     if data is not None:
-                        for lng in ("zhCN", "zhTW", "enUS"):
+                        for lng in [ZHCN, ZHTW, ENUS]:
                             arr = []
                             if handler_max:
                                 max = data[lng].get("max")
@@ -1779,25 +1783,28 @@ class FileOperations:
                                 else:
                                     arr.append("ÿc4")
                             arr.append(item.get(lng))
-                            if handler_enUS and lng in ("zhCN", "zhTW"):
-                                arr.append("ÿcI ")
-                                arr.append(item.get("enUS"))
+                            if handler_enUS and lng != ENUS:
+                                arr.append(" ÿcI")
+                                arr.append(item.get(ENUS))
                             item[lng] = ''.join(arr)
+
+                # 备份 ZHCN->BAK
+                item[BAK] = item[ZHCN]
                 
             # write temp file
-            item_names_templet_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.templet.json.tmp")
-            with open(item_names_templet_tmp, 'w', encoding="utf-8-sig") as f:
+            item_names_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json.tmp")
+            with open(item_names_tmp, 'w', encoding="utf-8-sig") as f:
                 json.dump(item_names_data, f, ensure_ascii=False, indent=2)
 
             # replace target file
-            item_names_json = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json")
-            os.replace(item_names_templet_tmp, item_names_json)
+            item_names = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json")
+            os.replace(item_names_tmp, item_names)
             count += 1
         except Exception as e:
             print(e)
 
         try:
-            # item-runes.templet.json -> item-runes.json
+            # 符文模板->符文
             item_runes_data = None
             item_runes_templet = os.path.join(MOD_PATH, r"data/local/lng/strings/item-runes.templet.json")
             with open(item_runes_templet, 'r', encoding='utf-8-sig') as f:
@@ -1807,7 +1814,7 @@ class FileOperations:
                 Key = item["Key"]
                 data = jcy_item_runes_data.get(Key)
                 if data is not None:
-                    for lng in ("zhCN", "zhTW", "enUS"):
+                    for lng in [ZHCN, ZHTW, ENUS]:
                         arr = []
                         if handler_max:
                             max = data[lng].get("max")
@@ -1824,17 +1831,19 @@ class FileOperations:
                         if len(arr) > 0:
                             arr.append("ÿc4")
                         arr.append(item.get(lng))
-                        if handler_enUS and lng in ("zhCN", "zhTW"):
-                            arr.append("ÿcI ")
+                        if handler_enUS and lng != ENUS:
+                            arr.append(" ÿcI")
                             arr.append(item.get("enUS"))
                         item[lng] = ''.join(arr)
+                # 备份 ZHCN->BAK
+                item[BAK] = item[ZHCN]
 
-            item_runes_templet_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-runes.templet.json.tmp")
-            with open(item_runes_templet_tmp, 'w', encoding="utf-8-sig") as f:
+            item_runes_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-runes.json.tmp")
+            with open(item_runes_tmp, 'w', encoding="utf-8-sig") as f:
                 json.dump(item_runes_data, f, ensure_ascii=False, indent=2)
 
-            item_runes_json = os.path.join(MOD_PATH, r"data/local/lng/strings/item-runes.json")
-            os.replace(item_runes_templet_tmp, item_runes_json)
+            item_runes = os.path.join(MOD_PATH, r"data/local/lng/strings/item-runes.json")
+            os.replace(item_runes_tmp, item_runes)
             count += 1
         except Exception as e:
             print(e)
@@ -2554,10 +2563,11 @@ class FileOperations:
         # 2.modify
         for id, filter in data.items():
             item_name = item_name_dict[id]
-            item_name["enUS"] = UE01A + item_name["enUS"].removeprefix(UE01A) if filter else item_name["enUS"].removeprefix(UE01A)
-            item_name["zhCN"] = UE01A + item_name["zhCN"].removeprefix(UE01A) if filter else item_name["zhCN"].removeprefix(UE01A)
-            item_name["zhTW"] = UE01A + item_name["zhTW"].removeprefix(UE01A) if filter else item_name["zhTW"].removeprefix(UE01A)
-            
+            item_name[ZHCN] = UE01A + item_name[ZHCN].removeprefix(UE01A) if filter else item_name[ZHCN].removeprefix(UE01A)
+            item_name[ZHTW] = UE01A + item_name[ZHTW].removeprefix(UE01A) if filter else item_name[ZHTW].removeprefix(UE01A)
+            item_name[ENUS] = UE01A + item_name[ENUS].removeprefix(UE01A) if filter else item_name[ENUS].removeprefix(UE01A)
+            # 备份过滤 ZHCN->BAK
+            item_name[BAK] = item[ZHCN]
         # 3.write
         with open(item_names_path, 'w', encoding='utf-8-sig') as f:
             json.dump(item_names_data, f, ensure_ascii=False, indent=2)
@@ -2711,7 +2721,7 @@ class FileOperations:
         return (count, total)
 
 
-    def select_language(self, radio: str = "default"):
+    def select_language(self, radio: str):
         """删除恐怖地带文件"""
         count = 0
         if TERROR_ZONE_PATH.exists():
@@ -2720,13 +2730,49 @@ class FileOperations:
         return (count, 1, "重启控制器生效!")
     
 
-    def select_server(self, radio: str = "default"):
+    def select_server(self, radio: str):
         """删除恐怖地带文件"""
         count = 0
         if TERROR_ZONE_PATH.exists():
             TERROR_ZONE_PATH.unlink
             count += 1
         return (count, 1, "重启控制器生效!")
+    
+    
+    def select_netease_language(self, radio: str):
+        """国服文字选择"""
+        _files = [
+            r"data/local/lng/strings/item-names.json",
+            r"data/local/lng/strings/item-runes.json"
+        ]
+
+        count = 0
+        total = len(_files)
+
+        for file in _files:
+            json_data = None
+            json_path = os.path.join(MOD_PATH, file)
+
+            try:
+                # 1.load
+                with open(json_path, 'r', encoding='utf-8-sig') as f:
+                    json_data = json.load(f)
+
+                # 2.modify 
+                for obj in json_data:
+                    print(obj)
+                    obj[ZHCN] = obj[radio]
+                    print(obj)
+                
+                # 3.write
+                with open(json_path, 'w', encoding="utf-8-sig") as f:
+                    json.dump(json_data, f, ensure_ascii=False, indent=2)
+
+                count += 1
+            except Exception as e:
+                print(f"[Error] {json_path}: {e}")
+
+        return (count, total)
 
 
     def sync_app_data(self):
@@ -2797,7 +2843,7 @@ class FileOperations:
                 zone_key = rec.get("zone")
                 formatted_time = time.strftime('%I:%M %p', time.localtime(raw_time)) if raw_time else "未知时间"
                 zone_info = TERROR_ZONE_DICT.get(zone_key, {})
-                language = APP_LANGUAGE[self.controller.current_states["298"]]
+                language = self.controller.current_states["tz-language"]
                 zone_name = zone_info.get(language) if zone_info else f"未知区域（{zone_key}）"
                 formatted_name = zone_name.replace("、", "\n").replace(",", "\n")
                 info = f"{formatted_time}\n{formatted_name}"
