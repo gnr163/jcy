@@ -17,6 +17,24 @@ class FileOperations:
     def void(self, param):
         "空方法"
         return (0, 0)
+    
+    def common_submit(self, fid, param):
+        """无具体操作, 返回fid被修改"""
+        _config = {}
+        for tab in self.controller.feature_config.all_features_config["tabs"]:
+            for child in tab["children"]:
+                _config[child["fid"]]=child
+        
+        model = _config.get(fid)
+        if "RadioGroup" == model["type"]:
+            return (0, 0, f"{model["text"]} = {model["params"][param]}\n")
+        elif "CheckGroup" == model["type"]:
+            info = []
+            for key, text in model["params"].items():
+                if key in param:
+                    return (0, 0, f"{model["text"]} = {model["params"][param]}\n")
+
+
 
     def common_encode_private_use_chars(self, text):
         r"""
@@ -34,7 +52,7 @@ class FileOperations:
         False: 文件名 -> 文件名.tmp
         """
 
-        if list is None:
+        if files is None:
             return (0, 0)
 
         count = 0
@@ -1390,7 +1408,7 @@ class FileOperations:
         角色特效
         """
 
-        if list is None:
+        if keys is None:
             return (0, 0)
 
         params = {
@@ -1631,7 +1649,7 @@ class FileOperations:
     def select_entry_effects(self, keys: list):
         """属性词条特效"""
 
-        if list is None:
+        if keys is None:
             return (0, 0)
 
         count = 0
@@ -1682,7 +1700,7 @@ class FileOperations:
     def select_item_name_effects(self, keys: list):
         """装备名称特效"""
 
-        if list is None:
+        if keys is None:
             return (0, 0)
 
         count = 0
@@ -1791,7 +1809,7 @@ class FileOperations:
                 # 备份 ZHCN->BAK
                 item[BAK] = item[ZHCN]
                 # 网易国服语言配置 ZHCN
-                item[ZHCN] = item[self.controller.current_states.get("netease-language", BAK)]
+                item[ZHCN] = item[self.controller.current_states.get(NETEASE_LANGUAGE, BAK)]
                 
             # write temp file
             item_names_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json.tmp")
@@ -1841,7 +1859,7 @@ class FileOperations:
                 # 备份 ZHCN->BAK
                 item[BAK] = item[ZHCN]
                 # 网易国服语言配置 ZHCN
-                item[ZHCN] = item[self.controller.current_states.get("netease-language", BAK)]
+                item[ZHCN] = item[self.controller.current_states.get(NETEASE_LANGUAGE, BAK)]
 
             item_runes_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-runes.json.tmp")
             with open(item_runes_tmp, 'w', encoding="utf-8-sig") as f:
@@ -1859,7 +1877,7 @@ class FileOperations:
     def hide_environmental_effects(self, keys: list):
         """屏蔽环境特效"""
         
-        if list is None:
+        if keys is None:
             return (0, 0)
 
         # 文件
@@ -2267,7 +2285,7 @@ class FileOperations:
     def hide_character_effects(self, keys: list):
         """屏蔽角色特效"""
 
-        if list is None:
+        if keys is None:
             return (0, 0)
         
         # 文件
@@ -2315,7 +2333,7 @@ class FileOperations:
     def show_character_effects(self, keys: list):
         """开启角色特效"""
 
-        if list is None:
+        if keys is None:
             return (0, 0)
         
         # 文件
@@ -2389,7 +2407,7 @@ class FileOperations:
     def manage_tool(self, keys: list):
         """控制器管理"""
         
-        if list is None:
+        if keys is None:
             return (0, 0)
 
         for i in range(1, 5):
@@ -2402,7 +2420,7 @@ class FileOperations:
     def show_environmental_pointer(self, keys: list):
         """开启环境指引"""
         
-        if list is None:
+        if keys is None:
             return (0, 0)
 
         # 文件
@@ -2574,7 +2592,7 @@ class FileOperations:
             # 备份过滤 ZHCN->BAK
             item_name[BAK] = item_name[ZHCN]
             # 网易国服语言配置 ZHCN
-            item_name[ZHCN] = item_name[self.controller.current_states.get("netease-language", BAK)]
+            item_name[ZHCN] = item_name[self.controller.current_states.get(NETEASE_LANGUAGE, BAK)]
         # 3.write
         with open(item_names_path, 'w', encoding='utf-8-sig') as f:
             json.dump(item_names_data, f, ensure_ascii=False, indent=2)
@@ -2782,6 +2800,368 @@ class FileOperations:
         return (count, total)
 
 
+    def select_game_setting(self, keys: list):
+        """游戏设置"""
+        if keys is None:
+            return (0, 0)
+
+        # 文件
+        _files = {
+            # 快速创建游戏
+            "1" : [
+                # 
+                r"data/global/ui/layouts/mainmenupanelhd.json",
+            ],
+            # 单击Esc退出游戏
+            "2":[
+                r"data/global/ui/layouts/pauselayout.json", 
+                r"data/global/ui/layouts/pauselayouthd.json",
+            ],
+            # 更大的好友菜单
+            "3":[
+                r"data/global/ui/layouts/contextmenuhd.json",
+            ],
+            # 画面变亮
+            "4":[
+                r"data/hd/env/vis/1_default_day.json",
+                r"data/hd/env/vis/act1_barracks_dawn1.json",
+                r"data/hd/env/vis/act1_barracks_dawn2.json",
+                r"data/hd/env/vis/act1_barracks_day.json",
+                r"data/hd/env/vis/act1_barracks_desecrated.json",
+                r"data/hd/env/vis/act1_barracks_dusk1.json",
+                r"data/hd/env/vis/act1_barracks_dusk2.json",
+                r"data/hd/env/vis/act1_barracks_night.json",
+                r"data/hd/env/vis/act1_campfire_dawn1.json",
+                r"data/hd/env/vis/act1_campfire_dawn2.json",
+                r"data/hd/env/vis/act1_campfire_day.json",
+                r"data/hd/env/vis/act1_campfire_dusk1.json",
+                r"data/hd/env/vis/act1_campfire_dusk2.json",
+                r"data/hd/env/vis/act1_campfire_night.json",
+                r"data/hd/env/vis/act1_catacombs_dawn1.json",
+                r"data/hd/env/vis/act1_catacombs_dawn2.json",
+                r"data/hd/env/vis/act1_catacombs_day.json",
+                r"data/hd/env/vis/act1_catacombs_desecrated.json",
+                r"data/hd/env/vis/act1_catacombs_dusk1.json",
+                r"data/hd/env/vis/act1_catacombs_dusk2.json",
+                r"data/hd/env/vis/act1_catacombs_night.json",
+                r"data/hd/env/vis/act1_cathedral_dawn1.json",
+                r"data/hd/env/vis/act1_cathedral_dawn2.json",
+                r"data/hd/env/vis/act1_cathedral_day.json",
+                r"data/hd/env/vis/act1_cathedral_dusk1.json",
+                r"data/hd/env/vis/act1_cathedral_dusk2.json",
+                r"data/hd/env/vis/act1_cathedral_night.json",
+                r"data/hd/env/vis/act1_caves_dawn1.json",
+                r"data/hd/env/vis/act1_caves_dawn2.json",
+                r"data/hd/env/vis/act1_caves_day.json",
+                r"data/hd/env/vis/act1_caves_desecrated.json",
+                r"data/hd/env/vis/act1_caves_dusk1.json",
+                r"data/hd/env/vis/act1_caves_dusk2.json",
+                r"data/hd/env/vis/act1_caves_night.json",
+                r"data/hd/env/vis/act1_court_dawn1.json",
+                r"data/hd/env/vis/act1_court_dawn2.json",
+                r"data/hd/env/vis/act1_court_day.json",
+                r"data/hd/env/vis/act1_court_desecrated.json",
+                r"data/hd/env/vis/act1_court_dusk1.json",
+                r"data/hd/env/vis/act1_court_dusk2.json",
+                r"data/hd/env/vis/act1_court_night.json",
+                r"data/hd/env/vis/act1_crypt_dawn1.json",
+                r"data/hd/env/vis/act1_crypt_dawn2.json",
+                r"data/hd/env/vis/act1_crypt_day.json",
+                r"data/hd/env/vis/act1_crypt_desecrated.json",
+                r"data/hd/env/vis/act1_crypt_dusk1.json",
+                r"data/hd/env/vis/act1_crypt_dusk2.json",
+                r"data/hd/env/vis/act1_crypt_night.json",
+                r"data/hd/env/vis/act1_outdoors_dawn1.json",
+                r"data/hd/env/vis/act1_outdoors_dawn2.json",
+                r"data/hd/env/vis/act1_outdoors_day.json",
+                r"data/hd/env/vis/act1_outdoors_desecrated.json",
+                r"data/hd/env/vis/act1_outdoors_dusk1.json",
+                r"data/hd/env/vis/act1_outdoors_dusk2.json",
+                r"data/hd/env/vis/act1_outdoors_interior01_vis.json",
+                r"data/hd/env/vis/act1_outdoors_night.json",
+                r"data/hd/env/vis/act1_tristram_dawn1.json",
+                r"data/hd/env/vis/act1_tristram_dawn2.json",
+                r"data/hd/env/vis/act1_tristram_day.json",
+                r"data/hd/env/vis/act1_tristram_dusk1.json",
+                r"data/hd/env/vis/act1_tristram_dusk2.json",
+                r"data/hd/env/vis/act1_tristram_night.json",
+                r"data/hd/env/vis/act2_arcane_dawn1.json",
+                r"data/hd/env/vis/act2_arcane_dawn2.json",
+                r"data/hd/env/vis/act2_arcane_day.json",
+                r"data/hd/env/vis/act2_arcane_desecrated.json",
+                r"data/hd/env/vis/act2_arcane_dusk1.json",
+                r"data/hd/env/vis/act2_arcane_dusk2.json",
+                r"data/hd/env/vis/act2_arcane_night.json",
+                r"data/hd/env/vis/act2_bigcliff_dawn1.json",
+                r"data/hd/env/vis/act2_bigcliff_dawn2.json",
+                r"data/hd/env/vis/act2_bigcliff_day.json",
+                r"data/hd/env/vis/act2_bigcliff_dusk1.json",
+                r"data/hd/env/vis/act2_bigcliff_dusk2.json",
+                r"data/hd/env/vis/act2_bigcliff_night.json",
+                r"data/hd/env/vis/act2_frontend_dawn1.json",
+                r"data/hd/env/vis/act2_frontend_dawn2.json",
+                r"data/hd/env/vis/act2_frontend_day.json",
+                r"data/hd/env/vis/act2_frontend_dusk1.json",
+                r"data/hd/env/vis/act2_frontend_dusk2.json",
+                r"data/hd/env/vis/act2_frontend_night.json",
+                r"data/hd/env/vis/act2_maggot_dawn1.json",
+                r"data/hd/env/vis/act2_maggot_dawn2.json",
+                r"data/hd/env/vis/act2_maggot_day.json",
+                r"data/hd/env/vis/act2_maggot_desecrated.json",
+                r"data/hd/env/vis/act2_maggot_dusk1.json",
+                r"data/hd/env/vis/act2_maggot_dusk2.json",
+                r"data/hd/env/vis/act2_maggot_night.json",
+                r"data/hd/env/vis/act2_outdoors_dawn1.json",
+                r"data/hd/env/vis/act2_outdoors_dawn2.json",
+                r"data/hd/env/vis/act2_outdoors_day.json",
+                r"data/hd/env/vis/act2_outdoors_dusk1.json",
+                r"data/hd/env/vis/act2_outdoors_dusk2.json",
+                r"data/hd/env/vis/act2_outdoors_night.json",
+                r"data/hd/env/vis/act2_palace_cells_dawn1.json",
+                r"data/hd/env/vis/act2_palace_cells_dawn2.json",
+                r"data/hd/env/vis/act2_palace_cells_day.json",
+                r"data/hd/env/vis/act2_palace_cells_desecrated.json",
+                r"data/hd/env/vis/act2_palace_cells_dusk1.json",
+                r"data/hd/env/vis/act2_palace_cells_dusk2.json",
+                r"data/hd/env/vis/act2_palace_cells_night.json",
+                r"data/hd/env/vis/act2_palace_clean_dawn1.json",
+                r"data/hd/env/vis/act2_palace_clean_dawn2.json",
+                r"data/hd/env/vis/act2_palace_clean_day.json",
+                r"data/hd/env/vis/act2_palace_clean_dusk1.json",
+                r"data/hd/env/vis/act2_palace_clean_dusk2.json",
+                r"data/hd/env/vis/act2_palace_clean_night.json",
+                r"data/hd/env/vis/act2_palace_dawn1.json",
+                r"data/hd/env/vis/act2_palace_dawn2.json",
+                r"data/hd/env/vis/act2_palace_day.json",
+                r"data/hd/env/vis/act2_palace_desecrated.json",
+                r"data/hd/env/vis/act2_palace_dusk1.json",
+                r"data/hd/env/vis/act2_palace_dusk2.json",
+                r"data/hd/env/vis/act2_palace_night.json",
+                r"data/hd/env/vis/act2_ruin_dawn1.json",
+                r"data/hd/env/vis/act2_ruin_dawn2.json",
+                r"data/hd/env/vis/act2_ruin_day.json",
+                r"data/hd/env/vis/act2_ruin_dusk1.json",
+                r"data/hd/env/vis/act2_ruin_dusk2.json",
+                r"data/hd/env/vis/act2_ruin_night.json",
+                r"data/hd/env/vis/act2_sewer_dawn1.json",
+                r"data/hd/env/vis/act2_sewer_dawn2.json",
+                r"data/hd/env/vis/act2_sewer_day.json",
+                r"data/hd/env/vis/act2_sewer_desecrated.json",
+                r"data/hd/env/vis/act2_sewer_dusk1.json",
+                r"data/hd/env/vis/act2_sewer_dusk2.json",
+                r"data/hd/env/vis/act2_sewer_night.json",
+                r"data/hd/env/vis/act2_tainted_sun.json",
+                r"data/hd/env/vis/act2_tomb_dawn1.json",
+                r"data/hd/env/vis/act2_tomb_dawn2.json",
+                r"data/hd/env/vis/act2_tomb_day.json",
+                r"data/hd/env/vis/act2_tomb_desecrated.json",
+                r"data/hd/env/vis/act2_tomb_dusk1.json",
+                r"data/hd/env/vis/act2_tomb_dusk2.json",
+                r"data/hd/env/vis/act2_tomb_night.json",
+                r"data/hd/env/vis/act2_town_dawn1.json",
+                r"data/hd/env/vis/act2_town_dawn2.json",
+                r"data/hd/env/vis/act2_town_day.json",
+                r"data/hd/env/vis/act2_town_desecrated.json",
+                r"data/hd/env/vis/act2_town_dusk1.json",
+                r"data/hd/env/vis/act2_town_dusk2.json",
+                r"data/hd/env/vis/act2_town_interior_vis.json",
+                r"data/hd/env/vis/act2_town_night.json",
+                r"data/hd/env/vis/act3_docktown_dawn1.json",
+                r"data/hd/env/vis/act3_docktown_dawn2.json",
+                r"data/hd/env/vis/act3_docktown_day.json",
+                r"data/hd/env/vis/act3_docktown_desecrated.json",
+                r"data/hd/env/vis/act3_docktown_dusk1.json",
+                r"data/hd/env/vis/act3_docktown_dusk2.json",
+                r"data/hd/env/vis/act3_docktown_night.json",
+                r"data/hd/env/vis/act3_jungle_dawn1.json",
+                r"data/hd/env/vis/act3_jungle_dawn2.json",
+                r"data/hd/env/vis/act3_jungle_day.json",
+                r"data/hd/env/vis/act3_jungle_dungeon_dawn1.json",
+                r"data/hd/env/vis/act3_jungle_dungeon_dawn2.json",
+                r"data/hd/env/vis/act3_jungle_dungeon_day.json",
+                r"data/hd/env/vis/act3_jungle_dungeon_desecrated.json",
+                r"data/hd/env/vis/act3_jungle_dungeon_dusk1.json",
+                r"data/hd/env/vis/act3_jungle_dungeon_dusk2.json",
+                r"data/hd/env/vis/act3_jungle_dungeon_night.json",
+                r"data/hd/env/vis/act3_jungle_dusk1.json",
+                r"data/hd/env/vis/act3_jungle_dusk2.json",
+                r"data/hd/env/vis/act3_jungle_night.json",
+                r"data/hd/env/vis/act3_kurast_dawn1.json",
+                r"data/hd/env/vis/act3_kurast_dawn2.json",
+                r"data/hd/env/vis/act3_kurast_day.json",
+                r"data/hd/env/vis/act3_kurast_dusk1.json",
+                r"data/hd/env/vis/act3_kurast_dusk2.json",
+                r"data/hd/env/vis/act3_kurast_night.json",
+                r"data/hd/env/vis/act3_kurast_stone_tile_dawn1.json",
+                r"data/hd/env/vis/act3_kurast_stone_tile_dawn2.json",
+                r"data/hd/env/vis/act3_kurast_stone_tile_day.json",
+                r"data/hd/env/vis/act3_kurast_stone_tile_dusk1.json",
+                r"data/hd/env/vis/act3_kurast_stone_tile_dusk2.json",
+                r"data/hd/env/vis/act3_kurast_stone_tile_night.json",
+                r"data/hd/env/vis/act3_sewer_dawn1.json",
+                r"data/hd/env/vis/act3_sewer_dawn2.json",
+                r"data/hd/env/vis/act3_sewer_day.json",
+                r"data/hd/env/vis/act3_sewer_desecrated.json",
+                r"data/hd/env/vis/act3_sewer_dusk1.json",
+                r"data/hd/env/vis/act3_sewer_dusk2.json",
+                r"data/hd/env/vis/act3_sewer_night.json",
+                r"data/hd/env/vis/act3_spider_dawn1.json",
+                r"data/hd/env/vis/act3_spider_dawn2.json",
+                r"data/hd/env/vis/act3_spider_day.json",
+                r"data/hd/env/vis/act3_spider_desecrated.json",
+                r"data/hd/env/vis/act3_spider_dusk1.json",
+                r"data/hd/env/vis/act3_spider_dusk2.json",
+                r"data/hd/env/vis/act3_spider_night.json",
+                r"data/hd/env/vis/act3_temple_dawn1.json",
+                r"data/hd/env/vis/act3_temple_dawn2.json",
+                r"data/hd/env/vis/act3_temple_day.json",
+                r"data/hd/env/vis/act3_temple_desecrated.json",
+                r"data/hd/env/vis/act3_temple_dusk1.json",
+                r"data/hd/env/vis/act3_temple_dusk2.json",
+                r"data/hd/env/vis/act3_temple_night.json",
+                r"data/hd/env/vis/act3_travincal_dawn1.json",
+                r"data/hd/env/vis/act3_travincal_dawn2.json",
+                r"data/hd/env/vis/act3_travincal_day.json",
+                r"data/hd/env/vis/act3_travincal_desecrated.json",
+                r"data/hd/env/vis/act3_travincal_dusk1.json",
+                r"data/hd/env/vis/act3_travincal_dusk2.json",
+                r"data/hd/env/vis/act3_travincal_night.json",
+                r"data/hd/env/vis/act4_diab_dawn1.json",
+                r"data/hd/env/vis/act4_diab_dawn2.json",
+                r"data/hd/env/vis/act4_diab_day.json",
+                r"data/hd/env/vis/act4_diab_dusk1.json",
+                r"data/hd/env/vis/act4_diab_dusk2.json",
+                r"data/hd/env/vis/act4_diab_night.json",
+                r"data/hd/env/vis/act4_fort_dawn1.json",
+                r"data/hd/env/vis/act4_fort_dawn2.json",
+                r"data/hd/env/vis/act4_fort_day.json",
+                r"data/hd/env/vis/act4_fort_dusk1.json",
+                r"data/hd/env/vis/act4_fort_dusk2.json",
+                r"data/hd/env/vis/act4_fort_interior_vis.json",
+                r"data/hd/env/vis/act4_fort_night.json",
+                r"data/hd/env/vis/act4_lava_dawn1.json",
+                r"data/hd/env/vis/act4_lava_dawn2.json",
+                r"data/hd/env/vis/act4_lava_day.json",
+                r"data/hd/env/vis/act4_lava_desecrated.json",
+                r"data/hd/env/vis/act4_lava_dusk1.json",
+                r"data/hd/env/vis/act4_lava_dusk2.json",
+                r"data/hd/env/vis/act4_lava_night.json",
+                r"data/hd/env/vis/act4_mesa_dawn1.json",
+                r"data/hd/env/vis/act4_mesa_dawn2.json",
+                r"data/hd/env/vis/act4_mesa_day.json",
+                r"data/hd/env/vis/act4_mesa_desecrated.json",
+                r"data/hd/env/vis/act4_mesa_dusk1.json",
+                r"data/hd/env/vis/act4_mesa_dusk2.json",
+                r"data/hd/env/vis/act4_mesa_night.json",
+                r"data/hd/env/vis/expansion_baallair_dawn1.json",
+                r"data/hd/env/vis/expansion_baallair_dawn2.json",
+                r"data/hd/env/vis/expansion_baallair_day.json",
+                r"data/hd/env/vis/expansion_baallair_dusk1.json",
+                r"data/hd/env/vis/expansion_baallair_dusk2.json",
+                r"data/hd/env/vis/expansion_baallair_night.json",
+                r"data/hd/env/vis/expansion_baallair_throneroom_dawn1.json",
+                r"data/hd/env/vis/expansion_baallair_throneroom_dawn2.json",
+                r"data/hd/env/vis/expansion_baallair_throneroom_day.json",
+                r"data/hd/env/vis/expansion_baallair_throneroom_desecrated.json",
+                r"data/hd/env/vis/expansion_baallair_throneroom_dusk1.json",
+                r"data/hd/env/vis/expansion_baallair_throneroom_dusk2.json",
+                r"data/hd/env/vis/expansion_baallair_throneroom_night.json",
+                r"data/hd/env/vis/expansion_icecave_dawn1.json",
+                r"data/hd/env/vis/expansion_icecave_dawn2.json",
+                r"data/hd/env/vis/expansion_icecave_day.json",
+                r"data/hd/env/vis/expansion_icecave_desecrated.json",
+                r"data/hd/env/vis/expansion_icecave_dusk1.json",
+                r"data/hd/env/vis/expansion_icecave_dusk2.json",
+                r"data/hd/env/vis/expansion_icecave_night.json",
+                r"data/hd/env/vis/expansion_mountaintop_dawn1.json",
+                r"data/hd/env/vis/expansion_mountaintop_dawn2.json",
+                r"data/hd/env/vis/expansion_mountaintop_day.json",
+                r"data/hd/env/vis/expansion_mountaintop_desecrated.json",
+                r"data/hd/env/vis/expansion_mountaintop_dusk1.json",
+                r"data/hd/env/vis/expansion_mountaintop_dusk2.json",
+                r"data/hd/env/vis/expansion_mountaintop_night.json",
+                r"data/hd/env/vis/expansion_ruins_dawn1.json",
+                r"data/hd/env/vis/expansion_ruins_dawn2.json",
+                r"data/hd/env/vis/expansion_ruins_day.json",
+                r"data/hd/env/vis/expansion_ruins_dusk1.json",
+                r"data/hd/env/vis/expansion_ruins_dusk2.json",
+                r"data/hd/env/vis/expansion_ruins_night.json",
+                r"data/hd/env/vis/expansion_ruins_snow_dawn1.json",
+                r"data/hd/env/vis/expansion_ruins_snow_dawn2.json",
+                r"data/hd/env/vis/expansion_ruins_snow_day.json",
+                r"data/hd/env/vis/expansion_ruins_snow_dusk1.json",
+                r"data/hd/env/vis/expansion_ruins_snow_dusk2.json",
+                r"data/hd/env/vis/expansion_ruins_snow_night.json",
+                r"data/hd/env/vis/expansion_siege_dawn1.json",
+                r"data/hd/env/vis/expansion_siege_dawn2.json",
+                r"data/hd/env/vis/expansion_siege_day.json",
+                r"data/hd/env/vis/expansion_siege_desecrated.json",
+                r"data/hd/env/vis/expansion_siege_dusk1.json",
+                r"data/hd/env/vis/expansion_siege_dusk2.json",
+                r"data/hd/env/vis/expansion_siege_night.json",
+                r"data/hd/env/vis/expansion_siege_town_dawn1.json",
+                r"data/hd/env/vis/expansion_siege_town_dawn2.json",
+                r"data/hd/env/vis/expansion_siege_town_day.json",
+                r"data/hd/env/vis/expansion_siege_town_dusk1.json",
+                r"data/hd/env/vis/expansion_siege_town_dusk2.json",
+                r"data/hd/env/vis/expansion_siege_town_night.json",
+                r"data/hd/env/vis/expansion_town_dawn1.json",
+                r"data/hd/env/vis/expansion_town_dawn2.json",
+                r"data/hd/env/vis/expansion_town_day.json",
+                r"data/hd/env/vis/expansion_town_dusk1.json",
+                r"data/hd/env/vis/expansion_town_dusk2.json",
+                r"data/hd/env/vis/expansion_town_night.json",
+                r"data/hd/env/vis/expansion_wildtemple_dawn1.json",
+                r"data/hd/env/vis/expansion_wildtemple_dawn2.json",
+                r"data/hd/env/vis/expansion_wildtemple_day.json",
+                r"data/hd/env/vis/expansion_wildtemple_desecrated.json",
+                r"data/hd/env/vis/expansion_wildtemple_dusk1.json",
+                r"data/hd/env/vis/expansion_wildtemple_dusk2.json",
+                r"data/hd/env/vis/expansion_wildtemple_night.json",
+                r"data/hd/env/vis/expansion_wildtemple_tempenter_dawn1.json",
+                r"data/hd/env/vis/expansion_wildtemple_tempenter_dawn2.json",
+                r"data/hd/env/vis/expansion_wildtemple_tempenter_day.json",
+                r"data/hd/env/vis/expansion_wildtemple_tempenter_desecrated.json",
+                r"data/hd/env/vis/expansion_wildtemple_tempenter_dusk1.json",
+                r"data/hd/env/vis/expansion_wildtemple_tempenter_dusk2.json",
+                r"data/hd/env/vis/expansion_wildtemple_tempenter_night.json",
+                r"data/hd/env/vis/graphics_dawn1.json",
+                r"data/hd/env/vis/graphics_dawn2.json",
+                r"data/hd/env/vis/graphics_day.json",
+                r"data/hd/env/vis/graphics_dusk1.json",
+                r"data/hd/env/vis/graphics_dusk2.json",
+                r"data/hd/env/vis/graphics_night.json",
+                r"data/hd/env/vis/lightroom_dawn1.json",
+                r"data/hd/env/vis/lightroom_dawn2.json",
+                r"data/hd/env/vis/lightroom_day.json",
+                r"data/hd/env/vis/lightroom_dusk1.json",
+                r"data/hd/env/vis/lightroom_dusk2.json",
+                r"data/hd/env/vis/lightroom_night.json",
+                r"data/hd/env/vis/viewer_units.json",
+                r"data/hd/env/vis/visbox_act1_cathedral_vis.json",
+                r"data/hd/env/vis/visbox_docktown_interior01_vis.json",
+                r"data/hd/env/vis/visbox_harrograth_vis.json",
+                r"data/hd/env/vis/visbox_kurast_hut_ambient_vis.json",
+                r"data/hd/env/vis/visbox_kurast_temple_ambient_vis.json",
+                r"data/hd/env/vis/visbox_monastry_vis.json",
+                r"data/hd/env/vis/visbox_tempenter_darkness_vis.json",
+                r"data/hd/env/vis/visbox_tempenter_roof_vis.json",
+                r"data/hd/env/vis/visbox_tower_vis.json",
+            ]
+        }
+
+        funcs = []
+        for i in range(1, 5):
+            key = str(i)
+            files = _files[key]
+            sub = self.common_rename(files, key in keys)
+            funcs.append(sub)
+
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
+
     def sync_app_data(self):
         """
         APP_VERSION -> npcs.json.50001
@@ -2850,7 +3230,7 @@ class FileOperations:
                 zone_key = rec.get("zone")
                 formatted_time = time.strftime('%I:%M %p', time.localtime(raw_time)) if raw_time else "未知时间"
                 zone_info = TERROR_ZONE_DICT.get(zone_key, {})
-                language = self.controller.current_states["tz-language"]
+                language = self.controller.current_states[TERROR_ZONE_LANGUAGE]
                 zone_name = zone_info.get(language) if zone_info else f"未知区域（{zone_key}）"
                 formatted_name = zone_name.replace("、", "\n").replace(",", "\n")
                 info = f"{formatted_time}\n{formatted_name}"

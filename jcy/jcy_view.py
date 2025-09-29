@@ -241,13 +241,12 @@ class FeatureView:
         current_row = 0
         current_col = 0
 
-        # radiogroup_features = self.all_features_config.get("radiogroup", {})
-        for child in config.get("children"):
+        for child in config.get("children", []):
             fid = child.get("fid")
             type = child.get("type")
             colspan = child.get("colspan", total_columns)  # 默认占满整行
             
-            if "RadioGroup" == type:
+            if RADIO == type:
                 group = LabeledRadioGroup(
                     tab,
                     feature_id=fid,
@@ -266,7 +265,7 @@ class FeatureView:
                 # 保存引用
                 self.feature_vars[fid] = group
             
-            elif "CheckGroup" == type:
+            elif CHECK == type:
                 group = LabeledCheckGroup(
                     tab,
                     feature_id=fid,
@@ -284,7 +283,28 @@ class FeatureView:
                 current_col += colspan
                 self.feature_vars[fid] = group
 
-            elif "Separator" == type:
+            elif SPIN == type:
+                text = child.get("text")
+                spinbox = LabeledSpinBox(
+                    master=tab,
+                    feature_id=fid,
+                    text=text,    
+                    from_=0, to=9, increment=1,
+                    default_value=0,
+                    command=self.controller.execute_feature_action
+                )
+                # 如果当前行剩余列不足，换行
+                if current_col + colspan > total_columns:
+                    current_row += 1
+                    current_col = 0
+
+                spinbox.grid(row=current_row, column=current_col, columnspan=colspan, 
+                             sticky="ew", padx=20, pady=5)
+                # 更新当前列索引
+                current_col += colspan
+                self.feature_vars[fid] = spinbox  # 如果你要后面取值
+
+            elif SEPARATOR == type:
                 current_row += 1  
                 sep = ttk.Separator(tab, orient='horizontal')
                 sep.grid(row=current_row, column=0, columnspan=total_columns,
@@ -555,8 +575,15 @@ class LabeledRadioGroup(ttk.LabelFrame):
         self.command = command
         self.var = tk.StringVar(value=default_selected)
 
-        for j, item in enumerate(data["params"]):
-            key, label = next(iter(item.items()))
+        params = data.get("params", {})
+        # 如果是 list（老版本），把 list of dict 转成 dict
+        if isinstance(params, list):
+            merged = {}
+            for item in params:
+                merged.update(item)
+            params = merged 
+
+        for j, (key, label) in enumerate(params.items()):
             rb = ttk.Radiobutton(self, text=label, value=key, variable=self.var, command=self._on_select)
             rb.grid(row=0, column=j, sticky="ew", padx=5, pady=5)
             self.columnconfigure(j, weight=1)
@@ -585,8 +612,15 @@ class LabeledCheckGroup(ttk.LabelFrame):
         if default_selected is None:
             default_selected = []
 
-        for j, item in enumerate(data["params"]):
-            key, label = next(iter(item.items()))
+        params = data.get("params", {})
+        # 兼容旧格式：如果是 list，则合并成 dict
+        if isinstance(params, list):
+            merged = {}
+            for item in params:
+                merged.update(item)
+            params = merged
+
+        for j, (key, label) in enumerate(params.items()):
             var = tk.BooleanVar(value=(key in default_selected))
             chk = ttk.Checkbutton(self, text=label, variable=var, command=self._on_check)
             chk.grid(row=0, column=j, sticky="ew", padx=5, pady=5)
@@ -611,6 +645,55 @@ class LabeledCheckGroup(ttk.LabelFrame):
     @property
     def text(self):
         return self.cget("text")
+    
+
+class LabeledSpinBox(ttk.LabelFrame):
+    def __init__(self, master, feature_id, text, from_=0, to=9, increment=1,
+                 default_value=0, command=None, **kwargs):
+        """
+        :param master: 父容器
+        :param feature_id: 功能id，用于回调
+        :param text: LabelFrame 标题
+        :param from_: 最小值
+        :param to: 最大值
+        :param increment: 步进
+        :param default_value: 初始值
+        :param command: 选值变动回调，签名为 command(feature_id, value)
+        :param kwargs: 传给 ttk.LabelFrame 的其他参数
+        """
+        super().__init__(master, text=text, **kwargs)
+        self.feature_id = feature_id
+        self.command = command
+
+        # 容器（为了控制内边距）
+        spin_container = ttk.Frame(self)
+        spin_container.pack(fill=tk.X, padx=15, pady=5)
+
+        self.var = tk.IntVar(value=default_value)
+
+        self.spin = ttk.Spinbox(
+            spin_container,
+            from_=from_,
+            to=to,
+            increment=increment,
+            textvariable=self.var,
+            state='readonly',
+            command=self._on_change
+        )
+        self.spin.pack(anchor=tk.W, padx=10, pady=2)
+
+    def _on_change(self):
+        if self.command:
+            self.command(self.feature_id, self.var.get())
+
+    def get(self):
+        """返回当前值"""
+        return self.var.get()
+
+    def set(self, value):
+        """设置当前值"""
+        self.var.set(value)
+
 
 class TableWithCheckbox(tk.Frame):
     """
@@ -1184,7 +1267,7 @@ class TerrorZoneUI(tk.Frame):
                         continue
                     zone_info = TERROR_ZONE_DICT.get(zone_key)
                     if isinstance(zone_info, dict):
-                        language =self.controller.current_states["tz-language"]
+                        language =self.controller.current_states[TERROR_ZONE_LANGUAGE]
                         name = zone_info.get(language)
                     else:
                         name = "未知名称"

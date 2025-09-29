@@ -132,12 +132,6 @@ class FeatureController:
         """
         
         self._handlers = {
-            # "点击角色快速建立最高难度游戏",
-            "101": self.file_operations.toggle_quick_game,
-            # "Esc=存儲並離開",
-            "102": self.file_operations.toggle_escape,
-            # "更大的好友菜单",
-            "103": self.file_operations.toggle_context_menu,
             # "特殊词缀蓝装变色(红/绿)",
             "104": self.file_operations.toggle_global_excel_affixes,
             # "经验祭坛/宝石祭坛 特效标识",
@@ -186,8 +180,7 @@ class FeatureController:
             "202": self.file_operations.select_town_portal,
             # 传送术皮肤
             "203": self.file_operations.select_teleport_skin,
-            # 弩/箭皮肤
-            "204": self.file_operations.select_arrow_skin,
+            
             # 老鼠刺针/剥皮吹箭样式
             "205": self.file_operations.select_enemy_arrow_skin,
             # 符文皮肤
@@ -213,8 +206,6 @@ class FeatureController:
             # 控制器管理
             "399": self.file_operations.manage_tool,
 
-            # 照亮范围
-            "401": self.file_operations.modify_character_player,
             # 22#+符文名称大小
             "402": self.file_operations.modify_rune_rectangle,
 
@@ -222,13 +213,19 @@ class FeatureController:
             "501": self.file_operations.modify_item_names,
             
             # 恐怖区域-服务器
-            "tz-server": self.file_operations.select_server,
+            TERROR_ZONE_SERVER: self.file_operations.select_server,
             # 恐怖区域-语言
-            "tz-language": self.file_operations.select_language,
+            TERROR_ZONE_LANGUAGE: self.file_operations.select_language,
             # 恐怖区域-预告
-            "tz-next": self.file_operations.void,
+            TERROR_ZONE_NEXT: self.file_operations.void,
             # 装备道具-语言
-            "netease-language": self.file_operations.select_netease_language,
+            NETEASE_LANGUAGE: self.file_operations.select_netease_language,
+            # 游戏设置
+            GAME_SETTING : self.file_operations.select_game_setting,
+            # 额外的照亮范围
+            LIGHT_REDIUS: self.file_operations.modify_character_player,
+            # 弓/弩箭皮肤
+            ARROW: self.file_operations.select_arrow_skin,
         }
 
     def apply_settings(self):
@@ -350,7 +347,7 @@ class TerrorZoneFetcher:
         for attempt in range(1, max_retries + 1):
             try:
                 # 区服配置
-                server_cfg = self.controller.current_states["tz-server"]
+                server_cfg = self.controller.current_states[TERROR_ZONE_SERVER]
                 api_array = TERROR_ZONE_API[server_cfg]
                 api = api_array[randint % len(api_array)]
 
@@ -418,7 +415,7 @@ class TerrorZoneFetcher:
                         json.dump(data, f, ensure_ascii=False, indent=2)
                         
                         # 游戏内预告
-                        if "2" in self.controller.current_states["tz-next"]:
+                        if "2" in self.controller.current_states[TERROR_ZONE_NEXT]:
                             self.controller.file_operations.writeTerrorZone(data)
                         else:
                             self.controller.file_operations.writeTerrorZone("")
@@ -428,7 +425,7 @@ class TerrorZoneFetcher:
                     print(f"[错误] 保存数据失败: {e}")
 
                 # Win系统通知
-                if "1" in self.controller.current_states["tz-next"]:
+                if "1" in self.controller.current_states[TERROR_ZONE_NEXT]:
                     if callback:
                         callback(data)
             else:
@@ -484,7 +481,7 @@ if __name__ == "__main__":
             formatted_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(raw_time)) if raw_time else "未知时间"
             
             zone_info = TERROR_ZONE_DICT.get(zone_key, {})
-            language = app.current_states["tz-language"]
+            language = app.current_states[TERROR_ZONE_LANGUAGE]
             zone_name = zone_info.get(language) if zone_info else f"未知区域（{zone_key}）"
             message = f"{formatted_time} {zone_name}"
         except Exception as e:

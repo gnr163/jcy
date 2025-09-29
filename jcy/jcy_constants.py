@@ -69,6 +69,30 @@ REGION_NAME_MAP = {
 # Unicode私有区字符 for 屏蔽道具
 UE01A = "" * 41
 
+# <!-- Function Identifier 
+NETEASE_LANGUAGE = "NeteaseLanguage"
+TERROR_ZONE_SERVER = "TerrorZoneServer"
+TERROR_ZONE_LANGUAGE = "TerrorZoneLanguage"
+TERROR_ZONE_NEXT = "TerrorZoneNext"
+GAME_SETTING = "GameSetting"
+LIGHT_REDIUS = "LightRedius"
+ARROW = "Arrow"
+SOR_SETTING = "SorceressSetting"  
+NEC_SETTING = "NecromancerSetting"
+PAL_SETTING = "PaladinSetting"
+BAR_SETTING = "BarbarianSetting"
+DRU_SETTING = "DruidSetting"
+ASN_SETTING = "AssassinSetting"
+MERCENARY = "Mercenary"
+# Function Identifier -->
+
+# <!-- Controller Type
+RADIO = "RadioGroup"
+CHECK = "CheckGroup"
+SPIN = "SpinBox"
+SEPARATOR = "Separator"
+# Controller Type -->
+
 # 恐怖区域API
 TERROR_ZONE_API = {
     "1" : ["https://asia.d2tz.info/terror_zone?mode=online", "https://api.d2tz.info/terror_zone?mode=online"],
@@ -413,6 +437,24 @@ __all__ = [
     'APP_SIZE',
     'APP_CONFIG',
     'APP_LANGUAGE',
+    'NETEASE_LANGUAGE',
+    'TERROR_ZONE_SERVER',
+    'TERROR_ZONE_LANGUAGE',
+    'TERROR_ZONE_NEXT',
+    'GAME_SETTING',
+    'LIGHT_REDIUS',
+    'ARROW',
+    'SOR_SETTING',
+    'NEC_SETTING',
+    'PAL_SETTING',
+    'BAR_SETTING',
+    'DRU_SETTING',
+    'ASN_SETTING',
+    'MERCENARY',
+    'RADIO',
+    'CHECK',
+    'SPIN',
+    'SEPARATOR',
     'REGION_DOMAIN_MAP',
     'REGION_NAME_MAP',
     'UE01A',
