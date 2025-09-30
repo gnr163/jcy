@@ -12,38 +12,27 @@ ERROR_ALREADY_EXISTS = 183
 WM_SHOW_WINDOW = 0x5000
 
 # 语言
-BAK = 'bak'
 ENUS = 'enUS'
 ZHCN = 'zhCN'
+ZHCN2 = 'zhCN2'
 ZHTW = 'zhTW'
+ZHTW2 = 'zhTW2'
 LANG = None
 
 # 控制器名称
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.2.2"
+APP_VERSION = "v1.2.2B"
 
 # 发布日期
-APP_DATE = "20250929"
+APP_DATE = "20250930"
 
 # 控制器全称
 APP_FULL_NAME = f"{APP_NAME}_{APP_VERSION}"
 
 # APP大小
 APP_SIZE = "750x700"
-
-# APP配置
-APP_CONFIG = {
-    # 显示"D2R多开器"面板
-    "1": True,
-    # 显示"恐怖区域"面板
-    "2": True,
-    # 开启"恐怖区域"Win系统通知
-    "3": True,
-    # 开启"恐怖区域"游戏内预告
-    "4": True
-}
 
 # APP语言
 APP_LANGUAGE = {
@@ -71,19 +60,27 @@ UE01A = "" * 41
 
 # <!-- Function Identifier 
 NETEASE_LANGUAGE = "NeteaseLanguage"
+BATTLE_NET_LANGUAGE = "BattleNetLanguage"
 TERROR_ZONE_SERVER = "TerrorZoneServer"
 TERROR_ZONE_LANGUAGE = "TerrorZoneLanguage"
 TERROR_ZONE_NEXT = "TerrorZoneNext"
 GAME_SETTING = "GameSetting"
 LIGHT_REDIUS = "LightRedius"
+RUNE_SKIN = "RuneSkin"
+HUD_SIZE = "HudSize"
+PORTAL_SKIN = "ProtalSkin"
 ARROW = "Arrow"
-SOR_SETTING = "SorceressSetting"  
+SOR_SETTING = "SorceressSetting"
+TELEPORT_SKIN = "TeleportSkin"
 NEC_SETTING = "NecromancerSetting"
 PAL_SETTING = "PaladinSetting"
 BAR_SETTING = "BarbarianSetting"
 DRU_SETTING = "DruidSetting"
 ASN_SETTING = "AssassinSetting"
 MERCENARY = "Mercenary"
+MERCENARY_LOCATION = "MercenaryLocation"
+MONSTER_SETTING = "MonsterSetting"
+MONSTER_MISSILE = "MonsterMissile"
 # Function Identifier -->
 
 # <!-- Controller Type
@@ -426,31 +423,39 @@ __all__ = [
     'MUTEX_NAME',
     'ERROR_ALREADY_EXISTS',
     'WM_SHOW_WINDOW',
-    'BAK',
     'ZHCN',
+    'ZHCN2',
     'ZHTW',
+    'ZHTW2',
     'ENUS',
     'APP_NAME',
     'APP_VERSION',
     'APP_FULL_NAME',
     'APP_DATE',
     'APP_SIZE',
-    'APP_CONFIG',
     'APP_LANGUAGE',
     'NETEASE_LANGUAGE',
+    'BATTLE_NET_LANGUAGE',
     'TERROR_ZONE_SERVER',
     'TERROR_ZONE_LANGUAGE',
     'TERROR_ZONE_NEXT',
     'GAME_SETTING',
     'LIGHT_REDIUS',
+    'RUNE_SKIN',
+    'HUD_SIZE',
+    'PORTAL_SKIN',
     'ARROW',
     'SOR_SETTING',
+    'TELEPORT_SKIN',
     'NEC_SETTING',
     'PAL_SETTING',
     'BAR_SETTING',
     'DRU_SETTING',
     'ASN_SETTING',
     'MERCENARY',
+    'MERCENARY_LOCATION',
+    'MONSTER_SETTING',
+    'MONSTER_MISSILE',
     'RADIO',
     'CHECK',
     'SPIN',

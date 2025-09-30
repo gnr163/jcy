@@ -556,24 +556,6 @@ class FileOperations:
         return (count, total)
 
 
-    def toggle_pointer(self, isEnabled: bool = False):
-        """BOSS 指引"""
-        paths = [
-            #
-            r"data/hd/character/enemy/hephasto.json",
-            r"data/hd/character/enemy/izual.json",
-            r"data/hd/character/enemy/maggotqueen1.json",
-            r"data/hd/character/enemy/radament.json",
-            r"data/hd/character/enemy/smith.json",
-            r"data/hd/character/enemy/summoner.json",
-            r"data/hd/character/enemy/Uberandariel.json",
-            r"data/hd/character/enemy/Uberduriel.json",
-            r"data/hd/character/monsters.json",
-        ]
-
-        return self.common_rename(paths, isEnabled)
-
-
     def toggle_quick_game(self, isEnabled: bool = False):
         """
         点击角色快速建立最高难度游戏
@@ -594,146 +576,6 @@ class FileOperations:
         ]
 
         return self.common_rename(files_context_menu, isEnabled);
-
-
-    def toggle_character_enemy(self, isEnabled: bool = False):
-        """
-        怪物光源+危险标识
-        """
-        files_danger_enemy = [
-            r"data/hd/character/enemy/andariel.json",
-            r"data/hd/character/enemy/arach1.json",
-            r"data/hd/character/enemy/baalclone.json",
-            r"data/hd/character/enemy/baalcrab.json",
-            r"data/hd/character/enemy/baalminion1.json",
-            r"data/hd/character/enemy/baboon1.json",
-            r"data/hd/character/enemy/baboon6.json",
-            r"data/hd/character/enemy/barricadedoor1.json",
-            r"data/hd/character/enemy/barricadedoor2.json",
-            r"data/hd/character/enemy/barricadetower.json",
-            r"data/hd/character/enemy/barricadewall1.json",
-            r"data/hd/character/enemy/barricadewall2.json",
-            r"data/hd/character/enemy/batdemon1.json",
-            r"data/hd/character/enemy/bighead1.json",
-            r"data/hd/character/enemy/bladecreeper.json",
-            r"data/hd/character/enemy/bloodgolem.json",
-            r"data/hd/character/enemy/bloodlord1.json",
-            r"data/hd/character/enemy/bloodraven.json",
-            r"data/hd/character/enemy/blunderbore1.json",
-            r"data/hd/character/enemy/bonefetish1.json",
-            r"data/hd/character/enemy/boneprison1.json",
-            r"data/hd/character/enemy/boneprison2.json",
-            r"data/hd/character/enemy/boneprison3.json",
-            r"data/hd/character/enemy/boneprison4.json",
-            r"data/hd/character/enemy/brute2.json",
-            r"data/hd/character/enemy/cantor1.json",
-            r"data/hd/character/enemy/catapult1.json",
-            r"data/hd/character/enemy/catapultspotter1.json",
-            r"data/hd/character/enemy/chargeboltsentry.json",
-            r"data/hd/character/enemy/claygolem.json",
-            r"data/hd/character/enemy/compellingorb.json",
-            r"data/hd/character/enemy/corpsefire.json",
-            r"data/hd/character/enemy/corruptrogue1.json",
-            r"data/hd/character/enemy/councilmember1.json",
-            r"data/hd/character/enemy/cowking.json",
-            r"data/hd/character/enemy/cr_archer1.json",
-            r"data/hd/character/enemy/cr_lancer1.json",
-            r"data/hd/character/enemy/crownest1.json",
-            r"data/hd/character/enemy/darkelder.json",
-            r"data/hd/character/enemy/darkwanderer.json",
-            r"data/hd/character/enemy/deathmauler1.json",
-            r"data/hd/character/enemy/deathsentry.json",
-            r"data/hd/character/enemy/diablo.json",
-            r"data/hd/character/enemy/doomknight1.json",
-            r"data/hd/character/enemy/doomknight2.json",
-            r"data/hd/character/enemy/doomknight3.json",
-            r"data/hd/character/enemy/dopplezon.json",
-            r"data/hd/character/enemy/duriel.json",
-            r"data/hd/character/enemy/evilhole1.json",
-            r"data/hd/character/enemy/evilhut.json",
-            r"data/hd/character/enemy/fallen1.json",
-            r"data/hd/character/enemy/fallenshaman1.json",
-            r"data/hd/character/enemy/fetish1.json",
-            r"data/hd/character/enemy/fetish11.json",
-            r"data/hd/character/enemy/fetishblow1.json",
-            r"data/hd/character/enemy/fetishshaman1.json",
-            r"data/hd/character/enemy/fingermage1.json",
-            r"data/hd/character/enemy/firetower.json",
-            r"data/hd/character/enemy/flyingscimitar.json",
-            r"data/hd/character/enemy/foulcrow1.json",
-            r"data/hd/character/enemy/frogdemon1.json",
-            r"data/hd/character/enemy/frozenhorror1.json",
-            r"data/hd/character/enemy/gargoyletrap.json",
-            r"data/hd/character/enemy/goatman1.json",
-            r"data/hd/character/enemy/gorgon1.json",
-            r"data/hd/character/enemy/griswold.json",
-            r"data/hd/character/enemy/hellbovine.json",
-            r"data/hd/character/enemy/imp1.json",
-            r"data/hd/character/enemy/invisopet.json",
-            r"data/hd/character/enemy/invisospawner.json",
-            r"data/hd/character/enemy/lightningsentry.json",
-            r"data/hd/character/enemy/lightningspire.json",
-            r"data/hd/character/enemy/maggotbaby1.json",
-            r"data/hd/character/enemy/maggotegg1.json",
-            r"data/hd/character/enemy/megademon1.json",
-            r"data/hd/character/enemy/mephisto.json",
-            r"data/hd/character/enemy/mephistospirit.json",
-            r"data/hd/character/enemy/minion1.json",
-            r"data/hd/character/enemy/minionspawner1.json",
-            r"data/hd/character/enemy/mosquito1.json",
-            r"data/hd/character/enemy/mummy1.json",
-            r"data/hd/character/enemy/nihlathakboss.json",
-            r"data/hd/character/enemy/overseer1.json",
-            r"data/hd/character/enemy/painworm1.json",
-            r"data/hd/character/enemy/pantherwoman1.json",
-            r"data/hd/character/enemy/prisondoor.json",
-            r"data/hd/character/enemy/putriddefiler1.json",
-            r"data/hd/character/enemy/quillbear1.json",
-            r"data/hd/character/enemy/quillrat1.json",
-            r"data/hd/character/enemy/reanimatedhorde1.json",
-            r"data/hd/character/enemy/regurgitator1.json",
-            r"data/hd/character/enemy/sandleaper1.json",
-            r"data/hd/character/enemy/sandmaggot1.json",
-            r"data/hd/character/enemy/sandraider1.json",
-            r"data/hd/character/enemy/sarcophagus.json",
-            r"data/hd/character/enemy/scarab1.json",
-            r"data/hd/character/enemy/seventombs.json",
-            r"data/hd/character/enemy/shadowwarrior.json",
-            r"data/hd/character/enemy/siegebeast1.json",
-            r"data/hd/character/enemy/sk_archer1.json",
-            r"data/hd/character/enemy/skeleton1.json",
-            r"data/hd/character/enemy/skmage_cold1.json",
-            r"data/hd/character/enemy/skmage_fire1.json",
-            r"data/hd/character/enemy/skmage_ltng1.json",
-            r"data/hd/character/enemy/skmage_pois1.json",
-            r"data/hd/character/enemy/slinger1.json",
-            r"data/hd/character/enemy/slinger5.json",
-            r"data/hd/character/enemy/snowyeti1.json",
-            r"data/hd/character/enemy/succubus1.json",
-            r"data/hd/character/enemy/succubuswitch1.json",
-            r"data/hd/character/enemy/suicideminion1.json",
-            r"data/hd/character/enemy/swarm1.json",
-            r"data/hd/character/enemy/tentacle1.json",
-            r"data/hd/character/enemy/tentaclehead1.json",
-            r"data/hd/character/enemy/thornhulk1.json",
-            r"data/hd/character/enemy/trappedsoul1.json",
-            r"data/hd/character/enemy/trappedsoul2.json",
-            r"data/hd/character/enemy/turret1.json",
-            r"data/hd/character/enemy/unraveler1.json",
-            r"data/hd/character/enemy/vampire1.json",
-            r"data/hd/character/enemy/venomlord.json",
-            r"data/hd/character/enemy/vilechild1.json",
-            r"data/hd/character/enemy/vilemother1.json",
-            r"data/hd/character/enemy/vulture1.json",
-            r"data/hd/character/enemy/willowisp1.json",
-            r"data/hd/character/enemy/window1.json",
-            r"data/hd/character/enemy/window2.json",
-            r"data/hd/character/enemy/wraith1.json",
-            r"data/hd/character/enemy/zealot1.json",
-            r"data/hd/character/enemy/zombie1.json",
-        ]
-
-        return self.common_rename(files_danger_enemy, isEnabled)
 
 
     def toggle_skill_logo(self, isEnabled: bool = False):
@@ -771,12 +613,12 @@ class FileOperations:
         return self.common_rename(files_skill_logo, isEnabled)
 
 
-    def select_town_portal(self, radio: str = "default"):
+    def select_town_portal(self, radio: str = "0"):
         """
         传送门皮肤
         """
         params = {
-            "default" :"data/hd/vfx/particles/objects/vfx_only/town_portal/vfx_town_portal_newstuff.particles",
+            "0" :"data/hd/vfx/particles/objects/vfx_only/town_portal/vfx_town_portal_newstuff.particles",
             "1": "data/hd/vfx/particles/objects/vfx_only/town_portal/vfx_town_portal_newstuff_newred.particles",
             "2": "data/hd/vfx/particles/objects/vfx_only/town_portal/vfx_town_portal.particles",
             "3": "data/hd/vfx/particles/objects/vfx_only/town_portal/vfx_town_portal_newstuff_redversion.particles"
@@ -814,34 +656,31 @@ class FileOperations:
         return (count, total)
 
 
-    def select_teleport_skin(self, radio: str = "default"):
+    def select_teleport_skin(self, radio: str = "0"):
         """
         传送术皮肤
         """
         params = {
-            "default": "data/hd/overlays/sorceress/teleport.json",
+            "0": "data/hd/overlays/sorceress/teleport.json",
             "1": "data/hd/overlays/sorceress/teleport.json.1",
             "2": "data/hd/overlays/sorceress/teleport.json.2",
         }
 
-        paths = [
-            r"data/hd/objects/vfx_only/town_portal.json"
-        ]
         count = 0
-        total = len(paths)
-        for path in paths:
-            target_path = os.path.join(MOD_PATH, path)
-            temp_path = target_path + ".tmp"
-            try:
-                src_path = os.path.join(MOD_PATH, params[radio])
-                dst_path = os.path.join(MOD_PATH, params["default"])
-                if "default" == radio:
-                    os.remove(dst_path)
-                else:
-                    shutil.copy2(src_path, dst_path)
-                count += 1
-            except Exception as e:
-                print(e)
+        total = 1
+
+        try:
+            src_path = os.path.join(MOD_PATH, params[radio])
+            dst_path = os.path.join(MOD_PATH, params["0"])
+        
+            if "0" == radio:
+                os.remove(dst_path)
+            else:
+                shutil.copy2(src_path, dst_path)
+            count += 1
+        except Exception as e:
+            print(e)
+
         return (count, total)
 
 
@@ -890,12 +729,12 @@ class FileOperations:
         return (count, total)
 
 
-    def select_enemy_arrow_skin(self, radio: str = "default"):
+    def select_enemy_arrow_skin(self, radio: str = "0"):
         """
         老鼠刺针/剥皮吹箭样式
         """
         params = {
-            "default": [r"data/hd/vfx/particles/missiles/spike_fiend_missle/vfx_spikefiend_missile.particles", r"data/hd/vfx/particles/missiles/blowdart/vfx_blowdart.particles"],
+            "0": [r"data/hd/vfx/particles/missiles/spike_fiend_missle/vfx_spikefiend_missile.particles", r"data/hd/vfx/particles/missiles/blowdart/vfx_blowdart.particles"],
             "1": r"data/hd/vfx/particles/missiles/safe_arrow/safe_arrow.particles",
             "2": r"data/hd/vfx/particles/missiles/ice_arrow/fx_ice_projectile_arrow.particles",
             "3": r"data/hd/vfx/particles/missiles/fire_arrow/fx_fire_projectile_arrow.particles",
@@ -918,7 +757,7 @@ class FileOperations:
                     json_data = json.load(f)
                 
                 # 2.modify
-                json_data["entities"][1]["components"][-1]["filename"] = params[radio][i] if "default" == radio else params[radio]
+                json_data["entities"][1]["components"][-1]["filename"] = params[radio][i] if "0" == radio else params[radio]
                 
                 # 3.dump temp
                 with open(temp_path, 'w', encoding="utf-8") as f:
@@ -996,8 +835,180 @@ class FileOperations:
         }
 
         funcs = []
-        for key in ["1", "2", "5"]:
-            files = _files[key]
+        for key, files in _files.items():
+            sub = self.common_rename(files, key in keys)
+            funcs.append(sub)
+
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
+    
+
+    def select_monster_setting(self, keys: list):
+        """怪物设置"""
+        if keys is None:
+            return (0, 0)
+
+        # 文件
+        _files = {
+            # 怪物血条D3风格
+            "1" : [
+                r"data/global/ui/layouts/hudmonsterhealthhd.json",
+            ],
+            # 危险怪物增加光源&标识
+            "2": [
+                r"data/hd/character/enemy/andariel.json",
+                r"data/hd/character/enemy/arach1.json",
+                r"data/hd/character/enemy/baalclone.json",
+                r"data/hd/character/enemy/baalcrab.json",
+                r"data/hd/character/enemy/baalminion1.json",
+                r"data/hd/character/enemy/baboon1.json",
+                r"data/hd/character/enemy/baboon6.json",
+                r"data/hd/character/enemy/barricadedoor1.json",
+                r"data/hd/character/enemy/barricadedoor2.json",
+                r"data/hd/character/enemy/barricadetower.json",
+                r"data/hd/character/enemy/barricadewall1.json",
+                r"data/hd/character/enemy/barricadewall2.json",
+                r"data/hd/character/enemy/batdemon1.json",
+                r"data/hd/character/enemy/bighead1.json",
+                r"data/hd/character/enemy/bladecreeper.json",
+                r"data/hd/character/enemy/bloodgolem.json",
+                r"data/hd/character/enemy/bloodlord1.json",
+                r"data/hd/character/enemy/bloodraven.json",
+                r"data/hd/character/enemy/blunderbore1.json",
+                r"data/hd/character/enemy/bonefetish1.json",
+                r"data/hd/character/enemy/boneprison1.json",
+                r"data/hd/character/enemy/boneprison2.json",
+                r"data/hd/character/enemy/boneprison3.json",
+                r"data/hd/character/enemy/boneprison4.json",
+                r"data/hd/character/enemy/brute2.json",
+                r"data/hd/character/enemy/cantor1.json",
+                r"data/hd/character/enemy/catapult1.json",
+                r"data/hd/character/enemy/catapultspotter1.json",
+                r"data/hd/character/enemy/chargeboltsentry.json",
+                r"data/hd/character/enemy/claygolem.json",
+                r"data/hd/character/enemy/compellingorb.json",
+                r"data/hd/character/enemy/corpsefire.json",
+                r"data/hd/character/enemy/corruptrogue1.json",
+                r"data/hd/character/enemy/councilmember1.json",
+                r"data/hd/character/enemy/cowking.json",
+                r"data/hd/character/enemy/cr_archer1.json",
+                r"data/hd/character/enemy/cr_lancer1.json",
+                r"data/hd/character/enemy/crownest1.json",
+                r"data/hd/character/enemy/darkelder.json",
+                r"data/hd/character/enemy/darkwanderer.json",
+                r"data/hd/character/enemy/deathmauler1.json",
+                r"data/hd/character/enemy/deathsentry.json",
+                r"data/hd/character/enemy/diablo.json",
+                r"data/hd/character/enemy/doomknight1.json",
+                r"data/hd/character/enemy/doomknight2.json",
+                r"data/hd/character/enemy/doomknight3.json",
+                r"data/hd/character/enemy/dopplezon.json",
+                r"data/hd/character/enemy/duriel.json",
+                r"data/hd/character/enemy/evilhole1.json",
+                r"data/hd/character/enemy/evilhut.json",
+                r"data/hd/character/enemy/fallen1.json",
+                r"data/hd/character/enemy/fallenshaman1.json",
+                r"data/hd/character/enemy/fetish1.json",
+                r"data/hd/character/enemy/fetish11.json",
+                r"data/hd/character/enemy/fetishblow1.json",
+                r"data/hd/character/enemy/fetishshaman1.json",
+                r"data/hd/character/enemy/fingermage1.json",
+                r"data/hd/character/enemy/firetower.json",
+                r"data/hd/character/enemy/flyingscimitar.json",
+                r"data/hd/character/enemy/foulcrow1.json",
+                r"data/hd/character/enemy/frogdemon1.json",
+                r"data/hd/character/enemy/frozenhorror1.json",
+                r"data/hd/character/enemy/gargoyletrap.json",
+                r"data/hd/character/enemy/goatman1.json",
+                r"data/hd/character/enemy/gorgon1.json",
+                r"data/hd/character/enemy/griswold.json",
+                r"data/hd/character/enemy/hellbovine.json",
+                r"data/hd/character/enemy/imp1.json",
+                r"data/hd/character/enemy/invisopet.json",
+                r"data/hd/character/enemy/invisospawner.json",
+                r"data/hd/character/enemy/lightningsentry.json",
+                r"data/hd/character/enemy/lightningspire.json",
+                r"data/hd/character/enemy/maggotbaby1.json",
+                r"data/hd/character/enemy/maggotegg1.json",
+                r"data/hd/character/enemy/megademon1.json",
+                r"data/hd/character/enemy/mephisto.json",
+                r"data/hd/character/enemy/mephistospirit.json",
+                r"data/hd/character/enemy/minion1.json",
+                r"data/hd/character/enemy/minionspawner1.json",
+                r"data/hd/character/enemy/mosquito1.json",
+                r"data/hd/character/enemy/mummy1.json",
+                r"data/hd/character/enemy/nihlathakboss.json",
+                r"data/hd/character/enemy/overseer1.json",
+                r"data/hd/character/enemy/painworm1.json",
+                r"data/hd/character/enemy/pantherwoman1.json",
+                r"data/hd/character/enemy/prisondoor.json",
+                r"data/hd/character/enemy/putriddefiler1.json",
+                r"data/hd/character/enemy/quillbear1.json",
+                r"data/hd/character/enemy/quillrat1.json",
+                r"data/hd/character/enemy/reanimatedhorde1.json",
+                r"data/hd/character/enemy/regurgitator1.json",
+                r"data/hd/character/enemy/sandleaper1.json",
+                r"data/hd/character/enemy/sandmaggot1.json",
+                r"data/hd/character/enemy/sandraider1.json",
+                r"data/hd/character/enemy/sarcophagus.json",
+                r"data/hd/character/enemy/scarab1.json",
+                r"data/hd/character/enemy/seventombs.json",
+                r"data/hd/character/enemy/shadowwarrior.json",
+                r"data/hd/character/enemy/siegebeast1.json",
+                r"data/hd/character/enemy/sk_archer1.json",
+                r"data/hd/character/enemy/skeleton1.json",
+                r"data/hd/character/enemy/skmage_cold1.json",
+                r"data/hd/character/enemy/skmage_fire1.json",
+                r"data/hd/character/enemy/skmage_ltng1.json",
+                r"data/hd/character/enemy/skmage_pois1.json",
+                r"data/hd/character/enemy/slinger1.json",
+                r"data/hd/character/enemy/slinger5.json",
+                r"data/hd/character/enemy/snowyeti1.json",
+                r"data/hd/character/enemy/succubus1.json",
+                r"data/hd/character/enemy/succubuswitch1.json",
+                r"data/hd/character/enemy/suicideminion1.json",
+                r"data/hd/character/enemy/swarm1.json",
+                r"data/hd/character/enemy/tentacle1.json",
+                r"data/hd/character/enemy/tentaclehead1.json",
+                r"data/hd/character/enemy/thornhulk1.json",
+                r"data/hd/character/enemy/trappedsoul1.json",
+                r"data/hd/character/enemy/trappedsoul2.json",
+                r"data/hd/character/enemy/turret1.json",
+                r"data/hd/character/enemy/unraveler1.json",
+                r"data/hd/character/enemy/vampire1.json",
+                r"data/hd/character/enemy/venomlord.json",
+                r"data/hd/character/enemy/vilechild1.json",
+                r"data/hd/character/enemy/vilemother1.json",
+                r"data/hd/character/enemy/vulture1.json",
+                r"data/hd/character/enemy/willowisp1.json",
+                r"data/hd/character/enemy/window1.json",
+                r"data/hd/character/enemy/window2.json",
+                r"data/hd/character/enemy/wraith1.json",
+                r"data/hd/character/enemy/zealot1.json",
+                r"data/hd/character/enemy/zombie1.json",
+            ],
+            # BOSS怪物光环指引
+            "3": [
+                r"data/hd/character/enemy/hephasto.json",
+                r"data/hd/character/enemy/izual.json",
+                r"data/hd/character/enemy/maggotqueen1.json",
+                r"data/hd/character/enemy/radament.json",
+                r"data/hd/character/enemy/smith.json",
+                r"data/hd/character/enemy/summoner.json",
+                r"data/hd/character/enemy/Uberandariel.json",
+                r"data/hd/character/enemy/Uberduriel.json",
+                r"data/hd/character/monsters.json",
+            ],
+            # 屏蔽A5督军山克死亡特效
+            "4":[
+                r"data/global/excel/missiles.txt",
+            ]
+        }
+
+        funcs = []
+        for key, files in _files.items():
             sub = self.common_rename(files, key in keys)
             funcs.append(sub)
 
@@ -1427,15 +1438,6 @@ class FileOperations:
         return self.common_rename(files_env_vis, isEnabled)
 
 
-    def toggle_monster_health(self, isEnabled: bool = False):
-        """怪物血条D3风格"""
-        files_monster_health = [
-            r"data/global/ui/layouts/hudmonsterhealthhd.json",
-        ]
-
-        return self.common_rename(files_monster_health, isEnabled)
-
-
     def toggle_shrine(self, isEnabled: bool = False):
         """
         经验/宝石祭坛特效
@@ -1448,30 +1450,29 @@ class FileOperations:
         return self.common_rename(files_common_shrine, isEnabled)
 
 
-    def select_hireables_panel(self, radio: str = "default"):
+    def select_hireables_panel(self, radio: str = "0"):
         """
         佣兵图标位置
         """
+        count = 0
+        total = 1
+
         params = {
-            "default": r"data/global/ui/layouts/hireablespanelhd.json",
             "1": r"data/global/ui/layouts/hireablespanelhd.json.1",
             "2": r"data/global/ui/layouts/hireablespanelhd.json.2",
             "3": r"data/global/ui/layouts/hireablespanelhd.json.3",
         }
 
-        paths = [
-            r"data/global/ui/layouts/hireablespanelhd.json"
-        ]
-        count = 0
-        total = len(paths)
-        for path in paths:
-            src_path = os.path.join(MOD_PATH, params[radio])
-            dst_path = os.path.join(MOD_PATH, path)
-            if "default" == radio:
-                os.remove(dst_path)
-            else:
-                shutil.copy2(src_path, dst_path)
-            count += 1
+        dst = r"data/global/ui/layouts/hireablespanelhd.json"
+        
+        _dst = os.path.join(MOD_PATH, dst)
+        if "0" == radio:
+            os.remove(_dst)
+        else:
+            _src = os.path.join(MOD_PATH, params[radio])
+            shutil.copy2(_src, _dst)
+        count += 1
+
         return (count, total)
 
 
@@ -1878,10 +1879,13 @@ class FileOperations:
                                 arr.append(item.get(ENUS))
                             item[lng] = ''.join(arr)
 
-                # 备份 ZHCN->BAK
-                item[BAK] = item[ZHCN]
-                # 网易国服语言配置 ZHCN
-                item[ZHCN] = item[self.controller.current_states.get(NETEASE_LANGUAGE, BAK)]
+                # 备份&转换
+                item[ZHCN2] = item[ZHCN]
+                item[ZHTW2] = item[ZHTW]
+                if self.controller.current_states.get(NETEASE_LANGUAGE) is not None:
+                    item[ZHCN] = item[self.controller.current_states.get(NETEASE_LANGUAGE)]
+                if self.controller.current_states.get(BATTLE_NET_LANGUAGE) is not None:
+                    item[ZHTW] = item[self.controller.current_states.get(BATTLE_NET_LANGUAGE)]
                 
             # write temp file
             item_names_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json.tmp")
@@ -1928,10 +1932,13 @@ class FileOperations:
                             arr.append(item.get("enUS"))
                         item[lng] = ''.join(arr)
                 
-                # 备份 ZHCN->BAK
-                item[BAK] = item[ZHCN]
-                # 网易国服语言配置 ZHCN
-                item[ZHCN] = item[self.controller.current_states.get(NETEASE_LANGUAGE, BAK)]
+                # 备份&转换
+                item[ZHCN2] = item[ZHCN]
+                item[ZHTW2] = item[ZHTW]
+                if self.controller.current_states.get(NETEASE_LANGUAGE) is not None:
+                    item[ZHCN] = item[self.controller.current_states.get(NETEASE_LANGUAGE)]
+                if self.controller.current_states.get(BATTLE_NET_LANGUAGE) is not None:
+                    item[ZHTW] = item[self.controller.current_states.get(BATTLE_NET_LANGUAGE)]
 
             item_runes_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-runes.json.tmp")
             with open(item_runes_tmp, 'w', encoding="utf-8-sig") as f:
@@ -2331,10 +2338,6 @@ class FileOperations:
             "4": [
                 r"data/hd/env/preset/act4/diab/entry1.json",
             ],
-            # A5督军山克死亡
-            "5": [
-                r"data/global/excel/missiles.txt",
-            ],
             # A5毁灭王座石柱
             "6": [
                 r"data/hd/env/preset/expansion/baallair/wthrone.json",
@@ -2342,9 +2345,7 @@ class FileOperations:
         }
 
         funcs = []
-        for i in range(1, 7):
-            key = str(i)
-            files = _files[key]
+        for key, files in _files.items():
             sub = self.common_rename(files, key in keys)
             funcs.append(sub)
 
@@ -2425,19 +2426,6 @@ class FileOperations:
         summary = tuple(sum(values) for values in zip(*results))
         
         return summary
-
-
-    def manage_tool(self, keys: list):
-        """控制器管理"""
-        
-        if keys is None:
-            return (0, 0)
-
-        for i in range(1, 5):
-            key = str(i)
-            APP_CONFIG[key] = key in keys
-
-        return (1, 1, "重启控制器生效!")
 
 
     def show_environmental_pointer(self, keys: list):
@@ -2612,10 +2600,14 @@ class FileOperations:
             item_name[ZHCN] = UE01A + item_name[ZHCN].removeprefix(UE01A) if filter else item_name[ZHCN].removeprefix(UE01A)
             item_name[ZHTW] = UE01A + item_name[ZHTW].removeprefix(UE01A) if filter else item_name[ZHTW].removeprefix(UE01A)
             item_name[ENUS] = UE01A + item_name[ENUS].removeprefix(UE01A) if filter else item_name[ENUS].removeprefix(UE01A)
-            # 备份过滤 ZHCN->BAK
-            item_name[BAK] = item_name[ZHCN]
-            # 网易国服语言配置 ZHCN
-            item_name[ZHCN] = item_name[self.controller.current_states.get(NETEASE_LANGUAGE, BAK)]
+            
+            # 备份&转换
+            item[ZHCN2] = item[ZHCN]
+            item[ZHTW2] = item[ZHTW]
+            if self.controller.current_states.get(NETEASE_LANGUAGE) is not None:
+                item[ZHCN] = item[self.controller.current_states.get(NETEASE_LANGUAGE)]
+            if self.controller.current_states.get(BATTLE_NET_LANGUAGE) is not None:
+                item[ZHTW] = item[self.controller.current_states.get(BATTLE_NET_LANGUAGE)]
         # 3.write
         with open(item_names_path, 'w', encoding='utf-8-sig') as f:
             json.dump(item_names_data, f, ensure_ascii=False, indent=2)
@@ -2623,7 +2615,7 @@ class FileOperations:
         return (1, 1)
 
 
-    def select_rune_skin(self, radio: str = "default"):
+    def select_rune_skin(self, radio: str = "0"):
         """
         符文皮肤
         """
@@ -2700,7 +2692,7 @@ class FileOperations:
         count = 0
         total = len(files)
 
-        if(radio == "default"):
+        if radio == "0":
             for file in files:
                 try:
                     dst = os.path.join(MOD_PATH, path, file)
@@ -2720,18 +2712,18 @@ class FileOperations:
         return (count, total)
 
 
-    def select_hudpanel_size(self, radio: str = "default"):
+    def select_hudpanel_size(self, radio: str = "0"):
         """HUD面板尺寸"""
 
         rects = [
             {
-                "default": { "x": -1454, "y": -412, "width": 2952, "height": 764 },
+                "0": { "x": -1454, "y": -412, "width": 2952, "height": 764 },
                 "1": { "x": -1236, "y": -350, "width": 2952, "height": 764, "scale": 0.85 },
                 "2": { "x": -1090, "y": -310, "width": 2952, "height": 764, "scale": 0.75 },
                 "3": { "x": -945.1, "y": -267.8, "width": 2952, "height": 764, "scale": 0.65 },
             },
             {
-                "default": { "x": 0, "y": -500 , "scale": 1},
+                "0": { "x": 0, "y": -500 , "scale": 1},
                 "1": { "x": 0, "y": -420 , "scale": 0.85},
                 "2": { "x": 0, "y": -370 , "scale": 0.75},
                 "3": { "x": 0, "y": -320 , "scale": 0.65},
@@ -2808,9 +2800,41 @@ class FileOperations:
 
                 # 2.modify 
                 for obj in json_data:
-                    print(obj)
                     obj[ZHCN] = obj[radio]
-                    print(obj)
+                
+                # 3.write
+                with open(json_path, 'w', encoding="utf-8-sig") as f:
+                    json.dump(json_data, f, ensure_ascii=False, indent=2)
+
+                count += 1
+            except Exception as e:
+                print(f"[Error] {json_path}: {e}")
+
+        return (count, total)
+    
+
+    def select_netease_language(self, radio: str):
+        """国际服文字选择"""
+        _files = [
+            r"data/local/lng/strings/item-names.json",
+            r"data/local/lng/strings/item-runes.json"
+        ]
+
+        count = 0
+        total = len(_files)
+
+        for file in _files:
+            json_data = None
+            json_path = os.path.join(MOD_PATH, file)
+
+            try:
+                # 1.load
+                with open(json_path, 'r', encoding='utf-8-sig') as f:
+                    json_data = json.load(f)
+
+                # 2.modify 
+                for obj in json_data:
+                    obj[ZHTW] = obj[radio]
                 
                 # 3.write
                 with open(json_path, 'w', encoding="utf-8-sig") as f:

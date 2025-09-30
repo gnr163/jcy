@@ -18,12 +18,23 @@ class FeatureConfig:
                         {
                             "fid": NETEASE_LANGUAGE,
                             "type": RADIO,
-                            "text": "网易国服语言(装备/道具/符文/符文之语)",
+                            "text": "网易国服-语言翻译(装备/道具/符文/符文之语)",
                             "colspan": 10,
                             "params": {
-                                "bak": "国服简中-zhCN",
-                                "zhTW": "国际繁中-zhTW",
-                                "enUS": "英文-enUS"
+                                ZHCN2: "国服简中-zhCN",
+                                ZHTW2: "国际繁中-zhTW",
+                                ENUS: "英文-enUS"
+                            }
+                        },
+                        {
+                            "fid": BATTLE_NET_LANGUAGE,
+                            "type": RADIO,
+                            "text": "暴雪国际服-语言翻译(装备/道具/符文/符文之语)",
+                            "colspan": 10,
+                            "params": {
+                                ZHCN2: "国服简中-zhCN",
+                                ZHTW2: "国际繁中-zhTW",
+                                ENUS: "英文-enUS"
                             }
                         },
                         {
@@ -80,11 +91,53 @@ class FeatureConfig:
                             "type": SPIN,
                             "text": "额外的照亮范围",
                             "colspan": 2
+                        },
+                        {
+                            "fid": RUNE_SKIN,
+                            "type": RADIO,
+                            "text": "符文皮肤",
+                            "colspan": 10,
+                            "params": {
+                                "0": "原皮",
+                                "1": "1",
+                                "2": "2",
+                                "3": "3",
+                                "4": "4",
+                                "5": "5",
+                                "6": "6",
+                                "7": "7",
+                                "8": "8",
+                                "9": "9"
+                            }
+                        },
+                        {
+                            "fid": HUD_SIZE,
+                            "type": RADIO,
+                            "text": "HUD面板缩放",
+                            "colspan": 4,
+                            "params": {
+                                "0": "100%",
+                                "1": "85%",
+                                "2": "75%",
+                                "3": "65%"
+                            }
+                        },
+                        {
+                            "fid": PORTAL_SKIN,
+                            "type": RADIO,
+                            "text": "传送门皮肤",
+                            "colspan": 6,
+                            "params": {
+                                "0": "原版蓝门",
+                                "1": "原版红门",
+                                "2": "双圈蓝门",
+                                "3": "单圈红门"
+                            }
                         }
                     ]
                 },
                 {
-                    "text": "职业设置",
+                    "text": "角色设置",
                     "children": [
                         {
                             "fid": ARROW,
@@ -99,20 +152,25 @@ class FeatureConfig:
                             }
                         },
                         {
-                            "type": "Separator"
-                        },
-                        {
                             "fid": SOR_SETTING,
                             "type": CHECK,
                             "text": "魔法师",
-                            "colspan": 10,
+                            "colspan": 5,
                             "params": {
                                 "1": "取消雷云风暴吓人特效",
                                 "2": "降低闪电新星亮度"
                             }
                         },
-                        {
-                            "type": "Separator"
+                        {        
+                            "fid": TELEPORT_SKIN,
+                            "type": RADIO,
+                            "text": "传送术皮肤",
+                            "colspan": 5,
+                            "params": {
+                                "0": "原版",
+                                "1": "冰霜",
+                                "2": "火焰"
+                            }
                         },
                         {
                             "fid": NEC_SETTING,
@@ -124,9 +182,6 @@ class FeatureConfig:
                             }
                         },
                         {
-                            "type": "Separator"
-                        },
-                        {
                             "fid": DRU_SETTING,
                             "type": CHECK,
                             "text": "德鲁伊",
@@ -134,9 +189,6 @@ class FeatureConfig:
                             "params": {
                                 "1": "飓风术特效"
                             }
-                        },
-                        {
-                            "type": "Separator"
                         },
                         {
                             "fid": ASN_SETTING,
@@ -154,14 +206,54 @@ class FeatureConfig:
                         {
                             "fid": MERCENARY,
                             "type": CHECK,
-                            "text": "佣兵",
-                            "colspan": 10,
+                            "text": "佣兵-配置",
+                            "colspan": 5,
                             "params": {
                                 "1": "A1白毛罗格",
                                 "2": "A2女性佣兵",
                                 "5": "A5火焰刀佣兵"
                             }
+                        },
+                        {
+                            "fid": MERCENARY_LOCATION,
+                            "type": RADIO,
+                            "text": "佣兵-图标位置",
+                            "colspan": 5,
+                            "params": {
+                                "0": "原版",
+                                "1": "左上角缩进",
+                                "2": "红球之上",
+                                "3": "红球之上上"
+                            }
+                        },
+                        {
+                            "type": "Separator"
+                        },
+                        {
+                            "fid": MONSTER_SETTING,
+                            "type": CHECK,
+                            "text": "怪物-配置",
+                            "colspan": 10,
+                            "params": {
+                                "1": "怪物血条D3风格",
+                                "2": "危险怪物增加光源&标识",
+                                "3": "BOSS怪物光环指引",
+                                "4": "屏蔽A5督军山克死亡特效"
+                            }
+                        },
+                        {
+                            "fid": MONSTER_MISSILE,
+                            "type": RADIO,
+                            "text": "老鼠刺针/剥皮吹箭样式",
+                            "colspan": 5,
+                            "params": {
+                                "0": "原皮",
+                                "1": "魔法箭",
+                                "2": "冷霜箭",
+                                "3": "火焰箭"
+                            }
                         }
+                        
                     ]
                 }
             ],
@@ -170,100 +262,26 @@ class FeatureConfig:
                 "106": "经验祭坛/宝石祭坛 特效标识",
                 "141": "左键快速购买",
                 "113": "蓝色/金色/暗金色精英怪随机染色",
-                "114": "怪物光源+危险标识",
+
                 "115": "屏蔽 劣等的/損壞的/破舊的武器装备",
                 "117": "咒符/22#+符文增加掉落光柱",
                 "118": "咒符/22#+符文增加掉落提示音 & 技能结束提示音",
                 "119": "技能图标(头顶:熊之印记/狼之印记 脚下:附魔/速度爆发+影散/BO 右侧:刺客聚气)",
-                "120": "BOSS 指引",
+
                 "121": "交互对象增加蓝色火苗",
                 "124": "6BOSS钥匙皮肤+掉落光柱",
                 "126": "屏蔽 地狱火炬火焰风暴特效",
                 "131": "经验条变色",
-                "136": "怪物血条D3风格",
+
                 "147": "默认开启迷你血条",
                 "148": "默认开启迷你盒子",
                 "146": "正副手防呆提示",
                 "149": "隐藏任务日志提示按钮"
             },
             "radiogroup": {
-                "201": {
-                    "text": "佣兵图标位置",
-                    "colspan": 10,
-                    "params": {
-                        "default": "原版",
-                        "1": "左上角缩进",
-                        "2": "红球之上",
-                        "3": "红球之上上"
-                    }
-                },
-                "202": {
-                    "text": "传送门皮肤",
-                    "colspan": 10,
-                    "params": {
-                        "default": "原版蓝门",
-                        "1": "原版红门",
-                        "2": "双圈蓝门",
-                        "3": "单圈红门"
-                    }
-                },
-                "203": {
-                    "text": "传送术皮肤",
-                    "colspan": 10,
-                    "params": {
-                        "default": "原版",
-                        "1": "冰霜",
-                        "2": "火焰"
-                    }
-                },
-                "205": {
-                    "text": "老鼠刺针/剥皮吹箭皮肤",
-                    "colspan": 10,
-                    "params": {
-                        "default": "原皮",
-                        "1": "魔法箭",
-                        "2": "冷霜箭",
-                        "3": "火焰箭"
-                    }
-                },
-                "206": {
-                    "text": "符文皮肤",
-                    "colspan": 10,
-                    "params": {
-                        "default": "原皮",
-                        "1": "1",
-                        "2": "2",
-                        "3": "3",
-                        "4": "4",
-                        "5": "5",
-                        "6": "6",
-                        "7": "7",
-                        "8": "8",
-                        "9": "9"
-                    }
-                },
-                "207": {
-                    "text": "HUD面板尺寸",
-                    "colspan": 10,
-                    "params": {
-                        "default": "100%",
-                        "1": "85%",
-                        "2": "75%",
-                        "3": "65%"
-                    }
-                }
+                
             },
             "checkgroup":{
-                "399": {
-                    "text": "控制器管理",
-                    "colspan": 10,
-                    "params": {
-                        "1": "显示'D2R多开器'面板",
-                        "2": "显示'恐怖区域'面板",
-                        "3": "开启'恐怖区域'Win系统通知",
-                        "4": "开启'恐怖区域'游戏内预告"
-                    }
-                },
                 "301": {
                     "text": "角色特效",
                     "colspan": 10,
@@ -304,7 +322,7 @@ class FeatureConfig:
                         "2": "崔凡克议会墙壁",
                         "3": "火焰之河岩浆",
                         "4": "混沌避难所大门",
-                        "5": "督军山克死亡",
+
                         "6": "毁灭王座石柱"
                     }
                 },

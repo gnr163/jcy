@@ -140,8 +140,7 @@ class FeatureController:
             "112": self.file_operations.toggle_env_vis,
             # "蓝怪/金怪/暗金怪随机染色",
             "113": self.file_operations.toggle_hd_global_palette_randtransforms_json,
-            # "怪物光源+危险标识",
-            "114": self.file_operations.toggle_character_enemy,
+
             # "屏蔽 劣等的/損壞的/破舊的武器装备",
             "115": self.file_operations.toggle_low_quality,
             # "咒符/22#+符文增加掉落光柱",
@@ -150,8 +149,7 @@ class FeatureController:
             "118": self.file_operations.toggle_sound,
             # "技能图标(头顶:熊之印记/狼之印记 脚下:附魔/速度爆发+影散/BO 右侧:刺客聚气)",
             "119": self.file_operations.toggle_skill_logo,
-            # "BOSS 指引",
-            "120": self.file_operations.toggle_pointer,
+
             # "交互对象增加蓝色火苗",
             "121": self.file_operations.toggle_chest_highlight, 
             # "6BOSS钥匙皮肤+掉落光柱",
@@ -160,8 +158,7 @@ class FeatureController:
             "126": self.file_operations.toggle_hellfire_torch,
             # "经验条变色",
             "131": self.file_operations.toggle_experience_bar,
-            # "怪物血条D3风格",
-            "136": self.file_operations.toggle_monster_health,
+
             # "左键快速购买",
             "141": self.file_operations.toggle_quick_buy,
             # "正副手防呆提示"
@@ -172,23 +169,7 @@ class FeatureController:
             "148": self.file_operations.toggle_mini_cube,
             # 隐藏任务日志提示按钮
             "149": self.file_operations.hide_quest_button,
-
-
-            # 佣兵图标位置
-            "201": self.file_operations.select_hireables_panel,
-            # 传送门皮肤
-            "202": self.file_operations.select_town_portal,
-            # 传送术皮肤
-            "203": self.file_operations.select_teleport_skin,
             
-            # 老鼠刺针/剥皮吹箭样式
-            "205": self.file_operations.select_enemy_arrow_skin,
-            # 符文皮肤
-            "206": self.file_operations.select_rune_skin,
-            # HUD面板尺寸
-            "207": self.file_operations.select_hudpanel_size,
-
-
             # 角色特效
             "301": self.file_operations.select_character_effects,
             # 属性词条特效
@@ -203,8 +184,7 @@ class FeatureController:
             "306": self.file_operations.hide_character_effects,
             # 开启角色特效
             "307": self.file_operations.show_character_effects,
-            # 控制器管理
-            "399": self.file_operations.manage_tool,
+
 
             # 22#+符文名称大小
             "402": self.file_operations.modify_rune_rectangle,
@@ -218,24 +198,40 @@ class FeatureController:
             TERROR_ZONE_LANGUAGE: self.file_operations.select_language,
             # 恐怖区域-预告
             TERROR_ZONE_NEXT: self.file_operations.void,
-            # 装备道具-语言
+            # 网易国服语言翻译(装备/道具/符文/符文之语)
             NETEASE_LANGUAGE: self.file_operations.select_netease_language,
+            # 暴雪国际服语言翻译(装备/道具/符文/符文之语)
+            BATTLE_NET_LANGUAGE: self.file_operations.select_netease_language,
             # 游戏设置
             GAME_SETTING : self.file_operations.select_game_setting,
             # 额外的照亮范围
             LIGHT_REDIUS: self.file_operations.modify_character_player,
+            # 符文皮肤
+            RUNE_SKIN: self.file_operations.select_rune_skin,
+            # HUD面板缩放
+            HUD_SIZE: self.file_operations.select_hudpanel_size,
+            # 传送门皮肤
+            PORTAL_SKIN: self.file_operations.select_town_portal,
             # 弓/弩箭皮肤
             ARROW: self.file_operations.select_arrow_skin,
             # 魔法师
             SOR_SETTING: self.file_operations.sorceress_setting,
+            # 传送术皮肤
+            TELEPORT_SKIN: self.file_operations.select_teleport_skin,
             # 死灵法师
             NEC_SETTING: self.file_operations.necromancer_setting,
             # 德鲁伊
             DRU_SETTING: self.file_operations.druid_setting,
             # 刺客
             ASN_SETTING: self.file_operations.assassin_setting,
-            # 佣兵
+            # 佣兵-配置
             MERCENARY: self.file_operations.select_mercenary_skin,
+            # 佣兵-图标位置
+            MERCENARY_LOCATION: self.file_operations.select_hireables_panel,
+            # 怪物-配置
+            MONSTER_SETTING: self.file_operations.select_monster_setting,
+            # 怪物-导弹
+            MONSTER_MISSILE:self.file_operations.select_enemy_arrow_skin,
         }
 
     def apply_settings(self):

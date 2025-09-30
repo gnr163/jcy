@@ -83,59 +83,59 @@ class FeatureView:
         self.add_tab(launcher_tab, "D2R多开器")
 
         # --- Terror Zone ---
-        self.tz_tab = TerrorZoneUI(notebook, self.controller, fetcher = self.controller.terror_zone_fetcher)
-        self.add_tab(self.tz_tab, "恐怖区域")
+        # self.tz_tab = TerrorZoneUI(notebook, self.controller, fetcher = self.controller.terror_zone_fetcher)
+        # self.add_tab(self.tz_tab, "恐怖区域")
         
         # --- checkbutton ---
         tab = None
         for i, (fid, description) in enumerate(self.all_features_config.get("checkbutton", {}).items()):
             if i % 20 == 0 :
                 tab = ttk.Frame(notebook)
-                self.add_tab(tab, f"功能特效{(i/20)+1}")
+                self.add_tab(tab, f"功能特效")
             var = tk.BooleanVar()
             self.feature_vars[fid] = var
             chk = ttk.Checkbutton(tab, text=description, variable=var, command=lambda f=fid, v=var: self.controller.execute_feature_action(f, v.get()))
             chk.pack(anchor=tk.W, padx=10, pady=3)
         
 
-        # --- radiogroup ---
-        radiogroup_tab = ttk.Frame(notebook)
-        self.add_tab(radiogroup_tab, "单选特效")
+        # # --- radiogroup ---
+        # radiogroup_tab = ttk.Frame(notebook)
+        # self.add_tab(radiogroup_tab, "单选特效")
 
-        radiogroup_features = self.all_features_config.get("radiogroup", {})
+        # radiogroup_features = self.all_features_config.get("radiogroup", {})
 
-        total_columns = 10  # 每行总列数
-        current_row = 0
-        current_col = 0
+        # total_columns = 10  # 每行总列数
+        # current_row = 0
+        # current_col = 0
 
-        for fid, info in radiogroup_features.items():
-            colspan = info.get("colspan", total_columns)  # 默认占满整行
-            group = LabeledRadioGroup(
-                radiogroup_tab,
-                feature_id=fid,
-                data=info,
-                default_selected="default",
-                command=self.controller.execute_feature_action
-            )
+        # for fid, info in radiogroup_features.items():
+        #     colspan = info.get("colspan", total_columns)  # 默认占满整行
+        #     group = LabeledRadioGroup(
+        #         radiogroup_tab,
+        #         feature_id=fid,
+        #         data=info,
+        #         default_selected="default",
+        #         command=self.controller.execute_feature_action
+        #     )
 
-            # 如果当前行剩余列不足，换行
-            if current_col + colspan > total_columns:
-                current_row += 1
-                current_col = 0
+        #     # 如果当前行剩余列不足，换行
+        #     if current_col + colspan > total_columns:
+        #         current_row += 1
+        #         current_col = 0
 
-            # 放置控件
-            group.grid(row=current_row, column=current_col, columnspan=colspan,
-                    sticky="nsew", padx=10, pady=5)
+        #     # 放置控件
+        #     group.grid(row=current_row, column=current_col, columnspan=colspan,
+        #             sticky="nsew", padx=10, pady=5)
 
-            # 更新当前列索引
-            current_col += colspan
+        #     # 更新当前列索引
+        #     current_col += colspan
 
-            # 保存引用
-            self.feature_vars[fid] = group
+        #     # 保存引用
+        #     self.feature_vars[fid] = group
 
-        # 均分每列权重，让控件按比例拉伸
-        for i in range(total_columns):
-            radiogroup_tab.grid_columnconfigure(i, weight=1)
+        # # 均分每列权重，让控件按比例拉伸
+        # for i in range(total_columns):
+        #     radiogroup_tab.grid_columnconfigure(i, weight=1)
 
         
         # --- checkgroup ---
@@ -561,11 +561,11 @@ class FeatureView:
         """窗口终始化"""
         self.load_window_geometry()
 
-        if not "2" in self.controller.current_states["399"]:
-            self.hide_tab("恐怖区域")
+        # if not "2" in self.controller.current_states["399"]:
+        #     self.hide_tab("恐怖区域")
 
-        if not "1" in self.controller.current_states["399"]:
-            self.hide_tab("D2R多开器")
+        # if not "1" in self.controller.current_states["399"]:
+        #     self.hide_tab("D2R多开器")
 
 
 class LabeledRadioGroup(ttk.LabelFrame):
