@@ -5,6 +5,7 @@ import re
 import time
 from jcy_constants import *
 from jcy_paths import *
+from zhconv import convert
 
 
 class FileOperations:
@@ -1957,32 +1958,21 @@ class FileOperations:
         # 0.data
         data = []
 
-        # 1.load settings.json
-        settings_dict = None
-        with open(USER_SETTINGS_PATH, 'r', encoding="utf-8") as f:
-            settings_dict = json.load(f)
-        item_filter_states = settings_dict.get("501", {})
-        
         # 2.load item-names.json 
         item_name_dict = {}
         item_names_path = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.filter.json")
         item_names_data = None
         with open(item_names_path, 'r', encoding='utf-8-sig') as f:
             item_names_data = json.load(f)
-        for i, item in enumerate(item_names_data):
-            item_name_dict[str(item["id"])] = item
-
-        # mix
-        for id in item_filter_states:
-            item_name = item_name_dict[id]
+        for item in item_names_data:
             data.append([
-                id,
-                item_name["Key"],
-                item_name["enUS"],
-                item_name["zhCN"],
-                item_name["zhTW"],
+                str(item.get("id")),
+                item.get(ZHCN),
+                item.get(ZHTW),
+                item.get(ENUS),
+                item.get("Key")
             ])
-        
+
         return data
 
 
@@ -1996,15 +1986,25 @@ class FileOperations:
         item_names_data = None
         with open(item_names_path, 'r', encoding='utf-8-sig') as f:
             item_names_data = json.load(f)
-        for i, item in enumerate(item_names_data):
+        for item in item_names_data:
             item_name_dict[str(item["id"])] = item
 
+        item_name_filter_dict = {}
+        item_names_filter_path = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.filter.json")
+        item_names_filter_data = None
+        with open(item_names_filter_path, 'r', encoding='utf-8-sig') as f:
+            item_names_filter_data = json.load(f)
+        for item in item_names_filter_data:
+            item_name_filter_dict[str(item["id"])] = item
+        
         # 2.modify
         for id, filter in data.items():
             item_name = item_name_dict[id]
-            item_name[ZHCN] = UE01A + item_name[ZHCN].removeprefix(UE01A) if filter else item_name[ZHCN].removeprefix(UE01A)
-            item_name[ZHTW] = UE01A + item_name[ZHTW].removeprefix(UE01A) if filter else item_name[ZHTW].removeprefix(UE01A)
-            item_name[ENUS] = UE01A + item_name[ENUS].removeprefix(UE01A) if filter else item_name[ENUS].removeprefix(UE01A)
+            item_name_filter = item_name_filter_dict[id]
+            
+            item_name[ZHCN] = UE01A + item_name_filter[ZHCN] if filter else item_name_filter[ZHCN]
+            item_name[ZHTW] = UE01A + item_name_filter[ZHTW] if filter else item_name_filter[ZHTW]
+            item_name[ENUS] = UE01A + item_name_filter[ENUS] if filter else item_name_filter[ENUS]
             
             # 备份&转换
             item_name[ZHCN2] = item_name[ZHCN]
@@ -2227,7 +2227,10 @@ class FileOperations:
 
                 # 2.modify 
                 for obj in json_data:
-                    obj[ZHCN] = obj[radio]
+                    if T2S == radio:
+                        obj[ZHCN] = convert(obj[ZHTW2], 'zh-cn')
+                    else:
+                        obj[ZHCN] = obj[radio]
                 
                 # 3.write
                 with open(json_path, 'w', encoding="utf-8-sig") as f:
@@ -2261,7 +2264,10 @@ class FileOperations:
 
                 # 2.modify 
                 for obj in json_data:
-                    obj[ZHTW] = obj[radio]
+                    if S2T == radio:
+                        obj[ZHTW] = convert(obj[ZHCN2], 'zh-tw')
+                    else:
+                        obj[ZHTW] = obj[radio]
                 
                 # 3.write
                 with open(json_path, 'w', encoding="utf-8-sig") as f:

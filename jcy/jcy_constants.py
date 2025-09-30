@@ -17,6 +17,12 @@ ZHCN = 'zhCN'
 ZHCN2 = 'zhCN2'
 ZHTW = 'zhTW'
 ZHTW2 = 'zhTW2'
+# 简->繁
+S2T = 'S2T'
+# 繁->简
+T2S = 'T2S'
+
+
 LANG = None
 
 # 控制器名称
@@ -440,6 +446,8 @@ __all__ = [
     'ZHCN2',
     'ZHTW',
     'ZHTW2',
+    'S2T',
+    'T2S',
     'ENUS',
     'APP_NAME',
     'APP_VERSION',

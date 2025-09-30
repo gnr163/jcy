@@ -189,7 +189,7 @@ class FeatureView:
         filter_tab = ttk.Frame(notebook)
         self.add_tab(filter_tab, "道具屏蔽")
 
-        columns = ["Key", "enUS", "简体中文", "繁體中文"]
+        columns = ["简体中文", "繁體中文", "enUS", "Key"]
         data = self.controller.file_operations.load_filter_config()
                 
         checktable = TableWithCheckbox(
@@ -767,7 +767,7 @@ class TableWithCheckbox(tk.Frame):
         frame = tk.Frame(self._tbl, borderwidth=1, relief="solid")
         frame.grid(row=0, column=0, sticky="nsew")
         tk.Checkbutton(frame,
-                    text="屏蔽",
+                    text="",
                     variable=self._select_all_var,
                     command=_toggle_all).pack(expand=True, fill="both")
 

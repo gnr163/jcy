@@ -18,23 +18,25 @@ class FeatureConfig:
                         {
                             "fid": NETEASE_LANGUAGE,
                             "type": RADIO,
-                            "text": "网易国服-语言翻译(装备/道具/符文/符文之语)",
-                            "colspan": 5,
+                            "text": "网易国服-本地化(装备/道具/符文/符文之语)",
+                            "colspan": 10,
                             "params": {
-                                ZHCN2: "国服简中-zhCN",
-                                ZHTW2: "国际繁中-zhTW",
-                                ENUS: "英文-enUS"
+                                ZHCN2: "简体中文-zhCN",
+                                ZHTW2: "繁體中文-zhTW",
+                                ENUS: "英文-enUS",
+                                T2S: "繁體中文-zhTW -> 简体中文-zhCN"
                             }
                         },
                         {
                             "fid": BATTLE_NET_LANGUAGE,
                             "type": RADIO,
-                            "text": "暴雪国际服-语言翻译(装备/道具/符文/符文之语)",
-                            "colspan": 5,
+                            "text": "暴雪國際服-本地化(裝備/道具/符文/符文之語)",
+                            "colspan": 10,
                             "params": {
-                                ZHCN2: "国服简中-zhCN",
-                                ZHTW2: "国际繁中-zhTW",
-                                ENUS: "英文-enUS"
+                                ZHCN2: "简体中文-zhCN",
+                                ZHTW2: "繁體中文-zhTW",
+                                ENUS: "英文-enUS",
+                                S2T: "简体中文-zhCN -> 繁體中文-zhTW"
                             }
                         },
                         {
