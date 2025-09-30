@@ -98,7 +98,7 @@ class FeatureController:
             if handler := self._handlers.get(feature_id):
                 default_value = self._get_default_value(feature_id)
                 print(f"[升级] 应用新增配置 {feature_id} = {default_value}")
-                handler(default_value)
+                # handler(default_value)
         
         # 处理修改项（保持用户设置）
         for feature_id in diff['modified']:

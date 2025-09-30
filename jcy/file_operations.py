@@ -684,12 +684,12 @@ class FileOperations:
         return (count, total)
 
 
-    def select_arrow_skin(self, radio: str = "default"):
+    def select_arrow_skin(self, radio: str = "0"):
         """
         箭皮肤
         """
         params = {
-            "default": r"data/hd/vfx/particles/missiles/arrow/vfx_arrow.particles",
+            "0": r"data/hd/vfx/particles/missiles/arrow/vfx_arrow.particles",
             "1": r"data/hd/vfx/particles/missiles/safe_arrow/safe_arrow.particles",
             "2": r"data/hd/vfx/particles/missiles/ice_arrow/fx_ice_projectile_arrow.particles",
             "3": r"data/hd/vfx/particles/missiles/fire_arrow/fx_fire_projectile_arrow.particles",
