@@ -104,7 +104,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "component_vfx1",
-                    "filename": "data/hd/vfx/particles/missiles/fire_arrow/fx_fire_projectile_arrow.particles",
+                    "filename": "data/hd/vfx/particles/missiles/safe_arrow/safe_arrow.particles",
                     "hardKillOnDestroy": true
                 },
                 {
