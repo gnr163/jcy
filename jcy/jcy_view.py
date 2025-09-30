@@ -87,15 +87,15 @@ class FeatureView:
         # self.add_tab(self.tz_tab, "恐怖区域")
         
         # --- checkbutton ---
-        tab = None
-        for i, (fid, description) in enumerate(self.all_features_config.get("checkbutton", {}).items()):
-            if i % 20 == 0 :
-                tab = ttk.Frame(notebook)
-                self.add_tab(tab, f"功能特效")
-            var = tk.BooleanVar()
-            self.feature_vars[fid] = var
-            chk = ttk.Checkbutton(tab, text=description, variable=var, command=lambda f=fid, v=var: self.controller.execute_feature_action(f, v.get()))
-            chk.pack(anchor=tk.W, padx=10, pady=3)
+        # tab = None
+        # for i, (fid, description) in enumerate(self.all_features_config.get("checkbutton", {}).items()):
+        #     if i % 20 == 0 :
+        #         tab = ttk.Frame(notebook)
+        #         self.add_tab(tab, f"功能特效")
+        #     var = tk.BooleanVar()
+        #     self.feature_vars[fid] = var
+        #     chk = ttk.Checkbutton(tab, text=description, variable=var, command=lambda f=fid, v=var: self.controller.execute_feature_action(f, v.get()))
+        #     chk.pack(anchor=tk.W, padx=10, pady=3)
         
 
         # # --- radiogroup ---
@@ -139,50 +139,50 @@ class FeatureView:
 
         
         # --- checkgroup ---
-        checkgroup_tab = ttk.Frame(notebook)
-        self.add_tab(checkgroup_tab, "多选特效")
-        checkgroup_features = self.all_features_config.get("checkgroup", {})
+        # checkgroup_tab = ttk.Frame(notebook)
+        # self.add_tab(checkgroup_tab, "多选特效")
+        # checkgroup_features = self.all_features_config.get("checkgroup", {})
 
-        row, col = 0, 0
-        max_cols = 10
+        # row, col = 0, 0
+        # max_cols = 10
 
-        for fid, info in checkgroup_features.items():
-            colspan = info.get("colspan", 10)
-            group = LabeledCheckGroup(
-                checkgroup_tab,
-                feature_id=fid,
-                data=info,
-                default_selected=[],
-                command=self.controller.execute_feature_action
-            )
-            group.grid(row=row, column=col, columnspan=colspan, sticky="ew", padx=10, pady=10)
-            self.feature_vars[fid] = group
+        # for fid, info in checkgroup_features.items():
+        #     colspan = info.get("colspan", 10)
+        #     group = LabeledCheckGroup(
+        #         checkgroup_tab,
+        #         feature_id=fid,
+        #         data=info,
+        #         default_selected=[],
+        #         command=self.controller.execute_feature_action
+        #     )
+        #     group.grid(row=row, column=col, columnspan=colspan, sticky="ew", padx=10, pady=10)
+        #     self.feature_vars[fid] = group
 
-            col += colspan
-            if col >= max_cols:
-                row += 1
-                col = 0
+        #     col += colspan
+        #     if col >= max_cols:
+        #         row += 1
+        #         col = 0
 
-        # 让 10 列自动伸缩
-        for i in range(max_cols):
-            checkgroup_tab.columnconfigure(i, weight=1)
+        # # 让 10 列自动伸缩
+        # for i in range(max_cols):
+        #     checkgroup_tab.columnconfigure(i, weight=1)
 
 
         # --- spinbox ---
-        range_tab = ttk.Frame(notebook)
-        self.add_tab(range_tab, "区间特效")
-        range_features = self.all_features_config.get("spinbox", {})
-        for fid, description in range_features.items():
-            label_frame = ttk.LabelFrame(range_tab, text=description)
-            label_frame.pack(padx=20, pady=5, fill=tk.X)
+        # range_tab = ttk.Frame(notebook)
+        # self.add_tab(range_tab, "区间特效")
+        # range_features = self.all_features_config.get("spinbox", {})
+        # for fid, description in range_features.items():
+        #     label_frame = ttk.LabelFrame(range_tab, text=description)
+        #     label_frame.pack(padx=20, pady=5, fill=tk.X)
 
-            spin_container = ttk.Frame(label_frame)
-            spin_container.pack(fill=tk.X, padx=15, pady=5) # 容器的填充和内边距
+        #     spin_container = ttk.Frame(label_frame)
+        #     spin_container.pack(fill=tk.X, padx=15, pady=5) # 容器的填充和内边距
 
-            var = tk.IntVar()
-            self.feature_vars[fid] = var
-            spin = ttk.Spinbox(spin_container, from_=0, to=9, increment=1, textvariable=var, command=lambda f=fid, v=var: self.controller.execute_feature_action(f, v.get()), state='readonly')
-            spin.pack(anchor=tk.W, padx=10, pady=2)
+        #     var = tk.IntVar()
+        #     self.feature_vars[fid] = var
+        #     spin = ttk.Spinbox(spin_container, from_=0, to=9, increment=1, textvariable=var, command=lambda f=fid, v=var: self.controller.execute_feature_action(f, v.get()), state='readonly')
+        #     spin.pack(anchor=tk.W, padx=10, pady=2)
 
 
         # --- checktable ---

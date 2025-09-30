@@ -23,7 +23,7 @@ LANG = None
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.2.2B"
+APP_VERSION = "v1.2.2C"
 
 # 发布日期
 APP_DATE = "20250930"
@@ -65,10 +65,12 @@ TERROR_ZONE_SERVER = "TerrorZoneServer"
 TERROR_ZONE_LANGUAGE = "TerrorZoneLanguage"
 TERROR_ZONE_NEXT = "TerrorZoneNext"
 GAME_SETTING = "GameSetting"
+GAME_SETTING2 = "GameSetting2"
+CONTROLS_SETTING = "ControlsSetting"
 LIGHT_REDIUS = "LightRedius"
-RUNE_SKIN = "RuneSkin"
 HUD_SIZE = "HudSize"
 PORTAL_SKIN = "ProtalSkin"
+CHARACTER_EFFECTS = "CharacterEffects"
 ARROW = "Arrow"
 SOR_SETTING = "SorceressSetting"
 TELEPORT_SKIN = "TeleportSkin"
@@ -77,10 +79,21 @@ PAL_SETTING = "PaladinSetting"
 BAR_SETTING = "BarbarianSetting"
 DRU_SETTING = "DruidSetting"
 ASN_SETTING = "AssassinSetting"
+COMMON_SETTING = "CommonSetting"
 MERCENARY = "Mercenary"
 MERCENARY_LOCATION = "MercenaryLocation"
 MONSTER_SETTING = "MonsterSetting"
 MONSTER_MISSILE = "MonsterMissile"
+EQIUPMENT_EFFECTS = "EquipmentEffects"
+EQIUPMENT_SETTING = "EquipmentSetting"
+AFFIX_EFFECTS = "AffixEffects"
+MODEL_EFFECTS = "ModelEffects"
+RUNE_SKIN = "RuneSkin"
+RUNE_SIZE = "RuneSize"
+SOUND_PROMPTS = "SoundPrompts"
+DROPED_LIGHT = "DropedLight"
+DISABLE_EFFECTS = "DisableEffects"
+ENABLE_POINTER = "EnablePointer"
 # Function Identifier -->
 
 # <!-- Controller Type
@@ -440,10 +453,12 @@ __all__ = [
     'TERROR_ZONE_LANGUAGE',
     'TERROR_ZONE_NEXT',
     'GAME_SETTING',
+    'GAME_SETTING2',
+    'CONTROLS_SETTING',
     'LIGHT_REDIUS',
-    'RUNE_SKIN',
     'HUD_SIZE',
     'PORTAL_SKIN',
+    'CHARACTER_EFFECTS',
     'ARROW',
     'SOR_SETTING',
     'TELEPORT_SKIN',
@@ -452,10 +467,21 @@ __all__ = [
     'BAR_SETTING',
     'DRU_SETTING',
     'ASN_SETTING',
+    'COMMON_SETTING',
     'MERCENARY',
     'MERCENARY_LOCATION',
     'MONSTER_SETTING',
     'MONSTER_MISSILE',
+    'EQIUPMENT_EFFECTS',
+    'EQIUPMENT_SETTING',
+    'AFFIX_EFFECTS',
+    'MODEL_EFFECTS',
+    'RUNE_SKIN',
+    'RUNE_SIZE',
+    'SOUND_PROMPTS',
+    'DROPED_LIGHT',
+    'DISABLE_EFFECTS',
+    'ENABLE_POINTER',
     'RADIO',
     'CHECK',
     'SPIN',

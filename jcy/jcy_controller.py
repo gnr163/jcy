@@ -132,66 +132,8 @@ class FeatureController:
         """
         
         self._handlers = {
-            # "特殊词缀蓝装变色(红/绿)",
-            "104": self.file_operations.toggle_global_excel_affixes,
-            # "经验祭坛/宝石祭坛 特效标识",
-            "106": self.file_operations.toggle_shrine,
-            # "画面变亮",
-            "112": self.file_operations.toggle_env_vis,
-            # "蓝怪/金怪/暗金怪随机染色",
-            "113": self.file_operations.toggle_hd_global_palette_randtransforms_json,
-
-            # "屏蔽 劣等的/損壞的/破舊的武器装备",
-            "115": self.file_operations.toggle_low_quality,
-            # "咒符/22#+符文增加掉落光柱",
-            "117": self.file_operations.toggle_droped_highlight, 
-            # "咒符/22#+符文增加掉落提示音 & 技能结束提示音",
-            "118": self.file_operations.toggle_sound,
-            # "技能图标(头顶:熊之印记/狼之印记 脚下:附魔/速度爆发+影散/BO 右侧:刺客聚气)",
-            "119": self.file_operations.toggle_skill_logo,
-
-            # "交互对象增加蓝色火苗",
-            "121": self.file_operations.toggle_chest_highlight, 
-            # "6BOSS钥匙皮肤+掉落光柱",
-            "124": self.file_operations.toggle_mephisto_key,
-            # "屏蔽 地狱火炬火焰风暴特效",
-            "126": self.file_operations.toggle_hellfire_torch,
-            # "经验条变色",
-            "131": self.file_operations.toggle_experience_bar,
-
-            # "左键快速购买",
-            "141": self.file_operations.toggle_quick_buy,
-            # "正副手防呆提示"
-            "146": self.file_operations.toggle_weapon_swap,
-            # "默认开启迷你血条"
-            "147": self.file_operations.toggle_minihp_bar,
-            # "默认开启迷你盒子"
-            "148": self.file_operations.toggle_mini_cube,
-            # 隐藏任务日志提示按钮
-            "149": self.file_operations.hide_quest_button,
-            
-            # 角色特效
-            "301": self.file_operations.select_character_effects,
-            # 属性词条特效
-            "302": self.file_operations.select_entry_effects,
-            # 装备名称特效
-            "303": self.file_operations.select_item_name_effects,
-            # 屏蔽环境特效
-            "304": self.file_operations.hide_environmental_effects,
-            # 开启环境指引
-            "305": self.file_operations.show_environmental_pointer,
-            # 屏蔽角色特效
-            "306": self.file_operations.hide_character_effects,
-            # 开启角色特效
-            "307": self.file_operations.show_character_effects,
-
-
-            # 22#+符文名称大小
-            "402": self.file_operations.modify_rune_rectangle,
-
             # 道具屏蔽
             "501": self.file_operations.modify_item_names,
-            
             # 恐怖区域-服务器
             TERROR_ZONE_SERVER: self.file_operations.select_server,
             # 恐怖区域-语言
@@ -201,17 +143,21 @@ class FeatureController:
             # 网易国服语言翻译(装备/道具/符文/符文之语)
             NETEASE_LANGUAGE: self.file_operations.select_netease_language,
             # 暴雪国际服语言翻译(装备/道具/符文/符文之语)
-            BATTLE_NET_LANGUAGE: self.file_operations.select_netease_language,
+            BATTLE_NET_LANGUAGE: self.file_operations.select_battle_net_language,
             # 游戏设置
-            GAME_SETTING : self.file_operations.select_game_setting,
+            GAME_SETTING: self.file_operations.select_game_setting,
+            # 游戏设置2
+            GAME_SETTING2: self.file_operations.select_game_setting2,
+            # 控件设置
+            CONTROLS_SETTING: self.file_operations.select_controls_setting,
             # 额外的照亮范围
             LIGHT_REDIUS: self.file_operations.modify_character_player,
-            # 符文皮肤
-            RUNE_SKIN: self.file_operations.select_rune_skin,
             # HUD面板缩放
             HUD_SIZE: self.file_operations.select_hudpanel_size,
             # 传送门皮肤
             PORTAL_SKIN: self.file_operations.select_town_portal,
+            # 角色特效
+            CHARACTER_EFFECTS: self.file_operations.select_character_effects,
             # 弓/弩箭皮肤
             ARROW: self.file_operations.select_arrow_skin,
             # 魔法师
@@ -224,6 +170,8 @@ class FeatureController:
             DRU_SETTING: self.file_operations.druid_setting,
             # 刺客
             ASN_SETTING: self.file_operations.assassin_setting,
+            # 通用设置
+            COMMON_SETTING: self.file_operations.common_setting,
             # 佣兵-配置
             MERCENARY: self.file_operations.select_mercenary_skin,
             # 佣兵-图标位置
@@ -231,7 +179,27 @@ class FeatureController:
             # 怪物-配置
             MONSTER_SETTING: self.file_operations.select_monster_setting,
             # 怪物-导弹
-            MONSTER_MISSILE:self.file_operations.select_enemy_arrow_skin,
+            MONSTER_MISSILE: self.file_operations.select_enemy_arrow_skin,
+            # 装备-特效
+            EQIUPMENT_EFFECTS: self.file_operations.select_equipment_effects,
+            # 装备-设置
+            EQIUPMENT_SETTING: self.file_operations.select_equipment_setting,
+            # 装备-词缀特效
+            AFFIX_EFFECTS: self.file_operations.select_affix_effects,
+            # 装备-模型特效
+            MODEL_EFFECTS: self.file_operations.select_model_eccects,
+            # 符文皮肤
+            RUNE_SKIN: self.file_operations.select_rune_skin,
+            # 掉落光柱提醒
+            DROPED_LIGHT: self.file_operations.toggle_droped_light,
+            # 22#+符文名称大小(越大越容易发现/选中)
+            RUNE_SIZE: self.file_operations.modify_rune_rectangle,
+            # 语音提示
+            SOUND_PROMPTS: self.file_operations.toggle_sound,
+            # 环境-关闭特效
+            DISABLE_EFFECTS: self.file_operations.hide_environmental_effects,
+            # 环境-开启指引
+            ENABLE_POINTER: self.file_operations.show_environmental_pointer,
         }
 
     def apply_settings(self):

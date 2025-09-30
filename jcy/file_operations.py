@@ -74,35 +74,6 @@ class FileOperations:
         return (count, len(files))
 
 
-    def common_switch_hudwarnings(self, name: str, isEnabled: bool = False):
-        """开关 HUDWarnings控件"""
-        
-        _files = [
-            r"data/global/ui/layouts/hudwarningshd.json",
-        ]
-        count = 0
-        total = len(_files)
-        
-        # 1.load
-        json_data = None
-        json_path = os.path.join(MOD_PATH, _files[0])
-        with open(json_path, 'r', encoding='utf-8') as f:
-            json_data = json.load(f)
-
-        # 2.modify 
-        for child in json_data["children"]:
-            if(child["name"] == name):
-                child["fields"]["message"] = child["fields"]["default"] if isEnabled else ""
-            pass
-                
-        # 3.write
-        with open(json_path, 'w', encoding="utf-8") as f:
-            json.dump(json_data, f, ensure_ascii=False, indent=4)
-
-        count += 1
-        return (count, total)
-
-
     def toggle_droped_highlight(self, isEnabled: bool = False):
         """
         开关 掉落光柱
@@ -126,211 +97,6 @@ class FileOperations:
         )
 
         return self.common_rename(files_droped_highlight, isEnabled)
-
-
-    def toggle_chest_highlight(self, isEnabled: bool = False):
-        """
-        开关 箱子高亮
-        """
-        files_chest_highlight = (
-            r"data/hd/objects/armor_weapons/armor_stand_1.json",
-            r"data/hd/objects/armor_weapons/armor_stand_2.json",
-            r"data/hd/objects/armor_weapons/armor_stand_left.json",
-            r"data/hd/objects/armor_weapons/armor_stand_right.json",
-            r"data/hd/objects/armor_weapons/weapon_rack_1.json",
-            r"data/hd/objects/armor_weapons/weapon_rack_2.json",
-            r"data/hd/objects/armor_weapons/weapon_rack_left.json",
-            r"data/hd/objects/armor_weapons/weapon_rack_right.json",
-            r"data/hd/objects/caskets/act_3_dungeon_casket.json",
-            r"data/hd/objects/caskets/arcane_casket_1.json",
-            r"data/hd/objects/caskets/baal_tomb_1.json",
-            r"data/hd/objects/caskets/baal_tomb_2.json",
-            r"data/hd/objects/caskets/baal_tomb_3.json",
-            r"data/hd/objects/caskets/casket_1.json",
-            r"data/hd/objects/caskets/casket_2.json",
-            r"data/hd/objects/caskets/casket_3.json",
-            r"data/hd/objects/caskets/casket_4.json",
-            r"data/hd/objects/caskets/casket_5.json",
-            r"data/hd/objects/caskets/casket_6.json",
-            r"data/hd/objects/caskets/desert_coffin.json",
-            r"data/hd/objects/caskets/ground_tomb.json",
-            r"data/hd/objects/caskets/mummy_casket.json",
-            r"data/hd/objects/caskets/tomb_act_2.json",
-            r"data/hd/objects/caskets/tomb_baal_1.json",
-            r"data/hd/objects/caskets/tomb_baal_2.json",
-            r"data/hd/objects/caskets/tomb_baal_3.json",
-            r"data/hd/objects/caskets/tomb_baal_4.json",
-            r"data/hd/objects/caskets/tomb_baal_5.json",
-            r"data/hd/objects/caskets/tomb_baal_6.json",
-            r"data/hd/objects/caskets/tomb_baal_7.json",
-            r"data/hd/objects/caskets/tomb_baal_8.json",
-            r"data/hd/objects/caskets/tomb_baal_9.json",
-            r"data/hd/objects/caskets/yet_another_tomb.json",
-            r"data/hd/objects/characters/burned_body_1_act_1.json",
-            r"data/hd/objects/characters/corpse_1_act_3.json",
-            r"data/hd/objects/characters/corpse_2_act_3.json",
-            r"data/hd/objects/characters/corpse_3.json",
-            r"data/hd/objects/characters/corpse_skeleton.json",
-            r"data/hd/objects/characters/damned_v_1.json",
-            r"data/hd/objects/characters/damned_v_2.json",
-            r"data/hd/objects/characters/dead_barbarian.json",
-            r"data/hd/objects/characters/dead_palace_guard.json",
-            r"data/hd/objects/characters/dead_person.json",
-            r"data/hd/objects/characters/dead_person_again.json",
-            r"data/hd/objects/characters/dungeon_guy.json",
-            r"data/hd/objects/characters/guard_corpse_2_act_2.json",
-            r"data/hd/objects/characters/guard_on_a_stick.json",
-            r"data/hd/objects/characters/harem_guard_1.json",
-            r"data/hd/objects/characters/harem_guard_2.json",
-            r"data/hd/objects/characters/harem_guard_3.json",
-            r"data/hd/objects/characters/harem_guard_4.json",
-            r"data/hd/objects/characters/jack_in_the_box_1.json",
-            r"data/hd/objects/characters/jack_in_the_box_2.json",
-            r"data/hd/objects/characters/rogue_corpse_1.json",
-            r"data/hd/objects/characters/rogue_corpse_2.json",
-            r"data/hd/objects/characters/rogue_rolling_corpse_1.json",
-            r"data/hd/objects/characters/rogue_staked_corpse_1.json",
-            r"data/hd/objects/characters/rogue_staked_corpse_2.json",
-            r"data/hd/objects/characters/sewer_dungeon_body.json",
-            r"data/hd/objects/characters/wirt.json",
-            r"data/hd/objects/characters/yet_another_dead_body.json",
-            r"data/hd/objects/chests/arcane_chest_1.json",
-            r"data/hd/objects/chests/arcane_chest_2.json",
-            r"data/hd/objects/chests/arcane_chest_3.json",
-            r"data/hd/objects/chests/arcane_chest_4.json",
-            r"data/hd/objects/chests/chest_1_b.json",
-            r"data/hd/objects/chests/chest_2.json",
-            r"data/hd/objects/chests/chest_2_b.json",
-            r"data/hd/objects/chests/chest_3.json",
-            r"data/hd/objects/chests/chest_3_b.json",
-            r"data/hd/objects/chests/chest_4.json",
-            r"data/hd/objects/chests/chest_5.json",
-            r"data/hd/objects/chests/chest_6.json",
-            r"data/hd/objects/chests/chest_7.json",
-            r"data/hd/objects/chests/chest_8.json",
-            r"data/hd/objects/chests/chest_burial_r.json",
-            r"data/hd/objects/chests/chest_bur_i_all.json",
-            r"data/hd/objects/chests/chest_outdoor_1.json",
-            r"data/hd/objects/chests/chest_outdoor_2.json",
-            r"data/hd/objects/chests/chest_outdoor_3.json",
-            r"data/hd/objects/chests/chest_outdoor_4.json",
-            r"data/hd/objects/chests/cloth_chest_l.json",
-            r"data/hd/objects/chests/cloth_chest_r.json",
-            r"data/hd/objects/chests/consolation_chest.json",
-            r"data/hd/objects/chests/forgotten_tower_chest.json",
-            r"data/hd/objects/chests/jungle_chest.json",
-            r"data/hd/objects/chests/jungle_chest_2.json",
-            r"data/hd/objects/chests/large_chest_l.json",
-            r"data/hd/objects/chests/large_chest_r.json",
-            r"data/hd/objects/chests/sewer_chest.json",
-            r"data/hd/objects/chests/sewer_chest_large_left.json",
-            r"data/hd/objects/chests/sewer_chest_med_right.json",
-            r"data/hd/objects/chests/sewer_chest_tall_left.json",
-            r"data/hd/objects/chests/sewer_chest_tall_right.json",
-            r"data/hd/objects/chests/snow_chest_l.json",
-            r"data/hd/objects/chests/snow_chest_r.json",
-            r"data/hd/objects/chests/snow_cloth_chest_l.json",
-            r"data/hd/objects/chests/snow_cloth_chest_r.json",
-            r"data/hd/objects/chests/snow_wood_chest_l.json",
-            r"data/hd/objects/chests/snow_wood_chest_r.json",
-            r"data/hd/objects/chests/special_chest_100.json",
-            r"data/hd/objects/chests/tomb_chest_1.json",
-            r"data/hd/objects/chests/tomb_chest_2.json",
-            r"data/hd/objects/chests/travincal_chest_large_left.json",
-            r"data/hd/objects/chests/travincal_chest_large_right.json",
-            r"data/hd/objects/chests/travincal_chest_med_left.json",
-            r"data/hd/objects/chests/travincal_chest_med_right.json",
-            r"data/hd/objects/chests/wood_chest_l.json",
-            r"data/hd/objects/chests/wood_chest_r.json",
-            r"data/hd/objects/destructibles/barrel.json",
-            r"data/hd/objects/destructibles/barrel_3.json",
-            r"data/hd/objects/destructibles/barrel_exploding.json",
-            r"data/hd/objects/destructibles/basket_1.json",
-            r"data/hd/objects/destructibles/basket_2.json",
-            r"data/hd/objects/destructibles/box_1.json",
-            r"data/hd/objects/destructibles/box_2.json",
-            r"data/hd/objects/destructibles/crate.json",
-            r"data/hd/objects/destructibles/dungeon_basket.json",
-            r"data/hd/objects/destructibles/dungeon_rock_pile.json",
-            r"data/hd/objects/destructibles/exploding_chest_100.json",
-            r"data/hd/objects/destructibles/e_jar_1.json",
-            r"data/hd/objects/destructibles/e_jar_2.json",
-            r"data/hd/objects/destructibles/e_jar_3.json",
-            r"data/hd/objects/destructibles/ice_cave_evil_urn.json",
-            r"data/hd/objects/destructibles/ice_cave_jar_1.json",
-            r"data/hd/objects/destructibles/ice_cave_jar_2.json",
-            r"data/hd/objects/destructibles/ice_cave_jar_3.json",
-            r"data/hd/objects/destructibles/ice_cave_jar_4.json",
-            r"data/hd/objects/destructibles/ice_cave_jar_5.json",
-            r"data/hd/objects/destructibles/jug_outdoor_1.json",
-            r"data/hd/objects/destructibles/jug_outdoor_2.json",
-            r"data/hd/objects/destructibles/pillar_2.json",
-            r"data/hd/objects/destructibles/urn_1.json",
-            r"data/hd/objects/destructibles/urn_2.json",
-            r"data/hd/objects/destructibles/urn_3.json",
-            r"data/hd/objects/destructibles/urn_4.json",
-            r"data/hd/objects/destructibles/urn_5.json",
-            r"data/hd/objects/env_manmade/barrel_2.json",
-            r"data/hd/objects/env_manmade/bookshelf_1.json",
-            r"data/hd/objects/env_manmade/bookshelf_2.json",
-            r"data/hd/objects/env_manmade/compelling_orb.json",
-            r"data/hd/objects/env_manmade/hole_in_ground.json",
-            r"data/hd/objects/env_organic/cocoon_1.json",
-            r"data/hd/objects/env_organic/cocoon_2.json",
-            r"data/hd/objects/env_organic/goo_pile.json",
-            r"data/hd/objects/env_organic/sewer_rat_nest.json",
-            r"data/hd/objects/env_pillars/ancients_altar.json",
-            r"data/hd/objects/env_pillars/ice_cave_object_1.json",
-            r"data/hd/objects/env_pillars/inside_altar.json",
-            r"data/hd/objects/env_pillars/jungle_pillar_0.json",
-            r"data/hd/objects/env_pillars/jungle_pillar_1.json",
-            r"data/hd/objects/env_pillars/jungle_pillar_2.json",
-            r"data/hd/objects/env_pillars/jungle_pillar_3.json",
-            r"data/hd/objects/env_pillars/mephisto_pillar_1.json",
-            r"data/hd/objects/env_pillars/mephisto_pillar_2.json",
-            r"data/hd/objects/env_pillars/mephisto_pillar_3.json",
-            r"data/hd/objects/env_pillars/obelisk_1.json",
-            r"data/hd/objects/env_pillars/obelisk_2.json",
-            r"data/hd/objects/env_pillars/object_1_temple.json",
-            r"data/hd/objects/env_pillars/object_2_temple.json",
-            r"data/hd/objects/env_pillars/snowy_generic_name.json",
-            r"data/hd/objects/env_pillars/steeg_stone.json",
-            r"data/hd/objects/env_pillars/stone_stash.json",
-            r"data/hd/objects/env_pillars/tower_tome.json",
-            r"data/hd/objects/env_skeletons/e_shit.json",
-            r"data/hd/objects/env_skeletons/hell_bone_pile.json",
-            r"data/hd/objects/env_skeletons/inner_hell_object_1.json",
-            r"data/hd/objects/env_skeletons/inner_hell_object_2.json",
-            r"data/hd/objects/env_skeletons/inner_hell_object_3.json",
-            r"data/hd/objects/env_skeletons/outer_hell_object_1.json",
-            r"data/hd/objects/env_skeletons/outer_hell_skeleton.json",
-            r"data/hd/objects/env_skeletons/skull_pile.json",
-            r"data/hd/objects/env_stone/hidden_stash.json",
-            r"data/hd/objects/env_stone/rock.json",
-            r"data/hd/objects/env_stone/rock_c.json",
-            r"data/hd/objects/env_stone/rock_d.json",
-            r"data/hd/objects/env_wood/log.json",
-        )
-
-        return self.common_rename(files_chest_highlight, isEnabled)
-
-    
-    def toggle_weapon_swap(self, isEnabled: bool = False):
-        """开启正副手防呆"""
-        name = "OpenWeaponSwap"
-        return self.common_switch_hudwarnings(name, isEnabled)
-
-
-    def toggle_minihp_bar(self, isEnabled: bool = False):
-        """默认开启迷你血条"""
-        name = "OpenMiniHp"
-        return self.common_switch_hudwarnings(name, isEnabled)
-
-    
-    def toggle_mini_cube(self, isEnabled: bool = False):
-        """默认开启迷你盒子"""
-        name = "OpenMiniCute"
-        return self.common_switch_hudwarnings(name, isEnabled)
 
 
     def hide_quest_button(self, isEnabled: bool = False):
@@ -431,18 +197,6 @@ class FileOperations:
         return self.common_rename(files_escape, isEnabled) 
     
 
-    def toggle_experience_bar(self, isEnabled: bool = False):
-        """
-        开关 经验条变色
-        """
-        files_experience_bar = (
-            r"data/hd/global/ui/panel/hud_02/experience_bar.lowend.sprite",
-            r"data/hd/global/ui/panel/hud_02/experience_bar.sprite",
-        )
-
-        return self.common_rename(files_experience_bar, isEnabled)
-
-
     def toggle_sound(self, isEnabled: bool = False):
         """
         开关 咒符/符文/技能结束提示音
@@ -453,17 +207,6 @@ class FileOperations:
         )
 
         return self.common_rename(files_sound, isEnabled)
-
-
-    def toggle_hd_global_palette_randtransforms_json(self, isEnabled: bool = False):
-        """
-        开关 变色精英怪
-        """
-        files_random_elite = (
-            r"data/hd/global/palette/randtransforms.json",
-        )
-
-        return self.common_rename(files_random_elite, isEnabled)
 
 
     def toggle_global_excel_affixes(self, isEnabled: bool = False):
@@ -491,7 +234,7 @@ class FileOperations:
 
     def toggle_hellfire_torch(self, isEnabled: bool = False):
         """
-        "126": "屏蔽 地狱火炬火焰风暴特效",
+        126": "屏蔽 地狱火炬火焰风暴特效",
         """
         paths = [
             r"data/global/excel/skills.txt",
@@ -773,6 +516,27 @@ class FileOperations:
                     os.remove(temp_path)
         return (count, total)
 
+    
+    def select_equipment_setting(self, keys: list):
+        """装备-设置"""
+        if keys is None:
+            return (0, 0)
+
+        # 屏蔽 劣等的/損壞的/破舊的 武器装备
+        toggle1 = "1" in keys
+        res1 = self.toggle_low_quality(toggle1)
+
+        # 开启 蓝装染色
+        toggle2 = "2" in keys
+        res2 = self.toggle_global_excel_affixes(toggle2)
+        
+        funcs = []
+        funcs.append(res1)
+        funcs.append(res2)
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
 
     def select_mercenary_skin(self, keys: list):
         """选择佣兵皮肤"""
@@ -1002,8 +766,12 @@ class FileOperations:
                 r"data/hd/character/monsters.json",
             ],
             # 屏蔽A5督军山克死亡特效
-            "4":[
+            "4": [
                 r"data/global/excel/missiles.txt",
+            ],
+            # 蓝色精英怪物随机染色
+            "5": [
+                r"data/hd/global/palette/randtransforms.json",
             ]
         }
 
@@ -1102,352 +870,6 @@ class FileOperations:
         except Exception as e:
             print(e)
         return (count, total)
-
-
-    def toggle_env_vis(self, isEnabled: bool = False):
-        """
-        画面变亮
-        """
-        files_env_vis = [
-            r"data/hd/env/vis/1_default_day.json",
-            r"data/hd/env/vis/act1_barracks_dawn1.json",
-            r"data/hd/env/vis/act1_barracks_dawn2.json",
-            r"data/hd/env/vis/act1_barracks_day.json",
-            r"data/hd/env/vis/act1_barracks_desecrated.json",
-            r"data/hd/env/vis/act1_barracks_dusk1.json",
-            r"data/hd/env/vis/act1_barracks_dusk2.json",
-            r"data/hd/env/vis/act1_barracks_night.json",
-            r"data/hd/env/vis/act1_campfire_dawn1.json",
-            r"data/hd/env/vis/act1_campfire_dawn2.json",
-            r"data/hd/env/vis/act1_campfire_day.json",
-            r"data/hd/env/vis/act1_campfire_dusk1.json",
-            r"data/hd/env/vis/act1_campfire_dusk2.json",
-            r"data/hd/env/vis/act1_campfire_night.json",
-            r"data/hd/env/vis/act1_catacombs_dawn1.json",
-            r"data/hd/env/vis/act1_catacombs_dawn2.json",
-            r"data/hd/env/vis/act1_catacombs_day.json",
-            r"data/hd/env/vis/act1_catacombs_desecrated.json",
-            r"data/hd/env/vis/act1_catacombs_dusk1.json",
-            r"data/hd/env/vis/act1_catacombs_dusk2.json",
-            r"data/hd/env/vis/act1_catacombs_night.json",
-            r"data/hd/env/vis/act1_cathedral_dawn1.json",
-            r"data/hd/env/vis/act1_cathedral_dawn2.json",
-            r"data/hd/env/vis/act1_cathedral_day.json",
-            r"data/hd/env/vis/act1_cathedral_dusk1.json",
-            r"data/hd/env/vis/act1_cathedral_dusk2.json",
-            r"data/hd/env/vis/act1_cathedral_night.json",
-            r"data/hd/env/vis/act1_caves_dawn1.json",
-            r"data/hd/env/vis/act1_caves_dawn2.json",
-            r"data/hd/env/vis/act1_caves_day.json",
-            r"data/hd/env/vis/act1_caves_desecrated.json",
-            r"data/hd/env/vis/act1_caves_dusk1.json",
-            r"data/hd/env/vis/act1_caves_dusk2.json",
-            r"data/hd/env/vis/act1_caves_night.json",
-            r"data/hd/env/vis/act1_court_dawn1.json",
-            r"data/hd/env/vis/act1_court_dawn2.json",
-            r"data/hd/env/vis/act1_court_day.json",
-            r"data/hd/env/vis/act1_court_desecrated.json",
-            r"data/hd/env/vis/act1_court_dusk1.json",
-            r"data/hd/env/vis/act1_court_dusk2.json",
-            r"data/hd/env/vis/act1_court_night.json",
-            r"data/hd/env/vis/act1_crypt_dawn1.json",
-            r"data/hd/env/vis/act1_crypt_dawn2.json",
-            r"data/hd/env/vis/act1_crypt_day.json",
-            r"data/hd/env/vis/act1_crypt_desecrated.json",
-            r"data/hd/env/vis/act1_crypt_dusk1.json",
-            r"data/hd/env/vis/act1_crypt_dusk2.json",
-            r"data/hd/env/vis/act1_crypt_night.json",
-            r"data/hd/env/vis/act1_outdoors_dawn1.json",
-            r"data/hd/env/vis/act1_outdoors_dawn2.json",
-            r"data/hd/env/vis/act1_outdoors_day.json",
-            r"data/hd/env/vis/act1_outdoors_desecrated.json",
-            r"data/hd/env/vis/act1_outdoors_dusk1.json",
-            r"data/hd/env/vis/act1_outdoors_dusk2.json",
-            r"data/hd/env/vis/act1_outdoors_interior01_vis.json",
-            r"data/hd/env/vis/act1_outdoors_night.json",
-            r"data/hd/env/vis/act1_tristram_dawn1.json",
-            r"data/hd/env/vis/act1_tristram_dawn2.json",
-            r"data/hd/env/vis/act1_tristram_day.json",
-            r"data/hd/env/vis/act1_tristram_dusk1.json",
-            r"data/hd/env/vis/act1_tristram_dusk2.json",
-            r"data/hd/env/vis/act1_tristram_night.json",
-            r"data/hd/env/vis/act2_arcane_dawn1.json",
-            r"data/hd/env/vis/act2_arcane_dawn2.json",
-            r"data/hd/env/vis/act2_arcane_day.json",
-            r"data/hd/env/vis/act2_arcane_desecrated.json",
-            r"data/hd/env/vis/act2_arcane_dusk1.json",
-            r"data/hd/env/vis/act2_arcane_dusk2.json",
-            r"data/hd/env/vis/act2_arcane_night.json",
-            r"data/hd/env/vis/act2_bigcliff_dawn1.json",
-            r"data/hd/env/vis/act2_bigcliff_dawn2.json",
-            r"data/hd/env/vis/act2_bigcliff_day.json",
-            r"data/hd/env/vis/act2_bigcliff_dusk1.json",
-            r"data/hd/env/vis/act2_bigcliff_dusk2.json",
-            r"data/hd/env/vis/act2_bigcliff_night.json",
-            r"data/hd/env/vis/act2_frontend_dawn1.json",
-            r"data/hd/env/vis/act2_frontend_dawn2.json",
-            r"data/hd/env/vis/act2_frontend_day.json",
-            r"data/hd/env/vis/act2_frontend_dusk1.json",
-            r"data/hd/env/vis/act2_frontend_dusk2.json",
-            r"data/hd/env/vis/act2_frontend_night.json",
-            r"data/hd/env/vis/act2_maggot_dawn1.json",
-            r"data/hd/env/vis/act2_maggot_dawn2.json",
-            r"data/hd/env/vis/act2_maggot_day.json",
-            r"data/hd/env/vis/act2_maggot_desecrated.json",
-            r"data/hd/env/vis/act2_maggot_dusk1.json",
-            r"data/hd/env/vis/act2_maggot_dusk2.json",
-            r"data/hd/env/vis/act2_maggot_night.json",
-            r"data/hd/env/vis/act2_outdoors_dawn1.json",
-            r"data/hd/env/vis/act2_outdoors_dawn2.json",
-            r"data/hd/env/vis/act2_outdoors_day.json",
-            r"data/hd/env/vis/act2_outdoors_dusk1.json",
-            r"data/hd/env/vis/act2_outdoors_dusk2.json",
-            r"data/hd/env/vis/act2_outdoors_night.json",
-            r"data/hd/env/vis/act2_palace_cells_dawn1.json",
-            r"data/hd/env/vis/act2_palace_cells_dawn2.json",
-            r"data/hd/env/vis/act2_palace_cells_day.json",
-            r"data/hd/env/vis/act2_palace_cells_desecrated.json",
-            r"data/hd/env/vis/act2_palace_cells_dusk1.json",
-            r"data/hd/env/vis/act2_palace_cells_dusk2.json",
-            r"data/hd/env/vis/act2_palace_cells_night.json",
-            r"data/hd/env/vis/act2_palace_clean_dawn1.json",
-            r"data/hd/env/vis/act2_palace_clean_dawn2.json",
-            r"data/hd/env/vis/act2_palace_clean_day.json",
-            r"data/hd/env/vis/act2_palace_clean_dusk1.json",
-            r"data/hd/env/vis/act2_palace_clean_dusk2.json",
-            r"data/hd/env/vis/act2_palace_clean_night.json",
-            r"data/hd/env/vis/act2_palace_dawn1.json",
-            r"data/hd/env/vis/act2_palace_dawn2.json",
-            r"data/hd/env/vis/act2_palace_day.json",
-            r"data/hd/env/vis/act2_palace_desecrated.json",
-            r"data/hd/env/vis/act2_palace_dusk1.json",
-            r"data/hd/env/vis/act2_palace_dusk2.json",
-            r"data/hd/env/vis/act2_palace_night.json",
-            r"data/hd/env/vis/act2_ruin_dawn1.json",
-            r"data/hd/env/vis/act2_ruin_dawn2.json",
-            r"data/hd/env/vis/act2_ruin_day.json",
-            r"data/hd/env/vis/act2_ruin_dusk1.json",
-            r"data/hd/env/vis/act2_ruin_dusk2.json",
-            r"data/hd/env/vis/act2_ruin_night.json",
-            r"data/hd/env/vis/act2_sewer_dawn1.json",
-            r"data/hd/env/vis/act2_sewer_dawn2.json",
-            r"data/hd/env/vis/act2_sewer_day.json",
-            r"data/hd/env/vis/act2_sewer_desecrated.json",
-            r"data/hd/env/vis/act2_sewer_dusk1.json",
-            r"data/hd/env/vis/act2_sewer_dusk2.json",
-            r"data/hd/env/vis/act2_sewer_night.json",
-            r"data/hd/env/vis/act2_tainted_sun.json",
-            r"data/hd/env/vis/act2_tomb_dawn1.json",
-            r"data/hd/env/vis/act2_tomb_dawn2.json",
-            r"data/hd/env/vis/act2_tomb_day.json",
-            r"data/hd/env/vis/act2_tomb_desecrated.json",
-            r"data/hd/env/vis/act2_tomb_dusk1.json",
-            r"data/hd/env/vis/act2_tomb_dusk2.json",
-            r"data/hd/env/vis/act2_tomb_night.json",
-            r"data/hd/env/vis/act2_town_dawn1.json",
-            r"data/hd/env/vis/act2_town_dawn2.json",
-            r"data/hd/env/vis/act2_town_day.json",
-            r"data/hd/env/vis/act2_town_desecrated.json",
-            r"data/hd/env/vis/act2_town_dusk1.json",
-            r"data/hd/env/vis/act2_town_dusk2.json",
-            r"data/hd/env/vis/act2_town_interior_vis.json",
-            r"data/hd/env/vis/act2_town_night.json",
-            r"data/hd/env/vis/act3_docktown_dawn1.json",
-            r"data/hd/env/vis/act3_docktown_dawn2.json",
-            r"data/hd/env/vis/act3_docktown_day.json",
-            r"data/hd/env/vis/act3_docktown_desecrated.json",
-            r"data/hd/env/vis/act3_docktown_dusk1.json",
-            r"data/hd/env/vis/act3_docktown_dusk2.json",
-            r"data/hd/env/vis/act3_docktown_night.json",
-            r"data/hd/env/vis/act3_jungle_dawn1.json",
-            r"data/hd/env/vis/act3_jungle_dawn2.json",
-            r"data/hd/env/vis/act3_jungle_day.json",
-            r"data/hd/env/vis/act3_jungle_dungeon_dawn1.json",
-            r"data/hd/env/vis/act3_jungle_dungeon_dawn2.json",
-            r"data/hd/env/vis/act3_jungle_dungeon_day.json",
-            r"data/hd/env/vis/act3_jungle_dungeon_desecrated.json",
-            r"data/hd/env/vis/act3_jungle_dungeon_dusk1.json",
-            r"data/hd/env/vis/act3_jungle_dungeon_dusk2.json",
-            r"data/hd/env/vis/act3_jungle_dungeon_night.json",
-            r"data/hd/env/vis/act3_jungle_dusk1.json",
-            r"data/hd/env/vis/act3_jungle_dusk2.json",
-            r"data/hd/env/vis/act3_jungle_night.json",
-            r"data/hd/env/vis/act3_kurast_dawn1.json",
-            r"data/hd/env/vis/act3_kurast_dawn2.json",
-            r"data/hd/env/vis/act3_kurast_day.json",
-            r"data/hd/env/vis/act3_kurast_dusk1.json",
-            r"data/hd/env/vis/act3_kurast_dusk2.json",
-            r"data/hd/env/vis/act3_kurast_night.json",
-            r"data/hd/env/vis/act3_kurast_stone_tile_dawn1.json",
-            r"data/hd/env/vis/act3_kurast_stone_tile_dawn2.json",
-            r"data/hd/env/vis/act3_kurast_stone_tile_day.json",
-            r"data/hd/env/vis/act3_kurast_stone_tile_dusk1.json",
-            r"data/hd/env/vis/act3_kurast_stone_tile_dusk2.json",
-            r"data/hd/env/vis/act3_kurast_stone_tile_night.json",
-            r"data/hd/env/vis/act3_sewer_dawn1.json",
-            r"data/hd/env/vis/act3_sewer_dawn2.json",
-            r"data/hd/env/vis/act3_sewer_day.json",
-            r"data/hd/env/vis/act3_sewer_desecrated.json",
-            r"data/hd/env/vis/act3_sewer_dusk1.json",
-            r"data/hd/env/vis/act3_sewer_dusk2.json",
-            r"data/hd/env/vis/act3_sewer_night.json",
-            r"data/hd/env/vis/act3_spider_dawn1.json",
-            r"data/hd/env/vis/act3_spider_dawn2.json",
-            r"data/hd/env/vis/act3_spider_day.json",
-            r"data/hd/env/vis/act3_spider_desecrated.json",
-            r"data/hd/env/vis/act3_spider_dusk1.json",
-            r"data/hd/env/vis/act3_spider_dusk2.json",
-            r"data/hd/env/vis/act3_spider_night.json",
-            r"data/hd/env/vis/act3_temple_dawn1.json",
-            r"data/hd/env/vis/act3_temple_dawn2.json",
-            r"data/hd/env/vis/act3_temple_day.json",
-            r"data/hd/env/vis/act3_temple_desecrated.json",
-            r"data/hd/env/vis/act3_temple_dusk1.json",
-            r"data/hd/env/vis/act3_temple_dusk2.json",
-            r"data/hd/env/vis/act3_temple_night.json",
-            r"data/hd/env/vis/act3_travincal_dawn1.json",
-            r"data/hd/env/vis/act3_travincal_dawn2.json",
-            r"data/hd/env/vis/act3_travincal_day.json",
-            r"data/hd/env/vis/act3_travincal_desecrated.json",
-            r"data/hd/env/vis/act3_travincal_dusk1.json",
-            r"data/hd/env/vis/act3_travincal_dusk2.json",
-            r"data/hd/env/vis/act3_travincal_night.json",
-            r"data/hd/env/vis/act4_diab_dawn1.json",
-            r"data/hd/env/vis/act4_diab_dawn2.json",
-            r"data/hd/env/vis/act4_diab_day.json",
-            r"data/hd/env/vis/act4_diab_dusk1.json",
-            r"data/hd/env/vis/act4_diab_dusk2.json",
-            r"data/hd/env/vis/act4_diab_night.json",
-            r"data/hd/env/vis/act4_fort_dawn1.json",
-            r"data/hd/env/vis/act4_fort_dawn2.json",
-            r"data/hd/env/vis/act4_fort_day.json",
-            r"data/hd/env/vis/act4_fort_dusk1.json",
-            r"data/hd/env/vis/act4_fort_dusk2.json",
-            r"data/hd/env/vis/act4_fort_interior_vis.json",
-            r"data/hd/env/vis/act4_fort_night.json",
-            r"data/hd/env/vis/act4_lava_dawn1.json",
-            r"data/hd/env/vis/act4_lava_dawn2.json",
-            r"data/hd/env/vis/act4_lava_day.json",
-            r"data/hd/env/vis/act4_lava_desecrated.json",
-            r"data/hd/env/vis/act4_lava_dusk1.json",
-            r"data/hd/env/vis/act4_lava_dusk2.json",
-            r"data/hd/env/vis/act4_lava_night.json",
-            r"data/hd/env/vis/act4_mesa_dawn1.json",
-            r"data/hd/env/vis/act4_mesa_dawn2.json",
-            r"data/hd/env/vis/act4_mesa_day.json",
-            r"data/hd/env/vis/act4_mesa_desecrated.json",
-            r"data/hd/env/vis/act4_mesa_dusk1.json",
-            r"data/hd/env/vis/act4_mesa_dusk2.json",
-            r"data/hd/env/vis/act4_mesa_night.json",
-            r"data/hd/env/vis/expansion_baallair_dawn1.json",
-            r"data/hd/env/vis/expansion_baallair_dawn2.json",
-            r"data/hd/env/vis/expansion_baallair_day.json",
-            r"data/hd/env/vis/expansion_baallair_dusk1.json",
-            r"data/hd/env/vis/expansion_baallair_dusk2.json",
-            r"data/hd/env/vis/expansion_baallair_night.json",
-            r"data/hd/env/vis/expansion_baallair_throneroom_dawn1.json",
-            r"data/hd/env/vis/expansion_baallair_throneroom_dawn2.json",
-            r"data/hd/env/vis/expansion_baallair_throneroom_day.json",
-            r"data/hd/env/vis/expansion_baallair_throneroom_desecrated.json",
-            r"data/hd/env/vis/expansion_baallair_throneroom_dusk1.json",
-            r"data/hd/env/vis/expansion_baallair_throneroom_dusk2.json",
-            r"data/hd/env/vis/expansion_baallair_throneroom_night.json",
-            r"data/hd/env/vis/expansion_icecave_dawn1.json",
-            r"data/hd/env/vis/expansion_icecave_dawn2.json",
-            r"data/hd/env/vis/expansion_icecave_day.json",
-            r"data/hd/env/vis/expansion_icecave_desecrated.json",
-            r"data/hd/env/vis/expansion_icecave_dusk1.json",
-            r"data/hd/env/vis/expansion_icecave_dusk2.json",
-            r"data/hd/env/vis/expansion_icecave_night.json",
-            r"data/hd/env/vis/expansion_mountaintop_dawn1.json",
-            r"data/hd/env/vis/expansion_mountaintop_dawn2.json",
-            r"data/hd/env/vis/expansion_mountaintop_day.json",
-            r"data/hd/env/vis/expansion_mountaintop_desecrated.json",
-            r"data/hd/env/vis/expansion_mountaintop_dusk1.json",
-            r"data/hd/env/vis/expansion_mountaintop_dusk2.json",
-            r"data/hd/env/vis/expansion_mountaintop_night.json",
-            r"data/hd/env/vis/expansion_ruins_dawn1.json",
-            r"data/hd/env/vis/expansion_ruins_dawn2.json",
-            r"data/hd/env/vis/expansion_ruins_day.json",
-            r"data/hd/env/vis/expansion_ruins_dusk1.json",
-            r"data/hd/env/vis/expansion_ruins_dusk2.json",
-            r"data/hd/env/vis/expansion_ruins_night.json",
-            r"data/hd/env/vis/expansion_ruins_snow_dawn1.json",
-            r"data/hd/env/vis/expansion_ruins_snow_dawn2.json",
-            r"data/hd/env/vis/expansion_ruins_snow_day.json",
-            r"data/hd/env/vis/expansion_ruins_snow_dusk1.json",
-            r"data/hd/env/vis/expansion_ruins_snow_dusk2.json",
-            r"data/hd/env/vis/expansion_ruins_snow_night.json",
-            r"data/hd/env/vis/expansion_siege_dawn1.json",
-            r"data/hd/env/vis/expansion_siege_dawn2.json",
-            r"data/hd/env/vis/expansion_siege_day.json",
-            r"data/hd/env/vis/expansion_siege_desecrated.json",
-            r"data/hd/env/vis/expansion_siege_dusk1.json",
-            r"data/hd/env/vis/expansion_siege_dusk2.json",
-            r"data/hd/env/vis/expansion_siege_night.json",
-            r"data/hd/env/vis/expansion_siege_town_dawn1.json",
-            r"data/hd/env/vis/expansion_siege_town_dawn2.json",
-            r"data/hd/env/vis/expansion_siege_town_day.json",
-            r"data/hd/env/vis/expansion_siege_town_dusk1.json",
-            r"data/hd/env/vis/expansion_siege_town_dusk2.json",
-            r"data/hd/env/vis/expansion_siege_town_night.json",
-            r"data/hd/env/vis/expansion_town_dawn1.json",
-            r"data/hd/env/vis/expansion_town_dawn2.json",
-            r"data/hd/env/vis/expansion_town_day.json",
-            r"data/hd/env/vis/expansion_town_dusk1.json",
-            r"data/hd/env/vis/expansion_town_dusk2.json",
-            r"data/hd/env/vis/expansion_town_night.json",
-            r"data/hd/env/vis/expansion_wildtemple_dawn1.json",
-            r"data/hd/env/vis/expansion_wildtemple_dawn2.json",
-            r"data/hd/env/vis/expansion_wildtemple_day.json",
-            r"data/hd/env/vis/expansion_wildtemple_desecrated.json",
-            r"data/hd/env/vis/expansion_wildtemple_dusk1.json",
-            r"data/hd/env/vis/expansion_wildtemple_dusk2.json",
-            r"data/hd/env/vis/expansion_wildtemple_night.json",
-            r"data/hd/env/vis/expansion_wildtemple_tempenter_dawn1.json",
-            r"data/hd/env/vis/expansion_wildtemple_tempenter_dawn2.json",
-            r"data/hd/env/vis/expansion_wildtemple_tempenter_day.json",
-            r"data/hd/env/vis/expansion_wildtemple_tempenter_desecrated.json",
-            r"data/hd/env/vis/expansion_wildtemple_tempenter_dusk1.json",
-            r"data/hd/env/vis/expansion_wildtemple_tempenter_dusk2.json",
-            r"data/hd/env/vis/expansion_wildtemple_tempenter_night.json",
-            r"data/hd/env/vis/graphics_dawn1.json",
-            r"data/hd/env/vis/graphics_dawn2.json",
-            r"data/hd/env/vis/graphics_day.json",
-            r"data/hd/env/vis/graphics_dusk1.json",
-            r"data/hd/env/vis/graphics_dusk2.json",
-            r"data/hd/env/vis/graphics_night.json",
-            r"data/hd/env/vis/lightroom_dawn1.json",
-            r"data/hd/env/vis/lightroom_dawn2.json",
-            r"data/hd/env/vis/lightroom_day.json",
-            r"data/hd/env/vis/lightroom_dusk1.json",
-            r"data/hd/env/vis/lightroom_dusk2.json",
-            r"data/hd/env/vis/lightroom_night.json",
-            r"data/hd/env/vis/viewer_units.json",
-            r"data/hd/env/vis/visbox_act1_cathedral_vis.json",
-            r"data/hd/env/vis/visbox_docktown_interior01_vis.json",
-            r"data/hd/env/vis/visbox_harrograth_vis.json",
-            r"data/hd/env/vis/visbox_kurast_hut_ambient_vis.json",
-            r"data/hd/env/vis/visbox_kurast_temple_ambient_vis.json",
-            r"data/hd/env/vis/visbox_monastry_vis.json",
-            r"data/hd/env/vis/visbox_tempenter_darkness_vis.json",
-            r"data/hd/env/vis/visbox_tempenter_roof_vis.json",
-            r"data/hd/env/vis/visbox_tower_vis.json",
-        ]
-        
-        return self.common_rename(files_env_vis, isEnabled)
-
-
-    def toggle_shrine(self, isEnabled: bool = False):
-        """
-        经验/宝石祭坛特效
-        """
-        files_common_shrine = [
-            r"data/hd/overlays/common/shrine_experience.json",
-            r"data/hd/overlays/common/shrine_stamina.json",
-        ]
-
-        return self.common_rename(files_common_shrine, isEnabled)
 
 
     def select_hireables_panel(self, radio: str = "0"):
@@ -1719,8 +1141,8 @@ class FileOperations:
         return (count, total)
 
 
-    def select_entry_effects(self, keys: list):
-        """属性词条特效"""
+    def select_affix_effects(self, keys: list):
+        """装备-词缀特效"""
 
         if keys is None:
             return (0, 0)
@@ -1770,8 +1192,50 @@ class FileOperations:
         return (count, 1)
 
 
-    def select_item_name_effects(self, keys: list):
-        """装备名称特效"""
+    def select_model_eccects(self, keys: list):
+        """装备-模型特效"""
+        if list is None:
+            return (0, 0)
+        
+        # 文件
+        _files = {
+            # 隐藏 头饰模型
+            "1" : [
+                r"data/hd/items/armor/circlet/circlet.json",
+                r"data/hd/items/armor/circlet/coronet.json",
+                r"data/hd/items/armor/circlet/diadem.json",
+                r"data/hd/items/armor/circlet/tiara.json",
+            ],
+            # 开启 投掷标枪-闪电枪特效
+            "2":[
+                r"data/hd/missiles/glaive.json",
+                r"data/hd/missiles/javelin.json",
+                r"data/hd/missiles/maiden_javelin_missile.json",
+                r"data/hd/missiles/short_spear_missile.json",
+                r"data/hd/missiles/throwing_spear_missile.json",
+            ],
+            # 开启 投掷飞斧-闪电拖尾特效
+            "3": [
+                r"data/hd/missiles/balanced_axe_missile.json",
+                r"data/hd/missiles/balanced_knife_missile.json",
+                r"data/hd/missiles/missile_dagger.json",
+                r"data/hd/missiles/missile_hand_axe.json",
+            ],
+        }
+
+        funcs = []
+        for key, files in _files.items():
+            sub = self.common_rename(files, key in keys)
+            funcs.append(sub)
+
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
+
+
+    def select_equipment_effects(self, keys: list):
+        """装备特效"""
 
         if keys is None:
             return (0, 0)
@@ -2355,38 +1819,6 @@ class FileOperations:
         return summary
 
 
-    def hide_character_effects(self, keys: list):
-        """屏蔽角色特效"""
-
-        if keys is None:
-            return (0, 0)
-        
-        # 文件
-        _files = {
-            
-            
-            # 头饰-外观
-            "5": [
-                r"data/hd/items/armor/circlet/circlet.json",
-                r"data/hd/items/armor/circlet/coronet.json",
-                r"data/hd/items/armor/circlet/diadem.json",
-                r"data/hd/items/armor/circlet/tiara.json",
-            ]
-        }
-
-        funcs = []
-        for i in range(1, len(_files)+1):
-            key = str(i)
-            files = _files[key]
-            sub = self.common_rename(files, key in keys)
-            funcs.append(sub)
-
-        results = [f for f in funcs]
-        summary = tuple(sum(values) for values in zip(*results))
-        
-        return summary
-
-
     def show_character_effects(self, keys: list):
         """开启角色特效"""
 
@@ -2397,21 +1829,7 @@ class FileOperations:
         _files = {
             
             
-            # 标枪闪电枪
-            "3":[
-                r"data/hd/missiles/glaive.json",
-                r"data/hd/missiles/javelin.json",
-                r"data/hd/missiles/maiden_javelin_missile.json",
-                r"data/hd/missiles/short_spear_missile.json",
-                r"data/hd/missiles/throwing_spear_missile.json",
-            ],
-            # 飞斧闪电尾
-            "4": [
-                r"data/hd/missiles/balanced_axe_missile.json",
-                r"data/hd/missiles/balanced_knife_missile.json",
-                r"data/hd/missiles/missile_dagger.json",
-                r"data/hd/missiles/missile_hand_axe.json",
-            ],
+            
 
         }
 
@@ -2522,9 +1940,7 @@ class FileOperations:
         }
 
         funcs = []
-        for i in range(1, 7):
-            key = str(i)
-            files = _files[key]
+        for key, files in _files.items():
             sub = self.common_rename(files, key in keys)
             funcs.append(sub)
 
@@ -2532,17 +1948,6 @@ class FileOperations:
         summary = tuple(sum(values) for values in zip(*results))
         
         return summary
-
-
-    def toggle_quick_buy(self, isEnabled: bool = False):
-        """
-        左键快速购买
-        """
-        _files = [
-            r"data/global/ui/layouts/vendorpanellayouthd.json",
-        ]
-
-        return self.common_rename(_files, isEnabled)
 
 
     def load_filter_config(self):
@@ -2602,12 +2007,12 @@ class FileOperations:
             item_name[ENUS] = UE01A + item_name[ENUS].removeprefix(UE01A) if filter else item_name[ENUS].removeprefix(UE01A)
             
             # 备份&转换
-            item[ZHCN2] = item[ZHCN]
-            item[ZHTW2] = item[ZHTW]
+            item_name[ZHCN2] = item_name[ZHCN]
+            item_name[ZHTW2] = item_name[ZHTW]
             if self.controller.current_states.get(NETEASE_LANGUAGE) is not None:
-                item[ZHCN] = item[self.controller.current_states.get(NETEASE_LANGUAGE)]
+                item_name[ZHCN] = item_name[self.controller.current_states.get(NETEASE_LANGUAGE)]
             if self.controller.current_states.get(BATTLE_NET_LANGUAGE) is not None:
-                item[ZHTW] = item[self.controller.current_states.get(BATTLE_NET_LANGUAGE)]
+                item_name[ZHTW] = item_name[self.controller.current_states.get(BATTLE_NET_LANGUAGE)]
         # 3.write
         with open(item_names_path, 'w', encoding='utf-8-sig') as f:
             json.dump(item_names_data, f, ensure_ascii=False, indent=2)
@@ -2712,6 +2117,28 @@ class FileOperations:
         return (count, total)
 
 
+    def toggle_droped_light(self, keys: list):
+        """掉落光柱提醒"""
+        if keys is None:
+            return (0, 0)
+        
+        # "1": "咒符/22#+符文开启光柱提醒",
+        toggle1 = "1" in keys
+        sub1 = self.toggle_droped_highlight(toggle1)
+
+        # "2": "火炬钥匙皮肤+光柱提醒",
+        toggle2 = "2" in keys
+        sub2 = self.toggle_mephisto_key(toggle2)
+
+        funcs = []
+        funcs.append(sub1)
+        funcs.append(sub2)
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
+
+
     def select_hudpanel_size(self, radio: str = "0"):
         """HUD面板尺寸"""
 
@@ -2813,7 +2240,7 @@ class FileOperations:
         return (count, total)
     
 
-    def select_netease_language(self, radio: str):
+    def select_battle_net_language(self, radio: str):
         """国际服文字选择"""
         _files = [
             r"data/local/lng/strings/item-names.json",
@@ -2860,16 +2287,16 @@ class FileOperations:
                 r"data/global/ui/layouts/mainmenupanelhd.json",
             ],
             # 单击Esc退出游戏
-            "2":[
+            "2": [
                 r"data/global/ui/layouts/pauselayout.json", 
                 r"data/global/ui/layouts/pauselayouthd.json",
             ],
             # 更大的好友菜单
-            "3":[
+            "3": [
                 r"data/global/ui/layouts/contextmenuhd.json",
             ],
             # 画面变亮
-            "4":[
+            "4": [
                 r"data/hd/env/vis/1_default_day.json",
                 r"data/hd/env/vis/act1_barracks_dawn1.json",
                 r"data/hd/env/vis/act1_barracks_dawn2.json",
@@ -3209,6 +2636,261 @@ class FileOperations:
         
         return summary
     
+
+    def select_game_setting2(self, keys: list):
+        """游戏设置2"""
+        if keys is None:
+            return (0, 0)
+
+        # 隐藏任务按钮
+        sub1 = self.hide_quest_button("1" in keys)
+
+        # 文件
+        _files = {
+            # 经验条彩色格式化
+            "2": [
+                r"data/hd/global/ui/panel/hud_02/experience_bar.lowend.sprite",
+                r"data/hd/global/ui/panel/hud_02/experience_bar.sprite",
+            ],
+            # 左键快速购买
+            "3": [
+                r"data/global/ui/layouts/vendorpanellayouthd.json",
+            ],
+            # 经验/宝石祭坛特效标识
+            "4": [
+                r"data/hd/overlays/common/shrine_experience.json",
+                r"data/hd/overlays/common/shrine_stamina.json",
+            ],
+            # 交互对象增加蓝色火苗
+            "5": [
+                r"data/hd/objects/armor_weapons/armor_stand_1.json",
+                r"data/hd/objects/armor_weapons/armor_stand_2.json",
+                r"data/hd/objects/armor_weapons/armor_stand_left.json",
+                r"data/hd/objects/armor_weapons/armor_stand_right.json",
+                r"data/hd/objects/armor_weapons/weapon_rack_1.json",
+                r"data/hd/objects/armor_weapons/weapon_rack_2.json",
+                r"data/hd/objects/armor_weapons/weapon_rack_left.json",
+                r"data/hd/objects/armor_weapons/weapon_rack_right.json",
+                r"data/hd/objects/caskets/act_3_dungeon_casket.json",
+                r"data/hd/objects/caskets/arcane_casket_1.json",
+                r"data/hd/objects/caskets/baal_tomb_1.json",
+                r"data/hd/objects/caskets/baal_tomb_2.json",
+                r"data/hd/objects/caskets/baal_tomb_3.json",
+                r"data/hd/objects/caskets/casket_1.json",
+                r"data/hd/objects/caskets/casket_2.json",
+                r"data/hd/objects/caskets/casket_3.json",
+                r"data/hd/objects/caskets/casket_4.json",
+                r"data/hd/objects/caskets/casket_5.json",
+                r"data/hd/objects/caskets/casket_6.json",
+                r"data/hd/objects/caskets/desert_coffin.json",
+                r"data/hd/objects/caskets/ground_tomb.json",
+                r"data/hd/objects/caskets/mummy_casket.json",
+                r"data/hd/objects/caskets/tomb_act_2.json",
+                r"data/hd/objects/caskets/tomb_baal_1.json",
+                r"data/hd/objects/caskets/tomb_baal_2.json",
+                r"data/hd/objects/caskets/tomb_baal_3.json",
+                r"data/hd/objects/caskets/tomb_baal_4.json",
+                r"data/hd/objects/caskets/tomb_baal_5.json",
+                r"data/hd/objects/caskets/tomb_baal_6.json",
+                r"data/hd/objects/caskets/tomb_baal_7.json",
+                r"data/hd/objects/caskets/tomb_baal_8.json",
+                r"data/hd/objects/caskets/tomb_baal_9.json",
+                r"data/hd/objects/caskets/yet_another_tomb.json",
+                r"data/hd/objects/characters/burned_body_1_act_1.json",
+                r"data/hd/objects/characters/corpse_1_act_3.json",
+                r"data/hd/objects/characters/corpse_2_act_3.json",
+                r"data/hd/objects/characters/corpse_3.json",
+                r"data/hd/objects/characters/corpse_skeleton.json",
+                r"data/hd/objects/characters/damned_v_1.json",
+                r"data/hd/objects/characters/damned_v_2.json",
+                r"data/hd/objects/characters/dead_barbarian.json",
+                r"data/hd/objects/characters/dead_palace_guard.json",
+                r"data/hd/objects/characters/dead_person.json",
+                r"data/hd/objects/characters/dead_person_again.json",
+                r"data/hd/objects/characters/dungeon_guy.json",
+                r"data/hd/objects/characters/guard_corpse_2_act_2.json",
+                r"data/hd/objects/characters/guard_on_a_stick.json",
+                r"data/hd/objects/characters/harem_guard_1.json",
+                r"data/hd/objects/characters/harem_guard_2.json",
+                r"data/hd/objects/characters/harem_guard_3.json",
+                r"data/hd/objects/characters/harem_guard_4.json",
+                r"data/hd/objects/characters/jack_in_the_box_1.json",
+                r"data/hd/objects/characters/jack_in_the_box_2.json",
+                r"data/hd/objects/characters/rogue_corpse_1.json",
+                r"data/hd/objects/characters/rogue_corpse_2.json",
+                r"data/hd/objects/characters/rogue_rolling_corpse_1.json",
+                r"data/hd/objects/characters/rogue_staked_corpse_1.json",
+                r"data/hd/objects/characters/rogue_staked_corpse_2.json",
+                r"data/hd/objects/characters/sewer_dungeon_body.json",
+                r"data/hd/objects/characters/wirt.json",
+                r"data/hd/objects/characters/yet_another_dead_body.json",
+                r"data/hd/objects/chests/arcane_chest_1.json",
+                r"data/hd/objects/chests/arcane_chest_2.json",
+                r"data/hd/objects/chests/arcane_chest_3.json",
+                r"data/hd/objects/chests/arcane_chest_4.json",
+                r"data/hd/objects/chests/chest_1_b.json",
+                r"data/hd/objects/chests/chest_2.json",
+                r"data/hd/objects/chests/chest_2_b.json",
+                r"data/hd/objects/chests/chest_3.json",
+                r"data/hd/objects/chests/chest_3_b.json",
+                r"data/hd/objects/chests/chest_4.json",
+                r"data/hd/objects/chests/chest_5.json",
+                r"data/hd/objects/chests/chest_6.json",
+                r"data/hd/objects/chests/chest_7.json",
+                r"data/hd/objects/chests/chest_8.json",
+                r"data/hd/objects/chests/chest_burial_r.json",
+                r"data/hd/objects/chests/chest_bur_i_all.json",
+                r"data/hd/objects/chests/chest_outdoor_1.json",
+                r"data/hd/objects/chests/chest_outdoor_2.json",
+                r"data/hd/objects/chests/chest_outdoor_3.json",
+                r"data/hd/objects/chests/chest_outdoor_4.json",
+                r"data/hd/objects/chests/cloth_chest_l.json",
+                r"data/hd/objects/chests/cloth_chest_r.json",
+                r"data/hd/objects/chests/consolation_chest.json",
+                r"data/hd/objects/chests/forgotten_tower_chest.json",
+                r"data/hd/objects/chests/jungle_chest.json",
+                r"data/hd/objects/chests/jungle_chest_2.json",
+                r"data/hd/objects/chests/large_chest_l.json",
+                r"data/hd/objects/chests/large_chest_r.json",
+                r"data/hd/objects/chests/sewer_chest.json",
+                r"data/hd/objects/chests/sewer_chest_large_left.json",
+                r"data/hd/objects/chests/sewer_chest_med_right.json",
+                r"data/hd/objects/chests/sewer_chest_tall_left.json",
+                r"data/hd/objects/chests/sewer_chest_tall_right.json",
+                r"data/hd/objects/chests/snow_chest_l.json",
+                r"data/hd/objects/chests/snow_chest_r.json",
+                r"data/hd/objects/chests/snow_cloth_chest_l.json",
+                r"data/hd/objects/chests/snow_cloth_chest_r.json",
+                r"data/hd/objects/chests/snow_wood_chest_l.json",
+                r"data/hd/objects/chests/snow_wood_chest_r.json",
+                r"data/hd/objects/chests/special_chest_100.json",
+                r"data/hd/objects/chests/tomb_chest_1.json",
+                r"data/hd/objects/chests/tomb_chest_2.json",
+                r"data/hd/objects/chests/travincal_chest_large_left.json",
+                r"data/hd/objects/chests/travincal_chest_large_right.json",
+                r"data/hd/objects/chests/travincal_chest_med_left.json",
+                r"data/hd/objects/chests/travincal_chest_med_right.json",
+                r"data/hd/objects/chests/wood_chest_l.json",
+                r"data/hd/objects/chests/wood_chest_r.json",
+                r"data/hd/objects/destructibles/barrel.json",
+                r"data/hd/objects/destructibles/barrel_3.json",
+                r"data/hd/objects/destructibles/barrel_exploding.json",
+                r"data/hd/objects/destructibles/basket_1.json",
+                r"data/hd/objects/destructibles/basket_2.json",
+                r"data/hd/objects/destructibles/box_1.json",
+                r"data/hd/objects/destructibles/box_2.json",
+                r"data/hd/objects/destructibles/crate.json",
+                r"data/hd/objects/destructibles/dungeon_basket.json",
+                r"data/hd/objects/destructibles/dungeon_rock_pile.json",
+                r"data/hd/objects/destructibles/exploding_chest_100.json",
+                r"data/hd/objects/destructibles/e_jar_1.json",
+                r"data/hd/objects/destructibles/e_jar_2.json",
+                r"data/hd/objects/destructibles/e_jar_3.json",
+                r"data/hd/objects/destructibles/ice_cave_evil_urn.json",
+                r"data/hd/objects/destructibles/ice_cave_jar_1.json",
+                r"data/hd/objects/destructibles/ice_cave_jar_2.json",
+                r"data/hd/objects/destructibles/ice_cave_jar_3.json",
+                r"data/hd/objects/destructibles/ice_cave_jar_4.json",
+                r"data/hd/objects/destructibles/ice_cave_jar_5.json",
+                r"data/hd/objects/destructibles/jug_outdoor_1.json",
+                r"data/hd/objects/destructibles/jug_outdoor_2.json",
+                r"data/hd/objects/destructibles/pillar_2.json",
+                r"data/hd/objects/destructibles/urn_1.json",
+                r"data/hd/objects/destructibles/urn_2.json",
+                r"data/hd/objects/destructibles/urn_3.json",
+                r"data/hd/objects/destructibles/urn_4.json",
+                r"data/hd/objects/destructibles/urn_5.json",
+                r"data/hd/objects/env_manmade/barrel_2.json",
+                r"data/hd/objects/env_manmade/bookshelf_1.json",
+                r"data/hd/objects/env_manmade/bookshelf_2.json",
+                r"data/hd/objects/env_manmade/compelling_orb.json",
+                r"data/hd/objects/env_manmade/hole_in_ground.json",
+                r"data/hd/objects/env_organic/cocoon_1.json",
+                r"data/hd/objects/env_organic/cocoon_2.json",
+                r"data/hd/objects/env_organic/goo_pile.json",
+                r"data/hd/objects/env_organic/sewer_rat_nest.json",
+                r"data/hd/objects/env_pillars/ancients_altar.json",
+                r"data/hd/objects/env_pillars/ice_cave_object_1.json",
+                r"data/hd/objects/env_pillars/inside_altar.json",
+                r"data/hd/objects/env_pillars/jungle_pillar_0.json",
+                r"data/hd/objects/env_pillars/jungle_pillar_1.json",
+                r"data/hd/objects/env_pillars/jungle_pillar_2.json",
+                r"data/hd/objects/env_pillars/jungle_pillar_3.json",
+                r"data/hd/objects/env_pillars/mephisto_pillar_1.json",
+                r"data/hd/objects/env_pillars/mephisto_pillar_2.json",
+                r"data/hd/objects/env_pillars/mephisto_pillar_3.json",
+                r"data/hd/objects/env_pillars/obelisk_1.json",
+                r"data/hd/objects/env_pillars/obelisk_2.json",
+                r"data/hd/objects/env_pillars/object_1_temple.json",
+                r"data/hd/objects/env_pillars/object_2_temple.json",
+                r"data/hd/objects/env_pillars/snowy_generic_name.json",
+                r"data/hd/objects/env_pillars/steeg_stone.json",
+                r"data/hd/objects/env_pillars/stone_stash.json",
+                r"data/hd/objects/env_pillars/tower_tome.json",
+                r"data/hd/objects/env_skeletons/e_shit.json",
+                r"data/hd/objects/env_skeletons/hell_bone_pile.json",
+                r"data/hd/objects/env_skeletons/inner_hell_object_1.json",
+                r"data/hd/objects/env_skeletons/inner_hell_object_2.json",
+                r"data/hd/objects/env_skeletons/inner_hell_object_3.json",
+                r"data/hd/objects/env_skeletons/outer_hell_object_1.json",
+                r"data/hd/objects/env_skeletons/outer_hell_skeleton.json",
+                r"data/hd/objects/env_skeletons/skull_pile.json",
+                r"data/hd/objects/env_stone/hidden_stash.json",
+                r"data/hd/objects/env_stone/rock.json",
+                r"data/hd/objects/env_stone/rock_c.json",
+                r"data/hd/objects/env_stone/rock_d.json",
+                r"data/hd/objects/env_wood/log.json",
+            ]
+        }
+
+        funcs = []
+        for key, files in _files.items():
+            sub = self.common_rename(files, key in keys)
+            funcs.append(sub)
+        funcs.append(sub1)
+
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
+    
+    def select_controls_setting(self, keys: list):
+        """控件设置"""
+        if keys is None:
+            return (0, 0)
+        
+        _files = [
+            r"data/global/ui/layouts/hudwarningshd.json",
+        ]
+        count = 0
+        total = len(_files)
+
+        _controls = {
+            "1": "OpenWeaponSwap",
+            "2": "OpenMiniHp",
+            "3": "OpenMiniCute",
+        }
+        
+        # 1.load
+        json_data = None
+        json_path = os.path.join(MOD_PATH, _files[0])
+        with open(json_path, 'r', encoding='utf-8') as f:
+            json_data = json.load(f)
+
+        # 2.modify 
+        for key, name in _controls.items():
+            for child in json_data["children"]:
+                if name == child["name"]:
+                    child["fields"]["message"] = child["fields"]["default"] if key in keys else ""
+                
+        # 3.write
+        with open(json_path, 'w', encoding="utf-8") as f:
+            json.dump(json_data, f, ensure_ascii=False, indent=4)
+
+        count += 1
+        return (count, total)
+
+    
     def sorceress_setting(self, keys: list):
         """魔法使设置"""
         if keys is None:
@@ -3281,6 +2963,7 @@ class FileOperations:
         
         return summary
     
+
     def assassin_setting(self, keys: list):
         """刺客设置"""
         if keys is None:
@@ -3307,6 +2990,26 @@ class FileOperations:
         results = [f for f in funcs]
         summary = tuple(sum(values) for values in zip(*results))
         
+        return summary
+    
+
+    def common_setting(self, keys: list):
+        """通用设置"""
+
+        # 屏蔽 地狱火炬 火焰风暴特效
+        isEnabled1 = "1" in keys
+        sub1 = self.toggle_hellfire_torch(isEnabled1)
+
+        # 开启 技能图标(头顶:熊之印记/狼之印记 脚下:附魔/速度爆发+影散/BO 右侧:刺客聚气)
+        isEnabled2 = "2" in keys
+        sub2 = self.toggle_context_menu(isEnabled2)
+
+        funcs = []
+        funcs.append(sub1)
+        funcs.append(sub2)
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+
         return summary
 
     def sync_app_data(self):
