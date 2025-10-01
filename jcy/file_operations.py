@@ -1957,10 +1957,9 @@ class FileOperations:
         for item in item_names_data:
             data.append([
                 str(item.get("id")),
-                item.get(ZHCN),
-                item.get(ZHTW),
-                item.get(ENUS),
-                item.get("Key")
+                re.sub(r"ÿc.", "", item.get(ZHCN)),
+                re.sub(r"ÿc.", "", item.get(ZHTW)),
+                re.sub(r"ÿc.", "", item.get(ENUS)),
             ])
 
         return data
@@ -2267,13 +2266,14 @@ class FileOperations:
         """国服文字选择"""
         _files = [
             r"data/local/lng/strings/item-names.json",
-            r"data/local/lng/strings/item-runes.json"
+            r"data/local/lng/strings/item-runes.json",
+            r"data/local/lng/strings/item-nameaffixes.json",
         ]
 
         count = 0
         total = len(_files)
 
-        for file in _files:
+        for i, file in enumerate(_files):
             json_data = None
             json_path = os.path.join(MOD_PATH, file)
 
@@ -2284,6 +2284,11 @@ class FileOperations:
 
                 # 2.modify 
                 for obj in json_data:
+                    # 鲁棒性
+                    if ZHCN2 not in obj or ZHTW2 not in obj:
+                        obj[ZHCN2] = obj[ZHCN]
+                        obj[ZHTW2] = obj[ZHTW]
+
                     if T2S == radio:
                         obj[ZHCN] = convert(obj[ZHTW2], 'zh-cn')
                     else:

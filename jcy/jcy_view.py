@@ -82,114 +82,11 @@ class FeatureView:
         launcher_tab = D2RLauncherApp(notebook)
         self.add_tab(launcher_tab, "D2R多开器")
 
-        # --- Terror Zone ---
-        # self.tz_tab = TerrorZoneUI(notebook, self.controller, fetcher = self.controller.terror_zone_fetcher)
-        # self.add_tab(self.tz_tab, "恐怖区域")
-        
-        # --- checkbutton ---
-        # tab = None
-        # for i, (fid, description) in enumerate(self.all_features_config.get("checkbutton", {}).items()):
-        #     if i % 20 == 0 :
-        #         tab = ttk.Frame(notebook)
-        #         self.add_tab(tab, f"功能特效")
-        #     var = tk.BooleanVar()
-        #     self.feature_vars[fid] = var
-        #     chk = ttk.Checkbutton(tab, text=description, variable=var, command=lambda f=fid, v=var: self.controller.execute_feature_action(f, v.get()))
-        #     chk.pack(anchor=tk.W, padx=10, pady=3)
-        
-
-        # # --- radiogroup ---
-        # radiogroup_tab = ttk.Frame(notebook)
-        # self.add_tab(radiogroup_tab, "单选特效")
-
-        # radiogroup_features = self.all_features_config.get("radiogroup", {})
-
-        # total_columns = 10  # 每行总列数
-        # current_row = 0
-        # current_col = 0
-
-        # for fid, info in radiogroup_features.items():
-        #     colspan = info.get("colspan", total_columns)  # 默认占满整行
-        #     group = LabeledRadioGroup(
-        #         radiogroup_tab,
-        #         feature_id=fid,
-        #         data=info,
-        #         default_selected="default",
-        #         command=self.controller.execute_feature_action
-        #     )
-
-        #     # 如果当前行剩余列不足，换行
-        #     if current_col + colspan > total_columns:
-        #         current_row += 1
-        #         current_col = 0
-
-        #     # 放置控件
-        #     group.grid(row=current_row, column=current_col, columnspan=colspan,
-        #             sticky="nsew", padx=10, pady=5)
-
-        #     # 更新当前列索引
-        #     current_col += colspan
-
-        #     # 保存引用
-        #     self.feature_vars[fid] = group
-
-        # # 均分每列权重，让控件按比例拉伸
-        # for i in range(total_columns):
-        #     radiogroup_tab.grid_columnconfigure(i, weight=1)
-
-        
-        # --- checkgroup ---
-        # checkgroup_tab = ttk.Frame(notebook)
-        # self.add_tab(checkgroup_tab, "多选特效")
-        # checkgroup_features = self.all_features_config.get("checkgroup", {})
-
-        # row, col = 0, 0
-        # max_cols = 10
-
-        # for fid, info in checkgroup_features.items():
-        #     colspan = info.get("colspan", 10)
-        #     group = LabeledCheckGroup(
-        #         checkgroup_tab,
-        #         feature_id=fid,
-        #         data=info,
-        #         default_selected=[],
-        #         command=self.controller.execute_feature_action
-        #     )
-        #     group.grid(row=row, column=col, columnspan=colspan, sticky="ew", padx=10, pady=10)
-        #     self.feature_vars[fid] = group
-
-        #     col += colspan
-        #     if col >= max_cols:
-        #         row += 1
-        #         col = 0
-
-        # # 让 10 列自动伸缩
-        # for i in range(max_cols):
-        #     checkgroup_tab.columnconfigure(i, weight=1)
-
-
-        # --- spinbox ---
-        # range_tab = ttk.Frame(notebook)
-        # self.add_tab(range_tab, "区间特效")
-        # range_features = self.all_features_config.get("spinbox", {})
-        # for fid, description in range_features.items():
-        #     label_frame = ttk.LabelFrame(range_tab, text=description)
-        #     label_frame.pack(padx=20, pady=5, fill=tk.X)
-
-        #     spin_container = ttk.Frame(label_frame)
-        #     spin_container.pack(fill=tk.X, padx=15, pady=5) # 容器的填充和内边距
-
-        #     var = tk.IntVar()
-        #     self.feature_vars[fid] = var
-        #     spin = ttk.Spinbox(spin_container, from_=0, to=9, increment=1, textvariable=var, command=lambda f=fid, v=var: self.controller.execute_feature_action(f, v.get()), state='readonly')
-        #     spin.pack(anchor=tk.W, padx=10, pady=2)
-
-
         # --- checktable ---
         filter_tab = ttk.Frame(notebook)
         self.add_tab(filter_tab, "道具屏蔽")
 
-        columns = ["简体中文", "繁體中文", "enUS", "Key"]
+        columns = ["简体中文", "繁體中文", "enUS"]
         data = self.controller.file_operations.load_filter_config()
                 
         checktable = TableWithCheckbox(
@@ -704,7 +601,7 @@ class TableWithCheckbox(tk.Frame):
     """
     def __init__(self, master, columns, data,
                  config_dict=None, config_key=None,
-                 col_width=14, wrap_px=140,
+                 col_width=14, wrap_px=0,
                  on_change=None,
                  **kwargs):
         super().__init__(master, **kwargs)
@@ -731,6 +628,13 @@ class TableWithCheckbox(tk.Frame):
 
         self._tbl = tk.Frame(canvas)
         tbl_window = canvas.create_window((0, 0), window=self._tbl, anchor="nw")
+
+        # 滚轮支持
+        # ---------- 滚轮支持（加这段） ----------
+        def _on_mousewheel(event):
+            canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+
+        canvas.bind_all("<MouseWheel>", _on_mousewheel)  # Windows
 
         # ---------- 替换这部分开始 ----------
         def _on_config(event=None):
