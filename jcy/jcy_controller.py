@@ -191,11 +191,13 @@ class FeatureController:
             # 符文皮肤
             RUNE_SKIN: self.file_operations.select_rune_skin,
             # 掉落光柱提醒
-            DROPED_LIGHT: self.file_operations.toggle_droped_light,
+            DROPED_LIGHT: self.file_operations.select_droped_light,
             # 22#+符文名称大小(越大越容易发现/选中)
             RUNE_SIZE: self.file_operations.modify_rune_rectangle,
             # 语音提示
             SOUND_PROMPTS: self.file_operations.toggle_sound,
+            # 火炬钥匙
+            TORCH_KEY: self.file_operations.torch_key,
             # 环境-关闭特效
             DISABLE_EFFECTS: self.file_operations.hide_environmental_effects,
             # 环境-开启指引

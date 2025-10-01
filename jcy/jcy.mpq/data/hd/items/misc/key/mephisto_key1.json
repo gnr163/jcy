@@ -106,12 +106,12 @@
         },
         {
             "type": "Entity",
-            "name": "entity_will_drop_light",
+            "name": "entity_drop_light",
             "id": 9999999888,
             "components": [
                 {
                     "type": "TransformDefinitionComponent",
-                    "name": "transform_will_drop_light",
+                    "name": "transform_drop_light",
                     "position": {
                         "x": 0,
                         "y": 0,
@@ -132,7 +132,7 @@
                 },
                 {
                     "type": "VfxDefinitionComponent",
-                    "name": "vfx_will_drop_light",
+                    "name": "vfx_drop_light",
                     "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
                     "hardKillOnDestroy": false
                 }

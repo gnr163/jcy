@@ -29,10 +29,10 @@ LANG = None
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.2.2C"
+APP_VERSION = "v1.2.3"
 
 # 发布日期
-APP_DATE = "20250930"
+APP_DATE = "20251001"
 
 # 控制器全称
 APP_FULL_NAME = f"{APP_NAME}_{APP_VERSION}"
@@ -100,6 +100,7 @@ SOUND_PROMPTS = "SoundPrompts"
 DROPED_LIGHT = "DropedLight"
 DISABLE_EFFECTS = "DisableEffects"
 ENABLE_POINTER = "EnablePointer"
+TORCH_KEY = "TorchKey"
 # Function Identifier -->
 
 # <!-- Controller Type
@@ -114,7 +115,6 @@ TERROR_ZONE_API = {
     "1" : ["https://asia.d2tz.info/terror_zone?mode=online", "https://api.d2tz.info/terror_zone?mode=online"],
     "2": ["https://api.aws.d2-trade.com/api/query/tz_online"]
 }
-    
 
 # 恐怖地带
 TERROR_ZONE_DICT = {
@@ -437,6 +437,42 @@ SET_ITEM_INDEX = [
   "Warlord's Authority",
 ]
 
+# 掉落光柱JSON
+ENTIRY_DROP_LIGHT = {
+            "type": "Entity",
+            "name": "entity_drop_light",
+            "id": 9999999888,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform_drop_light",
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "orientation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    },
+                    "inheritOnlyPosition": False
+                },
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "vfx_drop_light",
+                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
+                    "hardKillOnDestroy": False
+                }
+            ]
+        }
+
 # 导出所有需要的符号
 __all__ = [
     'MUTEX_NAME',
@@ -488,6 +524,7 @@ __all__ = [
     'RUNE_SIZE',
     'SOUND_PROMPTS',
     'DROPED_LIGHT',
+    'TORCH_KEY',
     'DISABLE_EFFECTS',
     'ENABLE_POINTER',
     'RADIO',
@@ -499,5 +536,6 @@ __all__ = [
     'UE01A',
     'TERROR_ZONE_API',
     'TERROR_ZONE_DICT',
-    'SET_ITEM_INDEX'
+    'SET_ITEM_INDEX',
+    'ENTIRY_DROP_LIGHT'
 ]

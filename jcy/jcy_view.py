@@ -903,6 +903,11 @@ class D2RLauncherApp(tk.Frame):
             ttk.Radiobutton(
                 frame_region, text=label, variable=self.region_var, value=key
             ).pack(side="left", padx=5, pady=2)
+        
+        # 国服禁用
+        ttk.Radiobutton(
+            frame_region, text="国服不能用", variable=self.region_var, value="cn", state="disabled"
+        ).pack(side="left", padx=5, pady=2)
 
         # 启动间隔
         ttk.Label(frame_global, text="启动间隔(秒):").grid(row=2, column=0, sticky="w")

@@ -360,13 +360,14 @@ class FeatureConfig:
                             }
                         },
                         {
-                            "fid": DROPED_LIGHT,
+                            "fid": TORCH_KEY,
                             "type": CHECK,
-                            "text": "掉落光柱提醒",
+                            "text": "火炬钥匙",
                             "colspan": 7,
                             "params": {
-                                "1": "咒符/22#+符文开启光柱提醒",
-                                "2": "火炬钥匙皮肤+光柱提醒",
+                                "1": "金属颜色皮肤",
+                                "2": "掉落光柱提醒",
+                                "3": "掉落声音提醒"
                             }
                         },
                         {
@@ -376,6 +377,22 @@ class FeatureConfig:
                             "colspan": 3
                         },
                         {
+                            "fid": DROPED_LIGHT,
+                            "type": CHECK,
+                            "text": "掉落光柱提醒",
+                            "colspan": 10,
+                            "params": {
+                                "1": "戒指",
+                                "2": "项链",
+                                "3": "小符",
+                                "4": "中符",
+                                "5": "大符",
+                                "6": "珠宝",
+                                "7": "宝石",
+                                "8": "22#+符文"
+                            }
+                        },
+                        {
                             "fid": SOUND_PROMPTS,
                             "type": CHECK,
                             "text": "语音提示",
@@ -383,7 +400,8 @@ class FeatureConfig:
                             "params": {
                                 "1": "咒符/22#+符文掉落提示音 & 技能结束提示音"
                             }
-                        }
+                        },
+                        
                     ]
                 },
                 {

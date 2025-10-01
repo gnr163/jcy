@@ -11421,3 +11421,4 @@ bonearmor_off	11418		sfx/items_hd	skill\bonearmor_off.flac	0	0	0	0	0	255	255	100
 markwolf_off	11419		sfx/items_hd	skill\markwolf_off.flac	0	0	0	0	0	255	255	100	100	0	0	0	0	0	0	0	0	0	2	0	90	255	0	0	1	1	0	-1	-1	-1	0	0	
 markbear_off	11420		sfx/items_hd	skill\markbear_off.flac	0	0	0	0	0	255	255	100	100	0	0	0	0	0	0	0	0	0	2	0	90	255	0	0	1	1	0	-1	-1	-1	0	0	
 diadem	11421		sfx/items_hd	item\diadem.flac	0	0	0	0	0	255	255	100	100	0	0	0	0	0	0	1	0	0	1	0	90	100	0	0	0	0	0	-1	-1	-1	0	0	
+mephisto_key	11422		sfx/items_hd	item\torch_key.flac	0	0	0	0	0	255	255	100	100	0	0	0	0	0	0	1	0	0	1	0	90	100	0	0	0	0	0	-1	-1	-1	0	0	

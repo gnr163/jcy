@@ -1,3 +1,4 @@
+import csv
 import json
 import os
 import shutil
@@ -75,29 +76,28 @@ class FileOperations:
         return (count, len(files))
 
 
-    def toggle_droped_highlight(self, isEnabled: bool = False):
-        """
-        开关 掉落光柱
-        """
-        files_droped_highlight = (
-            r"data/hd/items/misc/charm/charm_large.json",
-            r"data/hd/items/misc/charm/charm_small.json",
-            r"data/hd/items/misc/rune/ber_rune.json",
-            r"data/hd/items/misc/rune/cham_rune.json",
-            r"data/hd/items/misc/rune/gul_rune.json",
-            r"data/hd/items/misc/rune/ist_rune.json",
-            r"data/hd/items/misc/rune/jah_rune.json",
-            r"data/hd/items/misc/rune/lo_rune.json",
-            r"data/hd/items/misc/rune/mal_rune.json",
-            r"data/hd/items/misc/rune/ohm_rune.json",
-            r"data/hd/items/misc/rune/sur_rune.json",
-            r"data/hd/items/misc/rune/um_rune.json",
-            r"data/hd/items/misc/rune/vex_rune.json",
-            r"data/hd/items/misc/rune/zod_rune.json",
-            r"data/hd/items/misc/key/mephisto_key.json",
-        )
+    # def toggle_droped_highlight(self, isEnabled: bool = False):
+    #     """
+    #     开关 掉落光柱
+    #     """
+    #     files_droped_highlight = (
+    #         r"data/hd/items/misc/charm/charm_large.json",
+    #         r"data/hd/items/misc/charm/charm_small.json",
+    #         r"data/hd/items/misc/rune/ber_rune.json",
+    #         r"data/hd/items/misc/rune/cham_rune.json",
+    #         r"data/hd/items/misc/rune/gul_rune.json",
+    #         r"data/hd/items/misc/rune/ist_rune.json",
+    #         r"data/hd/items/misc/rune/jah_rune.json",
+    #         r"data/hd/items/misc/rune/lo_rune.json",
+    #         r"data/hd/items/misc/rune/mal_rune.json",
+    #         r"data/hd/items/misc/rune/ohm_rune.json",
+    #         r"data/hd/items/misc/rune/sur_rune.json",
+    #         r"data/hd/items/misc/rune/um_rune.json",
+    #         r"data/hd/items/misc/rune/vex_rune.json",
+    #         r"data/hd/items/misc/rune/zod_rune.json",
+    #     )
 
-        return self.common_rename(files_droped_highlight, isEnabled)
+    #     return self.common_rename(files_droped_highlight, isEnabled)
 
 
     def hide_quest_button(self, isEnabled: bool = False):
@@ -221,16 +221,6 @@ class FileOperations:
         )
 
         return self.common_rename(files_global_excel_affixes, isEnabled)
-
-
-    def toggle_mephisto_key(self, isEnabled: bool = False):
-        """
-        开关 6BOSS钥匙皮肤
-        """
-        files_key = (
-            r"data/hd/items/items.json",
-        )
-        return self.common_rename(files_key, isEnabled)
 
 
     def toggle_hellfire_torch(self, isEnabled: bool = False):
@@ -2116,27 +2106,94 @@ class FileOperations:
                     print(e)
         return (count, total)
 
-
-    def toggle_droped_light(self, keys: list):
+    def select_droped_light(self, keys: list):
         """掉落光柱提醒"""
         if keys is None:
             return (0, 0)
         
-        # "1": "咒符/22#+符文开启光柱提醒",
-        toggle1 = "1" in keys
-        sub1 = self.toggle_droped_highlight(toggle1)
+        _files = {
+            # 戒指
+            "1": [r"data/hd/items/misc/ring/ring.json",],
+            # 项链
+            "2": [r"data/hd/items/misc/amulet/amulet.json",],
+            # 小符
+            "3": [r"data/hd/items/misc/charm/charm_small.json",],
+            # 中符
+            "4": [r"data/hd/items/misc/charm/charm_medium.json",],
+            # 大符
+            "5": [r"data/hd/items/misc/charm/charm_large.json",],
+            # 珠宝
+            "6": [r"data/hd/items/misc/jewel/jewel.json",],
+            # 宝石
+            "7": [
+                r"data/hd/items/misc/gem/amethyst.json",
+                r"data/hd/items/misc/gem/flawless_amethyst.json",
+                r"data/hd/items/misc/gem/flawless_diamond.json",
+                r"data/hd/items/misc/gem/flawless_emerald.json",
+                r"data/hd/items/misc/gem/flawless_ruby.json",
+                r"data/hd/items/misc/gem/flawless_saphire.json",
+                r"data/hd/items/misc/gem/flawless_skull.json",
+                r"data/hd/items/misc/gem/flawless_topaz.json",
+                r"data/hd/items/misc/gem/perfect_amethyst.json",
+                r"data/hd/items/misc/gem/perfect_diamond.json",
+                r"data/hd/items/misc/gem/perfect_emerald.json",
+                r"data/hd/items/misc/gem/perfect_ruby.json",
+                r"data/hd/items/misc/gem/perfect_saphire.json",
+                r"data/hd/items/misc/gem/perfect_skull.json",
+                r"data/hd/items/misc/gem/perfect_topaz.json",],
+            # 22#+符文
+            "8": [
+                r"data/hd/items/misc/rune/ber_rune.json",
+                r"data/hd/items/misc/rune/cham_rune.json",
+                r"data/hd/items/misc/rune/gul_rune.json",
+                r"data/hd/items/misc/rune/ist_rune.json",
+                r"data/hd/items/misc/rune/jah_rune.json",
+                r"data/hd/items/misc/rune/lo_rune.json",
+                r"data/hd/items/misc/rune/mal_rune.json",
+                r"data/hd/items/misc/rune/ohm_rune.json",
+                r"data/hd/items/misc/rune/sur_rune.json",
+                r"data/hd/items/misc/rune/um_rune.json",
+                r"data/hd/items/misc/rune/vex_rune.json",
+                r"data/hd/items/misc/rune/zod_rune.json",],
+        }
 
-        # "2": "火炬钥匙皮肤+光柱提醒",
-        toggle2 = "2" in keys
-        sub2 = self.toggle_mephisto_key(toggle2)
+        count = 0
+        total = sum(len(v) for v in _files.values())
 
-        funcs = []
-        funcs.append(sub1)
-        funcs.append(sub2)
-        results = [f for f in funcs]
-        summary = tuple(sum(values) for values in zip(*results))
+        for key, files in _files.items():
+            handle = key in keys
+            for file in files:
+                file_json = None
+                file_path = os.path.join(MOD_PATH, file)
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    file_json = json.load(f)
+                if handle:
+                    if file_json["entities"][-1] != ENTIRY_DROP_LIGHT:
+                        file_json["entities"].append(ENTIRY_DROP_LIGHT)
+                else:
+                    if file_json["entities"][-1] == ENTIRY_DROP_LIGHT:
+                        file_json["entities"].pop() 
+                with open(file_path, "w", encoding="utf-8") as f:
+                    json.dump(file_json, f, ensure_ascii=False, indent=4)
+                count += 1
+
+        return (count, total)
+
+    # def toggle_droped_light(self, keys: list):
+    #     """掉落光柱提醒"""
+    #     if keys is None:
+    #         return (0, 0)
         
-        return summary
+    #     # "1": "咒符/22#+符文开启光柱提醒",
+    #     toggle1 = "1" in keys
+    #     sub1 = self.toggle_droped_highlight(toggle1)
+
+    #     funcs = []
+    #     funcs.append(sub1)
+    #     results = [f for f in funcs]
+    #     summary = tuple(sum(values) for values in zip(*results))
+        
+    #     return summary
 
 
     def select_hudpanel_size(self, radio: str = "0"):
@@ -3103,6 +3160,75 @@ class FileOperations:
             print("[writeTerrorZone 写入异常]", e)
         
         return (1, 1)
+
+    def torch_key(self, keys: list):
+        """火炬钥匙"""
+        if keys is None:
+            return (0, 0)
+
+        count = 0 
+
+        # "1": "金属颜色皮肤",
+        handle1 = "1" in keys
+        items_dict = {
+            "pk1": {True:{ "asset": "key/mephisto_key1" }, False: { "asset": "key/mephisto_key" }},
+            "pk2": {True:{ "asset": "key/mephisto_key2" }, False: { "asset": "key/mephisto_key" }},
+            "pk3": {True:{ "asset": "key/mephisto_key3" }, False: { "asset": "key/mephisto_key" }},
+        }
+        items_json = None
+        items_path = os.path.join(MOD_PATH, r"data/hd/items/items.json")
+        with open(items_path, 'r', encoding='utf-8') as f:
+            items_json = json.load(f)
+        for entry in items_json:
+            for key in entry.keys():
+                if key in items_dict:
+                    entry[key] = items_dict[key][handle1]
+        with open(items_path, "w", encoding="utf-8") as f:
+            json.dump(items_json, f, ensure_ascii=False, indent=2)
+        count += 1
+
+        # "2": "掉落光柱提醒",
+        handle2 = "2" in keys
+        key_files = [
+            r"data/hd/items/misc/key/mephisto_key.json",
+            r"data/hd/items/misc/key/mephisto_key1.json",
+            r"data/hd/items/misc/key/mephisto_key2.json",
+            r"data/hd/items/misc/key/mephisto_key3.json",
+        ]
+        for key_file in key_files:
+            mephisto_key_json = None
+            mephisto_key_path = os.path.join(MOD_PATH, key_file)
+            with open(mephisto_key_path, 'r', encoding='utf-8') as f:
+                mephisto_key_json = json.load(f)
+            if handle2:
+                if mephisto_key_json["entities"][-1] != ENTIRY_DROP_LIGHT:
+                    mephisto_key_json["entities"].append(ENTIRY_DROP_LIGHT)
+            else:
+                if mephisto_key_json["entities"][-1] == ENTIRY_DROP_LIGHT:
+                    mephisto_key_json["entities"].pop() 
+            with open(mephisto_key_path, "w", encoding="utf-8") as f:
+                json.dump(mephisto_key_json, f, ensure_ascii=False, indent=4)
+            count += 1
+
+        # "3": "掉落声音提醒"
+        handle3 = "3" in keys
+        misc_names = ["Key of Terror", "Key of Hate", "Key of Destruction"]
+        misc_path = os.path.join(MOD_PATH, r"data/global/excel/misc.txt")
+        with open(misc_path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f, delimiter='\t')
+            print(reader.fieldnames) 
+            rows = list(reader)
+        for row in rows:
+            if row["name"] in misc_names:
+                row["dropsound"] = "mephisto_key" if handle3 else "item_key"
+        with open(misc_path, 'w', encoding='utf-8', newline='') as f:
+            writer = csv.DictWriter(f, fieldnames=reader.fieldnames, delimiter='\t')
+            writer.writeheader()
+            writer.writerows(rows)
+        count += 1
+
+        return (count, 6)
+
 
     def save_win_config(self, data):
         """保存窗口配置"""
