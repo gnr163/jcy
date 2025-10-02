@@ -161,6 +161,16 @@ class FeatureConfig:
                             }
                         },
                         {
+                            "fid": COMMON_SETTING,
+                            "type": CHECK,
+                            "text": "通用设置",
+                            "colspan": 10,
+                            "params": {
+                                "1": "屏蔽 地狱火炬 火焰风暴特效",
+                                "2": "开启 技能图标(头顶:熊之印记/狼之印记 脚下:附魔/速度爆发+影散/BO 右侧:刺客聚气)"
+                            }
+                        },
+                        {
                             "fid": ARROW,
                             "type": RADIO,
                             "text": "弓/弩箭特效",
@@ -197,7 +207,7 @@ class FeatureConfig:
                             "fid": NEC_SETTING,
                             "type": CHECK,
                             "text": "死灵法师",
-                            "colspan": 10,
+                            "colspan": 2,
                             "params": {
                                 "1": "骷髅火刀圣盾"
                             }
@@ -206,7 +216,7 @@ class FeatureConfig:
                             "fid": DRU_SETTING,
                             "type": CHECK,
                             "text": "德鲁伊",
-                            "colspan": 10,
+                            "colspan": 2,
                             "params": {
                                 "1": "飓风术特效"
                             }
@@ -215,20 +225,37 @@ class FeatureConfig:
                             "fid": ASN_SETTING,
                             "type": CHECK,
                             "text": "刺客",
-                            "colspan": 10,
+                            "colspan": 6,
                             "params": {
                                 "1": "马赛克护眼",
                                 "2": "取消影散隐身效果"
                             }
                         },
                         {
-                            "fid": COMMON_SETTING,
+                            "fid": SKILL_OFF_SOUNDS,
                             "type": CHECK,
-                            "text": "通用设置",
+                            "text": "技能结束提示音",
                             "colspan": 10,
                             "params": {
-                                "1": "屏蔽 地狱火炬 火焰风暴特效",
-                                "2": "开启 技能图标(头顶:熊之印记/狼之印记 脚下:附魔/速度爆发+影散/BO 右侧:刺客聚气)"
+                                "enchant_off": "附魔",
+                                "frozenarmor_off": "冰封甲",
+                                "shiverarmor_off": "碎冰甲",
+                                "chillingarmor_off": "寒冰甲",
+                                "energyshield_off": "能量護盾",
+                                "shout_off": "大吼",
+                                "battleorders_off": "戰鬥命令",
+                                "battlecommand_off": "戰鬥指揮",
+                                "bonearmor_off": "骸骨護甲",
+                                "venom_off": "淬毒",
+                                "fade_off": "影散",
+                                "quickness_off": "速度爆發",
+                                "bladeshield_off": "利刃之盾",
+                                "holyshield_off": "神聖之盾",
+                                "cyclonearmor_off": "氣旋護甲",
+                                "wolf_off": "狼人變化",
+                                "bear_off": "熊人變化",
+                                "markwolf_off": "狼之印記",
+                                "markbear_off": "熊之印記",
                             }
                         },
                         {
@@ -290,7 +317,7 @@ class FeatureConfig:
                     ]
                 },
                 {
-                    "text": "道具设置",
+                    "text": "物品设置",
                     "children": [
                         {
                             "fid": EQIUPMENT_EFFECTS,
@@ -393,12 +420,26 @@ class FeatureConfig:
                             }
                         },
                         {
-                            "fid": SOUND_PROMPTS,
+                            "fid": ITEM_DROP_SOUNDS,
                             "type": CHECK,
-                            "text": "语音提示",
+                            "text": "物品掉落提示音",
                             "colspan": 10,
                             "params": {
-                                "1": "咒符/22#+符文掉落提示音 & 技能结束提示音"
+                                "diadem": "權冠",
+                                "sc": "小型咒符",
+                                "gc": "特大咒符",
+                                "r22": "烏姆#22",
+                                "r23": "馬爾#23",
+                                "r24": "伊司特#24",
+                                "r25": "古爾#25",
+                                "r26": "伐克斯#26",
+                                "r27": "歐姆#27",
+                                "r28": "羅#28",
+                                "r29": "瑟#29",
+                                "r30": "貝#30",
+                                "r31": "喬#31",
+                                "r32": "查姆#32",
+                                "r33": "薩德#33",
                             }
                         },
                         

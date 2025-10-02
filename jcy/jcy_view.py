@@ -510,19 +510,18 @@ class LabeledCheckGroup(ttk.LabelFrame):
             default_selected = []
 
         params = data.get("params", {})
-        # 兼容旧格式：如果是 list，则合并成 dict
-        if isinstance(params, list):
-            merged = {}
-            for item in params:
-                merged.update(item)
-            params = merged
-
-        for j, (key, label) in enumerate(params.items()):
+        
+        for idx, (key, label) in enumerate(params.items()):
             var = tk.BooleanVar(value=(key in default_selected))
             chk = ttk.Checkbutton(self, text=label, variable=var, command=self._on_check)
-            chk.grid(row=0, column=j, sticky="ew", padx=5, pady=5)
-            self.columnconfigure(j, weight=1)
+            r = idx // 8
+            c = idx % 8
+            chk.grid(row=r, column=c, sticky="nsew", padx=5, pady=5)
             self.vars[key] = var
+
+        # 给内部列设权重，让每列均匀伸缩
+        for c in range(8):
+            self.grid_columnconfigure(c, weight=1)
 
     def _on_check(self):
         if self.command:
@@ -531,7 +530,6 @@ class LabeledCheckGroup(ttk.LabelFrame):
 
     def get(self):
         return [key for key, var in self.vars.items() if var.get()]
-        # return sorted([key for key, var in self.vars.items() if var.get()])
 
     def set(self, selected_keys):
         if selected_keys is None:

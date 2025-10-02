@@ -86,6 +86,7 @@ BAR_SETTING = "BarbarianSetting"
 DRU_SETTING = "DruidSetting"
 ASN_SETTING = "AssassinSetting"
 COMMON_SETTING = "CommonSetting"
+SKILL_OFF_SOUNDS = "SkillOffSounds"
 MERCENARY = "Mercenary"
 MERCENARY_LOCATION = "MercenaryLocation"
 MONSTER_SETTING = "MonsterSetting"
@@ -96,8 +97,8 @@ AFFIX_EFFECTS = "AffixEffects"
 MODEL_EFFECTS = "ModelEffects"
 RUNE_SKIN = "RuneSkin"
 RUNE_SIZE = "RuneSize"
-SOUND_PROMPTS = "SoundPrompts"
 DROPED_LIGHT = "DropedLight"
+ITEM_DROP_SOUNDS = "ItemDropSounds"
 DISABLE_EFFECTS = "DisableEffects"
 ENABLE_POINTER = "EnablePointer"
 TORCH_KEY = "TorchKey"
@@ -473,6 +474,47 @@ ENTIRY_DROP_LIGHT = {
             ]
         }
 
+# 自定义声音
+CUSTOM_SOUNDS = {
+    # Item
+    "sc":                 {True: r"item\sc.flac",                  False: r"item\item_charm_hd.flac"},
+    "gc":                 {True: r"item\gc.flac",                  False: r"item\item_charm_hd.flac"},
+    "r22":                {True: r"item\r22.flac",                 False: r"item\item_rune_hd.flac"},
+    "r23":                {True: r"item\r23.flac",                 False: r"item\item_rune_hd.flac"},
+    "r24":                {True: r"item\r24.flac",                 False: r"item\item_rune_hd.flac"},
+    "r25":                {True: r"item\r25.flac",                 False: r"item\item_rune_hd.flac"},
+    "r26":                {True: r"item\r26.flac",                 False: r"item\item_rune_hd.flac"},
+    "r27":                {True: r"item\r27.flac",                 False: r"item\item_rune_hd.flac"},
+    "r28":                {True: r"item\r28.flac",                 False: r"item\item_rune_hd.flac"},
+    "r29":                {True: r"item\r29.flac",                 False: r"item\item_rune_hd.flac"},
+    "r30":                {True: r"item\r30.flac",                 False: r"item\item_rune_hd.flac"},
+    "r31":                {True: r"item\r31.flac",                 False: r"item\item_rune_hd.flac"},
+    "r32":                {True: r"item\r32.flac",                 False: r"item\item_rune_hd.flac"},
+    "r33":                {True: r"item\r33.flac",                 False: r"item\item_rune_hd.flac"},
+    "diadem":             {True: r"item\diadem.flac",              False: r"item\item_helm_hd.flac"},
+    "mephisto_key":       {True: r"item\torch_key.flac",           False: r"item\item_key_hd.flac"},
+    # Skill
+    "enchant_off":        {True: r"skill\enchant_off.flac",        False: r"none.flac"},
+    "chillingarmor_off":  {True: r"skill\chillingarmor_off.flac",  False: r"none.flac"},
+    "shout_off":          {True: r"skill\shout_off.flac",          False: r"none.flac"},
+    "energyshield_off":   {True: r"skill\energyshield_off.flac",   False: r"none.flac"},
+    "venom_off":          {True: r"skill\venom_off.flac",          False: r"none.flac"},
+    "battleorders_off":   {True: r"skill\battleorders_off.flac",   False: r"none.flac"},
+    "battlecommand_off":  {True: r"skill\battlecommand_off.flac",  False: r"none.flac"},
+    "shiverarmor_off":    {True: r"skill\shiverarmor_off.flac",    False: r"none.flac"},
+    "holyshield_off":     {True: r"skill\holyshield_off.flac",     False: r"none.flac"},
+    "cyclonearmor_off":   {True: r"skill\cyclonearmor_off.flac",   False: r"none.flac"},
+    "quickness_off":      {True: r"skill\quickness_off.flac",      False: r"none.flac"},
+    "bladeshield_off":    {True: r"skill\bladeshield_off",         False: r"none.flac"},
+    "wolf_off":           {True: r"skill\wolf_off.flac",           False: r"none.flac"},
+    "bear_off":           {True: r"skill\bear_off.flac",           False: r"none.flac"},
+    "frozenarmor_off":    {True: r"skill\frozenarmor_off.flac",    False: r"none.flac"},
+    "bonearmor_off":      {True: r"skill\bonearmor_off.flac",      False: r"none.flac"},
+    "markwolf_off":       {True: r"skill\markwolf_off.flac",       False: r"none.flac"},
+    "markbear_off":       {True: r"skill\markbear_off.flac",       False: r"none.flac"},
+    "fade_off":           {True: r"skill\fade_off.flac",           False: r"none.flac"},
+}
+
 # 导出所有需要的符号
 __all__ = [
     'MUTEX_NAME',
@@ -512,6 +554,7 @@ __all__ = [
     'DRU_SETTING',
     'ASN_SETTING',
     'COMMON_SETTING',
+    'SKILL_OFF_SOUNDS',
     'MERCENARY',
     'MERCENARY_LOCATION',
     'MONSTER_SETTING',
@@ -522,9 +565,9 @@ __all__ = [
     'MODEL_EFFECTS',
     'RUNE_SKIN',
     'RUNE_SIZE',
-    'SOUND_PROMPTS',
     'DROPED_LIGHT',
     'TORCH_KEY',
+    'ITEM_DROP_SOUNDS',
     'DISABLE_EFFECTS',
     'ENABLE_POINTER',
     'RADIO',
@@ -537,5 +580,6 @@ __all__ = [
     'TERROR_ZONE_API',
     'TERROR_ZONE_DICT',
     'SET_ITEM_INDEX',
-    'ENTIRY_DROP_LIGHT'
+    'ENTIRY_DROP_LIGHT',
+    'CUSTOM_SOUNDS',
 ]

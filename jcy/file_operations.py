@@ -198,18 +198,6 @@ class FileOperations:
         return self.common_rename(files_escape, isEnabled) 
     
 
-    def toggle_sound(self, isEnabled: bool = False):
-        """
-        开关 咒符/符文/技能结束提示音
-        """
-        files_sound = (
-            r"data/global/excel/misc.txt",
-            r"data/global/excel/states.txt",
-        )
-
-        return self.common_rename(files_sound, isEnabled)
-
-
     def toggle_global_excel_affixes(self, isEnabled: bool = False):
         """
         开关 特殊词缀装备变色
@@ -3217,23 +3205,97 @@ class FileOperations:
 
         # "3": "掉落声音提醒"
         handle3 = "3" in keys
-        misc_names = ["Key of Terror", "Key of Hate", "Key of Destruction"]
-        misc_path = os.path.join(MOD_PATH, r"data/global/excel/misc.txt")
-        with open(misc_path, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f, delimiter='\t')
-            print(reader.fieldnames) 
-            rows = list(reader)
-        for row in rows:
-            if row["name"] in misc_names:
-                row["dropsound"] = "mephisto_key" if handle3 else "item_key"
-        with open(misc_path, 'w', encoding='utf-8', newline='') as f:
-            writer = csv.DictWriter(f, fieldnames=reader.fieldnames, delimiter='\t')
-            writer.writeheader()
-            writer.writerows(rows)
-        count += 1
+        sounds = { "mephisto_key": handle3 }
+        sub3 = self.modify_custom_sounds(sounds)
+        count += sub3[0]
+        total += 1 + len(key_files) + sub3[1]
 
-        return (count, 6)
+        return (count, total)
+    
 
+    def skill_off_sounds(self, keys: list):
+        """技能结束提示音"""
+        if keys is None:
+            return (0, 0)
+        
+        data = {
+            "enchant_off":          "enchant_off" in keys,
+            "frozenarmor_off":      "frozenarmor_off" in keys,
+            "shiverarmor_off":      "shiverarmor_off" in keys,
+            "chillingarmor_off":    "chillingarmor_off" in keys,
+            "energyshield_off":     "energyshield_off" in keys,
+            "shout_off":            "shout_off" in keys,
+            "battleorders_off":     "battleorders_off" in keys,
+            "battlecommand_off":    "battlecommand_off" in keys,
+            "bonearmor_off":        "bonearmor_off" in keys,
+            "venom_off":            "venom_off" in keys,
+            "fade_off":             "fade_off" in keys,
+            "quickness_off":        "quickness_off" in keys,
+            "bladeshield_off":      "bladeshield_off" in keys,
+            "holyshield_off":       "holyshield_off" in keys,
+            "cyclonearmor_off":     "cyclonearmor_off" in keys,
+            "wolf_off":             "wolf_off" in keys,
+            "bear_off":             "bear_off" in keys,
+            "markwolf_off":         "markwolf_off" in keys,
+            "markbear_off":         "markbear_off" in keys,
+        }
+
+        return self.modify_custom_sounds(data)
+    
+
+    def item_drop_sounds(self, keys: list):
+        """物品掉落提示音"""
+        if keys is None:
+            return (0, 0)
+        
+        data = {
+            "diadem":   "diadem" in keys,
+            "sc":       "sc" in keys,
+            "gc":       "gc" in keys,
+            "r22":      "r22" in keys,
+            "r23":      "r23" in keys,
+            "r24":      "r24" in keys,
+            "r25":      "r25" in keys,
+            "r26":      "r26" in keys,
+            "r27":      "r27" in keys,
+            "r28":      "r28" in keys,
+            "r29":      "r29" in keys,
+            "r30":      "r30" in keys,
+            "r31":      "r31" in keys,
+            "r32":      "r32" in keys,
+            "r33":      "r33" in keys,
+        }
+
+        return self.modify_custom_sounds(data)
+    
+
+    def modify_custom_sounds(self, data: dict):
+        """修改自定义声音(sounds.txt)"""
+        if data is None:
+            return (0, 0)
+        
+        try:
+            sounds_path = os.path.join(MOD_PATH, r"data/global/excel/sounds.txt")
+            with open(sounds_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f, delimiter='\t')
+                print(reader.fieldnames) 
+                rows = list(reader)
+
+            for row in rows:
+                key = row["Sound"]
+                if key in data:
+                    value = data.get(key)
+                    file_name = CUSTOM_SOUNDS.get(key).get(value)
+                    row["FileName"] = file_name
+
+            with open(sounds_path, 'w', encoding='utf-8', newline='') as f:
+                writer = csv.DictWriter(f, fieldnames=reader.fieldnames, delimiter='\t')
+                writer.writeheader()
+                writer.writerows(rows)
+            
+            return (1, 1)
+        except Exception as e:
+            print(e)
 
     def save_win_config(self, data):
         """保存窗口配置"""

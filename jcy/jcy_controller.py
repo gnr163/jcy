@@ -172,6 +172,8 @@ class FeatureController:
             ASN_SETTING: self.file_operations.assassin_setting,
             # 通用设置
             COMMON_SETTING: self.file_operations.common_setting,
+            # 技能结束提示音
+            SKILL_OFF_SOUNDS: self.file_operations.skill_off_sounds,
             # 佣兵-配置
             MERCENARY: self.file_operations.select_mercenary_skin,
             # 佣兵-图标位置
@@ -194,8 +196,8 @@ class FeatureController:
             DROPED_LIGHT: self.file_operations.select_droped_light,
             # 22#+符文名称大小(越大越容易发现/选中)
             RUNE_SIZE: self.file_operations.modify_rune_rectangle,
-            # 语音提示
-            SOUND_PROMPTS: self.file_operations.toggle_sound,
+            # 物品掉落提示音
+            ITEM_DROP_SOUNDS: self.file_operations.item_drop_sounds,
             # 火炬钥匙
             TORCH_KEY: self.file_operations.torch_key,
             # 环境-关闭特效
