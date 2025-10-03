@@ -3093,7 +3093,7 @@ class FileOperations:
 
         # 开启 技能图标(头顶:熊之印记/狼之印记 脚下:附魔/速度爆发+影散/BO 右侧:刺客聚气)
         isEnabled2 = "2" in keys
-        sub2 = self.toggle_context_menu(isEnabled2)
+        sub2 = self.toggle_skill_logo(isEnabled2)
 
         funcs = []
         funcs.append(sub1)
