@@ -909,8 +909,12 @@ class FileOperations:
 
     def mercenary_coordinate(self, val: dict):
         """修改佣兵坐标"""
-        return (1, 1)
-
+        
+        # 佣兵图标位置 = 自定义 -> 根据hud_size进行修改
+        location = self.controller.current_states.get(MERCENARY_LOCATION)
+        hud_size = self.controller.current_states.get(HUD_SIZE)
+        result = self.modify_hireablespanelhd_json(location, hud_size)
+        return (result[0], result[1], f"= {str(val)}")
 
     def select_character_effects(self, keys: list):
         """
@@ -3191,6 +3195,7 @@ class FileOperations:
             return (0, 0)
 
         count = 0 
+        total = 0
 
         # "1": "金属颜色皮肤",
         handle1 = "1" in keys

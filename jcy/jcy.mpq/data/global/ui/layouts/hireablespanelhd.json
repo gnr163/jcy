@@ -5,18 +5,21 @@
         "priority": -100,
         "rect": {
             "x": 46,
-            "y": 266
+            "y": 60,
+            "scale": 0.64
         },
         "nextIconOffset": {
-            "y": 120
+            "y": 204
         },
         "summonsUseSecondSet": true,
         "nameAlternationSecondSetY": 0,
         "secondSetPosition": {
-            "x": 1200,
-            "y": 1200
+            "x": 2381,
+            "y": 2785
         },
-        "nextIconOffsetSecondSet": "$SecondSetIconOffset",
+        "nextIconOffsetSecondSet": {
+            "x": 120
+        },
         "tooltipOffset": {
             "x": 160,
             "y": 115
