@@ -3356,10 +3356,23 @@ class FileOperations:
         return _dict
 
 
+    def terror_zone_next(self, keys: list):
+        """恐怖区域-预告"""
+        if keys is None:
+            return (0, 0)
+        
+        # 取消"游戏内预告"时, 清理面板tz信息
+        if "2" not in keys:
+            return self.writeTerrorZone("")
+        else:
+            return (0, 0)
+        
+
     def save_win_config(self, data):
         """保存窗口配置"""
         with open(WIN_PATH, "w", encoding="utf-8") as f:
             json.dump(data, f)
+
 
     def load_win_config(self):
         """加载窗口配置"""

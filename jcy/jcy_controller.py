@@ -140,7 +140,7 @@ class FeatureController:
             # 恐怖区域-语言
             TERROR_ZONE_LANGUAGE: self.file_operations.select_language,
             # 恐怖区域-预告
-            TERROR_ZONE_NEXT: self.file_operations.void,
+            TERROR_ZONE_NEXT: self.file_operations.terror_zone_next,
             # 网易国服语言翻译(装备/道具/符文/符文之语)
             NETEASE_LANGUAGE: self.file_operations.select_netease_language,
             # 暴雪国际服语言翻译(装备/道具/符文/符文之语)
