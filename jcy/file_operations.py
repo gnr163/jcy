@@ -76,30 +76,6 @@ class FileOperations:
         return (count, len(files))
 
 
-    # def toggle_droped_highlight(self, isEnabled: bool = False):
-    #     """
-    #     开关 掉落光柱
-    #     """
-    #     files_droped_highlight = (
-    #         r"data/hd/items/misc/charm/charm_large.json",
-    #         r"data/hd/items/misc/charm/charm_small.json",
-    #         r"data/hd/items/misc/rune/ber_rune.json",
-    #         r"data/hd/items/misc/rune/cham_rune.json",
-    #         r"data/hd/items/misc/rune/gul_rune.json",
-    #         r"data/hd/items/misc/rune/ist_rune.json",
-    #         r"data/hd/items/misc/rune/jah_rune.json",
-    #         r"data/hd/items/misc/rune/lo_rune.json",
-    #         r"data/hd/items/misc/rune/mal_rune.json",
-    #         r"data/hd/items/misc/rune/ohm_rune.json",
-    #         r"data/hd/items/misc/rune/sur_rune.json",
-    #         r"data/hd/items/misc/rune/um_rune.json",
-    #         r"data/hd/items/misc/rune/vex_rune.json",
-    #         r"data/hd/items/misc/rune/zod_rune.json",
-    #     )
-
-    #     return self.common_rename(files_droped_highlight, isEnabled)
-
-
     def hide_quest_button(self, isEnabled: bool = False):
         """隐藏任务按钮"""
         
@@ -1256,9 +1232,7 @@ class FileOperations:
 
                 # CASE.过滤道具
                 if id in item_filter_config:
-                    item[ZHCN] = UE01A + item[ZHCN] if filter else item[ZHCN]
-                    item[ZHTW] = UE01A + item[ZHTW] if filter else item[ZHTW]
-                    item[ENUS] = UE01A + item[ENUS] if filter else item[ENUS]
+                    continue
 
                 # CASE.底材
                 elif len(Key) == 3:
@@ -1983,13 +1957,17 @@ class FileOperations:
             item_name[ZHTW] = UE01A + item_name_filter[ZHTW] if filter else item_name_filter[ZHTW]
             item_name[ENUS] = UE01A + item_name_filter[ENUS] if filter else item_name_filter[ENUS]
             
-            # 备份&转换
+            # 备份
             item_name[ZHCN2] = item_name[ZHCN]
             item_name[ZHTW2] = item_name[ZHTW]
-            if self.controller.current_states.get(NETEASE_LANGUAGE) is not None:
-                item_name[ZHCN] = item_name[self.controller.current_states.get(NETEASE_LANGUAGE)]
-            if self.controller.current_states.get(BATTLE_NET_LANGUAGE) is not None:
-                item_name[ZHTW] = item_name[self.controller.current_states.get(BATTLE_NET_LANGUAGE)]
+
+            # 转换
+            netease = self.controller.current_states.get(NETEASE_LANGUAGE)
+            if netease is not None:
+                item_name[ZHCN] = convert(item_name[ZHTW2], 'zh-cn') if T2S == netease else item_name[netease]
+            battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
+            if battlenet is not None:
+                item_name[ZHTW] = convert(item_name[ZHCN2], 'zh-tw') if S2T == battlenet else item_name[battlenet]
         # 3.write
         with open(item_names_path, 'w', encoding='utf-8-sig') as f:
             json.dump(item_names_data, f, ensure_ascii=False, indent=2)
@@ -2155,32 +2133,16 @@ class FileOperations:
                 with open(file_path, 'r', encoding='utf-8') as f:
                     file_json = json.load(f)
                 if handle:
-                    if file_json["entities"][-1] != ENTIRY_DROP_LIGHT:
-                        file_json["entities"].append(ENTIRY_DROP_LIGHT)
+                    if file_json["entities"][-1] != ENTITY_DROP_LIGHT:
+                        file_json["entities"].append(ENTITY_DROP_LIGHT)
                 else:
-                    if file_json["entities"][-1] == ENTIRY_DROP_LIGHT:
+                    if file_json["entities"][-1] == ENTITY_DROP_LIGHT:
                         file_json["entities"].pop() 
                 with open(file_path, "w", encoding="utf-8") as f:
                     json.dump(file_json, f, ensure_ascii=False, indent=4)
                 count += 1
 
         return (count, total)
-
-    # def toggle_droped_light(self, keys: list):
-    #     """掉落光柱提醒"""
-    #     if keys is None:
-    #         return (0, 0)
-        
-    #     # "1": "咒符/22#+符文开启光柱提醒",
-    #     toggle1 = "1" in keys
-    #     sub1 = self.toggle_droped_highlight(toggle1)
-
-    #     funcs = []
-    #     funcs.append(sub1)
-    #     results = [f for f in funcs]
-    #     summary = tuple(sum(values) for values in zip(*results))
-        
-    #     return summary
 
 
     def select_hudpanel_size(self, radio: str = "0"):
@@ -2193,11 +2155,17 @@ class FileOperations:
                 "2": { "x": -1090, "y": -310, "width": 2952, "height": 764, "scale": 0.75 },
                 "3": { "x": -945.1, "y": -267.8, "width": 2952, "height": 764, "scale": 0.65 },
             },
+            # {
+            #     "0": { "x": 0, "y": -500 , "scale": 1},
+            #     "1": { "x": 0, "y": -420 , "scale": 0.85},
+            #     "2": { "x": 0, "y": -370 , "scale": 0.75},
+            #     "3": { "x": 0, "y": -320 , "scale": 0.65},
+            # },
             {
-                "0": { "x": 0, "y": -500 , "scale": 1},
-                "1": { "x": 0, "y": -420 , "scale": 0.85},
-                "2": { "x": 0, "y": -370 , "scale": 0.75},
-                "3": { "x": 0, "y": -320 , "scale": 0.65},
+                "0": { "x": 0, "y": -146 , "scale": 1},
+                "1": { "x": 0, "y": -123 , "scale": 0.85},
+                "2": { "x": 0, "y": -110 , "scale": 0.75},
+                "3": { "x": 0, "y": -90 , "scale": 0.65},
             }
         ]
 
@@ -2256,6 +2224,7 @@ class FileOperations:
             r"data/local/lng/strings/item-names.json",
             r"data/local/lng/strings/item-runes.json",
             r"data/local/lng/strings/item-nameaffixes.json",
+            r"data/local/lng/strings/skills.json"
         ]
 
         count = 0
@@ -3194,10 +3163,10 @@ class FileOperations:
             with open(mephisto_key_path, 'r', encoding='utf-8') as f:
                 mephisto_key_json = json.load(f)
             if handle2:
-                if mephisto_key_json["entities"][-1] != ENTIRY_DROP_LIGHT:
-                    mephisto_key_json["entities"].append(ENTIRY_DROP_LIGHT)
+                if mephisto_key_json["entities"][-1] != ENTITY_DROP_LIGHT:
+                    mephisto_key_json["entities"].append(ENTITY_DROP_LIGHT)
             else:
-                if mephisto_key_json["entities"][-1] == ENTIRY_DROP_LIGHT:
+                if mephisto_key_json["entities"][-1] == ENTITY_DROP_LIGHT:
                     mephisto_key_json["entities"].pop() 
             with open(mephisto_key_path, "w", encoding="utf-8") as f:
                 json.dump(mephisto_key_json, f, ensure_ascii=False, indent=4)
@@ -3296,6 +3265,29 @@ class FileOperations:
             return (1, 1)
         except Exception as e:
             print(e)
+
+    def load_global_dict(self):
+        """初始化全局字典"""
+        
+        _files = [
+            r"data/local/lng/strings/item-names.json",
+            r"data/local/lng/strings/item-runes.json",
+            r"data/local/lng/strings/skills.json",
+        ]
+
+        _dict = {}
+
+        for _file in _files:
+            json_data = None
+            json_path = os.path.join(MOD_PATH, _file)
+            with open(json_path, "r", encoding="utf-8-sig") as f:
+                json_data = json.load(f)
+            
+            for entity in json_data:
+                _dict[entity.get("Key")] = entity
+
+        return _dict
+
 
     def save_win_config(self, data):
         """保存窗口配置"""

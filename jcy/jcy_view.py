@@ -510,17 +510,19 @@ class LabeledCheckGroup(ttk.LabelFrame):
             default_selected = []
 
         params = data.get("params", {})
-        
+        # 每行列数
+        columns = data.get("columns", 8)
+                
         for idx, (key, label) in enumerate(params.items()):
             var = tk.BooleanVar(value=(key in default_selected))
-            chk = ttk.Checkbutton(self, text=label, variable=var, command=self._on_check)
-            r = idx // 8
-            c = idx % 8
+            chk = ttk.Checkbutton(self, text=translate(label), variable=var, command=self._on_check)
+            r = idx // columns
+            c = idx % columns
             chk.grid(row=r, column=c, sticky="nsew", padx=5, pady=5)
             self.vars[key] = var
 
         # 给内部列设权重，让每列均匀伸缩
-        for c in range(8):
+        for c in range(columns):
             self.grid_columnconfigure(c, weight=1)
 
     def _on_check(self):

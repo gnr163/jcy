@@ -29,23 +29,16 @@ LANG = None
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.2.3"
+APP_VERSION = "v1.2.4"
 
 # 发布日期
-APP_DATE = "20251001"
+APP_DATE = "20251003"
 
 # 控制器全称
 APP_FULL_NAME = f"{APP_NAME}_{APP_VERSION}"
 
 # APP大小
 APP_SIZE = "750x700"
-
-# APP语言
-APP_LANGUAGE = {
-    "default": ZHCN,
-    "1" : ZHTW,
-    "2" : ENUS
-}
 
 # 区服地址
 REGION_DOMAIN_MAP = {
@@ -63,6 +56,22 @@ REGION_NAME_MAP = {
 
 # Unicode私有区字符 for 屏蔽道具
 UE01A = "" * 41
+
+# 全局字典
+GLOBAL_DICT = {}
+
+def init_global_dict(file_operations):
+    GLOBAL_DICT.clear()
+    GLOBAL_DICT.update(file_operations.load_global_dict())
+
+def translate(text: str) -> str:
+    """如果首位是 @ 则按字典翻译，否则原样返回"""
+    if isinstance(text, str) and text.startswith('@'):
+        key = text[1:]  # 去掉@
+        _dict = GLOBAL_DICT.get(key)
+        if _dict: 
+            return _dict[ZHCN]
+    return text
 
 # <!-- Function Identifier 
 NETEASE_LANGUAGE = "NeteaseLanguage"
@@ -301,6 +310,43 @@ TERROR_ZONE_DICT = {
   }
 }
 
+# SETS_INDEX
+SETS_INDEX = [
+  "Civerb's Vestments",
+  "Hsarus' Defense",
+  "Cleglaw's Brace",
+  "Iratha's Finery",
+  "Isenhart's Armory",
+  "Vidala's Rig",
+  "Milabrega's Regalia",
+  "Cathan's Traps",
+  "Tancred's Battlegear",
+  "Sigon's Complete Steel",
+  "Infernal Tools",
+  "Berserker's Garb",
+  "Death's Disguise",
+  "Angelical Raiment",
+  "Arctic Gear",
+  "Arcanna's Tricks",
+  "Natalya's Odium",
+  "Aldur's Watchtower",
+  "Immortal King",
+  "Tal Rasha's Wrappings",
+  "Griswold's Legacy",
+  "Trang-Oul's Avatar",
+  "M'avina's Battle Hymn",
+  "The Disciple",
+  "Heaven's Brethren",
+  "Orphan's Call",
+  "Hwanin's Majesty",
+  "Sazabi's Grand Tribute",
+  "Bul-Kathos' Children",
+  "Cow King's Leathers",
+  "Naj's Ancient Set",
+  "McAuley's Folly",
+  "Warlord's Glory",
+]
+
 # SetItemIndex
 SET_ITEM_INDEX = [
   "Civerb's Ward",
@@ -439,7 +485,7 @@ SET_ITEM_INDEX = [
 ]
 
 # 掉落光柱JSON
-ENTIRY_DROP_LIGHT = {
+ENTITY_DROP_LIGHT = {
             "type": "Entity",
             "name": "entity_drop_light",
             "id": 9999999888,
@@ -532,7 +578,6 @@ __all__ = [
     'APP_FULL_NAME',
     'APP_DATE',
     'APP_SIZE',
-    'APP_LANGUAGE',
     'NETEASE_LANGUAGE',
     'BATTLE_NET_LANGUAGE',
     'TERROR_ZONE_SERVER',
@@ -579,7 +624,10 @@ __all__ = [
     'UE01A',
     'TERROR_ZONE_API',
     'TERROR_ZONE_DICT',
+    'SETS_INDEX',
     'SET_ITEM_INDEX',
-    'ENTIRY_DROP_LIGHT',
+    'ENTITY_DROP_LIGHT',
     'CUSTOM_SOUNDS',
+    'init_global_dict',
+    'translate',
 ]

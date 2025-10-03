@@ -38,6 +38,7 @@ class FeatureController:
 
         # 文件操作类
         self.file_operations = FileOperations(self)
+        init_global_dict(self.file_operations)
         # 同步APP信息到JSON
         self.file_operations.sync_app_data()
         # 注册控制器方法
