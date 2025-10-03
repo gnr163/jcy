@@ -21,6 +21,14 @@ from jcy_constants import *
 from jcy_paths import *
 from PIL import Image, ImageTk
 from tkinter import filedialog, messagebox, scrolledtext, ttk
+import subprocess  # 用系统默认播放器播放 flac
+
+def play_flac(path):
+    if os.path.exists(path):
+        # Windows 默认打开
+        subprocess.Popen(["start", "", path], shell=True)
+    else:
+        print("文件不存在:", path)
 
 class FeatureView:
     """
@@ -200,6 +208,22 @@ class FeatureView:
                 # 更新当前列索引
                 current_col += colspan
                 self.feature_vars[fid] = spinbox  # 如果你要后面取值
+
+            elif LOCATION == child["type"]:
+                group = LabeledCoordinate(
+                    tab,
+                    feature_id=child["fid"],
+                    data=child,
+                    command=self.controller.execute_feature_action
+                )
+                # 自动换行逻辑
+                if current_col + colspan > total_columns:
+                    current_row += 1
+                    current_col = 0
+                group.grid(row=current_row, column=current_col, columnspan=colspan,
+                        sticky="ew", padx=10, pady=5)
+                current_col += colspan
+                self.feature_vars[child["fid"]] = group
 
             elif SEPARATOR == type:
                 current_row += 1  
@@ -512,17 +536,27 @@ class LabeledCheckGroup(ttk.LabelFrame):
         params = data.get("params", {})
         # 每行列数
         columns = data.get("columns", 8)
-                
-        for idx, (key, label) in enumerate(params.items()):
+        # flac标记
+        isFlac = data.get("flac", False)
+
+        for idx, (key, param) in enumerate(params.items()):
+            label = param["text"] if isinstance(param, dict) else str(param)
+
             var = tk.BooleanVar(value=(key in default_selected))
             chk = ttk.Checkbutton(self, text=translate(label), variable=var, command=self._on_check)
+            
             r = idx // columns
-            c = idx % columns
-            chk.grid(row=r, column=c, sticky="nsew", padx=5, pady=5)
+            c = (idx % columns) * 2  # 每列留一列给按钮
+            chk.grid(row=r, column=c, sticky="w", padx=5, pady=5)
             self.vars[key] = var
 
-        # 给内部列设权重，让每列均匀伸缩
-        for c in range(columns):
+            if isFlac:
+                flac_path = os.path.join(MOD_PATH, CUSTOM_SOUNDS.get(key).get("path"))
+                btn = ttk.Button(self, text="▶", width=2, command=lambda p=flac_path: play_flac(p))
+                btn.grid(row=r, column=c+1, sticky="w", padx=2)
+
+        # 配置列权重，让列均匀伸缩
+        for c in range(columns * 2):
             self.grid_columnconfigure(c, weight=1)
 
     def _on_check(self):
@@ -590,6 +624,57 @@ class LabeledSpinBox(ttk.LabelFrame):
     def set(self, value):
         """设置当前值"""
         self.var.set(value)
+
+
+class LabeledCoordinate(ttk.LabelFrame):
+    def __init__(self, master, feature_id, data,
+                 command=None, **kwargs):
+        super().__init__(master, text=data.get("text", ""), **kwargs)
+        self.feature_id = feature_id
+        self.command = command
+
+        # 从 data["params"] 获取默认值
+        params = data.get("params", {})
+        x = params.get("x", 0)
+        y = params.get("y", 0)
+
+        self._var_x = tk.StringVar(value=str(x))
+        self._var_y = tk.StringVar(value=str(y))
+
+        ttk.Label(self, text="X:").grid(row=0, column=0, padx=2, pady=2, sticky="w")
+        entry_x = ttk.Entry(self, textvariable=self._var_x, width=6)
+        entry_x.grid(row=0, column=1, padx=2, pady=2, sticky="w")
+
+        ttk.Label(self, text="Y:").grid(row=0, column=2, padx=2, pady=2, sticky="w")
+        entry_y = ttk.Entry(self, textvariable=self._var_y, width=6)
+        entry_y.grid(row=0, column=3, padx=2, pady=2, sticky="w")
+
+        self._var_x.trace_add("write", self._on_change)
+        self._var_y.trace_add("write", self._on_change)
+
+    def _on_change(self, *args):
+        if self.command:
+            self.command(self.feature_id, self.get())
+
+    def get(self):
+        """返回整数坐标"""
+        try:
+            x = int(self._var_x.get())
+        except ValueError:
+            x = 0
+        try:
+            y = int(self._var_y.get())
+        except ValueError:
+            y = 0
+        return {"x": x, "y": y}
+
+    def set(self, value):
+        """接收 dict {'x': int, 'y': int} 更新控件"""
+        if isinstance(value, dict):
+            x = int(value.get("x", 0))
+            y = int(value.get("y", 0))
+            self._var_x.set(str(x))
+            self._var_y.set(str(y))
 
 
 class TableWithCheckbox(tk.Frame):

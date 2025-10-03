@@ -827,6 +827,53 @@ class FileOperations:
         return (count, total)
 
 
+    def modify_hireablespanelhd_json(self, location:str, hud_size: str):
+        """修改佣兵面板"""
+        # 佣兵未知-位置 != 自定义, 不修改
+        if "9" != location:
+            return (0, 0)
+        
+        # 根据HUD面板尺寸, 修改对应的参数
+        rects = {
+            "0": { "x": 46, "y": 60, "scale": 0.98 },
+            "1": { "x": 46, "y": 60, "scale": 0.83 },
+            "2": { "x": 46, "y": 60, "scale": 0.73 },
+            "3": { "x": 46, "y": 60, "scale": 0.64 },
+        }
+        keys = {
+            "0": MERCENARY_100,
+            "1": MERCENARY_85,
+            "2": MERCENARY_75,
+            "3": MERCENARY_65,
+        }
+
+        try:
+            # 1.load
+            file_data = None
+            file_path = os.path.join(MOD_PATH, r"data/global/ui/layouts/hireablespanelhd.json")
+            if not os.path.exists(file_path):
+                file_path = file_path + ".tmp"
+            
+            with open(file_path, 'r', encoding='utf-8') as f:
+                file_data = json.load(f)
+
+            # 2.modify
+            file_data["fields"]["rect"] = rects.get(hud_size)
+
+            key = keys.get(hud_size)
+            value = self.controller.current_states.get(key)
+            file_data["fields"]["secondSetPosition"] = value
+
+            # 3.write
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump(file_data, f, ensure_ascii=False, indent=4)
+            return (1, 1)
+        except Exception as e:
+            print(e)
+            return (0, 0)
+
+
+
     def select_hireables_panel(self, radio: str = "0"):
         """
         佣兵图标位置
@@ -838,6 +885,7 @@ class FileOperations:
             "1": r"data/global/ui/layouts/hireablespanelhd.json.1",
             "2": r"data/global/ui/layouts/hireablespanelhd.json.2",
             "3": r"data/global/ui/layouts/hireablespanelhd.json.3",
+            "9": r"data/global/ui/layouts/hireablespanelhd.json.9"
         }
 
         dst = r"data/global/ui/layouts/hireablespanelhd.json"
@@ -850,7 +898,18 @@ class FileOperations:
             shutil.copy2(_src, _dst)
         count += 1
 
+        # 佣兵图标位置 = 自定义 -> 根据hud_size进行修改
+        hud_size = self.controller.current_states.get(HUD_SIZE)
+        result = self.modify_hireablespanelhd_json(radio, hud_size)
+        count += result[0]
+        total += result[1]
+
         return (count, total)
+    
+
+    def mercenary_coordinate(self, val: dict):
+        """修改佣兵坐标"""
+        return (1, 1)
 
 
     def select_character_effects(self, keys: list):
@@ -2149,18 +2208,14 @@ class FileOperations:
         """HUD面板尺寸"""
 
         rects = [
+            # HUD
             {
                 "0": { "x": -1454, "y": -412, "width": 2952, "height": 764 },
                 "1": { "x": -1236, "y": -350, "width": 2952, "height": 764, "scale": 0.85 },
                 "2": { "x": -1090, "y": -310, "width": 2952, "height": 764, "scale": 0.75 },
                 "3": { "x": -945.1, "y": -267.8, "width": 2952, "height": 764, "scale": 0.65 },
             },
-            # {
-            #     "0": { "x": 0, "y": -500 , "scale": 1},
-            #     "1": { "x": 0, "y": -420 , "scale": 0.85},
-            #     "2": { "x": 0, "y": -370 , "scale": 0.75},
-            #     "3": { "x": 0, "y": -320 , "scale": 0.65},
-            # },
+            # WEAPON
             {
                 "0": { "x": 0, "y": -146 , "scale": 1},
                 "1": { "x": 0, "y": -123 , "scale": 0.85},
@@ -2197,6 +2252,13 @@ class FileOperations:
                 count += 1
             except Exception as e:
                 print(e)
+
+        # 联动修改 佣兵面板
+        location = self.controller.current_states.get(MERCENARY_LOCATION)
+        result = self.modify_hireablespanelhd_json(location, radio)
+        count += result[0]
+        total += result[1]
+        
         return (count, total)
 
 
@@ -3177,7 +3239,7 @@ class FileOperations:
         sounds = { "mephisto_key": handle3 }
         sub3 = self.modify_custom_sounds(sounds)
         count += sub3[0]
-        total += 1 + len(key_files) + sub3[1]
+        total += (1 + len(key_files) + sub3[1])
 
         return (count, total)
     

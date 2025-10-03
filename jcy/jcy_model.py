@@ -237,6 +237,7 @@ class FeatureConfig:
                             "text": "技能结束提示音",
                             "colspan": 10,
                             "columns": 5,
+                            "flac": True,
                             "params": {
                                 "enchant_off": "@skillname52",
                                 "frozenarmor_off": "@skillname40",
@@ -259,13 +260,68 @@ class FeatureConfig:
                                 "markbear_off": "@SkillnameMetamorphosisBear",
                             }
                         },
+                    ]
+                },
+                {
+                    "text": "怪物设置",
+                    "children": [
                         {
-                            "type": "Separator"
+                            "fid": MERCENARY_LOCATION,
+                            "type": RADIO,
+                            "text": "佣兵-图标位置",
+                            "colspan": 10,
+                            "params": {
+                                "0": "原版",
+                                "1": "左上角缩进",
+                                "2": "红球之上",
+                                "3": "红球之上上",
+                                "9": "自定义"
+                            }
+                        },
+                        {
+                            "fid": MERCENARY_100,
+                            "type": LOCATION,
+                            "text": "佣兵-坐标 x HUD100%",
+                            "colspan": 2,
+                            "params": {
+                                "x": 1286,
+                                "y": 1640
+                            }
+                        },
+                        {
+                            "fid": MERCENARY_85,
+                            "type": LOCATION,
+                            "text": "佣兵-坐标 x HUD85%",
+                            "colspan": 2,
+                            "params": {
+                                "x": 1656,
+                                "y": 2025
+                            }
+                        },
+                        {
+                            "fid": MERCENARY_75,
+                            "type": LOCATION,
+                            "text": "佣兵-坐标 x HUD75%",
+                            "colspan": 2,
+                            "params": {
+                                "x": 1981,
+                                "y": 2375
+                            }
+                        },
+                        {
+                            "fid": MERCENARY_65,
+                            "type": LOCATION,
+                            "text": "佣兵-坐标 x HUD65%",
+                            "colspan": 2,
+                            "params": {
+                                "x": 2381,
+                                "y": 2785
+                            }
                         },
                         {
                             "fid": MERCENARY,
                             "type": CHECK,
-                            "text": "佣兵-配置",
+                            "text": "佣兵-皮肤",
                             "colspan": 5,
                             "params": {
                                 "1": "A1白毛罗格",
@@ -274,22 +330,8 @@ class FeatureConfig:
                             }
                         },
                         {
-                            "fid": MERCENARY_LOCATION,
-                            "type": RADIO,
-                            "text": "佣兵-图标位置",
-                            "colspan": 5,
-                            "params": {
-                                "0": "原版",
-                                "1": "左上角缩进",
-                                "2": "红球之上",
-                                "3": "红球之上上"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "text": "怪物设置",
-                    "children": [
+                            "type": "Separator"
+                        },
                         {
                             "fid": MONSTER_SETTING,
                             "type": CHECK,
@@ -426,6 +468,7 @@ class FeatureConfig:
                             "text": "物品掉落提示音",
                             "colspan": 10,
                             "columns": 5,
+                            "flac": True,
                             "params": {
                                 "diadem": "@Diadem",
                                 "sc": "@cm1",
