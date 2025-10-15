@@ -2296,7 +2296,7 @@ class FileOperations:
         count = 0
         total = len(_files)
 
-        for i, file in enumerate(_files):
+        for file in _files:
             json_data = None
             json_path = os.path.join(MOD_PATH, file)
 
@@ -2308,12 +2308,14 @@ class FileOperations:
                 # 2.modify 
                 for obj in json_data:
                     # 鲁棒性
-                    if ZHCN2 not in obj or ZHTW2 not in obj:
+                    if ZHCN2 not in obj:
                         obj[ZHCN2] = obj[ZHCN]
+                    if ZHTW2 not in obj:
                         obj[ZHTW2] = obj[ZHTW]
-
                     if T2S == radio:
                         obj[ZHCN] = convert(obj[ZHTW2], 'zh-cn')
+                    elif S2T == radio:
+                        obj[ZHCN] = convert(obj[ZHCN2], 'zh-tw')
                     else:
                         obj[ZHCN] = obj[radio]
                 
@@ -2332,7 +2334,9 @@ class FileOperations:
         """国际服文字选择"""
         _files = [
             r"data/local/lng/strings/item-names.json",
-            r"data/local/lng/strings/item-runes.json"
+            r"data/local/lng/strings/item-runes.json",
+            r"data/local/lng/strings/item-nameaffixes.json",
+            r"data/local/lng/strings/skills.json"
         ]
 
         count = 0
@@ -2349,7 +2353,14 @@ class FileOperations:
 
                 # 2.modify 
                 for obj in json_data:
-                    if S2T == radio:
+                    # 鲁棒性
+                    if ZHCN2 not in obj:
+                        obj[ZHCN2] = obj[ZHCN]
+                    if ZHTW2 not in obj:
+                        obj[ZHTW2] = obj[ZHTW]
+                    if T2S == radio:
+                        obj[ZHTW] = convert(obj[ZHTW2], 'zh-cn')
+                    elif S2T == radio:
                         obj[ZHTW] = convert(obj[ZHCN2], 'zh-tw')
                     else:
                         obj[ZHTW] = obj[radio]

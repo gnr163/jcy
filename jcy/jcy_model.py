@@ -21,10 +21,11 @@ class FeatureConfig:
                             "text": "网易国服-本地化(装备/道具/符文/符文之语/词缀/技能)",
                             "colspan": 10,
                             "params": {
-                                ZHCN2: "简体中文-zhCN",
-                                ZHTW2: "繁體中文-zhTW",
-                                ENUS: "英文-enUS",
-                                T2S: "繁體中文-zhTW -> 简体中文-zhCN"
+                                ZHCN2: "简中翻译",
+                                S2T: "简中翻译->繁体",
+                                ENUS: "enUS",
+                                ZHTW2: "繁中翻译",
+                                T2S: "繁中翻译->简体",
                             }
                         },
                         {
@@ -33,10 +34,11 @@ class FeatureConfig:
                             "text": "暴雪國際服-本地化(裝備/道具/符文/符文之語/詞綴/技能)",
                             "colspan": 10,
                             "params": {
-                                ZHCN2: "简体中文-zhCN",
-                                ZHTW2: "繁體中文-zhTW",
-                                ENUS: "英文-enUS",
-                                S2T: "简体中文-zhCN -> 繁體中文-zhTW"
+                                ZHCN2: "简中翻译",
+                                S2T: "简中翻译->繁体",
+                                ENUS: "enUS",
+                                ZHTW2: "繁中翻译",
+                                T2S: "繁中翻译->简体",
                             }
                         },
                         {
