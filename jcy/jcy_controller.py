@@ -401,12 +401,6 @@ class TerrorZoneFetcher:
                     with open(TERROR_ZONE_PATH, "w", encoding="utf-8") as f:
                         json.dump(data, f, ensure_ascii=False, indent=2)
                         
-                        # 游戏内预告
-                        if "2" in self.controller.current_states[TERROR_ZONE_NEXT]:
-                            self.controller.file_operations.writeTerrorZone(data)
-                        else:
-                            self.controller.file_operations.writeTerrorZone("")
-
                     print(f"[保存] 数据已保存到 {TERROR_ZONE_PATH}")
                 except Exception as e:
                     print(f"[错误] 保存数据失败: {e}")
@@ -415,6 +409,13 @@ class TerrorZoneFetcher:
                 if "1" in self.controller.current_states[TERROR_ZONE_NEXT]:
                     if callback:
                         callback(data)
+
+                # 游戏内预告
+                if "2" in self.controller.current_states[TERROR_ZONE_NEXT]:
+                    self.controller.file_operations.writeTerrorZone(data)
+                else:
+                    self.controller.file_operations.writeTerrorZone("")
+
             else:
                 print("[提示] 当前时间点抓取失败，等待下个整点再尝试")
 

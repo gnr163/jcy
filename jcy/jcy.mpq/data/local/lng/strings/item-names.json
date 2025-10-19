@@ -12542,8 +12542,8 @@
   {
     "id": 10122,
     "Key": "Civerb's Ward",
-    "enUS": "ÿc1[DEF29]\nÿc2Civerb's Ward",
-    "zhTW": "ÿc1[防禦29]\nÿc2克維雷布的防護",
+    "enUS": "Civerb's Ward",
+    "zhTW": "克維雷布的防護",
     "deDE": "Civerbs Schutz",
     "esES": "Custodia de Civerb",
     "frFR": "Garde de Civerb",
@@ -12554,9 +12554,9 @@
     "jaJP": "シバーブの守護盾",
     "ptBR": "Proteção de Civerb",
     "ruRU": "Щит Киверба",
-    "zhCN": "ÿc1[防禦29]\nÿc2克維雷布的防護",
-    "zhCN2": "ÿc1[防御29]\nÿc2希弗伯的防护",
-    "zhTW2": "ÿc1[防禦29]\nÿc2克維雷布的防護"
+    "zhCN": "克維雷布的防護",
+    "zhCN2": "希弗伯的防护",
+    "zhTW2": "克維雷布的防護"
   },
   {
     "id": 10123,
@@ -12580,8 +12580,8 @@
   {
     "id": 10124,
     "Key": "Civerb's Cudgel",
-    "enUS": "ÿc1[23MAX]\nÿc2Civerb's Cudgel",
-    "zhTW": "ÿc1[23MAX]\nÿc2克維雷布的短棍",
+    "enUS": "Civerb's Cudgel",
+    "zhTW": "克維雷布的短棍",
     "deDE": "Civerbs Knüttel",
     "esES": "Garrote de Civerb",
     "frFR": "Gourdin de Civerb",
@@ -12592,15 +12592,15 @@
     "jaJP": "シバーブの聖棍",
     "ptBR": "Tacape de Civerb",
     "ruRU": "Палица Киверба",
-    "zhCN": "ÿc1[23MAX]\nÿc2克維雷布的短棍",
-    "zhCN2": "ÿc1[23MAX]\nÿc2希弗伯的短棍",
-    "zhTW2": "ÿc1[23MAX]\nÿc2克維雷布的短棍"
+    "zhCN": "克維雷布的短棍",
+    "zhCN2": "希弗伯的短棍",
+    "zhTW2": "克維雷布的短棍"
   },
   {
     "id": 10125,
     "Key": "Hsarus' Iron Heel",
-    "enUS": "ÿc1[DEF9]\nÿc2Hsarus' Iron Heel",
-    "zhTW": "ÿc1[防禦9]\nÿc2海沙魯的鐵跟",
+    "enUS": "Hsarus' Iron Heel",
+    "zhTW": "海沙魯的鐵跟",
     "deDE": "Hsarus' Eisenferse",
     "esES": "Talón de hierro de Hsarus",
     "frFR": "Talon de fer de Hsarus",
@@ -12611,15 +12611,15 @@
     "jaJP": "フサルの鉄靴",
     "ptBR": "Calcanhar de Ferro de Risarus",
     "ruRU": "Железные подошвы Хсаруса",
-    "zhCN": "ÿc1[防禦9]\nÿc2海沙魯的鐵跟",
-    "zhCN2": "ÿc1[防御9]\nÿc2萨鲁斯的铁踵",
-    "zhTW2": "ÿc1[防禦9]\nÿc2海沙魯的鐵跟"
+    "zhCN": "海沙魯的鐵跟",
+    "zhCN2": "萨鲁斯的铁踵",
+    "zhTW2": "海沙魯的鐵跟"
   },
   {
     "id": 10126,
     "Key": "Hsarus' Iron Fist",
-    "enUS": "ÿc1[BaseDEF6]\nÿc2Hsarus' Iron Fist",
-    "zhTW": "ÿc1[基本防禦6]\nÿc2海沙魯的鐵拳",
+    "enUS": "Hsarus' Iron Fist",
+    "zhTW": "海沙魯的鐵拳",
     "deDE": "Hsarus' Eisenfaust",
     "esES": "Puño de hierro de Hsarus",
     "frFR": "Poing de fer de Hsarus",
@@ -12630,9 +12630,9 @@
     "jaJP": "フサルの鉄拳",
     "ptBR": "Punho de Ferro de Risarus",
     "ruRU": "Железный кулак Хсаруса",
-    "zhCN": "ÿc1[基本防禦6]\nÿc2海沙魯的鐵拳",
-    "zhCN2": "ÿc1[基本防御6]\nÿc2萨鲁斯的铁拳",
-    "zhTW2": "ÿc1[基本防禦6]\nÿc2海沙魯的鐵拳"
+    "zhCN": "海沙魯的鐵拳",
+    "zhCN2": "萨鲁斯的铁拳",
+    "zhTW2": "海沙魯的鐵拳"
   },
   {
     "id": 10127,
@@ -12675,8 +12675,8 @@
   {
     "id": 10129,
     "Key": "Cleglaw's Claw",
-    "enUS": "ÿc1[DEF27]\nÿc2Cleglaw's Claw",
-    "zhTW": "ÿc1[防禦27]\nÿc2克雷德勞之爪",
+    "enUS": "Cleglaw's Claw",
+    "zhTW": "克雷德勞之爪",
     "deDE": "Cleglaws Kralle",
     "esES": "Garra de Cleglaw",
     "frFR": "Griffe de Cleglaw",
@@ -12687,15 +12687,15 @@
     "jaJP": "クレグローの爪",
     "ptBR": "Garra de Cleglao",
     "ruRU": "Коготь Клеглава",
-    "zhCN": "ÿc1[防禦27]\nÿc2克雷德勞之爪",
-    "zhCN2": "ÿc1[防御27]\nÿc2克雷格劳之爪",
-    "zhTW2": "ÿc1[防禦27]\nÿc2克雷德勞之爪"
+    "zhCN": "克雷德勞之爪",
+    "zhCN2": "克雷格劳之爪",
+    "zhTW2": "克雷德勞之爪"
   },
   {
     "id": 10130,
     "Key": "Cleglaw's Pincers",
-    "enUS": "ÿc1[DEF9]\nÿc2Cleglaw's Pincers",
-    "zhTW": "ÿc1[防禦9]\nÿc2克雷德勞之鉗",
+    "enUS": "Cleglaw's Pincers",
+    "zhTW": "克雷德勞之鉗",
     "deDE": "Cleglaws Kneifer",
     "esES": "Pinzas de Cleglaw",
     "frFR": "Pinces de Cleglaw",
@@ -12706,9 +12706,9 @@
     "jaJP": "クレグローの指先",
     "ptBR": "Tenazes de Cleglao",
     "ruRU": "Клешни Клеглава",
-    "zhCN": "ÿc1[防禦9]\nÿc2克雷德勞之鉗",
-    "zhCN2": "ÿc1[防御9]\nÿc2克雷格劳之钳",
-    "zhTW2": "ÿc1[防禦9]\nÿc2克雷德勞之鉗"
+    "zhCN": "克雷德勞之鉗",
+    "zhCN2": "克雷格劳之钳",
+    "zhTW2": "克雷德勞之鉗"
   },
   {
     "id": 10131,
@@ -12732,8 +12732,8 @@
   {
     "id": 10132,
     "Key": "Iratha's Coil",
-    "enUS": "ÿc1[BaseDEF45]\nÿc2Iratha's Coil",
-    "zhTW": "ÿc1[基本防禦45]\nÿc2依雷撒的盤頂",
+    "enUS": "Iratha's Coil",
+    "zhTW": "依雷撒的盤頂",
     "deDE": "Irathas Rolle",
     "esES": "Rosca de Iratha",
     "frFR": "Torsade d’Iratha",
@@ -12744,15 +12744,15 @@
     "jaJP": "イラサの円冠",
     "ptBR": "Coroa de Irata",
     "ruRU": "Змеевик Ираты",
-    "zhCN": "ÿc1[基本防禦45]\nÿc2依雷撒的盤頂",
-    "zhCN2": "ÿc1[基本防御45]\nÿc2艾蕾萨的铁围盔",
-    "zhTW2": "ÿc1[基本防禦45]\nÿc2依雷撒的盤頂"
+    "zhCN": "依雷撒的盤頂",
+    "zhCN2": "艾蕾萨的铁围盔",
+    "zhTW2": "依雷撒的盤頂"
   },
   {
     "id": 10133,
     "Key": "Iratha's Cuff",
-    "enUS": "ÿc1[DEF11]\nÿc2Iratha's Cuff",
-    "zhTW": "ÿc1[防禦11]\nÿc2依雷撒的袖銬",
+    "enUS": "Iratha's Cuff",
+    "zhTW": "依雷撒的袖銬",
     "deDE": "Irathas Ärmelaufschläge",
     "esES": "Esposas de Iratha",
     "frFR": "Crispins d’Iratha",
@@ -12763,9 +12763,9 @@
     "jaJP": "イラサの袖鎧",
     "ptBR": "Manilha de Irata",
     "ruRU": "Наручи Ираты",
-    "zhCN": "ÿc1[防禦11]\nÿc2依雷撒的袖銬",
-    "zhCN2": "ÿc1[防御11]\nÿc2艾蕾萨的袖手套",
-    "zhTW2": "ÿc1[防禦11]\nÿc2依雷撒的袖銬"
+    "zhCN": "依雷撒的袖銬",
+    "zhCN2": "艾蕾萨的袖手套",
+    "zhTW2": "依雷撒的袖銬"
   },
   {
     "id": 10134,
@@ -12789,8 +12789,8 @@
   {
     "id": 10135,
     "Key": "Isenhart's Horns",
-    "enUS": "ÿc1[DEF26]\nÿc2Isenhart's Horns",
-    "zhTW": "ÿc1[防禦26]\nÿc2依森哈特的角盔",
+    "enUS": "Isenhart's Horns",
+    "zhTW": "依森哈特的角盔",
     "deDE": "Isenharts Hörner",
     "esES": "Cuernos de Isenhart",
     "frFR": "Cornes d’Isenhart",
@@ -12801,15 +12801,15 @@
     "jaJP": "アイゼンハートの兜",
     "ptBR": "Chifres de Isenhart",
     "ruRU": "Рога Изенхарта",
-    "zhCN": "ÿc1[防禦26]\nÿc2依森哈特的角盔",
-    "zhCN2": "ÿc1[防御26]\nÿc2依森哈特的号角",
-    "zhTW2": "ÿc1[防禦26]\nÿc2依森哈特的角盔"
+    "zhCN": "依森哈特的角盔",
+    "zhCN2": "依森哈特的号角",
+    "zhTW2": "依森哈特的角盔"
   },
   {
     "id": 10136,
     "Key": "Isenhart's Case",
-    "enUS": "ÿc1[BaseDEF68]\nÿc2Isenhart's Case",
-    "zhTW": "ÿc1[基本防禦68]\nÿc2依森哈特的外殼",
+    "enUS": "Isenhart's Case",
+    "zhTW": "依森哈特的外殼",
     "deDE": "Isenharts Kiste",
     "esES": "Funda de Isenhart",
     "frFR": "Coffre d’Isenhart",
@@ -12820,15 +12820,15 @@
     "jaJP": "アイゼンハートの胸甲",
     "ptBR": "Armadura de Isenhart",
     "ruRU": "Нагрудник Изенхарта",
-    "zhCN": "ÿc1[基本防禦68]\nÿc2依森哈特的外殼",
-    "zhCN2": "ÿc1[基本防御68]\nÿc2依森哈特的胸胄",
-    "zhTW2": "ÿc1[基本防禦68]\nÿc2依森哈特的外殼"
+    "zhCN": "依森哈特的外殼",
+    "zhCN2": "依森哈特的胸胄",
+    "zhTW2": "依森哈特的外殼"
   },
   {
     "id": 10137,
     "Key": "Isenhart's Parry",
-    "enUS": "ÿc1[DEF75]\nÿc2Isenhart's Parry",
-    "zhTW": "ÿc1[防禦75]\nÿc2依森哈特的招架",
+    "enUS": "Isenhart's Parry",
+    "zhTW": "依森哈特的招架",
     "deDE": "Isenharts Parade",
     "esES": "Evasión de Isenhart",
     "frFR": "Parade d’Isenhart",
@@ -12839,9 +12839,9 @@
     "jaJP": "アイゼンハートのパリー盾",
     "ptBR": "Defesa de Isenhart",
     "ruRU": "Отражатель Изенхарта",
-    "zhCN": "ÿc1[防禦75]\nÿc2依森哈特的招架",
-    "zhCN2": "ÿc1[防御75]\nÿc2依森哈特的格挡",
-    "zhTW2": "ÿc1[防禦75]\nÿc2依森哈特的招架"
+    "zhCN": "依森哈特的招架",
+    "zhCN2": "依森哈特的格挡",
+    "zhTW2": "依森哈特的招架"
   },
   {
     "id": 10138,
@@ -12884,8 +12884,8 @@
   {
     "id": 10140,
     "Key": "Vidala's Ambush",
-    "enUS": "ÿc1[BaseDEF17]\nÿc2Vidala's Ambush",
-    "zhTW": "ÿc1[基本防禦17]\nÿc2維達拉的突襲",
+    "enUS": "Vidala's Ambush",
+    "zhTW": "維達拉的突襲",
     "deDE": "Vidalas Hinterhalt",
     "esES": "Emboscada de Vidala",
     "frFR": "Embuscade de Vidala",
@@ -12896,15 +12896,15 @@
     "jaJP": "ヴィダラの潜伏",
     "ptBR": "Emboscada de Vidala",
     "ruRU": "Западня Видалы",
-    "zhCN": "ÿc1[基本防禦17]\nÿc2維達拉的突襲",
-    "zhCN2": "ÿc1[基本防御17]\nÿc2维达拉的突袭",
-    "zhTW2": "ÿc1[基本防禦17]\nÿc2維達拉的突襲"
+    "zhCN": "維達拉的突襲",
+    "zhCN2": "维达拉的突袭",
+    "zhTW2": "維達拉的突襲"
   },
   {
     "id": 10141,
     "Key": "Vidala's Fetlock",
-    "enUS": "ÿc1[DEF11]\nÿc2Vidala's Fetlock",
-    "zhTW": "ÿc1[防禦11]\nÿc2維達拉的足距",
+    "enUS": "Vidala's Fetlock",
+    "zhTW": "維達拉的足距",
     "deDE": "Vidalas Behang",
     "esES": "Espolón de Vidala",
     "frFR": "Boulets de Vidala",
@@ -12915,9 +12915,9 @@
     "jaJP": "ヴィダラの蹴爪",
     "ptBR": "Casco de Vidala",
     "ruRU": "Путы Видалы",
-    "zhCN": "ÿc1[防禦11]\nÿc2維達拉的足距",
-    "zhCN2": "ÿc1[防御11]\nÿc2维达拉的扣带靴",
-    "zhTW2": "ÿc1[防禦11]\nÿc2維達拉的足距"
+    "zhCN": "維達拉的足距",
+    "zhCN2": "维达拉的扣带靴",
+    "zhTW2": "維達拉的足距"
   },
   {
     "id": 10142,
@@ -12960,8 +12960,8 @@
   {
     "id": 10144,
     "Key": "Milabrega's Diadem",
-    "enUS": "ÿc1[DEF45]\nÿc2Milabrega's Diadem",
-    "zhTW": "ÿc1[防禦45]\nÿc2米拉伯佳權冠",
+    "enUS": "Milabrega's Diadem",
+    "zhTW": "米拉伯佳權冠",
     "deDE": "Milabregas Diadem",
     "esES": "Diadema de Milabrega",
     "frFR": "Diadème de Milabrega",
@@ -12972,9 +12972,9 @@
     "jaJP": "ミラブレガのダイアデム",
     "ptBR": "Diadema de Milabrega",
     "ruRU": "Диадема Милабреги",
-    "zhCN": "ÿc1[防禦45]\nÿc2米拉伯佳權冠",
-    "zhCN2": "ÿc1[防御45]\nÿc2米拉伯佳的权冠",
-    "zhTW2": "ÿc1[防禦45]\nÿc2米拉伯佳權冠"
+    "zhCN": "米拉伯佳權冠",
+    "zhCN2": "米拉伯佳的权冠",
+    "zhTW2": "米拉伯佳權冠"
   },
   {
     "id": 10145,
@@ -13055,8 +13055,8 @@
   {
     "id": 10149,
     "Key": "Cathan's Visage",
-    "enUS": "ÿc1[BaseDEF27]\nÿc2Cathan's Visage",
-    "zhTW": "ÿc1[基本防禦27]\nÿc2卡珊的容貌",
+    "enUS": "Cathan's Visage",
+    "zhTW": "卡珊的容貌",
     "deDE": "Cathans Fratze",
     "esES": "Semblante de Cathan",
     "frFR": "Visage de Cathan",
@@ -13067,15 +13067,15 @@
     "jaJP": "カタンの面頬",
     "ptBR": "Semblante de Catan",
     "ruRU": "Лик Катана",
-    "zhCN": "ÿc1[基本防禦27]\nÿc2卡珊的容貌",
-    "zhCN2": "ÿc1[基本防御27]\nÿc2卡珊的面甲",
-    "zhTW2": "ÿc1[基本防禦27]\nÿc2卡珊的容貌"
+    "zhCN": "卡珊的容貌",
+    "zhCN2": "卡珊的面甲",
+    "zhTW2": "卡珊的容貌"
   },
   {
     "id": 10150,
     "Key": "Cathan's Mesh",
-    "enUS": "ÿc1[DEF90]\nÿc2Cathan's Mesh",
-    "zhTW": "ÿc1[防禦90]\nÿc2卡珊的網衣",
+    "enUS": "Cathan's Mesh",
+    "zhTW": "卡珊的網衣",
     "deDE": "Cathans Kettenrüstung",
     "esES": "Malla de Cathan",
     "frFR": "Étoffe de Cathan",
@@ -13086,9 +13086,9 @@
     "jaJP": "カタンの鎖帷子",
     "ptBR": "Malha de Catan",
     "ruRU": "Кольчуга Катана",
-    "zhCN": "ÿc1[防禦90]\nÿc2卡珊的網衣",
-    "zhCN2": "ÿc1[防御90]\nÿc2卡珊的札甲",
-    "zhTW2": "ÿc1[防禦90]\nÿc2卡珊的網衣"
+    "zhCN": "卡珊的網衣",
+    "zhCN2": "卡珊的札甲",
+    "zhTW2": "卡珊的網衣"
   },
   {
     "id": 10151,
@@ -13131,8 +13131,8 @@
   {
     "id": 10153,
     "Key": "Tancred's Spine",
-    "enUS": "ÿc1[BaseDEF161]\nÿc2Tancred's Spine",
-    "zhTW": "ÿc1[基本防禦161]\nÿc2坦克雷的脊柱",
+    "enUS": "Tancred's Spine",
+    "zhTW": "坦克雷的脊柱",
     "deDE": "Tankreds Stachel",
     "esES": "Espinazo de Tancred",
     "frFR": "Dos de Tancred",
@@ -13143,15 +13143,15 @@
     "jaJP": "タンクレドの背骨",
     "ptBR": "Espinha de Tancred",
     "ruRU": "Хребет Танкреда",
-    "zhCN": "ÿc1[基本防禦161]\nÿc2坦克雷的脊柱",
-    "zhCN2": "ÿc1[基本防御161]\nÿc2坦克雷的脊柱",
-    "zhTW2": "ÿc1[基本防禦161]\nÿc2坦克雷的脊柱"
+    "zhCN": "坦克雷的脊柱",
+    "zhCN2": "坦克雷的脊柱",
+    "zhTW2": "坦克雷的脊柱"
   },
   {
     "id": 10154,
     "Key": "Tancred's Hobnails",
-    "enUS": "ÿc1[DEF3]\nÿc2Tancred's Hobnails",
-    "zhTW": "ÿc1[防禦3]\nÿc2坦克雷的釘靴",
+    "enUS": "Tancred's Hobnails",
+    "zhTW": "坦克雷的釘靴",
     "deDE": "Tankreds Schuhnägel",
     "esES": "Tachuelas de Tancred",
     "frFR": "Clous de Tancred",
@@ -13162,9 +13162,9 @@
     "jaJP": "タンクレドの後脚",
     "ptBR": "Pregos de Tancred",
     "ruRU": "Кованые башмаки Танкреда",
-    "zhCN": "ÿc1[防禦3]\nÿc2坦克雷的釘靴",
-    "zhCN2": "ÿc1[防御3]\nÿc2坦克雷的钉头鞋",
-    "zhTW2": "ÿc1[防禦3]\nÿc2坦克雷的釘靴"
+    "zhCN": "坦克雷的釘靴",
+    "zhCN2": "坦克雷的钉头鞋",
+    "zhTW2": "坦克雷的釘靴"
   },
   {
     "id": 10155,
@@ -13188,8 +13188,8 @@
   {
     "id": 10156,
     "Key": "Tancred's Skull",
-    "enUS": "ÿc1[DEF36]\nÿc2Tancred's Skull",
-    "zhTW": "ÿc1[防禦36]\nÿc2坦克雷的顱骨",
+    "enUS": "Tancred's Skull",
+    "zhTW": "坦克雷的顱骨",
     "deDE": "Tankreds Schädel",
     "esES": "Cráneo de Tancred",
     "frFR": "Crâne de Tancred",
@@ -13200,15 +13200,15 @@
     "jaJP": "タンクレドの頭骨",
     "ptBR": "Caveira de Tancred",
     "ruRU": "Череп Танкреда",
-    "zhCN": "ÿc1[防禦36]\nÿc2坦克雷的顱骨",
-    "zhCN2": "ÿc1[防御36]\nÿc2坦克雷的头骨",
-    "zhTW2": "ÿc1[防禦36]\nÿc2坦克雷的顱骨"
+    "zhCN": "坦克雷的顱骨",
+    "zhCN2": "坦克雷的头骨",
+    "zhTW2": "坦克雷的顱骨"
   },
   {
     "id": 10157,
     "Key": "Sigon's Visor",
-    "enUS": "ÿc1[DEF60]\nÿc2Sigon's Visor",
-    "zhTW": "ÿc1[防御60]\nÿc2西剛的護面",
+    "enUS": "Sigon's Visor",
+    "zhTW": "西剛的護面",
     "deDE": "Sigons Visier",
     "esES": "Visera de Sigon",
     "frFR": "Casque de Sigon",
@@ -13219,9 +13219,9 @@
     "jaJP": "サイゴンのバイザー",
     "ptBR": "Viseira de Sigon",
     "ruRU": "Шлем Сигона",
-    "zhCN": "ÿc1[防御60]\nÿc2西剛的護面",
-    "zhCN2": "ÿc1[防禦60]\nÿc2西刚的面甲",
-    "zhTW2": "ÿc1[防御60]\nÿc2西剛的護面"
+    "zhCN": "西剛的護面",
+    "zhCN2": "西刚的面甲",
+    "zhTW2": "西剛的護面"
   },
   {
     "id": 10158,
@@ -13245,8 +13245,8 @@
   {
     "id": 10159,
     "Key": "Sigon's Gage",
-    "enUS": "ÿc1[DEF15]\nÿc2Sigon's Gage",
-    "zhTW": "ÿc1[防禦15]\nÿc2西剛的挑戰",
+    "enUS": "Sigon's Gage",
+    "zhTW": "西剛的挑戰",
     "deDE": "Sigons Messgerät",
     "esES": "Reto de Sigon",
     "frFR": "Gant de Sigon",
@@ -13257,15 +13257,15 @@
     "jaJP": "サイゴンのゲージ",
     "ptBR": "Luvete de Sigon",
     "ruRU": "Вызов Сигона",
-    "zhCN": "ÿc1[防禦15]\nÿc2西剛的挑戰",
-    "zhCN2": "ÿc1[防御15]\nÿc2西刚的挑战",
-    "zhTW2": "ÿc1[防禦15]\nÿc2西剛的挑戰"
+    "zhCN": "西剛的挑戰",
+    "zhCN2": "西刚的挑战",
+    "zhTW2": "西剛的挑戰"
   },
   {
     "id": 10160,
     "Key": "Sigon's Sabot",
-    "enUS": "ÿc1[DEF15]\nÿc2Sigon's Sabot",
-    "zhTW": "ÿc1[防禦15]\nÿc2西剛的硬靴",
+    "enUS": "Sigon's Sabot",
+    "zhTW": "西剛的硬靴",
     "deDE": "Sigons Schuh",
     "esES": "Zuecos de Sigon",
     "frFR": "Sabot de Sigon",
@@ -13276,15 +13276,15 @@
     "jaJP": "サイゴンのサボット",
     "ptBR": "Grevas de Sigon",
     "ruRU": "Подошвы Сигона",
-    "zhCN": "ÿc1[防禦15]\nÿc2西剛的硬靴",
-    "zhCN2": "ÿc1[防御15]\nÿc2西刚的木底鞋",
-    "zhTW2": "ÿc1[防禦15]\nÿc2西剛的硬靴"
+    "zhCN": "西剛的硬靴",
+    "zhCN2": "西刚的木底鞋",
+    "zhTW2": "西剛的硬靴"
   },
   {
     "id": 10161,
     "Key": "Sigon's Wrap",
-    "enUS": "ÿc1[BaseDEF11]\nÿc2Sigon's Wrap",
-    "zhTW": "ÿc1[基本防禦11]\nÿc2西剛的裹腰",
+    "enUS": "Sigon's Wrap",
+    "zhTW": "西剛的裹腰",
     "deDE": "Sigons Umhang",
     "esES": "Cinto de Sigon",
     "frFR": "Châle de Sigon",
@@ -13295,15 +13295,15 @@
     "jaJP": "サイゴンのベルト",
     "ptBR": "Cinta de Sigon",
     "ruRU": "Опоясь Сигона",
-    "zhCN": "ÿc1[基本防禦11]\nÿc2西剛的裹腰",
-    "zhCN2": "ÿc1[基本防御11]\nÿc2西刚的腰带",
-    "zhTW2": "ÿc1[基本防禦11]\nÿc2西剛的裹腰"
+    "zhCN": "西剛的裹腰",
+    "zhCN2": "西刚的腰带",
+    "zhTW2": "西剛的裹腰"
   },
   {
     "id": 10162,
     "Key": "Sigon's Guard",
-    "enUS": "ÿc1[DEF25]\nÿc2Sigon's Guard",
-    "zhTW": "ÿc1[防禦25]\nÿc2西剛的守護",
+    "enUS": "Sigon's Guard",
+    "zhTW": "西剛的守護",
     "deDE": "Sigons Wächter",
     "esES": "Protección de Sigon",
     "frFR": "Garde de Sigon",
@@ -13314,9 +13314,9 @@
     "jaJP": "サイゴンのガード",
     "ptBR": "Proteção de Sigon",
     "ruRU": "Хранитель Сигона",
-    "zhCN": "ÿc1[防禦25]\nÿc2西剛的守護",
-    "zhCN2": "ÿc1[防御25]\nÿc2西刚的守护",
-    "zhTW2": "ÿc1[防禦25]\nÿc2西剛的守護"
+    "zhCN": "西剛的守護",
+    "zhCN2": "西刚的守护",
+    "zhTW2": "西剛的守護"
   },
   {
     "id": 10163,
@@ -13378,8 +13378,8 @@
   {
     "id": 10166,
     "Key": "Berserker's Headgear",
-    "enUS": "ÿc1[DEF33]\nÿc2Berserker's Headgear",
-    "zhTW": "ÿc1[防禦33]\nÿc2狂戰士頭盔",
+    "enUS": "Berserker's Headgear",
+    "zhTW": "狂戰士頭盔",
     "deDE": "Berserkers Kopfschmuck",
     "esES": "Casco del berserker",
     "frFR": "Couvre-chef du berserker",
@@ -13390,15 +13390,15 @@
     "jaJP": "狂戦士の兜",
     "ptBR": "Capacete do Berserker",
     "ruRU": "Головной убор берсерка",
-    "zhCN": "ÿc1[防禦33]\nÿc2狂戰士頭盔",
-    "zhCN2": "ÿc1[防御33]\nÿc2狂战士的头盔",
-    "zhTW2": "ÿc1[防禦33]\nÿc2狂戰士頭盔"
+    "zhCN": "狂戰士頭盔",
+    "zhCN2": "狂战士的头盔",
+    "zhTW2": "狂戰士頭盔"
   },
   {
     "id": 10167,
     "Key": "Berserker's Hauberk",
-    "enUS": "ÿc1[BaseDEF95]\nÿc2Berserker's Hauberk",
-    "zhTW": "ÿc1[基本防禦95]\nÿc2狂戰士鎖子甲",
+    "enUS": "Berserker's Hauberk",
+    "zhTW": "狂戰士鎖子甲",
     "deDE": "Berserkers Halsberge",
     "esES": "Loriga del berserker",
     "frFR": "Haubert du berserker",
@@ -13409,9 +13409,9 @@
     "jaJP": "狂戦士のホーバーク",
     "ptBR": "Cota de Malha do Berserker",
     "ruRU": "Хауберк берсерка",
-    "zhCN": "ÿc1[基本防禦95]\nÿc2狂戰士鎖子甲",
-    "zhCN2": "ÿc1[基本防御95]\nÿc2狂战士的半身甲",
-    "zhTW2": "ÿc1[基本防禦95]\nÿc2狂戰士鎖子甲"
+    "zhCN": "狂戰士鎖子甲",
+    "zhCN2": "狂战士的半身甲",
+    "zhTW2": "狂戰士鎖子甲"
   },
   {
     "id": 10168,
@@ -13435,8 +13435,8 @@
   {
     "id": 10169,
     "Key": "Death's Hand",
-    "enUS": "ÿc1[DEF3]\nÿc2Death's Hand",
-    "zhTW": "ÿc1[防禦3]\nÿc2死亡之手",
+    "enUS": "Death's Hand",
+    "zhTW": "死亡之手",
     "deDE": "Hand des Todes",
     "esES": "Mano de la muerte",
     "frFR": "Main de la Mort",
@@ -13447,9 +13447,9 @@
     "jaJP": "死神の手",
     "ptBR": "Mão da Morte",
     "ruRU": "Десница смерти",
-    "zhCN": "ÿc1[防禦3]\nÿc2死亡之手",
-    "zhCN2": "ÿc1[防御3]\nÿc2死神之手",
-    "zhTW2": "ÿc1[防禦3]\nÿc2死亡之手"
+    "zhCN": "死亡之手",
+    "zhCN2": "死神之手",
+    "zhTW2": "死亡之手"
   },
   {
     "id": 10170,
@@ -13587,8 +13587,8 @@
   {
     "id": 10177,
     "Key": "Arctic Furs",
-    "enUS": "ÿc1[325ED]\nÿc2Arctic Furs",
-    "zhTW": "ÿc1[325ED]\nÿc2北極毛皮",
+    "enUS": "Arctic Furs",
+    "zhTW": "北極毛皮",
     "deDE": "Arktische Pelze",
     "esES": "Pieles árticas",
     "frFR": "Fourrures arctiques",
@@ -13599,9 +13599,9 @@
     "jaJP": "極寒の毛皮",
     "ptBR": "Pele Ártica",
     "ruRU": "Арктические меха",
-    "zhCN": "ÿc1[325ED]\nÿc2北極毛皮",
-    "zhCN2": "ÿc1[325ED]\nÿc2北极毛皮",
-    "zhTW2": "ÿc1[325ED]\nÿc2北極毛皮"
+    "zhCN": "北極毛皮",
+    "zhCN2": "北极毛皮",
+    "zhTW2": "北極毛皮"
   },
   {
     "id": 10178,
@@ -13625,8 +13625,8 @@
   {
     "id": 10179,
     "Key": "Arctic Mitts",
-    "enUS": "ÿc1[DEF11]\nÿc2Arctic Mitts",
-    "zhTW": "ÿc1[防禦11]\nÿc2北極手套",
+    "enUS": "Arctic Mitts",
+    "zhTW": "北極手套",
     "deDE": "Arktische Handschuhe",
     "esES": "Mitones árticos",
     "frFR": "Gants arctiques",
@@ -13637,9 +13637,9 @@
     "jaJP": "極寒のミトン",
     "ptBR": "Luvas Árticas",
     "ruRU": "Арктические рукавицы",
-    "zhCN": "ÿc1[防禦11]\nÿc2北極手套",
-    "zhCN2": "ÿc1[防御11]\nÿc2北极手套",
-    "zhTW2": "ÿc1[防禦11]\nÿc2北極手套"
+    "zhCN": "北極手套",
+    "zhCN2": "北极手套",
+    "zhTW2": "北極手套"
   },
   {
     "id": 10180,
@@ -13682,8 +13682,8 @@
   {
     "id": 10182,
     "Key": "Arcanna's Head",
-    "enUS": "ÿc1[BaseDEF11]\nÿc2Arcanna's Head",
-    "zhTW": "ÿc1[基本防禦11]\nÿc2阿卡娜的頭",
+    "enUS": "Arcanna's Head",
+    "zhTW": "阿卡娜的頭",
     "deDE": "Arcannas Kopf",
     "esES": "Cabeza de Arcanna",
     "frFR": "Tête d’Arcanna",
@@ -13694,15 +13694,15 @@
     "jaJP": "アルカナズ・ヘッド",
     "ptBR": "Cabeça de Arcanna",
     "ruRU": "Голова Арканны",
-    "zhCN": "ÿc1[基本防禦11]\nÿc2阿卡娜的頭",
-    "zhCN2": "ÿc1[基本防御11]\nÿc2阿卡娜的头",
-    "zhTW2": "ÿc1[基本防禦11]\nÿc2阿卡娜的頭"
+    "zhCN": "阿卡娜的頭",
+    "zhCN2": "阿卡娜的头",
+    "zhTW2": "阿卡娜的頭"
   },
   {
     "id": 10183,
     "Key": "Arcanna's Flesh",
-    "enUS": "ÿc1[BaseDEF107]\nÿc2Arcanna's Flesh",
-    "zhTW": "ÿc1[基本防禦107]\nÿc2阿卡娜的血肉",
+    "enUS": "Arcanna's Flesh",
+    "zhTW": "阿卡娜的血肉",
     "deDE": "Arcannas Fleisch",
     "esES": "Carne de Arcanna",
     "frFR": "Chair d’Arcanna",
@@ -13713,9 +13713,9 @@
     "jaJP": "アルカナズ・フレッシュ",
     "ptBR": "Carne de Arcanna",
     "ruRU": "Плоть Арканны",
-    "zhCN": "ÿc1[基本防禦107]\nÿc2阿卡娜的血肉",
-    "zhCN2": "ÿc1[基本防御107]\nÿc2阿卡娜的血肉",
-    "zhTW2": "ÿc1[基本防禦107]\nÿc2阿卡娜的血肉"
+    "zhCN": "阿卡娜的血肉",
+    "zhCN2": "阿卡娜的血肉",
+    "zhTW2": "阿卡娜的血肉"
   },
   {
     "id": 10911,
@@ -26089,8 +26089,8 @@
   {
     "id": 21661,
     "Key": "Trang-Oul's Guise",
-    "enUS": "ÿc1[DEF257/100DEF]\nÿc2Trang-Oul's Guise",
-    "zhTW": "ÿc1[防禦257/100DEF]\nÿc2塔格奧之容",
+    "enUS": "Trang-Oul's Guise",
+    "zhTW": "塔格奧之容",
     "deDE": "Trang-Ouls Verkleidung",
     "esES": "Guisa de Trang-Oul",
     "frFR": "Semblance de Trang’Oul",
@@ -26101,15 +26101,15 @@
     "jaJP": "トラン=オールの仮面",
     "ptBR": "Aspecto de Trag'Oul",
     "ruRU": "Личина Траг'Ула",
-    "zhCN": "ÿc1[防禦257/100DEF]\nÿc2塔格奧之容",
-    "zhCN2": "ÿc1[防御257/100DEF]\nÿc2塔格奥的伪装",
-    "zhTW2": "ÿc1[防禦257/100DEF]\nÿc2塔格奧之容"
+    "zhCN": "塔格奧之容",
+    "zhCN2": "塔格奥的伪装",
+    "zhTW2": "塔格奧之容"
   },
   {
     "id": 21662,
     "Key": "Trang-Oul's Wing",
-    "enUS": "ÿc1[DEF189/45FR]\nÿc2Trang-Oul's Wing",
-    "zhTW": "ÿc1[防禦189/45FR]\nÿc2塔格奧之翼",
+    "enUS": "Trang-Oul's Wing",
+    "zhTW": "塔格奧之翼",
     "deDE": "Trang-Ouls Flügel",
     "esES": "Ala de Trang-Oul",
     "frFR": "Aile de Trang-Oul",
@@ -26120,9 +26120,9 @@
     "jaJP": "トラン=オールの翼",
     "ptBR": "Asa de Trag'Oul",
     "ruRU": "Крыло Траг'Ула",
-    "zhCN": "ÿc1[防禦189/45FR]\nÿc2塔格奧之翼",
-    "zhCN2": "ÿc1[防御189/45FR]\nÿc2塔格奥的飞翼",
-    "zhTW2": "ÿc1[防禦189/45FR]\nÿc2塔格奧之翼"
+    "zhCN": "塔格奧之翼",
+    "zhCN2": "塔格奥的飞翼",
+    "zhTW2": "塔格奧之翼"
   },
   {
     "id": 21663,
@@ -26165,8 +26165,8 @@
   {
     "id": 21665,
     "Key": "Trang-Oul's Claws",
-    "enUS": "ÿc1[DEF74]\nÿc2Trang-Oul's Claws",
-    "zhTW": "ÿc1[防禦74]\nÿc2塔格奧之爪",
+    "enUS": "Trang-Oul's Claws",
+    "zhTW": "塔格奧之爪",
     "deDE": "Trang-Ouls Krallen",
     "esES": "Garras de Trang-Oul",
     "frFR": "Griffes de Trang’Oul",
@@ -26177,15 +26177,15 @@
     "jaJP": "トラン=オールの鉤爪",
     "ptBR": "Garras de Trag'Oul",
     "ruRU": "Когти Траг'Ула",
-    "zhCN": "ÿc1[防禦74]\nÿc2塔格奧之爪",
-    "zhCN2": "ÿc1[防御74]\nÿc2塔格奥的利爪",
-    "zhTW2": "ÿc1[防禦74]\nÿc2塔格奧之爪"
+    "zhCN": "塔格奧之爪",
+    "zhCN2": "塔格奥的利爪",
+    "zhTW2": "塔格奧之爪"
   },
   {
     "id": 21666,
     "Key": "Trang-Oul's Girth",
-    "enUS": "ÿc1[DEF166/100DEF/50Mana]\nÿc2Trang-Oul's Girth",
-    "zhTW": "ÿc1[防禦166/100DEF/50Mana]\nÿc2塔格奧之腹",
+    "enUS": "Trang-Oul's Girth",
+    "zhTW": "塔格奧之腹",
     "deDE": "Trang-Ouls Gurt",
     "esES": "Cincha de Trang-Oul",
     "frFR": "Ceinture de Trang’Oul",
@@ -26196,9 +26196,9 @@
     "jaJP": "トラン=オールの胴帯",
     "ptBR": "Cilha de Trag'Oul",
     "ruRU": "Пояс Траг'Ула",
-    "zhCN": "ÿc1[防禦166/100DEF/50Mana]\nÿc2塔格奧之腹",
-    "zhCN2": "ÿc1[防御166/100DEF/50Mana]\nÿc2塔格奥的肚带",
-    "zhTW2": "ÿc1[防禦166/100DEF/50Mana]\nÿc2塔格奧之腹"
+    "zhCN": "塔格奧之腹",
+    "zhCN2": "塔格奥的肚带",
+    "zhTW2": "塔格奧之腹"
   },
   {
     "id": 21667,
@@ -26222,8 +26222,8 @@
   {
     "id": 21668,
     "Key": "Natalya's Totem",
-    "enUS": "ÿc1[DEF300/175DEF/20STR/30DEX/20RES]\nÿc2Natalya's Totem",
-    "zhTW": "ÿc1[防禦300/175DEF/20STR/30DEX/20RES]\nÿc2娜塔亞的圖騰",
+    "enUS": "Natalya's Totem",
+    "zhTW": "娜塔亞的圖騰",
     "deDE": "Natalyas Totem",
     "esES": "Tótem de Natalya",
     "frFR": "Totem de Natalya",
@@ -26234,9 +26234,9 @@
     "jaJP": "ナターリャのトーテム",
     "ptBR": "Totem de Natalya",
     "ruRU": "Тотем Наталии",
-    "zhCN": "ÿc1[防禦300/175DEF/20STR/30DEX/20RES]\nÿc2娜塔亞的圖騰",
-    "zhCN2": "ÿc1[防御300/175DEF/20STR/30DEX/20RES]\nÿc2娜塔亚的徽记",
-    "zhTW2": "ÿc1[防禦300/175DEF/20STR/30DEX/20RES]\nÿc2娜塔亞的圖騰"
+    "zhCN": "娜塔亞的圖騰",
+    "zhCN2": "娜塔亚的徽记",
+    "zhTW2": "娜塔亞的圖騰"
   },
   {
     "id": 21669,
@@ -26260,8 +26260,8 @@
   {
     "id": 21670,
     "Key": "Natalya's Shadow",
-    "enUS": "ÿc1[DEF721/225DEF/3S]\nÿc2Natalya's Shadow",
-    "zhTW": "ÿc1[防禦721/225DEF/3S]\nÿc2娜塔亞的影子",
+    "enUS": "Natalya's Shadow",
+    "zhTW": "娜塔亞的影子",
     "deDE": "Natalyas Schatten",
     "esES": "Sombra de Natalya",
     "frFR": "Ombre de Natalya",
@@ -26272,15 +26272,15 @@
     "jaJP": "ナターリャの影",
     "ptBR": "Sombra de Natalya",
     "ruRU": "Тень Наталии",
-    "zhCN": "ÿc1[防禦721/225DEF/3S]\nÿc2娜塔亞的影子",
-    "zhCN2": "ÿc1[防御721/225DEF/3S]\nÿc2娜塔亚的阴影",
-    "zhTW2": "ÿc1[防禦721/225DEF/3S]\nÿc2娜塔亞的影子"
+    "zhCN": "娜塔亞的影子",
+    "zhCN2": "娜塔亚的阴影",
+    "zhTW2": "娜塔亞的影子"
   },
   {
     "id": 21671,
     "Key": "Natalya's Soul",
-    "enUS": "ÿc1[DEF169/125DEF/25CR/25LR]\nÿc2Natalya's Soul",
-    "zhTW": "ÿc1[防御169/125DEF/25CR/25LR]\nÿc2娜塔亞的靈魂",
+    "enUS": "Natalya's Soul",
+    "zhTW": "娜塔亞的靈魂",
     "deDE": "Natalyas Seele",
     "esES": "Alma de Natalya",
     "frFR": "Âme de Natalya",
@@ -26291,9 +26291,9 @@
     "jaJP": "ナターリャの魂",
     "ptBR": "Alma de Natalya",
     "ruRU": "Душа Наталии",
-    "zhCN": "ÿc1[防御169/125DEF/25CR/25LR]\nÿc2娜塔亞的靈魂",
-    "zhCN2": "ÿc1[防禦169/125DEF/25CR/25LR]\nÿc2娜塔亚的灵魂",
-    "zhTW2": "ÿc1[防御169/125DEF/25CR/25LR]\nÿc2娜塔亞的靈魂"
+    "zhCN": "娜塔亞的靈魂",
+    "zhCN2": "娜塔亚的灵魂",
+    "zhTW2": "娜塔亞的靈魂"
   },
   {
     "id": 21672,
@@ -26317,8 +26317,8 @@
   {
     "id": 21673,
     "Key": "Griswolds's Redemption",
-    "enUS": "ÿc1[240ED/4S]\nÿc2Griswold's Redemption",
-    "zhTW": "ÿc1[240ED/4S]\nÿc2格里斯瓦德的救贖",
+    "enUS": "Griswold's Redemption",
+    "zhTW": "格里斯瓦德的救贖",
     "deDE": "Griswolds Erlösung",
     "esES": "Redención de Griswold",
     "frFR": "Rédemption de Griswold",
@@ -26329,15 +26329,15 @@
     "jaJP": "グリズウォルドの贖罪",
     "ptBR": "Redenção de Griswold",
     "ruRU": "Искупление Гризвольда",
-    "zhCN": "ÿc1[240ED/4S]\nÿc2格里斯瓦德的救贖",
-    "zhCN2": "ÿc1[240ED/4S]\nÿc2格里斯沃尔德的救赎",
-    "zhTW2": "ÿc1[240ED/4S]\nÿc2格里斯瓦德的救贖"
+    "zhCN": "格里斯瓦德的救贖",
+    "zhCN2": "格里斯沃尔德的救赎",
+    "zhTW2": "格里斯瓦德的救贖"
   },
   {
     "id": 21674,
     "Key": "Griswold's Honor",
-    "enUS": "ÿc1[DEF333]\nÿc2Griswold's Honor",
-    "zhTW": "ÿc1[防禦333]\nÿc2格里斯瓦德的榮耀",
+    "enUS": "Griswold's Honor",
+    "zhTW": "格里斯瓦德的榮耀",
     "deDE": "Griswolds Ehre",
     "esES": "Honor de Griswold",
     "frFR": "Honneur de Griswold",
@@ -26348,15 +26348,15 @@
     "jaJP": "グリズウォルドの名誉",
     "ptBR": "Honra de Griswold",
     "ruRU": "Честь Гризвольда",
-    "zhCN": "ÿc1[防禦333]\nÿc2格里斯瓦德的榮耀",
-    "zhCN2": "ÿc1[防御333]\nÿc2格里斯沃尔德的荣耀",
-    "zhTW2": "ÿc1[防禦333]\nÿc2格里斯瓦德的榮耀"
+    "zhCN": "格里斯瓦德的榮耀",
+    "zhCN2": "格里斯沃尔德的荣耀",
+    "zhTW2": "格里斯瓦德的榮耀"
   },
   {
     "id": 21675,
     "Key": "Griswold's Heart",
-    "enUS": "ÿc1[DEF950]\nÿc2Griswold's Heart",
-    "zhTW": "ÿc1[防禦950]\nÿc2格里斯瓦德之心",
+    "enUS": "Griswold's Heart",
+    "zhTW": "格里斯瓦德之心",
     "deDE": "Griswolds Herz",
     "esES": "Corazón de Griswold",
     "frFR": "Cœur de Griswold",
@@ -26367,15 +26367,15 @@
     "jaJP": "グリズウォルドの真心",
     "ptBR": "Coração de Griswold",
     "ruRU": "Сердце Гризвольда",
-    "zhCN": "ÿc1[防禦950]\nÿc2格里斯瓦德之心",
-    "zhCN2": "ÿc1[防御950]\nÿc2格里斯沃尔德的赤诚",
-    "zhTW2": "ÿc1[防禦950]\nÿc2格里斯瓦德之心"
+    "zhCN": "格里斯瓦德之心",
+    "zhCN2": "格里斯沃尔德的赤诚",
+    "zhTW2": "格里斯瓦德之心"
   },
   {
     "id": 21676,
     "Key": "Griswold's Valor",
-    "enUS": "ÿc1[75EDef/30MF]\nÿc2Griswold's Valor",
-    "zhTW": "ÿc1[75EDef/30MF]\nÿc2格里斯瓦德的勇氣",
+    "enUS": "Griswold's Valor",
+    "zhTW": "格里斯瓦德的勇氣",
     "deDE": "Griswolds Heldenmut",
     "esES": "Valor de Griswold",
     "frFR": "Vaillance de Griswold",
@@ -26386,9 +26386,9 @@
     "jaJP": "グリズウォルドの勇気",
     "ptBR": "Bravura de Griswold",
     "ruRU": "Доблесть Гризвольда",
-    "zhCN": "ÿc1[75EDef/30MF]\nÿc2格里斯瓦德的勇氣",
-    "zhCN2": "ÿc1[75EDef/30MF]\nÿc2格里斯沃尔德的勇气",
-    "zhTW2": "ÿc1[75EDef/30MF]\nÿc2格里斯瓦德的勇氣"
+    "zhCN": "格里斯瓦德的勇氣",
+    "zhCN2": "格里斯沃尔德的勇气",
+    "zhTW2": "格里斯瓦德的勇氣"
   },
   {
     "id": 21677,
@@ -26773,8 +26773,8 @@
   {
     "id": 21697,
     "Key": "Aldur's Stony Gaze",
-    "enUS": "ÿc1[DEF171/50CR]\nÿc2Aldur's Stony Gaze",
-    "zhTW": "ÿc1[防禦171/50CR]\nÿc2艾爾多的冷酷凝視",
+    "enUS": "Aldur's Stony Gaze",
+    "zhTW": "艾爾多的冷酷凝視",
     "deDE": "Aldurs Steinblick",
     "esES": "Mirada de piedra de Aldur",
     "frFR": "Regard glacial d’Aldur",
@@ -26785,15 +26785,15 @@
     "jaJP": "アルダーの凝視",
     "ptBR": "Olhar Pétreo de Aldur",
     "ruRU": "Неумолимый взгляд Альдура",
-    "zhCN": "ÿc1[防禦171/50CR]\nÿc2艾爾多的冷酷凝視",
-    "zhCN2": "ÿc1[防御171/50CR]\nÿc2艾尔多的冷酷凝视",
-    "zhTW2": "ÿc1[防禦171/50CR]\nÿc2艾爾多的冷酷凝視"
+    "zhCN": "艾爾多的冷酷凝視",
+    "zhCN2": "艾尔多的冷酷凝视",
+    "zhTW2": "艾爾多的冷酷凝視"
   },
   {
     "id": 21698,
     "Key": "Aldur's Deception",
-    "enUS": "ÿc1[DEF857/50LR]\nÿc2Aldur's Deception",
-    "zhTW": "ÿc1[防禦857/50LR]\nÿc2艾爾多的欺暪",
+    "enUS": "Aldur's Deception",
+    "zhTW": "艾爾多的欺暪",
     "deDE": "Aldurs Täuschung",
     "esES": "Engaño de Aldur",
     "frFR": "Fraude d’Aldur",
@@ -26804,9 +26804,9 @@
     "jaJP": "アルダーの欺き",
     "ptBR": "Engano de Aldur",
     "ruRU": "Обман Альдура",
-    "zhCN": "ÿc1[防禦857/50LR]\nÿc2艾爾多的欺暪",
-    "zhCN2": "ÿc1[防御857/50LR]\nÿc2艾尔多的欺骗",
-    "zhTW2": "ÿc1[防禦857/50LR]\nÿc2艾爾多的欺暪"
+    "zhCN": "艾爾多的欺暪",
+    "zhCN2": "艾尔多的欺骗",
+    "zhTW2": "艾爾多的欺暪"
   },
   {
     "id": 21699,
@@ -26830,8 +26830,8 @@
   {
     "id": 21700,
     "Key": "Aldur's Advance",
-    "enUS": "ÿc1[DEF47/50FR]\nÿc2Aldur's Advance",
-    "zhTW": "ÿc1[防禦47/50FR]\nÿc2艾爾多的進擊",
+    "enUS": "Aldur's Advance",
+    "zhTW": "艾爾多的進擊",
     "deDE": "Aldurs Vormarsch",
     "esES": "Avance de Aldur",
     "frFR": "Vigueur d’Aldur",
@@ -26842,9 +26842,9 @@
     "jaJP": "アルダーの前進",
     "ptBR": "Investida de Aldur",
     "ruRU": "Наступление Альдура",
-    "zhCN": "ÿc1[防禦47/50FR]\nÿc2艾爾多的進擊",
-    "zhCN2": "ÿc1[防御47/50FR]\nÿc2艾尔多的成长",
-    "zhTW2": "ÿc1[防禦47/50FR]\nÿc2艾爾多的進擊"
+    "zhCN": "艾爾多的進擊",
+    "zhCN2": "艾尔多的成长",
+    "zhTW2": "艾爾多的進擊"
   },
   {
     "id": 21701,
@@ -26868,8 +26868,8 @@
   {
     "id": 21702,
     "Key": "M'avina's True Sight",
-    "enUS": "ÿc1[DEF210]\nÿc2M'avina's True Sight",
-    "zhTW": "ÿc1[防禦210]\nÿc2馬維娜的真實之眼",
+    "enUS": "M'avina's True Sight",
+    "zhTW": "馬維娜的真實之眼",
     "deDE": "M'avinas Wahre Sicht",
     "esES": "Visión verdadera de M'avina",
     "frFR": "Vision de M’avina",
@@ -26880,15 +26880,15 @@
     "jaJP": "マヴィーナの心眼",
     "ptBR": "Visão Verdadeira de M'avina",
     "ruRU": "Истинное зрение М'авины",
-    "zhCN": "ÿc1[防禦210]\nÿc2馬維娜的真實之眼",
-    "zhCN2": "ÿc1[防御210]\nÿc2艾维娜的真视",
-    "zhTW2": "ÿc1[防禦210]\nÿc2馬維娜的真實之眼"
+    "zhCN": "馬維娜的真實之眼",
+    "zhCN2": "艾维娜的真视",
+    "zhTW2": "馬維娜的真實之眼"
   },
   {
     "id": 21703,
     "Key": "M'avina's Embrace",
-    "enUS": "ÿc1[DEF523/12MDR]\nÿc2M'avina's Embrace",
-    "zhTW": "ÿc1[防禦523/12MDR]\nÿc2馬維娜的擁抱",
+    "enUS": "M'avina's Embrace",
+    "zhTW": "馬維娜的擁抱",
     "deDE": "M'avinas Umarmung",
     "esES": "Abrazo de M'avina",
     "frFR": "Étreinte de M’avina",
@@ -26899,15 +26899,15 @@
     "jaJP": "マヴィーナの抱擁",
     "ptBR": "Abraço de M'avina",
     "ruRU": "Объятия М'авины",
-    "zhCN": "ÿc1[防禦523/12MDR]\nÿc2馬維娜的擁抱",
-    "zhCN2": "ÿc1[防御523/12MDR]\nÿc2艾维娜的拥抱",
-    "zhTW2": "ÿc1[防禦523/12MDR]\nÿc2馬維娜的擁抱"
+    "zhCN": "馬維娜的擁抱",
+    "zhCN2": "艾维娜的拥抱",
+    "zhTW2": "馬維娜的擁抱"
   },
   {
     "id": 21704,
     "Key": "M'avina's Icy Clutch",
-    "enUS": "ÿc1[DEF97/50DEF]\nÿc2M'avina's Icy Clutch",
-    "zhTW": "ÿc1[防禦97/50DEF]\nÿc2馬維娜的冰握",
+    "enUS": "M'avina's Icy Clutch",
+    "zhTW": "馬維娜的冰握",
     "deDE": "M'avinas Eisige Umklammerung",
     "esES": "Zarpas heladas de M'avina",
     "frFR": "Étreinte glacée de M’avina",
@@ -26918,15 +26918,15 @@
     "jaJP": "マヴィーナの凍れる手",
     "ptBR": "Garras Gélidas de M'avina",
     "ruRU": "Ледяные захваты М'авины",
-    "zhCN": "ÿc1[防禦97/50DEF]\nÿc2馬維娜的冰握",
-    "zhCN2": "ÿc1[防御97/50DEF]\nÿc2艾维娜的冰握",
-    "zhTW2": "ÿc1[防禦97/50DEF]\nÿc2馬維娜的冰握"
+    "zhCN": "馬維娜的冰握",
+    "zhCN2": "艾维娜的冰握",
+    "zhTW2": "馬維娜的冰握"
   },
   {
     "id": 21705,
     "Key": "M'avina's Tenet",
-    "enUS": "ÿc1[DEF86]\nÿc2M'avina's Tenet",
-    "zhTW": "ÿc1[防禦86]\nÿc2馬維娜的教義",
+    "enUS": "M'avina's Tenet",
+    "zhTW": "馬維娜的教義",
     "deDE": "M'avinas Grundsatz",
     "esES": "Principio de M'avina",
     "frFR": "Doctrine de M’avina",
@@ -26937,9 +26937,9 @@
     "jaJP": "マヴィーナの信条",
     "ptBR": "Dogma de M'avina",
     "ruRU": "Сети М'авины",
-    "zhCN": "ÿc1[防禦86]\nÿc2馬維娜的教義",
-    "zhCN2": "ÿc1[防御86]\nÿc2艾维娜的教义",
-    "zhTW2": "ÿc1[防禦86]\nÿc2馬維娜的教義"
+    "zhCN": "馬維娜的教義",
+    "zhCN2": "艾维娜的教义",
+    "zhTW2": "馬維娜的教義"
   },
   {
     "id": 21706,
@@ -27001,8 +27001,8 @@
   {
     "id": 21709,
     "Key": "Sazabi's Ghost Liberator",
-    "enUS": "ÿc1[DEF917/75Life]\nÿc2Sazabi's Ghost Liberator",
-    "zhTW": "ÿc1[防禦917/75Life]\nÿc2沙薩比的解靈框體",
+    "enUS": "Sazabi's Ghost Liberator",
+    "zhTW": "沙薩比的解靈框體",
     "deDE": "Sazabis Geisterbefreier",
     "esES": "Liberador de fantasmas de Sazabi",
     "frFR": "Libérateur fantôme de Sazabi",
@@ -27013,15 +27013,15 @@
     "jaJP": "サザビーのゴースト・リベレイター",
     "ptBR": "Libertador Fantasma de Sazabi",
     "ruRU": "Освободитель призраков Сазаби",
-    "zhCN": "ÿc1[防禦917/75Life]\nÿc2沙薩比的解靈框體",
-    "zhCN2": "ÿc1[防御917/75Life]\nÿc2圣·沙略的魂灵解救者",
-    "zhTW2": "ÿc1[防禦917/75Life]\nÿc2沙薩比的解靈框體"
+    "zhCN": "沙薩比的解靈框體",
+    "zhCN2": "圣·沙略的魂灵解救者",
+    "zhTW2": "沙薩比的解靈框體"
   },
   {
     "id": 21710,
     "Key": "Sazabi's Mental Sheath",
-    "enUS": "ÿc1[DEF184/20LR/20FR]\nÿc2Sazabi's Mental Sheath",
-    "zhTW": "ÿc1[防禦184/20LR/20FR]\nÿc2沙薩比的精神護罩",
+    "enUS": "Sazabi's Mental Sheath",
+    "zhTW": "沙薩比的精神護罩",
     "deDE": "Sazabis Geisteshülle",
     "esES": "Funda mental de Sazabi",
     "frFR": "Enveloppe de Sazabi",
@@ -27032,9 +27032,9 @@
     "jaJP": "サザビーのメンタル・シース",
     "ptBR": "Coldre Mental de Sazabi",
     "ruRU": "Футляр разума Сазаби",
-    "zhCN": "ÿc1[防禦184/20LR/20FR]\nÿc2沙薩比的精神護罩",
-    "zhCN2": "ÿc1[防御184/20LR/20FR]\nÿc2圣·沙略的心灵庇护",
-    "zhTW2": "ÿc1[防禦184/20LR/20FR]\nÿc2沙薩比的精神護罩"
+    "zhCN": "沙薩比的精神護罩",
+    "zhCN2": "圣·沙略的心灵庇护",
+    "zhTW2": "沙薩比的精神護罩"
   },
   {
     "id": 21711,
@@ -27096,8 +27096,8 @@
   {
     "id": 21714,
     "Key": "Hwanin's Refuge",
-    "enUS": "ÿc1[DEF390]\nÿc2Hwanin's Refuge",
-    "zhTW": "ÿc1[防禦390]\nÿc2桓因的庇佑",
+    "enUS": "Hwanin's Refuge",
+    "zhTW": "桓因的庇佑",
     "deDE": "Hwanins Zuflucht",
     "esES": "Refugio de Hwanin",
     "frFR": "Refuge de Hwanin",
@@ -27108,9 +27108,9 @@
     "jaJP": "ファンインの加護",
     "ptBR": "Refúgio de Hwanin",
     "ruRU": "Укрытие Хванина",
-    "zhCN": "ÿc1[防禦390]\nÿc2桓因的庇佑",
-    "zhCN2": "ÿc1[防御390]\nÿc2桓因的庇佑",
-    "zhTW2": "ÿc1[防禦390]\nÿc2桓因的庇佑"
+    "zhCN": "桓因的庇佑",
+    "zhCN2": "桓因的庇佑",
+    "zhTW2": "桓因的庇佑"
   },
   {
     "id": 21715,
@@ -27153,8 +27153,8 @@
   {
     "id": 21717,
     "Key": "Telling of Beads",
-    "enUS": "ÿc1[50PR/10ATD]\nÿc2Telling of Beads",
-    "zhTW": "ÿc1[50PR/10反傷]\nÿc2誦唸珠",
+    "enUS": "Telling of Beads",
+    "zhTW": "誦唸珠",
     "deDE": "Perlenorakel",
     "esES": "Rezo de rosario",
     "frFR": "Récit des Perles",
@@ -27165,15 +27165,15 @@
     "jaJP": "宝珠の教え",
     "ptBR": "Leitura de Pedras",
     "ruRU": "Молитвенные четки",
-    "zhCN": "ÿc1[50PR/10反傷]\nÿc2誦唸珠",
-    "zhCN2": "ÿc1[50PR/10反伤]\nÿc2赐福念珠",
-    "zhTW2": "ÿc1[50PR/10反傷]\nÿc2誦唸珠"
+    "zhCN": "誦唸珠",
+    "zhCN2": "赐福念珠",
+    "zhTW2": "誦唸珠"
   },
   {
     "id": 21718,
     "Key": "Laying of Hands",
-    "enUS": "ÿc1[DEF87]\nÿc2Laying of Hands",
-    "zhTW": "ÿc1[防禦87]\nÿc2按手禮",
+    "enUS": "Laying of Hands",
+    "zhTW": "按手禮",
     "deDE": "Hände auflegen",
     "esES": "Puesta de manos",
     "frFR": "Imposition des Mains",
@@ -27184,15 +27184,15 @@
     "jaJP": "按手の技",
     "ptBR": "Imposição de Mãos",
     "ruRU": "Возложение рук",
-    "zhCN": "ÿc1[防禦87]\nÿc2按手禮",
-    "zhCN2": "ÿc1[防御87]\nÿc2按手礼套",
-    "zhTW2": "ÿc1[防禦87]\nÿc2按手禮"
+    "zhCN": "按手禮",
+    "zhCN2": "按手礼套",
+    "zhTW2": "按手禮"
   },
   {
     "id": 21719,
     "Key": "Rite of Passage",
-    "enUS": "ÿc1[DEF60/25STA]\nÿc2Rite of Passage",
-    "zhTW": "ÿc1[防禦60/25STA]\nÿc2入門式",
+    "enUS": "Rite of Passage",
+    "zhTW": "入門式",
     "deDE": "Initiationsritus",
     "esES": "Rito iniciático",
     "frFR": "Rite de passage",
@@ -27203,15 +27203,15 @@
     "jaJP": "修練の道",
     "ptBR": "Rito de Passagem",
     "ruRU": "Посвящение",
-    "zhCN": "ÿc1[防禦60/25STA]\nÿc2入門式",
-    "zhCN2": "ÿc1[防御60/25STA]\nÿc2皈依之道",
-    "zhTW2": "ÿc1[防禦60/25STA]\nÿc2入門式"
+    "zhCN": "入門式",
+    "zhCN2": "皈依之道",
+    "zhTW2": "入門式"
   },
   {
     "id": 21720,
     "Key": "Spiritual Custodian",
-    "enUS": "ÿc1[DEF882/415DEF]\nÿc2Dark Adherent",
-    "zhTW": "ÿc1[防禦882/415DEF]\nÿc2隱門徒",
+    "enUS": "Dark Adherent",
+    "zhTW": "隱門徒",
     "deDE": "Dunkler Anhänger",
     "esES": "Adepto oscuro",
     "frFR": "Partisan noir",
@@ -27222,15 +27222,15 @@
     "jaJP": "闇への信奉",
     "ptBR": "Seguidor Sombrio",
     "ruRU": "Последователь тьмы",
-    "zhCN": "ÿc1[防禦882/415DEF]\nÿc2隱門徒",
-    "zhCN2": "ÿc1[防御882/415DEF]\nÿc2隐秘教徒",
-    "zhTW2": "ÿc1[防禦882/415DEF]\nÿc2隱門徒"
+    "zhCN": "隱門徒",
+    "zhCN2": "隐秘教徒",
+    "zhTW2": "隱門徒"
   },
   {
     "id": 21721,
     "Key": "Credendum",
-    "enUS": "ÿc1[DEF115]\nÿc2Credendum",
-    "zhTW": "ÿc1[防禦115]\nÿc2守信條",
+    "enUS": "Credendum",
+    "zhTW": "守信條",
     "deDE": "Credendum",
     "esES": "Credendum",
     "frFR": "Credendum",
@@ -27241,9 +27241,9 @@
     "jaJP": "信条の帯",
     "ptBR": "Credendum",
     "ruRU": "Догмат веры",
-    "zhCN": "ÿc1[防禦115]\nÿc2守信條",
-    "zhCN2": "ÿc1[防御115]\nÿc2信念腰带",
-    "zhTW2": "ÿc1[防禦115]\nÿc2守信條"
+    "zhCN": "守信條",
+    "zhCN2": "信念腰带",
+    "zhTW2": "守信條"
   },
   {
     "id": 21722,
@@ -27267,8 +27267,8 @@
   {
     "id": 21723,
     "Key": "Cow King's Horns",
-    "enUS": "ÿc1[DEF128]\nÿc2Cow King's Horns",
-    "zhTW": "ÿc1[防禦128]\nÿc2牛王之角",
+    "enUS": "Cow King's Horns",
+    "zhTW": "牛王之角",
     "deDE": "Hörner des Rinderkönigs",
     "esES": "Cuernos del Rey de las Vacas",
     "frFR": "Cornes du roi des vaches",
@@ -27279,9 +27279,9 @@
     "jaJP": "牛王の角",
     "ptBR": "Chifres do Rei Vaca",
     "ruRU": "Рога Коровьего короля",
-    "zhCN": "ÿc1[防禦128]\nÿc2牛王之角",
-    "zhCN2": "ÿc1[防御128]\nÿc2牛魔王之角",
-    "zhTW2": "ÿc1[防禦128]\nÿc2牛王之角"
+    "zhCN": "牛王之角",
+    "zhCN2": "牛魔王之角",
+    "zhTW2": "牛王之角"
   },
   {
     "id": 21724,
@@ -27305,8 +27305,8 @@
   {
     "id": 21725,
     "Key": "Cow King's Hoofs",
-    "enUS": "ÿc1[DEF41]\nÿc2Cow King's Hooves",
-    "zhTW": "ÿc1[防禦41]\nÿc2牛王之蹄",
+    "enUS": "Cow King's Hooves",
+    "zhTW": "牛王之蹄",
     "deDE": "Hufe des Rinderkönigs",
     "esES": "Pezuñas del Rey de las Vacas",
     "frFR": "Sabots du roi des vaches",
@@ -27317,9 +27317,9 @@
     "jaJP": "牛王の蹄",
     "ptBR": "Cascos do Rei Vaca",
     "ruRU": "Копыта Коровьего короля",
-    "zhCN": "ÿc1[防禦41]\nÿc2牛王之蹄",
-    "zhCN2": "ÿc1[防御41]\nÿc2牛魔王之蹄",
-    "zhTW2": "ÿc1[防禦41]\nÿc2牛王之蹄"
+    "zhCN": "牛王之蹄",
+    "zhCN2": "牛魔王之蹄",
+    "zhTW2": "牛王之蹄"
   },
   {
     "id": 21726,
@@ -28274,8 +28274,8 @@
   {
     "id": 21816,
     "Key": "Tal Rasha's Fire-Spun Cloth",
-    "enUS": "ÿc1[DEF40/15MF]\nÿc2Tal Rasha's Fine-Spun Cloth",
-    "zhTW": "ÿc1[防禦40/15MF]\nÿc2塔拉夏的精織腰布",
+    "enUS": "Tal Rasha's Fine-Spun Cloth",
+    "zhTW": "塔拉夏的精織腰布",
     "deDE": "Tal Rashas feine Kleidung",
     "esES": "Tela fina de Tal Rasha",
     "frFR": "Toile fine de Tal Rasha",
@@ -28286,9 +28286,9 @@
     "jaJP": "タル・ラシャの布帯",
     "ptBR": "Traje Fino de Tal Rasha",
     "ruRU": "Тонкотканный кушак Тал Раши",
-    "zhCN": "ÿc1[防禦40/15MF]\nÿc2塔拉夏的精織腰布",
-    "zhCN2": "ÿc1[防御40/15MF]\nÿc2塔·拉夏的精织带",
-    "zhTW2": "ÿc1[防禦40/15MF]\nÿc2塔拉夏的精織腰布"
+    "zhCN": "塔拉夏的精織腰布",
+    "zhCN2": "塔·拉夏的精织带",
+    "zhTW2": "塔拉夏的精織腰布"
   },
   {
     "id": 21817,
@@ -28312,8 +28312,8 @@
   {
     "id": 21818,
     "Key": "Tal Rasha's Howling Wind",
-    "enUS": "ÿc1[DEF941]\nÿc2Tal Rasha's Guardianship",
-    "zhTW": "ÿc1[防禦941]\nÿc2塔拉夏的守護",
+    "enUS": "Tal Rasha's Guardianship",
+    "zhTW": "塔拉夏的守護",
     "deDE": "Tal Rashas Obhut",
     "esES": "Custodia de Tal Rasha",
     "frFR": "Gardienne de Tal Rasha",
@@ -28324,15 +28324,15 @@
     "jaJP": "タル・ラシャの後見",
     "ptBR": "Tutela de Tal Rasha",
     "ruRU": "Опека Тал Раши",
-    "zhCN": "ÿc1[防禦941]\nÿc2塔拉夏的守護",
-    "zhCN2": "ÿc1[防御941]\nÿc2塔·拉夏的守护",
-    "zhTW2": "ÿc1[防禦941]\nÿc2塔拉夏的守護"
+    "zhCN": "塔拉夏的守護",
+    "zhCN2": "塔·拉夏的守护",
+    "zhTW2": "塔拉夏的守護"
   },
   {
     "id": 21819,
     "Key": "Tal Rasha's Lidless Eye",
-    "enUS": "ÿc1[2CM/2LM/2FM]\nÿc2Tal Rasha's Lidless Eye",
-    "zhTW": "ÿc1[2CM/2LM/2FM]\nÿc2塔拉夏的警惕之眼",
+    "enUS": "Tal Rasha's Lidless Eye",
+    "zhTW": "塔拉夏的警惕之眼",
     "deDE": "Tal Rashas lidloses Auge",
     "esES": "Ojo sin párpado de Tal Rasha",
     "frFR": "Œil sans paupière de Tal Rasha",
@@ -28343,15 +28343,15 @@
     "jaJP": "タル・ラシャの目蓋なき目",
     "ptBR": "Olho Exposto de Tal Rasha",
     "ruRU": "Глазное яблоко Тал Раши",
-    "zhCN": "ÿc1[2CM/2LM/2FM]\nÿc2塔拉夏的警惕之眼",
-    "zhCN2": "ÿc1[2CM/2LM/2FM]\nÿc2塔·拉夏的无睑之眼",
-    "zhTW2": "ÿc1[2CM/2LM/2FM]\nÿc2塔拉夏的警惕之眼"
+    "zhCN": "塔拉夏的警惕之眼",
+    "zhCN2": "塔·拉夏的无睑之眼",
+    "zhTW2": "塔拉夏的警惕之眼"
   },
   {
     "id": 21820,
     "Key": "Tal Rasha's Horadric Crest",
-    "enUS": "ÿc1[DEF131]\nÿc2Tal Rasha's Horadric Crest",
-    "zhTW": "ÿc1[防禦131]\nÿc2塔拉夏的赫拉迪姆之冠",
+    "enUS": "Tal Rasha's Horadric Crest",
+    "zhTW": "塔拉夏的赫拉迪姆之冠",
     "deDE": "Tal Rashas Horadrimwappen",
     "esES": "Cimera horádrica de Tal Rasha",
     "frFR": "Cimier horadrique de Tal Rasha",
@@ -28362,9 +28362,9 @@
     "jaJP": "タル・ラシャのホラドリム・クレスト",
     "ptBR": "Crista Horádrica de Tal Rasha",
     "ruRU": "Хорадримский плюмаж Тал Раши",
-    "zhCN": "ÿc1[防禦131]\nÿc2塔拉夏的赫拉迪姆之冠",
-    "zhCN2": "ÿc1[防御131]\nÿc2塔·拉夏的赫拉迪姆之冠",
-    "zhTW2": "ÿc1[防禦131]\nÿc2塔拉夏的赫拉迪姆之冠"
+    "zhCN": "塔拉夏的赫拉迪姆之冠",
+    "zhCN2": "塔·拉夏的赫拉迪姆之冠",
+    "zhTW2": "塔拉夏的赫拉迪姆之冠"
   },
   {
     "id": 21821,
@@ -28426,8 +28426,8 @@
   {
     "id": 21824,
     "Key": "Ondal's Almighty",
-    "enUS": "ÿc1[DEF209]\nÿc2Ondal's Almighty",
-    "zhTW": "ÿc1[防禦209]\nÿc2溫達的全靈",
+    "enUS": "Ondal's Almighty",
+    "zhTW": "溫達的全靈",
     "deDE": "Ondals Allmacht",
     "esES": "Poder supremo de Ondal",
     "frFR": "Toute-puissance d’Ondal",
@@ -28438,15 +28438,15 @@
     "jaJP": "オンダルの全能",
     "ptBR": "Onipotência de Ondal",
     "ruRU": "Могущество Ондаля",
-    "zhCN": "ÿc1[防禦209]\nÿc2溫達的全靈",
-    "zhCN2": "ÿc1[防御209]\nÿc2温达的全灵",
-    "zhTW2": "ÿc1[防禦209]\nÿc2溫達的全靈"
+    "zhCN": "溫達的全靈",
+    "zhCN2": "温达的全灵",
+    "zhTW2": "溫達的全靈"
   },
   {
     "id": 21825,
     "Key": "Heaven's Taebaek",
-    "enUS": "ÿc1[DEF220]\nÿc2Taebaek's Glory",
-    "zhTW": "ÿc1[防禦220]\nÿc2太白山的榮光",
+    "enUS": "Taebaek's Glory",
+    "zhTW": "太白山的榮光",
     "deDE": "Taebaeks Ruhm",
     "esES": "Gloria de Taebaek",
     "frFR": "Gloire de Taebaek",
@@ -28457,15 +28457,15 @@
     "jaJP": "テベクの栄光",
     "ptBR": "Glória de Taebaek",
     "ruRU": "Слава Тхэбэка",
-    "zhCN": "ÿc1[防禦220]\nÿc2太白山的榮光",
-    "zhCN2": "ÿc1[防御220]\nÿc2泰白的荣耀",
-    "zhTW2": "ÿc1[防禦220]\nÿc2太白山的榮光"
+    "zhCN": "太白山的榮光",
+    "zhCN2": "泰白的荣耀",
+    "zhTW2": "太白山的榮光"
   },
   {
     "id": 21826,
     "Key": "Haemosu's Adament",
-    "enUS": "ÿc1[DEF702]\nÿc2Haemosu's Adamant",
-    "zhTW": "ÿc1[防禦702]\nÿc2解慕漱的堅決",
+    "enUS": "Haemosu's Adamant",
+    "zhTW": "解慕漱的堅決",
     "deDE": "Haemosus Willenskraft",
     "esES": "Convicción de Haemosu",
     "frFR": "Dureté d’Haemosu",
@@ -28476,9 +28476,9 @@
     "jaJP": "ヘモスの決意",
     "ptBR": "Tenacidade de Haemosu",
     "ruRU": "Адамант Хэмосу",
-    "zhCN": "ÿc1[防禦702]\nÿc2解慕漱的堅決",
-    "zhCN2": "ÿc1[防御702]\nÿc2解慕苏的坚定",
-    "zhTW2": "ÿc1[防禦702]\nÿc2解慕漱的堅決"
+    "zhCN": "解慕漱的堅決",
+    "zhCN2": "解慕苏的坚定",
+    "zhTW2": "解慕漱的堅決"
   },
   {
     "id": 21827,
@@ -28559,8 +28559,8 @@
   {
     "id": 21831,
     "Key": "Naj's Light Plate",
-    "enUS": "ÿc1[DEF830]\nÿc2Naj's Light Plate",
-    "zhTW": "ÿc1[防禦830]\nÿc2娜吉的輕鎧",
+    "enUS": "Naj's Light Plate",
+    "zhTW": "娜吉的輕鎧",
     "deDE": "Najs leichte Rüstung",
     "esES": "Coraza ligera de Naj",
     "frFR": "Harnois léger de Naj",
@@ -28571,15 +28571,15 @@
     "jaJP": "ナジのライトプレート",
     "ptBR": "Armadura Leve de Naj",
     "ruRU": "Легкая броня Наджа",
-    "zhCN": "ÿc1[防禦830]\nÿc2娜吉的輕鎧",
-    "zhCN2": "ÿc1[防御830]\nÿc2诺吉的轻铠甲",
-    "zhTW2": "ÿc1[防禦830]\nÿc2娜吉的輕鎧"
+    "zhCN": "娜吉的輕鎧",
+    "zhCN2": "诺吉的轻铠甲",
+    "zhTW2": "娜吉的輕鎧"
   },
   {
     "id": 21832,
     "Key": "Naj's Circlet",
-    "enUS": "ÿc1[DEF105/35FD]\nÿc2Naj's Circlet",
-    "zhTW": "ÿc1[防禦105/35FD]\nÿc2娜吉的頭環",
+    "enUS": "Naj's Circlet",
+    "zhTW": "娜吉的頭環",
     "deDE": "Najs Reif",
     "esES": "Aureola de Naj",
     "frFR": "Bandeau de Naj",
@@ -28590,9 +28590,9 @@
     "jaJP": "ナジのサークレット",
     "ptBR": "Diadema de Naj",
     "ruRU": "Обруч Наджа",
-    "zhCN": "ÿc1[防禦105/35FD]\nÿc2娜吉的頭環",
-    "zhCN2": "ÿc1[防御105/35FD]\nÿc2诺吉的头环",
-    "zhTW2": "ÿc1[防禦105/35FD]\nÿc2娜吉的頭環"
+    "zhCN": "娜吉的頭環",
+    "zhCN2": "诺吉的头环",
+    "zhTW2": "娜吉的頭環"
   },
   {
     "id": 21833,
@@ -28730,8 +28730,8 @@
   {
     "id": 21840,
     "Key": "Immortal King's Stone Crusher",
-    "enUS": "ÿc1[40CB]\nÿc2Immortal King's Stone Crusher",
-    "zhTW": "ÿc1[40CB]\nÿc2不朽之王的碎魂者",
+    "enUS": "Immortal King's Stone Crusher",
+    "zhTW": "不朽之王的碎魂者",
     "deDE": "Steintrümmerer des unsterblichen Königs",
     "esES": "Machacapiedras del rey inmortal",
     "frFR": "Broyeur de pierre du roi immortel",
@@ -28742,15 +28742,15 @@
     "jaJP": "不死王の石砕き",
     "ptBR": "Esmaga-rochas do Rei Imortal",
     "ruRU": "Крушитель камней бессмертного короля",
-    "zhCN": "ÿc1[40CB]\nÿc2不朽之王的碎魂者",
-    "zhCN2": "ÿc1[40CB]\nÿc2不朽之王的碎石锤",
-    "zhTW2": "ÿc1[40CB]\nÿc2不朽之王的碎魂者"
+    "zhCN": "不朽之王的碎魂者",
+    "zhCN2": "不朽之王的碎石锤",
+    "zhTW2": "不朽之王的碎魂者"
   },
   {
     "id": 21841,
     "Key": "Immortal King's Pillar",
-    "enUS": "ÿc1[DEF128]\nÿc2Immortal King's Pillar",
-    "zhTW": "ÿc1[防禦128]\nÿc2不朽之王之柱",
+    "enUS": "Immortal King's Pillar",
+    "zhTW": "不朽之王之柱",
     "deDE": "Säule des unsterblichen Königs",
     "esES": "Pilar del rey inmortal",
     "frFR": "Piliers du roi immortel",
@@ -28761,15 +28761,15 @@
     "jaJP": "不死王の柱",
     "ptBR": "Pilar do Rei Imortal",
     "ruRU": "Пьедестал бессмертного короля",
-    "zhCN": "ÿc1[防禦128]\nÿc2不朽之王之柱",
-    "zhCN2": "ÿc1[防御128]\nÿc2不朽之王的基石",
-    "zhTW2": "ÿc1[防禦128]\nÿc2不朽之王之柱"
+    "zhCN": "不朽之王之柱",
+    "zhCN2": "不朽之王的基石",
+    "zhTW2": "不朽之王之柱"
   },
   {
     "id": 21842,
     "Key": "Immortal King's Forge",
-    "enUS": "ÿc1[DEF53]\nÿc2Immortal King's Forge",
-    "zhTW": "ÿc1[防禦53]\nÿc2不朽之王的熔爐",
+    "enUS": "Immortal King's Forge",
+    "zhTW": "不朽之王的熔爐",
     "deDE": "Schmiede des unsterblichen Königs",
     "esES": "Fragua del rey inmortal",
     "frFR": "Forge du roi immortel",
@@ -28780,9 +28780,9 @@
     "jaJP": "不死王の炉",
     "ptBR": "Forja do Rei Imortal",
     "ruRU": "Горн бессмертного короля",
-    "zhCN": "ÿc1[防禦53]\nÿc2不朽之王的熔爐",
-    "zhCN2": "ÿc1[防御53]\nÿc2不朽之王的锤炼",
-    "zhTW2": "ÿc1[防禦53]\nÿc2不朽之王的熔爐"
+    "zhCN": "不朽之王的熔爐",
+    "zhCN2": "不朽之王的锤炼",
+    "zhTW2": "不朽之王的熔爐"
   },
   {
     "id": 21843,
@@ -28825,8 +28825,8 @@
   {
     "id": 21845,
     "Key": "Immortal King's Will",
-    "enUS": "ÿc1[DEF175/40MF]\nÿc2Immortal King's Will",
-    "zhTW": "ÿc1[防禦175/40MF]\nÿc2不朽之王的意志",
+    "enUS": "Immortal King's Will",
+    "zhTW": "不朽之王的意志",
     "deDE": "Wille des unsterblichen Königs",
     "esES": "Voluntad del rey inmortal",
     "frFR": "Volonté du roi immortel",
@@ -28837,9 +28837,9 @@
     "jaJP": "不死王の意志",
     "ptBR": "Vontade do Rei Imortal",
     "ruRU": "Воля бессмертного короля",
-    "zhCN": "ÿc1[防禦175/40MF]\nÿc2不朽之王的意志",
-    "zhCN2": "ÿc1[防御175/40MF]\nÿc2不朽之王的意志",
-    "zhTW2": "ÿc1[防禦175/40MF]\nÿc2不朽之王的意志"
+    "zhCN": "不朽之王的意志",
+    "zhCN2": "不朽之王的意志",
+    "zhTW2": "不朽之王的意志"
   },
   {
     "id": 21846,
@@ -28863,8 +28863,8 @@
   {
     "id": 21847,
     "Key": "Aldur's Gauntlet",
-    "enUS": "ÿc1[3S]\nÿc2Aldur's Rhythm",
-    "zhTW": "ÿc1[3S]\nÿc2艾爾多的律動",
+    "enUS": "Aldur's Rhythm",
+    "zhTW": "艾爾多的律動",
     "deDE": "Aldurs Rhythmus",
     "esES": "Ritmo de Aldur",
     "frFR": "Cadence d’Aldur",
@@ -28875,9 +28875,9 @@
     "jaJP": "アルダーの拍打棍",
     "ptBR": "Ritmo de Aldur",
     "ruRU": "Ритм Альдура",
-    "zhCN": "ÿc1[3S]\nÿc2艾爾多的律動",
-    "zhCN2": "ÿc1[3S]\nÿc2艾尔多的律动",
-    "zhTW2": "ÿc1[3S]\nÿc2艾爾多的律動"
+    "zhCN": "艾爾多的律動",
+    "zhCN2": "艾尔多的律动",
+    "zhTW2": "艾爾多的律動"
   },
   {
     "id": 21848,
@@ -29053,8 +29053,8 @@
   {
     "id": 21876,
     "Key": "McAuley's Taboo",
-    "enUS": "ÿc1[DEF31/25DEF]\nÿc2Sander's Taboo",
-    "zhTW": "ÿc1[防禦31/25DEF]\nÿc2山德的禁忌",
+    "enUS": "Sander's Taboo",
+    "zhTW": "山德的禁忌",
     "deDE": "Sanders Tabu",
     "esES": "Tabú de Sander",
     "frFR": "Tabou de Sander",
@@ -29065,15 +29065,15 @@
     "jaJP": "サンダーの禁忌",
     "ptBR": "Tabu de Sander",
     "ruRU": "Табу Сандера",
-    "zhCN": "ÿc1[防禦31/25DEF]\nÿc2山德的禁忌",
-    "zhCN2": "ÿc1[防御31/25DEF]\nÿc2山德的禁忌",
-    "zhTW2": "ÿc1[防禦31/25DEF]\nÿc2山德的禁忌"
+    "zhCN": "山德的禁忌",
+    "zhCN2": "山德的禁忌",
+    "zhTW2": "山德的禁忌"
   },
   {
     "id": 21877,
     "Key": "McAuley's Riprap",
-    "enUS": "ÿc1[DEF6]\nÿc2Sander's Riprap",
-    "zhTW": "ÿc1[防禦6]\nÿc2山德的碎石",
+    "enUS": "Sander's Riprap",
+    "zhTW": "山德的碎石",
     "deDE": "Sanders Riprap",
     "esES": "Escollera de Sander",
     "frFR": "Matrice de Sander",
@@ -29084,15 +29084,15 @@
     "jaJP": "サンダーの踏み石",
     "ptBR": "Maciço de Sander",
     "ruRU": "Добротные сапоги Сандера",
-    "zhCN": "ÿc1[防禦6]\nÿc2山德的碎石",
-    "zhCN2": "ÿc1[防御6]\nÿc2山德的石碓",
-    "zhTW2": "ÿc1[防禦6]\nÿc2山德的碎石"
+    "zhCN": "山德的碎石",
+    "zhCN2": "山德的石碓",
+    "zhTW2": "山德的碎石"
   },
   {
     "id": 21878,
     "Key": "McAuley's Paragon",
-    "enUS": "ÿc1[DEF5]\nÿc2Sander's Paragon",
-    "zhTW": "ÿc1[防禦5]\nÿc2山德的模範",
+    "enUS": "Sander's Paragon",
+    "zhTW": "山德的模範",
     "deDE": "Sanders Vorbild",
     "esES": "Excelencia de Sander",
     "frFR": "Vœu de Sander",
@@ -29103,9 +29103,9 @@
     "jaJP": "サンダーの規範",
     "ptBR": "Excelência de Sander",
     "ruRU": "Идеал Сандера",
-    "zhCN": "ÿc1[防禦5]\nÿc2山德的模範",
-    "zhCN2": "ÿc1[防御5]\nÿc2山德的崇拜",
-    "zhTW2": "ÿc1[防禦5]\nÿc2山德的模範"
+    "zhCN": "山德的模範",
+    "zhCN2": "山德的崇拜",
+    "zhTW2": "山德的模範"
   },
   {
     "id": 21879,

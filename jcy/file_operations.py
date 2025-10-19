@@ -74,6 +74,25 @@ class FileOperations:
                 print(e)
 
         return (count, len(files))
+    
+    def modify_lng_strings(self, json_object, selectLng, localLng):
+        """本地化修改"""
+        if json_object is None:
+            return
+        if T2S == selectLng:
+            json_object[localLng] = convert(json_object[ZHTW2], 'zh-cn')
+        elif S2T == selectLng:
+            json_object[localLng] = convert(json_object[ZHCN2], 'zh-tw')
+        else:
+            json_object[localLng] = json_object[selectLng]
+
+    def modify_lng_strings_zhcn(self, json_object, selectLng=ZHCN2):
+        """本地化修改"""
+        self.modify_lng_strings(json_object, selectLng, ZHCN)
+    
+    def modify_lng_strings_zhtw(self, json_object, selectLng=ZHTW2):
+        """本地化修改"""
+        self.modify_lng_strings(json_object, selectLng, ZHTW)
 
 
     def hide_quest_button(self, isEnabled: bool = False):
@@ -1332,6 +1351,9 @@ class FileOperations:
                 # CASE.装备
                 else:
                     data = jcy_item_names_data.get(Key)
+                    # 套装pass
+                    if Key in SET_ITEM_INDEX:
+                        continue
                     if data is not None:
                         for lng in [ZHCN, ZHTW, ENUS]:
                             arr = []
@@ -1348,25 +1370,25 @@ class FileOperations:
                                     arr.append(mark)
                                     arr.append("\n")
                             if len(arr) > 0:
-                                # 暗金vs套装
-                                if Key in SET_ITEM_INDEX:
-                                    arr.append("ÿc2")
-                                else:
-                                    arr.append("ÿc4")
+                                arr.append("ÿc4")
                             arr.append(item.get(lng))
                             if handler_enUS and lng != ENUS:
                                 arr.append(" ÿcI")
                                 arr.append(item.get(ENUS))
                             item[lng] = ''.join(arr)
 
-                # 备份&转换
+                # 备份
                 item[ZHCN2] = item[ZHCN]
                 item[ZHTW2] = item[ZHTW]
-                if self.controller.current_states.get(NETEASE_LANGUAGE) is not None:
-                    item[ZHCN] = item[self.controller.current_states.get(NETEASE_LANGUAGE)]
-                if self.controller.current_states.get(BATTLE_NET_LANGUAGE) is not None:
-                    item[ZHTW] = item[self.controller.current_states.get(BATTLE_NET_LANGUAGE)]
+
+                # 国服本地化
+                netease = self.controller.current_states.get(NETEASE_LANGUAGE)
+                self.modify_lng_strings_zhcn(item, netease)
                 
+                # 国际服本地化
+                battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
+                self.modify_lng_strings_zhtw(item, battlenet)
+                                
             # write temp file
             item_names_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json.tmp")
             with open(item_names_tmp, 'w', encoding="utf-8-sig") as f:
@@ -1412,13 +1434,17 @@ class FileOperations:
                             arr.append(item.get("enUS"))
                         item[lng] = ''.join(arr)
                 
-                # 备份&转换
+                # 备份
                 item[ZHCN2] = item[ZHCN]
                 item[ZHTW2] = item[ZHTW]
-                if self.controller.current_states.get(NETEASE_LANGUAGE) is not None:
-                    item[ZHCN] = item[self.controller.current_states.get(NETEASE_LANGUAGE)]
-                if self.controller.current_states.get(BATTLE_NET_LANGUAGE) is not None:
-                    item[ZHTW] = item[self.controller.current_states.get(BATTLE_NET_LANGUAGE)]
+
+                # 国服本地化
+                netease = self.controller.current_states.get(NETEASE_LANGUAGE)
+                self.modify_lng_strings_zhcn(item, netease)
+                
+                # 国际服本地化
+                battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
+                self.modify_lng_strings_zhtw(item, battlenet)
 
             item_runes_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-runes.json.tmp")
             with open(item_runes_tmp, 'w', encoding="utf-8-sig") as f:
@@ -2024,13 +2050,14 @@ class FileOperations:
             item_name[ZHCN2] = item_name[ZHCN]
             item_name[ZHTW2] = item_name[ZHTW]
 
-            # 转换
+            # 国服本地化
             netease = self.controller.current_states.get(NETEASE_LANGUAGE)
-            if netease is not None:
-                item_name[ZHCN] = convert(item_name[ZHTW2], 'zh-cn') if T2S == netease else item_name[netease]
+            self.modify_lng_strings_zhcn(item_name, netease)
+            
+            # 国际服本地化
             battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
-            if battlenet is not None:
-                item_name[ZHTW] = convert(item_name[ZHCN2], 'zh-tw') if S2T == battlenet else item_name[battlenet]
+            self.modify_lng_strings_zhtw(item_name, battlenet)
+
         # 3.write
         with open(item_names_path, 'w', encoding='utf-8-sig') as f:
             json.dump(item_names_data, f, ensure_ascii=False, indent=2)

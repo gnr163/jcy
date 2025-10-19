@@ -76,8 +76,16 @@ class FeatureConfig:
                             }
                         },
                         {
-                            "type": "Separator"
-                        },
+                            "fid": TERROR_ZONE_TABLE,
+                            "type": TERROR_ZONE_TABLE,
+                            "text": "恐怖区域",
+                            "colspan": 10
+                        }
+                    ]
+                },
+                {
+                    "text": "环境设置",
+                    "children": [
                         {
                             "fid": GAME_SETTING,
                             "type": CHECK,
@@ -143,7 +151,34 @@ class FeatureConfig:
                                 "2": "默认开启迷你血条",
                                 "3": "默认开启MINI盒子",
                             }
-                        }
+                        },
+                        {
+                            "fid": DISABLE_EFFECTS,
+                            "type": CHECK,
+                            "text": "环境-屏蔽元素",
+                            "colspan": 10,
+                            "params": {
+                                "1": "动画",
+                                "2": "崔凡克议会墙壁",
+                                "3": "火焰之河岩浆",
+                                "4": "混沌避难所大门",
+                                "6": "毁灭王座石柱"
+                            }
+                        },
+                        {
+                            "fid": ENABLE_POINTER,
+                            "type": CHECK,
+                            "text": "环境-开启指引",
+                            "colspan": 10,
+                            "params": {
+                                "1": "出/入口",
+                                "2": "小站",
+                                "3": "A1兵营",
+                                "4": "A2贤者小站",
+                                "5": "A4火焰之河",
+                                "6": "A5尼拉塞克"
+                            }
+                        },
                     ]
                 },
                 {
@@ -490,38 +525,6 @@ class FeatureConfig:
                             }
                         },
                         
-                    ]
-                },
-                {
-                    "text": "环境设置",
-                    "children": [
-                        {
-                            "fid": DISABLE_EFFECTS,
-                            "type": CHECK,
-                            "text": "环境-屏蔽元素",
-                            "colspan": 10,
-                            "params": {
-                                "1": "动画",
-                                "2": "崔凡克议会墙壁",
-                                "3": "火焰之河岩浆",
-                                "4": "混沌避难所大门",
-                                "6": "毁灭王座石柱"
-                            }
-                        },
-                        {
-                            "fid": ENABLE_POINTER,
-                            "type": CHECK,
-                            "text": "环境-开启指引",
-                            "colspan": 10,
-                            "params": {
-                                "1": "出/入口",
-                                "2": "小站",
-                                "3": "A1兵营",
-                                "4": "A2贤者小站",
-                                "5": "A4火焰之河",
-                                "6": "A5尼拉塞克"
-                            }
-                        },
                     ]
                 }
             ],

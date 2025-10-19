@@ -225,6 +225,13 @@ class FeatureView:
                 current_col += colspan
                 self.feature_vars[child["fid"]] = group
 
+            elif TERROR_ZONE_TABLE == type:
+                current_row += 1
+                tz = TerrorZoneUI(tab, self.controller)
+                tz.grid(row=current_row, column=0, columnspan=10, sticky="nsew")
+                current_row += 1
+                current_col = 0
+
             elif SEPARATOR == type:
                 current_row += 1  
                 sep = ttk.Separator(tab, orient='horizontal')
@@ -1223,22 +1230,25 @@ class D2RLauncherApp(tk.Frame):
         webbrowser.open(url)
         
 class TerrorZoneUI(tk.Frame):
-    def __init__(self, master, controller, fetcher=None):
+    def __init__(self, master, controller):
         super().__init__(master)
         self.master = master
         self.controller = controller
-        self.fetcher = fetcher  # TerrorZoneFetcher实例
-        self.pack(fill=tk.BOTH, expand=True)
+        # self.grid(row=current_row, column=current_col, sticky="nsew")
         
         self.create_widgets()
         self.load_and_display_data()
 
     def create_widgets(self):
-        self.tree = ttk.Treeview(self, columns=("time", "name"), show="headings")
+        self.tree = ttk.Treeview(self, columns=("time", "name", "exp", "drop"), show="headings")
         self.tree.heading("time", text="时间")
         self.tree.heading("name", text="恐怖地带")
+        self.tree.heading("exp", text="经验评级")
+        self.tree.heading("drop", text="掉落评级")
         self.tree.column("time", width=150, anchor=tk.CENTER)
-        self.tree.column("name", width=350, anchor=tk.W)
+        self.tree.column("name", width=350, anchor=tk.CENTER)
+        self.tree.column("exp", width=50, anchor=tk.CENTER)
+        self.tree.column("drop", width=50, anchor=tk.CENTER)
         self.tree.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 
     def load_and_display_data(self):
@@ -1265,19 +1275,7 @@ class TerrorZoneUI(tk.Frame):
                         name = zone_info.get(language)
                     else:
                         name = "未知名称"
-                    self.tree.insert("", "end", values=(formatted_time, name))
+                    self.tree.insert("", "end", values=(formatted_time, name, zone_info.get("exp"), zone_info.get("drop")))
         except Exception as e:
             messagebox.showerror("错误", f"加载数据失败: {e}")
 
-    def manual_refresh(self):
-        if not self.fetcher:
-            messagebox.showerror("错误", "未初始化数据获取器")
-            return
-        
-        def do_fetch():
-            try:
-                self.fetcher.fetch_manual(ui_refresh_func=lambda data: self.master.after(0, self.load_and_display_data))
-            except Exception as e:
-                self.master.after(0, lambda: messagebox.showerror("错误", f"刷新失败: {e}"))
-        
-        threading.Thread(target=do_fetch, daemon=True).start()
