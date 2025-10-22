@@ -33,6 +33,158 @@
         },
         {
             "type": "Entity",
+            "name": "SFX_Waypoint",
+            "id": 6000009541,
+            "components": [
+                {
+                    "type": "AudioEmitterComponent",
+                    "name": "SFX_Waypoint_AudioEmitter",
+                    "audioId": "shrine_gemupgrade",
+                    "randomDelay": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "forceNoRandom": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "SFX_Waypoint_TransformDefinition",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "SFX_Waypoint",
+            "id": 6000009541,
+            "components": [
+                {
+                    "type": "AudioEmitterComponent",
+                    "name": "SFX_Waypoint_AudioEmitter",
+                    "audioId": "shrine_gemupgrade",
+                    "randomDelay": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "forceNoRandom": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "SFX_Waypoint_TransformDefinition",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "SFX_Waypoint",
+            "id": 6000009541,
+            "components": [
+                {
+                    "type": "AudioEmitterComponent",
+                    "name": "SFX_Waypoint_AudioEmitter",
+                    "audioId": "shrine_gemupgrade",
+                    "randomDelay": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "forceNoRandom": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "SFX_Waypoint_TransformDefinition",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "SFX_Waypoint",
+            "id": 6000009541,
+            "components": [
+                {
+                    "type": "AudioEmitterComponent",
+                    "name": "SFX_Waypoint_AudioEmitter",
+                    "audioId": "shrine_gemupgrade",
+                    "randomDelay": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "forceNoRandom": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "SFX_Waypoint_TransformDefinition",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                }
+            ]
+        },
+        {
+            "type": "Entity",
             "name": "Art_circle",
             "id": 9999996974,
             "components": [
