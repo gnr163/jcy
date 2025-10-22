@@ -312,6 +312,7 @@ class FeatureView:
             with self._tray_cleanup_lock:
                 self._tray_cleanup_done = True
 
+
     def _on_destroy(self, event):
         """窗口销毁时的清理工作"""
         if event.widget == self.master:
@@ -690,19 +691,12 @@ class LabeledCoordinate(ttk.LabelFrame):
 
 
 class TableWithCheckbox(tk.Frame):
-    """
-    Scroll-able checkbox table:
-        - columns:  ['英文', '简体', '繁體', ...]
-        - data:     [[id, col1, col2, ...], ...]
-        - config_dict / config_key: 用来读写 {id: bool} 状态到外部字典
-    """
     def __init__(self, master, columns, data,
                  config_dict=None, config_key=None,
                  col_width=14, wrap_px=0,
                  on_change=None,
                  **kwargs):
         super().__init__(master, **kwargs)
-
         self.columns      = columns
         self.data         = data
         self.config_dict  = config_dict or {}
@@ -714,69 +708,37 @@ class TableWithCheckbox(tk.Frame):
         self.state_dict = self.config_dict[self.config_key] if self.config_key else {}
 
         # ---------- 滚动容器 ----------
-        canvas = tk.Canvas(self, highlightthickness=0)
-        vbar   = tk.Scrollbar(self, orient="vertical",   command=canvas.yview)
-        hbar   = tk.Scrollbar(self, orient="horizontal", command=canvas.xview)
-        canvas.configure(yscrollcommand=vbar.set, xscrollcommand=hbar.set)
+        self.canvas = tk.Canvas(self, highlightthickness=0)
+        self.vbar   = tk.Scrollbar(self, orient="vertical",   command=self.canvas.yview)
+        self.hbar   = tk.Scrollbar(self, orient="horizontal", command=self.canvas.xview)
+        self.canvas.configure(yscrollcommand=self.vbar.set, xscrollcommand=self.hbar.set)
 
-        vbar.pack(side="right", fill="y")
-        hbar.pack(side="bottom", fill="x")
-        canvas.pack(side="left", fill="both", expand=True)
+        self.vbar.pack(side="right", fill="y")
+        self.hbar.pack(side="bottom", fill="x")
+        self.canvas.pack(side="left", fill="both", expand=True)
 
-        self._tbl = tk.Frame(canvas)
-        tbl_window = canvas.create_window((0, 0), window=self._tbl, anchor="nw")
+        self._tbl = tk.Frame(self.canvas)
+        tbl_window = self.canvas.create_window((0, 0), window=self._tbl, anchor="nw")
 
-        # 滚轮支持
-        # ---------- 滚轮支持（加这段） ----------
-        def _on_mousewheel(event):
-            canvas.yview_scroll(int(-1*(event.delta/120)), "units")
-
-        canvas.bind_all("<MouseWheel>", _on_mousewheel)  # Windows
-
-        # ---------- 替换这部分开始 ----------
         def _on_config(event=None):
-            # 当内层 Frame 尺寸变化时更新 scrollregion（不再在这里设置 window 宽度）
-            canvas.configure(scrollregion=canvas.bbox("all"))
-
+            self.canvas.configure(scrollregion=self.canvas.bbox("all"))
         self._tbl.bind("<Configure>", _on_config)
+        self.canvas.bind("<Configure>", lambda e: self.canvas.itemconfigure(tbl_window, width=e.width))
 
-        canvas.bind("<Configure>", lambda e: canvas.itemconfigure(tbl_window, width=e.width))
-
-        # 在构建完所有控件后做一次初始刷新（延迟很短，确保 geometry 已计算）
-        def _initial_update():
-            # 强制布局计算后再读 bbox/winfo_width
-            self._tbl.update_idletasks()
-            canvas.update_idletasks()
-            canvas.configure(scrollregion=canvas.bbox("all"))
-            canvas.itemconfigure(tbl_window, width=canvas.winfo_width())
-
-        # ---------- 构建表格 ----------
         self.vars    = []
         self.row_ids = []
 
-        # 全选框变量 + 函数
+        # 表头全选
         self._select_all_var = tk.BooleanVar(value=False)
-
-        def _toggle_all():
-            new_state = self._select_all_var.get()
-            for var in self.vars:
-                var.set(new_state)
-            if self.on_change:
-                self.on_change(self.get())  # 只通知外部
-
-        # 表头第0列改为全选框（包Frame）
         frame = tk.Frame(self._tbl, borderwidth=1, relief="solid")
         frame.grid(row=0, column=0, sticky="nsew")
-        tk.Checkbutton(frame,
-                    text="",
-                    variable=self._select_all_var,
-                    command=_toggle_all).pack(expand=True, fill="both")
+        tk.Checkbutton(frame, text="", variable=self._select_all_var,
+                       command=self._toggle_all).pack(expand=True, fill="both")
 
         # 其他表头
         for j, col in enumerate(columns, start=1):
             tk.Label(self._tbl, text=col, width=col_width, wraplength=wrap_px,
-                    borderwidth=1, relief="solid", anchor="w"
-                    ).grid(row=0, column=j, sticky="nsew")
+                     borderwidth=1, relief="solid", anchor="w").grid(row=0, column=j, sticky="nsew")
 
         # 表体
         for i, row in enumerate(data, start=1):
@@ -786,24 +748,20 @@ class TableWithCheckbox(tk.Frame):
             var = tk.BooleanVar(value=self.state_dict.get(rid, False))
             self.vars.append(var)
 
-            # 包Frame
             frame = tk.Frame(self._tbl, borderwidth=1, relief="solid")
             frame.grid(row=i, column=0, sticky="nsew")
-            tk.Checkbutton(frame,
-                        variable=var,
-                        command=self._make_callback(),
-                        anchor="center").pack(expand=True, fill="both")
+            tk.Checkbutton(frame, variable=var, command=self._make_callback(), anchor="center").pack(expand=True, fill="both")
 
             for j, text in enumerate(row[1:], start=1):
                 tk.Label(self._tbl, text=text, width=col_width,
-                        wraplength=wrap_px, borderwidth=1, relief="solid",
-                        anchor="w").grid(row=i, column=j, sticky="nsew")
+                         wraplength=wrap_px, borderwidth=1, relief="solid",
+                         anchor="w").grid(row=i, column=j, sticky="nsew")
 
-        # 列均分伸缩
         for c in range(len(columns) + 1):
             self._tbl.grid_columnconfigure(c, weight=1)
 
-        self.after(1, _initial_update)
+        self.after(1, lambda: self.canvas.configure(scrollregion=self.canvas.bbox("all")))
+        self._enable_mousewheel_scroll()
 
     def get(self):
         """返回 {id: bool}"""
@@ -828,16 +786,25 @@ class TableWithCheckbox(tk.Frame):
             # 行点击时自动刷新表头全选状态
             self._select_all_var.set(all(var.get() for var in self.vars))
         return callback
+    
+    def _toggle_all(self):
+        new_state = self._select_all_var.get()
+        for var in self.vars:
+            var.set(new_state)
+        if self.on_change:
+            self.on_change(self.get())
+
+    def _enable_mousewheel_scroll(self):
+        """鼠标滚入 Canvas 时启用滚轮滚动"""
+        def _on_mousewheel(event):
+            self.canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+            return "break"
+
+        self.canvas.bind("<Enter>", lambda e: self.canvas.bind_all("<MouseWheel>", _on_mousewheel))
+        self.canvas.bind("<Leave>", lambda e: self.canvas.unbind_all("<MouseWheel>"))
 
 
 class RuneSettingsTable(tk.Frame):
-    """
-    符文设置表格（带滚动条）
-    表头：编号 | 符文 | 语音提示 | 光柱提示 | 光圈提示
-    数据：固定33条，每行3个复选框。
-    配置文件格式：二维数组 [[语音, 光柱, 光圈], ...]，33行3列
-    """
-
     COLUMNS = ["编号", "符文", "语音提示", "光柱提示", "光圈提示"]
     
     def __init__(self, master, config_dict=None, config_key=None, **kwargs):
@@ -845,56 +812,41 @@ class RuneSettingsTable(tk.Frame):
         self.config_dict = config_dict or {}
         self.config_key = config_key
 
-        # 初始化配置，如果不存在则创建 33×3 的 False 数组
         if self.config_key and self.config_key not in self.config_dict:
             self.config_dict[self.config_key] = [[False, False, False] for _ in range(33)]
 
         # ---------- 滚动区域 ----------
-        canvas = tk.Canvas(self, highlightthickness=0)
-        vbar = tk.Scrollbar(self, orient="vertical", command=canvas.yview)
-        canvas.configure(yscrollcommand=vbar.set)
-        vbar.pack(side="right", fill="y")
-        canvas.pack(side="left", fill="both", expand=True)
+        self.canvas = tk.Canvas(self, highlightthickness=0)
+        self.vbar = tk.Scrollbar(self, orient="vertical", command=self.canvas.yview)
+        self.canvas.configure(yscrollcommand=self.vbar.set)
+        self.vbar.pack(side="right", fill="y")
+        self.canvas.pack(side="left", fill="both", expand=True)
 
-        self._tbl = tk.Frame(canvas)
-        tbl_window = canvas.create_window((0, 0), window=self._tbl, anchor="nw")
+        self._tbl = tk.Frame(self.canvas)
+        tbl_window = self.canvas.create_window((0, 0), window=self._tbl, anchor="nw")
 
-        # 滚轮绑定
-        def _on_mousewheel(event):
-            canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
-        canvas.bind("<Enter>", lambda e: canvas.bind_all("<MouseWheel>", _on_mousewheel))
-        canvas.bind("<Leave>", lambda e: canvas.unbind_all("<MouseWheel>"))
-
-        # 滚动范围调整
+        # ---------- 滚动范围调整 ----------
         def _on_config(event=None):
-            canvas.configure(scrollregion=canvas.bbox("all"))
+            self.canvas.configure(scrollregion=self.canvas.bbox("all"))
         self._tbl.bind("<Configure>", _on_config)
-        canvas.bind("<Configure>", lambda e: canvas.itemconfigure(tbl_window, width=e.width))
+        self.canvas.bind("<Configure>", lambda e: self.canvas.itemconfigure(tbl_window, width=e.width))
 
         # ---------- 表头 ----------
         header_font = font.Font(weight="bold", size=10)
         for j, col in enumerate(self.COLUMNS):
-            lbl = tk.Label(
-                self._tbl,
-                text=col,
-                font=header_font,
-                borderwidth=1,
-                relief="solid",
-                bg="#d9d9d9",
-                anchor="center"
-            )
+            lbl = tk.Label(self._tbl, text=col, font=header_font, borderwidth=1,
+                           relief="solid", bg="#d9d9d9", anchor="center")
             lbl.grid(row=0, column=j, sticky="nsew", ipadx=4, ipady=6)
         self._tbl.grid_rowconfigure(0, minsize=30)
 
         # ---------- 表体 ----------
         self.vars = []
         for i in range(33):
-            # 这里用 RUNE_ENUS / RUNE_ZHTW 作为符文名称，你需要在外部定义
             tk.Label(self._tbl, text=RUNE_ENUS[i], borderwidth=1, relief="solid").grid(row=i+1, column=0, sticky="nsew")
             tk.Label(self._tbl, text=RUNE_ZHTW[i], borderwidth=1, relief="solid").grid(row=i+1, column=1, sticky="nsew")
 
             row_vars = []
-            for j in range(3):  # 语音/光柱/光圈
+            for j in range(3):
                 val = self.config_dict[self.config_key][i][j]
                 var = tk.BooleanVar(value=val)
                 cb_frame = tk.Frame(self._tbl, borderwidth=1, relief="solid")
@@ -904,11 +856,12 @@ class RuneSettingsTable(tk.Frame):
                 row_vars.append(var)
             self.vars.append(row_vars)
 
-        # ---------- 列宽均分 ----------
         for c in range(5):
             self._tbl.grid_columnconfigure(c, weight=1)
 
-        self.after(1, lambda: canvas.configure(scrollregion=canvas.bbox("all")))
+        self.after(1, lambda: self.canvas.configure(scrollregion=self.canvas.bbox("all")))
+        self._enable_mousewheel_scroll()
+
 
     # ---------- 外部接口 ----------
     def get(self):
@@ -926,6 +879,15 @@ class RuneSettingsTable(tk.Frame):
         """同步控件状态到 config_dict"""
         if self.config_key:
             self.config_dict[self.config_key] = self.get()
+
+    def _enable_mousewheel_scroll(self):
+        """鼠标滚入 Canvas 时启用滚轮滚动"""
+        def _on_mousewheel(event):
+            self.canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+            return "break"
+
+        self.canvas.bind("<Enter>", lambda e: self.canvas.bind_all("<MouseWheel>", _on_mousewheel))
+        self.canvas.bind("<Leave>", lambda e: self.canvas.unbind_all("<MouseWheel>"))
 
 
 

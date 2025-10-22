@@ -2195,21 +2195,7 @@ class FileOperations:
                 r"data/hd/items/misc/gem/perfect_ruby.json",
                 r"data/hd/items/misc/gem/perfect_saphire.json",
                 r"data/hd/items/misc/gem/perfect_skull.json",
-                r"data/hd/items/misc/gem/perfect_topaz.json",],
-            # 22#+符文
-            "8": [
-                r"data/hd/items/misc/rune/ber_rune.json",
-                r"data/hd/items/misc/rune/cham_rune.json",
-                r"data/hd/items/misc/rune/gul_rune.json",
-                r"data/hd/items/misc/rune/ist_rune.json",
-                r"data/hd/items/misc/rune/jah_rune.json",
-                r"data/hd/items/misc/rune/lo_rune.json",
-                r"data/hd/items/misc/rune/mal_rune.json",
-                r"data/hd/items/misc/rune/ohm_rune.json",
-                r"data/hd/items/misc/rune/sur_rune.json",
-                r"data/hd/items/misc/rune/um_rune.json",
-                r"data/hd/items/misc/rune/vex_rune.json",
-                r"data/hd/items/misc/rune/zod_rune.json",],
+                r"data/hd/items/misc/gem/perfect_topaz.json",]
         }
 
         count = 0
