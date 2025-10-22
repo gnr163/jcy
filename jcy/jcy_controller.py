@@ -189,6 +189,8 @@ class FeatureController:
             MERCENARY_65: self.file_operations.mercenary_coordinate,
             # 怪物-配置
             MONSTER_SETTING: self.file_operations.select_monster_setting,
+            # 怪物-血条样式
+            MONSTER_HEALTH: self.file_operations.select_monster_health,
             # 怪物-导弹
             MONSTER_MISSILE: self.file_operations.select_enemy_arrow_skin,
             # 装备-特效

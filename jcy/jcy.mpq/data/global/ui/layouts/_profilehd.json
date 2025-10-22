@@ -262,6 +262,8 @@
     "ExtraLargeFontSize": 42,
     "XLargeFontSize": 40,
     "LargeFontSize": 38,
+    "HealthLargeFontSize": 28,
+    "HealthMediumFontSize": 26,
     "XMediumLargeFontSize": 34,
     "MediumLargeFontSize": 32,
     "XMediumFontSize": 28,

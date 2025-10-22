@@ -104,6 +104,7 @@ MERCENARY_85 = "Mercenary85"
 MERCENARY_75 = "Mercenary75"
 MERCENARY_65 = "Mercenary65"
 MONSTER_SETTING = "MonsterSetting"
+MONSTER_HEALTH = "MonsterHealth"
 MONSTER_MISSILE = "MonsterMissile"
 EQIUPMENT_EFFECTS = "EquipmentEffects"
 EQIUPMENT_SETTING = "EquipmentSetting"
@@ -495,6 +496,7 @@ __all__ = [
     'MERCENARY_75',
     'MERCENARY_65',
     'MONSTER_SETTING',
+    'MONSTER_HEALTH',
     'MONSTER_MISSILE',
     'EQIUPMENT_EFFECTS',
     'EQIUPMENT_SETTING',

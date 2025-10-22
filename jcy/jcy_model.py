@@ -375,11 +375,22 @@ class FeatureConfig:
                             "text": "怪物-配置",
                             "colspan": 10,
                             "params": {
-                                "1": "血条D3风格",
                                 "2": "危险怪物增加光源标识",
                                 "3": "BOSS光环指引",
                                 "4": "屏蔽A5督军山克死亡特效",
                                 "5": "蓝色精英随机染色"
+                            }
+                        },                        
+                        {
+                            "fid": MONSTER_HEALTH,
+                            "type": RADIO,
+                            "text": "怪物-血条样式",
+                            "colspan": 5,
+                            "params": {
+                                "0": "原皮",
+                                "1": "加宽加高",
+                                "2": "D3风格",
+                                "3": "Jerry风格"
                             }
                         },
                         {

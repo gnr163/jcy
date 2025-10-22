@@ -446,6 +446,33 @@ class FileOperations:
         return (count, total)
 
 
+    def select_monster_health(self, radio: str = "0"):
+        """怪物-血条样式"""
+        src = {
+            "1": r"data/global/ui/layouts/hudmonsterhealthhd.json.ext",
+            "2": r"data/global/ui/layouts/hudmonsterhealthhd.json.d3",
+            "3": r"data/global/ui/layouts/hudmonsterhealthhd.json.jerry",
+        }
+
+        dst = r"data/global/ui/layouts/hudmonsterhealthhd.json"
+
+        src_path = os.path.join(MOD_PATH, src[radio])
+        dst_path = os.path.join(MOD_PATH, dst)
+
+        count = 0
+        total = 1
+
+        try:
+            if "0" == radio:
+                os.remove(dst_path)
+            else:
+                shutil.copy2(src_path, dst_path)
+            count += 1
+        except Exception as e:
+            print(e)
+
+        return (count, total)
+
     def select_enemy_arrow_skin(self, radio: str = "0"):
         """
         老鼠刺针/剥皮吹箭样式
@@ -590,10 +617,6 @@ class FileOperations:
 
         # 文件
         _files = {
-            # 怪物血条D3风格
-            "1" : [
-                r"data/global/ui/layouts/hudmonsterhealthhd.json",
-            ],
             # 危险怪物增加光源&标识
             "2": [
                 r"data/hd/character/enemy/andariel.json",
@@ -2251,12 +2274,10 @@ class FileOperations:
 
         for i, _file in enumerate(_files):
             try:
-                # 1.load
                 file_data = None
                 file_path = os.path.join(MOD_PATH, _file)
-                if not os.path.exists(file_path):
-                    file_path = file_path + ".tmp"
-
+                
+                # 1.load
                 with open(file_path, 'r', encoding='utf-8') as f:
                     file_data = json.load(f)
 
