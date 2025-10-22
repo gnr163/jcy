@@ -3,7 +3,7 @@
         "particles": [],
         "models": [
             {
-                "path": "data/hd/items/misc/rune/um_rune/um_rune.model"
+                "path": "data/hd/items/misc/rune/fal_rune/fal_rune.model"
             }
         ],
         "skeletons": [
@@ -14,13 +14,13 @@
         "animations": [],
         "textures": [
             {
-                "path": "data/hd/items/misc/rune/um_rune/misc_um_rune_ALB.texture"
+                "path": "data/hd/items/misc/rune/fal_rune/misc_fal_rune_ALB.texture"
             },
             {
-                "path": "data/hd/items/misc/rune/um_rune/misc_um_rune_NRM.texture"
+                "path": "data/hd/items/misc/rune/fal_rune/misc_fal_rune_NRM.texture"
             },
             {
-                "path": "data/hd/items/misc/rune/um_rune/misc_um_rune_ORM.texture"
+                "path": "data/hd/items/misc/rune/fal_rune/misc_fal_rune_ORM.texture"
             }
         ],
         "physics": [],
@@ -34,12 +34,12 @@
         "other": []
     },
     "type": "UnitDefinition",
-    "name": "um_rune",
+    "name": "fal_rune",
     "entities": [
         {
             "type": "Entity",
             "name": "entity_root",
-            "id": 1554347513,
+            "id": 2574302840,
             "components": [
                 {
                     "type": "UnitRootComponent",
@@ -88,12 +88,12 @@
         {
             "type": "Entity",
             "name": "entity_model",
-            "id": 1071332909,
+            "id": 297473957,
             "components": [
                 {
                     "type": "ModelDefinitionComponent",
-                    "name": "component_model_um_rune",
-                    "filename": "data/hd/items/misc/rune/um_rune/um_rune.model",
+                    "name": "component_model_fal_rune",
+                    "filename": "data/hd/items/misc/rune/fal_rune/fal_rune.model",
                     "visibleLayers": 1,
                     "lightMask": 19,
                     "shadowMask": 3,

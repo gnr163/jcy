@@ -213,6 +213,8 @@ class FeatureController:
             DISABLE_EFFECTS: self.file_operations.hide_environmental_effects,
             # 环境-开启指引
             ENABLE_POINTER: self.file_operations.show_environmental_pointer,
+            # 符文-提醒
+            RUNE_SETTING: self.file_operations.modify_rune_setting,
         }
 
     def apply_settings(self):
@@ -243,51 +245,6 @@ class FeatureController:
                         else:
                             self.dialogs += f"{text} 操作文件数量 {result[0]}/{result[1]} {result[2] if len(result) > 2 else ''}\n"
 
-
-        # -------------------- 独立功能 (Checkbutton) --------------------
-        for feature_id, description in self.feature_config.all_features_config["checkbutton"].items():
-            current_value = self.current_states.get(feature_id)
-            loaded_value = self.feature_state_manager.loaded_states.get(feature_id)
-            if current_value is not None and current_value != loaded_value:
-                changes_detected = True
-                if feature_id in self._handlers:
-                    result = self._handlers[feature_id](current_value) 
-                    self.dialogs += f"{description} = {'开启' if current_value else '关闭'} 操作文件数量 {result[0]}/{result[1]} {result[2] if len(result) > 2 else ''}\n"
-
-
-
-        # -------------------- 单选功能 (RadioGroup) --------------------
-        for fid, info in self.feature_config.all_features_config["radiogroup"].items():
-            current_value = self.current_states.get(fid)
-            loaded_value = self.feature_state_manager.loaded_states.get(fid)
-            if current_value is not None and current_value != loaded_value:
-                changes_detected = True
-                selected_description = next((param_dict[current_value] for param_dict in info["params"] if current_value in param_dict), current_value)
-                if fid in self._handlers:
-                    result = self._handlers[fid](current_value)
-                    self.dialogs += f"{info['text']} = {selected_description} 操作文件数量 {result[0]}/{result[1]} {result[2] if len(result) > 2 else ''}\n"
-
-
-        # -------------------- 多选功能 (CheckGroup) --------------------
-        for fid, info in self.feature_config.all_features_config["checkgroup"].items():
-            current_value = self.current_states.get(fid)
-            loaded_value = self.feature_state_manager.loaded_states.get(fid)
-            if current_value is not None and current_value != loaded_value:
-                changes_detected = True
-                if fid in self._handlers:
-                    result = self._handlers[fid](current_value)
-                    self.dialogs += f"{info['text']} 操作文件数量 {result[0]}/{result[1]} {result[2] if len(result) > 2 else ''}\n"
-
-
-        #  -------------------- 区间功能 (Spinbox) --------------------
-        for feature_id, description in self.feature_config.all_features_config["spinbox"].items():
-            current_value = self.current_states.get(feature_id)
-            loaded_value = self.feature_state_manager.loaded_states.get(feature_id)
-            if current_value is not None and current_value != loaded_value:
-                changes_detected = True
-                if feature_id in self._handlers:
-                    result = self._handlers[feature_id](current_value) 
-                    self.dialogs += f"{description} = {current_value} 操作文件数量 {result[0]}/{result[1]} {result[2] if len(result) > 2 else ''}\n"
 
         # -- 屏蔽道具 --
         for fid, info in self.feature_config.all_features_config["checktable"].items():

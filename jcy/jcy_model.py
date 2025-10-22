@@ -510,18 +510,6 @@ class FeatureConfig:
                                 "diadem": "@Diadem",
                                 "sc": "@cm1",
                                 "gc": "@cm3",
-                                "r22": "@r22L",
-                                "r23": "@r23L",
-                                "r24": "@r24L",
-                                "r25": "@r25L",
-                                "r26": "@r26L",
-                                "r27": "@r27L",
-                                "r28": "@r28L",
-                                "r29": "@r29L",
-                                "r30": "@r30L",
-                                "r31": "@r31L",
-                                "r32": "@r32L",
-                                "r33": "@r33L",
                             }
                         },
                         
@@ -533,8 +521,10 @@ class FeatureConfig:
             "checkgroup":{},
             "spinbox" : {},
             "checktable": {
-                "501": "道具屏蔽"
+                "501": "道具屏蔽",
+                RUNE_SETTING: "符文提醒"
             }
+
         }
 
         # ---初始化默认功能状态---

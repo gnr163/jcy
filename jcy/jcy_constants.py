@@ -29,10 +29,10 @@ LANG = None
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.2.5"
+APP_VERSION = "v1.2.6"
 
 # 发布日期
-APP_DATE = "20251004"
+APP_DATE = "20251022"
 
 # 控制器全称
 APP_FULL_NAME = f"{APP_NAME}_{APP_VERSION}"
@@ -111,6 +111,7 @@ AFFIX_EFFECTS = "AffixEffects"
 MODEL_EFFECTS = "ModelEffects"
 RUNE_SKIN = "RuneSkin"
 RUNE_SIZE = "RuneSize"
+RUNE_SETTING = "RuneSetting"
 DROPED_LIGHT = "DropedLight"
 ITEM_DROP_SOUNDS = "ItemDropSounds"
 DISABLE_EFFECTS = "DisableEffects"
@@ -125,6 +126,9 @@ SPIN = "SpinBox"
 SEPARATOR = "Separator"
 LOCATION = "Location"
 # Controller Type -->
+
+RUNE_ENUS = ["El", "Eld", "Tir", "Nef", "Eth", "Ith", "Tal", "Ral", "Ort", "Thul", "Amn", "Sol", "Shael", "Dol", "Hel", "Io", "Lum", "Ko", "Fal", "Lem", "Pul", "Um", "Mal", "Ist", "Gul", "Vex", "Ohm", "Lo", "Sur", "Ber", "Jah", "Cham", "Zod"]
+RUNE_ZHTW = ["艾爾#01", "艾德#02", "特爾#03", "那夫#04", "愛斯#05", "伊司#06", "塔爾#07", "拉爾#08", "歐特#09", "書爾#10", "安姆#11", "索爾#12", "夏#13", "多爾#14", "海爾#15", "埃歐#16", "盧姆#17", "科#18", "法爾#19", "藍姆#20", "普爾#21", "烏姆#22", "馬爾#23", "伊司特#24", "古爾#25", "伐克斯#26", "歐姆#27", "羅#28", "瑟#29", "貝#30", "喬#31", "查姆#32", "薩德#33"]
 
 # 恐怖区域API
 TERROR_ZONE_API = {
@@ -387,8 +391,29 @@ CUSTOM_SOUNDS = {
     # Item
     "sc":                 {True: r"item\sc.flac",                  False: r"item\item_charm_hd.flac",   "path": "data/hd/global/sfx/item/sc.flac"},
     "gc":                 {True: r"item\gc.flac",                  False: r"item\item_charm_hd.flac",   "path": "data/hd/global/sfx/item/gc.flac"},
-    "r22":                {True: r"item\r22.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r22.flac"},
-    "r23":                {True: r"item\r23.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r23.flac"},
+    "r01":                {True: r"item\r01.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r31.flac"},
+    "r02":                {True: r"item\r02.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r32.flac"},
+    "r03":                {True: r"item\r03.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r33.flac"},
+    "r04":                {True: r"item\r04.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r24.flac"},
+    "r05":                {True: r"item\r05.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r25.flac"},
+    "r06":                {True: r"item\r06.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r26.flac"},
+    "r07":                {True: r"item\r07.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r27.flac"},
+    "r08":                {True: r"item\r08.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r28.flac"},
+    "r09":                {True: r"item\r09.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r29.flac"},
+    "r10":                {True: r"item\r10.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r30.flac"},
+    "r11":                {True: r"item\r11.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r31.flac"},
+    "r12":                {True: r"item\r12.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r32.flac"},
+    "r13":                {True: r"item\r13.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r33.flac"},
+    "r14":                {True: r"item\r14.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r24.flac"},
+    "r15":                {True: r"item\r15.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r25.flac"},
+    "r16":                {True: r"item\r16.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r26.flac"},
+    "r17":                {True: r"item\r17.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r27.flac"},
+    "r18":                {True: r"item\r18.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r28.flac"},
+    "r19":                {True: r"item\r19.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r29.flac"},
+    "r20":                {True: r"item\r20.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r30.flac"},
+    "r21":                {True: r"item\r21.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r31.flac"},
+    "r22":                {True: r"item\r22.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r32.flac"},
+    "r23":                {True: r"item\r23.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r33.flac"},
     "r24":                {True: r"item\r24.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r24.flac"},
     "r25":                {True: r"item\r25.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r25.flac"},
     "r26":                {True: r"item\r26.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r26.flac"},
@@ -477,6 +502,9 @@ __all__ = [
     'MODEL_EFFECTS',
     'RUNE_SKIN',
     'RUNE_SIZE',
+    'RUNE_SETTING',
+    'RUNE_ENUS',
+    'RUNE_ZHTW',
     'DROPED_LIGHT',
     'TORCH_KEY',
     'ITEM_DROP_SOUNDS',

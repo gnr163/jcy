@@ -3287,6 +3287,387 @@ class FileOperations:
         return (count, total)
     
 
+    def modify_rune_setting(self, data: list):
+        count = 0
+        total = 34
+        
+        sound_index = {
+            "r01":0,
+            "r02":1,
+            "r03":2,
+            "r04":3,
+            "r05":4,
+            "r06":5,
+            "r07":6,
+            "r08":7,
+            "r09":8,
+            "r10":9,
+            "r11":10,
+            "r12":11,
+            "r13":12,
+            "r14":13,
+            "r15":14,
+            "r16":15,
+            "r17":16,
+            "r18":17,
+            "r19":18,
+            "r20":19,
+            "r21":20,
+            "r22":21,
+            "r23":22,
+            "r24":23,
+            "r25":24,
+            "r26":25,
+            "r27":26,
+            "r28":27,
+            "r29":28,
+            "r30":29,
+            "r31":30,
+            "r32":31,
+            "r33":32
+        }
+
+        rune_files = [
+            r"data/hd/items/misc/rune/el_rune.json",
+            r"data/hd/items/misc/rune/eld_rune.json",
+            r"data/hd/items/misc/rune/tir_rune.json",
+            r"data/hd/items/misc/rune/nef_rune.json",
+            r"data/hd/items/misc/rune/eth_rune.json",
+            r"data/hd/items/misc/rune/ith_rune.json",
+            r"data/hd/items/misc/rune/tal_rune.json",
+            r"data/hd/items/misc/rune/ral_rune.json",
+            r"data/hd/items/misc/rune/ort_rune.json",
+            r"data/hd/items/misc/rune/thul_rune.json",
+
+            r"data/hd/items/misc/rune/amn_rune.json",
+            r"data/hd/items/misc/rune/sol_rune.json",
+            r"data/hd/items/misc/rune/shael_rune.json",
+            r"data/hd/items/misc/rune/dol_rune.json",
+            r"data/hd/items/misc/rune/hel_rune.json",
+            r"data/hd/items/misc/rune/io_rune.json",
+            r"data/hd/items/misc/rune/lum_rune.json",
+            r"data/hd/items/misc/rune/ko_rune.json",
+            r"data/hd/items/misc/rune/fal_rune.json",
+            r"data/hd/items/misc/rune/lem_rune.json",
+
+            r"data/hd/items/misc/rune/pul_rune.json",
+            r"data/hd/items/misc/rune/um_rune.json",
+            r"data/hd/items/misc/rune/mal_rune.json",
+            r"data/hd/items/misc/rune/ist_rune.json",
+            r"data/hd/items/misc/rune/gul_rune.json",
+            r"data/hd/items/misc/rune/vex_rune.json",
+            r"data/hd/items/misc/rune/ohm_rune.json",
+            r"data/hd/items/misc/rune/lo_rune.json",
+            r"data/hd/items/misc/rune/sur_rune.json",
+            r"data/hd/items/misc/rune/ber_rune.json",
+
+            r"data/hd/items/misc/rune/jah_rune.json",
+            r"data/hd/items/misc/rune/cham_rune.json",
+            r"data/hd/items/misc/rune/zod_rune.json",
+        ]
+
+        entity_drop_light = {
+            "type": "Entity",
+            "name": "entity_drop_light",
+            "id": 9999999888,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform_drop_light",
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "orientation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    },
+                    "inheritOnlyPosition": False
+                },
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "vfx_drop_light",
+                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
+                    "hardKillOnDestroy": False
+                }
+            ]
+        }
+
+        entity_porory_beacons = [
+            {
+                "type": "Entity",
+                "name": "porory_beacon_q1",
+                "id": 9999999891,
+                "components": [
+                    {
+                        "type": "TransformDefinitionComponent",
+                        "name": "porory_beacon_q1_TransformDefinitionComponent",
+                        "position": {
+                            "x": -75.0,
+                            "y": 0.0,
+                            "z": -75.0
+                        },
+                        "orientation": {
+                            "x": 0.0,
+                            "y": 0.7071068,
+                            "z": 0.0,
+                            "w": 0.7071068
+                        },
+                        "scale": {
+                            "x": 150.0,
+                            "y": 1.0,
+                            "z": 150.0
+                        },
+                        "inheritOnlyPosition": False
+                    },
+                    {
+                        "type": "DecalDefinitionComponent",
+                        "name": "porory_beacon_q1_DecalDefinitionComponent",
+                        "diffuseMap": "data/hd/env/porory/beacon/texture/beacon_c19_s07_o100.texture",
+                        "normalMap": "",
+                        "ormMap": "",
+                        "edgeFade": 0.0,
+                        "heightFade": 0.0,
+                        "weight": 1.0,
+                        "applyToAlbedo": True,
+                        "applyToNormal": False,
+                        "applyToOcclusion": False,
+                        "applyToRoughness": False,
+                        "applyToMetalness": False,
+                        "thresholdValue": 0.0,
+                        "thresholdHardness": 1.0,
+                        "emissiveIntensity": 1.0,
+                        "emissiveFocus": 1.0,
+                        "lightMask": 16
+                    }
+                ]
+            },
+            {
+                "type": "Entity",
+                "name": "porory_beacon_q2",
+                "id": 9999999892,
+                "components": [
+                    {
+                        "type": "TransformDefinitionComponent",
+                        "name": "porory_beacon_q2_TransformDefinitionComponent",
+                        "position": {
+                            "x": 75.0,
+                            "y": 0.0,
+                            "z": -75.0
+                        },
+                        "orientation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "scale": {
+                            "x": 150.0,
+                            "y": 1.0,
+                            "z": 150.0
+                        },
+                        "inheritOnlyPosition": False
+                    },
+                    {
+                        "type": "DecalDefinitionComponent",
+                        "name": "porory_beacon_q2_DecalDefinitionComponent",
+                        "diffuseMap": "data/hd/env/porory/beacon/texture/beacon_c19_s07_o100.texture",
+                        "normalMap": "",
+                        "ormMap": "",
+                        "edgeFade": 0.0,
+                        "heightFade": 0.0,
+                        "weight": 1.0,
+                        "applyToAlbedo": True,
+                        "applyToNormal": False,
+                        "applyToOcclusion": False,
+                        "applyToRoughness": False,
+                        "applyToMetalness": False,
+                        "thresholdValue": 0.0,
+                        "thresholdHardness": 1.0,
+                        "emissiveIntensity": 1.0,
+                        "emissiveFocus": 1.0,
+                        "lightMask": 16
+                    }
+                ]
+            },
+            {
+                "type": "Entity",
+                "name": "porory_beacon_q3",
+                "id": 9999999893,
+                "components": [
+                    {
+                        "type": "TransformDefinitionComponent",
+                        "name": "porory_beacon_q3_TransformDefinitionComponent",
+                        "position": {
+                            "x": 75.0,
+                            "y": 0.0,
+                            "z": 75.0
+                        },
+                        "orientation": {
+                            "x": 0.0,
+                            "y": 0.7071068,
+                            "z": 0.0,
+                            "w": -0.7071068
+                        },
+                        "scale": {
+                            "x": 150.0,
+                            "y": 1.0,
+                            "z": 150.0
+                        },
+                        "inheritOnlyPosition": False
+                    },
+                    {
+                        "type": "DecalDefinitionComponent",
+                        "name": "porory_beacon_q3_DecalDefinitionComponent",
+                        "diffuseMap": "data/hd/env/porory/beacon/texture/beacon_c19_s07_o100.texture",
+                        "normalMap": "",
+                        "ormMap": "",
+                        "edgeFade": 0.0,
+                        "heightFade": 0.0,
+                        "weight": 1.0,
+                        "applyToAlbedo": True,
+                        "applyToNormal": False,
+                        "applyToOcclusion": False,
+                        "applyToRoughness": False,
+                        "applyToMetalness": False,
+                        "thresholdValue": 0.0,
+                        "thresholdHardness": 1.0,
+                        "emissiveIntensity": 1.0,
+                        "emissiveFocus": 1.0,
+                        "lightMask": 16
+                    }
+                ]
+            },
+            {
+                "type": "Entity",
+                "name": "porory_beacon_q4",
+                "id": 9999999894,
+                "components": [
+                    {
+                        "type": "TransformDefinitionComponent",
+                        "name": "porory_beacon_q4_TransformDefinitionComponent",
+                        "position": {
+                            "x": -75.0,
+                            "y": 0.0,
+                            "z": 75.0
+                        },
+                        "orientation": {
+                            "x": 0.0,
+                            "y": 1.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "scale": {
+                            "x": 150.0,
+                            "y": 1.0,
+                            "z": 150.0
+                        },
+                        "inheritOnlyPosition": False
+                    },
+                    {
+                        "type": "DecalDefinitionComponent",
+                        "name": "porory_beacon_q4_DecalDefinitionComponent",
+                        "diffuseMap": "data/hd/env/porory/beacon/texture/beacon_c19_s07_o100.texture",
+                        "normalMap": "",
+                        "ormMap": "",
+                        "edgeFade": 0.0,
+                        "heightFade": 0.0,
+                        "weight": 1.0,
+                        "applyToAlbedo": True,
+                        "applyToNormal": False,
+                        "applyToOcclusion": False,
+                        "applyToRoughness": False,
+                        "applyToMetalness": False,
+                        "thresholdValue": 0.0,
+                        "thresholdHardness": 1.0,
+                        "emissiveIntensity": 1.0,
+                        "emissiveFocus": 1.0,
+                        "lightMask": 16
+                    }
+                ]
+            }
+        ]
+
+        # 语音提示
+        try:
+            sounds_path = os.path.join(MOD_PATH, r"data/global/excel/sounds.txt")
+            with open(sounds_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f, delimiter='\t')
+                print(reader.fieldnames) 
+                rows = list(reader)
+
+            for row in rows:
+                key = row["Sound"]
+                if key in sound_index:
+                    index = sound_index.get(key)
+                    value = data[index][0]
+                    file_name = CUSTOM_SOUNDS.get(key).get(value)
+                    row["FileName"] = file_name
+
+            with open(sounds_path, 'w', encoding='utf-8', newline='') as f:
+                writer = csv.DictWriter(f, fieldnames=reader.fieldnames, delimiter='\t')
+                writer.writeheader()
+                writer.writerows(rows)
+            count += 1
+        except Exception as e:
+            print(e)
+        
+
+        for i, rune in enumerate(data):
+            try:
+                rune_file = os.path.join(MOD_PATH, rune_files[i])
+                with open(rune_file, 'r', encoding='utf-8') as f:
+                    rune_json = json.load(f)
+
+                entities = rune_json.get("entities", [])
+                entity_names = [e.get("name") for e in entities]
+
+                # === 光柱提示 ===
+                want_light = bool(data[i][1])
+                name_light = "entity_drop_light"
+
+                if want_light:
+                    if name_light not in entity_names:
+                        # 插入在第2个位置
+                        entities.insert(2, entity_drop_light)
+                else:
+                    # 删除光柱但不动其他
+                    entities = [e for e in entities if e.get("name") != name_light]
+
+                # === 光圈提示 ===
+                want_beacon = bool(data[i][2])
+                beacon_names = [e["name"] for e in entity_porory_beacons]
+
+                if want_beacon:
+                    # 如果光圈不存在任何一个，就添加全部
+                    if not any(name in entity_names for name in beacon_names):
+                        entities.extend(entity_porory_beacons)
+                else:
+                    # 只移除光圈组，不影响其他实体
+                    entities = [e for e in entities if e.get("name") not in beacon_names]
+
+                # 更新 entities
+                rune_json["entities"] = entities
+
+                # 保存文件
+                with open(rune_file, 'w', encoding='utf-8') as f:
+                    json.dump(rune_json, f, ensure_ascii=False, indent=4)
+
+                count += 1
+
+            except Exception as e:
+                print(e)
+        
+        return (count, total)
+
     def skill_off_sounds(self, keys: list):
         """技能结束提示音"""
         if keys is None:
@@ -3325,19 +3706,7 @@ class FileOperations:
         data = {
             "diadem":   "diadem" in keys,
             "sc":       "sc" in keys,
-            "gc":       "gc" in keys,
-            "r22":      "r22" in keys,
-            "r23":      "r23" in keys,
-            "r24":      "r24" in keys,
-            "r25":      "r25" in keys,
-            "r26":      "r26" in keys,
-            "r27":      "r27" in keys,
-            "r28":      "r28" in keys,
-            "r29":      "r29" in keys,
-            "r30":      "r30" in keys,
-            "r31":      "r31" in keys,
-            "r32":      "r32" in keys,
-            "r33":      "r33" in keys,
+            "gc":       "gc" in keys
         }
 
         return self.modify_custom_sounds(data)

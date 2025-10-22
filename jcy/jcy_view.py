@@ -9,6 +9,7 @@ import threading
 import time
 import threading
 import tkinter as tk
+from tkinter import font
 import uuid
 import win32gui
 import win32process
@@ -85,6 +86,10 @@ class FeatureView:
         # 动态Tab
         for config in self.controller.feature_config.all_features_config.get("tabs"):
             self._create_tab(config)
+
+        # --- 符文提醒 ---
+        rune_tab = RuneSettingsTable(notebook, config_dict=self.controller.current_states, config_key=RUNE_SETTING)
+        self.add_tab(rune_tab, "符文提醒")
 
         # --- D2R多开器 ---
         launcher_tab = D2RLauncherApp(notebook)
@@ -825,6 +830,106 @@ class TableWithCheckbox(tk.Frame):
         return callback
 
 
+class RuneSettingsTable(tk.Frame):
+    """
+    符文设置表格（带滚动条）
+    表头：编号 | 符文 | 语音提示 | 光柱提示 | 光圈提示
+    数据：固定33条，每行3个复选框。
+    配置文件格式：二维数组 [[语音, 光柱, 光圈], ...]，33行3列
+    """
+
+    COLUMNS = ["编号", "符文", "语音提示", "光柱提示", "光圈提示"]
+    
+    def __init__(self, master, config_dict=None, config_key=None, **kwargs):
+        super().__init__(master, **kwargs)
+        self.config_dict = config_dict or {}
+        self.config_key = config_key
+
+        # 初始化配置，如果不存在则创建 33×3 的 False 数组
+        if self.config_key and self.config_key not in self.config_dict:
+            self.config_dict[self.config_key] = [[False, False, False] for _ in range(33)]
+
+        # ---------- 滚动区域 ----------
+        canvas = tk.Canvas(self, highlightthickness=0)
+        vbar = tk.Scrollbar(self, orient="vertical", command=canvas.yview)
+        canvas.configure(yscrollcommand=vbar.set)
+        vbar.pack(side="right", fill="y")
+        canvas.pack(side="left", fill="both", expand=True)
+
+        self._tbl = tk.Frame(canvas)
+        tbl_window = canvas.create_window((0, 0), window=self._tbl, anchor="nw")
+
+        # 滚轮绑定
+        def _on_mousewheel(event):
+            canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+        canvas.bind("<Enter>", lambda e: canvas.bind_all("<MouseWheel>", _on_mousewheel))
+        canvas.bind("<Leave>", lambda e: canvas.unbind_all("<MouseWheel>"))
+
+        # 滚动范围调整
+        def _on_config(event=None):
+            canvas.configure(scrollregion=canvas.bbox("all"))
+        self._tbl.bind("<Configure>", _on_config)
+        canvas.bind("<Configure>", lambda e: canvas.itemconfigure(tbl_window, width=e.width))
+
+        # ---------- 表头 ----------
+        header_font = font.Font(weight="bold", size=10)
+        for j, col in enumerate(self.COLUMNS):
+            lbl = tk.Label(
+                self._tbl,
+                text=col,
+                font=header_font,
+                borderwidth=1,
+                relief="solid",
+                bg="#d9d9d9",
+                anchor="center"
+            )
+            lbl.grid(row=0, column=j, sticky="nsew", ipadx=4, ipady=6)
+        self._tbl.grid_rowconfigure(0, minsize=30)
+
+        # ---------- 表体 ----------
+        self.vars = []
+        for i in range(33):
+            # 这里用 RUNE_ENUS / RUNE_ZHTW 作为符文名称，你需要在外部定义
+            tk.Label(self._tbl, text=RUNE_ENUS[i], borderwidth=1, relief="solid").grid(row=i+1, column=0, sticky="nsew")
+            tk.Label(self._tbl, text=RUNE_ZHTW[i], borderwidth=1, relief="solid").grid(row=i+1, column=1, sticky="nsew")
+
+            row_vars = []
+            for j in range(3):  # 语音/光柱/光圈
+                val = self.config_dict[self.config_key][i][j]
+                var = tk.BooleanVar(value=val)
+                cb_frame = tk.Frame(self._tbl, borderwidth=1, relief="solid")
+                cb_frame.grid(row=i+1, column=j+2, sticky="nsew")
+                cb = tk.Checkbutton(cb_frame, variable=var, command=self.update_config)
+                cb.pack(expand=True, fill="both")
+                row_vars.append(var)
+            self.vars.append(row_vars)
+
+        # ---------- 列宽均分 ----------
+        for c in range(5):
+            self._tbl.grid_columnconfigure(c, weight=1)
+
+        self.after(1, lambda: canvas.configure(scrollregion=canvas.bbox("all")))
+
+    # ---------- 外部接口 ----------
+    def get(self):
+        """返回二维数组，与配置文件完全一致"""
+        return [[var.get() for var in row] for row in self.vars]
+
+    def set(self, state_list):
+        """批量设置勾选状态，直接更新控件和 config_dict"""
+        for i, row_vars in enumerate(self.vars):
+            for j, val in enumerate(state_list[i]):
+                row_vars[j].set(val)
+                self.config_dict[self.config_key][i][j] = val
+
+    def update_config(self):
+        """同步控件状态到 config_dict"""
+        if self.config_key:
+            self.config_dict[self.config_key] = self.get()
+
+
+
+
 class D2RLauncherApp(tk.Frame):
     """
     D2R多开器
@@ -1228,7 +1333,8 @@ class D2RLauncherApp(tk.Frame):
     def open_help_link(self):
         url = "https://bbs.d.163.com/forum.php?mod=viewthread&tid=175119207&page=5#pid218155737"
         webbrowser.open(url)
-        
+
+  
 class TerrorZoneUI(tk.Frame):
     def __init__(self, master, controller):
         super().__init__(master)
@@ -1238,6 +1344,9 @@ class TerrorZoneUI(tk.Frame):
         
         self.create_widgets()
         self.load_and_display_data()
+
+        # 当这个 Frame 变为可见时，自动刷新数据
+        self.bind("<Visibility>", self.on_visible)
 
     def create_widgets(self):
         self.tree = ttk.Treeview(self, columns=("time", "name", "exp", "drop"), show="headings")
@@ -1278,4 +1387,7 @@ class TerrorZoneUI(tk.Frame):
                     self.tree.insert("", "end", values=(formatted_time, name, zone_info.get("exp"), zone_info.get("drop")))
         except Exception as e:
             messagebox.showerror("错误", f"加载数据失败: {e}")
+
+    def on_visible(self, event):
+        self.load_and_display_data()
 
