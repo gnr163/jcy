@@ -75,24 +75,29 @@ class FileOperations:
 
         return (count, len(files))
     
-    def modify_lng_strings(self, json_object, selectLng, localLng):
-        """本地化修改"""
+
+    def modify_lng_strings_zhcn(self, json_object, selectLng=ZHCN2):
+        """暴雪国际服本地化修改"""
         if json_object is None:
             return
         if T2S == selectLng:
-            json_object[localLng] = convert(json_object[ZHTW2], 'zh-cn')
+            json_object[ZHCN] = convert(json_object[ZHTW2], 'zh-cn')
         elif S2T == selectLng:
-            json_object[localLng] = convert(json_object[ZHCN2], 'zh-tw')
+            json_object[ZHCN] = convert(json_object[ZHCN2], 'zh-tw')
         else:
-            json_object[localLng] = json_object[selectLng]
-
-    def modify_lng_strings_zhcn(self, json_object, selectLng=ZHCN2):
-        """本地化修改"""
-        self.modify_lng_strings(json_object, selectLng, ZHCN)
+            json_object[ZHCN] = json_object[selectLng]
     
+
     def modify_lng_strings_zhtw(self, json_object, selectLng=ZHTW2):
-        """本地化修改"""
-        self.modify_lng_strings(json_object, selectLng, ZHTW)
+        """网易国服本地化修改"""
+        if json_object is None:
+            return
+        if T2S == selectLng:
+            json_object[ZHTW] = convert(json_object[ZHTW2], 'zh-cn')
+        elif S2T == selectLng:
+            json_object[ZHTW] = convert(json_object[ZHCN2], 'zh-tw')
+        else:
+            json_object[ZHTW] = json_object[selectLng]
 
 
     def hide_quest_button(self, isEnabled: bool = False):
@@ -1213,40 +1218,55 @@ class FileOperations:
         handler_abbr = "1" in keys
         handler_color = "2" in keys
 
-        # load item.jcy.json
-        item_jcy_data = None
-        item_jcy_json = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-modifiers.json")
-        with open(item_jcy_json, 'r', encoding='utf-8') as f:
-            item_jcy_data = json.load(f)
-
         try:
-            # item-modifiers.templet.json -> item-modifiers.json
-            item_modifiers_data = None
-            item_modifiers_templet = os.path.join(MOD_PATH, r"data/local/lng/strings/item-modifiers.templet.json")
-            with open(item_modifiers_templet, 'r', encoding='utf-8-sig') as f:
-                item_modifiers_data = json.load(f)
+            # load 词缀模版
+            jcy_item_modifiers_templet = None
+            jcy_item_modifiers_templet_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-modifiers.templet.json")
+            with open(jcy_item_modifiers_templet_path, 'r', encoding='utf-8-sig') as f:
+                jcy_item_modifiers_templet = json.load(f)
 
-            for item in item_modifiers_data:
+            # load 词缀数据
+            jcy_item_modifiers_data = None
+            jcy_item_modifiers_data_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-modifiers.data.json")
+            with open(jcy_item_modifiers_data_path, 'r', encoding='utf-8') as f:
+                jcy_item_modifiers_data = json.load(f)
+
+            # 词缀数据填充模板
+            for item in jcy_item_modifiers_templet:
                 Key = item["Key"]
-                data = item_jcy_data.get(Key)
+                data = jcy_item_modifiers_data.get(Key)
                 if data is not None:
+                    # 英文缩写
                     abbr = data.get("abbr")
                     if abbr is not None:
                         item["enUS"] = item["enUS"].replace(r"{{abbr}}", abbr if handler_abbr else "")
                         item["zhCN"] = item["zhCN"].replace(r"{{abbr}}", abbr if handler_abbr else "")
                         item["zhTW"] = item["zhTW"].replace(r"{{abbr}}", abbr if handler_abbr else "")
+                    # 词缀染色
                     color = data.get("color")
                     if color is not None:
                         item["enUS"] = item["enUS"].replace(r"{{color0}}", color[0] if handler_color else "").replace(r"{{color1}}", color[1] if handler_color else "")
                         item["zhCN"] = item["zhCN"].replace(r"{{color0}}", color[0] if handler_color else "").replace(r"{{color1}}", color[1] if handler_color else "")
                         item["zhTW"] = item["zhTW"].replace(r"{{color0}}", color[0] if handler_color else "").replace(r"{{color1}}", color[1] if handler_color else "")
-            
-            item_modifiers_templet_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-modifiers.templet.json.tmp")
-            with open(item_modifiers_templet_tmp, 'w', encoding="utf-8-sig") as f:
-                json.dump(item_modifiers_data, f, ensure_ascii=False, indent=2)
+                        
+                # 本地化
+                item[ZHCN2] = item[ZHCN]
+                item[ZHTW2] = item[ZHTW]
+                # 国服本地化
+                netease = self.controller.current_states.get(NETEASE_LANGUAGE)
+                self.modify_lng_strings_zhcn(item, netease)
+                # 国际服本地化
+                battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
+                self.modify_lng_strings_zhtw(item, battlenet)
 
-            item_modifiers_json = os.path.join(MOD_PATH, r"data/local/lng/strings/item-modifiers.json")
-            os.replace(item_modifiers_templet_tmp, item_modifiers_json)
+            # 写临时文件
+            item_modifiers_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-modifiers.json.tmp")
+            with open(item_modifiers_tmp, 'w', encoding="utf-8-sig") as f:
+                json.dump(jcy_item_modifiers_templet, f, ensure_ascii=False, indent=2)
+
+            # 覆盖目标文件
+            item_modifiers = os.path.join(MOD_PATH, r"data/local/lng/strings/item-modifiers.json")
+            os.replace(item_modifiers_tmp, item_modifiers)
             count += 1
         except Exception as e:
             print(e)

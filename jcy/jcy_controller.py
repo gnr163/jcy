@@ -73,24 +73,30 @@ class FeatureController:
 
     def _upgrade_config(self):
         """执行完整的配置升级流程"""
-        toast("版本升级", "正在升级配置文件...", audio={'silent': True})
-        
-        # 加载配置
-        default_config = load_default_config()
-        user_config = load_user_config()
-        
-        # 合并配置
-        merged_config, diff = merge_configs(default_config, user_config)
-        print(f"[升级] 配置差异: {diff}")
-        
-        # 保存合并后的配置文件
-        self.feature_state_manager.save_settings(merged_config)
-        self.feature_state_manager.load_settings()
-
-        # 同步配置到Mod文件
-        self._sync_config_mods()
-        
-        toast("升级完成", f"已按照用户配置更新Mod文件", audio={'silent': True})
+        try:
+            toast("版本升级", "正在升级配置文件...", audio={'silent': True})
+            
+            # 加载配置
+            default_config = load_default_config()
+            user_config = load_user_config()
+            
+            # 合并配置
+            merged_config, diff = merge_configs(default_config, user_config)
+            print(f"[升级] 配置差异: {diff}")
+            
+            # 保存合并后的配置文件
+            self.feature_state_manager.save_settings(merged_config)
+            self.feature_state_manager.load_settings()
+            # 更新current_states
+            self.current_states = copy.deepcopy(self.feature_state_manager.loaded_states)
+            # 同步配置到Mod文件
+            self._sync_config_mods()
+            
+            toast("升级完成", f"已按照用户配置更新Mod文件", audio={'silent': True})
+        except Exception as e:
+            self.open_appdata()
+            toast("升级失败", f"建议删除用户配置文件settings.json, 重启控制器", audio={'silent': True})
+            print("[升级错误]", e)
 
     def _sync_config_mods(self):
         """同步配置到Mod文件"""
