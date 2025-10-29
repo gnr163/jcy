@@ -1336,20 +1336,29 @@ class FileOperations:
 
         # load 道具配置
         jcy_item_names_data = None
-        jcy_item_names_json = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.json")
+        jcy_item_names_json = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.data.json")
         with open(jcy_item_names_json, 'r', encoding='utf-8') as f:
             jcy_item_names_data = json.load(f)
 
         # load 符文配置
         jcy_item_runes_data = None
-        jcy_item_runes_json = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-runes.json")
+        jcy_item_runes_json = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-runes.data.json")
         with open(jcy_item_runes_json, 'r', encoding='utf-8') as f:
             jcy_item_runes_data = json.load(f)
+
+        # load 过滤模板
+        jcy_item_name_filter_dict = {}
+        jcy_item_names_filter_data = None
+        jcy_item_names_filter_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.filter.json")
+        with open(jcy_item_names_filter_path, 'r', encoding='utf-8-sig') as f:
+            jcy_item_names_filter_data = json.load(f)
+        for item in jcy_item_names_filter_data:
+            jcy_item_name_filter_dict[str(item["id"])] = item
 
         try:
             # 道具模版->道具
             item_names_data = None
-            item_names_templet = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.templet.json")
+            item_names_templet = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.templet.json")
             with open(item_names_templet, 'r', encoding='utf-8-sig') as f:
                 item_names_data = json.load(f)
 
@@ -1359,7 +1368,12 @@ class FileOperations:
 
                 # CASE.过滤道具
                 if id in item_filter_config:
-                    continue
+                    filter = item_filter_config.get(id, False)
+                    item_name_filter = jcy_item_name_filter_dict[id]
+                    
+                    item[ZHCN] = UE01A + item_name_filter[ZHCN] if filter else item_name_filter[ZHCN]
+                    item[ZHTW] = UE01A + item_name_filter[ZHTW] if filter else item_name_filter[ZHTW]
+                    item[ENUS] = UE01A + item_name_filter[ENUS] if filter else item_name_filter[ENUS]
 
                 # CASE.底材
                 elif len(Key) == 3:
@@ -1449,7 +1463,7 @@ class FileOperations:
         try:
             # 符文模板->符文
             item_runes_data = None
-            item_runes_templet = os.path.join(MOD_PATH, r"data/local/lng/strings/item-runes.templet.json")
+            item_runes_templet = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-runes.templet.json")
             with open(item_runes_templet, 'r', encoding='utf-8-sig') as f:
                 item_runes_data = json.load(f)
 
@@ -2046,7 +2060,7 @@ class FileOperations:
 
         # 2.load item-names.json 
         item_name_dict = {}
-        item_names_path = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.filter.json")
+        item_names_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.filter.json")
         item_names_data = None
         with open(item_names_path, 'r', encoding='utf-8-sig') as f:
             item_names_data = json.load(f)
@@ -2075,7 +2089,7 @@ class FileOperations:
             item_name_dict[str(item["id"])] = item
 
         item_name_filter_dict = {}
-        item_names_filter_path = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.filter.json")
+        item_names_filter_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.filter.json")
         item_names_filter_data = None
         with open(item_names_filter_path, 'r', encoding='utf-8-sig') as f:
             item_names_filter_data = json.load(f)
