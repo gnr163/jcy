@@ -29,10 +29,10 @@ LANG = None
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.2.6"
+APP_VERSION = "v1.2.7A"
 
 # 发布日期
-APP_DATE = "20251023"
+APP_DATE = "20251029"
 
 # 控制器全称
 APP_FULL_NAME = f"{APP_NAME}_{APP_VERSION}"
@@ -130,6 +130,20 @@ LOCATION = "Location"
 
 RUNE_ENUS = ["El", "Eld", "Tir", "Nef", "Eth", "Ith", "Tal", "Ral", "Ort", "Thul", "Amn", "Sol", "Shael", "Dol", "Hel", "Io", "Lum", "Ko", "Fal", "Lem", "Pul", "Um", "Mal", "Ist", "Gul", "Vex", "Ohm", "Lo", "Sur", "Ber", "Jah", "Cham", "Zod"]
 RUNE_ZHTW = ["艾爾#01", "艾德#02", "特爾#03", "那夫#04", "愛斯#05", "伊司#06", "塔爾#07", "拉爾#08", "歐特#09", "書爾#10", "安姆#11", "索爾#12", "夏#13", "多爾#14", "海爾#15", "埃歐#16", "盧姆#17", "科#18", "法爾#19", "藍姆#20", "普爾#21", "烏姆#22", "馬爾#23", "伊司特#24", "古爾#25", "伐克斯#26", "歐姆#27", "羅#28", "瑟#29", "貝#30", "喬#31", "查姆#32", "薩德#33"]
+# 本地化文件列表
+LNG_STRINGS = [
+    r"data/local/lng/strings/item-modifiers.json",
+    r"data/local/lng/strings/item-nameaffixes.json",
+    r"data/local/lng/strings/item-names.json",
+    r"data/local/lng/strings/item-runes.json",
+    r"data/local/lng/strings/levels.json",
+    r"data/local/lng/strings/monsters.json",
+    r"data/local/lng/strings/npcs.json",
+    r"data/local/lng/strings/objects.json",
+    r"data/local/lng/strings/quests.json",
+    r"data/local/lng/strings/shrines.json",
+    r"data/local/lng/strings/skills.json",
+]
 
 # 恐怖区域API
 TERROR_ZONE_API = {
@@ -507,6 +521,7 @@ __all__ = [
     'RUNE_SETTING',
     'RUNE_ENUS',
     'RUNE_ZHTW',
+    'LNG_STRINGS',
     'DROPED_LIGHT',
     'TORCH_KEY',
     'ITEM_DROP_SOUNDS',

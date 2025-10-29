@@ -87,45 +87,18 @@ class FeatureController:
         self.feature_state_manager.save_settings(merged_config)
         self.feature_state_manager.load_settings()
 
-        # 应用差异到Mod
-        self._apply_config_diff(diff)
+        # 同步配置到Mod文件
+        self._sync_config_mods()
         
         toast("升级完成", f"已按照用户配置更新Mod文件", audio={'silent': True})
 
-    def _apply_config_diff(self, diff: dict):
-        """实际应用配置差异到Mod文件"""
-        # 处理新增配置项
-        for feature_id in diff['added']:
-            if handler := self._handlers.get(feature_id):
-                default_value = self._get_default_value(feature_id)
-                print(f"[升级] 应用新增配置 {feature_id} = {default_value}")
-                # handler(default_value)
+    def _sync_config_mods(self):
+        """同步配置到Mod文件"""
+        for fid, value in self.feature_state_manager.loaded_states.items():
+            if handler := self._handlers.get(fid):
+                print(f"[DEBUG]  {fid}:{value}")
+                handler(value)
         
-        # 处理修改项（保持用户设置）
-        for feature_id in diff['modified']:
-            if handler := self._handlers.get(feature_id):
-                user_value = self.feature_state_manager.loaded_states.get(
-                    feature_id,
-                    self._get_default_value(feature_id)
-                )
-                print(f"[升级] 保持用户配置 {feature_id} = {user_value}")
-                handler(user_value)
-
-    def _get_default_value(self, feature_id: str):
-        """获取功能的默认值"""
-        # 根据feature_config实现具体逻辑
-        config = self.feature_config.all_features_config
-        if feature_id in config["checkbutton"]:
-            return False
-        elif feature_id in config["radiogroup"]:
-            return list(config["radiogroup"][feature_id]["params"][0].keys())[0]
-        elif feature_id in config["spinbox"]:
-            return config["spinbox"][feature_id]["from_"]
-        elif feature_id == "501":  # 道具屏蔽
-            return {}
-        return None
-
-
     
     def _setup_feature_handlers(self):
         """
@@ -247,7 +220,6 @@ class FeatureController:
                         else:
                             self.dialogs += f"{text} 操作文件数量 {result[0]}/{result[1]} {result[2] if len(result) > 2 else ''}\n"
 
-
         # -- 屏蔽道具 --
         for fid, info in self.feature_config.all_features_config["checktable"].items():
             current_value = self.current_states.get(fid)
@@ -261,8 +233,6 @@ class FeatureController:
 
         # 保存当前状态到 settings.json
         self.feature_state_manager.save_settings(self.current_states)
-        # 核心：保存后，立即更新 loaded_states，使其反映当前已保存的状态
-        # self.feature_state_manager.loaded_states.update(self.current_states) # 使用 update 方法
         self.feature_state_manager.loaded_states = copy.deepcopy(self.current_states)
 
         # 显示结果

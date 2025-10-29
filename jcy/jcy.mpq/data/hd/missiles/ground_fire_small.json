@@ -296,10 +296,10 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "entity_vfx_meteor_VfxDefinition",
-                    "filename": "data/hd/vfx/particles/missiles/meteor/vfx_meteor_fire.particles2",
+                    "filename": "data/hd/vfx/particles/missiles/ground_fire_big/vfx_vampireFirewallMaker.particles",
                     "hardKillOnDestroy": false
                 }
             ]
-        },
+        }
     ]
 }

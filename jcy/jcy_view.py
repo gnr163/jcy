@@ -430,19 +430,7 @@ class FeatureView:
         ]
         
         for fid, var in self.feature_vars.items():
-            if fid in self.all_features_config["checkbutton"]:
-                value = current_states.get(fid, False)
-                var.set(value)
-            elif fid in self.all_features_config["radiogroup"]:
-                value = current_states.get(fid, None)
-                var.set(value)
-            elif fid in self.all_features_config["checkgroup"]:
-                value = current_states.get(fid, [])
-                var.set(value)
-            elif fid in self.all_features_config["spinbox"]:
-                value = current_states.get(fid, 0)
-                var.set(value) 
-            elif fid in self.all_features_config["checktable"]:
+            if fid in self.all_features_config["checktable"]:
                 value = current_states.get(fid, {})
                 var.set(value)
             elif fid in tab_fids:

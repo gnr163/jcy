@@ -389,9 +389,10 @@ class FileOperations:
         try:
             src_path = os.path.join(MOD_PATH, params[radio])
             dst_path = os.path.join(MOD_PATH, params["0"])
-        
+            
             if "0" == radio:
-                os.remove(dst_path)
+                if os.path.exists(dst_path):
+                    os.remove(dst_path)
             else:
                 shutil.copy2(src_path, dst_path)
             count += 1
@@ -449,6 +450,7 @@ class FileOperations:
     def select_monster_health(self, radio: str = "0"):
         """怪物-血条样式"""
         src = {
+            "0": r"data/global/ui/layouts/hudmonsterhealthhd.json",
             "1": r"data/global/ui/layouts/hudmonsterhealthhd.json.ext",
             "2": r"data/global/ui/layouts/hudmonsterhealthhd.json.d3",
             "3": r"data/global/ui/layouts/hudmonsterhealthhd.json.jerry",
@@ -2320,17 +2322,10 @@ class FileOperations:
     
     def select_netease_language(self, radio: str):
         """国服文字选择"""
-        _files = [
-            r"data/local/lng/strings/item-names.json",
-            r"data/local/lng/strings/item-runes.json",
-            r"data/local/lng/strings/item-nameaffixes.json",
-            r"data/local/lng/strings/skills.json"
-        ]
-
         count = 0
-        total = len(_files)
+        total = len(LNG_STRINGS)
 
-        for file in _files:
+        for file in LNG_STRINGS:
             json_data = None
             json_path = os.path.join(MOD_PATH, file)
 
@@ -2366,17 +2361,10 @@ class FileOperations:
 
     def select_battle_net_language(self, radio: str):
         """国际服文字选择"""
-        _files = [
-            r"data/local/lng/strings/item-names.json",
-            r"data/local/lng/strings/item-runes.json",
-            r"data/local/lng/strings/item-nameaffixes.json",
-            r"data/local/lng/strings/skills.json"
-        ]
-
         count = 0
-        total = len(_files)
+        total = len(LNG_STRINGS)
 
-        for file in _files:
+        for file in LNG_STRINGS:
             json_data = None
             json_path = os.path.join(MOD_PATH, file)
 
@@ -3004,7 +2992,7 @@ class FileOperations:
         _controls = {
             "1": "OpenWeaponSwap",
             "2": "OpenMiniHp",
-            "3": "OpenMiniCute",
+            "3": "OpenMiniCube",
         }
         
         # 1.load
@@ -3149,15 +3137,13 @@ class FileOperations:
         return summary
 
     def sync_app_data(self):
-        """
-        APP_VERSION -> npcs.json.50001
-        APP_DATE -> npcs.json.50002
-        """
-        npcs = os.path.join(MOD_PATH, r"data/local/lng/strings/npcs.json")
+        """同步APP参数到chinese-overlay.json"""
+        
+        json_path = os.path.join(MOD_PATH, r"data/local/lng/strings/chinese-overlay.json")
 
         try:
             json_data = None
-            with open(npcs, 'r', encoding='utf-8-sig') as f:
+            with open(json_path, 'r', encoding='utf-8-sig') as f:
                 json_data = json.load(f)
 
             for npc in json_data:
@@ -3194,7 +3180,7 @@ class FileOperations:
                 if npc["id"] > 50002:
                     break
 
-            with open(npcs, 'w', encoding='utf-8-sig') as f:
+            with open(json_path, 'w', encoding='utf-8-sig') as f:
                 json.dump(json_data, f, ensure_ascii=False, indent=2)
             return (1, 1)
         except Exception as e:
@@ -3608,7 +3594,6 @@ class FileOperations:
             sounds_path = os.path.join(MOD_PATH, r"data/global/excel/sounds.txt")
             with open(sounds_path, 'r', encoding='utf-8') as f:
                 reader = csv.DictReader(f, delimiter='\t')
-                print(reader.fieldnames) 
                 rows = list(reader)
 
             for row in rows:
@@ -3728,7 +3713,6 @@ class FileOperations:
             sounds_path = os.path.join(MOD_PATH, r"data/global/excel/sounds.txt")
             with open(sounds_path, 'r', encoding='utf-8') as f:
                 reader = csv.DictReader(f, delimiter='\t')
-                print(reader.fieldnames) 
                 rows = list(reader)
 
             for row in rows:

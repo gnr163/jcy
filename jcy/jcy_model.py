@@ -18,7 +18,7 @@ class FeatureConfig:
                         {
                             "fid": NETEASE_LANGUAGE,
                             "type": RADIO,
-                            "text": "网易国服-本地化(装备/道具/符文/符文之语/词缀/技能)",
+                            "text": "网易国服-本地化(装备/道具/符文/符文之语/词缀/技能/地图)",
                             "colspan": 10,
                             "params": {
                                 ZHCN2: "简中翻译",
@@ -31,7 +31,7 @@ class FeatureConfig:
                         {
                             "fid": BATTLE_NET_LANGUAGE,
                             "type": RADIO,
-                            "text": "暴雪國際服-本地化(裝備/道具/符文/符文之語/詞綴/技能)",
+                            "text": "暴雪國際服-本地化(裝備/道具/符文/符文之語/詞綴/技能/地图)",
                             "colspan": 10,
                             "params": {
                                 ZHCN2: "简中翻译",
@@ -526,10 +526,6 @@ class FeatureConfig:
                     ]
                 }
             ],
-            "checkbutton": {},
-            "radiogroup": {},
-            "checkgroup":{},
-            "spinbox" : {},
             "checktable": {
                 "501": "道具屏蔽",
                 RUNE_SETTING: "符文提醒"
@@ -539,10 +535,6 @@ class FeatureConfig:
 
         # ---初始化默认功能状态---
         self.default_feature_states = {
-            **{fid: False for fid in self.all_features_config["checkbutton"]},
-            **{fid: "default" for fid in self.all_features_config["radiogroup"]},
-            **{fid: [] for fid in self.all_features_config["checkgroup"]},
-            **{fid: 0 for fid in self.all_features_config["spinbox"]},
             **{fid: False for fid in self.all_features_config["checktable"]}
         }
         
@@ -562,22 +554,6 @@ class FeatureStateManager:
         try:
             with open(USER_SETTINGS_PATH, 'r', encoding='utf-8') as f:
                 self.loaded_states = json.load(f)
-
-            for fid in self.config.all_features_config["checkbutton"]:
-                if fid not in self.loaded_states:
-                    self.loaded_states[fid] = False
-
-            for fid, info in self.config.all_features_config["radiogroup"].items():
-                if fid not in self.loaded_states:
-                    self.loaded_states[fid] = "default"
-            
-            for fid, info in self.config.all_features_config["checkgroup"].items():
-                if fid not in self.loaded_states: 
-                    self.loaded_states[fid] = []
-
-            for fid in self.config.all_features_config["spinbox"]:
-                if fid not in self.loaded_states:
-                    self.loaded_states[fid] = 0
 
             for fid in self.config.all_features_config["checktable"]:
                 if fid not in self.loaded_states:
@@ -605,11 +581,3 @@ class FeatureStateManager:
             print(f"[错误] 保存失败: {str(e)}")
             raise
 
-    def get_default_value(self, feature_id: str):
-        """获取功能的默认值"""
-        # 根据feature_config实现具体逻辑
-        if feature_id in self.feature_config.all_features_config["checkbutton"]:
-            return False
-        elif feature_id in self.feature_config.all_features_config["radiogroup"]:
-            return list(self.feature_config.all_features_config["radiogroup"][feature_id]["params"][0].keys())[0]
-        # ...其他类型处理...

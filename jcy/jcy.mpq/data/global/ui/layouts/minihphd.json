@@ -2,7 +2,7 @@
     "type": "TooltipsPanel",
     "name": "minihp",
     "fields": {
-        "priority": -8,
+        "priority": -111,
         "anchor": {
             "x": 0.5,
             "y": 1
