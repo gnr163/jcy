@@ -29,7 +29,7 @@ LANG = None
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.2.7A"
+APP_VERSION = "v1.2.7B"
 
 # 发布日期
 APP_DATE = "20251029"
@@ -148,7 +148,7 @@ LNG_STRINGS = [
 # 恐怖区域API
 TERROR_ZONE_API = {
     "1" : ["https://asia.d2tz.info/terror_zone?mode=online", "https://api.d2tz.info/terror_zone?mode=online"],
-    "2": ["https://api.aws.d2-trade.com/api/query/tz_online"]
+    "2": ["https://api.aws.d2-trade.com/api/query/tz_online", "https://api.d2-trade.com.cn/api/query/tz_online"],
 }
 
 # 恐怖地带
