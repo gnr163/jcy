@@ -7,6 +7,7 @@ import requests
 import shutil
 import sys
 import threading
+from threading import Thread
 import time
 import tkinter as tk
 from datetime import datetime, timedelta, timezone
@@ -14,16 +15,20 @@ from tkinter import messagebox
 from win11toast import toast
 import subprocess
 
+
 from file_operations import FileOperations
 from jcy_constants import *
 from jcy_model import FeatureConfig, FeatureStateManager
 from jcy_paths import *
 from jcy_view import FeatureView
+from upgrade_dialog import UpgradeDialog
 
 class FeatureController:
     def __init__(self, master):
         self.master = master
         self.dialogs = "" 
+        self.current_states = {}
+        
 
         # 无配置文件,以默认文件为准
         if not os.path.exists(USER_SETTINGS_PATH):
@@ -45,14 +50,22 @@ class FeatureController:
         self._setup_feature_handlers()
 
         # 升级检查
-        print("[DEBUG] 初始化配置系统...")
         need_upgrade = ensure_appdata_files()
-        print(f"[DEBUG] 需要升级: {need_upgrade}")
         if need_upgrade:
-            self._upgrade_config()
+            # 创建升级对话框
+            total_steps = 3  # 你可以根据升级流程自定义
+            self.upgrade_dialog = UpgradeDialog(master, total_steps)
+            self.upgrade_dialog.update()  # 强制刷新UI，让对话框立即显示
+
+            # 执行升级（阻塞式，但 dialog 可见）
+            self._upgrade_config(dialog=self.upgrade_dialog)
+
+            # 升级完成关闭 dialog
+            self.upgrade_dialog.destroy()
+            self.upgrade_dialog = None
+
+            # 更新 current_states
             self.current_states = copy.deepcopy(self.feature_state_manager.loaded_states)
-        else:
-            print("[DEBUG] 配置已是最新版本")
 
         # 恐怖区域更新
         self.terror_zone_fetcher = TerrorZoneFetcher(self)
@@ -71,40 +84,51 @@ class FeatureController:
         return self.current_states.get(key)
     
 
-    def _upgrade_config(self):
-        """执行完整的配置升级流程"""
+    def _upgrade_config(self, dialog=None):
+        """执行完整的配置升级流程，可传入升级 dialog 显示进度"""
         try:
-            toast("版本升级", "正在升级配置文件...", audio={'silent': True})
-            
+            if dialog:
+                dialog.log("⚙ 正在升级配置文件...")
+
             # 加载配置
             default_config = load_default_config()
             user_config = load_user_config()
-            
+
+            if dialog:
+                dialog.log("🔄 合并默认配置与用户配置...")
+
             # 合并配置
-            merged_config, diff = merge_configs(default_config, user_config)
-            print(f"[升级] 配置差异: {diff}")
+            merged_config = merge_configs(default_config, user_config)
             
-            # 保存合并后的配置文件
+            # 保存合并后的配置
             self.feature_state_manager.save_settings(merged_config)
             self.feature_state_manager.load_settings()
-            # 更新current_states
             self.current_states = copy.deepcopy(self.feature_state_manager.loaded_states)
-            # 同步配置到Mod文件
-            self._sync_config_mods()
-            
-            toast("升级完成", f"已按照用户配置更新Mod文件", audio={'silent': True})
+
+            if dialog:
+                dialog.log("📂 同步配置到 Mod 文件...")
+
+            # 同步 Mod 文件
+            self._sync_config_mods(dialog)
+
+            if dialog:
+                dialog.log("✅ 升级完成!")
+
         except Exception as e:
+            if dialog:
+                dialog.log("⚠ 升级失败，请手动检查配置目录")
             self.open_appdata()
-            toast("升级失败", f"建议删除用户配置文件settings.json, 重启控制器", audio={'silent': True})
             print("[升级错误]", e)
 
-    def _sync_config_mods(self):
-        """同步配置到Mod文件"""
+
+    def _sync_config_mods(self, dialog=None):
+        """同步配置到 Mod 文件，同时在 dialog 显示日志"""
         for fid, value in self.feature_state_manager.loaded_states.items():
             if handler := self._handlers.get(fid):
-                print(f"[DEBUG]  {fid}:{value}")
                 handler(value)
-        
+                if dialog:
+                    dialog.log(f"[同步] {fid}: {value}")        
+
     
     def _setup_feature_handlers(self):
         """

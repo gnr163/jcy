@@ -1528,9 +1528,6 @@ class FileOperations:
         _files = {
             # 动画
             "1" : [
-                # 
-                r"data/global/ui/layouts/loadscreenpanel.json",
-                r"data/global/ui/layouts/loadscreenpanelhd.json",
                 #
                 r"data/global/video/act2/act02start.webm",
                 r"data/global/video/act3/act03start.webm",

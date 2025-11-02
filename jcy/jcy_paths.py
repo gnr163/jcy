@@ -141,38 +141,27 @@ def load_user_config() -> dict:
         return json.load(f);
     
 
-def merge_configs(default: dict, user: dict) -> tuple[dict, dict]:
+def merge_configs(default: dict, user: dict) -> dict:
     """
-    合并配置字典
-    - 以 user 为主：用户值优先
+    以 user 配置优先合并 default 配置
     - 只保留 default 中存在的键，顺序跟 default 一致
-    - 返回 merged_config 和 diff 字典
     """
-    diff = {'added': [], 'modified': []}
-
-    def merge(d_def, d_user, path=""):
+    def merge(d_def, d_user):
         merged = {}
         for key in d_def:
-            full_key = f"{path}.{key}" if path else key
             def_val = d_def[key]
             user_val = d_user.get(key, None)
 
             if isinstance(def_val, dict):
-                # 如果 default 是 dict，则递归合并
-                merged[key] = merge(def_val, user_val if isinstance(user_val, dict) else {}, full_key)
+                # 递归合并 dict
+                merged[key] = merge(def_val, user_val if isinstance(user_val, dict) else {})
             else:
-                if key not in d_user:
-                    merged[key] = def_val
-                    diff['added'].append(full_key)
-                elif def_val != user_val:
-                    merged[key] = user_val
-                    diff['modified'].append(full_key)
-                else:
-                    merged[key] = def_val
+                # 用户配置存在则使用，否则用默认
+                merged[key] = user_val if key in d_user else def_val
         return merged
 
-    merged_config = merge(default, user)
-    return merged_config, diff
+    return merge(default, user)
+
 
 # 导出所有需要的符号
 __all__ = [
