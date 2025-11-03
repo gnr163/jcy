@@ -587,16 +587,6 @@ class FileOperations:
                 r"data/hd/global/ui/hireables/act2hireableicon.sprite",
                 # 佣兵模型
                 r"data/hd/character/enemy/act2hire.json",
-                r"data/hd/character/enemy/act2hire_female/act2hire_female_state_machine.json",
-                r"data/hd/character/enemy/act2hire_female/act2hire_female_variant.json",
-                # 声音文件
-                r"data/hd/global/sfx/monster/guard/monster_guard_death_1_hd.flac",
-                r"data/hd/global/sfx/monster/guard/monster_guard_death_2_hd.flac",
-                r"data/hd/global/sfx/monster/guard/monster_guard_death_3_hd.flac",
-                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_1_hd.flac",
-                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_2_hd.flac",
-                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_3_hd.flac",
-                r"data/hd/global/sfx/monster/guard/monster_guard_gethit_4_hd.flac",
             ],
             # A5火焰刀佣兵
             "5":[
@@ -610,6 +600,29 @@ class FileOperations:
         for key, files in _files.items():
             sub = self.common_rename(files, key in keys)
             funcs.append(sub)
+
+        A2_female = "2" in keys
+        
+        # ---------- A2女性佣兵 ----------  sounds.txt
+        data = {
+            "guard_death_hd1": A2_female,
+            "guard_death_hd2": A2_female,
+            "guard_death_hd3": A2_female,
+            "guard_hit_hd1": A2_female,
+            "guard_hit_hd2": A2_female,
+            "guard_hit_hd3": A2_female,
+            "guard_hit_hd4": A2_female,
+        }
+        sub = self.modify_custom_sounds(data)
+        funcs.append(sub)
+        
+        # ---------- A2女性佣兵 ----------  hirelingdesc.txt
+        data2 = {
+            "act2hire": A2_female
+        }
+        sub2 = self.modify_hirelingdesc(data2)
+        funcs.append(sub2)
+
 
         results = [f for f in funcs]
         summary = tuple(sum(values) for values in zip(*results))
@@ -3761,6 +3774,36 @@ class FileOperations:
             return (1, 1)
         except Exception as e:
             print(e)
+            return (0, 1)
+
+    def modify_hirelingdesc(self, data: dict):
+        """修改佣兵语音(hirelingdesc.txt)"""
+        if data is None:
+            return (0, 0)
+        
+        try:
+            path = os.path.join(MOD_PATH, r"data/global/excel/hirelingdesc.txt")
+
+            rows = []
+            with open(path, "r", encoding="utf-8") as f:
+                reader = csv.DictReader(f, delimiter="\t")
+                rows = list(reader)
+
+            for row in rows:
+                id = row["id"]
+                if id in data:
+                    is_female = data.get(id)
+                    row["alternateVoice"] = "1" if is_female else "0"
+
+            with open(path, "w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=reader.fieldnames, delimiter='\t')
+                writer.writeheader()
+                writer.writerows(rows)
+
+            return (1, 1)
+        except Exception as e:
+            print(e)
+            return (0, 1)
 
     def load_global_dict(self):
         """初始化全局字典"""

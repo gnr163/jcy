@@ -29,10 +29,10 @@ LANG = None
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.2.7B"
+APP_VERSION = "v1.2.8"
 
 # 发布日期
-APP_DATE = "20251029"
+APP_DATE = "20251102"
 
 # 控制器全称
 APP_FULL_NAME = f"{APP_NAME}_{APP_VERSION}"
@@ -461,6 +461,14 @@ CUSTOM_SOUNDS = {
     "markwolf_off":       {True: r"skill\markwolf_off.flac",       False: r"none.flac",                 "path": "data/hd/global/sfx/skill/markwolf_off.flac"},
     "markbear_off":       {True: r"skill\markbear_off.flac",       False: r"none.flac",                 "path": "data/hd/global/sfx/skill/markbear_off.flac"},
     "fade_off":           {True: r"skill\fade_off.flac",           False: r"none.flac",                 "path": "data/hd/global/sfx/skill/fade_off.flac"},
+    # Mercenaries
+    "guard_death_hd1":    {True: r"monster\rogue\death1_hd.flac",  False: r"monster\guard\monster_guard_death_1_hd.flac",                 "path": ""},
+    "guard_death_hd2":    {True: r"monster\rogue\death2_hd.flac",  False: r"monster\guard\monster_guard_death_2_hd.flac",                 "path": ""},
+    "guard_death_hd3":    {True: r"monster\rogue\death1_hd.flac",  False: r"monster\guard\monster_guard_death_3_hd.flac",                 "path": ""},
+    "guard_hit_hd1":      {True: r"monster\rogue\gethit1_hd.flac", False: r"monster\guard\monster_guard_gethit_1_hd.flac",                 "path": ""},
+    "guard_hit_hd2":      {True: r"monster\rogue\gethit2_hd.flac", False: r"monster\guard\monster_guard_gethit_2_hd.flac",                 "path": ""},
+    "guard_hit_hd3":      {True: r"monster\rogue\gethit3_hd.flac", False: r"monster\guard\monster_guard_gethit_3_hd.flac",                 "path": ""},
+    "guard_hit_hd4":      {True: r"monster\rogue\gethit4_hd.flac", False: r"monster\guard\monster_guard_gethit_4_hd.flac",                 "path": ""},
 }
 
 # 导出所有需要的符号
