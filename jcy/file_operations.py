@@ -3181,9 +3181,9 @@ class FileOperations:
         return summary
 
     def sync_app_data(self):
-        """同步APP参数到chinese-overlay.json"""
+        """同步APP参数到npcs.json"""
         
-        json_path = os.path.join(MOD_PATH, r"data/local/lng/strings/chinese-overlay.json")
+        json_path = os.path.join(MOD_PATH, r"data/local/lng/strings/npcs.json")
 
         try:
             json_data = None
