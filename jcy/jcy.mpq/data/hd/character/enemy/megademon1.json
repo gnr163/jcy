@@ -490,7 +490,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "entity_root_VfxDefinition",
-                    "filename": "data/hd/vfx/particles/missiles/lightning_strike/lightning_lightningstrike.particles",
+                    "filename": "data/hd/vfx/particles/missiles/lightning_strike/lightning_baaltaunt.particles",
                     "hardKillOnDestroy": true
                 },
                 {
