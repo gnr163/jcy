@@ -623,19 +623,45 @@
                 "hth": [
                     "attack3"
                 ],
-                "bow": ["attack3"],
-                "1hs": ["attack3"],
-                "1ht": ["attack3"],
-                "stf": ["attack3"],
-                "2hs": ["attack3"],
-                "2ht": ["attack3"],
-                "xbw": ["attack3"],
-                "1js": ["attack3"],
-                "1jt": ["attack3"],
-                "1ss": ["attack3"],
-                "1st": ["attack3"],
-                "ht1": ["attack3"],
-                "ht2": ["attack3"]
+                "bow": [
+                    "attack3"
+                ],
+                "1hs": [
+                    "attack3"
+                ],
+                "1ht": [
+                    "attack3"
+                ],
+                "stf": [
+                    "attack3"
+                ],
+                "2hs": [
+                    "attack3"
+                ],
+                "2ht": [
+                    "attack3"
+                ],
+                "xbw": [
+                    "attack3"
+                ],
+                "1js": [
+                    "attack3"
+                ],
+                "1jt": [
+                    "attack3"
+                ],
+                "1ss": [
+                    "attack3"
+                ],
+                "1st": [
+                    "attack3"
+                ],
+                "ht1": [
+                    "attack3"
+                ],
+                "ht2": [
+                    "attack3"
+                ]
             },
             "enterEvents": [],
             "exitEvents": []
