@@ -114,7 +114,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Felloak \n@clb\n\n@dictBlue +70-80% Enhanced Damage @dictVariable\n@dictBlue Adds 6-8 fire damage\nKnockback\nLightning Resist +60%\nFire Resist +20%\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Felloak \n@clb\n\n@dictBlue +70-80% Enhanced Damage \n@dictBlue Adds 6-8 fire damage\nKnockback\nLightning Resist +60%\nFire Resist +20%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -251,7 +251,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Stoutnail \n@spc\n\n@dictBlue +100% Enhanced Damage\n+7 to Vitality\nMagic Damage Reduced by 2\nAttacker Takes Damage of 3-10 @dictVariable\n@dictBlue +50% Damage to Undead",
+                                                "tooltipString": "@dictGold Stoutnail \n@spc\n\n@dictBlue +100% Enhanced Damage\n+7 to Vitality\nMagic Damage Reduced by 2\nAttacker Takes Damage of 3-10 \n@dictBlue +50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -388,7 +388,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Dark Clan Crusher \n@9cl\n\n@dictBlue +2 to Druid Skill Levels\n+195% Enhanced Damage\n20-25% Bonus to Attack Rating @dictVariable\n@dictBlue +200% Damage to Demons\n+200 to Attack Rating against Demons\n+15 Life after each Demon Kill\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Dark Clan Crusher \n@9cl\n\n@dictBlue +2 to Druid Skill Levels\n+195% Enhanced Damage\n20-25% Bonus to Attack Rating \n@dictBlue +200% Damage to Demons\n+200 to Attack Rating against Demons\n+15 Life after each Demon Kill\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -552,7 +552,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Fleshrender \n@9sp\n\n@dictBlue +2 to Shape Shifting Skills (Druid Only)\n+1 to Druid Skill Levels\n+130-200% Enhanced Damage @dictVariable\n@dictBlue Adds 35-50 damage\n+20% Chance of Crushing Blow\n+20% Deadly Strike\n+25% Chance of Open Wounds\nPrevent Monster Heal\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Fleshrender \n@9sp\n\n@dictBlue +2 to Shape Shifting Skills (Druid Only)\n+1 to Druid Skill Levels\n+130-200% Enhanced Damage \n@dictBlue Adds 35-50 damage\n+20% Chance of Crushing Blow\n+20% Deadly Strike\n+25% Chance of Open Wounds\nPrevent Monster Heal\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -689,7 +689,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Nord's Tenderizer \n@7cl\n\n@dictBlue +25% Increased Attack Speed\n+270-330% Enhanced Damage @dictVariable\n@dictBlue 150-180% Bonus to Attack Rating @dictVariable\n@dictBlue Adds 205-455 cold damage\nFreezes Target +2-4 @dictVariable\n@dictBlue Cold Absorb +5-15% @dictVariable\n@dictBlue Level 16 Blizzard (12 Charges)\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Nord's Tenderizer \n@7cl\n\n@dictBlue +25% Increased Attack Speed\n+270-330% Enhanced Damage \n@dictBlue 150-180% Bonus to Attack Rating \n@dictBlue Adds 205-455 cold damage\nFreezes Target +2-4 \n@dictBlue Cold Absorb +5-15% \n@dictBlue Level 16 Blizzard (12 Charges)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -826,7 +826,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Demon Limb \n@7sp\n\n@dictBlue +180-230% Enhanced Damage @dictVariable\n@dictBlue +123% Damage to Demons\nAdds 222-333 fire damage\n7-13% Life stolen per hit @dictVariable\n@dictBlue Fire Resist +15-20% @dictVariable\n@dictBlue Level 23 Enchant (20 Charges)\nRepairs 1 durability in 20 seconds\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Demon Limb \n@7sp\n\n@dictBlue +180-230% Enhanced Damage \n@dictBlue +123% Damage to Demons\nAdds 222-333 fire damage\n7-13% Life stolen per hit \n@dictBlue Fire Resist +15-20% \n@dictBlue Level 23 Enchant (20 Charges)\nRepairs 1 durability in 20 seconds\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1008,7 +1008,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Crushflange \n@mac\n\n@dictBlue +50-60% Enhanced Damage @dictVariable\n@dictBlue +33% Chance of Crushing Blow\nKnockback\n+15 to Strength\nFire Resist +50%\n+2 to Light Radius\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Crushflange \n@mac\n\n@dictBlue +50-60% Enhanced Damage \n@dictBlue +33% Chance of Crushing Blow\nKnockback\n+15 to Strength\nFire Resist +50%\n+2 to Light Radius\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1309,7 +1309,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold The General's Tan Do Li Ga \n@fla\n\n@dictBlue +20% Increased Attack Speed\n+50-60% Enhanced Damage @dictVariable\n@dictBlue Adds 1-20 damage\n5% Mana stolen per hit\nSlows Target by 50%\n+25 Defense\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold The General's Tan Do Li Ga \n@fla\n\n@dictBlue +20% Increased Attack Speed\n+50-60% Enhanced Damage \n@dictBlue Adds 1-20 damage\n5% Mana stolen per hit\nSlows Target by 50%\n+25 Defense\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1473,7 +1473,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Sureshrill Frost \n@9ma\n\n@dictBlue +150-180% Enhanced Damage @dictVariable\n@dictBlue Adds 5-10 damage\nAdds 63-112 cold damage\nFreezes Target +3\nCannot Be Frozen\nLevel 9 Frozen Orb (50 Charges)\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Sureshrill Frost \n@9ma\n\n@dictBlue +150-180% Enhanced Damage \n@dictBlue Adds 5-10 damage\nAdds 63-112 cold damage\nFreezes Target +3\nCannot Be Frozen\nLevel 9 Frozen Orb (50 Charges)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1610,7 +1610,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Moonfall \n@9mt\n\n@dictBlue 5% Chance to cast level 6 Meteor on striking\n+120-150% Enhanced Damage @dictVariable\n@dictBlue Adds 10-15 damage\nAdds 55-115 fire damage\nMagic Damage Reduced by 9-12 @dictVariable\n@dictBlue +2 to Light Radius\nLevel 11 Meteor (60 Charges)\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Moonfall \n@9mt\n\n@dictBlue 5% Chance to cast level 6 Meteor on striking\n+120-150% Enhanced Damage \n@dictBlue Adds 10-15 damage\nAdds 55-115 fire damage\nMagic Damage Reduced by 9-12 \n@dictBlue +2 to Light Radius\nLevel 11 Meteor (60 Charges)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1747,7 +1747,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Baezil's Vortex \n@9fl\n\n@dictBlue 5% Chance to cast level 8 Nova on striking\n+20% Increased Attack Speed\n+160-200% Enhanced Damage @dictVariable\n@dictBlue Adds 1-150 lightning damage\n+100 to Mana\nLightning Resist +25%\nLevel 15 Nova (80 Charges)\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Baezil's Vortex \n@9fl\n\n@dictBlue 5% Chance to cast level 8 Nova on striking\n+20% Increased Attack Speed\n+160-200% Enhanced Damage \n@dictBlue Adds 1-150 lightning damage\n+100 to Mana\nLightning Resist +25%\nLevel 15 Nova (80 Charges)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2075,7 +2075,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Horizon's Tornado \n@7fl\n\n@dictBlue 20% Chance to cast level 15 Tornado on striking\n+50% Increased Attack Speed\n+230-280% Enhanced Damage @dictVariable\n@dictBlue Slows Target by 20%\nRequirements -20%\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Horizon's Tornado \n@7fl\n\n@dictBlue 20% Chance to cast level 15 Tornado on striking\n+50% Increased Attack Speed\n+230-280% Enhanced Damage \n@dictBlue Slows Target by 20%\nRequirements -20%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2239,7 +2239,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Stormlash \n@7fl\n\n@dictBlue 20% Chance to cast level 18 Tornado on striking\n15% Chance to cast level 10 Static Field on striking\n+30% Increased Attack Speed\n+240-300% Enhanced Damage @dictVariable\n@dictBlue Adds 1-473 lightning damage\n+33% Chance of Crushing Blow\n+3-9 Lightning Absorb @dictVariable\n@dictBlue Attacker Takes Lightning Damage of 30\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Stormlash \n@7fl\n\n@dictBlue 20% Chance to cast level 18 Tornado on striking\n15% Chance to cast level 10 Static Field on striking\n+30% Increased Attack Speed\n+240-300% Enhanced Damage \n@dictBlue Adds 1-473 lightning damage\n+33% Chance of Crushing Blow\n+3-9 Lightning Absorb \n@dictBlue Attacker Takes Lightning Damage of 30\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2421,7 +2421,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Ironstone \n@whm\n\n@dictBlue +100-150% Enhanced Damage @dictVariable\n@dictBlue +100-150 to Attack Rating @dictVariable\n@dictBlue Adds 1-10 lightning damage\n+10 to Strength\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Ironstone \n@whm\n\n@dictBlue +100-150% Enhanced Damage \n@dictBlue +100-150 to Attack Rating \n@dictBlue Adds 1-10 lightning damage\n+10 to Strength\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2585,7 +2585,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold Bonesnap \n@mau\n\n@dictBlue +200-300% Enhanced Damage @dictVariable\n@dictBlue +100% Damage to Undead\n+40% Chance of Crushing Blow\nCold Resist +30%\nFire Resist +30%",
+                                                "tooltipString": "@dictGold Bonesnap \n@mau\n\n@dictBlue +200-300% Enhanced Damage \n@dictBlue +100% Damage to Undead\n+40% Chance of Crushing Blow\nCold Resist +30%\nFire Resist +30%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2722,7 +2722,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Steeldriver \n@gma\n\n@dictBlue +40% Increased Attack Speed\n+150-250% Enhanced Damage @dictVariable\n@dictBlue Heal Stamina Plus 25%\nRequirements -50%\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Steeldriver \n@gma\n\n@dictBlue +40% Increased Attack Speed\n+150-250% Enhanced Damage \n@dictBlue Heal Stamina Plus 25%\nRequirements -50%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3023,7 +3023,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold Bloodtree Stump \n@9m9\n\n@dictBlue +2 to Masteries (Barbarian Only)\n+180-220% Enhanced Damage @dictVariable\n@dictBlue +50% Chance of Crushing Blow\n+3 to Mace Mastery (Barbarian Only)\n+25 to Strength\nAll Resistances +20\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Bloodtree Stump \n@9m9\n\n@dictBlue +2 to Masteries (Barbarian Only)\n+180-220% Enhanced Damage \n@dictBlue +50% Chance of Crushing Blow\n+3 to Mace Mastery (Barbarian Only)\n+25 to Strength\nAll Resistances +20\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3160,7 +3160,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold The Gavel of Pain \n@9gm\n\n@dictBlue 5% Chance to cast level 1 Iron Maiden when struck\n5% Chance to cast level 1 Amplify Damage on striking\n+130-160% Enhanced Damage @dictVariable\n@dictBlue Adds 12-30 damage\nAttacker Takes Damage of 26\nLevel 8 Amplify Damage (3 Charges)\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold The Gavel of Pain \n@9gm\n\n@dictBlue 5% Chance to cast level 1 Iron Maiden when struck\n5% Chance to cast level 1 Amplify Damage on striking\n+130-160% Enhanced Damage \n@dictBlue Adds 12-30 damage\nAttacker Takes Damage of 26\nLevel 8 Amplify Damage (3 Charges)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3297,7 +3297,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Stone Crusher \n@uhf\n\n@dictBlue +280-320% Enhanced Damage @dictVariable\n@dictBlue +10-30 damage @dictVariable\n@dictBlue -25% Target Defense\n+40% Chance of Crushing Blow\n-100 to Monster Defense Per Hit\n+20-30 to Strength @dictVariable\n@dictBlue +50% Damage to Undead",
+                                                "tooltipString": "@dictGold Stone Crusher \n@uhf\n\n@dictBlue +280-320% Enhanced Damage \n@dictBlue +10-30 damage \n@dictBlue -25% Target Defense\n+40% Chance of Crushing Blow\n-100 to Monster Defense Per Hit\n+20-30 to Strength \n@dictBlue +50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3434,7 +3434,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Schaefer's Hammer \n@uhf\n\n@dictBlue 20% Chance to cast level 10 Static Field on striking\nIndestructible\n+20% Increased Attack Speed\n+100-130% Enhanced Damage @dictVariable\n@dictBlue +2-198 to Maximum Damage (Based on Character Level)\n+8-792 to Attack Rating (Based on Character Level)\nAdds 50-200 lightning damage\n+50 to Life\nLightning Resist +75%\n+1 to Light Radius\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Schaefer's Hammer \n@uhf\n\n@dictBlue 20% Chance to cast level 10 Static Field on striking\nIndestructible\n+20% Increased Attack Speed\n+100-130% Enhanced Damage \n@dictBlue +2-198 to Maximum Damage (Based on Character Level)\n+8-792 to Attack Rating (Based on Character Level)\nAdds 50-200 lightning damage\n+50 to Life\nLightning Resist +75%\n+1 to Light Radius\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3598,7 +3598,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold Windhammer \n@7m7\n\n@dictBlue 33% Chance to cast level 22 Twister on striking\n+60% Increased Attack Speed\n+180-230% Enhanced Damage @dictVariable\n@dictBlue +50% Chance of Crushing Blow\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Windhammer \n@7m7\n\n@dictBlue 33% Chance to cast level 22 Twister on striking\n+60% Increased Attack Speed\n+180-230% Enhanced Damage \n@dictBlue +50% Chance of Crushing Blow\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3762,7 +3762,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Earth Shifter \n@7gm\n\n@dictBlue 25% Chance to cast level 14 Fissure on striking\n+7 to Elemental Skills (Druid Only)\n+10% Increased Attack Speed\n+10% Faster Cast Rate\n+250-300% Enhanced Damage @dictVariable\n@dictBlue +33% Chance of Crushing Blow\nLevel 14 Volcano (30 Charges)\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Earth Shifter \n@7gm\n\n@dictBlue 25% Chance to cast level 14 Fissure on striking\n+7 to Elemental Skills (Druid Only)\n+10% Increased Attack Speed\n+10% Faster Cast Rate\n+250-300% Enhanced Damage \n@dictBlue +33% Chance of Crushing Blow\nLevel 14 Volcano (30 Charges)\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3899,7 +3899,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold The Cranium Basher \n@7gm\n\n@dictBlue Indestructible\n4% Chance to cast level 1 Amplify Damage on striking\n+20% Increased Attack Speed\n+200-240% Enhanced Damage @dictVariable\n@dictBlue +20 to Minimum Damage\n+75% Chance of Crushing Blow\n+25 to Strength\nAll Resistances +25\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold The Cranium Basher \n@7gm\n\n@dictBlue Indestructible\n4% Chance to cast level 1 Amplify Damage on striking\n+20% Increased Attack Speed\n+200-240% Enhanced Damage \n@dictBlue +20 to Minimum Damage\n+75% Chance of Crushing Blow\n+25 to Strength\nAll Resistances +25\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4081,7 +4081,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Knell Striker \n@scp\n\n@dictBlue +70-80% Enhanced Damage @dictVariable\n@dictBlue +35 to Attack Rating\n+25% Chance of Crushing Blow\n+15 to Mana\nFire Resist +20%\nPoison Resist +20%\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Knell Striker \n@scp\n\n@dictBlue +70-80% Enhanced Damage \n@dictBlue +35 to Attack Rating\n+25% Chance of Crushing Blow\n+15 to Mana\nFire Resist +20%\nPoison Resist +20%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4245,7 +4245,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Rusthandle \n@gsc\n\n@dictBlue +1 to Paladin Skill Levels\n+50-60% Enhanced Damage @dictVariable\n@dictBlue Adds 3-7 damage\n+100-110% Damage to Undead @dictVariable\n@dictBlue 8% Life stolen per hit\n+1-3 to Vengeance (Paladin Only) @dictVariable\n@dictBlue +3 to Thorns (Paladin Only)\nMagic Damage Reduced by 1",
+                                                "tooltipString": "@dictGold Rusthandle \n@gsc\n\n@dictBlue +1 to Paladin Skill Levels\n+50-60% Enhanced Damage \n@dictBlue Adds 3-7 damage\n+100-110% Damage to Undead \n@dictBlue 8% Life stolen per hit\n+1-3 to Vengeance (Paladin Only) \n@dictBlue +3 to Thorns (Paladin Only)\nMagic Damage Reduced by 1",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4409,7 +4409,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Stormeye \n@wsp\n\n@dictBlue +80-120% Enhanced Damage @dictVariable\n@dictBlue Adds 1-6 lightning damage\nAdds 3-5 cold damage\n+1 to Fist of the Heavens (Paladin Only)\n+3 to Holy Shock (Paladin Only)\n+3-5 to Resist Lightning (Paladin Only) @dictVariable\n@dictBlue Reflensh Life +10\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Stormeye \n@wsp\n\n@dictBlue +80-120% Enhanced Damage \n@dictBlue Adds 1-6 lightning damage\nAdds 3-5 cold damage\n+1 to Fist of the Heavens (Paladin Only)\n+3 to Holy Shock (Paladin Only)\n+3-5 to Resist Lightning (Paladin Only) \n@dictBlue Reflensh Life +10\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4573,7 +4573,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Zakarum's Hand \n@9sc\n\n@dictBlue 6% Chance to cast level 5 Blizzard on striking\n+30% Increased Attack Speed\n+180-220% Enhanced Damage @dictVariable\n@dictBlue Ignore Target's Defense\n8% Mana stolen per hit\n+2 to Holy Shock (Paladin Only)\n+2 to Holy Freeze (Paladin Only)\nRegenerate Mana 10%\nHeal Stamina Plus 15%\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Zakarum's Hand \n@9sc\n\n@dictBlue 6% Chance to cast level 5 Blizzard on striking\n+30% Increased Attack Speed\n+180-220% Enhanced Damage \n@dictBlue Ignore Target's Defense\n8% Mana stolen per hit\n+2 to Holy Shock (Paladin Only)\n+2 to Holy Freeze (Paladin Only)\nRegenerate Mana 10%\nHeal Stamina Plus 15%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4737,7 +4737,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold The Fetid Sprinkler \n@9qs\n\n@dictBlue 5% Chance to cast level 1 Decrepify on striking\n10% Chance to cast level 1 Confuse on striking\n+2 to Paladin Skill Levels\n+160-190% Enhanced Damage @dictVariable\n@dictBlue Adds 15-25 damage\n+150-200 to Attack Rating @dictVariable\n@dictBlue +160 poison damage over 4 seconds\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold The Fetid Sprinkler \n@9qs\n\n@dictBlue 5% Chance to cast level 1 Decrepify on striking\n10% Chance to cast level 1 Confuse on striking\n+2 to Paladin Skill Levels\n+160-190% Enhanced Damage \n@dictBlue Adds 15-25 damage\n+150-200 to Attack Rating \n@dictBlue +160 poison damage over 4 seconds\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4874,7 +4874,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Hand of Blessed Light \n@9ws\n\n@dictBlue 5% Chance to cast level 4 Fist of the Heavens on striking\n+2 to Paladin Skill Levels\n+130-160% Enhanced Damage @dictVariable\n@dictBlue Adds 20-45 damage\n100% Bonus to Attack Rating\n+2 to Fist of the Heavens (Paladin Only)\n+4 to Holy Bolt (Paladin Only)\n+50 Defense\nRegenerate Mana 15%\n+4 to Light Radius\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Hand of Blessed Light \n@9ws\n\n@dictBlue 5% Chance to cast level 4 Fist of the Heavens on striking\n+2 to Paladin Skill Levels\n+130-160% Enhanced Damage \n@dictBlue Adds 20-45 damage\n100% Bonus to Attack Rating\n+2 to Fist of the Heavens (Paladin Only)\n+4 to Holy Bolt (Paladin Only)\n+50 Defense\nRegenerate Mana 15%\n+4 to Light Radius\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5011,7 +5011,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Heaven's Light \n@7sc\n\n@dictBlue +2-3 to Paladin Skill Levels @dictVariable\n@dictBlue +20% Increased Attack Speed\n+250-300% Enhanced Damage @dictVariable\n@dictBlue -33% Target Defense\n+33% Chance of Crushing Blow\n+15-20 Life after each Demon Kill @dictVariable\n@dictBlue +3 to Light Radius\n+50% Damage to Undead\nSocketed (1-2) @dictVariable",
+                                                "tooltipString": "@dictGold Heaven's Light \n@7sc\n\n@dictBlue +2-3 to Paladin Skill Levels \n@dictBlue +20% Increased Attack Speed\n+250-300% Enhanced Damage \n@dictBlue -33% Target Defense\n+33% Chance of Crushing Blow\n+15-20 Life after each Demon Kill \n@dictBlue +3 to Light Radius\n+50% Damage to Undead\nSocketed (1-2) ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5175,7 +5175,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold The Redeemer \n@7sc\n\n@dictBlue +2 to Paladin Skill Levels\n+250-300% Enhanced Damage @dictVariable\n@dictBlue +60-120 damage @dictVariable\n@dictBlue -33% Target Defense\n+200-250% Damage to Demons @dictVariable\n@dictBlue +2-4 to Redemption (Paladin Only) @dictVariable\n@dictBlue +2-4 to Holy Bolt (Paladin Only) @dictVariable\n@dictBlue +3 to Light Radius\nRequirements -60%\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold The Redeemer \n@7sc\n\n@dictBlue +2 to Paladin Skill Levels\n+250-300% Enhanced Damage \n@dictBlue +60-120 damage \n@dictBlue -33% Target Defense\n+200-250% Damage to Demons \n@dictBlue +2-4 to Redemption (Paladin Only) \n@dictBlue +2-4 to Holy Bolt (Paladin Only) \n@dictBlue +3 to Light Radius\nRequirements -60%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5312,7 +5312,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Astreon's Iron Ward \n@7ws\n\n@dictBlue +2-4 to Combat Skills (Paladin Only) @dictVariable\n@dictBlue +10% Increased Attack Speed\n+240-290% Enhanced Damage @dictVariable\n@dictBlue +40-85 damage @dictVariable\n@dictBlue 150-200% Bonus to Attack Rating @dictVariable\n@dictBlue Adds 80-240 magic damage\n+33% Chance of Crushing Blow\nSlows Target by 25%\nDamage Reduced by 4-7 @dictVariable\n@dictBlue +50% Damage to Undead",
+                                                "tooltipString": "@dictGold Astreon's Iron Ward \n@7ws\n\n@dictBlue +2-4 to Combat Skills (Paladin Only) \n@dictBlue +10% Increased Attack Speed\n+240-290% Enhanced Damage \n@dictBlue +40-85 damage \n@dictBlue 150-200% Bonus to Attack Rating \n@dictBlue Adds 80-240 magic damage\n+33% Chance of Crushing Blow\nSlows Target by 25%\nDamage Reduced by 4-7 \n@dictBlue +50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },

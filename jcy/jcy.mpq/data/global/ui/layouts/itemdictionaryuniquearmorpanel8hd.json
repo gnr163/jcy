@@ -114,7 +114,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Gheed's Fortune \n@cm3\n\n@dictBlue 80-160% Extra Gold from Monsters @dictVariable\n@dictBlue Reduces all Vendor Prices 10-15% @dictVariable\n@dictBlue 20-40% Better Chance of Getting Magic Items @dictVariable",
+                                                "tooltipString": "@dictGold Gheed's Fortune \n@cm3\n\n@dictBlue 80-160% Extra Gold from Monsters \n@dictBlue Reduces all Vendor Prices 10-15% \n@dictBlue 20-40% Better Chance of Getting Magic Items ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -251,7 +251,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold Annihilus \n@cm1\n\n@dictBlue +1 to All Skills\n+10-20 to all Attributes @dictVariable\n@dictBlue All Resistances +10-20 @dictVariable\n@dictBlue +5-10% to Experience Gained @dictVariable",
+                                                "tooltipString": "@dictGold Annihilus \n@cm1\n\n@dictBlue +1 to All Skills\n+10-20 to all Attributes \n@dictBlue All Resistances +10-20 \n@dictBlue +5-10% to Experience Gained ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -388,7 +388,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold Hellfire Torch \n@cm2\n\n@dictBlue 5% Chance to cast level 10 Firestorm on striking\n+3 to Random Class Skill Levels\n+10-20 to all Attributes @dictVariable\n@dictBlue All Resistances +10-20 @dictVariable\n@dictBlue +8 to Light Radius\nLevel 30 Hydra (10 Charges)",
+                                                "tooltipString": "@dictGold Hellfire Torch \n@cm2\n\n@dictBlue 5% Chance to cast level 10 Firestorm on striking\n+3 to Random Class Skill Levels\n+10-20 to all Attributes \n@dictBlue All Resistances +10-20 \n@dictBlue +8 to Light Radius\nLevel 30 Hydra (10 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -525,7 +525,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold The Black Cleft \n@cm3\n\n@dictBlue Monster Magic Immunity is Sundered\nMagic Resist -(45-65)% @dictVariable",
+                                                "tooltipString": "@dictGold The Black Cleft \n@cm3\n\n@dictBlue Monster Magic Immunity is Sundered\nMagic Resist -(45-65)% ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -689,7 +689,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold The Bone Break \n@cm3\n\n@dictBlue Monster Physical Immunity is Sundered\nPhysical Damage Received Increased by 10-30% @dictVariable",
+                                                "tooltipString": "@dictGold The Bone Break \n@cm3\n\n@dictBlue Monster Physical Immunity is Sundered\nPhysical Damage Received Increased by 10-30% ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -853,7 +853,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Flame Rift \n@cm3\n\n@dictBlue Monster Cold Immunity is Sundered\nCold Resist -(70-90)% @dictVariable",
+                                                "tooltipString": "@dictGold Flame Rift \n@cm3\n\n@dictBlue Monster Cold Immunity is Sundered\nCold Resist -(70-90)% ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1017,7 +1017,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold The Cold Rupture \n@cm3\n\n@dictBlue Monster Lightning Immunity is Sundered\nLightning Resist -(70-90)% @dictVariable",
+                                                "tooltipString": "@dictGold The Cold Rupture \n@cm3\n\n@dictBlue Monster Lightning Immunity is Sundered\nLightning Resist -(70-90)% ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1181,7 +1181,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold The Crack of Heavens \n@cm3\n\n@dictBlue Monster Fire Immunity is Sundered\nFire Resist -(70-90)% @dictVariable",
+                                                "tooltipString": "@dictGold The Crack of Heavens \n@cm3\n\n@dictBlue Monster Fire Immunity is Sundered\nFire Resist -(70-90)% ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1345,7 +1345,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold The Rotting Fissure \n@cm3\n\n@dictBlue Monster Poison Immunity is Sundered\nPoison Resist -(70-90)% @dictVariable",
+                                                "tooltipString": "@dictGold The Rotting Fissure \n@cm3\n\n@dictBlue Monster Poison Immunity is Sundered\nPoison Resist -(70-90)% ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1527,7 +1527,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 29 Blaze when you Level-Up\nAdds 17-45 fire damage\n+3-5% to Fire Skill Damage @dictVariable\n@dictBlue -(3-5)% to Enemy Fire Resistance @dictVariable",
+                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 29 Blaze when you Level-Up\nAdds 17-45 fire damage\n+3-5% to Fire Skill Damage \n@dictBlue -(3-5)% to Enemy Fire Resistance ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1639,7 +1639,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 31 Meteor when you Die\nAdds 17-45 fire damage\n+3-5% to Fire Skill Damage @dictVariable\n@dictBlue -(3-5)% to Enemy Fire Resistance @dictVariable",
+                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 31 Meteor when you Die\nAdds 17-45 fire damage\n+3-5% to Fire Skill Damage \n@dictBlue -(3-5)% to Enemy Fire Resistance ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1751,7 +1751,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 43 Frost Nova when you Level-Up\nAdds 24-38 cold damage\n+3-5% to Cold Skill Damage @dictVariable\n@dictBlue -(3-5)% to Enemy Cold Resistance @dictVariable",
+                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 43 Frost Nova when you Level-Up\nAdds 24-38 cold damage\n+3-5% to Cold Skill Damage \n@dictBlue -(3-5)% to Enemy Cold Resistance ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1863,7 +1863,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 37 Blizzard when you Die\nAdds 24-38 cold damage\n+3-5% to Cold Skill Damage @dictVariable\n@dictBlue -(3-5)% to Enemy Cold Resistance @dictVariable",
+                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 37 Blizzard when you Die\nAdds 24-38 cold damage\n+3-5% to Cold Skill Damage \n@dictBlue -(3-5)% to Enemy Cold Resistance ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1975,7 +1975,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 41 Nova when you Level-Up\nAdds 1-74 lightning damage\n+3-5% to Lightning Skill Damage @dictVariable\n@dictBlue -(3-5)% to Enemy Lightning Resistance @dictVariable",
+                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 41 Nova when you Level-Up\nAdds 1-74 lightning damage\n+3-5% to Lightning Skill Damage \n@dictBlue -(3-5)% to Enemy Lightning Resistance ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2087,7 +2087,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 47 Chain Lightning when you Die\nAdds 1-74 lightning damage\n+3-5% to Lightning Skill Damage @dictVariable\n@dictBlue -(3-5)% to Enemy Lightning Resistance @dictVariable",
+                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 47 Chain Lightning when you Die\nAdds 1-74 lightning damage\n+3-5% to Lightning Skill Damage \n@dictBlue -(3-5)% to Enemy Lightning Resistance ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2199,7 +2199,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 23 Venom when you Level-Up\n+37 poison damage over 2 seconds\n+3-5% to Poison Skill Damage @dictVariable\n@dictBlue -(3-5)% to Enemy Poison Resistance @dictVariable",
+                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 23 Venom when you Level-Up\n+37 poison damage over 2 seconds\n+3-5% to Poison Skill Damage \n@dictBlue -(3-5)% to Enemy Poison Resistance ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2311,7 +2311,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x1",
-                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 51 Poison Nova when you Die\n+37 poison damage over 2 seconds\n+3-5% to Poison Skill Damage @dictVariable\n@dictBlue -(3-5)% to Enemy Poison Resistance @dictVariable",
+                                                "tooltipString": "@dictGold Rainbow Facet \n@jew\n\n@dictBlue 100% Chance to cast level 51 Poison Nova when you Die\n+37 poison damage over 2 seconds\n+3-5% to Poison Skill Damage \n@dictBlue -(3-5)% to Enemy Poison Resistance ",
                                                 "pressedFrame": 0
                                             }
                                         },

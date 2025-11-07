@@ -139,7 +139,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold Pelta Lunata \n@buc\n\n@dictBlue +40% Faster Block Rate\n20% Increased Chance of Blocking\n+30-40% Enhanced Defense @dictVariable\n@dictBlue +30 Defense\n+2 to Strength\n+10 to Vitality\n+10 to Energy",
+                                                "tooltipString": "@dictGold Pelta Lunata \n@buc\n\n@dictBlue +40% Faster Block Rate\n20% Increased Chance of Blocking\n+30-40% Enhanced Defense \n@dictBlue +30 Defense\n+2 to Strength\n+10 to Vitality\n+10 to Energy",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -276,7 +276,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold Umbral Disk \n@sml\n\n@dictBlue 30% Increased Chance of Blocking\nHit Blinds Target\n+40-50% Enhanced Defense @dictVariable\n@dictBlue +30 Defense\n+10 to Dexterity\n+20 to Life\n-2 to Light Radius",
+                                                "tooltipString": "@dictGold Umbral Disk \n@sml\n\n@dictBlue 30% Increased Chance of Blocking\nHit Blinds Target\n+40-50% Enhanced Defense \n@dictBlue +30 Defense\n+10 to Dexterity\n+20 to Life\n-2 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -413,7 +413,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Stormguild \n@lrg\n\n@dictBlue 30% Increased Chance of Blocking\nAdds 1-6 lightning damage\n+50-60% Enhanced Defense @dictVariable\n@dictBlue +30 Defense\nLightning Resist +25%\nMagic Damage Reduced by 1\nAttacker Takes Lightning Damage of 3",
+                                                "tooltipString": "@dictGold Stormguild \n@lrg\n\n@dictBlue 30% Increased Chance of Blocking\nAdds 1-6 lightning damage\n+50-60% Enhanced Defense \n@dictBlue +30 Defense\nLightning Resist +25%\nMagic Damage Reduced by 1\nAttacker Takes Lightning Damage of 3",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -550,7 +550,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Steelclash \n@kit\n\n@dictBlue +1 to Paladin Skill Levels\n+20% Faster Block Rate\n25% Increased Chance of Blocking\n+60-100% Enhanced Defense @dictVariable\n@dictBlue +20 Defense\nAll Resistances +15\nDamage Reduced by 3\n+3 to Light Radius",
+                                                "tooltipString": "@dictGold Steelclash \n@kit\n\n@dictBlue +1 to Paladin Skill Levels\n+20% Faster Block Rate\n25% Increased Chance of Blocking\n+60-100% Enhanced Defense \n@dictBlue +20 Defense\nAll Resistances +15\nDamage Reduced by 3\n+3 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -687,7 +687,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Swordback Hold \n@spk\n\n@dictBlue 20% Increased Chance of Blocking\n+50% Chance of Open Wounds\n+30-60% Enhanced Defense @dictVariable\n@dictBlue +10 Defense\nAttacker Takes Damage of 10",
+                                                "tooltipString": "@dictGold Swordback Hold \n@spk\n\n@dictBlue 20% Increased Chance of Blocking\n+50% Chance of Open Wounds\n+30-60% Enhanced Defense \n@dictBlue +10 Defense\nAttacker Takes Damage of 10",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -824,7 +824,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Bverrit Keep \n@tow\n\n@dictBlue 10% Increased Chance of Blocking\n+80-120% Enhanced Defense @dictVariable\n@dictBlue +30 Defense\n+5 to Strength\nFire Resist +75%\nMagic Damage Reduced by 5",
+                                                "tooltipString": "@dictGold Bverrit Keep \n@tow\n\n@dictBlue 10% Increased Chance of Blocking\n+80-120% Enhanced Defense \n@dictBlue +30 Defense\n+5 to Strength\nFire Resist +75%\nMagic Damage Reduced by 5",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -961,7 +961,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Wall of the Eyeless \n@bsh\n\n@dictBlue +20% Faster Cast Rate\n3% Mana stolen per hit\n+30-40% Enhanced Defense @dictVariable\n@dictBlue +10 Defense\nPoison Resist +20%\n+5 Mana after each Kill",
+                                                "tooltipString": "@dictGold Wall of the Eyeless \n@bsh\n\n@dictBlue +20% Faster Cast Rate\n3% Mana stolen per hit\n+30-40% Enhanced Defense \n@dictBlue +10 Defense\nPoison Resist +20%\n+5 Mana after each Kill",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1098,7 +1098,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold The Ward \n@gts\n\n@dictBlue 10% Increased Chance of Blocking\n+100% Enhanced Defense\n+40 Defense\n+10 to Strength\nAll Resistances +30-50 @dictVariable\n@dictBlue Magic Damage Reduced by 2",
+                                                "tooltipString": "@dictGold The Ward \n@gts\n\n@dictBlue 10% Increased Chance of Blocking\n+100% Enhanced Defense\n+40 Defense\n+10 to Strength\nAll Resistances +30-50 \n@dictBlue Magic Damage Reduced by 2",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1235,7 +1235,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold Viscerataunt \n@xuc\n\n@dictBlue +1 to Sorceress Skill Levels\n+30% Faster Block Rate\n30% Increased Chance of Blocking\n+100-150% Enhanced Defense @dictVariable\n@dictBlue Attacker Takes Lightning Damage of 10",
+                                                "tooltipString": "@dictGold Viscerataunt \n@xuc\n\n@dictBlue +1 to Sorceress Skill Levels\n+30% Faster Block Rate\n30% Increased Chance of Blocking\n+100-150% Enhanced Defense \n@dictBlue Attacker Takes Lightning Damage of 10",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1372,7 +1372,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold Moser's Blessed Circle \n@xml\n\n@dictBlue +30% Faster Block Rate\n25% Increased Chance of Blocking\n+180-220% Enhanced Defense @dictVariable\n@dictBlue All Resistances +25\nSocketed (2)",
+                                                "tooltipString": "@dictGold Moser's Blessed Circle \n@xml\n\n@dictBlue +30% Faster Block Rate\n25% Increased Chance of Blocking\n+180-220% Enhanced Defense \n@dictBlue All Resistances +25\nSocketed (2)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1509,7 +1509,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Stormchaser \n@xrg\n\n@dictBlue 4% Chance to cast level 5 Tornado when struck\n4% Chance to cast level 6 Blizzard when struck\n+10% Faster Block Rate\n20% Increased Chance of Blocking\n+150 to Attack Rating\nAdds 1-60 lightning damage\n+160-220% Enhanced Defense @dictVariable\n@dictBlue Lightning Resist +50%\nHalf Freeze Duration",
+                                                "tooltipString": "@dictGold Stormchaser \n@xrg\n\n@dictBlue 4% Chance to cast level 5 Tornado when struck\n4% Chance to cast level 6 Blizzard when struck\n+10% Faster Block Rate\n20% Increased Chance of Blocking\n+150 to Attack Rating\nAdds 1-60 lightning damage\n+160-220% Enhanced Defense \n@dictBlue Lightning Resist +50%\nHalf Freeze Duration",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1673,7 +1673,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Tiamat's Rebuke \n@xit\n\n@dictBlue 3% Chance to cast level 6 Hydra when struck\n5% Chance to cast level 7 Nova when struck\n5% Chance to cast level 9 Frost Nova when struck\nAdds 35-95 fire damage\nAdds 1-120 lightning damage\nAdds 27-53 cold damage\n+140-200% Enhanced Defense @dictVariable\n@dictBlue All Resistances +25-35 @dictVariable",
+                                                "tooltipString": "@dictGold Tiamat's Rebuke \n@xit\n\n@dictBlue 3% Chance to cast level 6 Hydra when struck\n5% Chance to cast level 7 Nova when struck\n5% Chance to cast level 9 Frost Nova when struck\nAdds 35-95 fire damage\nAdds 1-120 lightning damage\nAdds 27-53 cold damage\n+140-200% Enhanced Defense \n@dictBlue All Resistances +25-35 ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1837,7 +1837,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Lance Guard \n@xpk\n\n@dictBlue +30% Faster Hit Recovery\n+20% Deadly Strike\n+70-120% Enhanced Defense @dictVariable\n@dictBlue +50 to Life\nAttacker Takes Damage of 47\n+15% Damage Taken Goes To Mana",
+                                                "tooltipString": "@dictGold Lance Guard \n@xpk\n\n@dictBlue +30% Faster Hit Recovery\n+20% Deadly Strike\n+70-120% Enhanced Defense \n@dictBlue +50 to Life\nAttacker Takes Damage of 47\n+15% Damage Taken Goes To Mana",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1974,7 +1974,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Gerke's Sanctuary \n@xow\n\n@dictBlue 30% Increased Chance of Blocking\n+180-240% Enhanced Defense @dictVariable\n@dictBlue Reflensh Life +15\nAll Resistances +20-30 @dictVariable\n@dictBlue Damage Reduced by 11-16 @dictVariable\n@dictBlue Magic Damage Reduced by 14-18 @dictVariable",
+                                                "tooltipString": "@dictGold Gerke's Sanctuary \n@xow\n\n@dictBlue 30% Increased Chance of Blocking\n+180-240% Enhanced Defense \n@dictBlue Reflensh Life +15\nAll Resistances +20-30 \n@dictBlue Damage Reduced by 11-16 \n@dictBlue Magic Damage Reduced by 14-18 ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2138,7 +2138,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Lidless Wall \n@xsh\n\n@dictBlue +1 to All Skills\n+20% Faster Cast Rate\n+80-130% Enhanced Defense @dictVariable\n@dictBlue +10 to Energy\nIncrease Maximum Mana 10%\n+3-5 Mana after each Kill @dictVariable\n@dictBlue +1 to Light Radius",
+                                                "tooltipString": "@dictGold Lidless Wall \n@xsh\n\n@dictBlue +1 to All Skills\n+20% Faster Cast Rate\n+80-130% Enhanced Defense \n@dictBlue +10 to Energy\nIncrease Maximum Mana 10%\n+3-5 Mana after each Kill \n@dictBlue +1 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2302,7 +2302,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold Radament's Sphere \n@xts\n\n@dictBlue 5% Chance to cast level 5 Poison Nova when struck\n+20% Faster Block Rate\n20% Increased Chance of Blocking\n+80 poison damage over 4 seconds\n+160-200% Enhanced Defense @dictVariable\n@dictBlue Poison Resist +75%\nLevel 6 Poison Explosion (40 Charges)",
+                                                "tooltipString": "@dictGold Radament's Sphere \n@xts\n\n@dictBlue 5% Chance to cast level 5 Poison Nova when struck\n+20% Faster Block Rate\n20% Increased Chance of Blocking\n+80 poison damage over 4 seconds\n+160-200% Enhanced Defense \n@dictBlue Poison Resist +75%\nLevel 6 Poison Explosion (40 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2439,7 +2439,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold Blackoak Shield \n@uml\n\n@dictBlue 4% Chance to cast level 5 Weaken when struck\n+50% Faster Block Rate\n+160-200% Enhanced Defense @dictVariable\n@dictBlue +0-49 to Dexterity (Based on Character Level)\n+1-123 to Life (Based on Character Level)\n+0-61 Absorbs Cold Damage (Based on Character Level)\nHalf Freeze Duration",
+                                                "tooltipString": "@dictGold Blackoak Shield \n@uml\n\n@dictBlue 4% Chance to cast level 5 Weaken when struck\n+50% Faster Block Rate\n+160-200% Enhanced Defense \n@dictBlue +0-49 to Dexterity (Based on Character Level)\n+1-123 to Life (Based on Character Level)\n+0-61 Absorbs Cold Damage (Based on Character Level)\nHalf Freeze Duration",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2713,7 +2713,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Spike Thorn \n@upk\n\n@dictBlue +30% Faster Hit Recovery\n+120-150% Enhanced Defense @dictVariable\n@dictBlue Physical Damage Received Reduced by 15-20% @dictVariable\n@dictBlue Attacker Takes Damage of 1-136 (Based on Character Level)\nSocketed (1)",
+                                                "tooltipString": "@dictGold Spike Thorn \n@upk\n\n@dictBlue +30% Faster Hit Recovery\n+120-150% Enhanced Defense \n@dictBlue Physical Damage Received Reduced by 15-20% \n@dictBlue Attacker Takes Damage of 1-136 (Based on Character Level)\nSocketed (1)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2877,7 +2877,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Medusa's Gaze \n@aegis\n\n@dictBlue 10% Chance to cast level 7 Lower Resist when struck\n100% Chance to cast level 44 Nova when you Die\n5-9% Life stolen per hit @dictVariable\n@dictBlue Slows Target by 20%\n+150-180% Enhanced Defense @dictVariable\n@dictBlue Cold Resist +40-80% @dictVariable",
+                                                "tooltipString": "@dictGold Medusa's Gaze \n@aegis\n\n@dictBlue 10% Chance to cast level 7 Lower Resist when struck\n100% Chance to cast level 44 Nova when you Die\n5-9% Life stolen per hit \n@dictBlue Slows Target by 20%\n+150-180% Enhanced Defense \n@dictBlue Cold Resist +40-80% ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3041,7 +3041,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Head Hunter's Glory \n@ush\n\n@dictBlue +320-420 Defense @dictVariable\n@dictBlue +300-350 Defense vs. Missile @dictVariable\n@dictBlue Fire Resist +20-30% @dictVariable\n@dictBlue Poison Resist +30-40% @dictVariable\n@dictBlue +5-7 Life after each Kill @dictVariable\n@dictBlue Socketed (1-3) @dictVariable",
+                                                "tooltipString": "@dictGold Head Hunter's Glory \n@ush\n\n@dictBlue +320-420 Defense \n@dictBlue +300-350 Defense vs. Missile \n@dictBlue Fire Resist +20-30% \n@dictBlue Poison Resist +30-40% \n@dictBlue +5-7 Life after each Kill \n@dictBlue Socketed (1-3) ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3178,7 +3178,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold Spirit Ward \n@ward\n\n@dictBlue 5% Chance to cast level 8 Fade when struck\n+25% Faster Block Rate\n20-30% Increased Chance of Blocking @dictVariable\n@dictBlue +130-180% Enhanced Defense @dictVariable\n@dictBlue All Resistances +30-40 @dictVariable\n@dictBlue +6-11 Cold Absorb @dictVariable",
+                                                "tooltipString": "@dictGold Spirit Ward \n@ward\n\n@dictBlue 5% Chance to cast level 8 Fade when struck\n+25% Faster Block Rate\n20-30% Increased Chance of Blocking \n@dictBlue +130-180% Enhanced Defense \n@dictBlue All Resistances +30-40 \n@dictBlue +6-11 Cold Absorb ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3360,7 +3360,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold Herald of Zakarum \n@pa9\n\n@dictBlue +2 to Combat Skills (Paladin Only)\n+2 to Paladin Skill Levels\n+30% Faster Block Rate\n30% Increased Chance of Blocking\n20% Bonus to Attack Rating\n+150-200% Enhanced Defense @dictVariable\n@dictBlue +20 to Strength\n+20 to Vitality\nAll Resistances +50",
+                                                "tooltipString": "@dictGold Herald of Zakarum \n@pa9\n\n@dictBlue +2 to Combat Skills (Paladin Only)\n+2 to Paladin Skill Levels\n+30% Faster Block Rate\n30% Increased Chance of Blocking\n20% Bonus to Attack Rating\n+150-200% Enhanced Defense \n@dictBlue +20 to Strength\n+20 to Vitality\nAll Resistances +50",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3497,7 +3497,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold Alma Negra \n@pac\n\n@dictBlue +1-2 to Paladin Skill Levels @dictVariable\n@dictBlue +30% Faster Block Rate\n20% Increased Chance of Blocking\n+40-75% Enhanced Damage @dictVariable\n@dictBlue 40-75% Bonus to Attack Rating @dictVariable\n@dictBlue +180-210% Enhanced Defense @dictVariable\n@dictBlue Magic Damage Reduced by 5-9 @dictVariable",
+                                                "tooltipString": "@dictGold Alma Negra \n@pac\n\n@dictBlue +1-2 to Paladin Skill Levels \n@dictBlue +30% Faster Block Rate\n20% Increased Chance of Blocking\n+40-75% Enhanced Damage \n@dictBlue 40-75% Bonus to Attack Rating \n@dictBlue +180-210% Enhanced Defense \n@dictBlue Magic Damage Reduced by 5-9 ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3634,7 +3634,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold Dragonscale \n@pae\n\n@dictBlue Adds 211-371 fire damage\n+15% to Fire Skill Damage\n+10 Hydra\n+170-200% Enhanced Defense @dictVariable\n@dictBlue +15-25 to Strength @dictVariable\n@dictBlue +5% to Maximum Fire Resist\nFire Absorb +10-20% @dictVariable",
+                                                "tooltipString": "@dictGold Dragonscale \n@pae\n\n@dictBlue Adds 211-371 fire damage\n+15% to Fire Skill Damage\n+10 Hydra\n+170-200% Enhanced Defense \n@dictBlue +15-25 to Strength \n@dictBlue +5% to Maximum Fire Resist\nFire Absorb +10-20% ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3789,7 +3789,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold Homunculus \n@nea\n\n@dictBlue +2 to Curses (Necromancer Only)\n+2 to Necromancer Skill Levels\n+30% Faster Block Rate\n40% Increased Chance of Blocking\n+150-200% Enhanced Defense @dictVariable\n@dictBlue +20 to Energy\nRegenerate Mana 33%\nAll Resistances +40\n+5 Mana after each Kill",
+                                                "tooltipString": "@dictGold Homunculus \n@nea\n\n@dictBlue +2 to Curses (Necromancer Only)\n+2 to Necromancer Skill Levels\n+30% Faster Block Rate\n40% Increased Chance of Blocking\n+150-200% Enhanced Defense \n@dictBlue +20 to Energy\nRegenerate Mana 33%\nAll Resistances +40\n+5 Mana after each Kill",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3926,7 +3926,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold Boneflame \n@nee\n\n@dictBlue 15% Chance to cast level 3 Terror when struck\n+2-3 to Necromancer Skill Levels @dictVariable\n@dictBlue +20% Faster Run/Walk\n+120-150% Enhanced Defense @dictVariable\n@dictBlue All Resistances +20-30 @dictVariable",
+                                                "tooltipString": "@dictGold Boneflame \n@nee\n\n@dictBlue 15% Chance to cast level 3 Terror when struck\n+2-3 to Necromancer Skill Levels \n@dictBlue +20% Faster Run/Walk\n+120-150% Enhanced Defense \n@dictBlue All Resistances +20-30 ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4063,7 +4063,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x2",
-                                                "tooltipString": "@dictGold Darkforce Spawn \n@nef\n\n@dictBlue +1-3 to Summoning Skills (Necromancer Only) @dictVariable\n@dictBlue +1-3 to Poison and Bone Skills (Necromancer Only) @dictVariable\n@dictBlue +1-3 to Curses (Necromancer Only) @dictVariable\n@dictBlue +30% Faster Cast Rate\n+140-180% Enhanced Defense @dictVariable\n@dictBlue Increase Maximum Mana 10%",
+                                                "tooltipString": "@dictGold Darkforce Spawn \n@nef\n\n@dictBlue +1-3 to Summoning Skills (Necromancer Only) \n@dictBlue +1-3 to Poison and Bone Skills (Necromancer Only) \n@dictBlue +1-3 to Curses (Necromancer Only) \n@dictBlue +30% Faster Cast Rate\n+140-180% Enhanced Defense \n@dictBlue Increase Maximum Mana 10%",
                                                 "pressedFrame": 0
                                             }
                                         },

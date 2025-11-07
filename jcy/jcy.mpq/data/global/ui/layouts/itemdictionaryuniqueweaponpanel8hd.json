@@ -114,7 +114,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold Deathbit \n@9tk\n\n@dictBlue +130-180% Enhanced Damage @dictVariable\n@dictBlue +200-450 to Attack Rating @dictVariable\n@dictBlue 4-6% Mana stolen per hit @dictVariable\n@dictBlue 7-9% Life stolen per hit @dictVariable\n@dictBlue +40% Deadly Strike\nReplenishes quantity",
+                                                "tooltipString": "@dictGold Deathbit \n@9tk\n\n@dictBlue +130-180% Enhanced Damage \n@dictBlue +200-450 to Attack Rating \n@dictBlue 4-6% Mana stolen per hit \n@dictBlue 7-9% Life stolen per hit \n@dictBlue +40% Deadly Strike\nReplenishes quantity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -251,7 +251,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold Warshrike \n@7bk\n\n@dictBlue 25% Chance to cast level 9 Nova on striking\n+30% Increased Attack Speed\n+50% Piercing Attack\n+200-250% Enhanced Damage @dictVariable\n@dictBlue +50% Deadly Strike\nReplenishes quantity",
+                                                "tooltipString": "@dictGold Warshrike \n@7bk\n\n@dictBlue 25% Chance to cast level 9 Nova on striking\n+30% Increased Attack Speed\n+50% Piercing Attack\n+200-250% Enhanced Damage \n@dictBlue +50% Deadly Strike\nReplenishes quantity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -433,7 +433,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold The Scalper \n@9ta\n\n@dictBlue +20% Increased Attack Speed\n+150-200% Enhanced Damage @dictVariable\n@dictBlue 25% Bonus to Attack Rating\n4-6% Life stolen per hit @dictVariable\n@dictBlue +33% Chance of Open Wounds\n+4 Mana after each Kill\nReplenishes quantity",
+                                                "tooltipString": "@dictGold The Scalper \n@9ta\n\n@dictBlue +20% Increased Attack Speed\n+150-200% Enhanced Damage \n@dictBlue 25% Bonus to Attack Rating\n4-6% Life stolen per hit \n@dictBlue +33% Chance of Open Wounds\n+4 Mana after each Kill\nReplenishes quantity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -570,7 +570,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold Gimmershred \n@7ta\n\n@dictBlue +30% Increased Attack Speed\n+160-210% Enhanced Damage @dictVariable\n@dictBlue Adds 218-483 fire damage\nAdds 29-501 lightning damage\nAdds 176-397 cold damage\nIncreased Stack Size",
+                                                "tooltipString": "@dictGold Gimmershred \n@7ta\n\n@dictBlue +30% Increased Attack Speed\n+160-210% Enhanced Damage \n@dictBlue Adds 218-483 fire damage\nAdds 29-501 lightning damage\nAdds 176-397 cold damage\nIncreased Stack Size",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -707,7 +707,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Lacerator \n@7b8\n\n@dictBlue 33% Chance to cast level 3 Amplify Damage on striking\n+30% Increased Attack Speed\n+150-210% Enhanced Damage @dictVariable\n@dictBlue +33% Chance of Open Wounds\nPrevent Monster Heal\nHit Causes Monster to Flee +50%\nReplenishes quantity",
+                                                "tooltipString": "@dictGold Lacerator \n@7b8\n\n@dictBlue 33% Chance to cast level 3 Amplify Damage on striking\n+30% Increased Attack Speed\n+150-210% Enhanced Damage \n@dictBlue +33% Chance of Open Wounds\nPrevent Monster Heal\nHit Causes Monster to Flee +50%\nReplenishes quantity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -889,7 +889,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Demon's Arch \n@7s7\n\n@dictBlue +30% Increased Attack Speed\n+160-210% Enhanced Damage @dictVariable\n@dictBlue Adds 232-323 fire damage\nAdds 23-333 lightning damage\n6-12% Life stolen per hit @dictVariable\n@dictBlue Replenishes quantity",
+                                                "tooltipString": "@dictGold Demon's Arch \n@7s7\n\n@dictBlue +30% Increased Attack Speed\n+160-210% Enhanced Damage \n@dictBlue Adds 232-323 fire damage\nAdds 23-333 lightning damage\n6-12% Life stolen per hit \n@dictBlue Replenishes quantity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1053,7 +1053,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold Wraith Flight \n@7gl\n\n@dictBlue +150-190% Enhanced Damage @dictVariable\n@dictBlue 9-13% Life stolen per hit @dictVariable\n@dictBlue +15 Mana after each Kill\nReplenishes quantity\nEthereal (Cannot be Repaired)",
+                                                "tooltipString": "@dictGold Wraith Flight \n@7gl\n\n@dictBlue +150-190% Enhanced Damage \n@dictBlue 9-13% Life stolen per hit \n@dictBlue +15 Mana after each Kill\nReplenishes quantity\nEthereal (Cannot be Repaired)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1217,7 +1217,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold Gargoyle's Bite \n@7ts\n\n@dictBlue +180-230% Enhanced Damage @dictVariable\n@dictBlue +293 poison damage over 10 seconds\n9-15% Life stolen per hit @dictVariable\n@dictBlue Level 11 Plague Javelin (60 Charges)\nReplenishes quantity",
+                                                "tooltipString": "@dictGold Gargoyle's Bite \n@7ts\n\n@dictBlue +180-230% Enhanced Damage \n@dictBlue +293 poison damage over 10 seconds\n9-15% Life stolen per hit \n@dictBlue Level 11 Plague Javelin (60 Charges)\nReplenishes quantity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1399,7 +1399,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Titan's Revenge \n@ama\n\n@dictBlue +2 to Javelin and Spear Skills (Amazon Only)\n+2 to Amazon Skill Levels\n+30% Faster Run/Walk\n+150-200% Enhanced Damage @dictVariable\n@dictBlue Adds 25-50 damage\n5-9% Life stolen per hit @dictVariable\n@dictBlue +20 to Strength\n+20 to Dexterity\nIncreased Stack Size\nReplenishes quantity",
+                                                "tooltipString": "@dictGold Titan's Revenge \n@ama\n\n@dictBlue +2 to Javelin and Spear Skills (Amazon Only)\n+2 to Amazon Skill Levels\n+30% Faster Run/Walk\n+150-200% Enhanced Damage \n@dictBlue Adds 25-50 damage\n5-9% Life stolen per hit \n@dictBlue +20 to Strength\n+20 to Dexterity\nIncreased Stack Size\nReplenishes quantity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1536,7 +1536,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Thunderstroke \n@amf\n\n@dictBlue 20% Chance to cast level 14 Lightning on striking\n+2-4 to Javelin and Spear Skills (Amazon Only) @dictVariable\n@dictBlue +15% Increased Attack Speed\n+150-200% Enhanced Damage @dictVariable\n@dictBlue Adds 1-511 lightning damage\n-15% to Enemy Lightning Resistance\n+3 to Lightning Bolt (Amazon Only)",
+                                                "tooltipString": "@dictGold Thunderstroke \n@amf\n\n@dictBlue 20% Chance to cast level 14 Lightning on striking\n+2-4 to Javelin and Spear Skills (Amazon Only) \n@dictBlue +15% Increased Attack Speed\n+150-200% Enhanced Damage \n@dictBlue Adds 1-511 lightning damage\n-15% to Enemy Lightning Resistance\n+3 to Lightning Bolt (Amazon Only)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1718,7 +1718,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Bartuc's Chop Chop \n@9tw\n\n@dictBlue +1 to Martial Arts (Assassin Only)\n+2 to Assassin Skill Levels\n+30% Faster Hit Recovery\n+150-200% Enhanced Damage @dictVariable\n@dictBlue Adds 25-50 damage\n20% Bonus to Attack Rating\n5-9% Life stolen per hit @dictVariable\n@dictBlue +20 to Strength\n+20 to Dexterity",
+                                                "tooltipString": "@dictGold Bartuc's Chop Chop \n@9tw\n\n@dictBlue +1 to Martial Arts (Assassin Only)\n+2 to Assassin Skill Levels\n+30% Faster Hit Recovery\n+150-200% Enhanced Damage \n@dictBlue Adds 25-50 damage\n20% Bonus to Attack Rating\n5-9% Life stolen per hit \n@dictBlue +20 to Strength\n+20 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1855,7 +1855,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Jade Talon \n@7wb\n\n@dictBlue +1-2 to Martial Arts (Assassin Only) @dictVariable\n@dictBlue +1-2 to Shadow Disciplines (Assassin Only) @dictVariable\n@dictBlue +30% Faster Hit Recovery\n+190-240% Enhanced Damage @dictVariable\n@dictBlue 10-15% Mana stolen per hit @dictVariable\n@dictBlue All Resistances +40-50 @dictVariable",
+                                                "tooltipString": "@dictGold Jade Talon \n@7wb\n\n@dictBlue +1-2 to Martial Arts (Assassin Only) \n@dictBlue +1-2 to Shadow Disciplines (Assassin Only) \n@dictBlue +30% Faster Hit Recovery\n+190-240% Enhanced Damage \n@dictBlue 10-15% Mana stolen per hit \n@dictBlue All Resistances +40-50 ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2019,7 +2019,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Shadow Killer \n@7cs\n\n@dictBlue Indestructible\n33% Chance to cast level 8 Frost Nova on striking\n+170-220% Enhanced Damage @dictVariable\n@dictBlue -25% Target Defense\nFreezes Target +2\n+10-15 Mana after each Kill @dictVariable\n@dictBlue Ethereal (Cannot be Repaired)",
+                                                "tooltipString": "@dictGold Shadow Killer \n@7cs\n\n@dictBlue Indestructible\n33% Chance to cast level 8 Frost Nova on striking\n+170-220% Enhanced Damage \n@dictBlue -25% Target Defense\nFreezes Target +2\n+10-15 Mana after each Kill \n@dictBlue Ethereal (Cannot be Repaired)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2156,7 +2156,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Firelizard's Talons \n@7lw\n\n@dictBlue +1-3 to Martial Arts (Assassin Only) @dictVariable\n@dictBlue +15% Increased Attack Speed\n+200-270% Enhanced Damage @dictVariable\n@dictBlue Adds 236-480 fire damage\n+1-2 to Wake of Inferno (Assassin Only) @dictVariable\n@dictBlue +1-2 to Wake of Fire (Assassin Only) @dictVariable\n@dictBlue Fire Resist +40-70% @dictVariable",
+                                                "tooltipString": "@dictGold Firelizard's Talons \n@7lw\n\n@dictBlue +1-3 to Martial Arts (Assassin Only) \n@dictBlue +15% Increased Attack Speed\n+200-270% Enhanced Damage \n@dictBlue Adds 236-480 fire damage\n+1-2 to Wake of Inferno (Assassin Only) \n@dictBlue +1-2 to Wake of Fire (Assassin Only) \n@dictBlue Fire Resist +40-70% ",
                                                 "pressedFrame": 0
                                             }
                                         },

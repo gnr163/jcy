@@ -32,7 +32,7 @@ APP_NAME = "jcy控制器"
 APP_VERSION = "v1.2.8"
 
 # 发布日期
-APP_DATE = "20251102"
+APP_DATE = "20251107"
 
 # 控制器全称
 APP_FULL_NAME = f"{APP_NAME}_{APP_VERSION}"

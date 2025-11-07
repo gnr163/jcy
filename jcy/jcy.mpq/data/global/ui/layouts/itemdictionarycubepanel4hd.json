@@ -554,7 +554,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictAllResistances +16-20% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictAllResistances +16-20% \n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -628,7 +628,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictPoisonResist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictPoisonResist +21-30% \n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -702,7 +702,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictFireResist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictFireResist +21-30% \n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -776,7 +776,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictLightningResist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictLightningResist +21-30% \n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -850,7 +850,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictColdResist +21-30% @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictColdResist +21-30% \n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -924,7 +924,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictFixedSuffix@dictBlue\n@dictSwordOfTheLeechModifiers @dictVariable\n\n@dictWhite@dictItemLevel: 30",
+                                                "tooltipString": "@dictFixedSuffix@dictBlue\n@dictSwordOfTheLeechModifiers \n\n@dictWhite@dictItemLevel: 30",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -998,7 +998,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictFixedSuffix@dictBlue\n@dictShieldofSpikesModifiers @dictVariable\n\n@dictWhite@dictItemLevel: 30",
+                                                "tooltipString": "@dictFixedSuffix@dictBlue\n@dictShieldofSpikesModifiers \n\n@dictWhite@dictItemLevel: 30",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1072,7 +1072,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictSavagePolearmModifiers @dictVariable\n\n@dictWhite@dictItemLevel: 50",
+                                                "tooltipString": "@dictFixedPrefix@dictBlue\n@dictSavagePolearmModifiers \n\n@dictWhite@dictItemLevel: 50",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1146,7 +1146,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictBlue @dictClassSocket (1-2) @dictVariable\n\n@dictWhite@dictItemLevel: 25",
+                                                "tooltipString": "@dictBlue @dictClassSocket (1-2) \n\n@dictWhite@dictItemLevel: 25",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1220,7 +1220,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictBlue @dictClassSocket (1-2) @dictVariable\n\n@dictWhite@dictItemLevel: 30",
+                                                "tooltipString": "@dictBlue @dictClassSocket (1-2) \n\n@dictWhite@dictItemLevel: 30",
                                                 "pressedFrame": 0
                                             }
                                         }
@@ -1294,7 +1294,7 @@
                                                     "scale": 0.6
                                                 },
                                                 "filename": "$DictionaryOptionScrollImage",
-                                                "tooltipString": "@dictBlue @dictClassSocket (1-2) @dictVariable\n\n@dictWhite@dictItemLevel: 30",
+                                                "tooltipString": "@dictBlue @dictClassSocket (1-2) \n\n@dictWhite@dictItemLevel: 30",
                                                 "pressedFrame": 0
                                             }
                                         }

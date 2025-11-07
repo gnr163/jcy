@@ -770,7 +770,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Darkglow \n@rng\n\n@dictBlue +20 to Attack Rating\n+70-100% Enhanced Defense @dictVariable\n@dictBlue +50 Defense vs. Melee\n+5% to Maximum Poison Resist\n+5% to Maximum Cold Resist\n+5% to Maximum Lightning Resist\n+5% to Maximum Fire Resist\nAll Resistances +10\n+3 to Light Radius",
+                                                "tooltipString": "@dictGold Darkglow \n@rng\n\n@dictBlue +20 to Attack Rating\n+70-100% Enhanced Defense \n@dictBlue +50 Defense vs. Melee\n+5% to Maximum Poison Resist\n+5% to Maximum Cold Resist\n+5% to Maximum Lightning Resist\n+5% to Maximum Fire Resist\nAll Resistances +10\n+3 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -934,7 +934,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Hawkmail \n@scl\n\n@dictBlue +10% Faster Run/Walk\n+80-100% Enhanced Defense @dictVariable\n@dictBlue +15% to Maximum Cold Resist\nCold Resist +15%\nCannot Be Frozen",
+                                                "tooltipString": "@dictGold Hawkmail \n@scl\n\n@dictBlue +10% Faster Run/Walk\n+80-100% Enhanced Defense \n@dictBlue +15% to Maximum Cold Resist\nCold Resist +15%\nCannot Be Frozen",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1098,7 +1098,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Sparking Mail \n@chn\n\n@dictBlue Adds 1-20 lightning damage\n+75-85% Enhanced Defense @dictVariable\n@dictBlue Lightning Resist +30%\nAttacker Takes Lightning Damage of 10-14 @dictVariable",
+                                                "tooltipString": "@dictGold Sparking Mail \n@chn\n\n@dictBlue Adds 1-20 lightning damage\n+75-85% Enhanced Defense \n@dictBlue Lightning Resist +30%\nAttacker Takes Lightning Damage of 10-14 ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1262,7 +1262,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Venom Ward \n@brs\n\n@dictBlue +60-100% Enhanced Defense @dictVariable\n@dictBlue +15% to Maximum Poison Resist\nPoison Resist +90%\nPoison Length Reduced by 50%\n+2 to Light Radius",
+                                                "tooltipString": "@dictGold Venom Ward \n@brs\n\n@dictBlue +60-100% Enhanced Defense \n@dictBlue +15% to Maximum Poison Resist\nPoison Resist +90%\nPoison Length Reduced by 50%\n+2 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1426,7 +1426,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Iceblink \n@spl\n\n@dictBlue Freezes Target\n+70-80% Enhanced Defense @dictVariable\n@dictBlue Cold Resist +30%\nMagic Damage Reduced by 1\n+4 to Light Radius",
+                                                "tooltipString": "@dictGold Iceblink \n@spl\n\n@dictBlue Freezes Target\n+70-80% Enhanced Defense \n@dictBlue Cold Resist +30%\nMagic Damage Reduced by 1\n+4 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1590,7 +1590,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Boneflesh \n@plt\n\n@dictBlue +35 to Attack Rating\n5% Life stolen per hit\n+25% Chance of Open Wounds\n+100-120% Enhanced Defense @dictVariable",
+                                                "tooltipString": "@dictGold Boneflesh \n@plt\n\n@dictBlue +35 to Attack Rating\n5% Life stolen per hit\n+25% Chance of Open Wounds\n+100-120% Enhanced Defense ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1754,7 +1754,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Rockfleece \n@fld\n\n@dictBlue +100-130% Enhanced Defense @dictVariable\n@dictBlue +5 to Strength\nPhysical Damage Received Reduced by 10%\nDamage Reduced by 5\nRequirements -10%",
+                                                "tooltipString": "@dictGold Rockfleece \n@fld\n\n@dictBlue +100-130% Enhanced Defense \n@dictBlue +5 to Strength\nPhysical Damage Received Reduced by 10%\nDamage Reduced by 5\nRequirements -10%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2246,7 +2246,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Goldskin \n@ful\n\n@dictBlue +120-150% Enhanced Defense @dictVariable\n@dictBlue All Resistances +35\nAttacker Takes Damage of 10\n100% Extra Gold from Monsters\n+2 to Light Radius",
+                                                "tooltipString": "@dictGold Goldskin \n@ful\n\n@dictBlue +120-150% Enhanced Defense \n@dictBlue All Resistances +35\nAttacker Takes Damage of 10\n100% Extra Gold from Monsters\n+2 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2383,7 +2383,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Silks of the Victor \n@aar\n\n@dictBlue +1 to All Skills\n5% Mana stolen per hit\n+100-120% Enhanced Defense @dictVariable\n@dictBlue +2 to Light Radius",
+                                                "tooltipString": "@dictGold Silks of the Victor \n@aar\n\n@dictBlue +1 to All Skills\n5% Mana stolen per hit\n+100-120% Enhanced Defense \n@dictBlue +2 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2520,7 +2520,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold The Spirit Shroud \n@xui\n\n@dictBlue +1 to All Skills\n+150% Enhanced Defense\nReflensh Life +10\nMagic Damage Reduced by 7-11 @dictVariable\n@dictBlue Cannot Be Frozen",
+                                                "tooltipString": "@dictGold The Spirit Shroud \n@xui\n\n@dictBlue +1 to All Skills\n+150% Enhanced Defense\nReflensh Life +10\nMagic Damage Reduced by 7-11 \n@dictBlue Cannot Be Frozen",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2657,7 +2657,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Skin of the Vipermagi \n@xea\n\n@dictBlue +1 to All Skills\n+30% Faster Cast Rate\n+120% Enhanced Defense\nAll Resistances +20-35 @dictVariable\n@dictBlue Magic Damage Reduced by 9-13 @dictVariable",
+                                                "tooltipString": "@dictGold Skin of the Vipermagi \n@xea\n\n@dictBlue +1 to All Skills\n+30% Faster Cast Rate\n+120% Enhanced Defense\nAll Resistances +20-35 \n@dictBlue Magic Damage Reduced by 9-13 ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2821,7 +2821,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Skin of Flayed One \n@xla\n\n@dictBlue 5-7% Life stolen per hit @dictVariable\n@dictBlue +150-190% Enhanced Defense @dictVariable\n@dictBlue Reflensh Life +15-25 @dictVariable\n@dictBlue Attacker Takes Damage of 15\nRepairs 1 durability in 10 seconds",
+                                                "tooltipString": "@dictGold Skin of Flayed One \n@xla\n\n@dictBlue 5-7% Life stolen per hit \n@dictBlue +150-190% Enhanced Defense \n@dictBlue Reflensh Life +15-25 \n@dictBlue Attacker Takes Damage of 15\nRepairs 1 durability in 10 seconds",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2985,7 +2985,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Iron Pelt \n@xtu\n\n@dictBlue +50-100% Enhanced Defense @dictVariable\n@dictBlue +3-297 Defense (Based on Character Level)\n+25 to Life\nDamage Reduced by 15-20 @dictVariable\n@dictBlue Magic Damage Reduced by 10-16 @dictVariable",
+                                                "tooltipString": "@dictGold Iron Pelt \n@xtu\n\n@dictBlue +50-100% Enhanced Defense \n@dictBlue +3-297 Defense (Based on Character Level)\n+25 to Life\nDamage Reduced by 15-20 \n@dictBlue Magic Damage Reduced by 10-16 ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3149,7 +3149,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Spirit Forge \n@xng\n\n@dictBlue Adds 20-65 fire damage\n+120-160% Enhanced Defense @dictVariable\n@dictBlue +15 to Strength\n+1-123 to Life (Based on Character Level)\nFire Resist +5%\n+4 to Light Radius\nSocketed (2)",
+                                                "tooltipString": "@dictGold Spirit Forge \n@xng\n\n@dictBlue Adds 20-65 fire damage\n+120-160% Enhanced Defense \n@dictBlue +15 to Strength\n+1-123 to Life (Based on Character Level)\nFire Resist +5%\n+4 to Light Radius\nSocketed (2)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3286,7 +3286,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Crow Caw \n@xcl\n\n@dictBlue +15% Increased Attack Speed\n+15% Faster Hit Recovery\n+35% Chance of Open Wounds\n+150-180% Enhanced Defense @dictVariable\n@dictBlue +15 to Dexterity",
+                                                "tooltipString": "@dictGold Crow Caw \n@xcl\n\n@dictBlue +15% Increased Attack Speed\n+15% Faster Hit Recovery\n+35% Chance of Open Wounds\n+150-180% Enhanced Defense \n@dictBlue +15 to Dexterity",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3423,7 +3423,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Shaftstop \n@xhn\n\n@dictBlue +180-220% Enhanced Defense @dictVariable\n@dictBlue +250 Defense vs. Missile\n+60 to Life\nPhysical Damage Received Reduced by 30%",
+                                                "tooltipString": "@dictGold Shaftstop \n@xhn\n\n@dictBlue +180-220% Enhanced Defense \n@dictBlue +250 Defense vs. Missile\n+60 to Life\nPhysical Damage Received Reduced by 30%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3560,7 +3560,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Duriel's Shell \n@xrs\n\n@dictBlue +160-200% Enhanced Defense @dictVariable\n@dictBlue +1-123 Defense (Based on Character Level)\n+15 to Strength\n+1-99 to Life (Based on Character Level)\nCold Resist +50%\nLightning Resist +20%\nFire Resist +20%\nPoison Resist +20%\nCannot Be Frozen",
+                                                "tooltipString": "@dictGold Duriel's Shell \n@xrs\n\n@dictBlue +160-200% Enhanced Defense \n@dictBlue +1-123 Defense (Based on Character Level)\n+15 to Strength\n+1-99 to Life (Based on Character Level)\nCold Resist +50%\nLightning Resist +20%\nFire Resist +20%\nPoison Resist +20%\nCannot Be Frozen",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3724,7 +3724,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Skullder's Ire \n@xpl\n\n@dictBlue +1 to All Skills\n+160-200% Enhanced Defense @dictVariable\n@dictBlue Magic Damage Reduced by 10\n1-123% Better Chance of Getting Magic Items (Based on Character Level)\nRepairs 1 durability in 5 seconds",
+                                                "tooltipString": "@dictGold Skullder's Ire \n@xpl\n\n@dictBlue +1 to All Skills\n+160-200% Enhanced Defense \n@dictBlue Magic Damage Reduced by 10\n1-123% Better Chance of Getting Magic Items (Based on Character Level)\nRepairs 1 durability in 5 seconds",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3861,7 +3861,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Guardian Angel \n@xlt\n\n@dictBlue +1 to Paladin Skill Levels\n+30% Faster Block Rate\n20% Increased Chance of Blocking\n+2-247 to Attack Rating against Demons (Based on Character Level)\n+180-200% Enhanced Defense @dictVariable\n@dictBlue +15% to Maximum Poison Resist\n+15% to Maximum Cold Resist\n+15% to Maximum Lightning Resist\n+15% to Maximum Fire Resist\n+4 to Light Radius",
+                                                "tooltipString": "@dictGold Guardian Angel \n@xlt\n\n@dictBlue +1 to Paladin Skill Levels\n+30% Faster Block Rate\n20% Increased Chance of Blocking\n+2-247 to Attack Rating against Demons (Based on Character Level)\n+180-200% Enhanced Defense \n@dictBlue +15% to Maximum Poison Resist\n+15% to Maximum Cold Resist\n+15% to Maximum Lightning Resist\n+15% to Maximum Fire Resist\n+4 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4025,7 +4025,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Toothrow \n@xld\n\n@dictBlue +40% Chance of Open Wounds\n+160-220% Enhanced Defense @dictVariable\n@dictBlue +40-60 Defense @dictVariable\n@dictBlue +10 to Strength\nFire Resist +15%\nAttacker Takes Damage of 20-40 @dictVariable",
+                                                "tooltipString": "@dictGold Toothrow \n@xld\n\n@dictBlue +40% Chance of Open Wounds\n+160-220% Enhanced Defense \n@dictBlue +40-60 Defense \n@dictBlue +10 to Strength\nFire Resist +15%\nAttacker Takes Damage of 20-40 ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4189,7 +4189,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Atma's Wail \n@xth\n\n@dictBlue +30% Faster Hit Recovery\n+120-160% Enhanced Defense @dictVariable\n@dictBlue +2-198 Defense (Based on Character Level)\n+15 to Dexterity\nReflensh Life +10\nIncrease Maximum Mana 15%\n20% Better Chance of Getting Magic Items",
+                                                "tooltipString": "@dictGold Atma's Wail \n@xth\n\n@dictBlue +30% Faster Hit Recovery\n+120-160% Enhanced Defense \n@dictBlue +2-198 Defense (Based on Character Level)\n+15 to Dexterity\nReflensh Life +10\nIncrease Maximum Mana 15%\n20% Better Chance of Getting Magic Items",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4326,7 +4326,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Que-Hegan's Wisdom \n@xtp\n\n@dictBlue +1 to All Skills\n+20% Faster Cast Rate\n+20% Faster Hit Recovery\n+140-160% Enhanced Defense @dictVariable\n@dictBlue +15 to Energy\nMagic Damage Reduced by 6-10 @dictVariable\n@dictBlue +3 Mana after each Kill",
+                                                "tooltipString": "@dictGold Que-Hegan's Wisdom \n@xtp\n\n@dictBlue +1 to All Skills\n+20% Faster Cast Rate\n+20% Faster Hit Recovery\n+140-160% Enhanced Defense \n@dictBlue +15 to Energy\nMagic Damage Reduced by 6-10 \n@dictBlue +3 Mana after each Kill",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4463,7 +4463,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Black Hades \n@xul\n\n@dictBlue +30-60% Damage to Demons @dictVariable\n@dictBlue +200-250 to Attack Rating against Demons @dictVariable\n@dictBlue +140-200% Enhanced Defense @dictVariable\n@dictBlue Half Freeze Duration\n-2 to Light Radius\nSocketed (3)",
+                                                "tooltipString": "@dictGold Black Hades \n@xul\n\n@dictBlue +30-60% Damage to Demons \n@dictBlue +200-250 to Attack Rating against Demons \n@dictBlue +140-200% Enhanced Defense \n@dictBlue Half Freeze Duration\n-2 to Light Radius\nSocketed (3)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4600,7 +4600,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Corpsemourn \n@xar\n\n@dictBlue 6% Chance to cast level 2 Iron Maiden when struck\nAdds 12-36 fire damage\n+150-180% Enhanced Defense @dictVariable\n@dictBlue +8 to Strength\n+10 to Vitality\nCold Resist +35%\nLevel 5 Corpse Explosion (40 Charges)",
+                                                "tooltipString": "@dictGold Corpsemourn \n@xar\n\n@dictBlue 6% Chance to cast level 2 Iron Maiden when struck\nAdds 12-36 fire damage\n+150-180% Enhanced Defense \n@dictBlue +8 to Strength\n+10 to Vitality\nCold Resist +35%\nLevel 5 Corpse Explosion (40 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4764,7 +4764,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Ormus' Robe \n@uui\n\n@dictBlue +20% Faster Cast Rate\n+10-15% to Cold Skill Damage @dictVariable\n@dictBlue +10-15% to Lightning Skill Damage @dictVariable\n@dictBlue +10-15% to Fire Skill Damage @dictVariable\n@dictBlue +3 to Random Sorceress Skill Levels\n+10-20 Defense @dictVariable\n@dictBlue Regenerate Mana 10-15% @dictVariable",
+                                                "tooltipString": "@dictGold Ormus' Robe \n@uui\n\n@dictBlue +20% Faster Cast Rate\n+10-15% to Cold Skill Damage \n@dictBlue +10-15% to Lightning Skill Damage \n@dictBlue +10-15% to Fire Skill Damage \n@dictBlue +3 to Random Sorceress Skill Levels\n+10-20 Defense \n@dictBlue Regenerate Mana 10-15% ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -4928,7 +4928,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold The Gladiator's Bane \n@utu\n\n@dictBlue +30% Faster Hit Recovery\n+150-200% Enhanced Defense @dictVariable\n@dictBlue +50 Defense\nDamage Reduced by 15-20 @dictVariable\n@dictBlue Magic Damage Reduced by 15-20 @dictVariable\n@dictBlue Cannot Be Frozen\nPoison Length Reduced by 50%\nAttacker Takes Damage of 20",
+                                                "tooltipString": "@dictGold The Gladiator's Bane \n@utu\n\n@dictBlue +30% Faster Hit Recovery\n+150-200% Enhanced Defense \n@dictBlue +50 Defense\nDamage Reduced by 15-20 \n@dictBlue Magic Damage Reduced by 15-20 \n@dictBlue Cannot Be Frozen\nPoison Length Reduced by 50%\nAttacker Takes Damage of 20",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5092,7 +5092,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Arkaine's Valor \n@upl\n\n@dictBlue +1 to All Skills-2 @dictVariable\n@dictBlue +30% Faster Hit Recovery\n+150-180% Enhanced Defense @dictVariable\n@dictBlue +0-49 to Vitality (Based on Character Level)\nDamage Reduced by 10-15 @dictVariable",
+                                                "tooltipString": "@dictGold Arkaine's Valor \n@upl\n\n@dictBlue +1 to All Skills-2 \n@dictBlue +30% Faster Hit Recovery\n+150-180% Enhanced Defense \n@dictBlue +0-49 to Vitality (Based on Character Level)\nDamage Reduced by 10-15 ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5256,7 +5256,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Leviathan \n@uld\n\n@dictBlue Indestructible\n+170-200% Enhanced Defense @dictVariable\n@dictBlue +100-150 Defense @dictVariable\n@dictBlue +40-50 to Strength @dictVariable\n@dictBlue Physical Damage Received Reduced by 15-25% @dictVariable",
+                                                "tooltipString": "@dictGold Leviathan \n@uld\n\n@dictBlue Indestructible\n+170-200% Enhanced Defense \n@dictBlue +100-150 Defense \n@dictBlue +40-50 to Strength \n@dictBlue Physical Damage Received Reduced by 15-25% ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5420,7 +5420,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Steel Carapace \n@uul\n\n@dictBlue 8% Chance to cast level 6 Iron Maiden when struck\n+20% Faster Hit Recovery\n+190-220% Enhanced Defense @dictVariable\n@dictBlue Regenerate Mana 10-15% @dictVariable\n@dictBlue Cold Resist +40-60% @dictVariable\n@dictBlue Damage Reduced by 9-14 @dictVariable\n@dictBlue Repairs 1 durability in 20 seconds",
+                                                "tooltipString": "@dictGold Steel Carapace \n@uul\n\n@dictBlue 8% Chance to cast level 6 Iron Maiden when struck\n+20% Faster Hit Recovery\n+190-220% Enhanced Defense \n@dictBlue Regenerate Mana 10-15% \n@dictBlue Cold Resist +40-60% \n@dictBlue Damage Reduced by 9-14 \n@dictBlue Repairs 1 durability in 20 seconds",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5584,7 +5584,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Templar's Might \n@uar\n\n@dictBlue +1-2 to Offensive Auras (Paladin Only) @dictVariable\n@dictBlue +20% Faster Hit Recovery\n+170-220% Enhanced Defense @dictVariable\n@dictBlue +250-300 Defense vs. Missile @dictVariable\n@dictBlue +10-15 to Strength @dictVariable\n@dictBlue +10-15 to Vitality @dictVariable\n@dictBlue +40-50 Maximum Stamina @dictVariable",
+                                                "tooltipString": "@dictGold Templar's Might \n@uar\n\n@dictBlue +1-2 to Offensive Auras (Paladin Only) \n@dictBlue +20% Faster Hit Recovery\n+170-220% Enhanced Defense \n@dictBlue +250-300 Defense vs. Missile \n@dictBlue +10-15 to Strength \n@dictBlue +10-15 to Vitality \n@dictBlue +40-50 Maximum Stamina ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -5748,7 +5748,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x3",
-                                                "tooltipString": "@dictGold Tyrael's Might \n@uar\n\n@dictBlue Indestructible\n+20% Faster Run/Walk\n+50-100% Damage to Demons @dictVariable\n@dictBlue Slain Monsters Rest in Peace\n+120-150% Enhanced Defense @dictVariable\n@dictBlue +20-30 to Strength @dictVariable\n@dictBlue All Resistances +20-30 @dictVariable\n@dictBlue Cannot Be Frozen\nRequirements -100%",
+                                                "tooltipString": "@dictGold Tyrael's Might \n@uar\n\n@dictBlue Indestructible\n+20% Faster Run/Walk\n+50-100% Damage to Demons \n@dictBlue Slain Monsters Rest in Peace\n+120-150% Enhanced Defense \n@dictBlue +20-30 to Strength \n@dictBlue All Resistances +20-30 \n@dictBlue Cannot Be Frozen\nRequirements -100%",
                                                 "pressedFrame": 0
                                             }
                                         },

@@ -114,7 +114,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Bane Ash \n@sst\n\n@dictBlue +20% Increased Attack Speed\n+50-60% Enhanced Damage @dictVariable\n@dictBlue Adds 4-6 fire damage\n+2 to Warmth (Sorceress Only)\n+5 to Fire Bolt (Sorceress Only)\n+30 to Mana\nFire Resist +50%\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Bane Ash \n@sst\n\n@dictBlue +20% Increased Attack Speed\n+50-60% Enhanced Damage \n@dictBlue Adds 4-6 fire damage\n+2 to Warmth (Sorceress Only)\n+5 to Fire Bolt (Sorceress Only)\n+30 to Mana\nFire Resist +50%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -278,7 +278,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold Serpent Lord \n@lst\n\n@dictBlue +30-40% Enhanced Damage @dictVariable\n@dictBlue -50% Target Defense\n+12 poison damage over 3 seconds\n100% Mana stolen per hit\n+10 to Mana\nPoison Resist +50%\n-1 to Light Radius\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Serpent Lord \n@lst\n\n@dictBlue +30-40% Enhanced Damage \n@dictBlue -50% Target Defense\n+12 poison damage over 3 seconds\n100% Mana stolen per hit\n+10 to Mana\nPoison Resist +50%\n-1 to Light Radius\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1044,7 +1044,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold Ribcracker \n@8ls\n\n@dictBlue +50% Increased Attack Speed\n+50% Faster Hit Recovery\n+200-300% Enhanced Damage @dictVariable\n@dictBlue Adds 30-65 damage\n+50% Chance of Crushing Blow\n+100% Enhanced Defense\n+100 Defense\n+15 to Dexterity\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Ribcracker \n@8ls\n\n@dictBlue +50% Increased Attack Speed\n+50% Faster Hit Recovery\n+200-300% Enhanced Damage \n@dictBlue Adds 30-65 damage\n+50% Chance of Crushing Blow\n+100% Enhanced Defense\n+100 Defense\n+15 to Dexterity\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1208,7 +1208,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold Chromatic Ire \n@8cs\n\n@dictBlue +3 to Sorceress Skill Levels\n+20% Faster Cast Rate\n+1 to Cold Mastery (Sorceress Only)\n+1 to Lightning Mastery (Sorceress Only)\n+1 to Fire Mastery (Sorceress Only)\nIncrease Maximum Life 20-25% @dictVariable\n@dictBlue All Resistances +20-40 @dictVariable\n@dictBlue Attacker Takes Lightning Damage of 20\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Chromatic Ire \n@8cs\n\n@dictBlue +3 to Sorceress Skill Levels\n+20% Faster Cast Rate\n+1 to Cold Mastery (Sorceress Only)\n+1 to Lightning Mastery (Sorceress Only)\n+1 to Fire Mastery (Sorceress Only)\nIncrease Maximum Life 20-25% \n@dictBlue All Resistances +20-40 \n@dictBlue Attacker Takes Lightning Damage of 20\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1673,7 +1673,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x4",
-                                                "tooltipString": "@dictGold Ondal's Wisdom \n@6cs\n\n@dictBlue +2 to All Skills-4 @dictVariable\n@dictBlue +45% Faster Cast Rate\n+450-550 Defense @dictVariable\n@dictBlue +40-50 to Energy @dictVariable\n@dictBlue Magic Damage Reduced by 5-8 @dictVariable\n@dictBlue +5% to Experience Gained\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Ondal's Wisdom \n@6cs\n\n@dictBlue +2 to All Skills-4 \n@dictBlue +45% Faster Cast Rate\n+450-550 Defense \n@dictBlue +40-50 to Energy \n@dictBlue Magic Damage Reduced by 5-8 \n@dictBlue +5% to Experience Gained\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1810,7 +1810,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x4",
-                                                "tooltipString": "@dictGold Mang Song's Lesson \n@6ws\n\n@dictBlue +5 to All Skills\n+30% Faster Cast Rate\n-(7-15)% to Enemy Lightning Resistance @dictVariable\n@dictBlue -(7-15)% to Enemy Fire Resistance @dictVariable\n@dictBlue -(7-15)% to Enemy Cold Resistance @dictVariable\n@dictBlue Regenerate Mana 10%\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Mang Song's Lesson \n@6ws\n\n@dictBlue +5 to All Skills\n+30% Faster Cast Rate\n-(7-15)% to Enemy Lightning Resistance \n@dictBlue -(7-15)% to Enemy Fire Resistance \n@dictBlue -(7-15)% to Enemy Cold Resistance \n@dictBlue Regenerate Mana 10%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2129,7 +2129,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold Maelstrom \n@ywn\n\n@dictBlue +30% Faster Cast Rate\nAdds 1-9 lightning damage\n+1-3 to Terror (Necromancer Only) @dictVariable\n@dictBlue +1-3 to Iron Maiden (Necromancer Only) @dictVariable\n@dictBlue +1-3 to Corpse Explosion (Necromancer Only) @dictVariable\n@dictBlue +1-3 to Amplify Damage (Necromancer Only) @dictVariable\n@dictBlue +13 to Mana\nLightning Resist +40%\n+50% Damage to Undead",
+                                                "tooltipString": "@dictGold Maelstrom \n@ywn\n\n@dictBlue +30% Faster Cast Rate\nAdds 1-9 lightning damage\n+1-3 to Terror (Necromancer Only) \n@dictBlue +1-3 to Iron Maiden (Necromancer Only) \n@dictBlue +1-3 to Corpse Explosion (Necromancer Only) \n@dictBlue +1-3 to Amplify Damage (Necromancer Only) \n@dictBlue +13 to Mana\nLightning Resist +40%\n+50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -2293,7 +2293,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold Gravenspine \n@bwn\n\n@dictBlue +2 to Necromancer Skill Levels\nAdds 4-8 cold damage\n5% Mana stolen per hit\n+10 to Strength\n+10 to Dexterity\n+25-50 to Mana @dictVariable\n@dictBlue +50% Damage to Undead",
+                                                "tooltipString": "@dictGold Gravenspine \n@bwn\n\n@dictBlue +2 to Necromancer Skill Levels\nAdds 4-8 cold damage\n5% Mana stolen per hit\n+10 to Strength\n+10 to Dexterity\n+25-50 to Mana \n@dictBlue +50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3196,7 +3196,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold Boneshade \n@7bw\n\n@dictBlue +2 to Necromancer Skill Levels\n+25% Faster Cast Rate\n+1-2 to Bone Spirit (Necromancer Only) @dictVariable\n@dictBlue +2-3 to Bone Spear (Necromancer Only) @dictVariable\n@dictBlue +2-3 to Bone Wall (Necromancer Only) @dictVariable\n@dictBlue +4-5 to Bone Armor (Necromancer Only) @dictVariable\n@dictBlue +4-5 to Teeth (Necromancer Only) @dictVariable\n@dictBlue +50% Damage to Undead",
+                                                "tooltipString": "@dictGold Boneshade \n@7bw\n\n@dictBlue +2 to Necromancer Skill Levels\n+25% Faster Cast Rate\n+1-2 to Bone Spirit (Necromancer Only) \n@dictBlue +2-3 to Bone Spear (Necromancer Only) \n@dictBlue +2-3 to Bone Wall (Necromancer Only) \n@dictBlue +4-5 to Bone Armor (Necromancer Only) \n@dictBlue +4-5 to Teeth (Necromancer Only) \n@dictBlue +50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3360,7 +3360,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold Death's Web \n@7gw\n\n@dictBlue +2 to All Skills\n+1-2 to Poison and Bone Skills (Necromancer Only) @dictVariable\n@dictBlue -(40-50)% to Enemy Poison Resistance @dictVariable\n@dictBlue +7-12 Mana after each Kill @dictVariable\n@dictBlue +7-12 Life after each Kill @dictVariable\n@dictBlue +50% Damage to Undead",
+                                                "tooltipString": "@dictGold Death's Web \n@7gw\n\n@dictBlue +2 to All Skills\n+1-2 to Poison and Bone Skills (Necromancer Only) \n@dictBlue -(40-50)% to Enemy Poison Resistance \n@dictBlue +7-12 Mana after each Kill \n@dictBlue +7-12 Life after each Kill \n@dictBlue +50% Damage to Undead",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3679,7 +3679,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x2",
-                                                "tooltipString": "@dictGold Eschuta's Temper \n@obc\n\n@dictBlue +1-3 to Sorceress Skill Levels @dictVariable\n@dictBlue +40% Faster Cast Rate\n+10-20% to Lightning Skill Damage @dictVariable\n@dictBlue +10-20% to Fire Skill Damage @dictVariable\n@dictBlue +20-30 to Energy @dictVariable",
+                                                "tooltipString": "@dictGold Eschuta's Temper \n@obc\n\n@dictBlue +1-3 to Sorceress Skill Levels \n@dictBlue +40% Faster Cast Rate\n+10-20% to Lightning Skill Damage \n@dictBlue +10-20% to Fire Skill Damage \n@dictBlue +20-30 to Energy ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -3816,7 +3816,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_1x3",
-                                                "tooltipString": "@dictGold Death's Fathom \n@obf\n\n@dictBlue +3 to Sorceress Skill Levels\n+20% Faster Cast Rate\n+15-30% to Cold Skill Damage @dictVariable\n@dictBlue Lightning Resist +25-40% @dictVariable\n@dictBlue Fire Resist +25-40% @dictVariable",
+                                                "tooltipString": "@dictGold Death's Fathom \n@obf\n\n@dictBlue +3 to Sorceress Skill Levels\n+20% Faster Cast Rate\n+15-30% to Cold Skill Damage \n@dictBlue Lightning Resist +25-40% \n@dictBlue Fire Resist +25-40% ",
                                                 "pressedFrame": 0
                                             }
                                         },

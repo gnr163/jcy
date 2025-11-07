@@ -278,7 +278,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGold Snakecord \n@vbl\n\n@dictBlue +12 poison damage over 3 seconds\n+20-30% Enhanced Defense @dictVariable\n@dictBlue +10 Defense\nReflensh Life +5\nPoison Resist +25%\nPoison Length Reduced by 50%",
+                                                "tooltipString": "@dictGold Snakecord \n@vbl\n\n@dictBlue +12 poison damage over 3 seconds\n+20-30% Enhanced Defense \n@dictBlue +10 Defense\nReflensh Life +5\nPoison Resist +25%\nPoison Length Reduced by 50%",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -442,7 +442,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGold Nightsmoke \n@mbl\n\n@dictBlue +30-50% Enhanced Defense @dictVariable\n@dictBlue +15 Defense\n+20 to Mana\nAll Resistances +10\nDamage Reduced by 2\n+50% Damage Taken Goes To Mana",
+                                                "tooltipString": "@dictGold Nightsmoke \n@mbl\n\n@dictBlue +30-50% Enhanced Defense \n@dictBlue +15 Defense\n+20 to Mana\nAll Resistances +10\nDamage Reduced by 2\n+50% Damage Taken Goes To Mana",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -606,7 +606,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGold Goldwrap \n@tbl\n\n@dictBlue +10% Increased Attack Speed\n+40-60% Enhanced Defense @dictVariable\n@dictBlue +25 Defense\n50-80% Extra Gold from Monsters @dictVariable\n@dictBlue 30% Better Chance of Getting Magic Items\n+2 to Light Radius",
+                                                "tooltipString": "@dictGold Goldwrap \n@tbl\n\n@dictBlue +10% Increased Attack Speed\n+40-60% Enhanced Defense \n@dictBlue +25 Defense\n50-80% Extra Gold from Monsters \n@dictBlue 30% Better Chance of Getting Magic Items\n+2 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -770,7 +770,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGold Bladebuckle \n@hbl\n\n@dictBlue +30% Faster Hit Recovery\n+80-100% Enhanced Defense @dictVariable\n@dictBlue +30 Defense\n+5 to Strength\n+10 to Dexterity\nDamage Reduced by 3\nAttacker Takes Damage of 8",
+                                                "tooltipString": "@dictGold Bladebuckle \n@hbl\n\n@dictBlue +30% Faster Hit Recovery\n+80-100% Enhanced Defense \n@dictBlue +30 Defense\n+5 to Strength\n+10 to Dexterity\nDamage Reduced by 3\nAttacker Takes Damage of 8",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -934,7 +934,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGold String of Ears \n@zlb\n\n@dictBlue 6-8% Life stolen per hit @dictVariable\n@dictBlue +150-180% Enhanced Defense @dictVariable\n@dictBlue +15 Defense\nPhysical Damage Received Reduced by 10-15% @dictVariable\n@dictBlue Magic Damage Reduced by 10-15 @dictVariable",
+                                                "tooltipString": "@dictGold String of Ears \n@zlb\n\n@dictBlue 6-8% Life stolen per hit \n@dictBlue +150-180% Enhanced Defense \n@dictBlue +15 Defense\nPhysical Damage Received Reduced by 10-15% \n@dictBlue Magic Damage Reduced by 10-15 ",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1071,7 +1071,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGold Razortail \n@zvb\n\n@dictBlue +33% Piercing Attack\n+10 to Maximum Damage\n+120-150% Enhanced Defense @dictVariable\n@dictBlue +15 Defense\n+15 to Dexterity\nAttacker Takes Damage of 1-99 (Based on Character Level)",
+                                                "tooltipString": "@dictGold Razortail \n@zvb\n\n@dictBlue +33% Piercing Attack\n+10 to Maximum Damage\n+120-150% Enhanced Defense \n@dictBlue +15 Defense\n+15 to Dexterity\nAttacker Takes Damage of 1-99 (Based on Character Level)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1208,7 +1208,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGold Gloom's Trap \n@zmb\n\n@dictBlue 5% Mana stolen per hit\n+120-150% Enhanced Defense @dictVariable\n@dictBlue +15 to Vitality\nIncrease Maximum Mana 15%\nRegenerate Mana 15%\n-3 to Light Radius",
+                                                "tooltipString": "@dictGold Gloom's Trap \n@zmb\n\n@dictBlue 5% Mana stolen per hit\n+120-150% Enhanced Defense \n@dictBlue +15 to Vitality\nIncrease Maximum Mana 15%\nRegenerate Mana 15%\n-3 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1345,7 +1345,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGold Snowclash \n@ztb\n\n@dictBlue 5% Chance to cast level 7-19 Blizzard when struck @dictVariable\n@dictBlue Adds 13-21 cold damage\n+2 to Chilling Armor (Sorceress Only)\n+2 to Blizzard (Sorceress Only)\n+3 to Glacial Spike (Sorceress Only)\n+130-170% Enhanced Defense @dictVariable\n@dictBlue +15% to Maximum Cold Resist\n+15 Cold Absorb",
+                                                "tooltipString": "@dictGold Snowclash \n@ztb\n\n@dictBlue 5% Chance to cast level 7-19 Blizzard when struck \n@dictBlue Adds 13-21 cold damage\n+2 to Chilling Armor (Sorceress Only)\n+2 to Blizzard (Sorceress Only)\n+3 to Glacial Spike (Sorceress Only)\n+130-170% Enhanced Defense \n@dictBlue +15% to Maximum Cold Resist\n+15 Cold Absorb",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1482,7 +1482,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGold Thundergod's Vigor \n@zhb\n\n@dictBlue 5% Chance to cast level 7 Fist of the Heavens when struck\nAdds 1-50 lightning damage\n+3 to Lightning Fury (Amazon Only)\n+3 to Lightning Strike (Amazon Only)\n+160-200% Enhanced Defense @dictVariable\n@dictBlue +20 to Strength\n+20 to Vitality\n+10% to Maximum Lightning Resist\n+20 Lightning Absorb",
+                                                "tooltipString": "@dictGold Thundergod's Vigor \n@zhb\n\n@dictBlue 5% Chance to cast level 7 Fist of the Heavens when struck\nAdds 1-50 lightning damage\n+3 to Lightning Fury (Amazon Only)\n+3 to Lightning Strike (Amazon Only)\n+160-200% Enhanced Defense \n@dictBlue +20 to Strength\n+20 to Vitality\n+10% to Maximum Lightning Resist\n+20 Lightning Absorb",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1619,7 +1619,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGold Arachnid Mesh \n@ulc\n\n@dictBlue +1 to All Skills\n+20% Faster Cast Rate\nSlows Target by 10%\n+90-120% Enhanced Defense @dictVariable\n@dictBlue Increase Maximum Mana 5%\nLevel 3 Venom (11 Charges)",
+                                                "tooltipString": "@dictGold Arachnid Mesh \n@ulc\n\n@dictBlue +1 to All Skills\n+20% Faster Cast Rate\nSlows Target by 10%\n+90-120% Enhanced Defense \n@dictBlue Increase Maximum Mana 5%\nLevel 3 Venom (11 Charges)",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1783,7 +1783,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGold Nosferatu's Coil \n@uvc\n\n@dictBlue +10% Increased Attack Speed\n5-7% Life stolen per hit @dictVariable\n@dictBlue Slows Target by 10%\n+15 to Strength\n+2 Mana after each Kill\n-3 to Light Radius",
+                                                "tooltipString": "@dictGold Nosferatu's Coil \n@uvc\n\n@dictBlue +10% Increased Attack Speed\n5-7% Life stolen per hit \n@dictBlue Slows Target by 10%\n+15 to Strength\n+2 Mana after each Kill\n-3 to Light Radius",
                                                 "pressedFrame": 0
                                             }
                                         },
@@ -1920,7 +1920,7 @@
                                             "name": "customitembgimg",
                                             "fields": {
                                                 "filename": "itemDictionary/grid_2x1",
-                                                "tooltipString": "@dictGold Verdungo's Hearty Cord \n@umc\n\n@dictBlue +10% Faster Hit Recovery\n+90-140% Enhanced Defense @dictVariable\n@dictBlue +30-40 to Vitality @dictVariable\n@dictBlue Reflensh Life +10-13 @dictVariable\n@dictBlue +100-120 Maximum Stamina @dictVariable\n@dictBlue Physical Damage Received Reduced by 10-15% @dictVariable",
+                                                "tooltipString": "@dictGold Verdungo's Hearty Cord \n@umc\n\n@dictBlue +10% Faster Hit Recovery\n+90-140% Enhanced Defense \n@dictBlue +30-40 to Vitality \n@dictBlue Reflensh Life +10-13 \n@dictBlue +100-120 Maximum Stamina \n@dictBlue Physical Damage Received Reduced by 10-15% ",
                                                 "pressedFrame": 0
                                             }
                                         },
