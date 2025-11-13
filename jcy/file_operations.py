@@ -3116,6 +3116,12 @@ class FileOperations:
             json.dump(json_data, f, ensure_ascii=False, indent=4)
 
         count += 1
+
+        # 帮助面板 + 字典
+        result = self.common_rename([r"data/global/ui/layouts/helppanelhd.json"], "4" in keys)
+        count += result[0]
+        total += result[1]
+
         return (count, total)
 
     
