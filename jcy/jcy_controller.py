@@ -152,6 +152,8 @@ class FeatureController:
             GAME_SETTING: self.file_operations.select_game_setting,
             # 游戏设置2
             GAME_SETTING2: self.file_operations.select_game_setting2,
+            # 游戏设置2
+            GAME_SETTING3: self.file_operations.select_game_setting3,
             # 控件设置
             CONTROLS_SETTING: self.file_operations.select_controls_setting,
             # 额外的照亮范围

@@ -142,6 +142,15 @@ class FeatureConfig:
                             }
                         },
                         {
+                            "fid": GAME_SETTING3,
+                            "type": CHECK,
+                            "text": "游戏设置3",
+                            "colspan": 10,
+                            "params": {
+                                "1": "隐藏左右面板边框&铰链"
+                            }
+                        },
+                        {
                             "fid": CONTROLS_SETTING,
                             "type": CHECK,
                             "text": "控件设置",

@@ -82,6 +82,7 @@ TERROR_ZONE_NEXT = "TerrorZoneNext"
 TERROR_ZONE_TABLE = "TerrorZoneTable"
 GAME_SETTING = "GameSetting"
 GAME_SETTING2 = "GameSetting2"
+GAME_SETTING3 = "GameSetting3"
 CONTROLS_SETTING = "ControlsSetting"
 LIGHT_REDIUS = "LightRedius"
 HUD_SIZE = "HudSize"
@@ -498,6 +499,7 @@ __all__ = [
     'TERROR_ZONE_TABLE',
     'GAME_SETTING',
     'GAME_SETTING2',
+    'GAME_SETTING3',
     'CONTROLS_SETTING',
     'LIGHT_REDIUS',
     'HUD_SIZE',
