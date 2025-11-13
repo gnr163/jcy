@@ -4388,8 +4388,8 @@
   {
     "id": 11158,
     "Key": "ModStre8b",
-    "enUS": "%+d to Assassin Skill Levels{{abbr}}",
-    "zhTW": "%+d 刺客技能等級{{abbr}}",
+    "enUS": "{{color0}}%+d to Assassin Skill Levels{{abbr}}{{color1}}",
+    "zhTW": "{{color0}}%+d 刺客技能等級{{abbr}}{{color1}}",
     "deDE": "%+d zu Assassinenfertigkeiten",
     "esES": "%+d a los niveles de habilidad de la asesina",
     "frFR": "%+d aux niv. de compétence d’Assassin",
@@ -4400,7 +4400,7 @@
     "jaJP": "〈アサシン〉スキルレベル向上（%+d）",
     "ptBR": "%+d de níveis de habilidade de Assassina",
     "ruRU": "%+d к уровню умений ассасина",
-    "zhCN": "%+d 刺客技能等级{{abbr}}"
+    "zhCN": "{{color0}}%+d 刺客技能等级{{abbr}}{{color1}}"
   },
   {
     "id": 11163,
@@ -4456,8 +4456,8 @@
   {
     "id": 21205,
     "Key": "ModStre8a",
-    "enUS": "%+d to Druid Skill Levels{{abbr}}",
-    "zhTW": "%+d 德魯伊技能等級{{abbr}}",
+    "enUS": "{{color0}}%+d to Druid Skill Levels{{abbr}}{{color1}}",
+    "zhTW": "{{color0}}%+d 德魯伊技能等級{{abbr}}{{color1}}",
     "deDE": "%+d zu Druidenfertigkeiten",
     "esES": "%+d a los niveles de habilidad del druida",
     "frFR": "%+d aux niv. de comp. du druide",
@@ -4468,7 +4468,7 @@
     "jaJP": "〈ドルイド〉スキルレベル向上（%+d）",
     "ptBR": "%+d de níveis de habilidade de Druida",
     "ruRU": "%+d к уровню умений друида",
-    "zhCN": "%+d 德鲁伊技能等级{{abbr}}"
+    "zhCN": "{{color0}}%+d 德鲁伊技能等级{{abbr}}{{color1}}"
   },
   {
     "id": 21207,
