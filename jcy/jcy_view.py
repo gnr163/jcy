@@ -9,17 +9,18 @@ import threading
 import time
 import threading
 import tkinter as tk
-from tkinter import font
+from tkinter import font, filedialog, messagebox
 import uuid
 import win32gui
 import win32process
-
-
+import requests, zipfile, tempfile
+from jcy_paths import USER_SETTINGS_PATH
 import pystray
 
 from cryptography.fernet import Fernet, InvalidToken
 from jcy_constants import *
 from jcy_paths import *
+from jcy_assets import *
 from PIL import Image, ImageTk
 from tkinter import filedialog, messagebox, scrolledtext, ttk
 import subprocess  # 用系统默认播放器播放 flac
@@ -91,13 +92,17 @@ class FeatureView:
         rune_tab = RuneSettingsTable(notebook, config_dict=self.controller.current_states, config_key=RUNE_SETTING)
         self.add_tab(rune_tab, "符文提醒")
 
-        # --- D2R多开器 ---
-        launcher_tab = D2RLauncherApp(notebook)
-        self.add_tab(launcher_tab, "D2R多开器")
-
         # --- checktable ---
         filter_tab = ttk.Frame(notebook)
         self.add_tab(filter_tab, "道具屏蔽")
+
+        # --- 素材管理 ---
+        asset_tab = AssetManagerUI(notebook)
+        self.add_tab(asset_tab, "素材管理")
+
+        # --- D2R多开器 ---
+        launcher_tab = D2RLauncherApp(notebook)
+        self.add_tab(launcher_tab, "D2R多开器")
 
         columns = ["简体中文", "繁體中文", "enUS"]
         data = self.controller.file_operations.load_filter_config()
@@ -403,7 +408,7 @@ class FeatureView:
             notebook = event.widget
             selected = notebook.tab(notebook.select(), "text")
             
-            if selected in ("D2R多开器", "恐怖区域", "免责声明"):
+            if selected in ("素材管理", "D2R多开器", "免责声明"):
                 try:
                     self.apply_button.config(state='disabled')
                 except tk.TclError:
@@ -1341,3 +1346,204 @@ class TerrorZoneUI(tk.Frame):
     def on_visible(self, event):
         self.load_and_display_data()
 
+class AssetManagerUI(tk.Frame):
+    """素材包管理器"""
+
+    def __init__(self, master):
+        super().__init__(master)
+        self.settings = self._load_settings()
+        self.asset_dir = tk.StringVar(value=self.settings.get(ASSET_PATH, ""))
+        self.asset_blocks = []
+        self.mod_root = MOD_PATH
+        self._build_ui()
+
+    # ---------- 构建 UI ----------
+    def _build_ui(self):
+        top = tk.Frame(self)
+        top.pack(fill="x", pady=6)
+
+        tk.Label(top, text="素材包目录：").pack(side="left", padx=4)
+        entry = tk.Entry(top, textvariable=self.asset_dir, width=60)
+        entry.pack(side="left", padx=4, fill="x", expand=True)
+        tk.Button(top, text="选择目录", command=self._choose_dir).pack(side="left", padx=4)
+        tk.Button(top, text="保存路径", command=self._save_path).pack(side="left", padx=4)
+
+        # 滚动区
+        canvas = tk.Canvas(self, highlightthickness=0)
+        vbar = ttk.Scrollbar(self, orient="vertical", command=canvas.yview)
+        canvas.configure(yscrollcommand=vbar.set)
+        vbar.pack(side="right", fill="y")
+        canvas.pack(side="left", fill="both", expand=True)
+        self.inner = tk.Frame(canvas)
+        canvas.create_window((0, 0), window=self.inner, anchor="nw")
+
+        def _on_config(event=None):
+            canvas.configure(scrollregion=canvas.bbox("all"))
+        self.inner.bind("<Configure>", _on_config)
+
+        # 渲染素材块
+        for asset in MOD_ASSETS:
+            frame = self._create_asset_block(asset)
+            frame.pack(fill="x", pady=4, padx=8, anchor="n")
+            self.asset_blocks.append((asset, frame))
+
+        # 初次状态刷新
+        self.refresh_status()
+
+    # ---------- 选择 & 保存路径 ----------
+    def _choose_dir(self):
+        path = filedialog.askdirectory(title="选择素材存放目录")
+        if path:
+            self.asset_dir.set(path)
+            self.refresh_status()
+
+    def _save_path(self):
+        self.settings[ASSET_PATH] = self.asset_dir.get()
+        with open(USER_SETTINGS_PATH, "w", encoding="utf-8") as f:
+            json.dump(self.settings, f, indent=4, ensure_ascii=False)
+        messagebox.showinfo("保存成功", f"路径已保存到 settings.json\n{self.asset_dir.get()}")
+
+    # ---------- 生成素材块 ----------
+    def _create_asset_block(self, asset):
+        frame = tk.LabelFrame(self.inner, text=asset["name"], padx=8, pady=4)
+        tk.Label(frame, text=asset["description"], anchor="w", justify="left").pack(fill="x")
+
+        # 进度条
+        pb = ttk.Progressbar(frame, orient="horizontal", mode="determinate", length=250)
+        pb.pack(fill="x", pady=4)
+
+        btn_frame = tk.Frame(frame)
+        btn_frame.pack(fill="x", pady=4)
+        b_download = tk.Button(btn_frame, text="下载", command=lambda a=asset, p=pb: self._download_asset_thread(a, p))
+        b_apply = tk.Button(btn_frame, text="应用", command=lambda a=asset: self._apply_asset(a))
+        b_remove = tk.Button(btn_frame, text="移除", command=lambda a=asset: self._remove_asset(a))
+        b_delete = tk.Button(btn_frame, text="删除", command=lambda a=asset: self._delete_asset(a))
+
+        for b in (b_download, b_apply, b_remove, b_delete):
+            b.pack(side="left", padx=5, ipadx=6)
+
+        frame.buttons = {
+            "download": b_download,
+            "apply": b_apply,
+            "remove": b_remove,
+            "delete": b_delete
+        }
+        frame.progress = pb
+        return frame
+
+    # ---------- 状态刷新 ----------
+    def refresh_status(self):
+        """检测素材是否存在并校验MD5"""
+        asset_dir = self.asset_dir.get().strip()
+        if not asset_dir:
+            return
+
+        for asset, frame in self.asset_blocks:
+            zip_path = os.path.join(asset_dir, asset["file"])
+            exists = os.path.exists(zip_path)
+            ok = exists and self._check_file_md5(zip_path, asset["md5"])
+            # 下载按钮反逻辑
+            frame.buttons["download"]["state"] = tk.DISABLED if ok else tk.NORMAL
+            for k in ("apply", "remove", "delete"):
+                frame.buttons[k]["state"] = tk.NORMAL if ok else tk.DISABLED
+
+    # ---------- 异步下载 ----------
+    def _download_asset_thread(self, asset, progress):
+        thread = threading.Thread(target=self._download_asset, args=(asset, progress), daemon=True)
+        thread.start()
+
+    def _download_asset(self, asset, progress):
+        asset_dir = self.asset_dir.get().strip()
+        if not asset_dir:
+            return messagebox.showerror("错误", "请先选择素材目录！")
+        os.makedirs(asset_dir, exist_ok=True)
+        zip_path = os.path.join(asset_dir, asset["file"])
+
+        try:
+            progress["value"] = 0
+            resp = requests.get(asset["url"], stream=True, timeout=10)
+            total = int(resp.headers.get("content-length", 0))
+            downloaded = 0
+            with open(zip_path, "wb") as f:
+                for chunk in resp.iter_content(8192):
+                    if chunk:
+                        f.write(chunk)
+                        downloaded += len(chunk)
+                        percent = int(downloaded / total * 100) if total else 0
+                        progress.after(0, lambda v=percent: progress.config(value=v))
+            if self._check_file_md5(zip_path, asset["md5"]):
+                messagebox.showinfo("完成", f"{asset['name']} 下载完成。")
+            else:
+                messagebox.showerror("错误", f"{asset['name']} 校验失败。")
+        except Exception as e:
+            messagebox.showerror("下载失败", str(e))
+        finally:
+            progress.after(0, lambda: progress.config(value=0))
+            self.refresh_status()
+
+    # ---------- 应用 ----------
+    def _apply_asset(self, asset):
+        asset_dir = self.asset_dir.get()
+        zip_path = os.path.join(asset_dir, asset["file"])
+        if not os.path.exists(zip_path):
+            return messagebox.showerror("错误", "文件不存在。")
+
+        if not self._check_file_md5(zip_path, asset["md5"]):
+            return messagebox.showerror("错误", "MD5 不匹配，文件可能损坏。")
+
+        tmp_dir = tempfile.mkdtemp()
+        with zipfile.ZipFile(zip_path, "r") as zf:
+            zf.extractall(tmp_dir)
+
+        # 校验包内文件
+        for f in asset.get("list", []):
+            f_path = os.path.join(tmp_dir, f["file"])
+            if not os.path.exists(f_path):
+                return messagebox.showerror("错误", f"缺少文件：{f['file']}")
+            if not self._check_file_md5(f_path, f["md5"]):
+                return messagebox.showerror("错误", f"文件校验失败：{f['file']}")
+
+        for f in asset.get("list", []):
+            src = os.path.join(tmp_dir, f["file"])
+            dst = os.path.join(self.mod_root, f["path"])
+            os.makedirs(dst, exist_ok=True)
+            with open(src, "rb") as s, open(os.path.join(dst, os.path.basename(src)), "wb") as d:
+                d.write(s.read())
+        messagebox.showinfo("完成", f"{asset['name']} 已应用。")
+
+    # ---------- 移除 ----------
+    def _remove_asset(self, asset):
+        count = 0
+        for f in asset.get("list", []):
+            full_path = os.path.join(self.mod_root, f["path"], os.path.basename(f["file"]))
+            if os.path.exists(full_path):
+                os.remove(full_path)
+                count += 1
+        messagebox.showinfo("完成", f"已移除 {count} 个文件。")
+
+    # ---------- 删除 ----------
+    def _delete_asset(self, asset):
+        asset_dir = self.asset_dir.get().strip()
+        zip_path = os.path.join(asset_dir, asset["file"])
+        if not os.path.exists(zip_path):
+            return
+        if messagebox.askyesno("确认", f"确定要删除 {asset['file']} 吗？"):
+            os.remove(zip_path)
+            messagebox.showinfo("完成", "素材包已删除。")
+        self.refresh_status()
+
+    # ---------- 工具 ----------
+    def _check_file_md5(self, file_path, expect_md5):
+        if not os.path.exists(file_path):
+            return False
+        md5 = hashlib.md5()
+        with open(file_path, "rb") as f:
+            for chunk in iter(lambda: f.read(8192), b""):
+                md5.update(chunk)
+        return md5.hexdigest().upper() == expect_md5.upper()
+
+    def _load_settings(self):
+        if os.path.exists(USER_SETTINGS_PATH):
+            with open(USER_SETTINGS_PATH, "r", encoding="utf-8") as f:
+                return json.load(f)
+        return {}

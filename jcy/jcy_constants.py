@@ -29,10 +29,10 @@ LANG = None
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.2.8"
+APP_VERSION = "v1.2.9"
 
 # 发布日期
-APP_DATE = "20251107"
+APP_DATE = "20251114"
 
 # 控制器全称
 APP_FULL_NAME = f"{APP_NAME}_{APP_VERSION}"
@@ -113,6 +113,7 @@ MODEL_EFFECTS = "ModelEffects"
 RUNE_SKIN = "RuneSkin"
 RUNE_SIZE = "RuneSize"
 RUNE_SETTING = "RuneSetting"
+ASSET_PATH = "AssetPath"
 DROPED_LIGHT = "DropedLight"
 ITEM_DROP_SOUNDS = "ItemDropSounds"
 DISABLE_EFFECTS = "DisableEffects"
@@ -471,6 +472,7 @@ CUSTOM_SOUNDS = {
     "guard_hit_hd4":      {True: r"monster\rogue\gethit4_hd.flac", False: r"monster\guard\monster_guard_gethit_4_hd.flac",                 "path": ""},
 }
 
+
 # 导出所有需要的符号
 __all__ = [
     'MUTEX_NAME',
@@ -527,6 +529,7 @@ __all__ = [
     'RUNE_SKIN',
     'RUNE_SIZE',
     'RUNE_SETTING',
+    'ASSET_PATH',
     'RUNE_ENUS',
     'RUNE_ZHTW',
     'LNG_STRINGS',
