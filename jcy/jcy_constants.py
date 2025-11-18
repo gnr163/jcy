@@ -149,7 +149,7 @@ LNG_STRINGS = [
 # 恐怖区域API
 TERROR_ZONE_API = {
     "1" : ["https://asia.d2tz.info/terror_zone?mode=online", "https://api.d2tz.info/terror_zone?mode=online"],
-    "2": ["https://api.aws.d2-trade.com/api/query/tz_online", "https://api.d2-trade.com.cn/api/query/tz_online"],
+    "2": ["https://cdn.jsdelivr.net/gh/jcymeow/D2R_TZ_SYNC/tz.json"],
 }
 
 # 恐怖地带
@@ -171,7 +171,7 @@ TERROR_ZONE_DICT = {
   "2-3": {"zhCN": "干燥高地、亡者大殿", "zhTW": "乾土高地、死亡之殿", "enUS": "Dry Hills, Halls of the Dead", "exp": "A", "drop": "C"},
   "2-4": {"zhCN": "偏远绿洲", "zhTW": "遙遠的綠洲", "enUS": "Far Oasis", "exp": "F", "drop": "F"},
   "2-5": {"zhCN": "古代水道", "zhTW": "古代通道", "enUS": "Ancient Tunnels", "exp": "D", "drop": "C"},
-  "2-6": {"zhCN": "失落之城、群蛇峡谷、利爪腹蛇神殿", "zhTW": "失落古城、群蛇峽谷、利爪蛇魔神殿", "enUS": "Lost City, Valley of Snakes, Claw Viper Temple", "exp": "C", "drop": "C"},
+  "2-6": {"zhCN": "失落之城、群蛇峡谷、利爪蝮蛇神殿", "zhTW": "失落古城、群蛇峽谷、利爪蛇魔神殿", "enUS": "Lost City, Valley of Snakes, Claw Viper Temple", "exp": "C", "drop": "C"},
   "2-7": {"zhCN": "神秘避难所", "zhTW": "秘法聖殿", "enUS": "Arcane Sanctuary", "exp": "C", "drop": "A"},
   "2-8": {"zhCN": "塔•拉夏之墓、塔•拉夏的墓室", "zhTW": "塔拉夏的古墓、塔拉夏的密室", "enUS": "Tal Rasha's Tombs, Tal Rasha's Chamber", "exp": "S", "drop": "A"},
   "3-1": {"zhCN": "蜘蛛森林、蜘蛛洞穴", "zhTW": "蜘蛛森林、蜘蛛洞窟", "enUS": "Spider Forest, Spider Cavern", "exp": "C", "drop": "B"},
