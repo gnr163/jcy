@@ -3713,6 +3713,101 @@ MOD_ASSETS = [
                 "path": "data/hd/global/ui/items/misc/rune"
             }
         ]
+    },
+    {
+        "name": "技能皮肤",
+        "description": "金属染色效果, 来源N网: Skill Icons for D2RMM",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/skillicon.zip",
+        "file": "skillicon.zip",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/skillicon.webp",
+        "size": 5724087,
+        "md5": "E6C2604114C43A73F834E88527755245",
+        "list": [
+            {
+                "file": "amskillicon.lowend.sprite",
+                "size": 1045240,
+                "md5": "B802C153C7A3AC881AFE579E16607C39",
+                "path": "data/hd/global/ui/spells/amazon"
+            },
+            {
+                "file": "amskillicon.sprite",
+                "size": 4118440,
+                "md5": "D1816CCE6FDA6964F1142F6947BEF3EE",
+                "path": "data/hd/global/ui/spells/amazon"
+            },
+            {
+                "file": "asskillicon.lowend.sprite",
+                "size": 1045240,
+                "md5": "65DC695ACC4FB24E33AD7C0F66ABB68D",
+                "path": "data/hd/global/ui/spells/assassin"
+            },
+            {
+                "file": "asskillicon.sprite",
+                "size": 4118440,
+                "md5": "D5F45B0ADC615C62CD95BFE1E4DA8F81",
+                "path": "data/hd/global/ui/spells/assassin"
+            },
+            {
+                "file": "baskillicon.lowend.sprite",
+                "size": 1045240,
+                "md5": "14EAD29D9FE1C48FE0D1293CA6E0E4A7",
+                "path": "data/hd/global/ui/spells/barbarian"
+            },
+            {
+                "file": "baskillicon.sprite",
+                "size": 4118440,
+                "md5": "EE711E299CCD3BD169299D4393BF518D",
+                "path": "data/hd/global/ui/spells/barbarian"
+            },
+            {
+                "file": "drskillicon.lowend.sprite",
+                "size": 1045240,
+                "md5": "2EE4E4DA7056B5FF8608718344115B06",
+                "path": "data/hd/global/ui/spells/druid"
+            },
+            {
+                "file": "drskillicon.sprite",
+                "size": 4118440,
+                "md5": "ED94E1F5202E7BAAE44403F3E46D38D4",
+                "path": "data/hd/global/ui/spells/druid"
+            },
+            {
+                "file": "neskillicon.lowend.sprite",
+                "size": 1045240,
+                "md5": "7487C3159C955F25FAFFDD9683E4B360",
+                "path": "data/hd/global/ui/spells/necromancer"
+            },
+            {
+                "file": "neskillicon.sprite",
+                "size": 4118440,
+                "md5": "A052B749BA2B98A0DE646361EFE23EC8",
+                "path": "data/hd/global/ui/spells/necromancer"
+            },
+            {
+                "file": "paskillicon.lowend.sprite",
+                "size": 1045240,
+                "md5": "400901F011A92345FC9D57239EA9AE83",
+                "path": "data/hd/global/ui/spells/paladin"
+            },
+            {
+                "file": "paskillicon.sprite",
+                "size": 4118440,
+                "md5": "78D9FFA5F142EE2ECE7987683C54CD89",
+                "path": "data/hd/global/ui/spells/paladin"
+            },
+            {
+                "file": "soskillicon.lowend.sprite",
+                "size": 1045240,
+                "md5": "CF78A06A49768BDB7046D8375B5BBA49",
+                "path": "data/hd/global/ui/spells/sorceress"
+            },
+            {
+                "file": "soskillicon.sprite",
+                "size": 4118440,
+                "md5": "B8CB24E2A2B2CF2E8E377E082B405AD1",
+                "path": "data/hd/global/ui/spells/sorceress"
+            }
+        ]
     }
 ]
 
