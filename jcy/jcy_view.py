@@ -705,6 +705,13 @@ class TableWithCheckbox(tk.Frame):
         self.vbar   = tk.Scrollbar(self, orient="vertical",   command=self.canvas.yview)
         self.hbar   = tk.Scrollbar(self, orient="horizontal", command=self.canvas.xview)
         self.canvas.configure(yscrollcommand=self.vbar.set, xscrollcommand=self.hbar.set)
+        # 支持鼠标滚轮滚动（Windows）
+        def _on_mousewheel(event):
+            self.canvas.yview_scroll(-1 * int(event.delta / 120), "units")
+
+        self.canvas.bind_all("<MouseWheel>", _on_mousewheel)  # Windows
+        self.canvas.bind_all("<Button-4>", lambda e: self.canvas.yview_scroll(-1, "units"))  # Linux 上滚轮向上
+        self.canvas.bind_all("<Button-5>", lambda e: self.canvas.yview_scroll(1, "units"))   # Linux 上滚轮向下
 
         self.vbar.pack(side="right", fill="y")
         self.hbar.pack(side="bottom", fill="x")
@@ -1355,40 +1362,115 @@ class AssetManagerUI(tk.Frame):
         self.asset_dir = tk.StringVar(value=self.settings.get(ASSET_PATH, ""))
         self.asset_blocks = []
         self.mod_root = MOD_PATH
+        self.filter_var = tk.StringVar(value="all")
         self._build_ui()
 
     # ---------- 构建 UI ----------
     def _build_ui(self):
+        # 顶部：素材包目录
         top = tk.Frame(self)
         top.pack(fill="x", pady=6)
-
         tk.Label(top, text="素材包目录：").pack(side="left", padx=4)
         entry = tk.Entry(top, textvariable=self.asset_dir, width=60)
         entry.pack(side="left", padx=4, fill="x", expand=True)
         tk.Button(top, text="选择目录", command=self._choose_dir).pack(side="left", padx=4)
         tk.Button(top, text="保存路径", command=self._save_path).pack(side="left", padx=4)
 
-        # 滚动区
-        canvas = tk.Canvas(self, highlightthickness=0)
-        vbar = ttk.Scrollbar(self, orient="vertical", command=canvas.yview)
-        canvas.configure(yscrollcommand=vbar.set)
-        vbar.pack(side="right", fill="y")
-        canvas.pack(side="left", fill="both", expand=True)
-        self.inner = tk.Frame(canvas)
-        canvas.create_window((0, 0), window=self.inner, anchor="nw")
+        # 筛选条件
+        filter_frame = tk.Frame(self)
+        filter_frame.pack(fill="x", pady=4)
+        for text, val in (("全部", "all"), ("已下载", "downloaded"), ("未下载", "not_downloaded")):
+            tk.Radiobutton(filter_frame, text=text, value=val,
+                        variable=self.filter_var, command=self.refresh_status).pack(side="left", padx=6)
 
-        def _on_config(event=None):
-            canvas.configure(scrollregion=canvas.bbox("all"))
-        self.inner.bind("<Configure>", _on_config)
+        ttk.Separator(self, orient="horizontal").pack(fill="x", pady=6)
 
-        # 渲染素材块
-        for asset in MOD_ASSETS:
-            frame = self._create_asset_block(asset)
-            frame.pack(fill="x", pady=4, padx=8, anchor="n")
-            self.asset_blocks.append((asset, frame))
+        # ======== 滚动区域（缺失的部分我补上了）========
+        wrapper = tk.Frame(self)
+        wrapper.pack(fill="both", expand=True)
 
-        # 初次状态刷新
-        self.refresh_status()
+        self.canvas = tk.Canvas(wrapper, highlightthickness=0)
+        self.canvas.pack(side="left", fill="both", expand=True)
+
+        scrollbar = ttk.Scrollbar(wrapper, orient="vertical", command=self.canvas.yview)
+        scrollbar.pack(side="right", fill="y")
+
+        self.canvas.configure(yscrollcommand=scrollbar.set)
+
+        # 内部内容 Frame
+        self._tbl = tk.Frame(self.canvas)
+        self._canvas_window = self.canvas.create_window((0, 0), window=self._tbl, anchor="nw")
+
+        # 自动调整 scrollregion 和宽度
+        self._tbl.bind(
+            "<Configure>",
+            lambda e: self.canvas.configure(scrollregion=self.canvas.bbox("all"))
+        )
+        self.canvas.bind(
+            "<Configure>",
+            lambda e: self.canvas.itemconfigure(self._canvas_window, width=e.width)
+        )
+
+        # ======== 鼠标滚轮（Windows 专用）========
+        def _on_mousewheel_windows(event):
+            delta = int(event.delta / 120)
+            self.canvas.yview_scroll(-delta, "units")
+
+        def _bind_on_enter(event):
+            self.canvas.bind_all("<MouseWheel>", _on_mousewheel_windows)
+
+        def _unbind_on_leave(event):
+            try:
+                self.canvas.unbind_all("<MouseWheel>")
+            except:
+                pass
+
+        self.canvas.bind("<Enter>", _bind_on_enter)
+        self.canvas.bind("<Leave>", _unbind_on_leave)
+
+        # ======== 渲染素材块 ========
+        self.asset_blocks.clear()
+
+        if isinstance(MOD_ASSETS, (list, tuple)) and MOD_ASSETS:
+            row, col = 0, 0
+            for asset in MOD_ASSETS:
+                frame = self._create_asset_block(asset)
+                frame.grid(row=row, column=col, padx=8, pady=8, sticky="nwes")
+                self.asset_blocks.append((asset, frame))
+                col += 1
+                if col >= 2:
+                    col = 0
+                    row += 1
+        else:
+            lbl = tk.Label(self._tbl, text="未检测到素材包（MOD_ASSETS 为空或未定义）。请检查 MOD_ASSETS 的来源。",
+                        anchor="w", justify="left")
+            lbl.pack(fill="x", pady=8, padx=8)
+
+        # 延迟刷新状态
+        self.after(150, self.refresh_status)
+
+
+    # ---------- 生成素材块 ----------
+    def _create_asset_block(self, asset):
+        frame = tk.LabelFrame(self._tbl, text=asset.get("name", "<unnamed>"), padx=8, pady=4)
+        tk.Label(frame, text=asset.get("description", ""), anchor="w", justify="left").pack(fill="x")
+        pb = ttk.Progressbar(frame, orient="horizontal", mode="determinate", length=250)
+        pb.pack(fill="x", pady=4)
+
+        btn_frame = tk.Frame(frame)
+        btn_frame.pack(fill="x", pady=4)
+        b_preview = tk.Button(btn_frame, text="预览", command=lambda url=asset.get("image"): self._preview(url))
+        b_download = tk.Button(btn_frame, text="下载", command=lambda a=asset, p=pb: self._download_asset_thread(a, p))
+        b_apply = tk.Button(btn_frame, text="应用", command=lambda a=asset: self._apply_asset(a))
+        b_remove = tk.Button(btn_frame, text="移除", command=lambda a=asset: self._remove_asset(a))
+        b_delete = tk.Button(btn_frame, text="删除", command=lambda a=asset: self._delete_asset(a))
+        for b in (b_preview, b_download, b_apply, b_remove, b_delete):
+            b.pack(side="left", padx=5, ipadx=6)
+
+        frame.buttons = {"preview": b_preview, "download": b_download,
+                         "apply": b_apply, "remove": b_remove, "delete": b_delete}
+        frame.progress = pb
+        return frame
 
     # ---------- 选择 & 保存路径 ----------
     def _choose_dir(self):
@@ -1403,147 +1485,131 @@ class AssetManagerUI(tk.Frame):
             json.dump(self.settings, f, indent=4, ensure_ascii=False)
         messagebox.showinfo("保存成功", f"路径已保存到 settings.json\n{self.asset_dir.get()}")
 
-    # ---------- 生成素材块 ----------
-    def _create_asset_block(self, asset):
-        frame = tk.LabelFrame(self.inner, text=asset["name"], padx=8, pady=4)
-        tk.Label(frame, text=asset["description"], anchor="w", justify="left").pack(fill="x")
-
-        # 进度条
-        pb = ttk.Progressbar(frame, orient="horizontal", mode="determinate", length=250)
-        pb.pack(fill="x", pady=4)
-
-        btn_frame = tk.Frame(frame)
-        btn_frame.pack(fill="x", pady=4)
-        b_download = tk.Button(btn_frame, text="下载", command=lambda a=asset, p=pb: self._download_asset_thread(a, p))
-        b_apply = tk.Button(btn_frame, text="应用", command=lambda a=asset: self._apply_asset(a))
-        b_remove = tk.Button(btn_frame, text="移除", command=lambda a=asset: self._remove_asset(a))
-        b_delete = tk.Button(btn_frame, text="删除", command=lambda a=asset: self._delete_asset(a))
-
-        for b in (b_download, b_apply, b_remove, b_delete):
-            b.pack(side="left", padx=5, ipadx=6)
-
-        frame.buttons = {
-            "download": b_download,
-            "apply": b_apply,
-            "remove": b_remove,
-            "delete": b_delete
-        }
-        frame.progress = pb
-        return frame
-
     # ---------- 状态刷新 ----------
     def refresh_status(self):
-        """检测素材是否存在并校验MD5"""
         asset_dir = self.asset_dir.get().strip()
-        if not asset_dir:
-            return
-
+        filter_val = self.filter_var.get()
+        row, col = 0, 0
         for asset, frame in self.asset_blocks:
-            zip_path = os.path.join(asset_dir, asset["file"])
-            exists = os.path.exists(zip_path)
-            ok = exists and self._check_file_md5(zip_path, asset["md5"])
-            # 下载按钮反逻辑
-            frame.buttons["download"]["state"] = tk.DISABLED if ok else tk.NORMAL
-            for k in ("apply", "remove", "delete"):
-                frame.buttons[k]["state"] = tk.NORMAL if ok else tk.DISABLED
+            zip_path = os.path.join(asset_dir, asset.get("file", "")) if asset_dir else ""
+            exists = os.path.exists(zip_path) if zip_path else False
+            ok = exists and self._check_file_md5(zip_path, asset.get("md5", ""))
 
-    # ---------- 异步下载 ----------
+            show = True
+            if filter_val == "downloaded" and not ok: show = False
+            if filter_val == "not_downloaded" and ok: show = False
+            try: frame.grid_forget()
+            except Exception: pass
+            if show:
+                frame.grid(row=row, column=col, padx=8, pady=8, sticky="nwes")
+                col += 1
+                if col >= 2: col = 0; row += 1
+            try:
+                frame.buttons["download"]["state"] = tk.DISABLED if ok else tk.NORMAL
+                for k in ("apply", "remove", "delete"):
+                    frame.buttons[k]["state"] = tk.NORMAL if ok else tk.DISABLED
+            except Exception: pass
+
+    # ---------- 下载、预览、应用、移除、删除、工具 ----------
     def _download_asset_thread(self, asset, progress):
-        thread = threading.Thread(target=self._download_asset, args=(asset, progress), daemon=True)
-        thread.start()
+        threading.Thread(target=self._download_asset, args=(asset, progress), daemon=True).start()
+
 
     def _download_asset(self, asset, progress):
         asset_dir = self.asset_dir.get().strip()
         if not asset_dir:
-            return messagebox.showerror("错误", "请先选择素材目录！")
+            self.after(0, lambda: messagebox.showerror("错误", "请先选择素材目录！"))
+            return
+
         os.makedirs(asset_dir, exist_ok=True)
-        zip_path = os.path.join(asset_dir, asset["file"])
+        zip_path = os.path.join(asset_dir, asset.get("file", ""))
+
+        url = asset["url"]  # --- 只使用默认 URL ---
+        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 
         try:
-            progress["value"] = 0
-            resp = requests.get(asset["url"], stream=True, timeout=10)
+            # 重置进度条
+            self.after(0, lambda p=progress: p.config(value=0))
+
+            resp = requests.get(url, stream=True, timeout=10, headers=headers)
+            resp.raise_for_status()
+
             total = int(resp.headers.get("content-length", 0))
             downloaded = 0
+
             with open(zip_path, "wb") as f:
                 for chunk in resp.iter_content(8192):
                     if chunk:
                         f.write(chunk)
                         downloaded += len(chunk)
                         percent = int(downloaded / total * 100) if total else 0
-                        progress.after(0, lambda v=percent: progress.config(value=v))
-            if self._check_file_md5(zip_path, asset["md5"]):
-                messagebox.showinfo("完成", f"{asset['name']} 下载完成。")
-            else:
-                messagebox.showerror("错误", f"{asset['name']} 校验失败。")
-        except Exception as e:
-            messagebox.showerror("下载失败", str(e))
-        finally:
-            progress.after(0, lambda: progress.config(value=0))
-            self.refresh_status()
+                        progress.after(0, lambda v=percent, p=progress: p.config(value=v))
 
-    # ---------- 应用 ----------
+            if self._check_file_md5(zip_path, asset.get("md5", "")):
+                self.after(0, lambda name=asset['name']: messagebox.showinfo("完成", f"{name} 下载完成。"))
+            else:
+                raise Exception("MD5 校验失败")
+
+        except Exception as exc:
+            self.after(0, lambda: messagebox.showerror("下载失败", str(exc)))
+
+        finally:
+            progress.after(0, lambda p=progress: p.config(value=0))
+            self.after(0, self.refresh_status)
+
+
+    def _preview(self, url):
+        if not url: return messagebox.showerror("错误", "没有预览链接。")
+        import webbrowser
+        webbrowser.open(url)
+
     def _apply_asset(self, asset):
         asset_dir = self.asset_dir.get()
-        zip_path = os.path.join(asset_dir, asset["file"])
+        zip_path = os.path.join(asset_dir, asset.get("file", ""))
         if not os.path.exists(zip_path):
             return messagebox.showerror("错误", "文件不存在。")
-
-        if not self._check_file_md5(zip_path, asset["md5"]):
+        if not self._check_file_md5(zip_path, asset.get("md5", "")):
             return messagebox.showerror("错误", "MD5 不匹配，文件可能损坏。")
-
         tmp_dir = tempfile.mkdtemp()
-        with zipfile.ZipFile(zip_path, "r") as zf:
-            zf.extractall(tmp_dir)
-
-        # 校验包内文件
+        with zipfile.ZipFile(zip_path, "r") as zf: zf.extractall(tmp_dir)
         for f in asset.get("list", []):
-            f_path = os.path.join(tmp_dir, f["file"])
+            f_path = os.path.join(tmp_dir, f.get("file", ""))
             if not os.path.exists(f_path):
-                return messagebox.showerror("错误", f"缺少文件：{f['file']}")
-            if not self._check_file_md5(f_path, f["md5"]):
-                return messagebox.showerror("错误", f"文件校验失败：{f['file']}")
-
+                return messagebox.showerror("错误", f"缺少文件：{f.get('file')}")
+            if not self._check_file_md5(f_path, f.get("md5", "")):
+                return messagebox.showerror("错误", f"文件校验失败：{f.get('file')}")
         for f in asset.get("list", []):
-            src = os.path.join(tmp_dir, f["file"])
-            dst = os.path.join(self.mod_root, f["path"])
+            src = os.path.join(tmp_dir, f.get("file", ""))
+            dst = os.path.join(self.mod_root, f.get("path", ""))
             os.makedirs(dst, exist_ok=True)
-            with open(src, "rb") as s, open(os.path.join(dst, os.path.basename(src)), "wb") as d:
-                d.write(s.read())
-        messagebox.showinfo("完成", f"{asset['name']} 已应用。")
+            with open(src, "rb") as s, open(os.path.join(dst, os.path.basename(src)), "wb") as d: d.write(s.read())
+        messagebox.showinfo("完成", f"{asset.get('name')} 已应用。")
 
-    # ---------- 移除 ----------
     def _remove_asset(self, asset):
         count = 0
         for f in asset.get("list", []):
-            full_path = os.path.join(self.mod_root, f["path"], os.path.basename(f["file"]))
+            full_path = os.path.join(self.mod_root, f.get("path", ""), os.path.basename(f.get("file", "")))
             if os.path.exists(full_path):
                 os.remove(full_path)
                 count += 1
         messagebox.showinfo("完成", f"已移除 {count} 个文件。")
 
-    # ---------- 删除 ----------
     def _delete_asset(self, asset):
         asset_dir = self.asset_dir.get().strip()
-        zip_path = os.path.join(asset_dir, asset["file"])
-        if not os.path.exists(zip_path):
-            return
-        if messagebox.askyesno("确认", f"确定要删除 {asset['file']} 吗？"):
+        zip_path = os.path.join(asset_dir, asset.get("file", ""))
+        if os.path.exists(zip_path) and messagebox.askyesno("确认", f"确定要删除 {asset.get('file')} 吗？"):
             os.remove(zip_path)
             messagebox.showinfo("完成", "素材包已删除。")
         self.refresh_status()
 
-    # ---------- 工具 ----------
     def _check_file_md5(self, file_path, expect_md5):
-        if not os.path.exists(file_path):
-            return False
+        if not os.path.exists(file_path): return False
         md5 = hashlib.md5()
         with open(file_path, "rb") as f:
-            for chunk in iter(lambda: f.read(8192), b""):
-                md5.update(chunk)
-        return md5.hexdigest().upper() == expect_md5.upper()
+            for chunk in iter(lambda: f.read(8192), b""): md5.update(chunk)
+        return md5.hexdigest().upper() == (expect_md5 or "").upper()
 
     def _load_settings(self):
         if os.path.exists(USER_SETTINGS_PATH):
-            with open(USER_SETTINGS_PATH, "r", encoding="utf-8") as f:
-                return json.load(f)
+            with open(USER_SETTINGS_PATH, "r", encoding="utf-8") as f: return json.load(f)
         return {}
