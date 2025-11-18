@@ -470,24 +470,6 @@ class FeatureConfig:
                             "type": "Separator"
                         },
                         {
-                            "fid": RUNE_SKIN,
-                            "type": RADIO,
-                            "text": "符文皮肤",
-                            "colspan": 10,
-                            "params": {
-                                "0": "原皮",
-                                "1": "1",
-                                "2": "2",
-                                "3": "3",
-                                "4": "4",
-                                "5": "5",
-                                "6": "6",
-                                "7": "7",
-                                "8": "8",
-                                "9": "9"
-                            }
-                        },
-                        {
                             "fid": TORCH_KEY,
                             "type": CHECK,
                             "text": "火炬钥匙",

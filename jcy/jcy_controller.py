@@ -206,8 +206,6 @@ class FeatureController:
             AFFIX_EFFECTS: self.file_operations.select_affix_effects,
             # 装备-模型特效
             MODEL_EFFECTS: self.file_operations.select_model_eccects,
-            # 符文皮肤
-            RUNE_SKIN: self.file_operations.select_rune_skin,
             # 掉落光柱提醒
             DROPED_LIGHT: self.file_operations.select_droped_light,
             # 22#+符文名称大小(越大越容易发现/选中)

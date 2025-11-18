@@ -111,7 +111,6 @@ EQIUPMENT_EFFECTS = "EquipmentEffects"
 EQIUPMENT_SETTING = "EquipmentSetting"
 AFFIX_EFFECTS = "AffixEffects"
 MODEL_EFFECTS = "ModelEffects"
-RUNE_SKIN = "RuneSkin"
 RUNE_SIZE = "RuneSize"
 RUNE_SETTING = "RuneSetting"
 ASSET_PATH = "AssetPath"
@@ -528,7 +527,6 @@ __all__ = [
     'EQIUPMENT_SETTING',
     'AFFIX_EFFECTS',
     'MODEL_EFFECTS',
-    'RUNE_SKIN',
     'RUNE_SIZE',
     'RUNE_SETTING',
     'ASSET_PATH',
