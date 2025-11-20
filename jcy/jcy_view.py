@@ -21,6 +21,7 @@ from cryptography.fernet import Fernet, InvalidToken
 from jcy_constants import *
 from jcy_paths import *
 from jcy_assets import *
+from jcy_utils import human_size
 from PIL import Image, ImageTk
 from tkinter import filedialog, messagebox, scrolledtext, ttk
 import subprocess  # 用系统默认播放器播放 flac
@@ -1453,24 +1454,53 @@ class AssetManagerUI(tk.Frame):
     # ---------- 生成素材块 ----------
     def _create_asset_block(self, asset):
         frame = tk.LabelFrame(self._tbl, text=asset.get("name", "<unnamed>"), padx=8, pady=4)
-        tk.Label(frame, text=asset.get("description", ""), anchor="w", justify="left").pack(fill="x")
-        pb = ttk.Progressbar(frame, orient="horizontal", mode="determinate", length=250)
-        pb.pack(fill="x", pady=4)
 
+        # 描述
+        tk.Label(frame, text=asset.get("description", ""), anchor="w", justify="left").pack(fill="x")
+
+        # ======== 容量（单独一行） ========
+        lbl_size = tk.Label(frame, text="容量：未知", anchor="w")
+        lbl_size.pack(fill="x", pady=(4, 0))
+        frame.size_label = lbl_size  # 方便后续刷新
+
+        if "size" in asset:
+            lbl_size.config(text=f"容量：{human_size(asset['size'])}")
+
+        # ======== 进度条（单独一行） ========
+        pb = ttk.Progressbar(frame, orient="horizontal", mode="determinate", length=260)
+        pb.pack(fill="x", pady=(2, 6))
+        frame.progress = pb
+
+        # 如果 asset 有 total_size，自动计算一次百分比（固定）
+        if "size" in asset and "total_size" in asset:
+            percent = asset["size"] / asset["total_size"] * 100
+            pb['value'] = percent
+        else:
+            pb['value'] = 0   # 默认 0%
+
+        # ======== 按钮区 ========
         btn_frame = tk.Frame(frame)
         btn_frame.pack(fill="x", pady=4)
+
         b_preview = tk.Button(btn_frame, text="预览", command=lambda url=asset.get("image"): self._preview(url))
         b_download = tk.Button(btn_frame, text="下载", command=lambda a=asset, p=pb: self._download_asset_thread(a, p))
         b_apply = tk.Button(btn_frame, text="应用", command=lambda a=asset: self._apply_asset(a))
         b_remove = tk.Button(btn_frame, text="移除", command=lambda a=asset: self._remove_asset(a))
         b_delete = tk.Button(btn_frame, text="删除", command=lambda a=asset: self._delete_asset(a))
+
         for b in (b_preview, b_download, b_apply, b_remove, b_delete):
             b.pack(side="left", padx=5, ipadx=6)
 
-        frame.buttons = {"preview": b_preview, "download": b_download,
-                         "apply": b_apply, "remove": b_remove, "delete": b_delete}
-        frame.progress = pb
+        frame.buttons = {
+            "preview": b_preview,
+            "download": b_download,
+            "apply": b_apply,
+            "remove": b_remove,
+            "delete": b_delete,
+        }
+
         return frame
+
 
     # ---------- 选择 & 保存路径 ----------
     def _choose_dir(self):
