@@ -4904,8 +4904,8 @@
   {
     "id": 11158,
     "Key": "ModStre8b",
-    "enUS": "%+d to Assassin Skill Levels(ASN)",
-    "zhTW": "%+d 刺客技能等級(ASN)",
+    "enUS": "ÿc8%+d to Assassin Skill Levels(ASN)ÿc3",
+    "zhTW": "ÿc8%+d 刺客技能等級(ASN)ÿc3",
     "deDE": "%+d zu Assassinenfertigkeiten",
     "esES": "%+d a los niveles de habilidad de la asesina",
     "frFR": "%+d aux niv. de compétence d’Assassin",
@@ -4916,9 +4916,9 @@
     "jaJP": "〈アサシン〉スキルレベル向上（%+d）",
     "ptBR": "%+d de níveis de habilidade de Assassina",
     "ruRU": "%+d к уровню умений ассасина",
-    "zhCN": "%+d 刺客技能等級(ASN)",
-    "zhCN2": "%+d 刺客技能等级(ASN)",
-    "zhTW2": "%+d 刺客技能等級(ASN)"
+    "zhCN": "ÿc8%+d 刺客技能等級(ASN)ÿc3",
+    "zhCN2": "ÿc8%+d 刺客技能等级(ASN)ÿc3",
+    "zhTW2": "ÿc8%+d 刺客技能等級(ASN)ÿc3"
   },
   {
     "id": 11163,
@@ -4980,8 +4980,8 @@
   {
     "id": 21205,
     "Key": "ModStre8a",
-    "enUS": "%+d to Druid Skill Levels(DRU)",
-    "zhTW": "%+d 德魯伊技能等級(DRU)",
+    "enUS": "ÿc8%+d to Druid Skill Levels(DRU)ÿc3",
+    "zhTW": "ÿc8%+d 德魯伊技能等級(DRU)ÿc3",
     "deDE": "%+d zu Druidenfertigkeiten",
     "esES": "%+d a los niveles de habilidad del druida",
     "frFR": "%+d aux niv. de comp. du druide",
@@ -4992,9 +4992,9 @@
     "jaJP": "〈ドルイド〉スキルレベル向上（%+d）",
     "ptBR": "%+d de níveis de habilidade de Druida",
     "ruRU": "%+d к уровню умений друида",
-    "zhCN": "%+d 德魯伊技能等級(DRU)",
-    "zhCN2": "%+d 德鲁伊技能等级(DRU)",
-    "zhTW2": "%+d 德魯伊技能等級(DRU)"
+    "zhCN": "ÿc8%+d 德魯伊技能等級(DRU)ÿc3",
+    "zhCN2": "ÿc8%+d 德鲁伊技能等级(DRU)ÿc3",
+    "zhTW2": "ÿc8%+d 德魯伊技能等級(DRU)ÿc3"
   },
   {
     "id": 21207,
