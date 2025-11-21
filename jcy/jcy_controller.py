@@ -23,6 +23,34 @@ from jcy_paths import *
 from jcy_view import FeatureView
 from upgrade_dialog import UpgradeDialog
 
+LOCAL_TZ = timezone(timedelta(hours=8))
+
+def convert_net_ease_to_legacy(json_data, TERROR_ZONE_MAP):
+    """
+    将网易国服 API 结构转换为旧版 tz.json 结构
+    """
+
+    out = {"status": "ok", "data": []}
+
+    for entry in json_data.get("data", []):
+        ts = entry["time"]
+
+        # 网易是数组形式 ["监狱","营房"] → 旧版只需要第一个
+        primary_name = entry["name"][0]
+
+        zone_id = TERROR_ZONE_MAP.get(primary_name)
+        if not zone_id:
+            print(f"[警告] 找不到映射：{primary_name}，使用 0-0")
+            zone_id = "0-0"
+
+        out["data"].append({
+            "time": ts,
+            "zone": zone_id
+        })
+
+    return out
+
+
 class FeatureController:
     def __init__(self, master):
         self.master = master
@@ -295,31 +323,65 @@ class TerrorZoneFetcher:
                 # 区服配置
                 server_cfg = self.controller.current_states[TERROR_ZONE_SERVER]
                 api_array = TERROR_ZONE_API[server_cfg]
-                api = api_array[randint % len(api_array)]
+                
+                if "1" == server_cfg:
+                    # 国际服
+                    api = api_array[randint % len(api_array)]
 
-                print(f"[尝试] 第 {attempt} 次抓取 {api}")
-                response = requests.get(api, timeout=10)
-                response.raise_for_status()
-                json_data = response.json()
+                    print(f"[尝试] 第 {attempt} 次抓取 {api}")
+                    response = requests.get(api, timeout=10)
+                    response.raise_for_status()
+                    json_data = response.json()
 
-                # 1. 检查 status 和 data
-                if json_data.get("status") != "ok" or not json_data.get("data"):
-                    print(f"[失败] 数据格式异常: {json_data}")
-                else:
-                    # 2. 解析时间戳（UTC时间）
-                    tz_time = json_data["data"][0]["time"]
-                    target_hour = datetime.fromtimestamp(tz_time, tz=timezone.utc).hour
-
-                    # 3. 当前 UTC 时间 + 1
-                    current_hour = datetime.now(timezone.utc).hour
-                    expected_hour = (current_hour + 1) % 24
-
-                    # 4. 判断是否为“下一个小时”
-                    if target_hour == expected_hour:
-                        print("[成功] 恐怖区域数据抓取成功（为下一个小时）")
-                        return json_data
+                    # 1. 检查 status 和 data
+                    if json_data.get("status") != "ok" or not json_data.get("data"):
+                        print(f"[失败] 数据格式异常: {json_data}")
                     else:
-                        print(f"[失败] 数据未更新：目标小时={target_hour}，当前+1={expected_hour}")
+                        # 2. 解析时间戳（UTC时间）
+                        tz_time = json_data["data"][0]["time"]
+                        target_hour = datetime.fromtimestamp(tz_time, tz=timezone.utc).hour
+
+                        # 3. 当前 UTC 时间 + 1
+                        current_hour = datetime.now(timezone.utc).hour
+                        expected_hour = (current_hour + 1) % 24
+
+                        # 4. 判断是否为“下一个小时”
+                        if target_hour == expected_hour:
+                            print("[成功] 恐怖区域数据抓取成功（为下一个小时）")
+                            return json_data
+                        else:
+                            print(f"[失败] 数据未更新：目标小时={target_hour}，当前+1={expected_hour}")
+                elif "2" == server_cfg:
+                    # 网易国服
+                    api = api_array[randint % len(api_array)]
+
+                    print(f"[尝试] 第 {attempt} 次抓取 {api}")
+                    response = requests.get(api, timeout=10)
+                    response.raise_for_status()
+                    json_data = response.json()
+
+                    # 1. 检查 status 和 data
+                    if json_data.get("status") != "ok" or not json_data.get("data"):
+                        print(f"[失败] 数据格式异常: {json_data}")
+                    else:
+                        # 2. 解析时间戳（UTC时间）
+                        tz_time = json_data["data"][0]["time"]
+                        target_hour = datetime.fromtimestamp(tz_time, tz=timezone.utc).hour
+
+                        # 3. 当前 UTC 时间 + 1
+                        current_hour = datetime.now(timezone.utc).hour
+                        expected_hour = (current_hour + 1) % 24
+
+                        # 4. 判断是否为“下一个小时”
+                        if target_hour == expected_hour:
+                            print("[成功] 恐怖区域数据抓取成功（为下一个小时）")
+
+                            #在这里添加转换器！！！
+                            legacy_json = convert_net_ease_to_legacy(json_data, TERROR_ZONE_MAP)
+                            return legacy_json
+                        else:
+                            print(f"[失败] 数据未更新：目标小时={target_hour}，当前+1={expected_hour}")
+
             except Exception as e:
                 print(f"[异常] 第 {attempt} 次抓取失败: {e}")
 
