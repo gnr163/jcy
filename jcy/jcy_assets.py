@@ -3,9 +3,9 @@ MOD_ASSETS = [
     {
         "name": "国际服_骷髅宝石_模型",
         "description": "骷髅宝石模型",
-        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/skull.zip",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@d66adab/skull.zip",
         "file": "skull.zip",
-        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/skull.png",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@f9fa42d/skull.png",
         "size": 103691,
         "md5": "1298E9CF49C386669D626A765CA4786C",
         "list": [
@@ -74,9 +74,9 @@ MOD_ASSETS = [
     {
         "name": "国际服_死灵盾牌_模型",
         "description": "死灵盾牌白装及暗金模型",
-        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/voodoo_head.zip",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@8fefc20/voodoo_head.zip",
         "file": "voodoo_head.zip",
-        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/voodoo_head.png",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@f9fa42d/voodoo_head.png",
         "size": 338250,
         "md5": "4D60E148A03DCC4C8676F5FB78309E66",
         "list": [
@@ -145,9 +145,9 @@ MOD_ASSETS = [
     {
         "name": "国际服_短杖_模型",
         "description": "短杖白装及暗金模型",
-        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/wand.zip",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@b05e879/wand.zip",
         "file": "wand.zip",
-        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/wand.png",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@f9fa42d/wand.png",
         "size": 177255,
         "md5": "2ADBC9F0D9BB946A19C321E2FFFF6E93",
         "list": [
@@ -240,9 +240,9 @@ MOD_ASSETS = [
     {
         "name": "符文皮肤_1",
         "description": "右上角增加符文编号",
-        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune1.zip",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune1.zip",
         "file": "rune1.zip",
-        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune1.jpg",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune1.jpg",
         "size": 520552,
         "md5": "FCBDBE62414FE9875FDDCA8D54C99945",
         "list": [
@@ -647,9 +647,9 @@ MOD_ASSETS = [
     {
         "name": "符文皮肤_2",
         "description": "右上角增加符文编号, 其下增加升级宝石",
-        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune2.zip",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune2.zip",
         "file": "rune2.zip",
-        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune2.jpg",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune2.jpg",
         "size": 850251,
         "md5": "4EB0E3E97A7239E604ACAECCBB70D965",
         "list": [
@@ -1054,9 +1054,9 @@ MOD_ASSETS = [
     {
         "name": "符文皮肤_3",
         "description": "符文石染色,右上角增加符文编号",
-        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune3.zip",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune3.zip",
         "file": "rune3.zip",
-        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune3.jpg",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune3.jpg",
         "size": 484029,
         "md5": "492BB5529A83DB7B0DA3F25136D91609",
         "list": [
@@ -1461,9 +1461,9 @@ MOD_ASSETS = [
     {
         "name": "符文皮肤_4",
         "description": "符文石染色,右上角增加符文编号",
-        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune4.zip",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune4.zip",
         "file": "rune4.zip",
-        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune4.jpg",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune4.jpg",
         "size": 588102,
         "md5": "6B6AF988426EAE4069B42A811228B945",
         "list": [
@@ -1868,9 +1868,9 @@ MOD_ASSETS = [
     {
         "name": "符文皮肤_5",
         "description": "符文石染色,右上角增加符文编号,左下角增加英文",
-        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune5.zip",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune5.zip",
         "file": "rune5.zip",
-        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune5.jpg",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune5.jpg",
         "size": 534341,
         "md5": "D587EF747366E3DA1ABAAA6F0FF85EDD",
         "list": [
@@ -2275,9 +2275,9 @@ MOD_ASSETS = [
     {
         "name": "符文皮肤_6",
         "description": "3D符文石染色,右上角增加符文编号",
-        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune6.zip",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune6.zip",
         "file": "rune6.zip",
-        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune6.jpg",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune6.jpg",
         "size": 577507,
         "md5": "F2CF287A60D85F0D0F5373B8D3C83D05",
         "list": [
@@ -2682,9 +2682,9 @@ MOD_ASSETS = [
     {
         "name": "符文皮肤_7",
         "description": "符文石染色",
-        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune7.zip",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune7.zip",
         "file": "rune7.zip",
-        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune7.jpg",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune7.jpg",
         "size": 820357,
         "md5": "7C4EF5AE59DE77BD807859D4B0CB83F0",
         "list": [
@@ -3089,9 +3089,9 @@ MOD_ASSETS = [
     {
         "name": "符文皮肤_8",
         "description": "符文重绘,上=符文编号,下=英文",
-        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune8.zip",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune8.zip",
         "file": "rune8.zip",
-        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune8.jpg",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune8.jpg",
         "size": 793692,
         "md5": "DD70AC9309404B38AF28D119591DF2F4",
         "list": [
@@ -3502,9 +3502,9 @@ MOD_ASSETS = [
     {
         "name": "符文皮肤_9",
         "description": "符文石染色, 右下角增加符文编号",
-        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune9.zip",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune9.zip",
         "file": "rune9.zip",
-        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/rune9.jpg",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@ab32b97/rune9.jpg",
         "size": 366413,
         "md5": "2684622FC6EEE999DEB017FA3B0E33A7",
         "list": [
@@ -3717,9 +3717,9 @@ MOD_ASSETS = [
     {
         "name": "技能皮肤",
         "description": "金属染色效果, 来源N网: Skill Icons for D2RMM",
-        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/skillicon.zip",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@4874c2a/skillicon.zip",
         "file": "skillicon.zip",
-        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@main/skillicon.webp",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@4874c2a/skillicon.webp",
         "size": 5724087,
         "md5": "E6C2604114C43A73F834E88527755245",
         "list": [
