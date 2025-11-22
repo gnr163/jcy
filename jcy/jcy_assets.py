@@ -3808,6 +3808,29 @@ MOD_ASSETS = [
                 "path": "data/hd/global/ui/spells/sorceress"
             }
         ]
+    },
+    {
+        "name": "TrueType字体文件_MDK",
+        "description": "来源: MDKMOD",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@8d97b84/mdk_fonts.zip",
+        "file": "mdk_fonts.zip",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@8d97b84/mdk_fonts.png",
+        "size": 9151576,
+        "md5": "4BCB1C7CD96C715D80DFDE398D911C1C",
+        "list": [
+            {
+                "file": "blizzardglobal-v5_81.ttf",
+                "size": 8877876,
+                "md5": "6B1DF7464B9A1B20CC357695E9677ABB",
+                "path": "data/hd/ui/fonts"
+            },
+            {
+                "file": "BlizzardGlobal.ttf",
+                "size": 8803848,
+                "md5": "2AC19A70B77050F0B69E76BBAF7FB042",
+                "path": "data/hd/ui/fonts"
+            }
+        ]
     }
 ]
 
