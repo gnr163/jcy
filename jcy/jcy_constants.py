@@ -110,6 +110,7 @@ MONSTER_MISSILE = "MonsterMissile"
 EQIUPMENT_EFFECTS = "EquipmentEffects"
 EQIUPMENT_SETTING = "EquipmentSetting"
 AFFIX_EFFECTS = "AffixEffects"
+SETS_EFFECTS = "SetsEffects"
 MODEL_EFFECTS = "ModelEffects"
 RUNE_SIZE = "RuneSize"
 RUNE_SETTING = "RuneSetting"
@@ -646,6 +647,7 @@ __all__ = [
     'EQIUPMENT_EFFECTS',
     'EQIUPMENT_SETTING',
     'AFFIX_EFFECTS',
+    'SETS_EFFECTS',
     'MODEL_EFFECTS',
     'RUNE_SIZE',
     'RUNE_SETTING',

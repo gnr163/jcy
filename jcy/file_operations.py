@@ -1529,6 +1529,96 @@ class FileOperations:
             print(e)
 
         return (count, 2)
+    
+
+    def select_sets_effects(self, keys: list):
+        """套装特效"""
+
+        if keys is None:
+            return (0, 0)
+
+        count = 0
+        handler_enUS = "4" in keys
+        handler_max = "5" in keys
+        handler_mark = "6" in keys
+        try:
+            # jcy道具名称模板 <Dict>
+            jcy_item_name_templet = None
+            jcy_item_name_templet_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.templet.json")
+            with open(jcy_item_name_templet_path, 'r', encoding='utf-8-sig') as f:
+                jcy_item_name_templet = json.load(f)
+            jcy_item_name_templet_dict = {}
+            for obj in jcy_item_name_templet:
+                jcy_item_name_templet_dict[obj["Key"]] = obj
+
+            # jcy道具名称数据 <Dict>
+            jcy_item_names_data = None
+            jcy_item_names_data_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.data.json")
+            with open(jcy_item_names_data_path, 'r', encoding='utf-8') as f:
+                jcy_item_names_data = json.load(f)
+
+            # 道具名称文件 <List>
+            item_names_data = None
+            item_names_data_path = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json")
+            with open(item_names_data_path, 'r', encoding='utf-8-sig') as f:
+                item_names_data = json.load(f)
+
+
+            for item in item_names_data:
+                Key = item["Key"]
+
+                # 套装
+                if Key in SETS_INDEX or Key in SET_ITEM_INDEX:
+                    templet = jcy_item_name_templet_dict.get(Key)
+                    data = jcy_item_names_data.get(Key)
+
+                    for lng in [ZHCN, ZHTW, ENUS]:
+                        arr = []
+                        if handler_max:
+                            max = data[lng].get("max")
+                            if max:
+                                arr.append("ÿc1[")
+                                arr.append(max)
+                                arr.append("]\n")
+                        if handler_mark:
+                            mark = data[lng].get("mark")
+                            if mark:
+                                arr.append("ÿc2")
+                                arr.append(mark)
+                                arr.append("\n")
+                        if len(arr) > 0:
+                            arr.append("ÿc2")
+                        arr.append(templet.get(lng))
+                        if handler_enUS and lng != ENUS:
+                            arr.append(" ÿcI")
+                            arr.append(templet.get(ENUS))
+                        item[lng] = ''.join(arr)
+
+                    # 备份
+                    item[ZHCN2] = item[ZHCN]
+                    item[ZHTW2] = item[ZHTW]
+
+                    # 国服本地化
+                    netease = self.controller.current_states.get(NETEASE_LANGUAGE)
+                    self.modify_lng_strings_zhcn(item, netease)
+                    
+                    # 国际服本地化
+                    battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
+                    self.modify_lng_strings_zhtw(item, battlenet)
+                                
+            # write temp file
+            item_names_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json.tmp")
+            with open(item_names_tmp, 'w', encoding="utf-8-sig") as f:
+                json.dump(item_names_data, f, ensure_ascii=False, indent=2)
+
+            # replace target file
+            item_names = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json")
+            os.replace(item_names_tmp, item_names)
+            count += 1
+        except Exception as e:
+            print(e)
+
+        return (count, 1)
 
 
     def hide_environmental_effects(self, keys: list):

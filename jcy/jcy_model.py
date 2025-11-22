@@ -456,6 +456,17 @@ class FeatureConfig:
                             }
                         },
                         {
+                            "fid": SETS_EFFECTS,
+                            "type": CHECK,
+                            "text": "装备-套装特效",
+                            "colspan": 5,
+                            "params": {
+                                "4": "附带英文",
+                                "5": "MAX变量",
+                                "6": "吐槽信息"
+                            }
+                        },
+                        {
                             "fid": MODEL_EFFECTS,
                             "type": CHECK,
                             "text": "装备-模型特效",

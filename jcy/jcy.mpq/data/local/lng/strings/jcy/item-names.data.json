@@ -21867,5 +21867,89 @@
             "max": "-45MR",
             "mark": ""
         }
+    },
+    "Warlord's Glory": {
+        "enUS": {
+            "max": "",
+            "mark": ""
+        },
+        "zhCN": {
+            "max": "",
+            "mark": ""
+        },
+        "zhTW": {
+            "max": "",
+            "mark": ""
+        }
+    },
+    "Warlord's Lust": {
+        "enUS": {
+            "max": "",
+            "mark": ""
+        },
+        "zhCN": {
+            "max": "",
+            "mark": ""
+        },
+        "zhTW": {
+            "max": "",
+            "mark": ""
+        }
+    },
+    "Warlord's Conquest": {
+        "enUS": {
+            "max": "",
+            "mark": ""
+        },
+        "zhCN": {
+            "max": "",
+            "mark": ""
+        },
+        "zhTW": {
+            "max": "",
+            "mark": ""
+        }
+    },
+    "Warlord's Mantle": {
+        "enUS": {
+            "max": "",
+            "mark": ""
+        },
+        "zhCN": {
+            "max": "",
+            "mark": ""
+        },
+        "zhTW": {
+            "max": "",
+            "mark": ""
+        }
+    },
+    "Warlord's Crushers": {
+        "enUS": {
+            "max": "",
+            "mark": ""
+        },
+        "zhCN": {
+            "max": "",
+            "mark": ""
+        },
+        "zhTW": {
+            "max": "",
+            "mark": ""
+        }
+    },
+    "Warlord's Authority": {
+        "enUS": {
+            "max": "",
+            "mark": ""
+        },
+        "zhCN": {
+            "max": "",
+            "mark": ""
+        },
+        "zhTW": {
+            "max": "",
+            "mark": ""
+        }
     }
 }
