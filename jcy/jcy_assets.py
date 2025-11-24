@@ -3810,24 +3810,70 @@ MOD_ASSETS = [
         ]
     },
     {
-        "name": "TrueType字体文件_MDK",
-        "description": "来源: MDKMOD",
-        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@8d97b84/mdk_fonts.zip",
-        "file": "mdk_fonts.zip",
-        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@8d97b84/mdk_fonts.png",
-        "size": 9151576,
-        "md5": "4BCB1C7CD96C715D80DFDE398D911C1C",
+        "name": "思源黑体_Normal",
+        "description": "思源黑体+私用区码点,  字重:400",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@4417272/思源黑体_Normal.zip",
+        "file": "思源黑体_Normal.zip",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@e7b4265/思源黑体_Normal.png",
+        "size": 11305538,
+        "md5": "3B154859DB25DAC7A3783A7097615F7E",
         "list": [
             {
-                "file": "blizzardglobal-v5_81.ttf",
-                "size": 8877876,
-                "md5": "6B1DF7464B9A1B20CC357695E9677ABB",
+                "file": "arfangxinshuh7c95b5_eb_t.ttf",
+                "size": 7130808,
+                "md5": "C73861639AE25D9A1E7F8A6E5F83EE28",
                 "path": "data/hd/ui/fonts"
             },
             {
-                "file": "BlizzardGlobal.ttf",
-                "size": 8803848,
-                "md5": "2AC19A70B77050F0B69E76BBAF7FB042",
+                "file": "blizzardglobal-v5_81.ttf",
+                "size": 10493492,
+                "md5": "AAFB37D3696F81701FDD200EAF5192B3",
+                "path": "data/hd/ui/fonts"
+            }
+        ]
+    },
+    {
+        "name": "思源黑体_Medium",
+        "description": "思源黑体+私用区码点,  字重:500",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@e7b4265/思源黑体_Medium.zip",
+        "file": "思源黑体_Medium.zip",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@e7b4265/思源黑体_Medium.png",
+        "size": 11319726,
+        "md5": "3BED45A4A270142C23EFB73733203419",
+        "list": [
+            {
+                "file": "arfangxinshuh7c95b5_eb_t.ttf",
+                "size": 7041952,
+                "md5": "430ACE841302F0A28E007491DE026A19",
+                "path": "data/hd/ui/fonts"
+            },
+            {
+                "file": "blizzardglobal-v5_81.ttf",
+                "size": 10352112,
+                "md5": "D4AEEE431C615D71D36F57BFC1D8292E",
+                "path": "data/hd/ui/fonts"
+            }
+        ]
+    },
+    {
+        "name": "思源黑体_Bold",
+        "description": "思源黑体+私用区码点,  字重:700",
+        "url": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@4417272/思源黑体_Bold.zip",
+        "file": "思源黑体_Bold.zip",
+        "image": "https://cdn.jsdelivr.net/gh/jcymeow/D2R_MOD_JCY_ASSETS@e7b4265/思源黑体_Bold.png",
+        "size": 11421386,
+        "md5": "9E176456F970DBAE1BB51F6ADA7C46D4",
+        "list": [
+            {
+                "file": "arfangxinshuh7c95b5_eb_t.ttf",
+                "size": 7103016,
+                "md5": "EA5103FFC281C3AEA43007CADA94BF92",
+                "path": "data/hd/ui/fonts"
+            },
+            {
+                "file": "blizzardglobal-v5_81.ttf",
+                "size": 10369404,
+                "md5": "AFE6BE26A836A0E93FE84914D8BE1C58",
                 "path": "data/hd/ui/fonts"
             }
         ]
