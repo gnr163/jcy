@@ -687,7 +687,7 @@
     "id": 824,
     "Key": "Arcane Sanctuary",
     "enUS": "Arcane Sanctuary[14/48/79]",
-    "zhTW": "秘法聖殿[14/48/79]┴",
+    "zhTW": "秘法聖殿[14/48/79]",
     "deDE": "Geheime Zuflucht",
     "esES": "Santuario Arcano",
     "frFR": "Le Sanctuaire des Arcanes",
@@ -698,9 +698,9 @@
     "jaJP": "深遠なる聖域",
     "ptBR": "Santuário Arcano",
     "ruRU": "Магическое убежище",
-    "zhCN": "秘法聖殿[14/48/79]┴",
-    "zhCN2": "神秘避难所[14/48/79]┴",
-    "zhTW2": "秘法聖殿[14/48/79]┴"
+    "zhCN": "秘法聖殿[14/48/79]",
+    "zhCN2": "神秘避难所[14/48/79]",
+    "zhTW2": "秘法聖殿[14/48/79]"
   },
   {
     "id": 825,
@@ -3347,7 +3347,7 @@
     "id": 5050,
     "Key": "Black Marsh",
     "enUS": "Black Marsh[06/38/69]",
-    "zhTW": "黑色荒地[06/38/69]┴",
+    "zhTW": "黑色荒地[06/38/69]",
     "deDE": "Schwarzmoor",
     "esES": "Pantano Negro",
     "frFR": "Le Marais sombre",
@@ -3358,9 +3358,9 @@
     "jaJP": "黒の湿原",
     "ptBR": "Charco Tenebroso",
     "ruRU": "Черная топь",
-    "zhCN": "黑色荒地[06/38/69]┴",
-    "zhCN2": "黑色沼泽[06/38/69]┴",
-    "zhTW2": "黑色荒地[06/38/69]┴"
+    "zhCN": "黑色荒地[06/38/69]",
+    "zhCN2": "黑色沼泽[06/38/69]",
+    "zhTW2": "黑色荒地[06/38/69]"
   },
   {
     "id": 5051,
@@ -4715,7 +4715,7 @@
     "id": 22660,
     "Key": "Halls of Death's Calling",
     "enUS": "Halls of Pain[34/64/84]",
-    "zhTW": "苦痛之廳[34/64/84]┴",
+    "zhTW": "苦痛之廳[34/64/84]",
     "deDE": "Hallen der Schmerzen",
     "esES": "Salas del Dolor",
     "frFR": "Les Corridors de la Souffrance",
@@ -4726,9 +4726,9 @@
     "jaJP": "苦痛の広間",
     "ptBR": "Salões da Dor",
     "ruRU": "Чертоги Боли",
-    "zhCN": "苦痛之廳[34/64/84]┴",
-    "zhCN2": "苦痛大厅[34/64/84]┴",
-    "zhTW2": "苦痛之廳[34/64/84]┴"
+    "zhCN": "苦痛之廳[34/64/84]",
+    "zhCN2": "苦痛大厅[34/64/84]",
+    "zhTW2": "苦痛之廳[34/64/84]"
   },
   {
     "id": 22661,

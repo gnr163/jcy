@@ -3265,6 +3265,8 @@ class FileOperations:
                     npc["ptBR"] = APP_VERSION
                     npc["ruRU"] = APP_VERSION
                     npc["zhCN"] = APP_VERSION
+                    npc["zhCN2"] = APP_VERSION
+                    npc["zhTW2"] = APP_VERSION
 
                 if npc["id"] == 50002:
                     npc["enUS"] = APP_DATE
@@ -3280,6 +3282,8 @@ class FileOperations:
                     npc["ptBR"] = APP_DATE
                     npc["ruRU"] = APP_DATE
                     npc["zhCN"] = APP_DATE
+                    npc["zhCN2"] = APP_DATE
+                    npc["zhTW2"] = APP_DATE
 
                 if npc["id"] > 50002:
                     break
