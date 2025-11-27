@@ -21,7 +21,7 @@ from cryptography.fernet import Fernet, InvalidToken
 from jcy_constants import *
 from jcy_paths import *
 from jcy_assets import *
-from jcy_utils import human_size
+from jcy_utils import *
 from PIL import Image, ImageTk
 from tkinter import filedialog, messagebox, scrolledtext, ttk
 import subprocess  # 用系统默认播放器播放 flac
@@ -1523,7 +1523,7 @@ class AssetManagerUI(tk.Frame):
         for asset, frame in self.asset_blocks:
             zip_path = os.path.join(asset_dir, asset.get("file", "")) if asset_dir else ""
             exists = os.path.exists(zip_path) if zip_path else False
-            ok = exists and self._check_file_md5(zip_path, asset.get("md5", ""))
+            ok = exists and check_file_md5(zip_path, asset.get("md5", ""))
 
             show = True
             if filter_val == "downloaded" and not ok: show = False
@@ -1575,7 +1575,7 @@ class AssetManagerUI(tk.Frame):
                         percent = int(downloaded / total * 100) if total else 0
                         progress.after(0, lambda v=percent, p=progress: p.config(value=v))
 
-            if self._check_file_md5(zip_path, asset.get("md5", "")):
+            if check_file_md5(zip_path, asset.get("md5", "")):
                 self.after(0, lambda name=asset['name']: messagebox.showinfo("完成", f"{name} 下载完成。"))
             else:
                 raise Exception("MD5 校验失败")
@@ -1598,7 +1598,7 @@ class AssetManagerUI(tk.Frame):
         zip_path = os.path.join(asset_dir, asset.get("file", ""))
         if not os.path.exists(zip_path):
             return messagebox.showerror("错误", "文件不存在。")
-        if not self._check_file_md5(zip_path, asset.get("md5", "")):
+        if not check_file_md5(zip_path, asset.get("md5", "")):
             return messagebox.showerror("错误", "MD5 不匹配，文件可能损坏。")
         tmp_dir = tempfile.mkdtemp()
         with zipfile.ZipFile(zip_path, "r") as zf: zf.extractall(tmp_dir)
@@ -1606,7 +1606,7 @@ class AssetManagerUI(tk.Frame):
             f_path = os.path.join(tmp_dir, f.get("file", ""))
             if not os.path.exists(f_path):
                 return messagebox.showerror("错误", f"缺少文件：{f.get('file')}")
-            if not self._check_file_md5(f_path, f.get("md5", "")):
+            if not check_file_md5(f_path, f.get("md5", "")):
                 return messagebox.showerror("错误", f"文件校验失败：{f.get('file')}")
         for f in asset.get("list", []):
             src = os.path.join(tmp_dir, f.get("file", ""))
@@ -1631,13 +1631,6 @@ class AssetManagerUI(tk.Frame):
             os.remove(zip_path)
             messagebox.showinfo("完成", "素材包已删除。")
         self.refresh_status()
-
-    def _check_file_md5(self, file_path, expect_md5):
-        if not os.path.exists(file_path): return False
-        md5 = hashlib.md5()
-        with open(file_path, "rb") as f:
-            for chunk in iter(lambda: f.read(8192), b""): md5.update(chunk)
-        return md5.hexdigest().upper() == (expect_md5 or "").upper()
 
     def _load_settings(self):
         if os.path.exists(USER_SETTINGS_PATH):

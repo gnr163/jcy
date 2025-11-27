@@ -6,6 +6,7 @@ import random
 import requests
 import shutil
 import sys
+import tempfile
 import threading
 from threading import Thread
 import time
@@ -14,6 +15,7 @@ from datetime import datetime, timedelta, timezone
 from tkinter import messagebox
 from win11toast import toast
 import subprocess
+import zipfile
 
 
 from file_operations import FileOperations
@@ -21,6 +23,8 @@ from jcy_constants import *
 from jcy_model import FeatureConfig, FeatureStateManager
 from jcy_paths import *
 from jcy_view import FeatureView
+from jcy_assets import MOD_ASSETS
+from jcy_utils import *
 from upgrade_dialog import UpgradeDialog
 
 LOCAL_TZ = timezone(timedelta(hours=8))
@@ -139,6 +143,12 @@ class FeatureController:
             # 同步 Mod 文件
             self._sync_config_mods(dialog)
 
+            # 应用素材包
+            asset_dir = self.current_states.get(ASSET_PATH)
+            if asset_dir and os.path.isdir(asset_dir):
+                for asset in MOD_ASSETS:
+                    self._apply_asset_for_upgrade(asset, asset_dir, dialog)
+
             if dialog:
                 dialog.log("✅ 升级完成!")
 
@@ -147,6 +157,43 @@ class FeatureController:
                 dialog.log("⚠ 升级失败，请手动检查配置目录")
             self.open_appdata()
             print("[升级错误]", e)
+
+
+    def _apply_asset_for_upgrade(self, asset, asset_dir, dialog=None):
+        """应用素材包, 成功的输出日志"""
+        zip_path = os.path.join(asset_dir, asset.get("file", ""))
+        if not os.path.exists(zip_path):
+            return False
+        if not check_file_md5(zip_path, asset.get("md5", "")):
+            return False
+
+        tmp_dir = tempfile.mkdtemp()
+        try:
+            with zipfile.ZipFile(zip_path, "r") as zf:
+                zf.extractall(tmp_dir)
+
+            # 检查素材包内每个文件
+            for f in asset.get("list", []):
+                f_path = os.path.join(tmp_dir, f.get("file", ""))
+                if not os.path.exists(f_path):
+                    return False
+                if not check_file_md5(f_path, f.get("md5", "")):
+                    return False
+
+            # 应用素材包
+            for f in asset.get("list", []):
+                src = os.path.join(tmp_dir, f.get("file", ""))
+                dst = os.path.join(MOD_PATH, f.get("path", ""))
+                os.makedirs(dst, exist_ok=True)
+                with open(src, "rb") as s, open(os.path.join(dst, os.path.basename(src)), "wb") as d:
+                    d.write(s.read())
+
+            # 只有应用成功才记录日志
+            if dialog:
+                dialog.log(f"已应用素材包: {asset.get('name')}")
+            return True
+        finally:
+            shutil.rmtree(tmp_dir)
 
 
     def _sync_config_mods(self, dialog=None):
