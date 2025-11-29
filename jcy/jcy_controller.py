@@ -212,7 +212,7 @@ class FeatureController:
         
         self._handlers = {
             # 道具屏蔽
-            "501": self.file_operations.modify_item_names,
+            ITEM_FILTER: self.file_operations.modify_item_filter,
             # 恐怖区域-服务器
             TERROR_ZONE_SERVER: self.file_operations.select_server,
             # 恐怖区域-语言

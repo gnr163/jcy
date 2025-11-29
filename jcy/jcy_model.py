@@ -530,8 +530,8 @@ class FeatureConfig:
                 }
             ],
             "checktable": {
-                "501": "道具屏蔽",
-                RUNE_SETTING: "符文提醒"
+                RUNE_SETTING: "符文提醒",
+                ITEM_FILTER: "道具过滤"
             }
 
         }

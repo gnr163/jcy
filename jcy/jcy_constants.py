@@ -120,6 +120,7 @@ ITEM_DROP_SOUNDS = "ItemDropSounds"
 DISABLE_EFFECTS = "DisableEffects"
 ENABLE_POINTER = "EnablePointer"
 TORCH_KEY = "TorchKey"
+ITEM_FILTER = "ItemFilter"
 # Function Identifier -->
 
 # <!-- Controller Type
@@ -657,6 +658,7 @@ __all__ = [
     'LNG_STRINGS',
     'DROPED_LIGHT',
     'TORCH_KEY',
+    'ITEM_FILTER',
     'ITEM_DROP_SOUNDS',
     'DISABLE_EFFECTS',
     'ENABLE_POINTER',

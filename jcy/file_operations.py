@@ -2151,71 +2151,53 @@ class FileOperations:
         return summary
 
 
-    def load_filter_config(self):
+    def filter_item_name(self, item_name: str, filter: bool) -> str:
         """
-        读取道具过滤配置&相应item-names数据
+        filter=True  → 强制加 UE01A 前缀
+        filter=False → 去掉 UE01A 前缀
         """
-        # 0.data
-        data = []
-
-        # 2.load item-names.json 
-        item_name_dict = {}
-        item_names_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.filter.json")
-        item_names_data = None
-        with open(item_names_path, 'r', encoding='utf-8-sig') as f:
-            item_names_data = json.load(f)
-        for item in item_names_data:
-            data.append([
-                str(item.get("id")),
-                re.sub(r"ÿc.", "", item.get(ZHCN)),
-                re.sub(r"ÿc.", "", item.get(ZHTW)),
-                re.sub(r"ÿc.", "", item.get(ENUS)),
-            ])
-
-        return data
+        if filter:
+            if item_name.startswith(UE01A):
+                return item_name
+            else:
+                return UE01A + item_name
+        else:
+            return item_name.removeprefix(UE01A)
 
 
-    def modify_item_names(self, data):
+    def modify_item_filter(self, data):
         """
         修改 道具屏蔽
         """
+        if data is None:
+            return (0, 0)
+
         # 1.load item-names.json 
-        item_name_dict = {}
-        item_names_path = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json")
         item_names_data = None
+        item_names_path = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json")
         with open(item_names_path, 'r', encoding='utf-8-sig') as f:
             item_names_data = json.load(f)
-        for item in item_names_data:
-            item_name_dict[str(item["id"])] = item
-
-        item_name_filter_dict = {}
-        item_names_filter_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.filter.json")
-        item_names_filter_data = None
-        with open(item_names_filter_path, 'r', encoding='utf-8-sig') as f:
-            item_names_filter_data = json.load(f)
-        for item in item_names_filter_data:
-            item_name_filter_dict[str(item["id"])] = item
         
         # 2.modify
-        for id, filter in data.items():
-            item_name = item_name_dict[id]
-            item_name_filter = item_name_filter_dict[id]
-            
-            item_name[ZHCN] = UE01A + item_name_filter[ZHCN] if filter else item_name_filter[ZHCN]
-            item_name[ZHTW] = UE01A + item_name_filter[ZHTW] if filter else item_name_filter[ZHTW]
-            item_name[ENUS] = UE01A + item_name_filter[ENUS] if filter else item_name_filter[ENUS]
-            
-            # 备份
-            item_name[ZHCN2] = item_name[ZHCN]
-            item_name[ZHTW2] = item_name[ZHTW]
+        for item in item_names_data:
+            if item.get("Key") in data:
+                filter = data.get(item.get("Key"))
 
-            # 国服本地化
-            netease = self.controller.current_states.get(NETEASE_LANGUAGE)
-            self.modify_lng_strings_zhcn(item_name, netease)
-            
-            # 国际服本地化
-            battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
-            self.modify_lng_strings_zhtw(item_name, battlenet)
+                item[ZHCN] = self.filter_item_name(item[ZHCN2], filter)
+                item[ZHTW] = self.filter_item_name(item[ZHTW2], filter)
+                item[ENUS] = self.filter_item_name(item[ENUS], filter)
+
+                # 备份
+                item[ZHCN2] = item[ZHCN]
+                item[ZHTW2] = item[ZHTW]
+
+                # 国服本地化
+                netease = self.controller.current_states.get(NETEASE_LANGUAGE)
+                self.modify_lng_strings_zhcn(item, netease)
+                
+                # 国际服本地化
+                battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
+                self.modify_lng_strings_zhtw(item, battlenet)
 
         # 3.write
         with open(item_names_path, 'w', encoding='utf-8-sig') as f:
@@ -3919,3 +3901,12 @@ class FileOperations:
                 return data
             except Exception as e:
                 print(e)
+
+    def load_items_name(self):
+        """加载道具名称"""
+        item_names_data = None                     
+        item_names_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.filter.json")
+        with open(item_names_path, 'r', encoding='utf-8-sig') as f:
+            item_names_data = json.load(f)
+
+        return item_names_data
