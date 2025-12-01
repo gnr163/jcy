@@ -106,7 +106,7 @@
         },
         {
             "type": "Entity",
-            "name": "entity_drop_light",
+            "name": "jcy_entity_pointer",
             "id": 9999999888,
             "components": [
                 {
@@ -140,64 +140,16 @@
         },
         {
             "type": "Entity",
-            "name": "porory_beacon_q1",
-            "id": 9999999891,
+            "name": "jcy_entity_pointer",
+            "id": 586091856,
             "components": [
                 {
                     "type": "TransformDefinitionComponent",
-                    "name": "porory_beacon_q1_TransformDefinitionComponent",
+                    "name": "prefab_TransformDefinitionComponent",
                     "position": {
-                        "x": -75.0,
-                        "y": 0.0,
-                        "z": -75.0
-                    },
-                    "orientation": {
                         "x": 0.0,
-                        "y": 0.7071068,
-                        "z": 0.0,
-                        "w": 0.7071068
-                    },
-                    "scale": {
-                        "x": 150.0,
-                        "y": 1.0,
-                        "z": 150.0
-                    },
-                    "inheritOnlyPosition": false
-                },
-                {
-                    "type": "DecalDefinitionComponent",
-                    "name": "porory_beacon_q1_DecalDefinitionComponent",
-                    "diffuseMap": "data/hd/env/porory/beacon/texture/beacon_c19_s07_o100.texture",
-                    "normalMap": "",
-                    "ormMap": "",
-                    "edgeFade": 0.0,
-                    "heightFade": 0.0,
-                    "weight": 1.0,
-                    "applyToAlbedo": true,
-                    "applyToNormal": false,
-                    "applyToOcclusion": false,
-                    "applyToRoughness": false,
-                    "applyToMetalness": false,
-                    "thresholdValue": 0.0,
-                    "thresholdHardness": 1.0,
-                    "emissiveIntensity": 1.0,
-                    "emissiveFocus": 1.0,
-                    "lightMask": 16
-                }
-            ]
-        },
-        {
-            "type": "Entity",
-            "name": "porory_beacon_q2",
-            "id": 9999999892,
-            "components": [
-                {
-                    "type": "TransformDefinitionComponent",
-                    "name": "porory_beacon_q2_TransformDefinitionComponent",
-                    "position": {
-                        "x": 75.0,
-                        "y": 0.0,
-                        "z": -75.0
+                        "y": -10.0,
+                        "z": 0.0
                     },
                     "orientation": {
                         "x": 0.0,
@@ -206,127 +158,16 @@
                         "w": 1.0
                     },
                     "scale": {
-                        "x": 150.0,
-                        "y": 1.0,
-                        "z": 150.0
+                        "x": 1.0,
+                        "y": 25.0,
+                        "z": 1.0
                     },
                     "inheritOnlyPosition": false
                 },
                 {
-                    "type": "DecalDefinitionComponent",
-                    "name": "porory_beacon_q2_DecalDefinitionComponent",
-                    "diffuseMap": "data/hd/env/porory/beacon/texture/beacon_c19_s07_o100.texture",
-                    "normalMap": "",
-                    "ormMap": "",
-                    "edgeFade": 0.0,
-                    "heightFade": 0.0,
-                    "weight": 1.0,
-                    "applyToAlbedo": true,
-                    "applyToNormal": false,
-                    "applyToOcclusion": false,
-                    "applyToRoughness": false,
-                    "applyToMetalness": false,
-                    "thresholdValue": 0.0,
-                    "thresholdHardness": 1.0,
-                    "emissiveIntensity": 1.0,
-                    "emissiveFocus": 1.0,
-                    "lightMask": 16
-                }
-            ]
-        },
-        {
-            "type": "Entity",
-            "name": "porory_beacon_q3",
-            "id": 9999999893,
-            "components": [
-                {
-                    "type": "TransformDefinitionComponent",
-                    "name": "porory_beacon_q3_TransformDefinitionComponent",
-                    "position": {
-                        "x": 75.0,
-                        "y": 0.0,
-                        "z": 75.0
-                    },
-                    "orientation": {
-                        "x": 0.0,
-                        "y": 0.7071068,
-                        "z": 0.0,
-                        "w": -0.7071068
-                    },
-                    "scale": {
-                        "x": 150.0,
-                        "y": 1.0,
-                        "z": 150.0
-                    },
-                    "inheritOnlyPosition": false
-                },
-                {
-                    "type": "DecalDefinitionComponent",
-                    "name": "porory_beacon_q3_DecalDefinitionComponent",
-                    "diffuseMap": "data/hd/env/porory/beacon/texture/beacon_c19_s07_o100.texture",
-                    "normalMap": "",
-                    "ormMap": "",
-                    "edgeFade": 0.0,
-                    "heightFade": 0.0,
-                    "weight": 1.0,
-                    "applyToAlbedo": true,
-                    "applyToNormal": false,
-                    "applyToOcclusion": false,
-                    "applyToRoughness": false,
-                    "applyToMetalness": false,
-                    "thresholdValue": 0.0,
-                    "thresholdHardness": 1.0,
-                    "emissiveIntensity": 1.0,
-                    "emissiveFocus": 1.0,
-                    "lightMask": 16
-                }
-            ]
-        },
-        {
-            "type": "Entity",
-            "name": "porory_beacon_q4",
-            "id": 9999999894,
-            "components": [
-                {
-                    "type": "TransformDefinitionComponent",
-                    "name": "porory_beacon_q4_TransformDefinitionComponent",
-                    "position": {
-                        "x": -75.0,
-                        "y": 0.0,
-                        "z": 75.0
-                    },
-                    "orientation": {
-                        "x": 0.0,
-                        "y": 1.0,
-                        "z": 0.0,
-                        "w": 0.0
-                    },
-                    "scale": {
-                        "x": 150.0,
-                        "y": 1.0,
-                        "z": 150.0
-                    },
-                    "inheritOnlyPosition": false
-                },
-                {
-                    "type": "DecalDefinitionComponent",
-                    "name": "porory_beacon_q4_DecalDefinitionComponent",
-                    "diffuseMap": "data/hd/env/porory/beacon/texture/beacon_c19_s07_o100.texture",
-                    "normalMap": "",
-                    "ormMap": "",
-                    "edgeFade": 0.0,
-                    "heightFade": 0.0,
-                    "weight": 1.0,
-                    "applyToAlbedo": true,
-                    "applyToNormal": false,
-                    "applyToOcclusion": false,
-                    "applyToRoughness": false,
-                    "applyToMetalness": false,
-                    "thresholdValue": 0.0,
-                    "thresholdHardness": 1.0,
-                    "emissiveIntensity": 1.0,
-                    "emissiveFocus": 1.0,
-                    "lightMask": 16
+                    "type": "PrefabPlacementDefinitionComponent",
+                    "name": "prefab_PrefabPlacementDefinitionComponent",
+                    "prefab": "data/hd/env/porory/beacon/pf_beacon_items.json"
                 }
             ]
         }

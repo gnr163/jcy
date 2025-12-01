@@ -121,6 +121,10 @@ DISABLE_EFFECTS = "DisableEffects"
 ENABLE_POINTER = "EnablePointer"
 TORCH_KEY = "TorchKey"
 ITEM_FILTER = "ItemFilter"
+WAYPOINT_POINTER = "WayPointPointer"
+MISSION_POINTER = "MissionPointer"
+UPSTAIRS_POINTER = "UpstairsPointer"
+DOWNSTAIRS_POINTER = "DownstairsPointer"
 # Function Identifier -->
 
 # <!-- Controller Type
@@ -677,6 +681,10 @@ __all__ = [
     'SET_ITEM_INDEX',
     'ENTITY_DROP_LIGHT',
     'CUSTOM_SOUNDS',
+    'WAYPOINT_POINTER',
+    'MISSION_POINTER',
+    'UPSTAIRS_POINTER',
+    'DOWNSTAIRS_POINTER',
     'init_global_dict',
     'translate',
 ]

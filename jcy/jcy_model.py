@@ -19,7 +19,7 @@ class FeatureConfig:
                             "fid": NETEASE_LANGUAGE,
                             "type": RADIO,
                             "text": "网易国服-本地化(装备/道具/符文/符文之语/词缀/技能/地图)",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
                                 ZHCN2: "简中翻译",
                                 S2T: "简中翻译->繁体",
@@ -32,7 +32,7 @@ class FeatureConfig:
                             "fid": BATTLE_NET_LANGUAGE,
                             "type": RADIO,
                             "text": "暴雪國際服-本地化(裝備/道具/符文/符文之語/詞綴/技能/地图)",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
                                 ZHCN2: "简中翻译",
                                 S2T: "简中翻译->繁体",
@@ -48,7 +48,7 @@ class FeatureConfig:
                             "fid": TERROR_ZONE_SERVER,
                             "type": RADIO,
                             "text": "恐怖区域-服务器",
-                            "colspan": 4,
+                            "colspan": 40,
                             "params": {
                                 "1": "暴雪国际服",
                                 "2": "网易国服"
@@ -58,7 +58,7 @@ class FeatureConfig:
                             "fid": TERROR_ZONE_LANGUAGE,
                             "type": RADIO,
                             "text": "恐怖区域-语言",
-                            "colspan": 6,
+                            "colspan": 60,
                             "params": {
                                 "zhCN": "简体中文-zhCN",
                                 "zhTW": "繁體中文-zhTW",
@@ -69,7 +69,7 @@ class FeatureConfig:
                             "fid": TERROR_ZONE_NEXT,
                             "type": CHECK,
                             "text": "恐怖区域-预告",
-                            "colspan": 4,
+                            "colspan": 40,
                             "params": {
                                 "1": "Win系统通知",
                                 "2": "游戏内预告"
@@ -79,7 +79,7 @@ class FeatureConfig:
                             "fid": TERROR_ZONE_TABLE,
                             "type": TERROR_ZONE_TABLE,
                             "text": "恐怖区域",
-                            "colspan": 10
+                            "colspan": 100
                         }
                     ]
                 },
@@ -90,7 +90,7 @@ class FeatureConfig:
                             "fid": GAME_SETTING,
                             "type": CHECK,
                             "text": "游戏设置",
-                            "colspan": 8,
+                            "colspan": 80,
                             "params": {
                                 "1": "快速创建游戏",
                                 "2": "单击Esc退出游戏",
@@ -102,13 +102,13 @@ class FeatureConfig:
                             "fid": LIGHT_REDIUS,
                             "type": SPIN,
                             "text": "额外的照亮范围",
-                            "colspan": 2
+                            "colspan": 20
                         },
                         {
                             "fid": HUD_SIZE,
                             "type": RADIO,
                             "text": "HUD面板缩放",
-                            "colspan": 4,
+                            "colspan": 50,
                             "params": {
                                 "0": "100%",
                                 "1": "85%",
@@ -120,7 +120,7 @@ class FeatureConfig:
                             "fid": PORTAL_SKIN,
                             "type": RADIO,
                             "text": "传送门皮肤",
-                            "colspan": 6,
+                            "colspan": 50,
                             "params": {
                                 "0": "原版蓝门",
                                 "1": "原版红门",
@@ -132,7 +132,7 @@ class FeatureConfig:
                             "fid": GAME_SETTING2,
                             "type": CHECK,
                             "text": "游戏设置2",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
                                 "1": "隐藏任务按钮",
                                 "2": "经验条彩色格式化",
@@ -145,7 +145,7 @@ class FeatureConfig:
                             "fid": GAME_SETTING3,
                             "type": CHECK,
                             "text": "游戏设置3",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
                                 "1": "隐藏左右面板边框&铰链"
                             }
@@ -154,7 +154,7 @@ class FeatureConfig:
                             "fid": CONTROLS_SETTING,
                             "type": CHECK,
                             "text": "控件设置",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
                                 "1": "正副手提示",
                                 "2": "默认开启迷你血条",
@@ -166,7 +166,7 @@ class FeatureConfig:
                             "fid": DISABLE_EFFECTS,
                             "type": CHECK,
                             "text": "环境-屏蔽元素",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
                                 "1": "动画",
                                 "2": "崔凡克议会墙壁",
@@ -179,16 +179,58 @@ class FeatureConfig:
                             "fid": ENABLE_POINTER,
                             "type": CHECK,
                             "text": "环境-开启指引",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
-                                "1": "出/入口",
-                                "2": "小站",
                                 "3": "A1兵营",
                                 "4": "A2贤者小站",
                                 "5": "A4火焰之河",
                                 "6": "A5尼拉塞克"
                             }
                         },
+                        {
+                            "fid": WAYPOINT_POINTER,
+                            "type": RADIO,
+                            "text": "环境-小站指引",
+                            "colspan": 50,
+                            "params": {
+                                "0": "原皮无指引",
+                                "1": "箭头指引",
+                                "2": "蓝环指引*",
+                            }
+                        },
+                        {
+                            "fid": MISSION_POINTER,
+                            "type": RADIO,
+                            "text": "环境-任务指引",
+                            "colspan": 50,
+                            "params": {
+                                "0": "原皮无指引",
+                                "1": "箭头指引",
+                                "2": "红环指引*",
+                            }
+                        },
+                        {
+                            "fid": UPSTAIRS_POINTER,
+                            "type": RADIO,
+                            "text": "环境-上口指引",
+                            "colspan": 50,
+                            "params": {
+                                "0": "原皮无指引",
+                                "1": "箭头指引*",
+                                "2": "黄环指引",
+                            }
+                        },
+                        {
+                            "fid": DOWNSTAIRS_POINTER,
+                            "type": RADIO,
+                            "text": "环境-下口指引",
+                            "colspan": 50,
+                            "params": {
+                                "0": "原皮无指引",
+                                "1": "箭头指引*",
+                                "2": "绿环指引",
+                            }
+                        }
                     ]
                 },
                 {
@@ -198,7 +240,7 @@ class FeatureConfig:
                             "fid": CHARACTER_EFFECTS,
                             "type": CHECK,
                             "text": "角色特效",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
                                 "1": "套装金色光圈",
                                 "2": "脚下电圈特效",
@@ -211,7 +253,7 @@ class FeatureConfig:
                             "fid": COMMON_SETTING,
                             "type": CHECK,
                             "text": "通用设置",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
                                 "1": "屏蔽 地狱火炬 火焰风暴特效",
                                 "2": "开启 技能图标(头顶:熊之印记/狼之印记 脚下:附魔/速度爆发+影散/BO 右侧:刺客聚气)"
@@ -221,7 +263,7 @@ class FeatureConfig:
                             "fid": ARROW,
                             "type": RADIO,
                             "text": "弓/弩箭特效",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
                                 "0": "默认",
                                 "1": "魔法箭",
@@ -233,7 +275,7 @@ class FeatureConfig:
                             "fid": SOR_SETTING,
                             "type": CHECK,
                             "text": "魔法师",
-                            "colspan": 5,
+                            "colspan": 50,
                             "params": {
                                 "1": "取消雷云风暴吓人特效",
                                 "2": "降低闪电新星亮度"
@@ -243,7 +285,7 @@ class FeatureConfig:
                             "fid": TELEPORT_SKIN,
                             "type": RADIO,
                             "text": "传送术皮肤",
-                            "colspan": 5,
+                            "colspan": 50,
                             "params": {
                                 "0": "原版",
                                 "1": "冰霜",
@@ -254,7 +296,7 @@ class FeatureConfig:
                             "fid": NEC_SETTING,
                             "type": CHECK,
                             "text": "死灵法师",
-                            "colspan": 2,
+                            "colspan": 20,
                             "params": {
                                 "1": "骷髅火刀圣盾"
                             }
@@ -263,7 +305,7 @@ class FeatureConfig:
                             "fid": DRU_SETTING,
                             "type": CHECK,
                             "text": "德鲁伊",
-                            "colspan": 2,
+                            "colspan": 20,
                             "params": {
                                 "1": "飓风术特效"
                             }
@@ -272,7 +314,7 @@ class FeatureConfig:
                             "fid": ASN_SETTING,
                             "type": CHECK,
                             "text": "刺客",
-                            "colspan": 6,
+                            "colspan": 60,
                             "params": {
                                 "1": "马赛克护眼",
                                 "2": "取消影散隐身效果"
@@ -282,7 +324,7 @@ class FeatureConfig:
                             "fid": SKILL_OFF_SOUNDS,
                             "type": CHECK,
                             "text": "技能结束提示音",
-                            "colspan": 10,
+                            "colspan": 100,
                             "columns": 5,
                             "flac": True,
                             "params": {
@@ -316,7 +358,7 @@ class FeatureConfig:
                             "fid": MERCENARY_LOCATION,
                             "type": RADIO,
                             "text": "佣兵-图标位置",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
                                 "0": "原版",
                                 "1": "左上角缩进",
@@ -329,7 +371,7 @@ class FeatureConfig:
                             "fid": MERCENARY_100,
                             "type": LOCATION,
                             "text": "佣兵-坐标 x HUD100%",
-                            "colspan": 2,
+                            "colspan": 25,
                             "params": {
                                 "x": 1286,
                                 "y": 1640
@@ -339,7 +381,7 @@ class FeatureConfig:
                             "fid": MERCENARY_85,
                             "type": LOCATION,
                             "text": "佣兵-坐标 x HUD85%",
-                            "colspan": 2,
+                            "colspan": 25,
                             "params": {
                                 "x": 1656,
                                 "y": 2025
@@ -349,7 +391,7 @@ class FeatureConfig:
                             "fid": MERCENARY_75,
                             "type": LOCATION,
                             "text": "佣兵-坐标 x HUD75%",
-                            "colspan": 2,
+                            "colspan": 25,
                             "params": {
                                 "x": 1981,
                                 "y": 2375
@@ -359,7 +401,7 @@ class FeatureConfig:
                             "fid": MERCENARY_65,
                             "type": LOCATION,
                             "text": "佣兵-坐标 x HUD65%",
-                            "colspan": 2,
+                            "colspan": 25,
                             "params": {
                                 "x": 2381,
                                 "y": 2785
@@ -369,7 +411,7 @@ class FeatureConfig:
                             "fid": MERCENARY,
                             "type": CHECK,
                             "text": "佣兵-皮肤",
-                            "colspan": 5,
+                            "colspan": 50,
                             "params": {
                                 "1": "A1白毛罗格",
                                 "2": "A2女性佣兵",
@@ -383,10 +425,9 @@ class FeatureConfig:
                             "fid": MONSTER_SETTING,
                             "type": CHECK,
                             "text": "怪物-配置",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
                                 "2": "危险怪物增加光源标识",
-                                "3": "BOSS光环指引",
                                 "4": "屏蔽A5督军山克死亡特效",
                                 "5": "蓝色精英随机染色"
                             }
@@ -395,7 +436,7 @@ class FeatureConfig:
                             "fid": MONSTER_HEALTH,
                             "type": RADIO,
                             "text": "怪物-血条样式",
-                            "colspan": 5,
+                            "colspan": 50,
                             "params": {
                                 "0": "原皮",
                                 "1": "加宽加高",
@@ -407,7 +448,7 @@ class FeatureConfig:
                             "fid": MONSTER_MISSILE,
                             "type": RADIO,
                             "text": "老鼠刺针/剥皮吹箭样式",
-                            "colspan": 5,
+                            "colspan": 50,
                             "params": {
                                 "0": "原皮",
                                 "1": "魔法箭",
@@ -424,7 +465,7 @@ class FeatureConfig:
                             "fid": EQIUPMENT_EFFECTS,
                             "type": CHECK,
                             "text": "装备-名称特效",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
                                 "0": "底材阶级",
                                 "1": "底材重量",
@@ -439,7 +480,7 @@ class FeatureConfig:
                             "fid": EQIUPMENT_SETTING,
                             "type": CHECK,
                             "text": "装备-设置",
-                            "colspan": 5,
+                            "colspan": 50,
                             "params": {
                                 "1": "屏蔽 劣等/损坏/破旧武器装备底材",
                                 "2": "开启 蓝色装备染色(特殊词缀)"
@@ -449,7 +490,7 @@ class FeatureConfig:
                             "fid": AFFIX_EFFECTS,
                             "type": CHECK,
                             "text": "装备-词缀特效",
-                            "colspan": 5,
+                            "colspan": 50,
                             "params": {
                                 "1": "英文缩写",
                                 "2": "词缀着色"
@@ -459,7 +500,7 @@ class FeatureConfig:
                             "fid": SETS_EFFECTS,
                             "type": CHECK,
                             "text": "装备-套装特效",
-                            "colspan": 5,
+                            "colspan": 50,
                             "params": {
                                 "4": "附带英文",
                                 "5": "MAX变量",
@@ -470,7 +511,7 @@ class FeatureConfig:
                             "fid": MODEL_EFFECTS,
                             "type": CHECK,
                             "text": "装备-模型特效",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
                                 "1": "隐藏 头饰模型",
                                 "2": "开启 投掷标枪-闪电枪特效",
@@ -484,7 +525,7 @@ class FeatureConfig:
                             "fid": TORCH_KEY,
                             "type": CHECK,
                             "text": "火炬钥匙",
-                            "colspan": 7,
+                            "colspan": 70,
                             "params": {
                                 "1": "金属颜色皮肤",
                                 "2": "掉落光柱提醒",
@@ -495,13 +536,13 @@ class FeatureConfig:
                             "fid": RUNE_SIZE,
                             "type": SPIN,
                             "text": "22#+符文名称大小(越大越容易发现/选中)",
-                            "colspan": 3
+                            "colspan": 30
                         },
                         {
                             "fid": DROPED_LIGHT,
                             "type": CHECK,
                             "text": "掉落光柱提醒",
-                            "colspan": 10,
+                            "colspan": 100,
                             "params": {
                                 "1": "戒指",
                                 "2": "项链",
@@ -516,7 +557,7 @@ class FeatureConfig:
                             "fid": ITEM_DROP_SOUNDS,
                             "type": CHECK,
                             "text": "物品掉落提示音",
-                            "colspan": 10,
+                            "colspan": 100,
                             "columns": 5,
                             "flac": True,
                             "params": {

@@ -297,6 +297,14 @@ class FeatureController:
             ENABLE_POINTER: self.file_operations.show_environmental_pointer,
             # 符文-提醒
             RUNE_SETTING: self.file_operations.modify_rune_setting,
+            # 环境-小站指引
+            WAYPOINT_POINTER: self.file_operations.modify_waypoint_pointer,
+            # 环境-任务指引
+            MISSION_POINTER: self.file_operations.modify_mission_pointer,
+            # 环境-上口指引
+            UPSTAIRS_POINTER: self.file_operations.modify_upstairs_pointer,
+            # 环境-下口指引
+            DOWNSTAIRS_POINTER: self.file_operations.modify_downstairs_pointer,
         }
 
     def apply_settings(self):

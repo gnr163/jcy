@@ -6,6 +6,7 @@ import re
 import time
 from jcy_constants import *
 from jcy_paths import *
+from jcy_element import *
 from zhconv import convert
 
 
@@ -720,11 +721,9 @@ class FileOperations:
                 r"data/hd/character/enemy/minionspawner1.json",
                 r"data/hd/character/enemy/mosquito1.json",
                 r"data/hd/character/enemy/mummy1.json",
-                r"data/hd/character/enemy/nihlathakboss.json",
                 r"data/hd/character/enemy/overseer1.json",
                 r"data/hd/character/enemy/painworm1.json",
                 r"data/hd/character/enemy/pantherwoman1.json",
-                r"data/hd/character/enemy/prisondoor.json",
                 r"data/hd/character/enemy/putriddefiler1.json",
                 r"data/hd/character/enemy/quillbear1.json",
                 r"data/hd/character/enemy/quillrat1.json",
@@ -770,18 +769,8 @@ class FileOperations:
                 r"data/hd/character/enemy/zealot1.json",
                 r"data/hd/character/enemy/zombie1.json",
             ],
-            # BOSS怪物光环指引
-            "3": [
-                r"data/hd/character/enemy/hephasto.json",
-                r"data/hd/character/enemy/izual.json",
-                r"data/hd/character/enemy/maggotqueen1.json",
-                r"data/hd/character/enemy/radament.json",
-                r"data/hd/character/enemy/smith.json",
-                r"data/hd/character/enemy/summoner.json",
-                r"data/hd/character/enemy/Uberandariel.json",
-                r"data/hd/character/enemy/Uberduriel.json",
-                r"data/hd/character/monsters.json",
-            ],
+            # BOSS怪物光环指引->环境-任务指引
+            "3": [],
             # 屏蔽A5督军山克死亡特效
             "4": [
                 r"data/global/excel/missiles.txt",
@@ -2055,65 +2044,8 @@ class FileOperations:
 
         # 文件
         _files = {
-            # 出/入口
-            "1" : [
-                r"data/hd/objects/env_pillars/Arcane_tome.json",
-                r"data/hd/objects/env_pillars/Seven_tombs_receptacle.json",
-                r"data/hd/objects/env_stone/Stone_alpha.json",
-                r"data/hd/objects/env_wood/inifuss_tree.json",
-                r"data/hd/roomtiles/act_1_catacombs_down.json",
-                r"data/hd/roomtiles/act_1_crypt_down.json",
-                r"data/hd/roomtiles/act_1_jail_down.json",
-                r"data/hd/roomtiles/act_1_jail_up.json",
-                r"data/hd/roomtiles/act_1_wilderness_to_cave_cliff_l.json",
-                r"data/hd/roomtiles/act_1_wilderness_to_cave_cliff_r.json",
-                r"data/hd/roomtiles/act_1_wilderness_to_cave_floor_l.json",
-                r"data/hd/roomtiles/act_1_wilderness_to_cave_floor_r.json",
-                r"data/hd/roomtiles/act_1_wilderness_to_tower.json",
-                r"data/hd/roomtiles/act_2_desert_to_lair.json",
-                r"data/hd/roomtiles/act_2_desert_to_sewer_trap.json",
-                r"data/hd/roomtiles/act_2_desert_to_tomb_l_1.json",
-                r"data/hd/roomtiles/act_2_desert_to_tomb_l_2.json",
-                r"data/hd/roomtiles/act_2_desert_to_tomb_r_1.json",
-                r"data/hd/roomtiles/act_2_desert_to_tomb_r_2.json",
-                r"data/hd/roomtiles/act_2_desert_to_tomb_viper.json",
-                r"data/hd/roomtiles/act_2_lair_down.json",
-                r"data/hd/roomtiles/act_2_sewer_down.json",
-                r"data/hd/roomtiles/act_2_tomb_down.json",
-                r"data/hd/roomtiles/act_3_dungeon_down.json",
-                r"data/hd/roomtiles/act_3_jungle_to_dungeon_fort.json",
-                r"data/hd/roomtiles/act_3_jungle_to_dungeon_hole.json",
-                r"data/hd/roomtiles/act_3_jungle_to_spider.json",
-                r"data/hd/roomtiles/act_3_kurast_to_temple.json",
-                r"data/hd/roomtiles/act_3_mephisto_down_l.json",
-                r"data/hd/roomtiles/act_3_mephisto_down_r.json",
-                r"data/hd/roomtiles/act_3_sewer_down.json",
-                r"data/hd/roomtiles/act_4_mesa_to_lava.json",
-                r"data/hd/roomtiles/act_5_baal_temple_down_l.json",
-                r"data/hd/roomtiles/act_5_baal_temple_down_r.json",
-                r"data/hd/roomtiles/act_5_barricade_down_wall_l.json",
-                r"data/hd/roomtiles/act_5_barricade_down_wall_r.json",
-                r"data/hd/roomtiles/act_5_ice_caves_down_floor.json",
-                r"data/hd/roomtiles/act_5_ice_caves_down_l.json",
-                r"data/hd/roomtiles/act_5_ice_caves_down_r.json",
-                r"data/hd/roomtiles/act_5_temple_down.json",
-            ],
-            # 小站
-            "2":[
-                r"data/hd/objects/waypoint_portals/sewer_waypoint.json",
-                r"data/hd/objects/waypoint_portals/temple_waypoint.json",
-                r"data/hd/objects/waypoint_portals/travincal_waypoint.json",
-                r"data/hd/objects/waypoint_portals/waypoint_act_2.json",
-                r"data/hd/objects/waypoint_portals/waypoint_act_3.json",
-                r"data/hd/objects/waypoint_portals/waypoint_baal.json",
-                r"data/hd/objects/waypoint_portals/waypoint_cellar.json",
-                r"data/hd/objects/waypoint_portals/waypoint_exp.json",
-                r"data/hd/objects/waypoint_portals/waypoint_ice_cave.json",
-                r"data/hd/objects/waypoint_portals/waypoint_inside_act_1.json",
-                r"data/hd/objects/waypoint_portals/waypoint_outside_act_1.json",
-                r"data/hd/objects/waypoint_portals/waypoint_outside_act_4.json",
-                r"data/hd/objects/waypoint_portals/waypoint_wilderness.json",
-            ],
+            "1":[],
+            "2":[],
             # A1兵营
             "3":[
                 r"data/hd/env/preset/act1/court/courte.json",
@@ -2150,6 +2082,242 @@ class FileOperations:
         
         return summary
 
+
+    def modify_waypoint_pointer(self, radio: str = "0"):
+        """修改小站指引样式"""
+        
+        # 小站文件列表
+        _files = [
+            "data/hd/objects/waypoint_portals/waypoint_inside_act_1.json",
+            "data/hd/objects/waypoint_portals/waypoint_outside_act_1.json",
+            "data/hd/objects/waypoint_portals/waypoint_act_2.json",
+            "data/hd/objects/waypoint_portals/sewer_waypoint.json",
+            "data/hd/objects/waypoint_portals/waypoint_cellar.json",
+            "data/hd/objects/waypoint_portals/waypoint_act_3.json",
+            "data/hd/objects/waypoint_portals/travincal_waypoint.json",
+            "data/hd/objects/waypoint_portals/waypoint_outside_act_4.json",
+            "data/hd/objects/waypoint_portals/waypoint_wilderness.json",
+            "data/hd/objects/waypoint_portals/waypoint_ice_cave.json",
+            "data/hd/objects/waypoint_portals/waypoint_baal.json",
+        ]
+
+        # 指引映射
+        _maps = {
+            "0": [],
+            "1": ARROW_LIGHT1,
+            "2": PF_BEACON_WAYPOINT
+        }
+
+
+        count = 0
+        total = len(_files)
+
+        for _file in _files:
+            try:
+                json_data = None
+                json_path = os.path.join(MOD_PATH, _file)
+                with open(json_path, 'r', encoding="utf-8") as f:
+                    json_data = json.load(f)
+                
+                json_data["entities"] = [item for item in json_data["entities"] if item.get("name") != "jcy_entity_pointer"]
+                json_data["entities"].extend(_maps.get(radio))
+
+                with open(json_path, 'w', encoding="utf-8") as f:
+                    json.dump(json_data, f, ensure_ascii=False, indent=4)
+
+                count += 1
+            except Exception as e:
+                print(e)
+
+        return (count, total)
+    
+
+    def modify_mission_pointer(self, radio: str = "0"):
+        """修改任务指引样式"""
+        
+        # 任务对象文件列表
+        _files = [
+            "data/hd/character/enemy/smith.json",
+            "data/hd/character/enemy/radament.json",
+            "data/hd/character/enemy/maggotqueen1.json",
+            "data/hd/character/enemy/summoner.json",
+            "data/hd/character/enemy/izual.json",
+            "data/hd/character/enemy/hephasto.json",
+            "data/hd/character/enemy/prisondoor.json",
+            "data/hd/character/enemy/nihlathakboss.json",
+            "data/hd/character/enemy/Uberandariel.json",
+            "data/hd/character/enemy/Uberduriel.json",
+            "data/hd/objects/env_stone/Stone_alpha.json",
+            "data/hd/objects/env_wood/inifuss_tree.json",
+            "data/hd/objects/env_pillars/Seven_tombs_receptacle.json",
+            "data/hd/objects/env_organic/gid_b_inn_decoy.json",
+        ]
+
+        # 指引映射
+        _maps = {
+            "0": [],
+            "1": ARROW_LIGHT2,
+            "2": PF_BEACON_QUEST
+        }
+
+
+        count = 0
+        total = len(_files)
+
+        for _file in _files:
+            try:
+                json_data = None
+                json_path = os.path.join(MOD_PATH, _file)
+                with open(json_path, 'r', encoding="utf-8") as f:
+                    json_data = json.load(f)
+                
+                json_data["entities"] = [item for item in json_data["entities"] if item.get("name") != "jcy_entity_pointer"]
+                json_data["entities"].extend(_maps.get(radio))
+
+                with open(json_path, 'w', encoding="utf-8") as f:
+                    json.dump(json_data, f, ensure_ascii=False, indent=4)
+
+                count += 1
+            except Exception as e:
+                print(e)
+
+        return (count, total)
+    
+
+    def modify_upstairs_pointer(self, radio: str = "0"):
+        """修改上口指引样式"""
+        
+        # 上口文件列表
+        _files = [
+            "data/hd/roomtiles/act_1_catacombs_to_cathedral.json",
+            "data/hd/roomtiles/act_1_catacombs_up.json",
+            "data/hd/roomtiles/act_1_cave_up.json",
+            "data/hd/roomtiles/act_1_crypt_up.json",
+            "data/hd/roomtiles/act_1_jail_up.json",
+
+            "data/hd/roomtiles/act_2_lair_up.json",
+            "data/hd/roomtiles/act_2_sewer_dock_to_town.json",
+            "data/hd/roomtiles/act_2_sewer_up.json",
+            "data/hd/roomtiles/act_2_tomb_up.json",
+
+            "data/hd/roomtiles/act_3_dungeon_up.json",
+            "data/hd/roomtiles/act_3_mephisto_up_l.json",
+            "data/hd/roomtiles/act_3_mephisto_up_r.json",
+
+            "data/hd/roomtiles/act_4_lava_to_mesa.json",
+
+            "data/hd/roomtiles/act_5_baal_temple_up_l.json",
+            "data/hd/roomtiles/act_5_baal_temple_up_r.json",
+            "data/hd/roomtiles/act_5_ice_caves_up_l.json",
+            "data/hd/roomtiles/act_5_ice_caves_up_r.json",
+            "data/hd/roomtiles/act_5_temple_up.json",
+        ]
+
+        # 指引映射
+        _maps = {
+            "0": [],
+            "1": ROOMTILES_ARROW_LIGHT2,
+            "2": PF_BEACON_UPSTAIRS
+        }
+
+
+        count = 0
+        total = len(_files)
+
+        for _file in _files:
+            try:
+                json_data = None
+                json_path = os.path.join(MOD_PATH, _file)
+                with open(json_path, 'r', encoding="utf-8") as f:
+                    json_data = json.load(f)
+                
+                json_data["entities"] = [item for item in json_data["entities"] if item.get("name") != "jcy_entity_pointer"]
+                json_data["entities"].extend(_maps.get(radio))
+
+                with open(json_path, 'w', encoding="utf-8") as f:
+                    json.dump(json_data, f, ensure_ascii=False, indent=4)
+
+                count += 1
+            except Exception as e:
+                print(e)
+
+        return (count, total)
+
+    def modify_downstairs_pointer(self, radio: str = "0"):
+        """修改下口指引样式"""
+        
+        # 下口文件列表
+        _files = [
+            "data/hd/roomtiles/act_1_catacombs_down.json",
+            "data/hd/roomtiles/act_1_cave_down.json",
+            "data/hd/roomtiles/act_1_crypt_down.json",
+            "data/hd/roomtiles/act_1_jail_down.json",
+            "data/hd/roomtiles/act_1_wilderness_to_cave_cliff_l.json",
+            "data/hd/roomtiles/act_1_wilderness_to_cave_cliff_r.json",
+            "data/hd/roomtiles/act_1_wilderness_to_cave_floor_l.json",
+            "data/hd/roomtiles/act_1_wilderness_to_cave_floor_r.json",
+            "data/hd/roomtiles/act_1_wilderness_to_tower.json",
+
+            "data/hd/roomtiles/act_2_desert_to_lair.json",
+            "data/hd/roomtiles/act_2_desert_to_sewer_trap.json",
+            "data/hd/roomtiles/act_2_desert_to_tomb_l_1.json",
+            "data/hd/roomtiles/act_2_desert_to_tomb_l_2.json",
+            "data/hd/roomtiles/act_2_desert_to_tomb_r_1.json",
+            "data/hd/roomtiles/act_2_desert_to_tomb_r_2.json",
+            "data/hd/roomtiles/act_2_lair_down.json",
+            "data/hd/roomtiles/act_2_sewer_down.json",
+            "data/hd/roomtiles/act_2_tomb_down.json",
+
+            "data/hd/roomtiles/act_3_dungeon_down.json",
+            "data/hd/roomtiles/act_3_jungle_to_dungeon_hole.json",
+            "data/hd/roomtiles/act_3_jungle_to_spider.json",
+            "data/hd/roomtiles/act_3_kurast_to_sewer.json",
+            "data/hd/roomtiles/act_3_kurast_to_temple.json",
+            "data/hd/roomtiles/act_3_mephisto_down_l.json",
+            "data/hd/roomtiles/act_3_mephisto_down_r.json",
+            "data/hd/roomtiles/act_3_sewer_down.json",
+                        
+            "data/hd/roomtiles/act_4_mesa_to_lava.json",
+
+            "data/hd/roomtiles/act_5_baal_temple_down_l.json",
+            "data/hd/roomtiles/act_5_baal_temple_down_r.json",
+            "data/hd/roomtiles/act_5_barricade_down_wall_l.json",
+            "data/hd/roomtiles/act_5_barricade_down_wall_r.json",
+            "data/hd/roomtiles/act_5_ice_caves_down_floor.json",
+            "data/hd/roomtiles/act_5_ice_caves_down_l.json",
+            "data/hd/roomtiles/act_5_ice_caves_down_r.json",
+            "data/hd/roomtiles/act_5_temple_down.json",
+        ]
+
+        # 指引映射
+        _maps = {
+            "0": [],
+            "1": ROOMTILES_ARROW_LIGHT1,
+            "2": PF_BEACON_DOWNSTAIRS
+        }
+
+
+        count = 0
+        total = len(_files)
+
+        for _file in _files:
+            try:
+                json_data = None
+                json_path = os.path.join(MOD_PATH, _file)
+                with open(json_path, 'r', encoding="utf-8") as f:
+                    json_data = json.load(f)
+                
+                json_data["entities"] = [item for item in json_data["entities"] if item.get("name") != "jcy_entity_pointer"]
+                json_data["entities"].extend(_maps.get(radio))
+
+                with open(json_path, 'w', encoding="utf-8") as f:
+                    json.dump(json_data, f, ensure_ascii=False, indent=4)
+
+                count += 1
+            except Exception as e:
+                print(e)
+
+        return (count, total)
 
     def filter_item_name(self, item_name: str, filter: bool) -> str:
         """
@@ -3449,237 +3617,7 @@ class FileOperations:
             r"data/hd/items/misc/rune/zod_rune.json",
         ]
 
-        entity_drop_light = {
-            "type": "Entity",
-            "name": "entity_drop_light",
-            "id": 9999999888,
-            "components": [
-                {
-                    "type": "TransformDefinitionComponent",
-                    "name": "transform_drop_light",
-                    "position": {
-                        "x": 0,
-                        "y": 0,
-                        "z": 0
-                    },
-                    "orientation": {
-                        "x": 0,
-                        "y": 0,
-                        "z": 0,
-                        "w": 1
-                    },
-                    "scale": {
-                        "x": 1,
-                        "y": 1,
-                        "z": 1
-                    },
-                    "inheritOnlyPosition": False
-                },
-                {
-                    "type": "VfxDefinitionComponent",
-                    "name": "vfx_drop_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
-                    "hardKillOnDestroy": False
-                }
-            ]
-        }
-
-        entity_porory_beacons = [
-            {
-                "type": "Entity",
-                "name": "porory_beacon_q1",
-                "id": 9999999891,
-                "components": [
-                    {
-                        "type": "TransformDefinitionComponent",
-                        "name": "porory_beacon_q1_TransformDefinitionComponent",
-                        "position": {
-                            "x": -75.0,
-                            "y": 0.0,
-                            "z": -75.0
-                        },
-                        "orientation": {
-                            "x": 0.0,
-                            "y": 0.7071068,
-                            "z": 0.0,
-                            "w": 0.7071068
-                        },
-                        "scale": {
-                            "x": 150.0,
-                            "y": 1.0,
-                            "z": 150.0
-                        },
-                        "inheritOnlyPosition": False
-                    },
-                    {
-                        "type": "DecalDefinitionComponent",
-                        "name": "porory_beacon_q1_DecalDefinitionComponent",
-                        "diffuseMap": "data/hd/env/porory/beacon/texture/beacon_c19_s07_o100.texture",
-                        "normalMap": "",
-                        "ormMap": "",
-                        "edgeFade": 0.0,
-                        "heightFade": 0.0,
-                        "weight": 1.0,
-                        "applyToAlbedo": True,
-                        "applyToNormal": False,
-                        "applyToOcclusion": False,
-                        "applyToRoughness": False,
-                        "applyToMetalness": False,
-                        "thresholdValue": 0.0,
-                        "thresholdHardness": 1.0,
-                        "emissiveIntensity": 1.0,
-                        "emissiveFocus": 1.0,
-                        "lightMask": 16
-                    }
-                ]
-            },
-            {
-                "type": "Entity",
-                "name": "porory_beacon_q2",
-                "id": 9999999892,
-                "components": [
-                    {
-                        "type": "TransformDefinitionComponent",
-                        "name": "porory_beacon_q2_TransformDefinitionComponent",
-                        "position": {
-                            "x": 75.0,
-                            "y": 0.0,
-                            "z": -75.0
-                        },
-                        "orientation": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 1.0
-                        },
-                        "scale": {
-                            "x": 150.0,
-                            "y": 1.0,
-                            "z": 150.0
-                        },
-                        "inheritOnlyPosition": False
-                    },
-                    {
-                        "type": "DecalDefinitionComponent",
-                        "name": "porory_beacon_q2_DecalDefinitionComponent",
-                        "diffuseMap": "data/hd/env/porory/beacon/texture/beacon_c19_s07_o100.texture",
-                        "normalMap": "",
-                        "ormMap": "",
-                        "edgeFade": 0.0,
-                        "heightFade": 0.0,
-                        "weight": 1.0,
-                        "applyToAlbedo": True,
-                        "applyToNormal": False,
-                        "applyToOcclusion": False,
-                        "applyToRoughness": False,
-                        "applyToMetalness": False,
-                        "thresholdValue": 0.0,
-                        "thresholdHardness": 1.0,
-                        "emissiveIntensity": 1.0,
-                        "emissiveFocus": 1.0,
-                        "lightMask": 16
-                    }
-                ]
-            },
-            {
-                "type": "Entity",
-                "name": "porory_beacon_q3",
-                "id": 9999999893,
-                "components": [
-                    {
-                        "type": "TransformDefinitionComponent",
-                        "name": "porory_beacon_q3_TransformDefinitionComponent",
-                        "position": {
-                            "x": 75.0,
-                            "y": 0.0,
-                            "z": 75.0
-                        },
-                        "orientation": {
-                            "x": 0.0,
-                            "y": 0.7071068,
-                            "z": 0.0,
-                            "w": -0.7071068
-                        },
-                        "scale": {
-                            "x": 150.0,
-                            "y": 1.0,
-                            "z": 150.0
-                        },
-                        "inheritOnlyPosition": False
-                    },
-                    {
-                        "type": "DecalDefinitionComponent",
-                        "name": "porory_beacon_q3_DecalDefinitionComponent",
-                        "diffuseMap": "data/hd/env/porory/beacon/texture/beacon_c19_s07_o100.texture",
-                        "normalMap": "",
-                        "ormMap": "",
-                        "edgeFade": 0.0,
-                        "heightFade": 0.0,
-                        "weight": 1.0,
-                        "applyToAlbedo": True,
-                        "applyToNormal": False,
-                        "applyToOcclusion": False,
-                        "applyToRoughness": False,
-                        "applyToMetalness": False,
-                        "thresholdValue": 0.0,
-                        "thresholdHardness": 1.0,
-                        "emissiveIntensity": 1.0,
-                        "emissiveFocus": 1.0,
-                        "lightMask": 16
-                    }
-                ]
-            },
-            {
-                "type": "Entity",
-                "name": "porory_beacon_q4",
-                "id": 9999999894,
-                "components": [
-                    {
-                        "type": "TransformDefinitionComponent",
-                        "name": "porory_beacon_q4_TransformDefinitionComponent",
-                        "position": {
-                            "x": -75.0,
-                            "y": 0.0,
-                            "z": 75.0
-                        },
-                        "orientation": {
-                            "x": 0.0,
-                            "y": 1.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "scale": {
-                            "x": 150.0,
-                            "y": 1.0,
-                            "z": 150.0
-                        },
-                        "inheritOnlyPosition": False
-                    },
-                    {
-                        "type": "DecalDefinitionComponent",
-                        "name": "porory_beacon_q4_DecalDefinitionComponent",
-                        "diffuseMap": "data/hd/env/porory/beacon/texture/beacon_c19_s07_o100.texture",
-                        "normalMap": "",
-                        "ormMap": "",
-                        "edgeFade": 0.0,
-                        "heightFade": 0.0,
-                        "weight": 1.0,
-                        "applyToAlbedo": True,
-                        "applyToNormal": False,
-                        "applyToOcclusion": False,
-                        "applyToRoughness": False,
-                        "applyToMetalness": False,
-                        "thresholdValue": 0.0,
-                        "thresholdHardness": 1.0,
-                        "emissiveIntensity": 1.0,
-                        "emissiveFocus": 1.0,
-                        "lightMask": 16
-                    }
-                ]
-            }
-        ]
-
-        # 语音提示
+        # === 语音提示 ===
         try:
             sounds_path = os.path.join(MOD_PATH, r"data/global/excel/sounds.txt")
             with open(sounds_path, 'r', encoding='utf-8') as f:
@@ -3709,36 +3647,17 @@ class FileOperations:
                 with open(rune_file, 'r', encoding='utf-8') as f:
                     rune_json = json.load(f)
 
-                entities = rune_json.get("entities", [])
-                entity_names = [e.get("name") for e in entities]
+                # 移除全部 jcy_entity_pointer 节点
+                rune_json["entities"] = [item for item in rune_json["entities"] if item.get("name") != "jcy_entity_pointer"]
 
                 # === 光柱提示 ===
-                want_light = bool(data[i][1])
-                name_light = "entity_drop_light"
-
-                if want_light:
-                    if name_light not in entity_names:
-                        # 插入在第2个位置
-                        entities.insert(2, entity_drop_light)
-                else:
-                    # 删除光柱但不动其他
-                    entities = [e for e in entities if e.get("name") != name_light]
+                if bool(data[i][1]):
+                    rune_json["entities"].append(ENTITY_DROP_LIGHT)
 
                 # === 光圈提示 ===
-                want_beacon = bool(data[i][2])
-                beacon_names = [e["name"] for e in entity_porory_beacons]
-
-                if want_beacon:
-                    # 如果光圈不存在任何一个，就添加全部
-                    if not any(name in entity_names for name in beacon_names):
-                        entities.extend(entity_porory_beacons)
-                else:
-                    # 只移除光圈组，不影响其他实体
-                    entities = [e for e in entities if e.get("name") not in beacon_names]
-
-                # 更新 entities
-                rune_json["entities"] = entities
-
+                if bool(data[i][2]):
+                    rune_json["entities"].extend(PF_BEACON_ITEMS)
+                
                 # 保存文件
                 with open(rune_file, 'w', encoding='utf-8') as f:
                     json.dump(rune_json, f, ensure_ascii=False, indent=4)

@@ -143,7 +143,7 @@ class FeatureView:
         tab = ttk.Frame(self.notebook)
         self.add_tab(tab, config.get("text"))
 
-        total_columns = 10  # 每行总列数
+        total_columns = 100  # 每行总列数
         current_row = 0
         current_col = 0
 
@@ -229,7 +229,7 @@ class FeatureView:
             elif TERROR_ZONE_TABLE == type:
                 current_row += 1
                 tz = TerrorZoneUI(tab, self.controller)
-                tz.grid(row=current_row, column=0, columnspan=10, sticky="nsew")
+                tz.grid(row=current_row, column=0, columnspan=100, sticky="nsew")
                 current_row += 1
                 current_col = 0
 
@@ -1571,7 +1571,7 @@ class AssetManagerUI(tk.Frame):
                 raise Exception("MD5 校验失败")
 
         except Exception as exc:
-            self.after(0, lambda: messagebox.showerror("下载失败", str(exc)))
+            self.after(0, lambda e=exc: messagebox.showerror("下载失败", str(e)))
 
         finally:
             progress.after(0, lambda p=progress: p.config(value=0))
