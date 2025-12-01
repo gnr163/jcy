@@ -89,20 +89,28 @@ class FeatureConfig:
                         {
                             "fid": GAME_SETTING,
                             "type": CHECK,
-                            "text": "游戏设置",
-                            "colspan": 80,
+                            "text": "游戏设置1",
+                            "colspan": 100,
                             "params": {
                                 "1": "快速创建游戏",
                                 "2": "单击Esc退出游戏",
                                 "3": "更大的好友菜单",
-                                "4" : "画面变亮"
+                                "4": "画面变亮",
+                                "5": "隐藏左右面板边框&铰链"
                             }
                         },
                         {
-                            "fid": LIGHT_REDIUS,
-                            "type": SPIN,
-                            "text": "额外的照亮范围",
-                            "colspan": 20
+                            "fid": GAME_SETTING2,
+                            "type": CHECK,
+                            "text": "游戏设置2",
+                            "colspan": 100,
+                            "params": {
+                                "1": "隐藏任务按钮",
+                                "2": "经验条彩色格式化",
+                                "3": "左键快速购买",
+                                "4": "经验/宝石祭坛特效标识",
+                                "5": "交互对象增加蓝色火苗"
+                            }
                         },
                         {
                             "fid": HUD_SIZE,
@@ -126,28 +134,6 @@ class FeatureConfig:
                                 "1": "原版红门",
                                 "2": "双圈蓝门",
                                 "3": "单圈红门"
-                            }
-                        },
-                        {
-                            "fid": GAME_SETTING2,
-                            "type": CHECK,
-                            "text": "游戏设置2",
-                            "colspan": 100,
-                            "params": {
-                                "1": "隐藏任务按钮",
-                                "2": "经验条彩色格式化",
-                                "3": "左键快速购买",
-                                "4": "经验/宝石祭坛特效标识",
-                                "5": "交互对象增加蓝色火苗"
-                            }
-                        },
-                        {
-                            "fid": GAME_SETTING3,
-                            "type": CHECK,
-                            "text": "游戏设置3",
-                            "colspan": 100,
-                            "params": {
-                                "1": "隐藏左右面板边框&铰链"
                             }
                         },
                         {
@@ -240,7 +226,7 @@ class FeatureConfig:
                             "fid": CHARACTER_EFFECTS,
                             "type": CHECK,
                             "text": "角色特效",
-                            "colspan": 100,
+                            "colspan": 80,
                             "params": {
                                 "1": "套装金色光圈",
                                 "2": "脚下电圈特效",
@@ -248,6 +234,12 @@ class FeatureConfig:
                                 "4": "红色火焰特效",
                                 "5": "小翅膀"
                             }
+                        },
+                        {
+                            "fid": LIGHT_REDIUS,
+                            "type": SPIN,
+                            "text": "额外的照亮范围",
+                            "colspan": 20
                         },
                         {
                             "fid": COMMON_SETTING,
@@ -535,7 +527,7 @@ class FeatureConfig:
                         {
                             "fid": RUNE_SIZE,
                             "type": SPIN,
-                            "text": "22#+符文名称大小(越大越容易发现/选中)",
+                            "text": "22#+符文名称大小",
                             "colspan": 30
                         },
                         {

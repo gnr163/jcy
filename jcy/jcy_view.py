@@ -606,7 +606,8 @@ class LabeledSpinBox(ttk.LabelFrame):
             increment=increment,
             textvariable=self.var,
             state='readonly',
-            command=self._on_change
+            command=self._on_change,
+            width=12
         )
         self.spin.pack(anchor=tk.W, padx=10, pady=2)
 

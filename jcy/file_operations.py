@@ -2937,12 +2937,66 @@ class FileOperations:
         }
 
         funcs = []
-        for i in range(1, 5):
+        for i in range(1, len(_files)):
             key = str(i)
             files = _files[key]
             sub = self.common_rename(files, key in keys)
             funcs.append(sub)
 
+        # 5: 隐藏左右面板边框&铰链
+        count = 0
+        total = 2
+        profiledhd_path = os.path.join(MOD_PATH, r"data/global/ui/layouts/_profilehd.json")
+        _5files = [
+            r"data/global/ui/layouts/panelborderspanelhd.json",
+        ]
+
+        if "5" in keys:
+            try:
+                # 隐藏
+                profiledhd_data = None
+                with open(profiledhd_path, 'r', encoding='utf-8') as f:
+                    profiledhd_data = json.load(f)
+
+                profiledhd_data.pop("LeftSideSprite", None)
+                profiledhd_data.pop("LeftHingeSprite", None)
+                profiledhd_data.pop("RightSideSprite", None)
+                profiledhd_data.pop("RightHingeSprite", None)
+
+                with open(profiledhd_path, 'w', encoding="utf-8") as f:
+                    json.dump(profiledhd_data, f, ensure_ascii=False, indent=4)
+                count += 1
+
+                # 使用自定义json
+                result = self.common_rename(_5files, True)
+                count += result[0]
+                
+            except Exception as e:
+                print(e)
+        else:
+            try:
+                # 显示
+                profiledhd_data = None
+                with open(profiledhd_path, 'r', encoding='utf-8') as f:
+                    profiledhd_data = json.load(f)
+
+                profiledhd_data["LeftSideSprite"]="PANEL\\Docking_Bar\\SidePanel_L"
+                profiledhd_data["LeftHingeSprite"]="PANEL\\Docking_Bar\\SidePanel_Hinge_L"
+                profiledhd_data["RightSideSprite"]="PANEL\\Docking_Bar\\SidePanel_R"
+                profiledhd_data["RightHingeSprite"]="PANEL\\Docking_Bar\\SidePanel_Hinge_R"
+
+                with open(profiledhd_path, 'w', encoding="utf-8") as f:
+                    json.dump(profiledhd_data, f, ensure_ascii=False, indent=4)
+                count += 1
+                
+                # 使用官方json
+                result = self.common_rename(_5files, False)
+                count += result[0]
+            except Exception as e:
+                print(e)
+
+
+        funcs.append((count, total))
         results = [f for f in funcs]
         summary = tuple(sum(values) for values in zip(*results))
         
@@ -3165,66 +3219,7 @@ class FileOperations:
         summary = tuple(sum(values) for values in zip(*results))
         
         return summary
-    
 
-    def select_game_setting3(self, keys: list):
-        """游戏设置3"""
-        if keys is None:
-            return (0, 0)
-        
-        count = 0
-        total = 2
-        profiledhd_path = os.path.join(MOD_PATH, r"data/global/ui/layouts/_profilehd.json")
-        _files = [
-            r"data/global/ui/layouts/panelborderspanelhd.json",
-        ]
-
-        if "1" in keys:
-            try:
-                # 隐藏左右面板边框&铰链
-                profiledhd_data = None
-                with open(profiledhd_path, 'r', encoding='utf-8') as f:
-                    profiledhd_data = json.load(f)
-
-                profiledhd_data.pop("LeftSideSprite", None)
-                profiledhd_data.pop("LeftHingeSprite", None)
-                profiledhd_data.pop("RightSideSprite", None)
-                profiledhd_data.pop("RightHingeSprite", None)
-
-                with open(profiledhd_path, 'w', encoding="utf-8") as f:
-                    json.dump(profiledhd_data, f, ensure_ascii=False, indent=4)
-                count += 1
-
-                # 使用自定义json
-                result = self.common_rename(_files, True)
-                count += result[0]
-                
-            except Exception as e:
-                print(e)
-        else:
-            try:
-                # 显示左右面板边框&铰链
-                profiledhd_data = None
-                with open(profiledhd_path, 'r', encoding='utf-8') as f:
-                    profiledhd_data = json.load(f)
-
-                profiledhd_data["LeftSideSprite"]="PANEL\\Docking_Bar\\SidePanel_L"
-                profiledhd_data["LeftHingeSprite"]="PANEL\\Docking_Bar\\SidePanel_Hinge_L"
-                profiledhd_data["RightSideSprite"]="PANEL\\Docking_Bar\\SidePanel_R"
-                profiledhd_data["RightHingeSprite"]="PANEL\\Docking_Bar\\SidePanel_Hinge_R"
-
-                with open(profiledhd_path, 'w', encoding="utf-8") as f:
-                    json.dump(profiledhd_data, f, ensure_ascii=False, indent=4)
-                count += 1
-                
-                # 使用官方json
-                result = self.common_rename(_files, False)
-                count += result[0]
-            except Exception as e:
-                print(e)
-
-        return (count, total)
-            
 
     def select_controls_setting(self, keys: list):
         """控件设置"""
