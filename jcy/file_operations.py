@@ -1319,67 +1319,62 @@ class FileOperations:
 
 
     def select_equipment_effects(self, keys: list):
-        """装备特效"""
+        """
+        装备特效
+        0.道具过滤
+        1.底材 品质/重量/推荐凹槽/防御力
+        2.暗金/套装/符文之语 附属英文/Max变量/吐槽
+        """
 
         if keys is None:
             return (0, 0)
 
         count = 0
-        handler_grade = "0" in keys
-        handler_weight = "1" in keys
-        handler_sockets = "2" in keys
-        handler_defense = "3" in keys
-        handler_enUS = "4" in keys
-        handler_max = "5" in keys
-        handler_mark = "6" in keys
+        
 
-        # 道具过滤
-        item_filter_config = self.controller.current_states["501"]
+        # 道具过滤 ITEM_FILTER
+        item_filter_dict = self.controller.current_states[ITEM_FILTER]
+        # 装备特效配置 EQIUPMENT_EFFECTS
+        equipment_dict = self.controller.current_states[EQIUPMENT_EFFECTS]
+        # 套装特效配置 SETS_EFFECTS
+        set_dict = self.controller.current_states[SETS_EFFECTS]
 
-        # load 道具配置
-        jcy_item_names_data = None
-        jcy_item_names_json = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.data.json")
-        with open(jcy_item_names_json, 'r', encoding='utf-8') as f:
-            jcy_item_names_data = json.load(f)
+        handler_grade = "0" in equipment_dict
+        handler_weight = "1" in equipment_dict
+        handler_sockets = "2" in equipment_dict
+        handler_defense = "3" in equipment_dict
+        handler_enus = "4" in equipment_dict
+        handler_max = "5" in equipment_dict
+        handler_mark = "6" in equipment_dict
+        set_enus = "4" in set_dict
+        set_max = "5" in set_dict
+        set_mark = "6" in set_dict
 
-        # load 符文配置
-        jcy_item_runes_data = None
-        jcy_item_runes_json = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-runes.data.json")
-        with open(jcy_item_runes_json, 'r', encoding='utf-8') as f:
-            jcy_item_runes_data = json.load(f)
 
-        # load 过滤模板
-        jcy_item_name_filter_dict = {}
-        jcy_item_names_filter_data = None
-        jcy_item_names_filter_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.filter.json")
-        with open(jcy_item_names_filter_path, 'r', encoding='utf-8-sig') as f:
-            jcy_item_names_filter_data = json.load(f)
-        for item in jcy_item_names_filter_data:
-            jcy_item_name_filter_dict[str(item["id"])] = item
-
+        # --- item-names.templet.json + item-names.data.json -> item-names.json ---
         try:
-            # 道具模版->道具
-            item_names_data = None
-            item_names_templet = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.templet.json")
-            with open(item_names_templet, 'r', encoding='utf-8-sig') as f:
-                item_names_data = json.load(f)
+            templet_list = None
+            templet_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.templet.json")
+            with open(templet_path, 'r', encoding='utf-8-sig') as f:
+                templet_list = json.load(f)
 
-            for item in item_names_data:
-                id = str(item["id"])
+            data_dict = None
+            data_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.data.json")
+            with open(data_path, 'r', encoding='utf-8') as f:
+                data_dict = json.load(f)
+
+            for item in templet_list:
                 Key = item["Key"]
+                
+                # 道具过滤
+                if item_filter_dict.get(Key):
+                    item[ZHCN] = UE01A + item[ZHCN]
+                    item[ZHTW] = UE01A + item[ZHTW]
+                    item[ENUS] = UE01A + item[ENUS]
 
-                # CASE.过滤道具
-                if id in item_filter_config:
-                    filter = item_filter_config.get(id, False)
-                    item_name_filter = jcy_item_name_filter_dict[id]
-                    
-                    item[ZHCN] = UE01A + item_name_filter[ZHCN] if filter else item_name_filter[ZHCN]
-                    item[ZHTW] = UE01A + item_name_filter[ZHTW] if filter else item_name_filter[ZHTW]
-                    item[ENUS] = UE01A + item_name_filter[ENUS] if filter else item_name_filter[ENUS]
-
-                # CASE.底材
-                elif len(Key) == 3:
-                    data = jcy_item_names_data.get(Key)
+                # 底材&道具
+                if len(Key) == 3:
+                    data = data_dict.get(Key)
                     if data is not None:
                         for lng in [ZHCN, ZHTW, ENUS]:
                             arr = []
@@ -1408,35 +1403,56 @@ class FileOperations:
                                     arr.append(defense)
                                     arr.append("]")
                             item[lng] = ''.join(arr)
-
-                # CASE.装备
+                # 暗金&套装
                 else:
-                    data = jcy_item_names_data.get(Key)
-                    # 套装pass
+                    data = data_dict.get(Key)
+                    
                     if Key in SET_ITEM_INDEX:
-                        continue
-                    if data is not None:
-                        for lng in [ZHCN, ZHTW, ENUS]:
-                            arr = []
-                            if handler_max:
-                                max = data[lng].get("max")
-                                if max:
-                                    arr.append("ÿc1[")
-                                    arr.append(max)
-                                    arr.append("]\n")
-                            if handler_mark:
-                                mark = data[lng].get("mark")
-                                if mark:
+                        if data is not None:
+                            for lng in [ZHCN, ZHTW, ENUS]:
+                                arr = []
+                                if set_max:
+                                    max = data[lng].get("max")
+                                    if max:
+                                        arr.append("ÿc1[")
+                                        arr.append(max)
+                                        arr.append("]\n")
+                                if set_mark:
+                                    mark = data[lng].get("mark")
+                                    if mark:
+                                        arr.append("ÿc2")
+                                        arr.append(mark)
+                                        arr.append("\n")
+                                if len(arr) > 0:
                                     arr.append("ÿc2")
-                                    arr.append(mark)
-                                    arr.append("\n")
-                            if len(arr) > 0:
-                                arr.append("ÿc4")
-                            arr.append(item.get(lng))
-                            if handler_enUS and lng != ENUS:
-                                arr.append(" ÿcI")
-                                arr.append(item.get(ENUS))
-                            item[lng] = ''.join(arr)
+                                arr.append(item.get(lng))
+                                if set_enus and lng != ENUS:
+                                    arr.append(" ÿcI")
+                                    arr.append(item.get(ENUS))
+                                item[lng] = ''.join(arr)
+                    else:
+                        if data is not None:
+                            for lng in [ZHCN, ZHTW, ENUS]:
+                                arr = []
+                                if handler_max:
+                                    max = data[lng].get("max")
+                                    if max:
+                                        arr.append("ÿc1[")
+                                        arr.append(max)
+                                        arr.append("]\n")
+                                if handler_mark:
+                                    mark = data[lng].get("mark")
+                                    if mark:
+                                        arr.append("ÿc2")
+                                        arr.append(mark)
+                                        arr.append("\n")
+                                if len(arr) > 0:
+                                    arr.append("ÿc4")
+                                arr.append(item.get(lng))
+                                if handler_enus and lng != ENUS:
+                                    arr.append(" ÿcI")
+                                    arr.append(item.get(ENUS))
+                                item[lng] = ''.join(arr)
 
                 # 备份
                 item[ZHCN2] = item[ZHCN]
@@ -1453,7 +1469,7 @@ class FileOperations:
             # write temp file
             item_names_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json.tmp")
             with open(item_names_tmp, 'w', encoding="utf-8-sig") as f:
-                json.dump(item_names_data, f, ensure_ascii=False, indent=2)
+                json.dump(templet_list, f, ensure_ascii=False, indent=2)
 
             # replace target file
             item_names = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json")
@@ -1462,16 +1478,28 @@ class FileOperations:
         except Exception as e:
             print(e)
 
+        # --- item-runes.templet.json + item-runes.data.json -> item-runes.json ---
         try:
-            # 符文模板->符文
-            item_runes_data = None
-            item_runes_templet = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-runes.templet.json")
-            with open(item_runes_templet, 'r', encoding='utf-8-sig') as f:
-                item_runes_data = json.load(f)
+            templet_list = None
+            templet_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-runes.templet.json")
+            with open(templet_path, 'r', encoding='utf-8-sig') as f:
+                templet_list = json.load(f)
 
-            for item in item_runes_data:
+            data_dict = None
+            data_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-runes.data.json")
+            with open(data_path, 'r', encoding='utf-8') as f:
+                data_dict = json.load(f)
+
+            for item in templet_list:
                 Key = item["Key"]
-                data = jcy_item_runes_data.get(Key)
+
+                # 道具过滤
+                if item_filter_dict.get(Key):
+                    item[ZHCN] = UE01A + item[ZHCN]
+                    item[ZHTW] = UE01A + item[ZHTW]
+                    item[ENUS] = UE01A + item[ENUS]
+
+                data = data_dict.get(Key)
                 if data is not None:
                     for lng in [ZHCN, ZHTW, ENUS]:
                         arr = []
@@ -1490,7 +1518,7 @@ class FileOperations:
                         if len(arr) > 0:
                             arr.append("ÿc4")
                         arr.append(item.get(lng))
-                        if handler_enUS and lng != ENUS:
+                        if handler_enus and lng != ENUS:
                             arr.append(" ÿcI")
                             arr.append(item.get("enUS"))
                         item[lng] = ''.join(arr)
@@ -1509,7 +1537,7 @@ class FileOperations:
 
             item_runes_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-runes.json.tmp")
             with open(item_runes_tmp, 'w', encoding="utf-8-sig") as f:
-                json.dump(item_runes_data, f, ensure_ascii=False, indent=2)
+                json.dump(templet_list, f, ensure_ascii=False, indent=2)
 
             item_runes = os.path.join(MOD_PATH, r"data/local/lng/strings/item-runes.json")
             os.replace(item_runes_tmp, item_runes)
@@ -1518,96 +1546,6 @@ class FileOperations:
             print(e)
 
         return (count, 2)
-    
-
-    def select_sets_effects(self, keys: list):
-        """套装特效"""
-
-        if keys is None:
-            return (0, 0)
-
-        count = 0
-        handler_enUS = "4" in keys
-        handler_max = "5" in keys
-        handler_mark = "6" in keys
-        try:
-            # jcy道具名称模板 <Dict>
-            jcy_item_name_templet = None
-            jcy_item_name_templet_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.templet.json")
-            with open(jcy_item_name_templet_path, 'r', encoding='utf-8-sig') as f:
-                jcy_item_name_templet = json.load(f)
-            jcy_item_name_templet_dict = {}
-            for obj in jcy_item_name_templet:
-                jcy_item_name_templet_dict[obj["Key"]] = obj
-
-            # jcy道具名称数据 <Dict>
-            jcy_item_names_data = None
-            jcy_item_names_data_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.data.json")
-            with open(jcy_item_names_data_path, 'r', encoding='utf-8') as f:
-                jcy_item_names_data = json.load(f)
-
-            # 道具名称文件 <List>
-            item_names_data = None
-            item_names_data_path = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json")
-            with open(item_names_data_path, 'r', encoding='utf-8-sig') as f:
-                item_names_data = json.load(f)
-
-
-            for item in item_names_data:
-                Key = item["Key"]
-
-                # 套装
-                if Key in SETS_INDEX or Key in SET_ITEM_INDEX:
-                    templet = jcy_item_name_templet_dict.get(Key)
-                    data = jcy_item_names_data.get(Key)
-
-                    for lng in [ZHCN, ZHTW, ENUS]:
-                        arr = []
-                        if handler_max:
-                            max = data[lng].get("max")
-                            if max:
-                                arr.append("ÿc1[")
-                                arr.append(max)
-                                arr.append("]\n")
-                        if handler_mark:
-                            mark = data[lng].get("mark")
-                            if mark:
-                                arr.append("ÿc2")
-                                arr.append(mark)
-                                arr.append("\n")
-                        if len(arr) > 0:
-                            arr.append("ÿc2")
-                        arr.append(templet.get(lng))
-                        if handler_enUS and lng != ENUS:
-                            arr.append(" ÿcI")
-                            arr.append(templet.get(ENUS))
-                        item[lng] = ''.join(arr)
-
-                    # 备份
-                    item[ZHCN2] = item[ZHCN]
-                    item[ZHTW2] = item[ZHTW]
-
-                    # 国服本地化
-                    netease = self.controller.current_states.get(NETEASE_LANGUAGE)
-                    self.modify_lng_strings_zhcn(item, netease)
-                    
-                    # 国际服本地化
-                    battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
-                    self.modify_lng_strings_zhtw(item, battlenet)
-                                
-            # write temp file
-            item_names_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json.tmp")
-            with open(item_names_tmp, 'w', encoding="utf-8-sig") as f:
-                json.dump(item_names_data, f, ensure_ascii=False, indent=2)
-
-            # replace target file
-            item_names = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json")
-            os.replace(item_names_tmp, item_names)
-            count += 1
-        except Exception as e:
-            print(e)
-
-        return (count, 1)
 
 
     def hide_environmental_effects(self, keys: list):
@@ -2425,7 +2363,7 @@ class FileOperations:
                 file_json["entities"] = [item for item in file_json["entities"] if item.get("name") != "jcy_entity_pointer"]
                 if handle:
                     file_json["entities"].append(ENTITY_DROP_LIGHT)
-                    
+
                 with open(file_path, "w", encoding="utf-8") as f:
                     json.dump(file_json, f, ensure_ascii=False, indent=4)
                 count += 1

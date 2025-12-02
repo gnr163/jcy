@@ -278,7 +278,7 @@ class FeatureController:
             # 装备-词缀特效
             AFFIX_EFFECTS: self.file_operations.select_affix_effects,
             # 装备-套装特效
-            SETS_EFFECTS: self.file_operations.select_sets_effects,
+            SETS_EFFECTS: self.file_operations.select_equipment_effects,
             # 装备-模型特效
             MODEL_EFFECTS: self.file_operations.select_model_eccects,
             # 掉落光柱提醒

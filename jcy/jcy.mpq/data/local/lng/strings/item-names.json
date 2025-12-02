@@ -5247,7 +5247,7 @@
     "id": 2202,
     "Key": "isc",
     "enUS": "Scroll of Identify",
-    "zhTW": "鑑定",
+    "zhTW": "鑒定",
     "deDE": "Schriftrolle der Identifikation",
     "esES": "Pergamino de identificación",
     "frFR": "Parchemin d’identification",
@@ -5258,9 +5258,9 @@
     "jaJP": "鑑定の巻物",
     "ptBR": "Pergaminho de Identificação",
     "ruRU": "Свиток распознания",
-    "zhCN": "鑑定",
+    "zhCN": "鑒定",
     "zhCN2": "鉴定",
-    "zhTW2": "鑑定"
+    "zhTW2": "鑒定"
   },
   {
     "id": 2207,
@@ -5303,7 +5303,7 @@
   {
     "id": 2209,
     "Key": "rvs",
-    "enUS": "Rejuvenation Potion",
+    "enUS": "ÿc;Rejuvenation Potionÿc0",
     "zhTW": "ÿc;小紫ÿc0",
     "deDE": "Regenerationstrank",
     "esES": "Poción rejuvenecedora",
@@ -5322,7 +5322,7 @@
   {
     "id": 2210,
     "Key": "rvl",
-    "enUS": "Full Rejuvenation Potion",
+    "enUS": "ÿc;Full Rejuvenation Potionÿc0",
     "zhTW": "ÿc;大紫ÿc0",
     "deDE": "starker Regenerationstrank",
     "esES": "Poción rejuvenecedora total",
@@ -5456,7 +5456,7 @@
     "id": 2218,
     "Key": "aqv",
     "enUS": "Arrows",
-    "zhTW": "弓箭",
+    "zhTW": "弓矢",
     "deDE": "Pfeile",
     "esES": "[fp]Flechas",
     "frFR": "[fp]Flèches",
@@ -5467,9 +5467,9 @@
     "jaJP": "矢",
     "ptBR": "Flechas",
     "ruRU": "Стрелы",
-    "zhCN": "弓箭",
-    "zhCN2": "弓箭",
-    "zhTW2": "弓箭"
+    "zhCN": "弓矢",
+    "zhCN2": "箭矢",
+    "zhTW2": "弓矢"
   },
   {
     "id": 2219,
@@ -5506,7 +5506,7 @@
     "ptBR": "Setas",
     "ruRU": "[pl]арбалетные болты",
     "zhCN": "弩箭",
-    "zhCN2": "弩箭",
+    "zhCN2": "弩矢",
     "zhTW2": "弩箭"
   },
   {

@@ -4745,8 +4745,8 @@
   {
     "id": 2209,
     "Key": "rvs",
-    "enUS": "Rejuvenation Potion",
-    "zhTW": "小紫",
+    "enUS": "ÿc;Rejuvenation Potionÿc0",
+    "zhTW": "ÿc;小紫ÿc0",
     "deDE": "Regenerationstrank",
     "esES": "Poción rejuvenecedora",
     "frFR": "Potion de rajeunissement",
@@ -4757,7 +4757,7 @@
     "jaJP": "回復のポーション",
     "ptBR": "Poção de Rejuvenescimento",
     "ruRU": "Зелье восстановления",
-    "zhCN": "小紫"
+    "zhCN": "ÿc;小紫ÿc0"
   },
   {
     "id": 2210,
