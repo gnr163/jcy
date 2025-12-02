@@ -2089,6 +2089,7 @@ class FileOperations:
             "data/hd/objects/env_wood/inifuss_tree.json",
             "data/hd/objects/env_pillars/Seven_tombs_receptacle.json",
             "data/hd/objects/env_organic/gid_b_inn_decoy.json",
+            "data/hd/roomtiles/act_1_wilderness_to_tower.json",
         ]
 
         # 指引映射
@@ -2194,7 +2195,6 @@ class FileOperations:
             "data/hd/roomtiles/act_1_wilderness_to_cave_cliff_r.json",
             "data/hd/roomtiles/act_1_wilderness_to_cave_floor_l.json",
             "data/hd/roomtiles/act_1_wilderness_to_cave_floor_r.json",
-            "data/hd/roomtiles/act_1_wilderness_to_tower.json",
 
             "data/hd/roomtiles/act_2_desert_to_lair.json",
             "data/hd/roomtiles/act_2_desert_to_sewer_trap.json",
@@ -2874,7 +2874,7 @@ class FileOperations:
         }
 
         funcs = []
-        for i in range(1, len(_files)):
+        for i in range(1, len(_files) + 1):
             key = str(i)
             files = _files[key]
             sub = self.common_rename(files, key in keys)

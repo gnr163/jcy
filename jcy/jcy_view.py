@@ -747,7 +747,7 @@ class TableWithCheckbox(tk.Frame):
             for j, text in enumerate(row[1:], start=1):
                 tk.Label(self._tbl, text=text, width=col_width,
                          wraplength=wrap_px, borderwidth=1, relief="solid",
-                         anchor="w").grid(row=i, column=j, sticky="nsew")
+                         anchor="w", justify="left").grid(row=i, column=j, sticky="nsew")
 
         for c in range(len(columns) + 1):
             self._tbl.grid_columnconfigure(c, weight=1)
