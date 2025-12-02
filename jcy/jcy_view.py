@@ -787,13 +787,34 @@ class TableWithCheckbox(tk.Frame):
             self.on_change(self.get())
 
     def _enable_mousewheel_scroll(self):
-        """鼠标滚入 Canvas 时启用滚轮滚动"""
+        """鼠标滚入 Canvas 时启用滚轮滚动，只绑定 Canvas，不使用全局 bind_all"""
         def _on_mousewheel(event):
-            self.canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+            # Windows / macOS
+            if event.num == 4 or event.delta > 0:
+                self.canvas.yview_scroll(-1, "units")
+            elif event.num == 5 or event.delta < 0:
+                self.canvas.yview_scroll(1, "units")
             return "break"
 
-        self.canvas.bind("<Enter>", lambda e: self.canvas.bind_all("<MouseWheel>", _on_mousewheel))
-        self.canvas.bind("<Leave>", lambda e: self.canvas.unbind_all("<MouseWheel>"))
+        # 鼠标进入 Canvas 时绑定滚轮
+        def _bind_scroll(event):
+            if sys.platform.startswith("win") or sys.platform == "darwin":
+                self.canvas.bind("<MouseWheel>", _on_mousewheel)
+            else:
+                # Linux 下滚轮事件
+                self.canvas.bind("<Button-4>", _on_mousewheel)
+                self.canvas.bind("<Button-5>", _on_mousewheel)
+
+        # 鼠标离开 Canvas 时解绑滚轮
+        def _unbind_scroll(event):
+            if sys.platform.startswith("win") or sys.platform == "darwin":
+                self.canvas.unbind("<MouseWheel>")
+            else:
+                self.canvas.unbind("<Button-4>")
+                self.canvas.unbind("<Button-5>")
+
+        self.canvas.bind("<Enter>", _bind_scroll)
+        self.canvas.bind("<Leave>", _unbind_scroll)
 
 
 class RuneSettingsTable(tk.Frame):
