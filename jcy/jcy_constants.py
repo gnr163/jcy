@@ -492,41 +492,6 @@ SET_ITEM_INDEX = [
   "Warlord's Authority",
 ]
 
-# 掉落光柱JSON
-ENTITY_DROP_LIGHT = {
-            "type": "Entity",
-            "name": "entity_drop_light",
-            "id": 9999999888,
-            "components": [
-                {
-                    "type": "TransformDefinitionComponent",
-                    "name": "transform_drop_light",
-                    "position": {
-                        "x": 0,
-                        "y": 0,
-                        "z": 0
-                    },
-                    "orientation": {
-                        "x": 0,
-                        "y": 0,
-                        "z": 0,
-                        "w": 1
-                    },
-                    "scale": {
-                        "x": 1,
-                        "y": 1,
-                        "z": 1
-                    },
-                    "inheritOnlyPosition": False
-                },
-                {
-                    "type": "VfxDefinitionComponent",
-                    "name": "vfx_drop_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
-                    "hardKillOnDestroy": False
-                }
-            ]
-        }
 
 # 自定义声音
 CUSTOM_SOUNDS = {
@@ -679,7 +644,6 @@ __all__ = [
     'TERROR_ZONE_MAP',
     'SETS_INDEX',
     'SET_ITEM_INDEX',
-    'ENTITY_DROP_LIGHT',
     'CUSTOM_SOUNDS',
     'WAYPOINT_POINTER',
     'MISSION_POINTER',

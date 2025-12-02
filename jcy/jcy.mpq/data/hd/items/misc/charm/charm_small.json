@@ -106,7 +106,7 @@
         },
         {
             "type": "Entity",
-            "name": "entity_drop_light",
+            "name": "jcy_entity_pointer",
             "id": 9999999888,
             "components": [
                 {

@@ -2421,12 +2421,11 @@ class FileOperations:
                 file_path = os.path.join(MOD_PATH, file)
                 with open(file_path, 'r', encoding='utf-8') as f:
                     file_json = json.load(f)
+
+                file_json["entities"] = [item for item in file_json["entities"] if item.get("name") != "jcy_entity_pointer"]
                 if handle:
-                    if file_json["entities"][-1] != ENTITY_DROP_LIGHT:
-                        file_json["entities"].append(ENTITY_DROP_LIGHT)
-                else:
-                    if file_json["entities"][-1] == ENTITY_DROP_LIGHT:
-                        file_json["entities"].pop() 
+                    file_json["entities"].append(ENTITY_DROP_LIGHT)
+                    
                 with open(file_path, "w", encoding="utf-8") as f:
                     json.dump(file_json, f, ensure_ascii=False, indent=4)
                 count += 1
@@ -3513,12 +3512,11 @@ class FileOperations:
             mephisto_key_path = os.path.join(MOD_PATH, key_file)
             with open(mephisto_key_path, 'r', encoding='utf-8') as f:
                 mephisto_key_json = json.load(f)
+            
+            mephisto_key_json["entities"] = [item for item in mephisto_key_json["entities"] if item.get("name") != "jcy_entity_pointer"]
             if handle2:
-                if mephisto_key_json["entities"][-1] != ENTITY_DROP_LIGHT:
-                    mephisto_key_json["entities"].append(ENTITY_DROP_LIGHT)
-            else:
-                if mephisto_key_json["entities"][-1] == ENTITY_DROP_LIGHT:
-                    mephisto_key_json["entities"].pop() 
+                mephisto_key_json["entities"].append(ENTITY_DROP_LIGHT)
+
             with open(mephisto_key_path, "w", encoding="utf-8") as f:
                 json.dump(mephisto_key_json, f, ensure_ascii=False, indent=4)
             count += 1
