@@ -24,7 +24,7 @@ from jcy_assets import *
 from jcy_utils import *
 from PIL import Image, ImageTk
 from tkinter import filedialog, messagebox, scrolledtext, ttk
-from jcy_item import ITEM_CATEGORY, ITEM_TYPE, ITEMS, TIER_MAP
+from jcy_item import ITEM_LANGUAGE, ITEM_CATEGORY, ITEM_TYPE, ITEM_TIER, ITEM_COLUMN, ITEMS
 import subprocess  # 用系统默认播放器播放 flac
 
 def play_flac(path):
@@ -1628,11 +1628,13 @@ class AssetManagerUI(tk.Frame):
             with open(USER_SETTINGS_PATH, "r", encoding="utf-8") as f: return json.load(f)
         return {}
 
+
 class ItemFilterPanel(tk.Frame):
     """
     装备/道具过滤器面板
     包含:
-    - Category 下拉框
+    - Language 下拉框
+    - Category 下拉框 (二级联动)
     - Type 下拉框 (二级联动)
     - 过滤按钮
     - 分隔线
@@ -1657,6 +1659,7 @@ class ItemFilterPanel(tk.Frame):
         self.controller = controller
         self.config_dict = config_dict or {}
         self.config_key = config_key
+        self._current_lang = "zhCN"  # 默认语言代码
 
         if self.config_key not in self.config_dict:
             self.config_dict[self.config_key] = {}
@@ -1664,34 +1667,35 @@ class ItemFilterPanel(tk.Frame):
         # 存储筛选结果使用的 UI 控件
         self.table = None
 
+        # ----------- 0. Language 下拉选项 ----------- 
+        self.var_lang = tk.StringVar()
+        self.lang_combo = ttk.Combobox(
+            self,
+            textvariable=self.var_lang,
+            values=list(ITEM_LANGUAGE.values()),
+            state="readonly",
+            width=16
+        )
+        # 默认值显示（根据 self._current_lang）
+        self.var_lang.set(ITEM_LANGUAGE.get(self._current_lang, list(ITEM_LANGUAGE.values())[0]))
+        self.lang_combo.grid(row=0, column=0, padx=5, pady=3, sticky="w")
+        self.lang_combo.bind("<<ComboboxSelected>>", lambda e: self._on_language_change(self.var_lang.get()))
+
         # ----------- 1. Category 下拉选项 -----------
-        tk.Label(self, text="类别:", anchor="w").grid(row=0, column=0, sticky="w", pady=3)
-        
-        # 取 key 列表和中文映射
-        self._cat_labels = {c["key"]: c["zhCN"] for c in ITEM_CATEGORY}   # key -> 中文
-        self._cat_keys = {v: k for k, v in self._cat_labels.items()}       # 中文 -> key
 
-        default_key = "weapon" if "weapon" in self._cat_labels else list(self._cat_labels.keys())[0]
-        default_label = self._cat_labels[default_key]
-        
-        # 原 var_cat
+        # var_cat 与 combobox 先创建（values 会在 _refresh_category_menu 中填充）
         self.var_cat = tk.StringVar()
-        self._current_cat_key = default_key
-        self.var_cat.set(default_label)
-
-        # ttk.Combobox
         self.cat_combo = ttk.Combobox(
             self,
             textvariable=self.var_cat,
-            values=list(self._cat_labels.values()),  # 显示中文
-            state="readonly"  # 只允许选择，不可输入
+            values=[],  # 由 _refresh_category_menu 填充（按语言）
+            state="readonly",
+            width=16
         )
-        self.cat_combo.grid(row=0, column=1, sticky="w", pady=3)
+        self.cat_combo.grid(row=0, column=1, padx=5, pady=3, sticky="w")
         self.cat_combo.bind("<<ComboboxSelected>>", lambda e: self._on_category_change(self.var_cat.get()))
 
-
         # ----------- 2. Type 下拉选项（联动） -----------
-        tk.Label(self, text="类型:", anchor="w").grid(row=0, column=2, sticky="w", padx=10)
 
         self.var_type = tk.StringVar()
         self._current_type_key = ""  # 先空
@@ -1700,62 +1704,119 @@ class ItemFilterPanel(tk.Frame):
             self,
             textvariable=self.var_type,
             values=[],  # 先空，_refresh_type_menu 会填充
-            state="readonly"
+            state="readonly",
+            width=16
         )
-        self.type_combo.grid(row=0, column=3, sticky="w")
+        self.type_combo.grid(row=0, column=2, padx=5, pady=3, sticky="w")
         self.type_combo.bind("<<ComboboxSelected>>", lambda e: self._on_type_change(self.var_type.get()))
 
-        # ----------- 初始化类型下拉 -----------
-        self._refresh_type_menu() 
+        # ----------- 3. 跳转按钮 ----------- 
+        tk.Button(self, text="跳转", width=10, command=self._apply_filter).grid(row=0, column=3, padx=10, pady=3, sticky="w")
 
-        # ----------- 3. 跳转按钮 -----------
-        tk.Button(self, text="跳转", width=10, command=self._apply_filter).grid(row=0, column=4, padx=10)
-
-        # ----------- 4. 分隔线 -----------
+        # ----------- 4. 分隔线 ----------- 
         ttk.Separator(self, orient="horizontal").grid(row=1, column=0, columnspan=10, sticky="ew", pady=5)
 
-        # ----------- 5. 表格显示区 -----------
+        # ----------- 5. 表格显示区 ----------- 
         self.table_frame = tk.Frame(self)
         self.table_frame.grid(row=2, column=0, columnspan=10, sticky="nsew")
 
         # 使表格区可扩展
         self.grid_rowconfigure(2, weight=1)
         self.grid_columnconfigure(0, weight=1)
+        self.grid_columnconfigure(1, weight=1)
+        self.grid_columnconfigure(2, weight=1)
 
-        # 默认内部 key
-        self._current_cat_key = default_key
-        # 初始化类型下拉时会设置 _current_type_key
-        self._refresh_type_menu()  
+        # ----------- 初始化 category/type 数据（按当前语言） ----------- 
+        # 选择一个默认 category（尽量使用 weapon，否则第一个）
+        # 但我们要通过 _refresh_category_menu 保证显示与内部 key 一致
+        if ITEM_CATEGORY:
+            # 尝试默认 weapon，否则第一个 key
+            keys = [c["key"] for c in ITEM_CATEGORY]
+            default_key = "weapon" if "weapon" in keys else keys[0]
+            self._current_cat_key = default_key
+        else:
+            self._current_cat_key = ""
+
+        # 刷新 category/type 菜单（会设置 combobox 的 values 和显示文本）
+        self._refresh_category_menu()
+        self._refresh_type_menu()
 
     # ==========================================================
     #              UI 联动逻辑
     # ==========================================================
+    def _on_language_change(self, selected_label):
+        # selected_label 是 combobox 显示内容, 需要反查语言代码
+        for code, text in ITEM_LANGUAGE.items():
+            if text == selected_label:
+                self._current_lang = code
+                break
+
+        # 刷新 Category、Type 下拉的显示文本（保留已选 key）
+        self._refresh_category_menu()
+        self._refresh_type_menu()
+
+    def _refresh_category_menu(self):
+        # 当前语言
+        lang = self._current_lang
+
+        # key → label（按当前语言）
+        self._cat_labels = {c["key"]: c.get(lang, c.get("zhCN", "")) for c in ITEM_CATEGORY}
+        # 反查 map： label -> key
+        self._cat_keys = {v: k for k, v in self._cat_labels.items()}
+
+        # 更新 Category comboBox values（按当前语言顺序）
+        self.cat_combo['values'] = [self._cat_labels[k] for k in self._cat_labels]
+
+        # 保证当前选中的 key 在可选范围内，否则选第一个
+        cur_key = getattr(self, "_current_cat_key", "")
+        if not cur_key or cur_key not in self._cat_labels:
+            # 选第一个 key（如果存在）
+            keys = list(self._cat_labels.keys())
+            cur_key = keys[0] if keys else ""
+            self._current_cat_key = cur_key
+
+        # 更新显示文本
+        self.var_cat.set(self._cat_labels.get(cur_key, ""))
+
     def _on_category_change(self, selected_label):
-        # 这里 selected_label 是中文
+        # selected_label 是按当前语言显示的文字
         cat_key = self._cat_keys.get(selected_label, "")
-        self._current_cat_key = cat_key  # 保存当前 key
+        self._current_cat_key = cat_key
+        # 更改 category 后刷新 type（并确保 type 选中合理）
         self._refresh_type_menu()
 
     def _refresh_type_menu(self):
+        lang = self._current_lang
         cat_key = getattr(self, "_current_cat_key", None)
+
+        # 筛选出对应 category 的类型
         types = [t for t in ITEM_TYPE if t["category"] == cat_key]
+
+        # 当没有类型时，保留一个空选项（但我们尽量避免在 apply 时允许空）
         if not types:
             types = [{"key": "", "zhCN": ""}]
 
-        # key -> 中文
-        self._type_labels = {t["key"]: t["zhCN"] for t in types}
+        # key -> label（按当前语言）
+        self._type_labels = {t["key"]: t.get(lang, t.get("zhCN", "")) for t in types}
         self._type_keys = {v: k for k, v in self._type_labels.items()}
 
-        # 默认显示中文
-        default_label = types[0]["zhCN"]
-        self._current_type_key = types[0]["key"]
+        # 更新 dropdown values（保留顺序）
+        self.type_combo['values'] = [self._type_labels[k] for k in self._type_labels]
 
-        # 更新 ttk.Combobox
-        self.type_combo['values'] = list(self._type_labels.values())
-        self.var_type.set(default_label)
+        # 如果已有的 current_type_key 在新的类型列表中，保持它；否则选择第一个**非空**的类型
+        cur_key = getattr(self, "_current_type_key", "")
+        if cur_key and cur_key in self._type_labels:
+            chosen_key = cur_key
+        else:
+            # 选择第一个 key 且不为空（防止选到空字符串）
+            non_empty_keys = [k for k in self._type_labels.keys() if k]
+            chosen_key = non_empty_keys[0] if non_empty_keys else list(self._type_labels.keys())[0]
 
-    
+        self._current_type_key = chosen_key
+        self.var_type.set(self._type_labels.get(chosen_key, ""))
+
     def _on_type_change(self, selected_label):
+        # selected_label 是按当前语言显示的文字
         self.var_type.set(selected_label)
         self._current_type_key = self._type_keys.get(selected_label, "")
 
@@ -1764,27 +1825,43 @@ class ItemFilterPanel(tk.Frame):
     # ==========================================================
     def _apply_filter(self):
         """根据类别+类型过滤数据并显示表格"""
-
         cat = getattr(self, "_current_cat_key", None)
         typ = getattr(self, "_current_type_key", "")
 
+        # 强制 category 和 type 不能为空，避免返回过大结果集
+        if not cat or not typ:
+            messagebox.showwarning("提示", "请先选择类别和类型后再跳转。")
+            return
+
         filtered = [
             it for it in self.items
-            if it["category"] == cat and (typ == "" or it["type"] == typ)
+            if it.get("category") == cat and (typ == "" or it.get("type") == typ)
         ]
+
+        item_tier_dict = {item["key"]: item for item in ITEM_TIER}
+
+        item_name_list = self.controller.file_operations.load_items_name()
+        item_name_dict = {item["Key"]: item for item in item_name_list}
 
         # ---- 构造表格数据格式 ----
         table_data = []
         for it in filtered:
             key = it["key"]
-            nm = self.names.get(key, {})
+            item_name_i18n = self.names.get(key, {})
+            tier = it["tier"]
+            item_tier_i18n = item_tier_dict.get(tier, {})
+            unique = it["unique"]
+            sets = it["set"]
+            # ---- 将 unique/set keys 转为对应语言的名称 ----
+            unique_names = [item_name_dict.get(k, {}).get(self._current_lang, k) for k in it.get("unique", [])]
+            set_names = [item_name_dict.get(k, {}).get(self._current_lang, k) for k in it.get("set", [])]
 
             row = [
                 key,
-                nm.get("zhCN", ""),
-                nm.get("zhTW", ""),
-                nm.get("enUS", ""),
-                TIER_MAP.get(it.get("tier", ""), "")
+                item_name_i18n.get(self._current_lang),
+                item_tier_i18n.get(self._current_lang),
+                "\n".join(unique_names),
+                "\n".join(set_names)
             ]
             table_data.append(row)
 
@@ -1793,7 +1870,13 @@ class ItemFilterPanel(tk.Frame):
             w.destroy()
 
         # ---- 创建新表格 ----
-        columns = ["简体中文", "繁体中文", "English", "品质"]
+        # columns = ["简体中文", "繁体中文", "English", "品质"]
+        columns = [
+            ITEM_COLUMN.get("ITEM_NAME").get(self._current_lang),
+            ITEM_COLUMN.get("ITEM_TIER").get(self._current_lang),
+            ITEM_COLUMN.get("UNIQUE_ITEM").get(self._current_lang),
+            ITEM_COLUMN.get("SET_ITEM").get(self._current_lang),
+        ]
 
         self.table = TableWithCheckbox(
             self.table_frame,
@@ -1834,3 +1917,4 @@ class ItemFilterPanel(tk.Frame):
         """同步勾选状态到 config_dict"""
         if self.table:
             self.table.update_config()
+

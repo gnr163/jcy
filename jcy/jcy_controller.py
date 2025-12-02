@@ -11,6 +11,7 @@ import threading
 from threading import Thread
 import time
 import tkinter as tk
+import tkinter.font as tkFont
 from datetime import datetime, timedelta, timezone
 from tkinter import messagebox
 from win11toast import toast
@@ -533,6 +534,15 @@ if __name__ == "__main__":
 
     root = tk.Tk()
     root.iconbitmap(LOGO_PATH)
+    app = FeatureController(root)
+
+    # -------- 全局字体设置 --------
+    default_font = tkFont.nametofont("TkDefaultFont")
+    default_font.configure(family="微软雅黑", size=10)  
+    # 可选：同时修改 TkHeadingFont/ TkTextFont
+    tkFont.nametofont("TkHeadingFont").configure(size=10)
+    tkFont.nametofont("TkTextFont").configure(size=10)
+
     app = FeatureController(root)
     
     # 恐怖区域数据更新回调
