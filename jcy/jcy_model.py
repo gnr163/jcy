@@ -288,7 +288,7 @@ class FeatureConfig:
                             "fid": NEC_SETTING,
                             "type": CHECK,
                             "text": "死灵法师",
-                            "colspan": 20,
+                            "colspan": 25,
                             "params": {
                                 "1": "骷髅火刀圣盾"
                             }
@@ -297,7 +297,7 @@ class FeatureConfig:
                             "fid": DRU_SETTING,
                             "type": CHECK,
                             "text": "德鲁伊",
-                            "colspan": 20,
+                            "colspan": 25,
                             "params": {
                                 "1": "飓风术特效"
                             }
@@ -306,7 +306,7 @@ class FeatureConfig:
                             "fid": ASN_SETTING,
                             "type": CHECK,
                             "text": "刺客",
-                            "colspan": 60,
+                            "colspan": 50,
                             "params": {
                                 "1": "马赛克护眼",
                                 "2": "取消影散隐身效果"

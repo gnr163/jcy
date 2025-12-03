@@ -534,8 +534,7 @@ if __name__ == "__main__":
 
     root = tk.Tk()
     root.iconbitmap(LOGO_PATH)
-    app = FeatureController(root)
-
+    
     # -------- 全局字体设置 --------
     default_font = tkFont.nametofont("TkDefaultFont")
     default_font.configure(family="微软雅黑", size=10)  
