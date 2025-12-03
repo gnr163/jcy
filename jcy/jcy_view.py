@@ -91,8 +91,8 @@ class FeatureView:
             self._create_tab(config)
 
         # --- 符文提醒 ---
-        rune_tab = RuneSettingsTable(notebook, config_dict=self.controller.current_states, config_key=RUNE_SETTING)
-        self.add_tab(rune_tab, "符文提醒")
+        rune_tab = ItemNotificationTable(notebook, config_dict=self.controller.current_states, config_key=ITEM_NOTIFICATION)
+        self.add_tab(rune_tab, "道具提醒")
 
         # --- new道具屏蔽 ---
         items_name_data = self.controller.file_operations.load_items_name()
@@ -817,16 +817,13 @@ class TableWithCheckbox(tk.Frame):
         self.canvas.bind("<Leave>", _unbind_scroll)
 
 
-class RuneSettingsTable(tk.Frame):
-    COLUMNS = ["编号", "符文", "语音提示", "光柱提示", "光圈提示"]
+class ItemNotificationTable(tk.Frame):
+    COLUMNS = ["enUS", "名稱", "语音提示", "光柱提示", "光圈提示"]
     
     def __init__(self, master, config_dict=None, config_key=None, **kwargs):
         super().__init__(master, **kwargs)
         self.config_dict = config_dict or {}
         self.config_key = config_key
-
-        if self.config_key and self.config_key not in self.config_dict:
-            self.config_dict[self.config_key] = [[False, False, False] for _ in range(33)]
 
         # ---------- 滚动区域 ----------
         self.canvas = tk.Canvas(self, highlightthickness=0)
@@ -854,9 +851,9 @@ class RuneSettingsTable(tk.Frame):
 
         # ---------- 表体 ----------
         self.vars = []
-        for i in range(33):
-            tk.Label(self._tbl, text=RUNE_ENUS[i], borderwidth=1, relief="solid").grid(row=i+1, column=0, sticky="nsew")
-            tk.Label(self._tbl, text=RUNE_ZHTW[i], borderwidth=1, relief="solid").grid(row=i+1, column=1, sticky="nsew")
+        for i in range(40):
+            tk.Label(self._tbl, text=ITEM_ENUS[i], borderwidth=1, relief="solid").grid(row=i+1, column=0, sticky="nsew")
+            tk.Label(self._tbl, text=ITEM_ZHTW[i], borderwidth=1, relief="solid").grid(row=i+1, column=1, sticky="nsew")
 
             row_vars = []
             for j in range(3):
@@ -961,7 +958,7 @@ class D2RLauncherApp(tk.Frame):
 
         # 游戏路径
         ttk.Label(frame_global, text="游戏路径:").grid(row=0, column=0, sticky="w")
-        self.entry_path = ttk.Entry(frame_global, width=60)
+        self.entry_path = ttk.Entry(frame_global, width=50)
         self.entry_path.grid(row=0, column=1, padx=5)
         self.entry_path.insert(0, self.global_config.get("d2r_path", ""))
 
@@ -1046,13 +1043,13 @@ class D2RLauncherApp(tk.Frame):
             
             self.account_vars.append(var_enabled)
 
-            lbl_nick = ttk.Label(self.frame_accounts, text=acc.get("nickname", ""), width=15, anchor='center')
+            lbl_nick = ttk.Label(self.frame_accounts, text=acc.get("nickname", ""), width=12, anchor='center')
             lbl_nick.grid(row=row, column=1, sticky='nsew')
 
-            lbl_user = ttk.Label(self.frame_accounts, text=acc.get("username", ""), width=20, anchor='center')
+            lbl_user = ttk.Label(self.frame_accounts, text=acc.get("username", ""), width=18, anchor='center')
             lbl_user.grid(row=row, column=2, sticky='nsew')
 
-            lbl_mod = ttk.Label(self.frame_accounts, text=acc.get("mod", ""), width=15, anchor='center')
+            lbl_mod = ttk.Label(self.frame_accounts, text=acc.get("mod", ""), width=12, anchor='center')
             lbl_mod.grid(row=row, column=3, sticky='nsew')
 
             lbl_win = ttk.Label(self.frame_accounts, text="✅" if acc.get("windowed") else "❌", anchor='center')

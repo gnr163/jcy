@@ -282,20 +282,16 @@ class FeatureController:
             SETS_EFFECTS: self.file_operations.select_equipment_effects,
             # 装备-模型特效
             MODEL_EFFECTS: self.file_operations.select_model_eccects,
-            # 掉落光柱提醒
-            DROPED_LIGHT: self.file_operations.select_droped_light,
             # 22#+符文名称大小(越大越容易发现/选中)
             RUNE_SIZE: self.file_operations.modify_rune_rectangle,
-            # 物品掉落提示音
-            ITEM_DROP_SOUNDS: self.file_operations.item_drop_sounds,
             # 火炬钥匙
             TORCH_KEY: self.file_operations.torch_key,
             # 环境-关闭特效
             DISABLE_EFFECTS: self.file_operations.hide_environmental_effects,
             # 环境-开启指引
             ENABLE_POINTER: self.file_operations.show_environmental_pointer,
-            # 符文-提醒
-            RUNE_SETTING: self.file_operations.modify_rune_setting,
+            # 道具-提醒
+            ITEM_NOTIFICATION: self.file_operations.modify_item_notification,
             # 环境-小站指引
             WAYPOINT_POINTER: self.file_operations.modify_waypoint_pointer,
             # 环境-任务指引

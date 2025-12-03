@@ -29,7 +29,7 @@ LANG = None
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.3.2"
+APP_VERSION = "v1.3.2.1"
 
 # 发布日期
 APP_DATE = "20251205"
@@ -113,10 +113,8 @@ AFFIX_EFFECTS = "AffixEffects"
 SETS_EFFECTS = "SetsEffects"
 MODEL_EFFECTS = "ModelEffects"
 RUNE_SIZE = "RuneSize"
-RUNE_SETTING = "RuneSetting"
+ITEM_NOTIFICATION = "ItemNotification"
 ASSET_PATH = "AssetPath"
-DROPED_LIGHT = "DropedLight"
-ITEM_DROP_SOUNDS = "ItemDropSounds"
 DISABLE_EFFECTS = "DisableEffects"
 ENABLE_POINTER = "EnablePointer"
 TORCH_KEY = "TorchKey"
@@ -135,8 +133,8 @@ SEPARATOR = "Separator"
 LOCATION = "Location"
 # Controller Type -->
 
-RUNE_ENUS = ["El", "Eld", "Tir", "Nef", "Eth", "Ith", "Tal", "Ral", "Ort", "Thul", "Amn", "Sol", "Shael", "Dol", "Hel", "Io", "Lum", "Ko", "Fal", "Lem", "Pul", "Um", "Mal", "Ist", "Gul", "Vex", "Ohm", "Lo", "Sur", "Ber", "Jah", "Cham", "Zod"]
-RUNE_ZHTW = ["艾爾#01", "艾德#02", "特爾#03", "那夫#04", "愛斯#05", "伊司#06", "塔爾#07", "拉爾#08", "歐特#09", "書爾#10", "安姆#11", "索爾#12", "夏#13", "多爾#14", "海爾#15", "埃歐#16", "盧姆#17", "科#18", "法爾#19", "藍姆#20", "普爾#21", "烏姆#22", "馬爾#23", "伊司特#24", "古爾#25", "伐克斯#26", "歐姆#27", "羅#28", "瑟#29", "貝#30", "喬#31", "查姆#32", "薩德#33"]
+ITEM_ENUS = ["El Rune", "Eld Rune", "Tir Rune", "Nef Rune", "Eth Rune", "Ith Rune", "Tal Rune", "Ral Rune", "Ort Rune", "Thul Rune", "Amn Rune", "Sol Rune", "Shael Rune", "Dol Rune", "Hel Rune", "Io Rune", "Lum Rune", "Ko Rune", "Fal Rune", "Lem Rune", "Pul Rune", "Um Rune", "Mal Rune", "Ist Rune", "Gul Rune", "Vex Rune", "Ohm Rune", "Lo Rune", "Sur Rune", "Ber Rune", "Jah Rune", "Cham Rune", "Zod Rune", "Ring", "Amulet", "Jewel", "Small Charm", "Large Charm", "Grand Charm", "Diadem"]
+ITEM_ZHTW = ["艾爾#01", "艾德#02", "特爾#03", "那夫#04", "愛斯#05", "伊司#06", "塔爾#07", "拉爾#08", "歐特#09", "書爾#10", "安姆#11", "索爾#12", "夏#13", "多爾#14", "海爾#15", "埃歐#16", "盧姆#17", "科#18", "法爾#19", "藍姆#20", "普爾#21", "烏姆#22", "馬爾#23", "伊司特#24", "古爾#25", "伐克斯#26", "歐姆#27", "羅#28", "瑟#29", "貝#30", "喬#31", "查姆#32", "薩德#33", "戒指", "項鏈", "珠寶", "小型咒符", "大型咒符", "巨型咒符", "權冠"]
 # 本地化文件列表
 LNG_STRINGS = [
     r"data/local/lng/strings/item-modifiers.json",
@@ -497,6 +495,7 @@ SET_ITEM_INDEX = [
 CUSTOM_SOUNDS = {
     # Item
     "sc":                 {True: r"item\sc.flac",                  False: r"item\item_charm_hd.flac",   "path": "data/hd/global/sfx/item/sc.flac"},
+    "lc":                 {True: r"item\lc.flac",                  False: r"item\item_charm_hd.flac",   "path": "data/hd/global/sfx/item/lc.flac"},  
     "gc":                 {True: r"item\gc.flac",                  False: r"item\item_charm_hd.flac",   "path": "data/hd/global/sfx/item/gc.flac"},
     "r01":                {True: r"item\r01.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r31.flac"},
     "r02":                {True: r"item\r02.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r32.flac"},
@@ -531,6 +530,9 @@ CUSTOM_SOUNDS = {
     "r31":                {True: r"item\r31.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r31.flac"},
     "r32":                {True: r"item\r32.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r32.flac"},
     "r33":                {True: r"item\r33.flac",                 False: r"item\item_rune_hd.flac",    "path": "data/hd/global/sfx/item/r33.flac"},
+    "rin":                {True: r"item\rin.flac",                 False: r"item\item_ring_hd.flac",    "path": "data/hd/global/sfx/item/rin.flac"},
+    "amu":                {True: r"item\amu.flac",                 False: r"item\item_amulet_hd.flac",  "path": "data/hd/global/sfx/item/amu.flac"},
+    "jew":                {True: r"item\jew.flac",                 False: r"item\item_jewel_hd.flac",   "path": "data/hd/global/sfx/item/jew.flac"},
     "diadem":             {True: r"item\diadem.flac",              False: r"item\item_helm_hd.flac",    "path": "data/hd/global/sfx/item/diadem.flac"},
     "mephisto_key":       {True: r"item\torch_key.flac",           False: r"item\item_key_hd.flac",     "path": "data/hd/global/sfx/item/mephisto_key.flac"},
     # Skill
@@ -620,15 +622,13 @@ __all__ = [
     'SETS_EFFECTS',
     'MODEL_EFFECTS',
     'RUNE_SIZE',
-    'RUNE_SETTING',
+    'ITEM_NOTIFICATION',
     'ASSET_PATH',
-    'RUNE_ENUS',
-    'RUNE_ZHTW',
+    'ITEM_ENUS',
+    'ITEM_ZHTW',
     'LNG_STRINGS',
-    'DROPED_LIGHT',
     'TORCH_KEY',
     'ITEM_FILTER',
-    'ITEM_DROP_SOUNDS',
     'DISABLE_EFFECTS',
     'ENABLE_POINTER',
     'RADIO',

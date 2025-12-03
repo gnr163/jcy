@@ -3,7 +3,7 @@
         "particles": [],
         "models": [
             {
-                "path": "data/hd/items/armor/circlet/tiara/tiara.model"
+                "path": "data/hd/items/armor/circlet/diadem/diadem.model"
             }
         ],
         "skeletons": [
@@ -14,16 +14,16 @@
         "animations": [],
         "textures": [
             {
-                "path": "data/hd/items/armor/circlet/tiara/armor_tiara_alb.texture"
+                "path": "data/hd/items/armor/circlet/diadem/armor_diadem_alb.texture"
             },
             {
-                "path": "data/hd/items/armor/circlet/tiara/armor_tiara_mask.texture"
+                "path": "data/hd/items/armor/circlet/diadem/armor_diadem_mask.texture"
             },
             {
-                "path": "data/hd/items/armor/circlet/tiara/armor_tiara_nrm.texture"
+                "path": "data/hd/items/armor/circlet/diadem/armor_diadem_nrm.texture"
             },
             {
-                "path": "data/hd/items/armor/circlet/tiara/armor_tiara_orm.texture"
+                "path": "data/hd/items/armor/circlet/diadem/armor_diadem_orm.texture"
             }
         ],
         "physics": [],
@@ -37,7 +37,7 @@
         "other": []
     },
     "type": "UnitDefinition",
-    "name": "tiara",
+    "name": "diadem",
     "entities": [
         {
             "type": "Entity",
@@ -99,31 +99,12 @@
                     "type": "OverrideAttachmentTransformComponent",
                     "name": "entity_root_OverrideAttachmentTransform",
                     "playerClassTransforms": {
-                        "1": {
-                            "type": "Transform",
-                            "name": "entity_root_OverrideAttachmentTransform_playerClassTransforms_Sorceress",
-                            "translation": {
-                                "x": 0.0,
-                                "y": -0.05,
-                                "z": -0.02
-                            },
-                            "rotation": {
-                                "x": 0.0,
-                                "y": 0.0,
-                                "z": 0.0
-                            },
-                            "scale": {
-                                "x": 1.05,
-                                "y": 1.0,
-                                "z": 1.05
-                            }
-                        },
                         "6": {
                             "type": "Transform",
                             "name": "entity_root_OverrideAttachmentTransform_playerClassTransforms_Assassin",
                             "translation": {
                                 "x": 0.0,
-                                "y": -0.1,
+                                "y": -0.08,
                                 "z": 0.0
                             },
                             "rotation": {
@@ -153,26 +134,7 @@
                             "scale": {
                                 "x": 1.1,
                                 "y": 1.1,
-                                "z": 1.16
-                            }
-                        },
-                        "5": {
-                            "type": "Transform",
-                            "name": "entity_root_OverrideAttachmentTransform_playerClassTransforms_Druid",
-                            "translation": {
-                                "x": 0.0,
-                                "y": -0.02,
-                                "z": 0.03
-                            },
-                            "rotation": {
-                                "x": 0.0,
-                                "y": 0.0,
-                                "z": 0.0
-                            },
-                            "scale": {
-                                "x": 1.26,
-                                "y": 1.1,
-                                "z": 1.2
+                                "z": 1.1
                             }
                         },
                         "2": {
@@ -181,7 +143,7 @@
                             "translation": {
                                 "x": 0.0,
                                 "y": 0.1,
-                                "z": -0.07
+                                "z": -0.1
                             },
                             "rotation": {
                                 "x": 4.0,
@@ -191,7 +153,45 @@
                             "scale": {
                                 "x": 1.08,
                                 "y": 1.0,
-                                "z": 1.16
+                                "z": 1.1
+                            }
+                        },
+                        "1": {
+                            "type": "Transform",
+                            "name": "entity_root_OverrideAttachmentTransform_playerClassTransforms_Sorceress",
+                            "translation": {
+                                "x": 0.0,
+                                "y": -0.04,
+                                "z": -0.03
+                            },
+                            "rotation": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.0
+                            },
+                            "scale": {
+                                "x": 1.04,
+                                "y": 1.0,
+                                "z": 1.02
+                            }
+                        },
+                        "5": {
+                            "type": "Transform",
+                            "name": "entity_root_OverrideAttachmentTransform_playerClassTransforms_Druid",
+                            "translation": {
+                                "x": 0.0,
+                                "y": -0.02,
+                                "z": 0.02
+                            },
+                            "rotation": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.0
+                            },
+                            "scale": {
+                                "x": 1.26,
+                                "y": 1.1,
+                                "z": 1.1
                             }
                         }
                     }
@@ -205,8 +205,8 @@
             "components": [
                 {
                     "type": "ModelDefinitionComponent",
-                    "name": "component_model_tiara",
-                    "filename": "",
+                    "name": "component_model_diadem",
+                    "filename": "data/hd/items/armor/circlet/diadem/diadem.model",
                     "visibleLayers": 1,
                     "lightMask": 19,
                     "shadowMask": 3,
@@ -214,6 +214,73 @@
                     "floorModel": false,
                     "terrainBlendEnableYUpBlend": false,
                     "terrainBlendMode": 1
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "jcy_entity_pointer",
+            "id": 9999999888,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform_drop_light",
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "orientation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "vfx_drop_light",
+                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
+                    "hardKillOnDestroy": false
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "jcy_entity_pointer",
+            "id": 586091856,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "prefab_TransformDefinitionComponent",
+                    "position": {
+                        "x": 0.0,
+                        "y": -10.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 25.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "PrefabPlacementDefinitionComponent",
+                    "name": "prefab_PrefabPlacementDefinitionComponent",
+                    "prefab": "data/hd/env/porory/beacon/pf_beacon_items.json"
                 }
             ]
         }

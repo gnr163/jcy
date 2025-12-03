@@ -505,7 +505,6 @@ class FeatureConfig:
                             "text": "装备-模型特效",
                             "colspan": 100,
                             "params": {
-                                "1": "隐藏 头饰模型",
                                 "2": "开启 投掷标枪-闪电枪特效",
                                 "3": "开启 投掷飞斧-闪电拖尾特效"
                             }
@@ -530,40 +529,11 @@ class FeatureConfig:
                             "text": "22#+符文名称大小",
                             "colspan": 30
                         },
-                        {
-                            "fid": DROPED_LIGHT,
-                            "type": CHECK,
-                            "text": "掉落光柱提醒",
-                            "colspan": 100,
-                            "params": {
-                                "1": "戒指",
-                                "2": "项链",
-                                "3": "小符",
-                                "4": "中符",
-                                "5": "大符",
-                                "6": "珠宝",
-                                "7": "宝石"
-                            }
-                        },
-                        {
-                            "fid": ITEM_DROP_SOUNDS,
-                            "type": CHECK,
-                            "text": "物品掉落提示音",
-                            "colspan": 100,
-                            "columns": 5,
-                            "flac": True,
-                            "params": {
-                                "diadem": "@Diadem",
-                                "sc": "@cm1",
-                                "gc": "@cm3",
-                            }
-                        },
-                        
                     ]
                 }
             ],
             "checktable": {
-                RUNE_SETTING: "符文提醒",
+                ITEM_NOTIFICATION: "道具提醒",
                 ITEM_FILTER: "道具过滤"
             }
 

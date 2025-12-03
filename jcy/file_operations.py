@@ -1283,13 +1283,6 @@ class FileOperations:
         
         # 文件
         _files = {
-            # 隐藏 头饰模型
-            "1" : [
-                r"data/hd/items/armor/circlet/circlet.json",
-                r"data/hd/items/armor/circlet/coronet.json",
-                r"data/hd/items/armor/circlet/diadem.json",
-                r"data/hd/items/armor/circlet/tiara.json",
-            ],
             # 开启 投掷标枪-闪电枪特效
             "2":[
                 r"data/hd/missiles/glaive.json",
@@ -2310,65 +2303,6 @@ class FileOperations:
             json.dump(item_names_data, f, ensure_ascii=False, indent=2)
 
         return (1, 1)
-
-
-    def select_droped_light(self, keys: list):
-        """掉落光柱提醒"""
-        if keys is None:
-            return (0, 0)
-        
-        _files = {
-            # 戒指
-            "1": [r"data/hd/items/misc/ring/ring.json",],
-            # 项链
-            "2": [r"data/hd/items/misc/amulet/amulet.json",],
-            # 小符
-            "3": [r"data/hd/items/misc/charm/charm_small.json",],
-            # 中符
-            "4": [r"data/hd/items/misc/charm/charm_medium.json",],
-            # 大符
-            "5": [r"data/hd/items/misc/charm/charm_large.json",],
-            # 珠宝
-            "6": [r"data/hd/items/misc/jewel/jewel.json",],
-            # 宝石
-            "7": [
-                r"data/hd/items/misc/gem/amethyst.json",
-                r"data/hd/items/misc/gem/flawless_amethyst.json",
-                r"data/hd/items/misc/gem/flawless_diamond.json",
-                r"data/hd/items/misc/gem/flawless_emerald.json",
-                r"data/hd/items/misc/gem/flawless_ruby.json",
-                r"data/hd/items/misc/gem/flawless_saphire.json",
-                r"data/hd/items/misc/gem/flawless_skull.json",
-                r"data/hd/items/misc/gem/flawless_topaz.json",
-                r"data/hd/items/misc/gem/perfect_amethyst.json",
-                r"data/hd/items/misc/gem/perfect_diamond.json",
-                r"data/hd/items/misc/gem/perfect_emerald.json",
-                r"data/hd/items/misc/gem/perfect_ruby.json",
-                r"data/hd/items/misc/gem/perfect_saphire.json",
-                r"data/hd/items/misc/gem/perfect_skull.json",
-                r"data/hd/items/misc/gem/perfect_topaz.json",]
-        }
-
-        count = 0
-        total = sum(len(v) for v in _files.values())
-
-        for key, files in _files.items():
-            handle = key in keys
-            for file in files:
-                file_json = None
-                file_path = os.path.join(MOD_PATH, file)
-                with open(file_path, 'r', encoding='utf-8') as f:
-                    file_json = json.load(f)
-
-                file_json["entities"] = [item for item in file_json["entities"] if item.get("name") != "jcy_entity_pointer"]
-                if handle:
-                    file_json["entities"].append(ENTITY_DROP_LIGHT)
-
-                with open(file_path, "w", encoding="utf-8") as f:
-                    json.dump(file_json, f, ensure_ascii=False, indent=4)
-                count += 1
-
-        return (count, total)
 
 
     def select_hudpanel_size(self, radio: str = "0"):
@@ -3469,9 +3403,9 @@ class FileOperations:
         return (count, total)
     
 
-    def modify_rune_setting(self, data: list):
+    def modify_item_notification(self, data: list):
         count = 0
-        total = 34
+        total = 41
         
         sound_index = {
             "r01":0,
@@ -3506,7 +3440,15 @@ class FileOperations:
             "r30":29,
             "r31":30,
             "r32":31,
-            "r33":32
+            "r33":32,
+            "rin":33,
+            "amu":34,
+            "jew":35,
+            "sc":36,
+            "lc":37,
+            "gc":38,
+            "diadem": 39
+
         }
 
         rune_files = [
@@ -3546,6 +3488,13 @@ class FileOperations:
             r"data/hd/items/misc/rune/jah_rune.json",
             r"data/hd/items/misc/rune/cham_rune.json",
             r"data/hd/items/misc/rune/zod_rune.json",
+            r"data/hd/items/misc/ring/ring.json",
+            r"data/hd/items/misc/amulet/amulet.json",
+            r"data/hd/items/misc/jewel/jewel.json",
+            r"data/hd/items/misc/charm/charm_small.json",
+            r"data/hd/items/misc/charm/charm_large.json",
+            r"data/hd/items/misc/charm/charm_medium.json",
+            r"data/hd/items/armor/circlet/diadem.json",
         ]
 
         # === 语音提示 ===
@@ -3559,8 +3508,8 @@ class FileOperations:
                 key = row["Sound"]
                 if key in sound_index:
                     index = sound_index.get(key)
-                    value = data[index][0]
-                    file_name = CUSTOM_SOUNDS.get(key).get(value)
+                    flac_bool = data[index][0]
+                    file_name = CUSTOM_SOUNDS.get(key).get(flac_bool)
                     row["FileName"] = file_name
 
             with open(sounds_path, 'w', encoding='utf-8', newline='') as f:
@@ -3625,20 +3574,6 @@ class FileOperations:
             "bear_off":             "bear_off" in keys,
             "markwolf_off":         "markwolf_off" in keys,
             "markbear_off":         "markbear_off" in keys,
-        }
-
-        return self.modify_custom_sounds(data)
-    
-
-    def item_drop_sounds(self, keys: list):
-        """物品掉落提示音"""
-        if keys is None:
-            return (0, 0)
-        
-        data = {
-            "diadem":   "diadem" in keys,
-            "sc":       "sc" in keys,
-            "gc":       "gc" in keys
         }
 
         return self.modify_custom_sounds(data)
