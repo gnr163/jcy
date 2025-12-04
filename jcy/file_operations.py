@@ -2083,6 +2083,10 @@ class FileOperations:
             "data/hd/objects/env_pillars/Seven_tombs_receptacle.json",
             "data/hd/objects/env_organic/gid_b_inn_decoy.json",
             "data/hd/roomtiles/act_1_wilderness_to_tower.json",
+            "data/hd/roomtiles/act_2_desert_to_tomb_l_2.json",
+            "data/hd/roomtiles/act_2_desert_to_tomb_r_2.json",
+            "data/hd/roomtiles/act_2_desert_to_lair.json",
+            "data/hd/roomtiles/act_3_jungle_to_dungeon_hole.json",
         ]
 
         # 指引映射
@@ -2189,18 +2193,14 @@ class FileOperations:
             "data/hd/roomtiles/act_1_wilderness_to_cave_floor_l.json",
             "data/hd/roomtiles/act_1_wilderness_to_cave_floor_r.json",
 
-            "data/hd/roomtiles/act_2_desert_to_lair.json",
             "data/hd/roomtiles/act_2_desert_to_sewer_trap.json",
             "data/hd/roomtiles/act_2_desert_to_tomb_l_1.json",
-            "data/hd/roomtiles/act_2_desert_to_tomb_l_2.json",
             "data/hd/roomtiles/act_2_desert_to_tomb_r_1.json",
-            "data/hd/roomtiles/act_2_desert_to_tomb_r_2.json",
             "data/hd/roomtiles/act_2_lair_down.json",
             "data/hd/roomtiles/act_2_sewer_down.json",
             "data/hd/roomtiles/act_2_tomb_down.json",
 
             "data/hd/roomtiles/act_3_dungeon_down.json",
-            "data/hd/roomtiles/act_3_jungle_to_dungeon_hole.json",
             "data/hd/roomtiles/act_3_jungle_to_spider.json",
             "data/hd/roomtiles/act_3_kurast_to_sewer.json",
             "data/hd/roomtiles/act_3_kurast_to_temple.json",
