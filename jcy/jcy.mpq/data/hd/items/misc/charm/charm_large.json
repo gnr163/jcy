@@ -103,6 +103,73 @@
                     "terrainBlendMode": 1
                 }
             ]
+        },
+        {
+            "type": "Entity",
+            "name": "jcy_entity_pointer",
+            "id": 9999999888,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform_drop_light",
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "orientation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "vfx_drop_light",
+                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
+                    "hardKillOnDestroy": false
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "jcy_entity_pointer",
+            "id": 586091856,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "prefab_TransformDefinitionComponent",
+                    "position": {
+                        "x": 0.0,
+                        "y": -10.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 25.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "PrefabPlacementDefinitionComponent",
+                    "name": "prefab_PrefabPlacementDefinitionComponent",
+                    "prefab": "data/hd/env/porory/beacon/pf_beacon_items.json"
+                }
+            ]
         }
     ]
 }

@@ -3492,8 +3492,8 @@ class FileOperations:
             r"data/hd/items/misc/amulet/amulet.json",
             r"data/hd/items/misc/jewel/jewel.json",
             r"data/hd/items/misc/charm/charm_small.json",
-            r"data/hd/items/misc/charm/charm_large.json",
             r"data/hd/items/misc/charm/charm_medium.json",
+            r"data/hd/items/misc/charm/charm_large.json",
             r"data/hd/items/armor/circlet/diadem.json",
         ]
 

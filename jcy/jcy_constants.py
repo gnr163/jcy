@@ -29,7 +29,7 @@ LANG = None
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.3.2.1"
+APP_VERSION = "v1.3.2.2"
 
 # 发布日期
 APP_DATE = "20251205"
