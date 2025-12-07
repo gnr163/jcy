@@ -78,7 +78,7 @@ class FeatureView:
         self.appdata_button.pack(side=tk.LEFT, padx=10, ipady=5)
 
         # 创建并加入“应用设置”按钮
-        self.apply_button = ttk.Button(button_frame, text="应用设置", command=self.controller.apply_settings)
+        self.apply_button = ttk.Button(button_frame, text="应用设置", command=self.controller.apply_settings_with_loading)
         self.apply_button.pack(side=tk.LEFT, padx=10, ipady=5)
 
         # 创建 Notebook 

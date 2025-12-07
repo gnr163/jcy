@@ -12,6 +12,7 @@ from threading import Thread
 import time
 import tkinter as tk
 import tkinter.font as tkFont
+from PIL import Image, ImageTk
 from datetime import datetime, timedelta, timezone
 from tkinter import messagebox
 from win11toast import toast
@@ -306,7 +307,40 @@ class FeatureController:
             DOWNSTAIRS_POINTER: self.file_operations.modify_downstairs_pointer,
         }
 
-    def apply_settings(self):
+
+    def apply_settings_with_loading(self):
+        loading = LoadingDialog(self.master, "assets/loading.gif")
+
+        loading.update_idletasks()
+        loading.update()
+
+        start_time = time.time()
+        MIN_SHOW = 0.5  # 最少显示 500ms
+
+        def worker():
+            result = self.apply_settings_core()
+            elapsed = time.time() - start_time
+            delay = max(0, MIN_SHOW - elapsed)
+
+            # ✅ 一切 UI 操作 回到主线程
+            self.master.after(
+                int(delay * 1000),
+                lambda: self._finish_apply(loading, result)
+            )
+
+        threading.Thread(target=worker, daemon=True).start()
+
+
+    def _finish_apply(self, loading, changes_detected):
+        loading.close()
+
+        if changes_detected:
+            messagebox.showinfo("设置已应用", self.dialogs)
+        else:
+            messagebox.showinfo("完成", "无变化!")
+
+
+    def apply_settings_core(self):
         """
         应用所有功能设置，执行文件操作。
         此方法被“应用设置”按钮调用。
@@ -350,16 +384,75 @@ class FeatureController:
         self.feature_state_manager.loaded_states = copy.deepcopy(self.current_states)
 
         # 显示结果
-        if changes_detected:
-            messagebox.showinfo("设置已应用", self.dialogs)
-        else:
-            messagebox.showinfo("完成", "无变化!")
+        # if changes_detected:
+        #     messagebox.showinfo("设置已应用", self.dialogs)
+        # else:
+        #     messagebox.showinfo("完成", "无变化!")
+        return changes_detected
 
     def execute_feature_action(self, feature_id: str, value):
         self.current_states[feature_id] = value
     
     def open_appdata(self):
         subprocess.Popen(f'explorer "{CONFIG_PATH}"')  # 打开目录（Windows）
+
+
+class LoadingDialog(tk.Toplevel):
+    def __init__(self, parent, gif_path):
+        super().__init__(parent)
+
+        self.overrideredirect(True)
+        self.attributes("-topmost", True)
+        self.transient(parent)
+        self.grab_set()
+
+        self.configure(bg="black")
+
+        parent.update_idletasks()
+
+        w, h = 120, 120
+        
+        parent.update_idletasks()
+
+        px = parent.winfo_rootx()
+        py = parent.winfo_rooty()
+        pw = parent.winfo_width()
+        ph = parent.winfo_height()
+
+        x = px + (pw - w) // 2
+        y = py + (ph - h) // 2
+
+        self.geometry(f"{w}x{h}+{x}+{y}")
+
+        self.label = tk.Label(self, bg="black")
+        self.label.pack(expand=True, fill="both")
+
+        self.frames = []
+        gif = Image.open(gif_path)
+        try:
+            while True:
+                self.frames.append(ImageTk.PhotoImage(gif.copy()))
+                gif.seek(len(self.frames))
+        except EOFError:
+            pass
+
+        self._i = 0
+        self._running = True
+        self.after(100, self._animate)
+        self.after(0, lambda: self.deiconify())
+
+    def _animate(self):
+        if not self._running:
+            return
+        self.label.config(image=self.frames[self._i])
+        self._i = (self._i + 1) % len(self.frames)
+        self.after(100, self._animate)
+
+    def close(self):
+        self._running = False
+        self.grab_release()
+        self.destroy()
+
 
 
 class TerrorZoneFetcher:

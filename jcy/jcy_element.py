@@ -424,12 +424,12 @@ ENTITY_DROP_LIGHT = {
 }
 
 # 物品模型
-ENTITY_ROOT_POSITION2 = {
+ENTITY_ROOT_POSITION = {
     "type": "TransformDefinitionComponent",
-    "name": "entity_root_TransformDefinition2",
+    "name": "entity_root_TransformDefinition",
     "position": {
         "x": 0.0,
-        "y": 1000.0,
+        "y": 0.0,
         "z": 0.0
     },
     "orientation": {
@@ -443,5 +443,7 @@ ENTITY_ROOT_POSITION2 = {
         "y": 1.0,
         "z": 1.0
     },
-    "inheritOnlyPosition": False
+    "inheritOnlyPosition": False,
+    "block-y": 0.0,
+    "hide-y": 1000.0
 }

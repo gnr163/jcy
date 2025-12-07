@@ -611,7 +611,7 @@ ITEM_FILTERS = {
     "rvs": "data/hd/items/misc/potion/rejuv_potion.json",
     "rvl": "data/hd/items/misc/potion/full_rejuv_potion.json",
     "aqv": "data/hd/items/misc/quiver/arrows.json",
-    "cav": "data/hd/items/misc/quiver/bolts.json",
+    "cqv": "data/hd/items/misc/quiver/bolts.json",
     "tsc": "data/hd/items/misc/scroll/town_portal_scroll.json",
     "isc": "data/hd/items/misc/scroll/identify_scroll.json",
     "key": "data/hd/items/misc/key/skeleton_key.json",
