@@ -3,7 +3,7 @@
         "particles": [],
         "models": [
             {
-                "path": "data/hd/items/misc/gem/perfect_diamond/perfect_diamond.model"
+                "path": "data/hd/items/misc/scroll/identify_scroll/identify_scroll.model"
             }
         ],
         "skeletons": [
@@ -14,19 +14,19 @@
         "animations": [],
         "textures": [
             {
-                "path": "data/hd/items/misc/gem/perfect_diamond/misc_perfect_diamond_ALB.texture"
+                "path": "data/hd/items/misc/scroll/identify_scroll/misc_identify_scroll_ALB.texture"
             },
             {
-                "path": "data/hd/items/misc/gem/perfect_diamond/misc_perfect_diamond_NRM.texture"
+                "path": "data/hd/items/misc/scroll/identify_scroll/misc_identify_scroll_NRM.texture"
             },
             {
-                "path": "data/hd/items/misc/gem/perfect_diamond/misc_perfect_diamond_ORM.texture"
+                "path": "data/hd/items/misc/scroll/identify_scroll/misc_identify_scroll_ORM.texture"
             }
         ],
         "physics": [],
         "json": [
             {
-                "path": "data/hd/items/dropped_items/dropped_items_helms_flip_nw.json"
+                "path": "data/hd/items/dropped_items/dropped_items_helms_flip_se.json"
             }
         ],
         "variantdata": [],
@@ -34,17 +34,17 @@
         "other": []
     },
     "type": "UnitDefinition",
-    "name": "perfect_diamond",
+    "name": "identify_scroll",
     "entities": [
         {
             "type": "Entity",
             "name": "entity_root",
-            "id": 4131382401,
+            "id": 3814150391,
             "components": [
                 {
                     "type": "UnitRootComponent",
                     "name": "component_root",
-                    "state_machine_filename": "data/hd/items/dropped_items/dropped_items_helms_flip_nw.json",
+                    "state_machine_filename": "data/hd/items/dropped_items/dropped_items_helms_flip_se.json",
                     "doNotInheritRotation": false,
                     "rotationOverride": {
                         "x": 0.0,
@@ -66,15 +66,15 @@
                     "type": "TransformDefinitionComponent",
                     "name": "entity_root_TransformDefinition",
                     "position": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
+                        "x": 0.3,
+                        "y": 1000.0,
+                        "z": 0.3
                     },
                     "orientation": {
                         "x": 0.0,
-                        "y": 0.0,
+                        "y": 0.3007058,
                         "z": 0.0,
-                        "w": 1.0
+                        "w": 0.953716934
                     },
                     "scale": {
                         "x": 1.0,
@@ -90,12 +90,12 @@
         {
             "type": "Entity",
             "name": "entity_model",
-            "id": 607486760,
+            "id": 1071332909,
             "components": [
                 {
                     "type": "ModelDefinitionComponent",
-                    "name": "component_model_perfect_diamond",
-                    "filename": "data/hd/items/misc/gem/perfect_diamond/perfect_diamond.model",
+                    "name": "component_model_identify_scroll",
+                    "filename": "data/hd/items/misc/scroll/identify_scroll/identify_scroll.model",
                     "visibleLayers": 1,
                     "lightMask": 19,
                     "shadowMask": 3,

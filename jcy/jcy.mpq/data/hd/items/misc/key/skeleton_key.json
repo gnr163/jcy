@@ -3,7 +3,7 @@
         "particles": [],
         "models": [
             {
-                "path": "data/hd/items/misc/gem/perfect_diamond/perfect_diamond.model"
+                "path": "data/hd/items/misc/key/skeleton_key/skeleton_key.model"
             }
         ],
         "skeletons": [
@@ -14,13 +14,13 @@
         "animations": [],
         "textures": [
             {
-                "path": "data/hd/items/misc/gem/perfect_diamond/misc_perfect_diamond_ALB.texture"
+                "path": "data/hd/items/misc/key/skeleton_key/misc_skeleton_key_ALB.texture"
             },
             {
-                "path": "data/hd/items/misc/gem/perfect_diamond/misc_perfect_diamond_NRM.texture"
+                "path": "data/hd/items/misc/key/skeleton_key/misc_skeleton_key_NRM.texture"
             },
             {
-                "path": "data/hd/items/misc/gem/perfect_diamond/misc_perfect_diamond_ORM.texture"
+                "path": "data/hd/items/misc/key/skeleton_key/misc_skeleton_key_ORM.texture"
             }
         ],
         "physics": [],
@@ -34,12 +34,12 @@
         "other": []
     },
     "type": "UnitDefinition",
-    "name": "perfect_diamond",
+    "name": "skeleton_key",
     "entities": [
         {
             "type": "Entity",
             "name": "entity_root",
-            "id": 4131382401,
+            "id": 3209734450,
             "components": [
                 {
                     "type": "UnitRootComponent",
@@ -66,15 +66,15 @@
                     "type": "TransformDefinitionComponent",
                     "name": "entity_root_TransformDefinition",
                     "position": {
-                        "x": 0.0,
+                        "x": 0.2,
                         "y": 0.0,
-                        "z": 0.0
+                        "z": 0.35
                     },
                     "orientation": {
                         "x": 0.0,
-                        "y": 0.0,
+                        "y": 0.5,
                         "z": 0.0,
-                        "w": 1.0
+                        "w": 0.8660254
                     },
                     "scale": {
                         "x": 1.0,
@@ -90,12 +90,12 @@
         {
             "type": "Entity",
             "name": "entity_model",
-            "id": 607486760,
+            "id": 4288480363,
             "components": [
                 {
                     "type": "ModelDefinitionComponent",
-                    "name": "component_model_perfect_diamond",
-                    "filename": "data/hd/items/misc/gem/perfect_diamond/perfect_diamond.model",
+                    "name": "component_model_skeleton_key",
+                    "filename": "data/hd/items/misc/key/skeleton_key/skeleton_key.model",
                     "visibleLayers": 1,
                     "lightMask": 19,
                     "shadowMask": 3,
