@@ -3,7 +3,7 @@
         "particles": [],
         "models": [
             {
-                "path": "data/hd/items/misc/rune/amn_rune/amn_rune.model"
+                "path": "data/hd/items/misc/gem/chipped_emerald/chipped_emerald.model"
             }
         ],
         "skeletons": [
@@ -14,13 +14,13 @@
         "animations": [],
         "textures": [
             {
-                "path": "data/hd/items/misc/rune/amn_rune/misc_amn_rune_ALB.texture"
+                "path": "data/hd/items/misc/gem/chipped_emerald/misc_chipped_emerald_ALB.texture"
             },
             {
-                "path": "data/hd/items/misc/rune/amn_rune/misc_amn_rune_NRM.texture"
+                "path": "data/hd/items/misc/gem/chipped_emerald/misc_chipped_emerald_NRM.texture"
             },
             {
-                "path": "data/hd/items/misc/rune/amn_rune/misc_amn_rune_ORM.texture"
+                "path": "data/hd/items/misc/gem/chipped_emerald/misc_chipped_emerald_ORM.texture"
             }
         ],
         "physics": [],
@@ -34,12 +34,12 @@
         "other": []
     },
     "type": "UnitDefinition",
-    "name": "amn_rune",
+    "name": "chipped_emerald",
     "entities": [
         {
             "type": "Entity",
             "name": "entity_root",
-            "id": 3188210998,
+            "id": 1487056062,
             "components": [
                 {
                     "type": "UnitRootComponent",
@@ -66,9 +66,9 @@
                     "type": "TransformDefinitionComponent",
                     "name": "entity_root_TransformDefinition",
                     "position": {
-                        "x": -1.0,
-                        "y": 0.0,
-                        "z": -0.9
+                        "x": 0.0,
+                        "y": 1000.0,
+                        "z": 0.0
                     },
                     "orientation": {
                         "x": 0.0,
@@ -90,12 +90,12 @@
         {
             "type": "Entity",
             "name": "entity_model",
-            "id": 2315861416,
+            "id": 2401235760,
             "components": [
                 {
                     "type": "ModelDefinitionComponent",
-                    "name": "component_model_amn_rune",
-                    "filename": "data/hd/items/misc/rune/amn_rune/amn_rune.model",
+                    "name": "component_model_chipped_emerald",
+                    "filename": "data/hd/items/misc/gem/chipped_emerald/chipped_emerald.model",
                     "visibleLayers": 1,
                     "lightMask": 19,
                     "shadowMask": 3,

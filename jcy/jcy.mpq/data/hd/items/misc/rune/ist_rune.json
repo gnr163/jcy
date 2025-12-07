@@ -81,7 +81,9 @@
                         "y": 1.0,
                         "z": 1.0
                     },
-                    "inheritOnlyPosition": false
+                    "inheritOnlyPosition": false,
+                    "block-y": 0.0,
+                    "hide-y": 1000.0
                 }
             ]
         },

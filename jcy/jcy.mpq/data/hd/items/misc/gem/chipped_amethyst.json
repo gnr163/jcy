@@ -3,7 +3,7 @@
         "particles": [],
         "models": [
             {
-                "path": "data/hd/items/misc/rune/amn_rune/amn_rune.model"
+                "path": "data/hd/items/misc/gem/chipped_amethyst/chipped_amethyst.model"
             }
         ],
         "skeletons": [
@@ -14,13 +14,13 @@
         "animations": [],
         "textures": [
             {
-                "path": "data/hd/items/misc/rune/amn_rune/misc_amn_rune_ALB.texture"
+                "path": "data/hd/items/misc/gem/chipped_amethyst/misc_chipped_amethyst_ALB.texture"
             },
             {
-                "path": "data/hd/items/misc/rune/amn_rune/misc_amn_rune_NRM.texture"
+                "path": "data/hd/items/misc/gem/chipped_amethyst/misc_chipped_amethyst_NRM.texture"
             },
             {
-                "path": "data/hd/items/misc/rune/amn_rune/misc_amn_rune_ORM.texture"
+                "path": "data/hd/items/misc/gem/chipped_amethyst/misc_chipped_amethyst_ORM.texture"
             }
         ],
         "physics": [],
@@ -34,12 +34,12 @@
         "other": []
     },
     "type": "UnitDefinition",
-    "name": "amn_rune",
+    "name": "chipped_amethyst",
     "entities": [
         {
             "type": "Entity",
             "name": "entity_root",
-            "id": 3188210998,
+            "id": 82511480,
             "components": [
                 {
                     "type": "UnitRootComponent",
@@ -66,9 +66,9 @@
                     "type": "TransformDefinitionComponent",
                     "name": "entity_root_TransformDefinition",
                     "position": {
-                        "x": -1.0,
-                        "y": 0.0,
-                        "z": -0.9
+                        "x": 0.0,
+                        "y": 1000.0,
+                        "z": 0.0
                     },
                     "orientation": {
                         "x": 0.0,
@@ -90,12 +90,12 @@
         {
             "type": "Entity",
             "name": "entity_model",
-            "id": 2315861416,
+            "id": 1868792483,
             "components": [
                 {
                     "type": "ModelDefinitionComponent",
-                    "name": "component_model_amn_rune",
-                    "filename": "data/hd/items/misc/rune/amn_rune/amn_rune.model",
+                    "name": "component_model_chipped_amethyst",
+                    "filename": "data/hd/items/misc/gem/chipped_amethyst/chipped_amethyst.model",
                     "visibleLayers": 1,
                     "lightMask": 19,
                     "shadowMask": 3,

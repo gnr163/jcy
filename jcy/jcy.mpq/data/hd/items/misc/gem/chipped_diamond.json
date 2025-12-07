@@ -3,7 +3,7 @@
         "particles": [],
         "models": [
             {
-                "path": "data/hd/items/misc/rune/amn_rune/amn_rune.model"
+                "path": "data/hd/items/misc/gem/chipped_diamond/chipped_diamond.model"
             }
         ],
         "skeletons": [
@@ -14,19 +14,19 @@
         "animations": [],
         "textures": [
             {
-                "path": "data/hd/items/misc/rune/amn_rune/misc_amn_rune_ALB.texture"
+                "path": "data/hd/items/misc/gem/chipped_diamond/misc_chipped_diamond_ALB.texture"
             },
             {
-                "path": "data/hd/items/misc/rune/amn_rune/misc_amn_rune_NRM.texture"
+                "path": "data/hd/items/misc/gem/chipped_diamond/misc_chipped_diamond_NRM.texture"
             },
             {
-                "path": "data/hd/items/misc/rune/amn_rune/misc_amn_rune_ORM.texture"
+                "path": "data/hd/items/misc/gem/chipped_diamond/misc_chipped_diamond_ORM.texture"
             }
         ],
         "physics": [],
         "json": [
             {
-                "path": "data/hd/items/dropped_items/dropped_items_helms_flip_se.json"
+                "path": "data/hd/items/dropped_items/dropped_items_helms_flip_ne.json"
             }
         ],
         "variantdata": [],
@@ -34,17 +34,17 @@
         "other": []
     },
     "type": "UnitDefinition",
-    "name": "amn_rune",
+    "name": "chipped_diamond",
     "entities": [
         {
             "type": "Entity",
             "name": "entity_root",
-            "id": 3188210998,
+            "id": 82511480,
             "components": [
                 {
                     "type": "UnitRootComponent",
                     "name": "component_root",
-                    "state_machine_filename": "data/hd/items/dropped_items/dropped_items_helms_flip_se.json",
+                    "state_machine_filename": "data/hd/items/dropped_items/dropped_items_helms_flip_ne.json",
                     "doNotInheritRotation": false,
                     "rotationOverride": {
                         "x": 0.0,
@@ -66,9 +66,9 @@
                     "type": "TransformDefinitionComponent",
                     "name": "entity_root_TransformDefinition",
                     "position": {
-                        "x": -1.0,
-                        "y": 0.0,
-                        "z": -0.9
+                        "x": 0.0,
+                        "y": 1000.0,
+                        "z": 0.0
                     },
                     "orientation": {
                         "x": 0.0,
@@ -90,12 +90,12 @@
         {
             "type": "Entity",
             "name": "entity_model",
-            "id": 2315861416,
+            "id": 2401235760,
             "components": [
                 {
                     "type": "ModelDefinitionComponent",
-                    "name": "component_model_amn_rune",
-                    "filename": "data/hd/items/misc/rune/amn_rune/amn_rune.model",
+                    "name": "component_model_chipped_diamond",
+                    "filename": "data/hd/items/misc/gem/chipped_diamond/chipped_diamond.model",
                     "visibleLayers": 1,
                     "lightMask": 19,
                     "shadowMask": 3,
