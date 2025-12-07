@@ -41,9 +41,13 @@ def convert_net_ease_to_legacy(json_data, TERROR_ZONE_MAP):
         ts = entry["time"]
 
         # 网易是数组形式 ["监狱","营房"] → 旧版只需要第一个
-        primary_name = entry["name"][0]
-
-        zone_id = TERROR_ZONE_MAP.get(primary_name)
+        zone_id = None
+        for name in entry["name"]:
+            primary_name = name
+            zone_id = TERROR_ZONE_MAP.get(primary_name)
+            if zone_id:
+                break
+        
         if not zone_id:
             print(f"[警告] 找不到映射：{primary_name}，使用 0-0")
             zone_id = "0-0"

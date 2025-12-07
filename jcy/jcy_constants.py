@@ -158,6 +158,7 @@ TERROR_ZONE_API = {
 
 # 恐怖地带
 TERROR_ZONE_DICT = {
+  "0-0": {"zhCN": "解析失败, 通知作者", "zhTW": "解析失敗, 通知作者", "enUS": "Parse Failed, Tip Author", "exp": "-", "drop": "-"},
   "1-1": {"zhCN": "鲜血荒地、 邪恶洞穴", "zhTW": "鮮血荒地、 邪惡洞窟", "enUS": "Blood Moor, Den of Evil", "exp": "F", "drop": "F"},
   "1-2": {"zhCN": "冰冷之原、洞穴", "zhTW": "冰冷之原、洞穴", "enUS": "Cold Plains, The Cave", "exp": "C", "drop": "D"},
   "1-3": {"zhCN": "埋骨之地、墓穴、寝陵", "zhTW": "埋骨之地、墓穴、大陵墓", "enUS": "Burial Grounds, The Crypt, The Mausoleum", "exp": "F", "drop": "F"},
@@ -199,6 +200,7 @@ TERROR_ZONE_DICT = {
 TERROR_ZONE_MAP = {
     "精华荒地":"1-1",
     "鮮血荒地":"1-1",
+    "鲜红荒地":"1-1",
     "邪恶洞穴":"1-1",
     "邪惡洞窟":"1-1",
     "冰冷之原":"1-2",
