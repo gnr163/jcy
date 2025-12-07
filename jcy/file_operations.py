@@ -2271,6 +2271,9 @@ class FileOperations:
         if data is None:
             return (0, 0)
 
+        count = 0
+        total = 0
+
         # 1.load item-names.json 
         item_names_data = None
         item_names_path = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json")
@@ -2279,30 +2282,69 @@ class FileOperations:
         
         # 2.modify
         for item in item_names_data:
-            if item.get("Key") in data:
-                filter = data.get(item.get("Key"))
+            try:
+                Key = item.get("Key")
+                if Key in data:
+                    filter = data.get(Key)
 
-                item[ZHCN] = self.filter_item_name(item[ZHCN2], filter)
-                item[ZHTW] = self.filter_item_name(item[ZHTW2], filter)
-                item[ENUS] = self.filter_item_name(item[ENUS], filter)
+                    if Key in ITEM_FILTERS:
+                        # 道具修改模型
+                        misc_json = None
+                        misc_path = os.path.join(MOD_PATH, ITEM_FILTERS.get(Key))
+                        with open(misc_path, "r", encoding='utf-8') as f:
+                            misc_json = json.load(f)
+                        
+                        components = misc_json["entities"][0]["components"]
+                        last_node = components[-1]
+                        last_name = last_node["name"]
+                        
+                        if filter:
+                            if last_name in ["entity_root_TransformDefinition", "entity_root_TransformDefinition2"]:
+                                y = last_node["position"]["y"]
+                                if y < 1000:
+                                    last_node["position"]["y"] = y + 1000
+                            else:
+                                components.append(ENTITY_ROOT_POSITION2)
+                        else:
+                            if last_name == "entity_root_TransformDefinition":
+                                y = last_node["position"]["y"]
+                                if y >= 1000:
+                                    last_node["position"]["y"] = y - 1000
+                            elif last_name == "entity_root_TransformDefinition2":
+                                components.pop()
 
-                # 备份
-                item[ZHCN2] = item[ZHCN]
-                item[ZHTW2] = item[ZHTW]
+                        with open(misc_path, 'w', encoding='utf-8') as f:
+                            json.dump(misc_json, f, ensure_ascii=False, indent=4)
 
-                # 国服本地化
-                netease = self.controller.current_states.get(NETEASE_LANGUAGE)
-                self.modify_lng_strings_zhcn(item, netease)
-                
-                # 国际服本地化
-                battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
-                self.modify_lng_strings_zhtw(item, battlenet)
+                        count += 1
+                        total += 1
+                    else:
+                        # 修改道具名称
+                        item[ZHCN] = self.filter_item_name(item[ZHCN2], filter)
+                        item[ZHTW] = self.filter_item_name(item[ZHTW2], filter)
+                        item[ENUS] = self.filter_item_name(item[ENUS], filter)
+
+                        # 备份
+                        item[ZHCN2] = item[ZHCN]
+                        item[ZHTW2] = item[ZHTW]
+
+                        # 国服本地化
+                        netease = self.controller.current_states.get(NETEASE_LANGUAGE)
+                        self.modify_lng_strings_zhcn(item, netease)
+                        
+                        # 国际服本地化
+                        battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
+                        self.modify_lng_strings_zhtw(item, battlenet)
+            except Exception as e:
+                print(e)
 
         # 3.write
         with open(item_names_path, 'w', encoding='utf-8-sig') as f:
             json.dump(item_names_data, f, ensure_ascii=False, indent=2)
+        count += 1
+        total += 1
 
-        return (1, 1)
+        return (count, total)
 
 
     def select_hudpanel_size(self, radio: str = "0"):

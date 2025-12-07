@@ -96,6 +96,7 @@ class FeatureView:
 
         # --- new道具屏蔽 ---
         items_name_data = self.controller.file_operations.load_items_name()
+        items_name_data.extend(GOLD_NAMES)
         ifp = ItemFilterPanel(notebook, ITEMS, items_name_data,controller=self.controller, config_dict=self.controller.current_states, config_key=ITEM_FILTER)
         self.add_tab(ifp, "道具屏蔽")
 
@@ -1858,9 +1859,6 @@ class ItemFilterPanel(tk.Frame):
 
         item_tier_dict = {item["key"]: item for item in ITEM_TIER}
 
-        item_name_list = self.controller.file_operations.load_items_name()
-        item_name_dict = {item["Key"]: item for item in item_name_list}
-
         # ---- 构造表格数据格式 ----
         table_data = []
         for it in filtered:
@@ -1868,11 +1866,9 @@ class ItemFilterPanel(tk.Frame):
             item_name_i18n = self.names.get(key, {})
             tier = it["tier"]
             item_tier_i18n = item_tier_dict.get(tier, {})
-            unique = it["unique"]
-            sets = it["set"]
             # ---- 将 unique/set keys 转为对应语言的名称 ----
-            unique_names = [item_name_dict.get(k, {}).get(self._current_lang, k) for k in it.get("unique", [])]
-            set_names = [item_name_dict.get(k, {}).get(self._current_lang, k) for k in it.get("set", [])]
+            unique_names = [self.names.get(k, {}).get(self._current_lang, k) for k in it.get("unique", [])]
+            set_names = [self.names.get(k, {}).get(self._current_lang, k) for k in it.get("set", [])]
 
             row = [
                 key,
@@ -1888,7 +1884,6 @@ class ItemFilterPanel(tk.Frame):
             w.destroy()
 
         # ---- 创建新表格 ----
-        # columns = ["简体中文", "繁体中文", "English", "品质"]
         columns = [
             ITEM_COLUMN.get("ITEM_NAME").get(self._current_lang),
             ITEM_COLUMN.get("ITEM_TIER").get(self._current_lang),

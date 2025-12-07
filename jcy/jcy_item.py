@@ -5732,6 +5732,38 @@ ITEMS = [
         "set": []
     },
     {
+        "key": "gds",
+        "category": "misc",
+        "type": "other",
+        "tier": 0,
+        "unique": [],
+        "set": []
+    },
+    {
+        "key": "gdm",
+        "category": "misc",
+        "type": "other",
+        "tier": 0,
+        "unique": [],
+        "set": []
+    },
+    {
+        "key": "gdl",
+        "category": "misc",
+        "type": "other",
+        "tier": 0,
+        "unique": [],
+        "set": []
+    },
+    {
+        "key": "gdx",
+        "category": "misc",
+        "type": "other",
+        "tier": 0,
+        "unique": [],
+        "set": []
+    },
+    {
         "key": "r01",
         "category": "misc",
         "type": "rune",
