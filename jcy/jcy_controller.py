@@ -309,7 +309,7 @@ class FeatureController:
 
 
     def apply_settings_with_loading(self):
-        loading = LoadingDialog(self.master, "assets/loading.gif")
+        loading = LoadingDialog(self.master, LOADING_PATH)
 
         loading.update_idletasks()
         loading.update()

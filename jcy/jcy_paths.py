@@ -82,6 +82,8 @@ BEAR_ICO = "bear.ico"
 DONATE_WECHAT_PNG = 'donate_wechat.png'
 # HELP
 HELP_PNG = 'help.png'
+# Loading
+LOADING_GIF = "loading.gif"
 # --- BIN文件 ---
 # HANDLE64
 HANDLE64_EXE = 'handle64.exe'
@@ -105,6 +107,8 @@ LOGO_PATH = get_assets_file(BEAR_ICO)
 DONATE_WECHAT_PATH = get_assets_file(DONATE_WECHAT_PNG)
 # HELP
 HELP_PATH = get_assets_file(HELP_PNG)
+# Loading
+LOADING_PATH = get_assets_file(LOADING_GIF)
 # 默认配置i文件
 DEFAULT_SETTINGS_PATH = get_assets_file(SETTINGS_JSON)
 # HANDLE64
@@ -190,6 +194,7 @@ __all__ = [
     'LOGO_PATH',
     'DONATE_WECHAT_PATH',
     'HELP_PATH',
+    'LOADING_PATH',
     'DEFAULT_SETTINGS_PATH',
     'HANDLE64_PATH',
     'MOD_PATH',
