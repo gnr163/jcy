@@ -1244,12 +1244,16 @@ class FileOperations:
                         item["enUS"] = item["enUS"].replace(r"{{abbr}}", abbr if handler_abbr else "")
                         item["zhCN"] = item["zhCN"].replace(r"{{abbr}}", abbr if handler_abbr else "")
                         item["zhTW"] = item["zhTW"].replace(r"{{abbr}}", abbr if handler_abbr else "")
+                        item["zhSGCN"] = item["zhSGCN"].replace(r"{{abbr}}", abbr if handler_abbr else "")
+                        item["zhSGTW"] = item["zhSGTW"].replace(r"{{abbr}}", abbr if handler_abbr else "")
                     # 词缀染色
                     color = data.get("color")
                     if color is not None:
                         item["enUS"] = item["enUS"].replace(r"{{color0}}", color[0] if handler_color else "").replace(r"{{color1}}", color[1] if handler_color else "")
                         item["zhCN"] = item["zhCN"].replace(r"{{color0}}", color[0] if handler_color else "").replace(r"{{color1}}", color[1] if handler_color else "")
                         item["zhTW"] = item["zhTW"].replace(r"{{color0}}", color[0] if handler_color else "").replace(r"{{color1}}", color[1] if handler_color else "")
+                        item["zhSGCN"] = item["zhSGCN"].replace(r"{{color0}}", color[0] if handler_color else "").replace(r"{{color1}}", color[1] if handler_color else "")
+                        item["zhSGTW"] = item["zhSGTW"].replace(r"{{color0}}", color[0] if handler_color else "").replace(r"{{color1}}", color[1] if handler_color else "")
                         
                 # 本地化
                 item[ZHCN2] = item[ZHCN]
@@ -1343,7 +1347,7 @@ class FileOperations:
         set_max = "5" in set_dict
         set_mark = "6" in set_dict
 
-
+        _languages = [ZHCN, ZHSGCN, ZHTW, ZHSGTW, ENUS]
         # --- item-names.templet.json + item-names.data.json -> item-names.json ---
         try:
             templet_list = None
@@ -1355,21 +1359,27 @@ class FileOperations:
             data_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.data.json")
             with open(data_path, 'r', encoding='utf-8') as f:
                 data_dict = json.load(f)
+            # 松岗简/繁体, 采用简/繁体数据
+            for key, obj in data_dict.items():
+                obj[ZHSGCN] = obj[ZHCN]
+                obj[ZHSGTW] = obj[ZHTW]
 
             for item in templet_list:
                 Key = item["Key"]
                 
-                # 道具过滤
-                if item_filter_dict.get(Key):
+                # 道具过滤, 道具类不再使用名称进行过滤
+                if Key not in ITEM_MISC and item_filter_dict.get(Key):
                     item[ZHCN] = UE01A + item[ZHCN]
+                    item[ZHSGCN] = UE01A + item[ZHSGCN]
                     item[ZHTW] = UE01A + item[ZHTW]
+                    item[ZHSGTW] = UE01A + item[ZHSGTW]
                     item[ENUS] = UE01A + item[ENUS]
 
                 # 底材&道具
                 if len(Key) == 3:
                     data = data_dict.get(Key)
                     if data is not None:
-                        for lng in [ZHCN, ZHTW, ENUS]:
+                        for lng in _languages:
                             arr = []
                             arr.append(item[lng])
                             if handler_grade:
@@ -1402,7 +1412,7 @@ class FileOperations:
                     
                     if Key in SET_ITEM_INDEX:
                         if data is not None:
-                            for lng in [ZHCN, ZHTW, ENUS]:
+                            for lng in _languages:
                                 arr = []
                                 if set_max:
                                     max = data[lng].get("max")
@@ -1425,7 +1435,7 @@ class FileOperations:
                                 item[lng] = ''.join(arr)
                     else:
                         if data is not None:
-                            for lng in [ZHCN, ZHTW, ENUS]:
+                            for lng in _languages:
                                 arr = []
                                 if handler_max:
                                     max = data[lng].get("max")
@@ -1482,19 +1492,25 @@ class FileOperations:
             data_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-runes.data.json")
             with open(data_path, 'r', encoding='utf-8') as f:
                 data_dict = json.load(f)
+            # 松岗简/繁体, 采用简/繁体数据
+            for key, obj in data_dict.items():
+                obj[ZHSGCN] = obj[ZHCN]
+                obj[ZHSGTW] = obj[ZHTW]
 
             for item in templet_list:
                 Key = item["Key"]
 
-                # 道具过滤
-                if item_filter_dict.get(Key):
+                # 道具过滤, 道具类不再使用名称进行过滤
+                if Key not in ITEM_MISC and item_filter_dict.get(Key):
                     item[ZHCN] = UE01A + item[ZHCN]
+                    item[ZHSGCN] = UE01A + item[ZHSGCN]
                     item[ZHTW] = UE01A + item[ZHTW]
+                    item[ZHSGTW] = UE01A + item[ZHSGTW]
                     item[ENUS] = UE01A + item[ENUS]
 
                 data = data_dict.get(Key)
                 if data is not None:
-                    for lng in [ZHCN, ZHTW, ENUS]:
+                    for lng in _languages:
                         arr = []
                         if handler_max:
                             max = data[lng].get("max")
@@ -2283,7 +2299,7 @@ class FileOperations:
         for item in item_names_data:
             try:
                 Key = item.get("Key")
-                if Key in ITEM_FILTERS:
+                if Key in ITEM_MISC:
                     continue
                 if Key in data:
                     filter = data.get(Key)
@@ -2313,9 +2329,11 @@ class FileOperations:
 
         # --- 改模型屏蔽(仅道具) ---
         for Key, filter in data.items():
+            if Key not in ITEM_MISC:
+                continue
             try:         
                 misc_json = None
-                misc_path = os.path.join(MOD_PATH, ITEM_FILTERS.get(Key))
+                misc_path = os.path.join(MOD_PATH, ITEM_MISC.get(Key))
                 with open(misc_path, "r", encoding='utf-8') as f:
                     misc_json = json.load(f)
                 

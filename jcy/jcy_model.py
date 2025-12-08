@@ -23,9 +23,11 @@ class FeatureConfig:
                             "params": {
                                 ZHCN2: "简中翻译",
                                 S2T: "简中翻译->繁体",
+                                ZHSGCN: "松岗简体",
                                 ENUS: "enUS",
                                 ZHTW2: "繁中翻译",
                                 T2S: "繁中翻译->简体",
+                                ZHSGTW: "松崗繁體"
                             }
                         },
                         {
@@ -36,9 +38,11 @@ class FeatureConfig:
                             "params": {
                                 ZHCN2: "简中翻译",
                                 S2T: "简中翻译->繁体",
+                                ZHSGCN: "松岗简体",
                                 ENUS: "enUS",
                                 ZHTW2: "繁中翻译",
                                 T2S: "繁中翻译->简体",
+                                ZHSGTW: "松崗繁體"
                             }
                         },
                         {

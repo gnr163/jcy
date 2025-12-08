@@ -21,6 +21,8 @@ ZHTW2 = 'zhTW2'
 S2T = 'S2T'
 # 繁->简
 T2S = 'T2S'
+ZHSGCN = "zhSGCN"
+ZHSGTW = "zhSGTW"
 
 
 LANG = None
@@ -164,6 +166,7 @@ ITEM_ENUS = ["El Rune", "Eld Rune", "Tir Rune", "Nef Rune", "Eth Rune", "Ith Run
 ITEM_ZHTW = ["艾爾#01", "艾德#02", "特爾#03", "那夫#04", "愛斯#05", "伊司#06", "塔爾#07", "拉爾#08", "歐特#09", "書爾#10", "安姆#11", "索爾#12", "夏#13", "多爾#14", "海爾#15", "埃歐#16", "盧姆#17", "科#18", "法爾#19", "藍姆#20", "普爾#21", "烏姆#22", "馬爾#23", "伊司特#24", "古爾#25", "伐克斯#26", "歐姆#27", "羅#28", "瑟#29", "貝#30", "喬#31", "查姆#32", "薩德#33", "戒指", "項鏈", "珠寶", "小型咒符", "大型咒符", "巨型咒符", "權冠"]
 # 本地化文件列表
 LNG_STRINGS = [
+    r"data/local/lng/strings/item-gems.json",
     r"data/local/lng/strings/item-modifiers.json",
     r"data/local/lng/strings/item-nameaffixes.json",
     r"data/local/lng/strings/item-names.json",
@@ -520,7 +523,7 @@ SET_ITEM_INDEX = [
 ]
 
 # 道具字典<Key, 模型>
-ITEM_FILTERS = {
+ITEM_MISC = {
     "skc": "data/hd/items/misc/gem/chipped_skull.json",
     "gcy": "data/hd/items/misc/gem/chipped_topaz.json",
     "gcv": "data/hd/items/misc/gem/chipped_amethyst.json",
@@ -709,6 +712,8 @@ __all__ = [
     'ZHCN2',
     'ZHTW',
     'ZHTW2',
+    'ZHSGCN',
+    'ZHSGTW',
     'S2T',
     'T2S',
     'ENUS',
@@ -779,7 +784,7 @@ __all__ = [
     'TERROR_ZONE_MAP',
     'SETS_INDEX',
     'SET_ITEM_INDEX',
-    'ITEM_FILTERS',
+    'ITEM_MISC',
     'CUSTOM_SOUNDS',
     'WAYPOINT_POINTER',
     'MISSION_POINTER',
