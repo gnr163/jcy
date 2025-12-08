@@ -22,11 +22,9 @@ class FeatureConfig:
                             "colspan": 100,
                             "params": {
                                 ZHCN2: "简中翻译",
-                                S2T: "简中翻译->繁体",
                                 ZHSGCN: "松岗简体",
                                 ENUS: "enUS",
                                 ZHTW2: "繁中翻译",
-                                T2S: "繁中翻译->简体",
                                 ZHSGTW: "松崗繁體"
                             }
                         },
@@ -37,11 +35,9 @@ class FeatureConfig:
                             "colspan": 100,
                             "params": {
                                 ZHCN2: "简中翻译",
-                                S2T: "简中翻译->繁体",
                                 ZHSGCN: "松岗简体",
                                 ENUS: "enUS",
                                 ZHTW2: "繁中翻译",
-                                T2S: "繁中翻译->简体",
                                 ZHSGTW: "松崗繁體"
                             }
                         },
@@ -478,8 +474,8 @@ class FeatureConfig:
                             "text": "装备-设置",
                             "colspan": 50,
                             "params": {
-                                "1": "屏蔽 劣等/损坏/破旧武器装备底材",
-                                "2": "开启 蓝色装备染色(特殊词缀)"
+                                "1": "屏蔽 劣质武器装备底材",
+                                "2": "开启 蓝色装备染色"
                             }
                         },
                         {
@@ -504,6 +500,17 @@ class FeatureConfig:
                             }
                         },
                         {
+                            "fid": ITEM_RUNE_SETTING2,
+                            "type": CHECK,
+                            "text": "装备-符文之语特效",
+                            "colspan": 50,
+                            "params": {
+                                "7": "附带英文",
+                                "8": "MAX变量",
+                                "9": "吐槽信息"
+                            }
+                        },
+                        {
                             "fid": MODEL_EFFECTS,
                             "type": CHECK,
                             "text": "装备-模型特效",
@@ -520,26 +527,26 @@ class FeatureConfig:
                             "fid": TORCH_KEY,
                             "type": CHECK,
                             "text": "火炬钥匙",
-                            "colspan": 70,
+                            "colspan": 100,
                             "params": {
                                 "1": "金属颜色皮肤",
                                 "2": "掉落光柱提醒",
                                 "3": "掉落声音提醒"
                             }
                         },
-                        {
-                            "fid": RUNE_SIZE,
-                            "type": SPIN,
-                            "text": "22#+符文名称大小",
-                            "colspan": 30
-                        },
+                        # {
+                        #     "fid": RUNE_SIZE,
+                        #     "type": SPIN,
+                        #     "text": "22#+符文名称大小",
+                        #     "colspan": 30
+                        # },
                         {
                             "fid": ITEM_RUNE_SETTING1,
                             "type": CHECK,
                             "text": "符文-设置",
-                            "colspan": 60,
+                            "colspan": 100,
                             "params": {
-                                "1": "金色",
+                                "1": "金色名字",
                                 "2": "抬头",
                                 "3": "编号",
                                 "4": "附带英文",
@@ -547,17 +554,7 @@ class FeatureConfig:
                                 "6": "升级公式",
                             }
                         },
-                        {
-                            "fid": ITEM_RUNE_SETTING2,
-                            "type": CHECK,
-                            "text": "符文之语-设置",
-                            "colspan": 40,
-                            "params": {
-                                "7": "附带英文",
-                                "8": "MAX变量",
-                                "9": "吐槽信息"
-                            }
-                        },
+                        
                     ]
                 }
             ],

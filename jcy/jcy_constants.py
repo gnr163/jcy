@@ -17,12 +17,10 @@ ZHCN = 'zhCN'
 ZHCN2 = 'zhCN2'
 ZHTW = 'zhTW'
 ZHTW2 = 'zhTW2'
-# 简->繁
-S2T = 'S2T'
-# 繁->简
-T2S = 'T2S'
 ZHSGCN = "zhSGCN"
 ZHSGTW = "zhSGTW"
+
+LANGUAGES = [ZHCN2, ZHSGCN, ZHTW2, ZHSGTW, ENUS]
 
 
 LANG = None
@@ -716,9 +714,8 @@ __all__ = [
     'ZHTW2',
     'ZHSGCN',
     'ZHSGTW',
-    'S2T',
-    'T2S',
     'ENUS',
+    'LANGUAGES',
     'APP_NAME',
     'APP_VERSION',
     'APP_FULL_NAME',

@@ -7,7 +7,6 @@ import time
 from jcy_constants import *
 from jcy_paths import *
 from jcy_element import *
-from zhconv import convert
 
 
 class FileOperations:
@@ -76,30 +75,6 @@ class FileOperations:
 
         return (count, len(files))
     
-
-    def modify_lng_strings_zhcn(self, json_object, selectLng=ZHCN2):
-        """暴雪国际服本地化修改"""
-        if json_object is None:
-            return
-        if T2S == selectLng:
-            json_object[ZHCN] = convert(json_object[ZHTW2], 'zh-cn')
-        elif S2T == selectLng:
-            json_object[ZHCN] = convert(json_object[ZHCN2], 'zh-tw')
-        else:
-            json_object[ZHCN] = json_object[selectLng]
-    
-
-    def modify_lng_strings_zhtw(self, json_object, selectLng=ZHTW2):
-        """网易国服本地化修改"""
-        if json_object is None:
-            return
-        if T2S == selectLng:
-            json_object[ZHTW] = convert(json_object[ZHTW2], 'zh-cn')
-        elif S2T == selectLng:
-            json_object[ZHTW] = convert(json_object[ZHCN2], 'zh-tw')
-        else:
-            json_object[ZHTW] = json_object[selectLng]
-
 
     def hide_quest_button(self, isEnabled: bool = False):
         """隐藏任务按钮"""
@@ -1233,6 +1208,8 @@ class FileOperations:
             with open(jcy_item_modifiers_data_path, 'r', encoding='utf-8') as f:
                 jcy_item_modifiers_data = json.load(f)
 
+            netease = self.controller.current_states.get(NETEASE_LANGUAGE)
+            battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
             # 词缀数据填充模板
             for item in jcy_item_modifiers_templet:
                 Key = item["Key"]
@@ -1259,11 +1236,9 @@ class FileOperations:
                 item[ZHCN2] = item[ZHCN]
                 item[ZHTW2] = item[ZHTW]
                 # 国服本地化
-                netease = self.controller.current_states.get(NETEASE_LANGUAGE)
-                self.modify_lng_strings_zhcn(item, netease)
+                item[ZHCN] = item[netease]
                 # 国际服本地化
-                battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
-                self.modify_lng_strings_zhtw(item, battlenet)
+                item[ZHTW] = item[battlenet]
 
             # 写临时文件
             item_modifiers_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-modifiers.json.tmp")
@@ -1364,6 +1339,9 @@ class FileOperations:
                 obj[ZHSGCN] = obj[ZHCN]
                 obj[ZHSGTW] = obj[ZHTW]
 
+            netease = self.controller.current_states.get(NETEASE_LANGUAGE)
+            battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
+
             for item in templet_list:
                 Key = item["Key"]
                 
@@ -1460,15 +1438,11 @@ class FileOperations:
                 # 备份
                 item[ZHCN2] = item[ZHCN]
                 item[ZHTW2] = item[ZHTW]
-
                 # 国服本地化
-                netease = self.controller.current_states.get(NETEASE_LANGUAGE)
-                self.modify_lng_strings_zhcn(item, netease)
-                
+                item[ZHCN] = item[netease]
                 # 国际服本地化
-                battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
-                self.modify_lng_strings_zhtw(item, battlenet)
-                                
+                item[ZHTW] = item[battlenet]
+                                                
             # write temp file
             item_names_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json.tmp")
             with open(item_names_tmp, 'w', encoding="utf-8-sig") as f:
@@ -1508,7 +1482,7 @@ class FileOperations:
         runeword_enus = "7" in item_rune_setting2
         runeword_max = "8" in item_rune_setting2
         runeword_mark = "9" in item_rune_setting2
-        print(f"runeword_enus={runeword_enus}, runeword_max={runeword_max}, runeword_mark={runeword_mark}")
+
         _languages = [ZHCN, ZHSGCN, ZHTW, ZHSGTW, ENUS]
         _rune = r"^r\d{1,2}$"
         _runeword = r"^Runeword\d{1,3}$"
@@ -1530,6 +1504,9 @@ class FileOperations:
                     obj[ZHSGCN] = obj[ZHCN]
                 if obj.get(ZHSGTW) is None:
                     obj[ZHSGTW] = obj[ZHTW]
+
+            netease = self.controller.current_states.get(NETEASE_LANGUAGE)
+            battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
 
             for item in templet_list:
                 Key = item["Key"]
@@ -1569,14 +1546,11 @@ class FileOperations:
                 # 备份
                 item[ZHCN2] = item[ZHCN]
                 item[ZHTW2] = item[ZHTW]
-
                 # 国服本地化
-                netease = self.controller.current_states.get(NETEASE_LANGUAGE)
-                self.modify_lng_strings_zhcn(item, netease)
-                
+                item[ZHCN] = item[netease]
                 # 国际服本地化
-                battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
-                self.modify_lng_strings_zhtw(item, battlenet)
+                item[ZHTW] = item[battlenet]
+                
 
             item_runes_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-runes.json.tmp")
             with open(item_runes_tmp, 'w', encoding="utf-8-sig") as f:
@@ -1990,33 +1964,6 @@ class FileOperations:
         return summary
 
 
-    def show_character_effects(self, keys: list):
-        """开启角色特效"""
-
-        if keys is None:
-            return (0, 0)
-        
-        # 文件
-        _files = {
-            
-            
-            
-
-        }
-
-        funcs = []
-        for i in range(1, len(_files)+1):
-            key = str(i)
-            files = _files[key]
-            sub = self.common_rename(files, key in keys)
-            funcs.append(sub)
-
-        results = [f for f in funcs]
-        summary = tuple(sum(values) for values in zip(*results))
-        
-        return summary
-
-
     def show_environmental_pointer(self, keys: list):
         """开启环境指引"""
         
@@ -2330,6 +2277,9 @@ class FileOperations:
         with open(item_names_path, 'r', encoding='utf-8-sig') as f:
             item_names_data = json.load(f)
         
+        netease = self.controller.current_states.get(NETEASE_LANGUAGE)
+        battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
+
         for item in item_names_data:
             try:
                 Key = item.get("Key")
@@ -2340,20 +2290,20 @@ class FileOperations:
 
                     # 修改道具名称
                     item[ZHCN] = self.filter_item_name(item[ZHCN2], filter)
+                    item[ZHSGCN] = self.filter_item_name(item[ZHSGCN], filter)
                     item[ZHTW] = self.filter_item_name(item[ZHTW2], filter)
+                    item[ZHSGTW] = self.filter_item_name(item[ZHSGTW], filter)
                     item[ENUS] = self.filter_item_name(item[ENUS], filter)
 
                     # 备份
                     item[ZHCN2] = item[ZHCN]
                     item[ZHTW2] = item[ZHTW]
-
                     # 国服本地化
-                    netease = self.controller.current_states.get(NETEASE_LANGUAGE)
-                    self.modify_lng_strings_zhcn(item, netease)
-                    
+                    item[ZHCN] = item[netease]
                     # 国际服本地化
-                    battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
-                    self.modify_lng_strings_zhtw(item, battlenet)
+                    item[ZHTW] = item[battlenet]
+                    
+
             except Exception as e:
                 print(e)
 
@@ -2471,6 +2421,9 @@ class FileOperations:
     
     def select_netease_language(self, radio: str):
         """国服文字选择"""
+        if radio not in LANGUAGES:
+            radio = ZHCN2
+
         count = 0
         total = len(LNG_STRINGS)
 
@@ -2490,12 +2443,7 @@ class FileOperations:
                         obj[ZHCN2] = obj[ZHCN]
                     if ZHTW2 not in obj:
                         obj[ZHTW2] = obj[ZHTW]
-                    if T2S == radio:
-                        obj[ZHCN] = convert(obj[ZHTW2], 'zh-cn')
-                    elif S2T == radio:
-                        obj[ZHCN] = convert(obj[ZHCN2], 'zh-tw')
-                    else:
-                        obj[ZHCN] = obj[radio]
+                    obj[ZHCN] = obj[radio]
                 
                 # 3.write
                 with open(json_path, 'w', encoding="utf-8-sig") as f:
@@ -2510,6 +2458,9 @@ class FileOperations:
 
     def select_battle_net_language(self, radio: str):
         """国际服文字选择"""
+        if radio not in LANGUAGES:
+            radio = ZHTW2
+
         count = 0
         total = len(LNG_STRINGS)
 
@@ -2529,12 +2480,7 @@ class FileOperations:
                         obj[ZHCN2] = obj[ZHCN]
                     if ZHTW2 not in obj:
                         obj[ZHTW2] = obj[ZHTW]
-                    if T2S == radio:
-                        obj[ZHTW] = convert(obj[ZHTW2], 'zh-cn')
-                    elif S2T == radio:
-                        obj[ZHTW] = convert(obj[ZHCN2], 'zh-tw')
-                    else:
-                        obj[ZHTW] = obj[radio]
+                    obj[ZHTW] = obj[radio]
                 
                 # 3.write
                 with open(json_path, 'w', encoding="utf-8-sig") as f:
