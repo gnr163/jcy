@@ -1481,6 +1481,38 @@ class FileOperations:
         except Exception as e:
             print(e)
 
+        return (count, 1)
+
+
+    def modify_item_rune(self, keys: list):
+        """
+        装备特效
+        1.符文
+        2.符文之语
+        """
+
+        if keys is None:
+            return (0, 0)
+
+        count = 0
+
+        item_rune_setting1 = self.controller.current_states.get(ITEM_RUNE_SETTING1)
+        item_rune_setting2 = self.controller.current_states.get(ITEM_RUNE_SETTING2)
+        
+        rune_color = "1" in item_rune_setting1
+        rune_title = "2" in item_rune_setting1
+        rune_num = "3" in item_rune_setting1
+        rune_enus = "4" in item_rune_setting1
+        rune_logo = "5" in item_rune_setting1
+        rune_upgrade = "6" in item_rune_setting1
+        runeword_enus = "7" in item_rune_setting2
+        runeword_max = "8" in item_rune_setting2
+        runeword_mark = "9" in item_rune_setting2
+        print(f"runeword_enus={runeword_enus}, runeword_max={runeword_max}, runeword_mark={runeword_mark}")
+        _languages = [ZHCN, ZHSGCN, ZHTW, ZHSGTW, ENUS]
+        _rune = r"^r\d{1,2}$"
+        _runeword = r"^Runeword\d{1,3}$"
+        
         # --- item-runes.templet.json + item-runes.data.json -> item-runes.json ---
         try:
             templet_list = None
@@ -1494,32 +1526,34 @@ class FileOperations:
                 data_dict = json.load(f)
             # 松岗简/繁体, 采用简/繁体数据
             for key, obj in data_dict.items():
-                obj[ZHSGCN] = obj[ZHCN]
-                obj[ZHSGTW] = obj[ZHTW]
+                if obj.get(ZHSGCN) is None:
+                    obj[ZHSGCN] = obj[ZHCN]
+                if obj.get(ZHSGTW) is None:
+                    obj[ZHSGTW] = obj[ZHTW]
 
             for item in templet_list:
                 Key = item["Key"]
 
-                # 道具过滤, 道具类不再使用名称进行过滤
-                if Key not in ITEM_MISC and item_filter_dict.get(Key):
-                    item[ZHCN] = UE01A + item[ZHCN]
-                    item[ZHSGCN] = UE01A + item[ZHSGCN]
-                    item[ZHTW] = UE01A + item[ZHTW]
-                    item[ZHSGTW] = UE01A + item[ZHSGTW]
-                    item[ENUS] = UE01A + item[ENUS]
-
-                data = data_dict.get(Key)
-                if data is not None:
+                if re.match(_rune, Key):
+                    for lng in _languages:
+                        item[lng] = item[lng].replace("{{color}}", "ÿc8" if rune_color else "ÿc5")
+                        item[lng] = item[lng].replace("{{title}}", data_dict.get(Key).get(lng).get("title") if rune_title else "")
+                        item[lng] = item[lng].replace("{{num}}", Key.replace("r", "#") if rune_num else "")
+                        item[lng] = item[lng].replace("{{rune}}", data_dict.get(Key).get(lng).get("rune")+("ÿc8" if rune_color else "ÿc5") if rune_enus else "")
+                        item[lng] = item[lng].replace("{{logo}}", data_dict.get(Key).get(lng).get("logo") if rune_logo else "")
+                        item[lng] = item[lng].replace("{{formula}}", data_dict.get(Key).get(lng).get("formula") if rune_upgrade else "")
+                elif re.match(_runeword, Key):
+                    print(f"Runeword: {Key}")
                     for lng in _languages:
                         arr = []
-                        if handler_max:
-                            max = data[lng].get("max")
+                        if runeword_max:
+                            max = data_dict.get(Key).get(lng).get("max")
                             if max:
                                 arr.append("ÿc1[")
                                 arr.append(max)
                                 arr.append("]\n")
-                        if handler_mark:
-                            mark = data[lng].get("mark")
+                        if runeword_mark:
+                            mark = data_dict.get(Key).get(lng).get("mark")
                             if mark:
                                 arr.append("ÿc2")
                                 arr.append(mark)
@@ -1527,7 +1561,7 @@ class FileOperations:
                         if len(arr) > 0:
                             arr.append("ÿc4")
                         arr.append(item.get(lng))
-                        if handler_enus and lng != ENUS:
+                        if runeword_enus and lng != ENUS:
                             arr.append(" ÿcI")
                             arr.append(item.get("enUS"))
                         item[lng] = ''.join(arr)
@@ -1554,8 +1588,8 @@ class FileOperations:
         except Exception as e:
             print(e)
 
-        return (count, 2)
-
+        return (count, 1)
+    
 
     def hide_environmental_effects(self, keys: list):
         """屏蔽环境特效"""

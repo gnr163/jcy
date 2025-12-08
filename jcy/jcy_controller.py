@@ -289,6 +289,9 @@ class FeatureController:
             MODEL_EFFECTS: self.file_operations.select_model_eccects,
             # 22#+符文名称大小(越大越容易发现/选中)
             RUNE_SIZE: self.file_operations.modify_rune_rectangle,
+            # 符文&符文之语设置
+            ITEM_RUNE_SETTING1: self.file_operations.modify_item_rune,
+            ITEM_RUNE_SETTING2: self.file_operations.modify_item_rune,
             # 火炬钥匙
             TORCH_KEY: self.file_operations.torch_key,
             # 环境-关闭特效

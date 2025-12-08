@@ -143,6 +143,8 @@ SETS_EFFECTS = "SetsEffects"
 MODEL_EFFECTS = "ModelEffects"
 RUNE_SIZE = "RuneSize"
 ITEM_NOTIFICATION = "ItemNotification"
+ITEM_RUNE_SETTING1 = "ItemRuneSetting1"
+ITEM_RUNE_SETTING2 = "ItemRuneSetting2"
 ASSET_PATH = "AssetPath"
 DISABLE_EFFECTS = "DisableEffects"
 ENABLE_POINTER = "EnablePointer"
@@ -763,6 +765,8 @@ __all__ = [
     'MODEL_EFFECTS',
     'RUNE_SIZE',
     'ITEM_NOTIFICATION',
+    'ITEM_RUNE_SETTING1',
+    'ITEM_RUNE_SETTING2',
     'ASSET_PATH',
     'ITEM_ENUS',
     'ITEM_ZHTW',

@@ -533,6 +533,31 @@ class FeatureConfig:
                             "text": "22#+符文名称大小",
                             "colspan": 30
                         },
+                        {
+                            "fid": ITEM_RUNE_SETTING1,
+                            "type": CHECK,
+                            "text": "符文-设置",
+                            "colspan": 60,
+                            "params": {
+                                "1": "金色",
+                                "2": "抬头",
+                                "3": "编号",
+                                "4": "附带英文",
+                                "5": "Logo",
+                                "6": "升级公式",
+                            }
+                        },
+                        {
+                            "fid": ITEM_RUNE_SETTING2,
+                            "type": CHECK,
+                            "text": "符文之语-设置",
+                            "colspan": 40,
+                            "params": {
+                                "7": "附带英文",
+                                "8": "MAX变量",
+                                "9": "吐槽信息"
+                            }
+                        },
                     ]
                 }
             ],
