@@ -1508,8 +1508,8 @@
     "zhCN": "ÿc1[270ED/40STR]\nÿc4野獸",
     "zhCN2": "ÿc1[270ED/40STR]\nÿc4野兽",
     "zhTW2": "ÿc1[270ED/40STR]\nÿc4野獸",
-    "zhSGCN": "[MAX:270ED/40STR]\n野兽",
-    "zhSGTW": "[MAX:270ED/40STR]\n野獸"
+    "zhSGCN": "ÿc1[270ED/40STR]\nÿc4野兽",
+    "zhSGTW": "ÿc1[270ED/40STR]\nÿc4野獸"
   },
   {
     "id": 20511,
@@ -1592,8 +1592,8 @@
     "zhCN": "ÿc1[150Mana]\nÿc4骸骨",
     "zhCN2": "ÿc1[150Mana]\nÿc4白骨",
     "zhTW2": "ÿc1[150Mana]\nÿc4骸骨",
-    "zhSGCN": "[MAX:150Mana]\n白骨",
-    "zhSGTW": "[MAX:150Mana]\n白骨"
+    "zhSGCN": "ÿc1[150Mana]\nÿc4白骨",
+    "zhSGTW": "ÿc1[150Mana]\nÿc4白骨"
   },
   {
     "id": 20515,
@@ -1613,8 +1613,8 @@
     "zhCN": "ÿc1[21荊棘光環/50PD]\nÿc4刺藤",
     "zhCN2": "ÿc1[21荆棘光环/50PD]\nÿc4荆棘",
     "zhTW2": "ÿc1[21荊棘光環/50PD]\nÿc4刺藤",
-    "zhSGCN": "[MAX:21荊棘/50PD]\n野蔷薇",
-    "zhSGTW": "[MAX:21荊棘/50PD]\n野薔薇"
+    "zhSGCN": "ÿc1[21荆棘光环/50PD]\nÿc4野蔷薇",
+    "zhSGTW": "ÿc1[21荊棘光環/50PD]\nÿc4野薔薇"
   },
   {
     "id": 20516,
@@ -1634,8 +1634,8 @@
     "zhCN": "ÿc1[340ED/330DTD]\nÿc4烙印",
     "zhCN2": "ÿc1[340ED/330DTD]\nÿc4烙印",
     "zhTW2": "ÿc1[340ED/330DTD]\nÿc4烙印",
-    "zhSGCN": "[MAX:340ED/330DTD]\n品牌",
-    "zhSGTW": "[MAX:340ED/330DTD]\n品牌"
+    "zhSGCN": "ÿc1[340ED/330DTD]\nÿc4品牌",
+    "zhSGTW": "ÿc1[340ED/330DTD]\nÿc4品牌"
   },
   {
     "id": 20517,
@@ -1655,8 +1655,8 @@
     "zhCN": "ÿc1[400ED/15LL]\nÿc4死亡呼吸",
     "zhCN2": "ÿc1[400ED/15LL]\nÿc4濒死之息",
     "zhTW2": "ÿc1[400ED/15LL]\nÿc4死亡呼吸",
-    "zhSGCN": "[MAX:400ED/15LL]\n死亡呼吸",
-    "zhSGTW": "[MAX:400ED/15LL]\n死亡呼吸"
+    "zhSGCN": "ÿc1[400ED/15LL]\nÿc4死亡呼吸",
+    "zhSGTW": "ÿc1[400ED/15LL]\nÿc4死亡呼吸"
   },
   {
     "id": 20518,
@@ -1697,8 +1697,8 @@
     "zhCN": "ÿc1[290ED/6BC/6BO/4WC]\nÿc4戰爭召喚",
     "zhCN2": "ÿc1[290ED/6BC/6BO/4WC]\nÿc4战争召唤",
     "zhTW2": "ÿc1[290ED/6BC/6BO/4WC]\nÿc4戰爭召喚",
-    "zhSGCN": "[MAX:290ED/6/6/4]\n战争召唤",
-    "zhSGTW": "[MAX:290ED/6/6/4]\n戰爭召喚"
+    "zhSGCN": "ÿc1[290ED/6BC/6BO/4WC]\nÿc4战争召唤",
+    "zhSGTW": "ÿc1[290ED/6BC/6BO/4WC]\nÿc4戰爭召喚"
   },
   {
     "id": 20520,
@@ -1760,8 +1760,8 @@
     "zhCN": "ÿc1[340ED]\nÿc4混沌",
     "zhCN2": "ÿc1[340ED]\nÿc4混沌",
     "zhTW2": "ÿc1[340ED]\nÿc4混沌",
-    "zhSGCN": "[MAX:340ED]\n混沌",
-    "zhSGTW": "[MAX:340ED]\n沌頓"
+    "zhSGCN": "ÿc1[340ED]\nÿc4混沌",
+    "zhSGTW": "ÿc1[340ED]\nÿc4沌頓"
   },
   {
     "id": 20523,
@@ -1781,8 +1781,8 @@
     "zhCN": "ÿc1[220ED/11MA]\nÿc4新月",
     "zhCN2": "ÿc1[220ED/11MA]\nÿc4新月",
     "zhTW2": "ÿc1[220ED/11MA]\nÿc4新月",
-    "zhSGCN": "[MAX:220ED/11MA]\n新月",
-    "zhSGTW": "[MAX:220ED/11MA]\n新月"
+    "zhSGCN": "ÿc1[220ED/11MA]\nÿc4新月",
+    "zhSGTW": "ÿc1[220ED/11MA]\nÿc4新月"
   },
   {
     "id": 20524,
@@ -1844,8 +1844,8 @@
     "zhCN": "ÿc1[385ED]\nÿc4死神",
     "zhCN2": "ÿc1[385ED]\nÿc4死亡",
     "zhTW2": "ÿc1[385ED]\nÿc4死神",
-    "zhSGCN": "[MAX:385ED]\n死神",
-    "zhSGTW": "[MAX:385ED]\n死神"
+    "zhSGCN": "ÿc1[385ED]\nÿc4死神",
+    "zhSGTW": "ÿc1[385ED]\nÿc4死神"
   },
   {
     "id": 20527,
@@ -1949,8 +1949,8 @@
     "zhCN": "ÿc1[370ED/-60CR]\nÿc4末日",
     "zhCN2": "ÿc1[370ED/-60CR]\nÿc4厄运",
     "zhTW2": "ÿc1[370ED/-60CR]\nÿc4末日",
-    "zhSGCN": "[MAX:370ED/-60CR]\n末日",
-    "zhSGTW": "[MAX:370ED/-60CR]\n末日"
+    "zhSGCN": "ÿc1[370ED/-60CR]\nÿc4末日",
+    "zhSGTW": "ÿc1[370ED/-60CR]\nÿc4末日"
   },
   {
     "id": 20533,
@@ -1970,8 +1970,8 @@
     "zhCN": "ÿc1[5ATTR]\nÿc4飛龍",
     "zhCN2": "ÿc1[5ATTR]\nÿc4巨龙",
     "zhTW2": "ÿc1[5ATTR]\nÿc4飛龍",
-    "zhSGCN": "[MAX:5ATTR]\n飞龙",
-    "zhSGTW": "[MAX:5ATTR]\n飛龍"
+    "zhSGCN": "ÿc1[5ATTR]\nÿc4飞龙",
+    "zhSGTW": "ÿc1[5ATTR]\nÿc4飛龍"
   },
   {
     "id": 20534,
@@ -2012,8 +2012,8 @@
     "zhCN": "ÿc1[30FHR/220DEF/20RES/25MF]\nÿc4夢境",
     "zhCN2": "ÿc1[30FHR/220DEF/20RES/25MF]\nÿc4梦境",
     "zhTW2": "ÿc1[30FHR/220DEF/20RES/25MF]\nÿc4夢境",
-    "zhSGCN": "[MAX:30FHR/220DEF/20RES/25MF]\n梦境",
-    "zhSGTW": "[MAX:30FHR/220DEF/20RES/25MF]\n夢境"
+    "zhSGCN": "ÿc1[30FHR/220DEF/20RES/25MF]\nÿc4梦境",
+    "zhSGTW": "ÿc1[30FHR/220DEF/20RES/25MF]\nÿc4夢境"
   },
   {
     "id": 20536,
@@ -2033,8 +2033,8 @@
     "zhCN": "ÿc1[20EDmg/200EDef]\nÿc4強制",
     "zhCN2": "ÿc1[20EDmg/200EDef]\nÿc4强压",
     "zhTW2": "ÿc1[20EDmg/200EDef]\nÿc4強制",
-    "zhSGCN": "[MAX:20EDmg/200EDef]\n强制",
-    "zhSGTW": "[MAX:20EDmg/200EDef]\n強制"
+    "zhSGCN": "ÿc1[20EDmg/200EDef]\nÿc4强制",
+    "zhSGTW": "ÿc1[20EDmg/200EDef]\nÿc4強制"
   },
   {
     "id": 20537,
@@ -2052,10 +2052,10 @@
     "ptBR": "Gume",
     "ruRU": "Острие",
     "zhCN": "ÿc1[380DTD/10ATTR]\nÿc4邊緣",
-    "zhCN2": "ÿc1[380DTD/10ATTR]\nÿc4锐锋",
+    "zhCN2": "ÿc1[380DTD/10ATTR]\nÿc4邊緣",
     "zhTW2": "ÿc1[380DTD/10ATTR]\nÿc4邊緣",
-    "zhSGCN": "[MAX:380DTD/10ATTR]\n边缘",
-    "zhSGTW": "[MAX:380DTD/10ATTR]\n邊緣"
+    "zhSGCN": "ÿc1[380DTD/10ATTR]\nÿc4锐锋",
+    "zhSGTW": "ÿc1[380DTD/10ATTR]\nÿc4邊緣"
   },
   {
     "id": 20538,
@@ -2096,8 +2096,8 @@
     "zhCN": "ÿc1[775DEF]\nÿc4謎團",
     "zhCN2": "ÿc1[775DEF]\nÿc4谜团",
     "zhTW2": "ÿc1[775DEF]\nÿc4謎團",
-    "zhSGCN": "[MAX:775DEF]\n谜团",
-    "zhSGTW": "[MAX:775DEF]\n謎團"
+    "zhSGCN": "ÿc1[775DEF]\nÿc4谜团",
+    "zhSGTW": "ÿc1[775DEF]\nÿc4謎團"
   },
   {
     "id": 20540,
@@ -2159,8 +2159,8 @@
     "zhCN": "ÿc1[310ED]\nÿc4永恆",
     "zhCN2": "ÿc1[310ED]\nÿc4永恒",
     "zhTW2": "ÿc1[310ED]\nÿc4永恆",
-    "zhSGCN": "[MAX:310ED]\n永恒",
-    "zhSGTW": "[MAX:310ED]\n永恆"
+    "zhSGCN": "ÿc1[310ED]\nÿc4永恒",
+    "zhSGTW": "ÿc1[310ED]\nÿc4永恆"
   },
   {
     "id": 20543,
@@ -2180,8 +2180,8 @@
     "zhCN": "ÿc1[16反抗光環/260ED]\nÿc4流亡",
     "zhCN2": "ÿc1[16反抗光環/260ED]\nÿc4流放",
     "zhTW2": "ÿc1[16反抗光環/260ED]\nÿc4流亡",
-    "zhSGCN": "[MAX:16反抗/260ED]\n流亡",
-    "zhSGTW": "[MAX:16反抗/260ED]\n流亡"
+    "zhSGCN": "ÿc1[16反抗光環/260ED]\nÿc4流亡",
+    "zhSGTW": "ÿc1[16反抗光環/260ED]\nÿc4流亡"
   },
   {
     "id": 20544,
@@ -2201,8 +2201,8 @@
     "zhCN": "ÿc1[15狂熱光環/2Skill]\nÿc4信心",
     "zhCN2": "ÿc1[15狂熱光環/2Skill]\nÿc4信念",
     "zhTW2": "ÿc1[15狂熱光環/2Skill]\nÿc4信心",
-    "zhSGCN": "[MAX:15狂热/2Skill]\n信心",
-    "zhSGTW": "[MAX:15狂熱/2Skill]\n信心"
+    "zhSGCN": "ÿc1[15狂熱光環/2Skill]\nÿc4信心",
+    "zhSGTW": "ÿc1[15狂熱光環/2Skill]\nÿc4信心"
   },
   {
     "id": 20545,
@@ -2222,8 +2222,8 @@
     "zhCN": "ÿc1[370ED]\nÿc4饑荒",
     "zhCN2": "ÿc1[370ED]\nÿc4饥荒",
     "zhTW2": "ÿc1[370ED]\nÿc4饑荒",
-    "zhSGCN": "[MAX:370ED]\n饥荒",
-    "zhSGTW": "[MAX:370ED]\n饑荒"
+    "zhSGCN": "ÿc1[370ED]\nÿc4饥荒",
+    "zhSGTW": "ÿc1[370ED]\nÿc4饑荒"
   },
   {
     "id": 20546,
@@ -2243,8 +2243,8 @@
     "zhCN": "ÿc1[8抗火/-15FR/75Mana]\nÿc4閃爍火焰",
     "zhCN2": "ÿc1[8抗火/-15FR/75Mana]\nÿc4闪烁火焰",
     "zhTW2": "ÿc1[8抗火/-15FR/75Mana]\nÿc4閃爍火焰",
-    "zhSGCN": "[MAX:8抗火/-15FR/75Mana]\n火焰",
-    "zhSGTW": "[MAX:8抗火/-15FR/75Mana]\n火焰"
+    "zhSGCN": "ÿc1[8抗火/-15FR/75Mana]\nÿc4火焰",
+    "zhSGTW": "ÿc1[8抗火/-15FR/75Mana]\nÿc4火焰"
   },
   {
     "id": 20547,
@@ -2264,8 +2264,8 @@
     "zhCN": "ÿc1[1.485Life(LV)/30RES]\nÿc4剛毅",
     "zhCN2": "ÿc1[1.485Life(LV)/30RES]\nÿc4刚毅",
     "zhTW2": "ÿc1[1.485Life(LV)/30RES]\nÿc4剛毅",
-    "zhSGCN": "[MAX:1.5Life(LV)/30RES]\n刚毅",
-    "zhSGTW": "[MAX:1.5Life(LV)/30RES]\n剛毅"
+    "zhSGCN": "ÿc1[1.485Life(LV)/30RES]\nÿc4刚毅",
+    "zhSGTW": "ÿc1[1.485Life(LV)/30RES]\nÿc4剛毅"
   },
   {
     "id": 20548,
@@ -2348,8 +2348,8 @@
     "zhCN": "ÿc1[260ED]\nÿc4幽暗",
     "zhCN2": "ÿc1[260ED]\nÿc4阴霾",
     "zhTW2": "ÿc1[260ED]\nÿc4幽暗",
-    "zhSGCN": "[MAX:260ED]\n幽暗",
-    "zhSGTW": "[MAX:260ED]\n幽暗"
+    "zhSGCN": "ÿc1[260ED]\nÿc4幽暗",
+    "zhSGTW": "ÿc1[260ED]\nÿc4幽暗"
   },
   {
     "id": 20552,
@@ -2390,8 +2390,8 @@
     "zhCN": "ÿc1[40IAS/400DMG/-25PR/15LK]\nÿc4悔恨",
     "zhCN2": "ÿc1[40IAS/400DMG/-25PR/15LK]\nÿc4悔恨",
     "zhTW2": "ÿc1[40IAS/400DMG/-25PR/15LK]\nÿc4悔恨",
-    "zhSGCN": "[MAX:40IAS/400DMG/-25PR/15LK]\n悔恨",
-    "zhSGTW": "[MAX:40IAS/400DMG/-25PR/15LK]\n悔恨"
+    "zhSGCN": "ÿc1[40IAS/400DMG/-25PR/15LK]\nÿc4悔恨",
+    "zhSGTW": "ÿc1[40IAS/400DMG/-25PR/15LK]\nÿc4悔恨"
   },
   {
     "id": 20554,
@@ -2411,8 +2411,8 @@
     "zhCN": "ÿc1[330ED]\nÿc4正義之手",
     "zhCN2": "ÿc1[330ED]\nÿc4正义之手",
     "zhTW2": "ÿc1[330ED]\nÿc4正義之手",
-    "zhSGCN": "[MAX:330ED]\n正义之手",
-    "zhSGTW": "[MAX:330ED]\n正義之手"
+    "zhSGCN": "ÿc1[330ED]\nÿc4正义之手",
+    "zhSGTW": "ÿc1[330ED]\nÿc4正義之手"
   },
   {
     "id": 20555,
@@ -2432,8 +2432,8 @@
     "zhCN": "ÿc1[275ED/6女武神召喚]\nÿc4和諧",
     "zhCN2": "ÿc1[275ED/6女武神召喚]\nÿc4和谐",
     "zhTW2": "ÿc1[275ED/6女武神召喚]\nÿc4和諧",
-    "zhSGCN": "[MAX:275ED/6女武神]\n和谐",
-    "zhSGTW": "[MAX:275ED/6女武神]\n和諧"
+    "zhSGCN": "ÿc1[275ED/6女武神召喚]\nÿc4和谐",
+    "zhSGTW": "ÿc1[275ED/6女武神召喚]\nÿc4和諧"
   },
   {
     "id": 20556,
@@ -2474,8 +2474,8 @@
     "zhCN": "ÿc1[40RES]\nÿc4橡樹之心",
     "zhCN2": "ÿc1[40RES]\nÿc4橡树之心",
     "zhTW2": "ÿc1[40RES]\nÿc4橡樹之心",
-    "zhSGCN": "[MAX:40RES]\n橡树之心",
-    "zhSGTW": "[MAX:40RES]\n橡樹之心"
+    "zhSGCN": "ÿc1[40RES]\nÿc4橡树之心",
+    "zhSGTW": "ÿc1[40RES]\nÿc4橡樹之心"
   },
   {
     "id": 20558,
@@ -2642,8 +2642,8 @@
     "zhCN": "ÿc1[210ED/30CD]\nÿc4寒冰",
     "zhCN2": "ÿc1[210ED/30CD]\nÿc4寒冰",
     "zhTW2": "ÿc1[210ED/30CD]\nÿc4寒冰",
-    "zhSGCN": "[MAX:210ED/30CD]\n冰冻",
-    "zhSGTW": "[MAX:210ED/30CD]\n冰凍"
+    "zhSGCN": "ÿc1[210ED/30CD]\nÿc4冰冻",
+    "zhSGTW": "ÿc1[210ED/30CD]\nÿc4冰凍"
   },
   {
     "id": 20566,
@@ -2663,8 +2663,8 @@
     "zhCN": "ÿc1[325ED/-55LR]\nÿc4無限",
     "zhCN2": "ÿc1[325ED/-55LR]\nÿc4无限",
     "zhTW2": "ÿc1[325ED/-55LR]\nÿc4無限",
-    "zhSGCN": "[MAX:325ED/-55LR]\n无限",
-    "zhSGTW": "[MAX:325ED/-55LR]\n無限"
+    "zhSGCN": "ÿc1[325ED/-55LR]\nÿc4无限",
+    "zhSGTW": "ÿc1[325ED/-55LR]\nÿc4無限"
   },
   {
     "id": 20567,
@@ -2705,8 +2705,8 @@
     "zhCN": "ÿc1[17冥想光環/260ED/250AR/6致命攻勢]\nÿc4靈光",
     "zhCN2": "ÿc1[17冥想光環/260ED/250AR/6致命攻勢]\nÿc4眼光",
     "zhTW2": "ÿc1[17冥想光環/260ED/250AR/6致命攻勢]\nÿc4靈光",
-    "zhSGCN": "[MAX:17冥思/260ED/250AR/6致命攻击]\n眼光",
-    "zhSGTW": "[MAX:17冥想/260ED/250AR/6致命攻勢]\n眼光"
+    "zhSGCN": "ÿc1[17冥想光環/260ED/250AR/6致命攻勢]\nÿc4眼光",
+    "zhSGTW": "ÿc1[17冥想光環/260ED/250AR/6致命攻勢]\nÿc4眼光"
   },
   {
     "id": 20569,
@@ -2789,8 +2789,8 @@
     "zhCN": "ÿc1[270ED]\nÿc4弒王者",
     "zhCN2": "ÿc1[270ED]\nÿc4弑君者",
     "zhTW2": "ÿc1[270ED]\nÿc4弒王者",
-    "zhSGCN": "[MAX:270ED]\n弑王者",
-    "zhSGTW": "[MAX:270ED]\n弒王者"
+    "zhSGCN": "ÿc1[270ED]\nÿc4弑王者",
+    "zhSGTW": "ÿc1[270ED]\nÿc4弒王者"
   },
   {
     "id": 20573,
@@ -2852,8 +2852,8 @@
     "zhCN": "ÿc1[375ED/70CB]\nÿc4最後遺願",
     "zhCN2": "ÿc1[375ED/70CB]\nÿc4临终之愿",
     "zhTW2": "ÿc1[375ED/70CB]\nÿc4最後遺願",
-    "zhSGCN": "[MAX:375ED/70CB]\n最后希望",
-    "zhSGTW": "[MAX:375ED/70CB]\n最後希望"
+    "zhSGCN": "ÿc1[375ED/70CB]\nÿc4最后希望",
+    "zhSGTW": "ÿc1[375ED/70CB]\nÿc4最後希望"
   },
   {
     "id": 20576,
@@ -2894,8 +2894,8 @@
     "zhCN": "ÿc1[18庇護光環/250遠程防禦]\nÿc4執法者",
     "zhCN2": "ÿc1[18庇護光環/250遠程防禦]\nÿc4执法者",
     "zhTW2": "ÿc1[18庇護光環/250遠程防禦]\nÿc4執法者",
-    "zhSGCN": "[MAX:18庇护之光/250远程防御]\n执法者",
-    "zhSGTW": "[MAX:18庇護/250遠程防禦]\n執法者"
+    "zhSGCN": "ÿc1[18庇護光環/250遠程防禦]\nÿc4执法者",
+    "zhSGTW": "ÿc1[18庇護光環/250遠程防禦]\nÿc4執法者"
   },
   {
     "id": 20578,
@@ -3146,8 +3146,8 @@
     "zhCN": "ÿc1[12專注光環/375ED]\nÿc4迷霧",
     "zhCN2": "ÿc1[12專注光環/375ED]\nÿc4迷雾",
     "zhTW2": "ÿc1[12專注光環/375ED]\nÿc4迷霧",
-    "zhSGCN": "[MAX:12专注/375ED]\n迷雾",
-    "zhSGTW": "[MAX:12專注/375ED]\n迷霧"
+    "zhSGCN": "ÿc1[12專注光環/375ED]\nÿc4迷雾",
+    "zhSGTW": "ÿc1[12專注光環/375ED]\nÿc4迷霧"
   },
   {
     "id": 20590,
@@ -3272,7 +3272,7 @@
     "zhCN": "夜晚",
     "zhCN2": "黑夜",
     "zhTW2": "夜晚",
-    "zhSGCN": "夜晚",
+    "zhSGCN": "黑夜",
     "zhSGTW": "夜晚"
   },
   {
@@ -3293,8 +3293,8 @@
     "zhCN": "ÿc1[340ED/15MA]\nÿc4誓約",
     "zhCN2": "ÿc1[340ED/15MA]\nÿc4誓言",
     "zhTW2": "ÿc1[340ED/15MA]\nÿc4誓約",
-    "zhSGCN": "[MAX:340ED/15MA]\n誓约",
-    "zhSGTW": "[MAX:340ED/15MA]\n誓約"
+    "zhSGCN": "ÿc1[340ED/15MA]\nÿc4誓约",
+    "zhSGTW": "ÿc1[340ED/15MA]\nÿc4誓約"
   },
   {
     "id": 20597,
@@ -3314,8 +3314,8 @@
     "zhCN": "ÿc1[300DEF/30RES]\nÿc4遵從",
     "zhCN2": "ÿc1[300DEF/30RES]\nÿc4顺从",
     "zhTW2": "ÿc1[300DEF/30RES]\nÿc4遵從",
-    "zhSGCN": "[MAX:300DEF/30RES]\n遵从",
-    "zhSGTW": "[MAX:300DEF/30RES]\n遵從"
+    "zhSGCN": "ÿc1[300DEF/30RES]\nÿc4遵从",
+    "zhSGTW": "ÿc1[300DEF/30RES]\nÿc4遵從"
   },
   {
     "id": 20598,
@@ -3356,8 +3356,8 @@
     "zhCN": "ÿc1[25Life/30RegMana/70RES]\nÿc4執念",
     "zhCN2": "ÿc1[25Life/30RegMana/70RES]\nÿc4执着",
     "zhTW2": "ÿc1[25Life/30RegMana/70RES]\nÿc4執念",
-    "zhSGCN": "[MAX:25MaxLife/30RegMana/70RES]\n着魔",
-    "zhSGTW": "[MAX:25MaxLife/30RegMana/70RES]\n著魔"
+    "zhSGCN": "ÿc1[25Life/30RegMana/70RES]\nÿc4着魔",
+    "zhSGTW": "ÿc1[25Life/30RegMana/70RES]\nÿc4著魔"
   },
   {
     "id": 20600,
@@ -3377,8 +3377,8 @@
     "zhCN": "ÿc1[210ED/80AR]\nÿc4熱情",
     "zhCN2": "ÿc1[210ED/80AR]\nÿc4热情",
     "zhTW2": "ÿc1[210ED/80AR]\nÿc4熱情",
-    "zhSGCN": "[MAX:210ED/80AR]\n热情",
-    "zhSGTW": "[MAX:210ED/80AR]\n熱情"
+    "zhSGCN": "ÿc1[210ED/80AR]\nÿc4热情",
+    "zhSGTW": "ÿc1[210ED/80AR]\nÿc4熱情"
   },
   {
     "id": 20601,
@@ -3419,8 +3419,8 @@
     "zhCN": "ÿc1[80ED]\nÿc4圖紋",
     "zhCN2": "ÿc1[80ED]\nÿc4典范",
     "zhTW2": "ÿc1[80ED]\nÿc4圖紋",
-    "zhSGCN": "[MAX:80ED]\n样式",
-    "zhSGTW": "[MAX:80ED]\n樣式"
+    "zhSGCN": "ÿc1[80ED]\nÿc4样式",
+    "zhSGTW": "ÿc1[80ED]\nÿc4樣式"
   },
   {
     "id": 20603,
@@ -3461,8 +3461,8 @@
     "zhCN": "ÿc1[350DTD/375DTU]\nÿc4理性之聲",
     "zhCN2": "ÿc1[350DTD/375DTU]\nÿc4理智之声",
     "zhTW2": "ÿc1[350DTD/375DTU]\nÿc4理性之聲",
-    "zhSGCN": "[MAX:350DTD/375DTU]\n思考之声",
-    "zhSGTW": "[MAX:350DTD/375DTU]\n思考之聲"
+    "zhSGCN": "ÿc1[350DTD/375DTU]\nÿc4思考之声",
+    "zhSGTW": "ÿc1[350DTD/375DTU]\nÿc4思考之聲"
   },
   {
     "id": 20605,
@@ -3545,8 +3545,8 @@
     "zhCN": "ÿc1[15救贖光環/400ED/400遠程防禦/21FA]\nÿc4鳳凰",
     "zhCN2": "ÿc1[15救贖光環/400ED/400遠程防禦/21FA]\nÿc4凤凰",
     "zhTW2": "ÿc1[15救贖光環/400ED/400遠程防禦/21FA]\nÿc4鳳凰",
-    "zhSGCN": "[MAX:15救赎/400ED/400远程防御/21FA]\n凤凰",
-    "zhSGTW": "[MAX:15救贖/400ED/400遠程防禦/21FA]\n鳳凰"
+    "zhSGCN": "ÿc1[15救贖光環/400ED/400遠程防禦/21FA]\nÿc4凤凰",
+    "zhSGTW": "ÿc1[15救贖光環/400ED/400遠程防禦/21FA]\nÿc4鳳凰"
   },
   {
     "id": 20609,
@@ -3608,8 +3608,8 @@
     "zhCN": "ÿc1[17淨化光環/2Skill/320ED]\nÿc4瘟疫",
     "zhCN2": "ÿc1[17淨化光環/2Skill/320ED]\nÿc4瘟疫",
     "zhTW2": "ÿc1[17淨化光環/2Skill/320ED]\nÿc4瘟疫",
-    "zhSGCN": "[MAX:17净化/2Skill/320ED]\n瘟疫",
-    "zhSGTW": "[MAX:17淨化/2Skill/320ED]\n瘟疫"
+    "zhSGCN": "ÿc1[17淨化光環/2Skill/320ED]\nÿc4瘟疫",
+    "zhSGTW": "ÿc1[17淨化光環/2Skill/320ED]\nÿc4瘟疫"
   },
   {
     "id": 20612,
@@ -3671,8 +3671,8 @@
     "zhCN": "ÿc1[20專注光環/300AR]\nÿc4驕傲",
     "zhCN2": "ÿc1[20專注光環/300AR]\nÿc4骄傲",
     "zhTW2": "ÿc1[20專注光環/300AR]\nÿc4驕傲",
-    "zhSGCN": "[MAX:20专注/300AR]\n骄傲",
-    "zhSGTW": "[MAX:20專注/300AR]\n驕傲"
+    "zhSGCN": "ÿc1[20專注光環/300AR]\nÿc4骄傲",
+    "zhSGTW": "ÿc1[20專注光環/300AR]\nÿc4驕傲"
   },
   {
     "id": 20615,
@@ -3692,8 +3692,8 @@
     "zhCN": "ÿc1[150Life]\nÿc4原則",
     "zhCN2": "ÿc1[150Life]\nÿc4信条",
     "zhTW2": "ÿc1[150Life]\nÿc4原則",
-    "zhSGCN": "[MAX:150Life]\n原理",
-    "zhSGTW": "[MAX:150Life]\n原理"
+    "zhSGCN": "ÿc1[150Life]\nÿc4原理",
+    "zhSGTW": "ÿc1[150Life]\nÿc4原理"
   },
   {
     "id": 20616,
@@ -3734,8 +3734,8 @@
     "zhCN": "ÿc1[170ED/35RES]\nÿc4謹慎",
     "zhCN2": "ÿc1[170ED/35RES]\nÿc4谨慎",
     "zhTW2": "ÿc1[170ED/35RES]\nÿc4謹慎",
-    "zhSGCN": "[MAX:170ED/35RES]\n谨慎",
-    "zhSGTW": "[MAX:170ED/35RES]\n謹慎"
+    "zhSGCN": "ÿc1[170ED/35RES]\nÿc4谨慎",
+    "zhSGTW": "ÿc1[170ED/35RES]\nÿc4謹慎"
   },
   {
     "id": 20618,
@@ -3839,8 +3839,8 @@
     "zhCN": "ÿc1[150Mana]\nÿc4降雨",
     "zhCN2": "ÿc1[150Mana]\nÿc4暴雨",
     "zhTW2": "ÿc1[150Mana]\nÿc4降雨",
-    "zhSGCN": "[MAX:150Mana]\n降雨",
-    "zhSGTW": "[MAX:150Mana]\n降雨"
+    "zhSGCN": "ÿc1[150Mana]\nÿc4降雨",
+    "zhSGTW": "ÿc1[150Mana]\nÿc4降雨"
   },
   {
     "id": 20623,
@@ -3923,8 +3923,8 @@
     "zhCN": "ÿc1[10ATTR]\nÿc4裂隙",
     "zhCN2": "ÿc1[10ATTR]\nÿc4裂隙",
     "zhTW2": "ÿc1[10ATTR]\nÿc4裂隙",
-    "zhSGCN": "[MAX:10ATTR]\n裂缝",
-    "zhSGTW": "[MAX:10ATTR]\n裂縫"
+    "zhSGCN": "ÿc1[10ATTR]\nÿc4裂缝",
+    "zhSGTW": "ÿc1[10ATTR]\nÿc4裂縫"
   },
   {
     "id": 20627,
@@ -3944,8 +3944,8 @@
     "zhCN": "ÿc1[160ED/70RES]\nÿc4聖堂",
     "zhCN2": "ÿc1[160ED/70RES]\nÿc4庇护",
     "zhTW2": "ÿc1[160ED/70RES]\nÿc4聖堂",
-    "zhSGCN": "[MAX:160ED/70RES]\n圣堂",
-    "zhSGTW": "[MAX:160ED/70RES]\n聖堂"
+    "zhSGCN": "ÿc1[160ED/70RES]\nÿc4圣堂",
+    "zhSGTW": "ÿc1[160ED/70RES]\nÿc4聖堂"
   },
   {
     "id": 20628,
@@ -4112,8 +4112,8 @@
     "zhCN": "ÿc1[35FCR/112Mana/8MA]\nÿc4精神",
     "zhCN2": "ÿc1[35FCR/112Mana/8MA]\nÿc4精神",
     "zhTW2": "ÿc1[35FCR/112Mana/8MA]\nÿc4精神",
-    "zhSGCN": "[MAX:35FCR/112Mana/8MA]\n精神",
-    "zhSGTW": "[MAX:35FCR/112Mana/8MA]\n精神"
+    "zhSGCN": "ÿc1[35FCR/112Mana/8MA]\nÿc4精神",
+    "zhSGTW": "ÿc1[35FCR/112Mana/8MA]\nÿc4精神"
   },
   {
     "id": 20636,
@@ -4133,8 +4133,8 @@
     "zhCN": "ÿc1[100ED]\nÿc4燦爛",
     "zhCN2": "ÿc1[100ED]\nÿc4壮美",
     "zhTW2": "ÿc1[100ED]\nÿc4燦爛",
-    "zhSGCN": "[MAX:100ED]\n灿烂",
-    "zhSGTW": "[MAX:100ED]\n燦爛"
+    "zhSGCN": "ÿc1[100ED]\nÿc4灿烂",
+    "zhSGTW": "ÿc1[100ED]\nÿc4燦爛"
   },
   {
     "id": 20637,
@@ -4259,8 +4259,8 @@
     "zhCN": "ÿc1[290ED]\nÿc4石塊",
     "zhCN2": "ÿc1[290ED]\nÿc4磐石",
     "zhTW2": "ÿc1[290ED]\nÿc4石塊",
-    "zhSGCN": "[MAX:290ED]\n石块",
-    "zhSGTW": "[MAX:290ED]\n石塊"
+    "zhSGCN": "ÿc1[290ED]\nÿc4石块",
+    "zhSGTW": "ÿc1[290ED]\nÿc4石塊"
   },
   {
     "id": 20643,
@@ -4553,8 +4553,8 @@
     "zhCN": "ÿc1[30IAS/350ED/10LL]\nÿc4不屈意志",
     "zhCN2": "ÿc1[30IAS/350ED/10LL]\nÿc4不屈之志",
     "zhTW2": "ÿc1[30IAS/350ED/10LL]\nÿc4不屈意志",
-    "zhSGCN": "[MAX:30IAS/350ED/10LL]\n坚定意志",
-    "zhSGTW": "[MAX:30IAS/350ED/10LL]\n堅定意志"
+    "zhSGCN": "ÿc1[30IAS/350ED/10LL]\nÿc4坚定意志",
+    "zhSGTW": "ÿc1[30IAS/350ED/10LL]\nÿc4堅定意志"
   },
   {
     "id": 20657,
@@ -4805,8 +4805,8 @@
     "zhCN": "ÿc1[160ED]\nÿc4輕風",
     "zhCN2": "ÿc1[160ED]\nÿc4疾风",
     "zhTW2": "ÿc1[160ED]\nÿc4輕風",
-    "zhSGCN": "[MAX:160ED]\n轻风",
-    "zhSGTW": "[MAX:160ED]\n輕風"
+    "zhSGCN": "ÿc1[160ED]\nÿc4轻风",
+    "zhSGTW": "ÿc1[160ED]\nÿc4輕風"
   },
   {
     "id": 20669,
@@ -4847,8 +4847,8 @@
     "zhCN": "ÿc1[25AR/8LM]\nÿc4智慧",
     "zhCN2": "ÿc1[25AR/8LM]\nÿc4智慧",
     "zhTW2": "ÿc1[25AR/8LM]\nÿc4智慧",
-    "zhSGCN": "[MAX:25AR/8LM]\n智慧",
-    "zhSGTW": "[MAX:25AR/8LM]\n智慧"
+    "zhSGCN": "ÿc1[25AR/8LM]\nÿc4智慧",
+    "zhSGTW": "ÿc1[25AR/8LM]\nÿc4智慧"
   },
   {
     "id": 20671,
@@ -4910,8 +4910,8 @@
     "zhCN": "ÿc1[300DTU]\nÿc4憤怒",
     "zhCN2": "ÿc1[300DTU]\nÿc4怒火",
     "zhTW2": "ÿc1[300DTU]\nÿc4憤怒",
-    "zhSGCN": "[MAX:300DTU]\n愤怒",
-    "zhSGTW": "[MAX:300DTU]\n憤怒"
+    "zhSGCN": "ÿc1[300DTU]\nÿc4愤怒",
+    "zhSGTW": "ÿc1[300DTU]\nÿc4憤怒"
   },
   {
     "id": 20674,
@@ -4994,8 +4994,8 @@
     "zhCN": "ÿc1[200ED]\nÿc4催促",
     "zhCN2": "ÿc1[200ED]\nÿc4喧嚣",
     "zhTW2": "ÿc1[200ED]\nÿc4催促",
-    "zhSGCN": "[MAX:200ED]\n催促",
-    "zhSGTW": "[MAX:200ED]\n催促"
+    "zhSGCN": "ÿc1[200ED]\nÿc4催促",
+    "zhSGTW": "ÿc1[200ED]\nÿc4催促"
   },
   {
     "id": 27362,
@@ -5015,8 +5015,8 @@
     "zhCN": "ÿc1[250ED/15CD/15LD/15FD]\nÿc4嵌飾",
     "zhCN2": "ÿc1[250ED/15CD/15LD/15FD]\nÿc4模糊",
     "zhTW2": "ÿc1[250ED/15CD/15LD/15FD]\nÿc4嵌飾",
-    "zhSGCN": "[MAX:250ED/15CD/15LD/15FD]\n嵌饰",
-    "zhSGTW": "[MAX:250ED/15CD/15LD/15FD]\n嵌飾"
+    "zhSGCN": "ÿc1[250ED/15CD/15LD/15FD]\nÿc4嵌饰",
+    "zhSGTW": "ÿc1[250ED/15CD/15LD/15FD]\nÿc4嵌飾"
   },
   {
     "id": 27363,
@@ -5036,8 +5036,8 @@
     "zhCN": "ÿc1[80EDef]\nÿc4變化",
     "zhCN2": "ÿc1[80EDef]\nÿc4变形",
     "zhTW2": "ÿc1[80EDef]\nÿc4變化",
-    "zhSGCN": "[MAX:80ED]\n变化",
-    "zhSGTW": "[MAX:80ED]\n變化"
+    "zhSGCN": "ÿc1[80EDef]\nÿc4变化",
+    "zhSGTW": "ÿc1[80EDef]\nÿc4變化"
   },
   {
     "id": 27364,
@@ -5057,8 +5057,8 @@
     "zhCN": "ÿc1[100EDef/60LR/15LA]\nÿc4接地",
     "zhCN2": "ÿc1[100EDef/60LR/15LA]\nÿc4接地",
     "zhTW2": "ÿc1[100EDef/60LR/15LA]\nÿc4接地",
-    "zhSGCN": "[MAX:100ED/60LR/15LA]\n接地",
-    "zhSGTW": "[MAX:100ED/60LR/15LA]\n接地"
+    "zhSGCN": "ÿc1[100EDef/60LR/15LA]\nÿc4接地",
+    "zhSGTW": "ÿc1[100EDef/60LR/15LA]\nÿc4接地"
   },
   {
     "id": 27365,
@@ -5078,8 +5078,8 @@
     "zhCN": "ÿc1[100EDef/60FR/15FA]\nÿc4和緩",
     "zhCN2": "ÿc1[100EDef/60FR/15FA]\nÿc4淬火",
     "zhTW2": "ÿc1[100EDef/60FR/15FA]\nÿc4和緩",
-    "zhSGCN": "[MAX:100ED/60FR/15FA]\n和缓",
-    "zhSGTW": "[MAX:100ED/60FR/15FA]\n和緩"
+    "zhSGCN": "ÿc1[100EDef/60FR/15FA]\nÿc4和缓",
+    "zhSGTW": "ÿc1[100EDef/60FR/15FA]\nÿc4和緩"
   },
   {
     "id": 27366,
@@ -5099,8 +5099,8 @@
     "zhCN": "ÿc1[100EDef/60CR/15CA]\nÿc4火爐",
     "zhCN2": "ÿc1[100EDef/60CR/15CA]\nÿc4壁炉",
     "zhTW2": "ÿc1[100EDef/60CR/15CA]\nÿc4火爐",
-    "zhSGCN": "[MAX:100ED/60CR/15CA]\n火炉",
-    "zhSGTW": "[MAX:100ED/60CR/15CA]\n火爐"
+    "zhSGCN": "ÿc1[100EDef/60CR/15CA]\nÿc4火炉",
+    "zhSGTW": "ÿc1[100EDef/60CR/15CA]\nÿc4火爐"
   },
   {
     "id": 27367,
@@ -5120,8 +5120,8 @@
     "zhCN": "ÿc1[100EDef/60PR]\nÿc4治癒",
     "zhCN2": "ÿc1[100EDef/60PR]\nÿc4解药",
     "zhTW2": "ÿc1[100EDef/60PR]\nÿc4治癒",
-    "zhSGCN": "[MAX:100ED/60PR]\n治愈",
-    "zhSGTW": "[MAX:100ED/60PR]\n治癒"
+    "zhSGCN": "ÿc1[100EDef/60PR]\nÿc4治愈",
+    "zhSGTW": "ÿc1[100EDef/60PR]\nÿc4治癒"
   },
   {
     "id": 27368,
@@ -5141,7 +5141,7 @@
     "zhCN": "ÿc1[100EDef/6LL/15DR]\nÿc4壁壘",
     "zhCN2": "ÿc1[100EDef/6LL/15DR]\nÿc4壁垒",
     "zhTW2": "ÿc1[100EDef/6LL/15DR]\nÿc4壁壘",
-    "zhSGCN": "[MAX:100ED/6LL/15DR]\n壁垒",
-    "zhSGTW": "[MAX:100ED/6LL/15DR]\n壁壘"
+    "zhSGCN": "ÿc1[100EDef/6LL/15DR]\nÿc4壁垒",
+    "zhSGTW": "ÿc1[100EDef/6LL/15DR]\nÿc4壁壘"
   }
 ]
