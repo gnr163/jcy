@@ -213,21 +213,6 @@
                     "height": 48
                 }
             }
-        },
-        {
-            "type": "ButtonWidget",
-            "name": "WillMiniCube",
-            "fields": {
-                "rect": {
-                    "x": 1230,
-                    "y": 1050,
-                    "scale": 0.5
-                },
-                "filename": "Items\\Misc\\Quest\\Horadric_Cube",
-                "tooltipString": "Open Mini Cube",
-                "sound": "cursor_select_hd",
-                "onClickMessage": "PanelManager:OpenPanel:HoradricCubeMiniLayout"
-            }
         }
     ]
 }

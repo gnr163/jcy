@@ -589,20 +589,6 @@
             ]
         },
         {
-            "type": "ButtonWidget",
-            "name": "MinihpOpen",
-            "fields": {
-                "rect": {
-                    "x": 34
-                },
-                "filename": "PANEL/HUD_102/minihp_on",
-                "onClickMessage": "PanelManager:TogglePanel:minihp",
-                "tooltipString": "@JcyToggleMiniBar",
-                "sound": "select",
-                "acceptsEscKeyEverywhere": false
-            }
-        },
-        {
             "type": "ImageWidget",
             "name": "BeltPopupArrow",
             "fields": {

@@ -214,6 +214,14 @@
             "name": "TimerClose",
             "fields": {
                 "time": 1,
+                "message": "PanelManager:OpenPanel:hudpanelbuttons"
+            }
+        },
+        {
+            "type": "TimerWidget",
+            "name": "TimerClose",
+            "fields": {
+                "time": 1,
                 "message": "PanelManager:ClosePanel:HUDWarnings"
             }
         }
