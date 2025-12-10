@@ -40,7 +40,7 @@ PF_BEACON_QUEST = [
     {
         "type": "Entity",
         "name": "jcy_entity_pointer",
-        "id": 586091854,
+        "id": 586091852,
         "components": [
             {
                 "type": "TransformDefinitionComponent",
@@ -77,7 +77,7 @@ PF_BEACON_UPSTAIRS = [
     {
         "type": "Entity",
         "name": "jcy_entity_pointer",
-        "id": 586091855,
+        "id": 586091853,
         "components": [
             {
                 "type": "TransformDefinitionComponent",
@@ -114,7 +114,7 @@ PF_BEACON_WAYPOINT = [
     {
         "type": "Entity",
         "name": "jcy_entity_pointer",
-        "id": 586091856,
+        "id": 586091854,
         "components": [
             {
                 "type": "TransformDefinitionComponent",
@@ -151,7 +151,7 @@ PF_BEACON_ITEMS = [
     {
         "type": "Entity",
         "name": "jcy_entity_pointer",
-        "id": 586091856,
+        "id": 586091855,
         "components": [
             {
                 "type": "TransformDefinitionComponent",

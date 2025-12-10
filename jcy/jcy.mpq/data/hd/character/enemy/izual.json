@@ -342,7 +342,7 @@
         {
             "type": "Entity",
             "name": "jcy_entity_pointer",
-            "id": 586091854,
+            "id": 586091852,
             "components": [
                 {
                     "type": "TransformDefinitionComponent",
