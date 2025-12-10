@@ -454,44 +454,43 @@ class FeatureConfig:
                     "text": "物品设置",
                     "children": [
                         {
-                            "fid": EQIUPMENT_EFFECTS,
+                            "fid": BASE_EFFECTS,
                             "type": CHECK,
-                            "text": "装备-名称特效",
-                            "colspan": 100,
+                            "text": "装备-底材特效",
+                            "colspan": 60,
                             "params": {
                                 "0": "底材阶级",
                                 "1": "底材重量",
-                                "2": "有用孔数",
-                                "3": "底材防御",
+                                "2": "底材推荐孔数",
+                                "3": "防御底材MAX防御",
                                 "4": "附带英文",
-                                "5": "MAX变量",
-                                "6": "吐槽信息"
-                            }
-                        },
-                        {
-                            "fid": EQIUPMENT_SETTING,
-                            "type": CHECK,
-                            "text": "装备-设置",
-                            "colspan": 50,
-                            "params": {
-                                "1": "屏蔽 劣质武器装备底材",
-                                "2": "开启 蓝色装备染色"
                             }
                         },
                         {
                             "fid": AFFIX_EFFECTS,
                             "type": CHECK,
                             "text": "装备-词缀特效",
-                            "colspan": 50,
+                            "colspan": 40,
                             "params": {
                                 "1": "英文缩写",
                                 "2": "词缀着色"
                             }
                         },
                         {
+                            "fid": UNIQUE_EFFECTS,
+                            "type": CHECK,
+                            "text": "装备-独特/暗金装特效",
+                            "colspan": 50,
+                            "params": {
+                                "4": "附带英文",
+                                "5": "MAX变量",
+                                "6": "吐槽信息"
+                            }
+                        },
+                        {
                             "fid": SETS_EFFECTS,
                             "type": CHECK,
-                            "text": "装备-套装特效",
+                            "text": "装备-套装/绿装特效",
                             "colspan": 50,
                             "params": {
                                 "4": "附带英文",
@@ -508,6 +507,16 @@ class FeatureConfig:
                                 "7": "附带英文",
                                 "8": "MAX变量",
                                 "9": "吐槽信息"
+                            }
+                        },
+                        {
+                            "fid": EQIUPMENT_SETTING,
+                            "type": CHECK,
+                            "text": "装备-设置",
+                            "colspan": 50,
+                            "params": {
+                                "1": "屏蔽 劣质武器装备底材",
+                                "2": "开启 蓝色装备染色"
                             }
                         },
                         {
