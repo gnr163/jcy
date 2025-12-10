@@ -278,13 +278,13 @@ class FeatureController:
             # 怪物-导弹
             MONSTER_MISSILE: self.file_operations.select_enemy_arrow_skin,
             # 装备-特效
-            EQIUPMENT_EFFECTS: self.file_operations.select_equipment_effects,
-            # 装备-设置
+            BASE_EFFECTS: self.file_operations.select_equipment_effects,
+            # 装备-底材/暗金/套装特效
+            BASE_EFFECTS: self.file_operations.select_equipment_effects,
             EQIUPMENT_SETTING: self.file_operations.select_equipment_setting,
+            SETS_EFFECTS: self.file_operations.select_equipment_effects,
             # 装备-词缀特效
             AFFIX_EFFECTS: self.file_operations.select_affix_effects,
-            # 装备-套装特效
-            SETS_EFFECTS: self.file_operations.select_equipment_effects,
             # 装备-模型特效
             MODEL_EFFECTS: self.file_operations.select_model_eccects,
             # 22#+符文名称大小(越大越容易发现/选中)

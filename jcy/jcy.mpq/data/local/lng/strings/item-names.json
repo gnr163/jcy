@@ -15206,8 +15206,8 @@
   {
     "id": 11008,
     "Key": "uhf",
-    "enUS": "Legendary Mallet|Elite",
-    "zhTW": "傳說戰鎚|精",
+    "enUS": "Legendary Mallet",
+    "zhTW": "傳說戰鎚",
     "deDE": "[ms]Legendärer Hammer",
     "esES": "[ms]Mazo legendario",
     "frFR": "[ms]Maillet légendaire",
@@ -15218,11 +15218,11 @@
     "jaJP": "レジェンダリー・マレット",
     "ptBR": "Marreta Lendária",
     "ruRU": "[fs]легендарная колотушка",
-    "zhCN": "傳說戰鎚|精",
-    "zhCN2": "传奇重锤|精",
-    "zhTW2": "傳說戰鎚|精",
-    "zhSGCN": "传说之锤|精",
-    "zhSGTW": "傳說之鎚|精"
+    "zhCN": "傳說戰鎚",
+    "zhCN2": "传奇重锤",
+    "zhTW2": "傳說戰鎚",
+    "zhSGCN": "传说之锤",
+    "zhSGTW": "傳說之鎚"
   },
   {
     "id": 11010,
@@ -20582,8 +20582,8 @@
   {
     "id": 20422,
     "Key": "nec",
-    "enUS": "Hellspawn Skull|EliteLight",
-    "zhTW": "地獄爪牙顱骨|精輕",
+    "enUS": "Hellspawn Skull",
+    "zhTW": "地獄爪牙顱骨",
     "deDE": "[ms]Höllenbrutschädel",
     "esES": "[ms]Cráneo del averno",
     "frFR": "[ms]Crâne de l’engeance infernale",
@@ -20594,11 +20594,11 @@
     "jaJP": "ヘルスポーン・スカル",
     "ptBR": "Caveira de Cria Infernal",
     "ruRU": "[ms]череп отродья Тьмы",
-    "zhCN": "地獄爪牙顱骨|精輕",
-    "zhCN2": "地狱魔颅骨|精轻",
-    "zhTW2": "地獄爪牙顱骨|精輕",
-    "zhSGCN": "地狱爪牙之骨|精轻",
-    "zhSGTW": "地獄爪牙之骨|精輕"
+    "zhCN": "地獄爪牙顱骨",
+    "zhCN2": "地狱魔颅骨",
+    "zhTW2": "地獄爪牙顱骨",
+    "zhSGCN": "地狱爪牙之骨",
+    "zhSGTW": "地獄爪牙之骨"
   },
   {
     "id": 20423,
@@ -22556,8 +22556,8 @@
   {
     "id": 21360,
     "Key": "Guardian Angle",
-    "enUS": "ÿc1[200EDef]\nÿc4Guardian Angel",
-    "zhTW": "ÿc1[200EDef]\nÿc4守護天使",
+    "enUS": "Guardian Angel",
+    "zhTW": "守護天使",
     "deDE": "Schutzengel",
     "esES": "Ángel guardián",
     "frFR": "Ange gardien",
@@ -22568,11 +22568,11 @@
     "jaJP": "ガーディアン・エンジェル",
     "ptBR": "Anjo da Guarda",
     "ruRU": "Ангел-хранитель",
-    "zhCN": "ÿc1[200EDef]\nÿc4守護天使",
-    "zhCN2": "ÿc1[200EDef]\nÿc4守护天使",
-    "zhTW2": "ÿc1[200EDef]\nÿc4守護天使",
-    "zhSGCN": "ÿc1[200EDef]\nÿc4守护天使",
-    "zhSGTW": "ÿc1[200EDef]\nÿc4守護天使"
+    "zhCN": "守護天使",
+    "zhCN2": "守护天使",
+    "zhTW2": "守護天使",
+    "zhSGCN": "守护天使",
+    "zhSGTW": "守護天使"
   },
   {
     "id": 21361,
@@ -26210,8 +26210,8 @@
   {
     "id": 21535,
     "Key": "Que-hegan's Wisdom",
-    "enUS": "ÿc1[160EDef/10MDR]\nÿc4Que-Hegan's Wisdom",
-    "zhTW": "ÿc1[160EDef/10MDR]\nÿc4教宗的智慧",
+    "enUS": "Que-Hegan's Wisdom",
+    "zhTW": "教宗的智慧",
     "deDE": "Que-Hegans Weisheit",
     "esES": "Sabiduría de Que-Hegan",
     "frFR": "Sagesse de Que-Hegan",
@@ -26222,11 +26222,11 @@
     "jaJP": "ケ=ヘガンの知恵",
     "ptBR": "Sabedoria de Que-hegan",
     "ruRU": "Мудрость ке-хегана",
-    "zhCN": "ÿc1[160EDef/10MDR]\nÿc4教宗的智慧",
-    "zhCN2": "ÿc1[160EDef/10MDR]\nÿc4魁黑刚的智慧",
-    "zhTW2": "ÿc1[160EDef/10MDR]\nÿc4教宗的智慧",
-    "zhSGCN": "ÿc1[160EDef/10MDR]\nÿc4魁黑刚的智慧",
-    "zhSGTW": "ÿc1[160EDef/10MDR]\nÿc4魁黑剛的智慧"
+    "zhCN": "教宗的智慧",
+    "zhCN2": "魁黑刚的智慧",
+    "zhTW2": "教宗的智慧",
+    "zhSGCN": "魁黑刚的智慧",
+    "zhSGTW": "魁黑剛的智慧"
   },
   {
     "id": 21536,

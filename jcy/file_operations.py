@@ -1295,7 +1295,7 @@ class FileOperations:
         装备特效
         0.道具过滤
         1.底材 品质/重量/推荐凹槽/防御力
-        2.暗金/套装/符文之语 附属英文/Max变量/吐槽
+        2.暗金/套装 附属英文/Max变量/吐槽
         """
 
         if keys is None:
@@ -1306,18 +1306,23 @@ class FileOperations:
 
         # 道具过滤 ITEM_FILTER
         item_filter_dict = self.controller.current_states[ITEM_FILTER]
-        # 装备特效配置 EQIUPMENT_EFFECTS
-        equipment_dict = self.controller.current_states[EQIUPMENT_EFFECTS]
+        # 底材特效配置 EQIUPMENT_EFFECTS
+        base_dict = self.controller.current_states[BASE_EFFECTS]
+        # 暗金特效配置 UNIQUE_EFFECTS
+        unique_dict = self.controller.current_states[UNIQUE_EFFECTS]
         # 套装特效配置 SETS_EFFECTS
         set_dict = self.controller.current_states[SETS_EFFECTS]
 
-        handler_grade = "0" in equipment_dict
-        handler_weight = "1" in equipment_dict
-        handler_sockets = "2" in equipment_dict
-        handler_defense = "3" in equipment_dict
-        handler_enus = "4" in equipment_dict
-        handler_max = "5" in equipment_dict
-        handler_mark = "6" in equipment_dict
+        base_grade = "0" in base_dict
+        base_weight = "1" in base_dict
+        base_sockets = "2" in base_dict
+        base_defense = "3" in base_dict
+        base_enus = "4" in base_dict
+
+        unique_enus = "4" in unique_dict
+        unique_max = "5" in unique_dict
+        unique_mark = "6" in unique_dict
+
         set_enus = "4" in set_dict
         set_max = "5" in set_dict
         set_mark = "6" in set_dict
@@ -1344,8 +1349,13 @@ class FileOperations:
 
             for item in templet_list:
                 Key = item["Key"]
+                data = data_dict.get(Key)
                 
-                # 道具过滤, 道具类不再使用名称进行过滤
+                # 没有模板数据pass
+                if data is None:
+                    continue
+
+                # 按照过滤规则修改模板名称 (道具类不在此列, 使用移位过滤)
                 if Key not in ITEM_MISC and item_filter_dict.get(Key):
                     item[ZHCN] = UE01A + item[ZHCN]
                     item[ZHSGCN] = UE01A + item[ZHSGCN]
@@ -1353,88 +1363,87 @@ class FileOperations:
                     item[ZHSGTW] = UE01A + item[ZHSGTW]
                     item[ENUS] = UE01A + item[ENUS]
 
-                # 底材&道具
-                if len(Key) == 3:
-                    data = data_dict.get(Key)
-                    if data is not None:
-                        for lng in _languages:
-                            arr = []
-                            arr.append(item[lng])
-                            if handler_grade:
-                                grade = data[lng].get("grade")
-                                if grade:
+                if Key in ITEM_BASE:
+                    # 装备底材
+                    for lng in _languages:
+                        arr = [item[lng]]
+                        
+                        if base_grade:
+                            grade = data[lng].get("grade")
+                            if grade:
+                                arr.append("|")
+                                arr.append(grade)
+                        if base_weight:
+                            weight = data[lng].get("weight")
+                            if weight:
+                                if len(arr) == 0:
                                     arr.append("|")
-                                    arr.append(grade)
-                            if handler_weight:
-                                weight = data[lng].get("weight")
-                                if weight:
-                                    if len(arr) == 0:
-                                        arr.append("|")
-                                    arr.append(weight)
-                            if handler_sockets:
-                                sockets = data[lng].get("sockets")
-                                if sockets:
-                                    arr.append("[")
-                                    arr.append(sockets)
-                                    arr.append("]")
-                            if handler_defense:
-                                defense = data[lng].get("defense")
-                                if defense:
-                                    arr.append("[")
-                                    arr.append(defense)
-                                    arr.append("]")
-                            item[lng] = ''.join(arr)
-                # 暗金&套装
-                else:
-                    data = data_dict.get(Key)
-                    
-                    if Key in SET_ITEM_INDEX:
-                        if data is not None:
-                            for lng in _languages:
-                                arr = []
-                                if set_max:
-                                    max = data[lng].get("max")
-                                    if max:
-                                        arr.append("ÿc1[")
-                                        arr.append(max)
-                                        arr.append("]\n")
-                                if set_mark:
-                                    mark = data[lng].get("mark")
-                                    if mark:
-                                        arr.append("ÿc2")
-                                        arr.append(mark)
-                                        arr.append("\n")
-                                if len(arr) > 0:
-                                    arr.append("ÿc2")
-                                arr.append(item.get(lng))
-                                if set_enus and lng != ENUS:
-                                    arr.append(" ÿcI")
-                                    arr.append(item.get(ENUS))
-                                item[lng] = ''.join(arr)
-                    else:
-                        if data is not None:
-                            for lng in _languages:
-                                arr = []
-                                if handler_max:
-                                    max = data[lng].get("max")
-                                    if max:
-                                        arr.append("ÿc1[")
-                                        arr.append(max)
-                                        arr.append("]\n")
-                                if handler_mark:
-                                    mark = data[lng].get("mark")
-                                    if mark:
-                                        arr.append("ÿc2")
-                                        arr.append(mark)
-                                        arr.append("\n")
-                                if len(arr) > 0:
-                                    arr.append("ÿc4")
-                                arr.append(item.get(lng))
-                                if handler_enus and lng != ENUS:
-                                    arr.append(" ÿcI")
-                                    arr.append(item.get(ENUS))
-                                item[lng] = ''.join(arr)
-
+                                arr.append(weight)
+                        if base_sockets:
+                            sockets = data[lng].get("sockets")
+                            if sockets:
+                                arr.append("[")
+                                arr.append(sockets)
+                                arr.append("]")
+                        if base_defense:
+                            defense = data[lng].get("defense")
+                            if defense:
+                                arr.append("[")
+                                arr.append(defense)
+                                arr.append("]")
+                        if base_enus and lng != ENUS:
+                            arr.append(" ")
+                            arr.append(item.get(ENUS))
+                        item[lng] = ''.join(arr)
+                
+                elif Key in ITEM_UNIQUE:
+                    # 暗金装
+                    for lng in _languages:
+                        arr = []
+                        if unique_max:
+                            max = data[lng].get("max")
+                            if max:
+                                arr.append("ÿc1[")
+                                arr.append(max)
+                                arr.append("]\n")
+                        if unique_mark:
+                            mark = data[lng].get("mark")
+                            if mark:
+                                arr.append("ÿc2")
+                                arr.append(mark)
+                                arr.append("\n")
+                        if len(arr) > 0:
+                            arr.append("ÿc4")
+                        arr.append(item.get(lng))
+                        if unique_enus and lng != ENUS:
+                            arr.append(" ")
+                            arr.append(item.get(ENUS))
+                        item[lng] = ''.join(arr)
+                
+                elif Key in SETS_INDEX or Key in SET_ITEM_INDEX:
+                    # 套装
+                    for lng in _languages:
+                        arr = []
+                        if set_max:
+                            max = data[lng].get("max")
+                            if max:
+                                arr.append("ÿc1[")
+                                arr.append(max)
+                                arr.append("]\n")
+                        if set_mark:
+                            mark = data[lng].get("mark")
+                            if mark:
+                                arr.append("ÿc2")
+                                arr.append(mark)
+                                arr.append("\n")
+                        if len(arr) > 0:
+                            arr.append("ÿc2")
+                        arr.append(item.get(lng))
+                        if set_enus and lng != ENUS:
+                            arr.append(" ")
+                            arr.append(item.get(ENUS))
+                        item[lng] = ''.join(arr)
+                
                 # 备份
                 item[ZHCN2] = item[ZHCN]
                 item[ZHTW2] = item[ZHTW]
@@ -1520,7 +1529,6 @@ class FileOperations:
                         item[lng] = item[lng].replace("{{logo}}", data_dict.get(Key).get(lng).get("logo") if rune_logo else "")
                         item[lng] = item[lng].replace("{{formula}}", data_dict.get(Key).get(lng).get("formula") if rune_upgrade else "")
                 elif re.match(_runeword, Key):
-                    print(f"Runeword: {Key}")
                     for lng in _languages:
                         arr = []
                         if runeword_max:
@@ -1539,7 +1547,7 @@ class FileOperations:
                             arr.append("ÿc4")
                         arr.append(item.get(lng))
                         if runeword_enus and lng != ENUS:
-                            arr.append(" ÿcI")
+                            arr.append(" ")
                             arr.append(item.get("enUS"))
                         item[lng] = ''.join(arr)
                 
@@ -3332,38 +3340,14 @@ class FileOperations:
 
             for npc in json_data:
                 if npc["id"] == 50001:
-                    npc["enUS"] = APP_VERSION
-                    npc["zhTW"] = APP_VERSION
-                    npc["deDE"] = APP_VERSION
-                    npc["esES"] = APP_VERSION
-                    npc["frFR"] = APP_VERSION
-                    npc["itIT"] = APP_VERSION
-                    npc["koKR"] = APP_VERSION
-                    npc["plPL"] = APP_VERSION
-                    npc["esMX"] = APP_VERSION
-                    npc["jaJP"] = APP_VERSION
-                    npc["ptBR"] = APP_VERSION
-                    npc["ruRU"] = APP_VERSION
-                    npc["zhCN"] = APP_VERSION
-                    npc["zhCN2"] = APP_VERSION
-                    npc["zhTW2"] = APP_VERSION
+                    for key, value in npc.items():
+                        if key not in ["id", "Key"]:
+                            npc[key] = APP_VERSION
 
                 if npc["id"] == 50002:
-                    npc["enUS"] = APP_DATE
-                    npc["zhTW"] = APP_DATE
-                    npc["deDE"] = APP_DATE
-                    npc["esES"] = APP_DATE
-                    npc["frFR"] = APP_DATE
-                    npc["itIT"] = APP_DATE
-                    npc["koKR"] = APP_DATE
-                    npc["plPL"] = APP_DATE
-                    npc["esMX"] = APP_DATE
-                    npc["jaJP"] = APP_DATE
-                    npc["ptBR"] = APP_DATE
-                    npc["ruRU"] = APP_DATE
-                    npc["zhCN"] = APP_DATE
-                    npc["zhCN2"] = APP_DATE
-                    npc["zhTW2"] = APP_DATE
+                    for key, value in npc.items():
+                        if key not in ["id", "Key"]:
+                            npc[key] = APP_DATE
 
                 if npc["id"] > 50002:
                     break
