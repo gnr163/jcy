@@ -308,6 +308,8 @@ class FeatureController:
             UPSTAIRS_POINTER: self.file_operations.modify_upstairs_pointer,
             # 环境-下口指引
             DOWNSTAIRS_POINTER: self.file_operations.modify_downstairs_pointer,
+            # 迷你盒子位置
+            MINI_CUBE: self.file_operations.modify_mini_cube,
         }
 
 

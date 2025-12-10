@@ -3684,6 +3684,64 @@ class FileOperations:
             print(e)
             return (0, 1)
 
+
+    def modify_mini_cube(self, radio: str = "2"):
+        
+        count = 0
+        total = 1
+
+        _params = {
+            # 包裹左侧
+            "1":{
+                "rect": { "x": -1648, "y": 226},
+                "anchor": { "x": 1, "y": 0.397 },
+                "convert": { "x": 180, "y": 460, "scale": 0.5 },
+                "close": { "x": 240, "y": 454 },
+            },
+            # 包裹右侧
+            "2":{
+                "rect": { "x": -320, "y": 226 },
+                "anchor": { "x": 1, "y": 0.397 },
+                "convert": { "x": 180, "y": 460, "scale": 0.5 },
+                "close": { "x": 240, "y": 454 },
+            },
+            # 左下角
+            "3":{
+                "rect": {"x": 400,"y": -430},
+                "anchor": {"x": 0,"y": 1},
+                "convert": { "x": 340, "y": 100, "scale": 0.5 },
+                "close": { "x": 328, "y": 160 },
+            },
+            # 右下角
+            "4":{
+                "rect": { "x": -740, "y": -430 },
+                "anchor": { "x": 1, "y": 1 },
+                "convert": { "x": -50, "y": 100, "scale": 0.5 },
+                "close": { "x": -62, "y": 160 },
+            },
+        }
+
+        try:
+            cube_json = None
+            cube_path = os.path.join(MOD_PATH, r"data/global/ui/layouts/horadriccubeminilayouthd.json")
+            with open(cube_path, 'r', encoding='utf-8') as f:
+                cube_json = json.load(f)
+
+            param = _params.get(radio)
+            cube_json["fields"]["rect"] = param["rect"]
+            cube_json["fields"]["anchor"] = param["anchor"]
+            cube_json["children"][1]["fields"]["rect"] = param["convert"]
+            cube_json["children"][2]["fields"]["rect"] = param["close"]
+                    
+            with open(cube_path, 'w', encoding="utf-8") as f:
+                json.dump(cube_json, f, ensure_ascii=False, indent=4)
+            count += 1
+        except Exception as e:
+            print(e)
+
+        return (count, total)
+
+
     def load_global_dict(self):
         """初始化全局字典"""
         

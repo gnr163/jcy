@@ -153,6 +153,7 @@ WAYPOINT_POINTER = "WayPointPointer"
 MISSION_POINTER = "MissionPointer"
 UPSTAIRS_POINTER = "UpstairsPointer"
 DOWNSTAIRS_POINTER = "DownstairsPointer"
+MINI_CUBE = "MiniCube"
 # Function Identifier -->
 
 # <!-- Controller Type
@@ -1704,6 +1705,7 @@ __all__ = [
     'MISSION_POINTER',
     'UPSTAIRS_POINTER',
     'DOWNSTAIRS_POINTER',
+    'MINI_CUBE',
     'init_global_dict',
     'translate',
 ]

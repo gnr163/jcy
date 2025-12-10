@@ -216,7 +216,19 @@ class FeatureConfig:
                                 "1": "箭头指引",
                                 "2": "绿环指引",
                             }
-                        }
+                        },
+                        {
+                            "fid": MINI_CUBE,
+                            "type": RADIO,
+                            "text": "迷你盒子位置",
+                            "colspan": 100,
+                            "params": {
+                                "1": "包裹左侧",
+                                "2": "包裹右侧",
+                                "3": "左下角",
+                                "4": "右下角",
+                            }
+                        },
                     ]
                 },
                 {
@@ -255,22 +267,12 @@ class FeatureConfig:
                             "fid": ARROW,
                             "type": RADIO,
                             "text": "弓/弩箭特效",
-                            "colspan": 100,
+                            "colspan": 50,
                             "params": {
                                 "0": "默认",
                                 "1": "魔法箭",
                                 "2": "冷霜箭",
                                 "3": "火焰箭"
-                            }
-                        },
-                        {
-                            "fid": SOR_SETTING,
-                            "type": CHECK,
-                            "text": "魔法师",
-                            "colspan": 50,
-                            "params": {
-                                "1": "取消雷云风暴吓人特效",
-                                "2": "降低闪电新星亮度"
                             }
                         },
                         {        
@@ -282,6 +284,16 @@ class FeatureConfig:
                                 "0": "默认",
                                 "1": "冰霜",
                                 "2": "火焰"
+                            }
+                        },
+                        {
+                            "fid": SOR_SETTING,
+                            "type": CHECK,
+                            "text": "魔法师",
+                            "colspan": 50,
+                            "params": {
+                                "1": "取消雷云风暴吓人特效",
+                                "2": "降低闪电新星亮度"
                             }
                         },
                         {
