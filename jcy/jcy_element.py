@@ -10,7 +10,7 @@ PF_BEACON_DOWNSTAIRS = [
                 "name": "prefab_TransformDefinitionComponent",
                 "position": {
                     "x": 0.0,
-                    "y": -10.0,
+                    "y": 0.0,
                     "z": 0.0
                 },
                 "orientation": {
@@ -47,7 +47,7 @@ PF_BEACON_QUEST = [
                 "name": "prefab_TransformDefinitionComponent",
                 "position": {
                     "x": 0.0,
-                    "y": -10.0,
+                    "y": 0.0,
                     "z": 0.0
                 },
                 "orientation": {
@@ -84,7 +84,7 @@ PF_BEACON_UPSTAIRS = [
                 "name": "prefab_TransformDefinitionComponent",
                 "position": {
                     "x": 0.0,
-                    "y": -10.0,
+                    "y": 0.0,
                     "z": 0.0
                 },
                 "orientation": {
@@ -121,7 +121,7 @@ PF_BEACON_WAYPOINT = [
                 "name": "prefab_TransformDefinitionComponent",
                 "position": {
                     "x": 0.0,
-                    "y": -10.0,
+                    "y": 0.0,
                     "z": 0.0
                 },
                 "orientation": {
@@ -158,7 +158,7 @@ PF_BEACON_ITEMS = [
                 "name": "prefab_TransformDefinitionComponent",
                 "position": {
                     "x": 0.0,
-                    "y": -10.0,
+                    "y": 0.0,
                     "z": 0.0
                 },
                 "orientation": {
