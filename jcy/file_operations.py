@@ -530,30 +530,7 @@ class FileOperations:
         # 文件
         _files = {
             # A1白毛罗格
-            "1" : [
-                # 
-                r"data/hd/character/enemy/roguehire/roguehire_state_machine.json",
-                # 
-                r"data/hd/character/npc/navi/textures/navi_body_alb.texture",
-                r"data/hd/character/npc/navi/textures/navi_body_nrm.texture",
-                r"data/hd/character/npc/navi/textures/navi_body_orm.texture",
-                r"data/hd/character/npc/navi/textures/navi_body_sss.texture",
-                r"data/hd/character/npc/navi/textures/navi_hair_alb.texture",
-                r"data/hd/character/npc/navi/textures/navi_hair_flow.texture",
-                r"data/hd/character/npc/navi/textures/navi_hair_hrt.texture",
-                r"data/hd/character/npc/navi/textures/navi_head_alb.texture",
-                r"data/hd/character/npc/navi/textures/navi_head_nrm.texture",
-                r"data/hd/character/npc/navi/textures/navi_head_orm.texture",
-                r"data/hd/character/npc/navi/textures/navi_head_sss.texture",
-                r"data/hd/character/npc/navi/textures/navi_outfit_alb.texture",
-                r"data/hd/character/npc/navi/textures/navi_outfit_nrm.texture",
-                r"data/hd/character/npc/navi/textures/navi_outfit_orm.texture",
-                r"data/hd/character/npc/navi/textures/navi_quiver_alb.texture",
-                r"data/hd/character/npc/navi/textures/navi_quiver_nrm.texture",
-                r"data/hd/character/npc/navi/textures/navi_quiver_orm.texture",
-                # 
-                r"data/hd/character/npc/rogue1/textures/rogue_armormed_alb.texture"
-            ],
+            "1" : [],
             # A2女性佣兵
             "2":[
                 # 佣兵昵称
