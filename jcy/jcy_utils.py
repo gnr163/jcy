@@ -19,7 +19,15 @@ def check_file_md5(file_path, expect_md5):
         for chunk in iter(lambda: f.read(8192), b""): md5.update(chunk)
     return md5.hexdigest().upper() == (expect_md5 or "").upper()
 
+def ok_result(message):
+    return {"ok": True, "message": message }
+
+def err_result(message):
+    return {"ok": False, "message": message }
+
 __all__ = [
     'human_size',
-    'check_file_md5'
+    'check_file_md5',
+    'ok_result',
+    'err_result',
 ]

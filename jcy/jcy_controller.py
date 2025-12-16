@@ -21,11 +21,12 @@ import zipfile
 
 
 from file_operations import FileOperations
+import jcy_config
 from jcy_constants import *
 from jcy_model import FeatureConfig, FeatureStateManager
 from jcy_paths import *
 from jcy_view import FeatureView
-from jcy_assets import MOD_ASSETS
+from jcy_assets import *
 from jcy_utils import *
 from upgrade_dialog import UpgradeDialog
 
@@ -86,6 +87,10 @@ class FeatureController:
         self.file_operations.sync_app_data()
         # 注册控制器方法
         self._setup_feature_handlers()
+        # 加载素材包配置
+        self.file_operations.load_asset_config()
+        # 扫描素材包
+        self.file_operations.scan_asset_package()
 
         # 升级检查
         need_upgrade = ensure_appdata_files()
@@ -150,10 +155,16 @@ class FeatureController:
             self._sync_config_mods(dialog)
 
             # 应用素材包
-            asset_dir = self.current_states.get(ASSET_PATH)
-            if asset_dir and os.path.isdir(asset_dir):
-                for asset in MOD_ASSETS:
-                    self._apply_asset_for_upgrade(asset, asset_dir, dialog)
+            for asset_type, asset_id in jcy_config.ASSET_CONFIG.items():
+                if asset_id != 0:
+                    asset = ASSET_DICT.get(asset_id)
+                    result = self.file_operations.apply_asset(asset)
+                    if result.get("ok"):
+                        if dialog:
+                            dialog.log(f"{asset.get("name")} 应用成功.")
+                    else:
+                        if dialog:
+                            dialog.log(f"{asset.get("name")} 应用失败, {result.get("message")}")
 
             if dialog:
                 dialog.log("✅ 升级完成!")
@@ -163,43 +174,6 @@ class FeatureController:
                 dialog.log("⚠ 升级失败，请手动检查配置目录")
             self.open_appdata()
             print("[升级错误]", e)
-
-
-    def _apply_asset_for_upgrade(self, asset, asset_dir, dialog=None):
-        """应用素材包, 成功的输出日志"""
-        zip_path = os.path.join(asset_dir, asset.get("file", ""))
-        if not os.path.exists(zip_path):
-            return False
-        if not check_file_md5(zip_path, asset.get("md5", "")):
-            return False
-
-        tmp_dir = tempfile.mkdtemp()
-        try:
-            with zipfile.ZipFile(zip_path, "r") as zf:
-                zf.extractall(tmp_dir)
-
-            # 检查素材包内每个文件
-            for f in asset.get("list", []):
-                f_path = os.path.join(tmp_dir, f.get("file", ""))
-                if not os.path.exists(f_path):
-                    return False
-                if not check_file_md5(f_path, f.get("md5", "")):
-                    return False
-
-            # 应用素材包
-            for f in asset.get("list", []):
-                src = os.path.join(tmp_dir, f.get("file", ""))
-                dst = os.path.join(MOD_PATH, f.get("path", ""))
-                os.makedirs(dst, exist_ok=True)
-                with open(src, "rb") as s, open(os.path.join(dst, os.path.basename(src)), "wb") as d:
-                    d.write(s.read())
-
-            # 只有应用成功才记录日志
-            if dialog:
-                dialog.log(f"已应用素材包: {asset.get('name')}")
-            return True
-        finally:
-            shutil.rmtree(tmp_dir)
 
 
     def _sync_config_mods(self, dialog=None):
@@ -389,10 +363,6 @@ class FeatureController:
         self.feature_state_manager.loaded_states = copy.deepcopy(self.current_states)
 
         # 显示结果
-        # if changes_detected:
-        #     messagebox.showinfo("设置已应用", self.dialogs)
-        # else:
-        #     messagebox.showinfo("完成", "无变化!")
         return changes_detected
 
     def execute_feature_action(self, feature_id: str, value):

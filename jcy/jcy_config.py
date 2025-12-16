@@ -1,0 +1,13 @@
+# 配置类
+
+# 控制器配置 <FunctionId, Value/Values
+SETTINGS = {}
+
+# 素材包配置 <AssetType, AssetId>
+ASSET_CONFIG = {}
+
+# 素材包文件 <AssetId, exist>
+ASSET_PACKAGE = {}
+
+# 素材包数量 <AssetType, count>
+ASSET_COUNT = {}

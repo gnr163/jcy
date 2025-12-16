@@ -3,6 +3,7 @@ import webbrowser
 import hashlib
 import json
 import os
+import shutil
 import subprocess
 import sys
 import threading
@@ -25,6 +26,7 @@ from jcy_utils import *
 from PIL import Image, ImageTk
 from tkinter import filedialog, messagebox, scrolledtext, ttk
 from jcy_item import ITEM_LANGUAGE, ITEM_CATEGORY, ITEM_TYPE, ITEM_TIER, ITEM_COLUMN, ITEMS
+import jcy_config
 import subprocess  # 用系统默认播放器播放 flac
 
 def play_flac(path):
@@ -101,7 +103,7 @@ class FeatureView:
         self.add_tab(ifp, "道具屏蔽")
 
         # --- 素材管理 ---
-        asset_tab = AssetManagerUI(notebook)
+        asset_tab = AssetManagerUI(notebook, self.controller)
         self.add_tab(asset_tab, "素材管理")
 
         # --- D2R多开器 ---
@@ -1365,38 +1367,54 @@ class TerrorZoneUI(tk.Frame):
         self.load_and_display_data()
 
 class AssetManagerUI(tk.Frame):
-    """素材包管理器"""
-
-    def __init__(self, master):
+    def __init__(self, master, controller=None, mod_root=None, assets=None, asset_types=None):
         super().__init__(master)
-        self.settings = self._load_settings()
-        self.asset_dir = tk.StringVar(value=self.settings.get(ASSET_PATH, ""))
+        self.master = master
+        self.controller = controller
+        self.mod_root = mod_root or MOD_PATH
+        self._external_assets = assets if assets is not None else ASSETS
+        self._asset_types = asset_types if asset_types is not None else ASSETS_TYPE
+        self.asset_dir = tk.StringVar(value=self.controller.current_states.get(ASSET_PATH, ""))
+        self.type_var = tk.StringVar(value="")
+
         self.asset_blocks = []
-        self.mod_root = MOD_PATH
-        self.filter_var = tk.StringVar(value="all")
         self._build_ui()
 
-    # ---------- 构建 UI ----------
     def _build_ui(self):
-        # 顶部：素材包目录
         top = tk.Frame(self)
         top.pack(fill="x", pady=6)
         tk.Label(top, text="素材包目录：").pack(side="left", padx=4)
         entry = tk.Entry(top, textvariable=self.asset_dir, width=60)
         entry.pack(side="left", padx=4, fill="x", expand=True)
         tk.Button(top, text="选择目录", command=self._choose_dir).pack(side="left", padx=4)
-        tk.Button(top, text="保存路径", command=self._save_path).pack(side="left", padx=4)
+        # tk.Button(top, text="保存路径", command=self._save_path).pack(side="left", padx=4)
 
-        # 筛选条件
+        # ---- 素材类型筛选 ----
         filter_frame = tk.Frame(self)
         filter_frame.pack(fill="x", pady=4)
-        for text, val in (("全部", "all"), ("已下载", "downloaded"), ("未下载", "not_downloaded")):
-            tk.Radiobutton(filter_frame, text=text, value=val,
-                        variable=self.filter_var, command=self.refresh_status).pack(side="left", padx=6)
+        tk.Label(filter_frame, text="素材类型：").pack(side="left", padx=(4, 2))
+
+        # 所有类型中文名
+        type_values = [t.get("zhCN") for t in self._asset_types if t.get("Key")]
+
+        # 默认选中第一项
+        if type_values:
+            self.type_var.set(type_values[0])
+
+        # 下拉框
+        self.type_cb = ttk.Combobox(filter_frame, textvariable=self.type_var,
+                                    values=type_values, state="readonly", width=18)
+        self.type_cb.pack(side="left", padx=4)
+
+        # ---- 数量标签 ----
+        self.type_count_label = tk.Label(filter_frame, text="数量：0")
+        self.type_count_label.pack(side="left", padx=6)
+
+        # 选择时刷新
+        self.type_cb.bind('<<ComboboxSelected>>', lambda e: self.refresh_status(update_layout=True))
 
         ttk.Separator(self, orient="horizontal").pack(fill="x", pady=6)
 
-        # ======== 滚动区域（缺失的部分我补上了）========
         wrapper = tk.Frame(self)
         wrapper.pack(fill="both", expand=True)
 
@@ -1408,21 +1426,14 @@ class AssetManagerUI(tk.Frame):
 
         self.canvas.configure(yscrollcommand=scrollbar.set)
 
-        # 内部内容 Frame
         self._tbl = tk.Frame(self.canvas)
         self._canvas_window = self.canvas.create_window((0, 0), window=self._tbl, anchor="nw")
 
-        # 自动调整 scrollregion 和宽度
-        self._tbl.bind(
-            "<Configure>",
-            lambda e: self.canvas.configure(scrollregion=self.canvas.bbox("all"))
-        )
-        self.canvas.bind(
-            "<Configure>",
-            lambda e: self.canvas.itemconfigure(self._canvas_window, width=e.width)
-        )
+        self._tbl.bind("<Configure>", lambda e: self.canvas.configure(scrollregion=self.canvas.bbox("all")))
+        self.canvas.bind("<Configure>", lambda e: self.canvas.itemconfigure(self._canvas_window, width=e.width))
+        self._tbl.grid_columnconfigure(0, weight=1)
 
-        # ======== 鼠标滚轮（Windows 专用）========
+        # 鼠标滚轮
         def _on_mousewheel_windows(event):
             delta = int(event.delta / 120)
             self.canvas.yview_scroll(-delta, "units")
@@ -1439,118 +1450,124 @@ class AssetManagerUI(tk.Frame):
         self.canvas.bind("<Enter>", _bind_on_enter)
         self.canvas.bind("<Leave>", _unbind_on_leave)
 
-        # ======== 渲染素材块 ========
+        self._render_asset_blocks()
+
+        # 刷新状态（包括数量）
+        self.after(150, self.refresh_status(update_layout=True))
+
+
+    def _render_asset_blocks(self):
+        for child in self._tbl.winfo_children():
+            child.destroy()
         self.asset_blocks.clear()
 
-        if isinstance(MOD_ASSETS, (list, tuple)) and MOD_ASSETS:
-            row, col = 0, 0
-            for asset in MOD_ASSETS:
-                frame = self._create_asset_block(asset)
-                frame.grid(row=row, column=col, padx=8, pady=8, sticky="nwes")
-                self.asset_blocks.append((asset, frame))
-                col += 1
-                if col >= 2:
-                    col = 0
-                    row += 1
-        else:
-            lbl = tk.Label(self._tbl, text="未检测到素材包（MOD_ASSETS 为空或未定义）。请检查 MOD_ASSETS 的来源。",
-                        anchor="w", justify="left")
-            lbl.pack(fill="x", pady=8, padx=8)
+        for i, asset in enumerate(self._external_assets):
+            frame = self._create_asset_block(asset)
+            frame.grid(row=i, column=0, padx=8, pady=8, sticky="nwes")
+            self.asset_blocks.append((asset, frame))
 
-        # 延迟刷新状态
-        self.after(150, self.refresh_status)
-
-
-    # ---------- 生成素材块 ----------
     def _create_asset_block(self, asset):
-        frame = tk.LabelFrame(self._tbl, text=asset.get("name", "<unnamed>"), padx=8, pady=4)
+        title = asset.get('name') or '<unnamed>'
+        frame = tk.LabelFrame(self._tbl, text=title, padx=8, pady=6)
 
-        # 描述
-        tk.Label(frame, text=asset.get("description", ""), anchor="w", justify="left").pack(fill="x")
+        lbl_desc = tk.Label(frame, text=f"描述：{asset.get('description','')}", anchor='w', justify='left')
+        lbl_desc.pack(fill='x')
 
-        # ======== 容量（单独一行） ========
-        lbl_size = tk.Label(frame, text="容量：未知", anchor="w")
-        lbl_size.pack(fill="x", pady=(4, 0))
-        frame.size_label = lbl_size  # 方便后续刷新
+        size_text = human_size(asset.get('size',0)) if asset.get('size') else '未知'
+        lbl_size = tk.Label(frame, text=f"容量：{size_text}", anchor='w', justify='left')
+        lbl_size.pack(fill='x')
 
-        if "size" in asset:
-            lbl_size.config(text=f"容量：{human_size(asset['size'])}")
+        author = asset.get('author','未知')
+        lbl_author = tk.Label(frame, text=f"作者：{author}", anchor='w', justify='left')
+        lbl_author.pack(fill='x')
 
-        # ======== 进度条（单独一行） ========
-        pb = ttk.Progressbar(frame, orient="horizontal", mode="determinate", length=260)
-        pb.pack(fill="x", pady=(2, 6))
+        source = asset.get('source','未知')
+        lbl_source = tk.Label(frame, text=f"出处：{source}", anchor='w', justify='left')
+        lbl_source.pack(fill='x')
+
+        pb = ttk.Progressbar(frame, orient="horizontal", mode="determinate")
+        pb.pack(fill='x', pady=(2, 6))
         frame.progress = pb
 
-        # 如果 asset 有 total_size，自动计算一次百分比（固定）
-        if "size" in asset and "total_size" in asset:
-            percent = asset["size"] / asset["total_size"] * 100
-            pb['value'] = percent
-        else:
-            pb['value'] = 0   # 默认 0%
-
-        # ======== 按钮区 ========
         btn_frame = tk.Frame(frame)
-        btn_frame.pack(fill="x", pady=4)
+        btn_frame.pack(fill='x')
 
-        b_preview = tk.Button(btn_frame, text="预览", command=lambda url=asset.get("image"): self._preview(url))
+        b_preview = tk.Button(btn_frame, text="预览", command=lambda url=asset.get('image'): self._preview(url))
         b_download = tk.Button(btn_frame, text="下载", command=lambda a=asset, p=pb: self._download_asset_thread(a, p))
         b_apply = tk.Button(btn_frame, text="应用", command=lambda a=asset: self._apply_asset(a))
         b_remove = tk.Button(btn_frame, text="移除", command=lambda a=asset: self._remove_asset(a))
         b_delete = tk.Button(btn_frame, text="删除", command=lambda a=asset: self._delete_asset(a))
 
         for b in (b_preview, b_download, b_apply, b_remove, b_delete):
-            b.pack(side="left", padx=5, ipadx=6)
+            b.pack(side='left', padx=4, ipadx=6)
 
-        frame.buttons = {
-            "preview": b_preview,
-            "download": b_download,
-            "apply": b_apply,
-            "remove": b_remove,
-            "delete": b_delete,
-        }
+        frame.buttons = {'preview': b_preview, 'download': b_download, 'apply': b_apply, 'remove': b_remove, 'delete': b_delete}
 
         return frame
 
 
-    # ---------- 选择 & 保存路径 ----------
+    def refresh_status(self, update_layout=True):
+        applied_assets = set(jcy_config.ASSET_CONFIG.values())
+        row = 0
+
+        # 只在需要时计算 selected_type
+        selected_type = ''
+        if update_layout:
+            selected_type_zh = self.type_var.get()
+            type_key_map = {t.get('zhCN'): t.get('Key') for t in self._asset_types}
+            selected_type = type_key_map.get(selected_type_zh, '')
+            self.type_count_label.config(
+                text=f"数量：{jcy_config.ASSET_COUNT.get(selected_type, 0)}"
+            )
+
+        for asset, frame in self.asset_blocks:
+            try:
+                asset_id = asset["id"]
+
+                # ===== 布局处理（只在类型切换时）=====
+                if update_layout:
+                    if selected_type and asset.get('type') != selected_type:
+                        frame.grid_forget()
+                    else:
+                        frame.grid(row=row, column=0, padx=8, pady=8, sticky='nwes')
+                        row += 1
+
+                # ===== 状态刷新（永远执行）=====
+                asset_applied = asset_id in applied_assets
+                asset_package_exist = jcy_config.ASSET_PACKAGE.get(asset_id, False)
+
+                frame.buttons['apply'].config(
+                    state=tk.NORMAL if not asset_applied else tk.DISABLED
+                )
+                frame.buttons['remove'].config(
+                    state=tk.NORMAL if asset_applied else tk.DISABLED
+                )
+                frame.buttons['delete'].config(
+                    state=tk.NORMAL if asset_package_exist else tk.DISABLED
+                )
+
+            except Exception as e:
+                print(f"refresh_status error: {e}")
+
+        
+        self.update_idletasks()
+        self.canvas.configure(scrollregion=self.canvas.bbox("all"))
+
+        if update_layout:
+            self.canvas.yview_moveto(0)
+
+
+
     def _choose_dir(self):
         path = filedialog.askdirectory(title="选择素材存放目录")
         if path:
             self.asset_dir.set(path)
-            self.refresh_status()
+            self.controller.current_states[ASSET_PATH] = path
+            self.controller.feature_state_manager.save_settings(self.controller.current_states)
+            self.controller.file_operations.scan_asset_package()
+            self.refresh_status(update_layout=True)
 
-    def _save_path(self):
-        self.settings[ASSET_PATH] = self.asset_dir.get()
-        with open(USER_SETTINGS_PATH, "w", encoding="utf-8") as f:
-            json.dump(self.settings, f, indent=4, ensure_ascii=False)
-        messagebox.showinfo("保存成功", f"路径已保存到 settings.json\n{self.asset_dir.get()}")
 
-    # ---------- 状态刷新 ----------
-    def refresh_status(self):
-        asset_dir = self.asset_dir.get().strip()
-        filter_val = self.filter_var.get()
-        row, col = 0, 0
-        for asset, frame in self.asset_blocks:
-            zip_path = os.path.join(asset_dir, asset.get("file", "")) if asset_dir else ""
-            exists = os.path.exists(zip_path) if zip_path else False
-            ok = exists and check_file_md5(zip_path, asset.get("md5", ""))
-
-            show = True
-            if filter_val == "downloaded" and not ok: show = False
-            if filter_val == "not_downloaded" and ok: show = False
-            try: frame.grid_forget()
-            except Exception: pass
-            if show:
-                frame.grid(row=row, column=col, padx=8, pady=8, sticky="nwes")
-                col += 1
-                if col >= 2: col = 0; row += 1
-            try:
-                frame.buttons["download"]["state"] = tk.DISABLED if ok else tk.NORMAL
-                for k in ("apply", "remove", "delete"):
-                    frame.buttons[k]["state"] = tk.NORMAL if ok else tk.DISABLED
-            except Exception: pass
-
-    # ---------- 下载、预览、应用、移除、删除、工具 ----------
     def _download_asset_thread(self, asset, progress):
         threading.Thread(target=self._download_asset, args=(asset, progress), daemon=True).start()
 
@@ -1558,94 +1575,105 @@ class AssetManagerUI(tk.Frame):
     def _download_asset(self, asset, progress):
         asset_dir = self.asset_dir.get().strip()
         if not asset_dir:
-            self.after(0, lambda: messagebox.showerror("错误", "请先选择素材目录！"))
+            self.after(0, lambda: messagebox.showerror('错误', '请先选择素材目录！'))
             return
 
         os.makedirs(asset_dir, exist_ok=True)
-        zip_path = os.path.join(asset_dir, asset.get("file", ""))
-
-        url = asset["url"]  # --- 只使用默认 URL ---
+        zip_path = os.path.join(asset_dir, asset.get('file', ''))
+        url = asset.get('url')
         headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 
         try:
-            # 重置进度条
             self.after(0, lambda p=progress: p.config(value=0))
 
-            resp = requests.get(url, stream=True, timeout=10, headers=headers)
+            resp = requests.get(url, stream=True, timeout=15, headers=headers)
             resp.raise_for_status()
 
-            total = int(resp.headers.get("content-length", 0))
+            total = int(resp.headers.get('content-length', 0))
             downloaded = 0
+            last_percent = -1
 
-            with open(zip_path, "wb") as f:
+            with open(zip_path, 'wb') as f:
                 for chunk in resp.iter_content(8192):
                     if chunk:
                         f.write(chunk)
                         downloaded += len(chunk)
-                        percent = int(downloaded / total * 100) if total else 0
-                        progress.after(0, lambda v=percent, p=progress: p.config(value=v))
+                        new_percent = int(downloaded / total * 100) if total else 0
+                        if new_percent != last_percent:
+                            last_percent = new_percent
+                            progress.after(0, lambda v=new_percent, p=progress: p.config(value=v))
 
-            if check_file_md5(zip_path, asset.get("md5", "")):
-                self.after(0, lambda name=asset['name']: messagebox.showinfo("完成", f"{name} 下载完成。"))
-            else:
-                raise Exception("MD5 校验失败")
+            if not check_file_md5(zip_path, asset.get('md5', '')):
+                try:
+                    os.remove(zip_path)
+                except Exception:
+                    pass
+                raise Exception('MD5 校验失败')
+            
+            # 下载完毕, 更新状态
+            jcy_config.ASSET_PACKAGE[asset["id"]] = True
 
         except Exception as exc:
-            self.after(0, lambda e=exc: messagebox.showerror("下载失败", str(e)))
+            self.after(0, lambda e=exc: messagebox.showerror('下载失败', str(e)))
 
         finally:
             progress.after(0, lambda p=progress: p.config(value=0))
-            self.after(0, self.refresh_status)
-
+            self.after(0, self.refresh_status(update_layout=False))
 
     def _preview(self, url):
-        if not url: return messagebox.showerror("错误", "没有预览链接。")
+        if not url:
+            return messagebox.showerror('错误', '没有预览链接。')
         import webbrowser
         webbrowser.open(url)
 
     def _apply_asset(self, asset):
-        asset_dir = self.asset_dir.get()
-        zip_path = os.path.join(asset_dir, asset.get("file", ""))
-        if not os.path.exists(zip_path):
-            return messagebox.showerror("错误", "文件不存在。")
-        if not check_file_md5(zip_path, asset.get("md5", "")):
-            return messagebox.showerror("错误", "MD5 不匹配，文件可能损坏。")
-        tmp_dir = tempfile.mkdtemp()
-        with zipfile.ZipFile(zip_path, "r") as zf: zf.extractall(tmp_dir)
-        for f in asset.get("list", []):
-            f_path = os.path.join(tmp_dir, f.get("file", ""))
-            if not os.path.exists(f_path):
-                return messagebox.showerror("错误", f"缺少文件：{f.get('file')}")
-            if not check_file_md5(f_path, f.get("md5", "")):
-                return messagebox.showerror("错误", f"文件校验失败：{f.get('file')}")
-        for f in asset.get("list", []):
-            src = os.path.join(tmp_dir, f.get("file", ""))
-            dst = os.path.join(self.mod_root, f.get("path", ""))
-            os.makedirs(dst, exist_ok=True)
-            with open(src, "rb") as s, open(os.path.join(dst, os.path.basename(src)), "wb") as d: d.write(s.read())
-        messagebox.showinfo("完成", f"{asset.get('name')} 已应用。")
+        try:
+            asset_type = asset.get("type")
+
+            # 1. 检查同类原素材,并移除
+            old_asset_id = jcy_config.ASSET_CONFIG.get(asset_type)
+            if old_asset_id != 0:
+                old_asset = ASSET_DICT.get(old_asset_id)
+                if old_asset:
+                    result = self.controller.file_operations.remove_asset(old_asset)
+                    if not result.get("ok"):
+                        return messagebox.showerror("错误", result.get("message"))
+
+            # 2. 应用新素材
+            result = self.controller.file_operations.apply_asset(asset)
+            if result.get("ok"):
+                return messagebox.showinfo("完成", result.get("message"))
+            else:
+                return messagebox.showerror("错误", result.get("message"))
+
+        except Exception as e:
+            messagebox.showerror("错误", f"应用失败：{e}")
+        finally:
+            self.refresh_status(update_layout=False)
 
     def _remove_asset(self, asset):
-        count = 0
-        for f in asset.get("list", []):
-            full_path = os.path.join(self.mod_root, f.get("path", ""), os.path.basename(f.get("file", "")))
-            if os.path.exists(full_path):
-                os.remove(full_path)
-                count += 1
-        messagebox.showinfo("完成", f"已移除 {count} 个文件。")
+        try:
+            result = self.controller.file_operations.remove_asset(asset)
+            if result.get("ok"):
+                return messagebox.showinfo("完成", result.get("message"))
+            else:
+                return messagebox.showerror("错误", result.get("message"))
+        except Exception as e:
+            messagebox.showerror("错误", f"移除失败：{e}")
+        finally:
+            self.refresh_status(update_layout=False)
 
     def _delete_asset(self, asset):
         asset_dir = self.asset_dir.get().strip()
-        zip_path = os.path.join(asset_dir, asset.get("file", ""))
-        if os.path.exists(zip_path) and messagebox.askyesno("确认", f"确定要删除 {asset.get('file')} 吗？"):
-            os.remove(zip_path)
-            messagebox.showinfo("完成", "素材包已删除。")
-        self.refresh_status()
-
-    def _load_settings(self):
-        if os.path.exists(USER_SETTINGS_PATH):
-            with open(USER_SETTINGS_PATH, "r", encoding="utf-8") as f: return json.load(f)
-        return {}
+        zip_path = os.path.join(asset_dir, asset.get('file',''))
+        if os.path.exists(zip_path) and messagebox.askyesno('确认', f"确定要删除 {asset.get('file')} 吗？"):
+            try:
+                os.remove(zip_path)
+                jcy_config.ASSET_PACKAGE[asset["id"]] = False
+                messagebox.showinfo('完成', '素材包已删除。')
+            except Exception as e:
+                messagebox.showerror('错误', f'删除失败：{e}')
+        self.refresh_status(update_layout=False)
 
 
 class ItemFilterPanel(tk.Frame):

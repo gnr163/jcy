@@ -69,6 +69,8 @@ JCY_DOT_MPQ = "jcy.mpq"
 DOT_VERSION = ".version"
 # 账号文件
 ACCOUNTS_JSON = "accounts.json"
+# 素材配置
+ASSETS_JSON = "assets.json"
 # 用户配置文件
 SETTINGS_JSON = "settings.json"
 # 恐怖地带文件
@@ -95,7 +97,9 @@ CONFIG_PATH = get_config_path()
 VERSION_PATH = CONFIG_PATH / DOT_VERSION
 # 账号文件
 ACCOUNTS_PATH = CONFIG_PATH / ACCOUNTS_JSON
+# 素材配置文件
 # 用户配置文件
+ASSETS_PATH = CONFIG_PATH / ASSETS_JSON
 USER_SETTINGS_PATH = CONFIG_PATH / SETTINGS_JSON
 # 恐怖地带文件
 TERROR_ZONE_PATH = CONFIG_PATH / TERROR_ZONE_JSON
@@ -166,7 +170,6 @@ def merge_configs(default: dict, user: dict) -> dict:
 
     return merge(default, user)
 
-
 # 导出所有需要的符号
 __all__ = [
     'get_config_path',
@@ -198,6 +201,7 @@ __all__ = [
     'DEFAULT_SETTINGS_PATH',
     'HANDLE64_PATH',
     'MOD_PATH',
+    'ASSETS_PATH',
     
     'ensure_appdata_files',
     'load_default_config',

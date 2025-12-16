@@ -29,10 +29,10 @@ LANG = None
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.3.4"
+APP_VERSION = "v1.3.5"
 
 # 发布日期
-APP_DATE = "20251211"
+APP_DATE = "20251216"
 
 # 控制器全称
 APP_FULL_NAME = f"{APP_NAME}_{APP_VERSION}"
@@ -155,6 +155,24 @@ UPSTAIRS_POINTER = "UpstairsPointer"
 DOWNSTAIRS_POINTER = "DownstairsPointer"
 MINI_CUBE = "MiniCube"
 # Function Identifier -->
+
+# Assets
+GAME_MODEL = "GameModel"
+RUNE_SKIN = "RuneSkin"
+SKILL_SKIN = "SkillSkin"
+FONT_TYPE = "FontType"
+ACT1_HIRE = "Act1Hire"
+ACT2_HIRE = "Act2Hire"
+ACT3_HIRE = "Act3Hire"
+ACT5_HIRE1 = "Act5Hire1"
+ACT5_HIRE2 = "Act5Hire2"
+APPLY_METHOD = "apply_method"
+REMOVE_METHOD = "remove_method"
+MODIFY_FILENAME_BY_SETTINGS = "modify_filename_by_settings"
+MODIFY_FILENAME_BY_ASSET = "modify_filename_by_asset"
+MODIFY_EXCEL = "modify_excel"
+
+
 
 # <!-- Controller Type
 RADIO = "RadioGroup"
@@ -1706,6 +1724,20 @@ __all__ = [
     'UPSTAIRS_POINTER',
     'DOWNSTAIRS_POINTER',
     'MINI_CUBE',
+    'GAME_MODEL',
+    'RUNE_SKIN',
+    'SKILL_SKIN',
+    'FONT_TYPE',
+    'ACT1_HIRE',
+    'ACT2_HIRE',
+    'ACT3_HIRE',
+    'ACT5_HIRE1',
+    'ACT5_HIRE2',
+    'APPLY_METHOD',
+    'REMOVE_METHOD',
+    'MODIFY_FILENAME_BY_SETTINGS',
+    'MODIFY_FILENAME_BY_ASSET',
+    'MODIFY_EXCEL',
     'init_global_dict',
     'translate',
 ]

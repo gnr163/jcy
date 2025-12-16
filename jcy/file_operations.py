@@ -4,9 +4,14 @@ import os
 import shutil
 import re
 import time
+from jcy_assets import *
 from jcy_constants import *
 from jcy_paths import *
 from jcy_element import *
+from jcy_utils import *
+import jcy_config
+
+import requests, zipfile, tempfile
 
 
 class FileOperations:
@@ -15,11 +20,264 @@ class FileOperations:
     """
     def __init__(self, controller):
         self.controller = controller
+        self.method_dict = {
+            MODIFY_FILENAME_BY_SETTINGS: self.modify_filename_by_settings,
+            MODIFY_FILENAME_BY_ASSET: self.modify_filename_by_asset,
+            MODIFY_EXCEL: self.modify_excel,
+        }
+
 
     def void(self, param):
         "空方法"
         return (0, 0)
     
+    def load_asset_config(self) -> dict:
+        """加载素材包配置"""
+        if os.path.exists(ASSETS_PATH):
+            # 文件存在，直接读取
+            with open(ASSETS_PATH, 'r', encoding="utf-8") as f:
+                jcy_config.ASSET_CONFIG = json.load(f)
+        return jcy_config.ASSET_CONFIG
+
+
+    def save_asset_config(self):
+        """保存素材包配置"""
+        with open(ASSETS_PATH, 'w', encoding="utf-8") as f:
+            json.dump(jcy_config.ASSET_CONFIG, f, ensure_ascii=False, indent=2)
+
+    
+    def scan_asset_package(self):
+        """扫描素材包"""
+        asset_dir = self.controller.current_states.get(ASSET_PATH)
+        if not asset_dir:
+            return
+        
+        jcy_config.ASSET_PACKAGE.clear()
+        jcy_config.ASSET_COUNT.clear()
+
+        for asset in ASSETS:
+            asset_id = asset["id"]
+            asset_type = asset["type"]
+            asset_size = asset.get("size", 0) 
+            asset_md5 = asset.get("md5", "")
+            asset_file = asset.get("file", "")
+            asset_path = os.path.join(asset_dir, asset_file)
+
+            jcy_config.ASSET_PACKAGE[asset_id] =  (
+                os.path.exists(asset_path) 
+                and os.path.getsize(asset_path) == asset_size
+                and check_file_md5(asset_path, asset_md5) 
+            )
+
+            
+            jcy_config.ASSET_COUNT[asset_type] = (
+                jcy_config.ASSET_COUNT.get(asset_type, 0) + 1
+            )
+
+
+    def apply_asset(self, asset: dict) -> dict:
+        """素材包-应用"""
+
+        asset_id = asset.get("id")
+        asset_type = asset.get("type")
+        asset_dir = self.controller.current_states.get(ASSET_PATH)
+
+        zip_file = asset.get("file", "")
+        zip_path = os.path.join(asset_dir, zip_file)
+
+        # 1. 先检查 zip 包是否存在
+        if not os.path.exists(zip_path):
+            return err_result(f"文件:{zip_path} 不存在, 请先下载素材包.")
+
+        # 2. 检查 zip 包大小是否一致
+        expected_size = asset.get("size", 0)
+        if expected_size and os.path.getsize(zip_path) != expected_size:
+            return err_result(f"素材包容量不一致，请重新下载更新素材包.")
+
+        # 3. 检查 zip 包 MD5 是否一致
+        zip_md5 = asset.get("md5", "")
+        if zip_md5 and not check_file_md5(zip_path, zip_md5):
+            return err_result(f"素材包 MD5 校验失败，请重新下载更新素材包.")
+
+        # 4. 解压到临时目录
+        tmp_dir = tempfile.mkdtemp(prefix="mod_apply_")
+
+        try:
+            with zipfile.ZipFile(zip_path, "r") as zf:
+                zf.extractall(tmp_dir)
+
+            # 5. 素材包文件复制到 mod
+            for f in asset.get("list", []):
+                src = os.path.join(tmp_dir, f)
+                dst = os.path.join(MOD_PATH, f)
+                # 创建目录, 如果不存在
+                dst_dir = os.path.dirname(dst)
+                os.makedirs(dst_dir, exist_ok=True)
+                shutil.copy2(src, dst)
+
+            # 6. 调用素材"应用"方法
+            apply_method = asset.get(APPLY_METHOD)
+            if apply_method:
+                self.asset_execute(apply_method)
+            
+            # 7. 保存素材配置
+            jcy_config.ASSET_CONFIG[asset_type] = asset_id
+            self.save_asset_config()
+
+            return ok_result(f"{asset.get('name')} 已应用.")
+        except Exception as e:
+            print(f"[ERROR] 应用素材 {asset.get('name')} 失败：{e}")
+            return err_result(f"应用失败：{e}")
+        finally:
+            # 8. 删除临时目录（确保清理）
+            shutil.rmtree(tmp_dir, ignore_errors=True)
+
+    
+    def remove_asset(self, asset: dict) -> dict:
+        """素材包-移除"""
+        asset_type = asset.get("type")
+
+        # 1.调用素材"移除"方法
+        remove_method = asset.get(REMOVE_METHOD)
+        if remove_method:
+            self.asset_execute(remove_method)
+        
+        # 2.从mod移除素材包文件
+        for f in asset.get('list', []):
+            full_path = os.path.join(MOD_PATH, f)
+            if os.path.exists(full_path):
+                try:
+                    os.remove(full_path)
+                except Exception:
+                    pass
+        
+        # 3. 保存素材配置
+        jcy_config.ASSET_CONFIG[asset_type] = 0
+        self.save_asset_config()
+
+        return ok_result(f"{asset.get('name')} 已移除")
+
+
+    def asset_execute(self, methods: list):
+        """调用素材方法, 静默执行&打印异常"""
+        for item in methods:
+            name = item.get("method")
+            params = item.get("params")
+
+            func = self.method_dict.get(name)
+            if not func:
+                print(f"asset_execute -> unknown method: {name}")
+            
+            result = func(params)
+            if not result.get("ok"):
+                print(f"asset_execute -> {name} -> {result.get("message")}")
+
+
+    def modify_excel(self, params: dict) -> dict:
+        """修改Excel(txt)文件"""
+        _file = params.get("file")
+        _key = params.get("key")
+        _records = params.get("records")
+
+        if not _file:
+            return err_result(f"file is None.")
+        if not _key:
+            return err_result(f"key is None.")
+        if not _records:
+            return err_result(f"records is None.")
+        
+        try:
+            path = os.path.join(MOD_PATH, _file)
+
+            rows = []
+            with open(path, "r", encoding="utf-8") as f:
+                reader = csv.DictReader(f, delimiter="\t")
+                fieldnames = reader.fieldnames
+                rows = list(reader)
+
+            for row in rows:
+                key = row[_key]
+                if key in _records:
+                    values = _records.get(key)
+                    for k, v in values.items():
+                        row[k] = v
+
+            with open(path, "w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter='\t')
+                writer.writeheader()
+                writer.writerows(rows)
+        except Exception as e:
+            return err_result(f"exception, e:{e}")
+
+
+    def modify_filename_by_settings(self, params: dict) -> dict:
+        try:
+            _key = params.get("key")
+            _value = params.get("value")
+            _records = params.get("records")
+            _values = self.controller.current_states.get(_key)
+            isEnabled = _value in _values
+            result = self.common_rename(_records, isEnabled)
+            count = result[0]
+            total = result[1]
+            if count != total:
+                return err_result(f"modify: {count}/{total}")
+        except Exception as e:
+            return err_result(f"exception, e:{e}")
+    
+
+    def modify_filename_by_asset(self, params: dict) -> dict:
+        try:
+            _key = params.get("key");
+            asset = ASSET_DICT.get(_key)
+            files = asset.get("list")
+            result = self.common_rename(files, True)
+            count = result[0]
+            total = result[1]
+            if count != total:
+                return err_result(f"modify: {count}/{total}")
+        except Exception as e:
+            return err_result(f"exception, e:{e}")
+
+
+    def modify_model(self, params: dict) -> bool:
+        """修改模型文件"""
+        _file = params.get("file")
+        _key = params.get("key")
+        _records = params.get("records")
+
+        if not _file:
+            return err_result(f"call modify_excel failed, file is None.")
+        if not _key:
+            return err_result(f"call modify_excel failed, key is None.")
+        if not _records:
+            return err_result(f"call modify_excel failed, records is None.")
+        
+        try:
+            path = os.path.join(MOD_PATH, _file)
+
+            rows = []
+            with open(path, "r", encoding="utf-8") as f:
+                reader = csv.DictReader(f, delimiter="\t")
+                fieldnames = reader.fieldnames
+                rows = list(reader)
+
+
+            for row in rows:
+                key = row[_key]
+                if key in _records:
+                    values = _records.get(key)
+                    for k, v in values.items():
+                        row[k] = v
+            with open(path, "w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter='\t')
+                writer.writeheader()
+                writer.writerows(rows)
+
+            return ok_result(f"call modify_excel success.")
+        except Exception as e:
+            return err_result(f"call modify_excel exception, e:{e}")
+
     def common_submit(self, fid, param):
         """无具体操作, 返回fid被修改"""
         _config = {}
@@ -532,15 +790,7 @@ class FileOperations:
             # A1白毛罗格
             "1" : [],
             # A2女性佣兵
-            "2":[
-                # 佣兵昵称
-                r"data/local/lng/strings/mercenaries.json",
-                # 佣兵头像
-                r"data/hd/global/ui/hireables/act2hireableicon.lowend.sprite",
-                r"data/hd/global/ui/hireables/act2hireableicon.sprite",
-                # 佣兵模型
-                r"data/hd/character/enemy/act2hire.json",
-            ],
+            "2":[],
             # A5火焰刀佣兵
             "5":[
                 r"data/hd/character/enemy/act5hire1.json",
@@ -553,29 +803,6 @@ class FileOperations:
         for key, files in _files.items():
             sub = self.common_rename(files, key in keys)
             funcs.append(sub)
-
-        A2_female = "2" in keys
-        
-        # ---------- A2女性佣兵 ----------  sounds.txt
-        data = {
-            "guard_death_hd1": A2_female,
-            "guard_death_hd2": A2_female,
-            "guard_death_hd3": A2_female,
-            "guard_hit_hd1": A2_female,
-            "guard_hit_hd2": A2_female,
-            "guard_hit_hd3": A2_female,
-            "guard_hit_hd4": A2_female,
-        }
-        sub = self.modify_custom_sounds(data)
-        funcs.append(sub)
-        
-        # ---------- A2女性佣兵 ----------  hirelingdesc.txt
-        data2 = {
-            "act2hire": A2_female
-        }
-        sub2 = self.modify_hirelingdesc(data2)
-        funcs.append(sub2)
-
 
         results = [f for f in funcs]
         summary = tuple(sum(values) for values in zip(*results))

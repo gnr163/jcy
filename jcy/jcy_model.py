@@ -417,8 +417,6 @@ class FeatureConfig:
                             "text": "佣兵-皮肤",
                             "colspan": 50,
                             "params": {
-                                "1": "A1白毛罗格",
-                                "2": "A2女性佣兵",
                                 "5": "A5火焰刀佣兵"
                             }
                         },
