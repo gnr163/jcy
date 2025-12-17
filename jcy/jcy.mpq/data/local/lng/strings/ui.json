@@ -21660,8 +21660,8 @@
   {
     "id": 26414,
     "Key": "HUDWarningsShowClockFormat",
-    "enUS": "%I:%M %p",
-    "zhTW": "%I：%M %p",
+    "enUS": "%Y-%m-%d %H:%M:%S",
+    "zhTW": "%Y-%m-%d %H:%M:%S",
     "deDE": "%H:%M",
     "esES": "%H:%M",
     "frFR": "%I:%M %p",
@@ -21672,7 +21672,7 @@
     "jaJP": "%I:%M %p",
     "ptBR": "%I:%M %p",
     "ruRU": "%I:%M %p",
-    "zhCN": "%I:%M %p"
+    "zhCN": "%Y-%m-%d %H:%M:%S"
   },
   {
     "id": 26417,

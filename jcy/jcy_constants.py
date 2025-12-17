@@ -29,10 +29,10 @@ LANG = None
 APP_NAME = "jcy控制器"
 
 # MOD版本
-APP_VERSION = "v1.3.5"
+APP_VERSION = "v1.3.5.1"
 
 # 发布日期
-APP_DATE = "20251216"
+APP_DATE = "20251217"
 
 # 控制器全称
 APP_FULL_NAME = f"{APP_NAME}_{APP_VERSION}"
@@ -164,8 +164,7 @@ FONT_TYPE = "FontType"
 ACT1_HIRE = "Act1Hire"
 ACT2_HIRE = "Act2Hire"
 ACT3_HIRE = "Act3Hire"
-ACT5_HIRE1 = "Act5Hire1"
-ACT5_HIRE2 = "Act5Hire2"
+ACT5_HIRE = "Act5Hire"
 APPLY_METHOD = "apply_method"
 REMOVE_METHOD = "remove_method"
 MODIFY_FILENAME_BY_SETTINGS = "modify_filename_by_settings"
@@ -1731,8 +1730,7 @@ __all__ = [
     'ACT1_HIRE',
     'ACT2_HIRE',
     'ACT3_HIRE',
-    'ACT5_HIRE1',
-    'ACT5_HIRE2',
+    'ACT5_HIRE',
     'APPLY_METHOD',
     'REMOVE_METHOD',
     'MODIFY_FILENAME_BY_SETTINGS',

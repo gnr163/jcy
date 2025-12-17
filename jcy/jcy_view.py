@@ -1537,7 +1537,7 @@ class AssetManagerUI(tk.Frame):
                 asset_package_exist = jcy_config.ASSET_PACKAGE.get(asset_id, False)
 
                 frame.buttons['apply'].config(
-                    state=tk.NORMAL if not asset_applied else tk.DISABLED
+                    state=tk.NORMAL if asset_package_exist else tk.DISABLED
                 )
                 frame.buttons['remove'].config(
                     state=tk.NORMAL if asset_applied else tk.DISABLED

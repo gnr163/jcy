@@ -115,8 +115,8 @@ class FileOperations:
                 os.makedirs(dst_dir, exist_ok=True)
                 shutil.copy2(src, dst)
 
-            # 6. 调用素材"应用"方法
-            apply_method = asset.get(APPLY_METHOD)
+            # 6. 调用素材应用方法
+            apply_method = asset.get(APPLY_METHOD, [])
             if apply_method:
                 self.asset_execute(apply_method)
             
@@ -167,7 +167,6 @@ class FileOperations:
             func = self.method_dict.get(name)
             if not func:
                 print(f"asset_execute -> unknown method: {name}")
-            
             result = func(params)
             if not result.get("ok"):
                 print(f"asset_execute -> {name} -> {result.get("message")}")
@@ -206,6 +205,8 @@ class FileOperations:
                 writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter='\t')
                 writer.writeheader()
                 writer.writerows(rows)
+            
+            return ok_result(f"modify_excel success")
         except Exception as e:
             return err_result(f"exception, e:{e}")
 
@@ -220,7 +221,9 @@ class FileOperations:
             result = self.common_rename(_records, isEnabled)
             count = result[0]
             total = result[1]
-            if count != total:
+            if count == total:
+                return ok_result(f"modify: {count}/{total}")
+            else:
                 return err_result(f"modify: {count}/{total}")
         except Exception as e:
             return err_result(f"exception, e:{e}")
@@ -234,49 +237,13 @@ class FileOperations:
             result = self.common_rename(files, True)
             count = result[0]
             total = result[1]
-            if count != total:
+            if count == total:
+                return ok_result(f"modify: {count}/{total}")
+            else:
                 return err_result(f"modify: {count}/{total}")
         except Exception as e:
             return err_result(f"exception, e:{e}")
 
-
-    def modify_model(self, params: dict) -> bool:
-        """修改模型文件"""
-        _file = params.get("file")
-        _key = params.get("key")
-        _records = params.get("records")
-
-        if not _file:
-            return err_result(f"call modify_excel failed, file is None.")
-        if not _key:
-            return err_result(f"call modify_excel failed, key is None.")
-        if not _records:
-            return err_result(f"call modify_excel failed, records is None.")
-        
-        try:
-            path = os.path.join(MOD_PATH, _file)
-
-            rows = []
-            with open(path, "r", encoding="utf-8") as f:
-                reader = csv.DictReader(f, delimiter="\t")
-                fieldnames = reader.fieldnames
-                rows = list(reader)
-
-
-            for row in rows:
-                key = row[_key]
-                if key in _records:
-                    values = _records.get(key)
-                    for k, v in values.items():
-                        row[k] = v
-            with open(path, "w", encoding="utf-8", newline="") as f:
-                writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter='\t')
-                writer.writeheader()
-                writer.writerows(rows)
-
-            return ok_result(f"call modify_excel success.")
-        except Exception as e:
-            return err_result(f"call modify_excel exception, e:{e}")
 
     def common_submit(self, fid, param):
         """无具体操作, 返回fid被修改"""
@@ -3576,7 +3543,7 @@ class FileOperations:
                 rec = data["data"][0]
                 raw_time = rec.get("time")
                 zone_key = rec.get("zone")
-                formatted_time = time.strftime('%I:%M %p', time.localtime(raw_time)) if raw_time else "未知时间"
+                formatted_time = time.strftime('%Y-%m-%d %H', time.localtime(raw_time)) if raw_time else "未知时间"
                 zone_info = TERROR_ZONE_DICT.get(zone_key, {})
                 language = self.controller.current_states[TERROR_ZONE_LANGUAGE]
                 zone_name = zone_info.get(language) if zone_info else f"未知区域（{zone_key}）"
