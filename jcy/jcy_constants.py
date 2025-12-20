@@ -139,6 +139,7 @@ EQIUPMENT_SETTING = "EquipmentSetting"
 AFFIX_EFFECTS = "AffixEffects"
 UNIQUE_EFFECTS = "UniqueEffects"
 SETS_EFFECTS = "SetsEffects"
+UNIQUE_COLOR = "UniqueColor"
 MODEL_EFFECTS = "ModelEffects"
 RUNE_SIZE = "RuneSize"
 ITEM_NOTIFICATION = "ItemNotification"
@@ -154,6 +155,7 @@ MISSION_POINTER = "MissionPointer"
 UPSTAIRS_POINTER = "UpstairsPointer"
 DOWNSTAIRS_POINTER = "DownstairsPointer"
 MINI_CUBE = "MiniCube"
+ESC_SETTING = "EscSetting"
 # Function Identifier -->
 
 # Assets
@@ -1688,6 +1690,7 @@ __all__ = [
     'AFFIX_EFFECTS',
     'UNIQUE_EFFECTS',
     'SETS_EFFECTS',
+    'UNIQUE_COLOR',
     'MODEL_EFFECTS',
     'RUNE_SIZE',
     'ITEM_NOTIFICATION',
@@ -1723,6 +1726,7 @@ __all__ = [
     'UPSTAIRS_POINTER',
     'DOWNSTAIRS_POINTER',
     'MINI_CUBE',
+    'ESC_SETTING',
     'GAME_MODEL',
     'RUNE_SKIN',
     'SKILL_SKIN',

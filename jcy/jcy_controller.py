@@ -259,6 +259,8 @@ class FeatureController:
             SETS_EFFECTS: self.file_operations.select_equipment_effects,
             # 装备-词缀特效
             AFFIX_EFFECTS: self.file_operations.select_affix_effects,
+            # 暗金/独特装备-染色
+            UNIQUE_COLOR: self.file_operations.modify_unique_color,
             # 装备-模型特效
             MODEL_EFFECTS: self.file_operations.select_model_eccects,
             # 22#+符文名称大小(越大越容易发现/选中)
@@ -284,6 +286,8 @@ class FeatureController:
             DOWNSTAIRS_POINTER: self.file_operations.modify_downstairs_pointer,
             # 迷你盒子位置
             MINI_CUBE: self.file_operations.modify_mini_cube,
+            # ESC设置
+            ESC_SETTING: self.file_operations.modify_esc_func,
         }
 
 

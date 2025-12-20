@@ -1425,6 +1425,57 @@ class FileOperations:
         return (count, 1)
 
 
+    def modify_unique_color(self, keys: list):
+        """暗金/独特装备染色"""
+        if keys is None:
+            return (0, 0)
+
+        count = 0
+        total = 1
+
+        params = {
+            "Harlequin Crest": {
+                "chrtransform":	"lpur" if "1" in keys else "cgrn",
+                "invtransform":	"lpur" if "1" in keys else "cgrn",
+            },
+            "Ormus' Robes": {
+                "chrtransform":	"lpur" if "2" in keys else "blac",
+                "invtransform":	"lpur" if "2" in keys else "blac",
+            },
+            "Arachnid Mesh": {
+                "chrtransform":	"lpur" if "3" in keys else "blac",
+                "invtransform":	"lpur" if "3" in keys else "blac",
+            },
+            "Gheed's Fortune": {
+                "chrtransform":	"lpur" if "4" in keys else "lgld",
+                "invtransform":	"lpur" if "4" in keys else "",
+            }
+        }
+
+        try:
+            # ---- modify uniqueitems.txt ----
+            rows = []
+            path = os.path.join(MOD_PATH, r"data/global/excel/uniqueitems.txt")
+            with open(path, "r", encoding="utf-8") as f:
+                reader = csv.DictReader(f, delimiter="\t")
+                rows = list(reader)
+
+            for row in rows:
+                index = row["index"]
+                if index in params:
+                    param = params.get(index)
+                    row["chrtransform"] = param["chrtransform"]
+                    row["invtransform"] = param["invtransform"]
+
+            with open(path, "w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=reader.fieldnames, delimiter='\t')
+                writer.writeheader()
+                writer.writerows(rows)
+            count += 1
+        except Exception as e:
+            print(e)
+        return (count, total)
+
     def select_model_eccects(self, keys: list):
         """装备-模型特效"""
         if list is None:
@@ -2712,10 +2763,7 @@ class FileOperations:
                 r"data/global/ui/layouts/mainmenupanelhd.json",
             ],
             # 单击Esc退出游戏
-            "2": [
-                r"data/global/ui/layouts/pauselayout.json", 
-                r"data/global/ui/layouts/pauselayouthd.json",
-            ],
+            "2": [],
             # 更大的好友菜单
             "3": [
                 r"data/global/ui/layouts/contextmenuhd.json",
@@ -3924,6 +3972,60 @@ class FileOperations:
                     
             with open(cube_path, 'w', encoding="utf-8") as f:
                 json.dump(cube_json, f, ensure_ascii=False, indent=4)
+            count += 1
+        except Exception as e:
+            print(e)
+
+        return (count, total)
+
+
+    def modify_esc_func(sefl, radio: str = "0"):
+        """ESC设定"""
+
+        count = 0
+        total = 2
+
+        params = {
+            "0": (True, True, True, False, ""),
+            "1": (True, True, True, False, "PausePanelMessage:ExitGame"),
+            "2": (False, False, False, True, ""),
+        }
+
+        param = params.get(radio)
+        if not param:
+            return (count, total)
+        
+        try:
+            # ---- modify pauselayout.json ----
+            od_json = None
+            od_path = os.path.join(MOD_PATH, "data/global/ui/layouts/pauselayout.json")
+            with open(od_path, "r", encoding="utf-8") as f:
+                od_json = json.load(f)
+
+            od_json["children"][-1]["children"][0]["children"][0]["fields"]["acceptsReturnKey"] = param[0]
+            od_json["children"][-1]["children"][0]["children"][0]["fields"]["focusOnMouseOver"] = param[1]
+            od_json["children"][-1]["children"][1]["children"][0]["fields"]["focusOnMouseOver"] = param[2]
+            od_json["children"][-1]["children"][1]["children"][0]["fields"]["acceptsEscKeyEverywhere"] = param[3]
+            od_json["children"][-1]["children"][-1]["fields"]["message"] = param[4]
+
+            with open(od_path, 'w', encoding="utf-8") as f:
+                json.dump(od_json, f, ensure_ascii=False, indent=4)
+            count += 1
+
+            # ---- modify pauselayouthd.json ----
+            hd_json = None
+            hd_path = os.path.join(MOD_PATH, "data/global/ui/layouts/pauselayouthd.json")
+            with open(hd_path, "r", encoding="utf-8") as f:
+                hd_json = json.load(f)
+
+            hd_json["children"][3]["children"][0]["children"][0]["fields"]["acceptsReturnKey"] = param[0]
+            hd_json["children"][3]["children"][0]["children"][0]["fields"]["focusOnMouseOver"] = param[1]
+            hd_json["children"][3]["children"][1]["children"][0]["fields"]["focusOnMouseOver"] = param[2]
+            hd_json["children"][3]["children"][1]["children"][0]["fields"]["acceptsEscKeyEverywhere"] = param[3]
+            hd_json["children"][-1]["fields"]["message"] = param[4]
+
+            with open(hd_path, 'w', encoding="utf-8") as f:
+                json.dump(hd_json, f, ensure_ascii=False, indent=4)
             count += 1
         except Exception as e:
             print(e)
