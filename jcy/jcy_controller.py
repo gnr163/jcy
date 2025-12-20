@@ -151,7 +151,7 @@ class FeatureController:
             if dialog:
                 dialog.log("📂 同步配置到 Mod 文件...")
 
-            # 同步 Mod 文件
+            # 同步配置到 Mod 文件
             self._sync_config_mods(dialog)
 
             # 应用素材包

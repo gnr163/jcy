@@ -151,24 +151,46 @@ def load_user_config() -> dict:
 
 def merge_configs(default: dict, user: dict) -> dict:
     """
-    以 user 配置优先合并 default 配置
-    - 只保留 default 中存在的键，顺序跟 default 一致
+    合并配置：
+    - 顶级：以 default 为 schema，user 多的删，少的补
+    - 非顶级 dict：保留 user 的所有 key，仅补 default 中缺失的
+    - user 优先
     """
-    def merge(d_def, d_user):
-        merged = {}
-        for key in d_def:
-            def_val = d_def[key]
-            user_val = d_user.get(key, None)
+
+    def merge(d_def, d_user, *, is_root=False):
+        if not isinstance(d_user, dict):
+            d_user = {}
+
+        result = {}
+
+        # 1️⃣ default 中的 key：决定“结构”
+        for key, def_val in d_def.items():
+            user_val = d_user.get(key)
 
             if isinstance(def_val, dict):
-                # 递归合并 dict
-                merged[key] = merge(def_val, user_val if isinstance(user_val, dict) else {})
+                if isinstance(user_val, dict):
+                    # 非顶级：不裁剪 user
+                    result[key] = merge(
+                        def_val,
+                        user_val,
+                        is_root=False
+                    )
+                else:
+                    # user 没有 or 类型不对 → 用 default
+                    result[key] = def_val
             else:
-                # 用户配置存在则使用，否则用默认
-                merged[key] = user_val if key in d_user else def_val
-        return merged
+                # 普通值：user 有就用 user
+                result[key] = user_val if key in d_user else def_val
 
-    return merge(default, user)
+        # 2️⃣ 仅在非 root：保留 user 多出来的 key
+        if not is_root:
+            for key, val in d_user.items():
+                if key not in result:
+                    result[key] = val
+
+        return result
+
+    return merge(default, user, is_root=True)
 
 # 导出所有需要的符号
 __all__ = [

@@ -262,7 +262,6 @@ class FileOperations:
                     return (0, 0, f"{model["text"]} = {model["params"][param]}\n")
 
 
-
     def common_encode_private_use_chars(self, text):
         r"""
         替换所有私用区字符为 \uXXXX 形式
@@ -2481,7 +2480,7 @@ class FileOperations:
                     item[ZHCN] = item[netease]
                     # 国际服本地化
                     item[ZHTW] = item[battlenet]
-                    
+                    count += 1
 
             except Exception as e:
                 print(e)
@@ -3127,11 +3126,8 @@ class FileOperations:
 
         # 文件
         _files = {
-            # 经验条彩色格式化
-            "2": [
-                r"data/hd/global/ui/panel/hud_02/experience_bar.lowend.sprite",
-                r"data/hd/global/ui/panel/hud_02/experience_bar.sprite",
-            ],
+            # 隐藏生命/魔法抬头
+            "2": [],
             # 左键快速购买
             "3": [
                 r"data/global/ui/layouts/vendorpanellayouthd.json",
@@ -3329,9 +3325,31 @@ class FileOperations:
             funcs.append(sub)
         funcs.append(sub1)
 
+        hud_handler = "2" in keys
+        # ---- 修改 ui.json ----
+        ui_json = None
+        ui_path = os.path.join(MOD_PATH, r"data/local/lng/strings/ui.json")
+        with open(ui_path, 'r', encoding='utf-8-sig') as f:
+                ui_json = json.load(f)
+        
+        for obj in ui_json:
+            if obj.get("Key") == "panelhealth":
+                for k, v in UI_PANEL_HEALTH.items():
+                    if k in obj:
+                        obj[k] = obj[k].replace(v, "") if hud_handler else v + obj[k].replace(v, "")
+
+            if obj.get("Key") == "panelmana":
+                for k, v in UI_PANEL_MANA.items():
+                    if k in obj:
+                        obj[k] = obj[k].replace(v, "") if hud_handler else v + obj[k].replace(v, "")
+                break
+
+        with open(ui_path, 'w', encoding="utf-8-sig") as f:
+            json.dump(ui_json, f, ensure_ascii=False, indent=2)
+        funcs.append((1, 1))
+
         results = [f for f in funcs]
         summary = tuple(sum(values) for values in zip(*results))
-        
         return summary
 
 

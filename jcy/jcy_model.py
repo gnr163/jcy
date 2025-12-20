@@ -84,7 +84,7 @@ class FeatureConfig:
                     ]
                 },
                 {
-                    "text": "环境设置",
+                    "text": "游戏&环境",
                     "children": [
                         {
                             "fid": GAME_SETTING,
@@ -106,10 +106,45 @@ class FeatureConfig:
                             "colspan": 100,
                             "params": {
                                 "1": "隐藏任务按钮",
-                                "2": "经验条彩色格式化",
+                                "2": "隐藏生命/魔法抬头",
                                 "3": "左键快速购买",
                                 "4": "经验/宝石祭坛特效标识",
                                 "5": "交互对象增加蓝色火苗"
+                            }
+                        },
+                        {
+                            "fid": CONTROLS_SETTING,
+                            "type": CHECK,
+                            "text": "控件设置",
+                            "colspan": 100,
+                            "params": {
+                                "1": "正副手提示",
+                                "2": "默认开启迷你血条",
+                                "3": "默认开启MINI盒子",
+                                "4": "H键帮助面板+字典"
+                            }
+                        },
+                        {
+                            "fid": ESC_SETTING,
+                            "type": RADIO,
+                            "text": "ESC设置",
+                            "colspan": 40,
+                            "params": {
+                                "0": "默认",
+                                "1": "单击退出",
+                                "2": "双击退出",
+                            }
+                        },
+                        {
+                            "fid": MINI_CUBE,
+                            "type": RADIO,
+                            "text": "迷你盒子位置",
+                            "colspan": 60,
+                            "params": {
+                                "1": "包裹左侧",
+                                "2": "包裹右侧",
+                                "3": "左下角",
+                                "4": "右下角",
                             }
                         },
                         {
@@ -137,16 +172,7 @@ class FeatureConfig:
                             }
                         },
                         {
-                            "fid": CONTROLS_SETTING,
-                            "type": CHECK,
-                            "text": "控件设置",
-                            "colspan": 100,
-                            "params": {
-                                "1": "正副手提示",
-                                "2": "默认开启迷你血条",
-                                "3": "默认开启MINI盒子",
-                                "4": "H键帮助面板+字典"
-                            }
+                            "type": SEPARATOR
                         },
                         {
                             "fid": DISABLE_EFFECTS,
@@ -217,22 +243,10 @@ class FeatureConfig:
                                 "2": "绿环指引",
                             }
                         },
-                        {
-                            "fid": MINI_CUBE,
-                            "type": RADIO,
-                            "text": "迷你盒子位置",
-                            "colspan": 100,
-                            "params": {
-                                "1": "包裹左侧",
-                                "2": "包裹右侧",
-                                "3": "左下角",
-                                "4": "右下角",
-                            }
-                        },
                     ]
                 },
                 {
-                    "text": "角色设置",
+                    "text": "角色&技能",
                     "children": [
                         {
                             "fid": CHARACTER_EFFECTS,
@@ -356,7 +370,7 @@ class FeatureConfig:
                     ]
                 },
                 {
-                    "text": "怪物设置",
+                    "text": "佣兵&怪物",
                     "children": [
                         {
                             "fid": MERCENARY_LOCATION,
@@ -461,7 +475,7 @@ class FeatureConfig:
                     ]
                 },
                 {
-                    "text": "物品设置",
+                    "text": "装备&物品",
                     "children": [
                         {
                             "fid": BASE_EFFECTS,
