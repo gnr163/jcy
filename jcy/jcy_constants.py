@@ -123,6 +123,7 @@ PAL_SETTING = "PaladinSetting"
 BAR_SETTING = "BarbarianSetting"
 DRU_SETTING = "DruidSetting"
 ASN_SETTING = "AssassinSetting"
+ASN_MARTIAL = "AssassinMartial"
 COMMON_SETTING = "CommonSetting"
 SKILL_OFF_SOUNDS = "SkillOffSounds"
 MERCENARY = "Mercenary"
@@ -167,6 +168,7 @@ ACT1_HIRE = "Act1Hire"
 ACT2_HIRE = "Act2Hire"
 ACT3_HIRE = "Act3Hire"
 ACT5_HIRE = "Act5Hire"
+HUD_SKIN = "HudSkin"
 APPLY_METHOD = "apply_method"
 REMOVE_METHOD = "remove_method"
 MODIFY_FILENAME_BY_SETTINGS = "modify_filename_by_settings"
@@ -1674,6 +1676,7 @@ __all__ = [
     'BAR_SETTING',
     'DRU_SETTING',
     'ASN_SETTING',
+    'ASN_MARTIAL',
     'COMMON_SETTING',
     'SKILL_OFF_SOUNDS',
     'MERCENARY',
@@ -1735,6 +1738,7 @@ __all__ = [
     'ACT2_HIRE',
     'ACT3_HIRE',
     'ACT5_HIRE',
+    'HUD_SKIN',
     'APPLY_METHOD',
     'REMOVE_METHOD',
     'MODIFY_FILENAME_BY_SETTINGS',

@@ -9,6 +9,7 @@ ASSETS_TYPE = [
     { "Key": ACT2_HIRE,     "zhCN": "A2佣兵皮肤" },
     # { "Key": ACT3_HIRE,     "zhCN": "A3佣兵皮肤" },
     # { "Key": ACT5_HIRE,     "zhCN": "A5佣兵皮肤" },
+    { "Key": HUD_SKIN, "zhCN": "HUD面板皮肤"},
     
 ]
 
@@ -1752,6 +1753,30 @@ ASSETS = [
             "data/hd/character/enemy/act5hire1.json",
             "data/hd/global/ui/hireables/barbhirable_icon.lowend.sprite",
             "data/hd/global/ui/hireables/barbhirable_icon.sprite",
+        ]
+    },
+    # HUD皮肤(800, 900)
+    {
+        "id": 801,
+        "name": "HUD皮肤_1",
+        "type": HUD_SKIN,
+        "author": "Icemint, Sandmann, Jhyun0512, Mardok, 살신e",
+        "description": "移除天使/恶魔雕像, 经验条刻度, 彩色经验条, 彩色体力条",
+        "source": "https://www.inven.co.kr/board/diablo2/5842/6759",
+        "url": "https://gitee.com/jcymeow/jcymod_d2r_assets/releases/download/v1.0.0/hudSkin1.zip",
+        "file": "hudSkin1.zip",
+        "image": "https://gitee.com/jcymeow/jcymod_d2r_assets/raw/master/hudSkin1.png",
+        "size": 1399629,
+        "md5": "92BE171BF388C23F44F2BFD9711AF658",
+        APPLY_METHOD: [],
+        REMOVE_METHOD: [],
+        "list": [
+            "data/hd/global/ui/panel/hud_02/experience_bar.lowend.sprite",
+            "data/hd/global/ui/panel/hud_02/experience_bar.sprite",
+            "data/hd/global/ui/panel/hud_02/front_panel.lowend.sprite",
+            "data/hd/global/ui/panel/hud_02/front_panel.sprite",
+            "data/hd/global/ui/panel/hud_02/stamina_bar.lowend.sprite",
+            "data/hd/global/ui/panel/hud_02/stamina_bar.sprite",
         ]
     },
 ]
