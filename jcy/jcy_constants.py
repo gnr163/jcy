@@ -22,6 +22,8 @@ ZHSGTW = "zhSGTW"
 
 LANGUAGES = [ZHCN2, ZHSGCN, ZHTW2, ZHSGTW, ENUS]
 
+UI_PANEL_HEALTH = {"enUS":"Life:","zhTW":"生命：","deDE":"Leben:","esES":"Vida:","frFR":"Vie :","itIT":"Vita:","koKR":"생명력:","plPL":"Zdrowie:","esMX":"Vida:","jaJP":"ライフ:","ptBR":"Vida:","ruRU":"Здоровье:","zhCN":"生命:"}
+UI_PANEL_MANA = {"enUS":"Mana:","zhTW":"法力：","deDE":"Mana:","esES":"Maná:","frFR":"Mana :","itIT":"Mana:","koKR":"마나:","plPL":"Mana:","esMX":"Maná:","jaJP":"マナ:","ptBR":"Mana:","ruRU":"Мана:","zhCN":"法力:"}
 
 LANG = None
 
@@ -1648,6 +1650,8 @@ __all__ = [
     'ZHSGTW',
     'ENUS',
     'LANGUAGES',
+    'UI_PANEL_HEALTH',
+    'UI_PANEL_MANA',
     'APP_NAME',
     'APP_VERSION',
     'APP_FULL_NAME',

@@ -102,7 +102,7 @@
                         },
                         "rect": {
                             "x": 5,
-                            "y": -50
+                            "y": 190
                         },
                         "fontType": "16pt",
                         "style": {
@@ -216,7 +216,7 @@
                         },
                         "rect": {
                             "x": 5,
-                            "y": -50
+                            "y": 190
                         },
                         "style": {
                             "pointSize": "$XMediumLargeFontSize",

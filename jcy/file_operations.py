@@ -3361,28 +3361,47 @@ class FileOperations:
             funcs.append(sub)
         funcs.append(sub1)
 
-        hud_handler = "2" in keys
-        # ---- 修改 ui.json ----
-        ui_json = None
-        ui_path = os.path.join(MOD_PATH, r"data/local/lng/strings/ui.json")
-        with open(ui_path, 'r', encoding='utf-8-sig') as f:
-                ui_json = json.load(f)
+        # ---- "6": "生命/魔法读数下移", ----
+        hud_handler = "6" in keys
         
-        for obj in ui_json:
-            if obj.get("Key") == "panelhealth":
-                for k, v in UI_PANEL_HEALTH.items():
-                    if k in obj:
-                        obj[k] = obj[k].replace(v, "") if hud_handler else v + obj[k].replace(v, "")
+        # modify ui.json
+        try:
+            ui_json = None
+            ui_path = os.path.join(MOD_PATH, r"data/local/lng/strings/ui.json")
+            with open(ui_path, 'r', encoding='utf-8-sig') as f:
+                    ui_json = json.load(f)
+            for obj in ui_json:
+                if obj.get("Key") == "panelhealth":
+                    for k, v in UI_PANEL_HEALTH.items():
+                        if k in obj:
+                            obj[k] = obj[k].replace(v, "") if hud_handler else v + obj[k].replace(v, "")
 
-            if obj.get("Key") == "panelmana":
-                for k, v in UI_PANEL_MANA.items():
-                    if k in obj:
-                        obj[k] = obj[k].replace(v, "") if hud_handler else v + obj[k].replace(v, "")
-                break
+                if obj.get("Key") == "panelmana":
+                    for k, v in UI_PANEL_MANA.items():
+                        if k in obj:
+                            obj[k] = obj[k].replace(v, "") if hud_handler else v + obj[k].replace(v, "")
+                    break
+            with open(ui_path, 'w', encoding="utf-8-sig") as f:
+                json.dump(ui_json, f, ensure_ascii=False, indent=2)
+            funcs.append((1, 1))
+        except Exception as e:
+            print(e)
 
-        with open(ui_path, 'w', encoding="utf-8-sig") as f:
-            json.dump(ui_json, f, ensure_ascii=False, indent=2)
-        funcs.append((1, 1))
+        # modify hudpanelhd.json
+        try:
+            hud_json = None
+            hud_path = os.path.join(MOD_PATH, r"data/global/ui/layouts/hudpanelhd.json")
+            with open(hud_path, 'r', encoding='utf-8') as f:
+                    hud_json = json.load(f)
+            
+            hud_json["children"][1]["children"][2]["fields"]["rect"]["y"] = 190 if hud_handler else -50
+            hud_json["children"][2]["children"][2]["fields"]["rect"]["y"] = 190 if hud_handler else -50
+
+            with open(hud_path, 'w', encoding="utf-8") as f:
+                json.dump(hud_json, f, ensure_ascii=False, indent=4)
+            funcs.append((1, 1))
+        except Exception as e:
+            print(e)
 
         results = [f for f in funcs]
         summary = tuple(sum(values) for values in zip(*results))
