@@ -1,1 +1,41 @@
-{"dependencies":{"particles":[],"models":[],"skeletons":[],"animations":[],"textures":[],"physics":[],"json":[],"variantdata":[],"objecteffects":[],"other":[]},"type":"OverlayDefinition","name":"progressive_steal_3","entities":[{"type":"Entity","name":"entity_root","id":1591210754,"components":[{"type":"VfxDefinitionComponent","name":"component_vfx","filename":"data/hd/vfx/artparticles/assassin/progressive_steal_3_fix.particles","hardKillOnDestroy":true},{"type":"TransformDefinitionComponent","name":"entity_root_TransformDefinition","position":{"x":127.5,"y":100.0,"z":116.5},"inheritOnlyPosition":true}]}]}
+{
+    "dependencies": {
+        "particles": [],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "OverlayDefinition",
+    "name": "progressive_steal_3",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 1591210754,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "component_vfx",
+                    "filename": "data/hd/vfx/artparticles/assassin/progressive_steal_3_fix.particles",
+                    "hardKillOnDestroy": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 133.61,
+                        "y": 81.81,
+                        "z": 124.0
+                    },
+                    "inheritOnlyPosition": true
+                }
+            ]
+        }
+    ]
+}

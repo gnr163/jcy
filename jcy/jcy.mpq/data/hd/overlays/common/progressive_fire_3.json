@@ -1,1 +1,41 @@
-{"dependencies":{"particles":[],"models":[],"skeletons":[],"animations":[],"textures":[],"physics":[],"json":[],"variantdata":[],"objecteffects":[],"other":[]},"type":"OverlayDefinition","name":"progressive_fire_3","entities":[{"type":"Entity","name":"entity_root","id":1077384344,"components":[{"type":"VfxDefinitionComponent","name":"component_vfx","filename":"data/hd/vfx/artparticles/assassin/progressive_fire_3_fix.particles","hardKillOnDestroy":true},{"type":"TransformDefinitionComponent","name":"entity_root_TransformDefinition","position":{"x":120.5,"y":100.0,"z":105.5},"inheritOnlyPosition":true}]}]}
+{
+    "dependencies": {
+        "particles": [],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "OverlayDefinition",
+    "name": "progressive_fire_3",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 1077384344,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "component_vfx",
+                    "filename": "data/hd/vfx/artparticles/assassin/progressive_fire_3_fix.particles",
+                    "hardKillOnDestroy": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 139.75,
+                        "y": 84.35,
+                        "z": 124.0
+                    },
+                    "inheritOnlyPosition": true
+                }
+            ]
+        }
+    ]
+}

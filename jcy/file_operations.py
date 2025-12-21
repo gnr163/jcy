@@ -510,24 +510,6 @@ class FileOperations:
             r"data/hd/overlays/assassin/quickness.json",
             r"data/hd/overlays/common/battlecommand.json",
             r"data/hd/overlays/common/battleorders.json",
-            r"data/hd/overlays/common/progressive_cold_1.json",
-            r"data/hd/overlays/common/progressive_cold_2.json",
-            r"data/hd/overlays/common/progressive_cold_3.json",
-            r"data/hd/overlays/common/progressive_damage_1.json",
-            r"data/hd/overlays/common/progressive_damage_2.json",
-            r"data/hd/overlays/common/progressive_damage_3.json",
-            r"data/hd/overlays/common/progressive_fire_1.json",
-            r"data/hd/overlays/common/progressive_fire_2.json",
-            r"data/hd/overlays/common/progressive_fire_3.json",
-            r"data/hd/overlays/common/progressive_lightning_1.json",
-            r"data/hd/overlays/common/progressive_lightning_2.json",
-            r"data/hd/overlays/common/progressive_lightning_3.json",
-            r"data/hd/overlays/common/progressive_other_1.json",
-            r"data/hd/overlays/common/progressive_other_2.json",
-            r"data/hd/overlays/common/progressive_other_3.json",
-            r"data/hd/overlays/common/progressive_steal_1.json",
-            r"data/hd/overlays/common/progressive_steal_2.json",
-            r"data/hd/overlays/common/progressive_steal_3.json",
             r"data/hd/overlays/common/shout.json",
             r"data/hd/overlays/sorceress/enchant.json",
         ]
@@ -2654,6 +2636,12 @@ class FileOperations:
         result = self.modify_hireablespanelhd_json(location, radio)
         count += result[0]
         total += result[1]
+
+        # ---- 联动修改 刺客聚气 ----
+        martial = self.controller.current_states.get(ASN_MARTIAL)
+        result = self.assassin_martial(martial)
+        count += result[0]
+        total += result[1]
         
         return (count, total)
 
@@ -3544,6 +3532,125 @@ class FileOperations:
         summary = tuple(sum(values) for values in zip(*results))
         
         return summary
+    
+    def assassin_martial(self, radio: str = "0"):
+        """刺客-聚气图标"""
+        
+        _files = [
+            r"data/hd/overlays/common/progressive_cold_1.json",
+            r"data/hd/overlays/common/progressive_cold_2.json",
+            r"data/hd/overlays/common/progressive_cold_3.json",
+            r"data/hd/overlays/common/progressive_damage_1.json",
+            r"data/hd/overlays/common/progressive_damage_2.json",
+            r"data/hd/overlays/common/progressive_damage_3.json",
+            r"data/hd/overlays/common/progressive_fire_1.json",
+            r"data/hd/overlays/common/progressive_fire_2.json",
+            r"data/hd/overlays/common/progressive_fire_3.json",
+            r"data/hd/overlays/common/progressive_lightning_1.json",
+            r"data/hd/overlays/common/progressive_lightning_2.json",
+            r"data/hd/overlays/common/progressive_lightning_3.json",
+            r"data/hd/overlays/common/progressive_other_1.json",
+            r"data/hd/overlays/common/progressive_other_2.json",
+            r"data/hd/overlays/common/progressive_other_3.json",
+            r"data/hd/overlays/common/progressive_steal_1.json",
+            r"data/hd/overlays/common/progressive_steal_2.json",
+            r"data/hd/overlays/common/progressive_steal_3.json",
+        ]
+
+        count = 0
+        total = len(_files)
+
+        _params = {
+            "1": [
+                {"x":123,"y":100,"z":112},
+                {"x":118.5,"y":100.0,"z":107.5},
+                {"x":120.5,"y":100.0,"z":105.5},
+                {"x":125.0,"y":100.0,"z":110.0},
+                {"x":129.5,"y":100.0,"z":114.5},
+                {"x":127.5,"y":100.0,"z":116.5},
+            ],
+            "2": {
+                # HUD×100%
+                "0": [
+                    { "x": 133.20, "y":  84.8,  "z": 124.0 },
+                    { "x": 136.27, "y":  86.07, "z": 124.00 },
+                    { "x": 139.34, "y":  87.34, "z": 124.00 },
+                    { "x": 142.41, "y":  88.51, "z": 124.00 },
+                    { "x": 145.48, "y":  89.88, "z": 124.00 },
+                    { "x": 148.55, "y":  91.25, "z": 124.00 },
+                ],
+                # HUD×85%
+                "1": [
+                    { "x": 129.5,  "y":  82.0,  "z": 124.0 },
+                    { "x": 132.57, "y":  83.27, "z": 124.00 },
+                    { "x": 135.64, "y":  84.54, "z": 124.00 },
+                    { "x": 138.71, "y":  85.81, "z": 124.00 },
+                    { "x": 141.78, "y":  87.08, "z": 124.00 },
+                    { "x": 144.85, "y":  88.35, "z": 124.00 },
+                ],
+                # HUD×75%
+                "2": [
+                    { "x": 133.14, "y":  82.54, "z": 124.00 },
+                    { "x": 139.28, "y":  85.08, "z": 124.00 },
+                    { "x": 142.35, "y":  86.35, "z": 124.00 },
+                    { "x": 130.07, "y":  81.27, "z": 124.00 },
+                    { "x": 127.0,  "y":  80.0,  "z": 124.0 },
+                    { "x": 136.21, "y":  83.81, "z": 124.00 },
+                ],
+                # HUD×65%
+                "3": [
+                    { "x": 130.54, "y":  80.54, "z": 124.00 },
+                    { "x": 136.68, "y":  83.08, "z": 124.00 },
+                    { "x": 139.75, "y":  84.35, "z": 124.00 },
+                    { "x": 127.47, "y":  79.27, "z": 124.00 },
+                    { "x": 124.40, "y":  78.00, "z": 124.0 },
+                    { "x": 133.61, "y":  81.81, "z": 124.00 },
+                ],
+            }
+        }
+
+        rename_result = self.common_rename(_files, radio != "0")
+        if "0" == radio:
+            return rename_result
+        
+        elif "1" == radio:
+            _param = _params.get(radio)
+            try:
+                for i, _file in enumerate(_files):
+                    _file_json = None
+                    _file_path = os.path.join(MOD_PATH, _file)
+                    with open(_file_path, 'r', encoding='utf-8') as f:
+                        _file_json = json.load(f)
+
+                    _file_json["entities"][0]["components"][-1]["position"] = _param[i//3]
+
+                    with open(_file_path, 'w', encoding='utf-8') as f:
+                        json.dump(_file_json, f, ensure_ascii=False, indent=4)
+                    
+                    count += 1
+            except Exception as e:
+                print(e)
+        
+        elif "2" == radio:
+            hud_size = self.controller.current_states.get(HUD_SIZE)
+            _param = _params.get(radio).get(hud_size)
+            try:
+                for i, _file in enumerate(_files):
+                    _file_json = None
+                    _file_path = os.path.join(MOD_PATH, _file)
+                    with open(_file_path, 'r', encoding='utf-8') as f:
+                        _file_json = json.load(f)
+
+                    _file_json["entities"][0]["components"][-1]["position"] = _param[i//3]
+
+                    with open(_file_path, 'w', encoding='utf-8') as f:
+                        json.dump(_file_json, f, ensure_ascii=False, indent=4)
+                    
+                    count += 1
+            except Exception as e:
+                print(e)
+            
+        return (count, total)
     
 
     def common_setting(self, keys: list):

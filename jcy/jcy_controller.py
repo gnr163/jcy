@@ -229,6 +229,8 @@ class FeatureController:
             DRU_SETTING: self.file_operations.druid_setting,
             # 刺客
             ASN_SETTING: self.file_operations.assassin_setting,
+            # 刺客-聚气图标
+            ASN_MARTIAL: self.file_operations.assassin_martial,
             # 通用设置
             COMMON_SETTING: self.file_operations.common_setting,
             # 技能结束提示音

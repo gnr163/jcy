@@ -1,1 +1,41 @@
-{"dependencies":{"particles":[],"models":[],"skeletons":[],"animations":[],"textures":[],"physics":[],"json":[],"variantdata":[],"objecteffects":[],"other":[]},"type":"OverlayDefinition","name":"progressive_cold_2","entities":[{"type":"Entity","name":"entity_root","id":3682896650,"components":[{"type":"VfxDefinitionComponent","name":"component_vfx","filename":"data/hd/vfx/artparticles/assassin/progressive_cold_2_fix.particles","hardKillOnDestroy":true},{"type":"TransformDefinitionComponent","name":"entity_root_TransformDefinition","position":{"x":123.0,"y":100.0,"z":112.0},"inheritOnlyPosition":true}]}]}
+{
+    "dependencies": {
+        "particles": [],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "OverlayDefinition",
+    "name": "progressive_cold_2",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 3682896650,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "component_vfx",
+                    "filename": "data/hd/vfx/artparticles/assassin/progressive_cold_2_fix.particles",
+                    "hardKillOnDestroy": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 130.54,
+                        "y": 80.54,
+                        "z": 124.0
+                    },
+                    "inheritOnlyPosition": true
+                }
+            ]
+        }
+    ]
+}
