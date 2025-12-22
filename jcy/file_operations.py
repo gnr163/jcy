@@ -564,23 +564,25 @@ class FileOperations:
         传送术皮肤
         """
         params = {
-            "0": "data/hd/overlays/sorceress/teleport.json",
-            "1": "data/hd/overlays/sorceress/teleport.json.1",
-            "2": "data/hd/overlays/sorceress/teleport.json.2",
+            "0": "data/hd/vfx/particles/overlays/sorceress/teleport/TeleportOverlay.particles",
+            "1": "data/hd/vfx/particles/overlays/sorceress/ice_IceCastNew03/fx_ice_cast_3.particles",
+            "2": "data/hd/vfx/particles/overlays/sorceress/enchant/vfx_enchant.particles",
         }
 
         count = 0
         total = 1
 
         try:
-            src_path = os.path.join(MOD_PATH, params[radio])
-            dst_path = os.path.join(MOD_PATH, params["0"])
-            
-            if "0" == radio:
-                if os.path.exists(dst_path):
-                    os.remove(dst_path)
-            else:
-                shutil.copy2(src_path, dst_path)
+            teleport_json = None
+            teleport_path = os.path.join(MOD_PATH, r"data/hd/overlays/sorceress/teleport.json")
+            with open(teleport_path, 'r', encoding='utf-8') as f:
+                teleport_json = json.load(f)
+
+            teleport_json["entities"][0]["components"][0]["filename"] = params.get(radio, "")
+
+            with open(teleport_path, 'w', encoding='utf-8') as f:
+                json.dump(teleport_json, f, ensure_ascii=False, indent=4)
+
             count += 1
         except Exception as e:
             print(e)
