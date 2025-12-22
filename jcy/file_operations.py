@@ -511,7 +511,6 @@ class FileOperations:
             r"data/hd/overlays/common/battlecommand.json",
             r"data/hd/overlays/common/battleorders.json",
             r"data/hd/overlays/common/shout.json",
-            r"data/hd/overlays/sorceress/enchant.json",
         ]
 
         return self.common_rename(files_skill_logo, isEnabled)
