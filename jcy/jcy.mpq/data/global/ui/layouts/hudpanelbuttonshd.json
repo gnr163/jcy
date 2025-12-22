@@ -4,15 +4,12 @@
     "fields": {
         "priority": 99,
         "anchor": {
-            "x": 0.5,
+            "x": 0.63,
             "y": 1
         },
         "rect": {
-            "x": 325.0,
-            "y": -195.0,
-            "width": 200,
-            "height": 200,
-            "scale": 1
+            "x": 0,
+            "y": -300
         }
     },
     "children": [
@@ -62,6 +59,22 @@
                 "focusIndicatorVisible": true,
                 "hoveredFrame": 2,
                 "pressedFrame": 0
+            }
+        },
+        {
+            "type": "ButtonWidget",
+            "name": "minifriendstoggle",
+            "fields": {
+                "rect": {
+                    "x": 195.0,
+                    "y": 0,
+                    "scale": 0.8
+                },
+                "filename": "panel\\hud_02\\messages",
+                "tooltipString": "@JcyToggleMiniFriends",
+                "onClickMessage": "PanelManager:TogglePanel:FriendsListPanel",
+                "focusIndicatorVisible": true,
+                "hoveredFrame": 2
             }
         }
     ]

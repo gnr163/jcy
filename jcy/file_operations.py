@@ -2603,33 +2603,32 @@ class FileOperations:
             except Exception as e:
                 print(e)
 
-        # 迷你按鈕
-        _rate = { "0": 1.0, "1": 0.85, "2": 0.75, "3": 0.65, }
-        _2y = { "0": 2, "1": 1, "2": 0, "3": 0, }
+        # ---- 迷你按鈕 ----
+        mini_params = {
+            "0":{"anchor-x": 0.70, "rect-y": -450},
+            "1":{"anchor-x": 0.67, "rect-y": -380},
+            "2":{"anchor-x": 0.65, "rect-y": -340},
+            "3":{"anchor-x": 0.63, "rect-y": -300},
+        }
+
         try:
+            mini_param = mini_params.get(radio)
             mini_json = None
             mini_path = os.path.join(MOD_PATH, r"data/global/ui/layouts/hudpanelbuttonshd.json")
-            # 1.load
+
             with open(mini_path, 'r', encoding='utf-8') as f:
                 mini_json = json.load(f)
 
-            # 2.modify
-            mini_json["fields"]["rect"]["x"] = 500 * _rate.get(radio)
-            mini_json["fields"]["rect"]["y"] = -300 * _rate.get(radio)
-            mini_json["children"][0]["fields"]["rect"]["scale"] = _rate.get(radio)
-            mini_json["children"][1]["fields"]["rect"]["x"] = 100 * _rate.get(radio)
-            mini_json["children"][1]["fields"]["rect"]["scale"] = _rate.get(radio)
-            mini_json["children"][2]["fields"]["rect"]["x"] = 200 * _rate.get(radio)
-            mini_json["children"][2]["fields"]["rect"]["y"] = _2y.get(radio)
-            mini_json["children"][2]["fields"]["rect"]["scale"] = _rate.get(radio)
+            mini_json["fields"]["anchor"]["x"] = mini_param.get("anchor-x")
+            mini_json["fields"]["rect"]["y"] = mini_param.get("rect-y")
                         
-            # 3.write
             with open(mini_path, 'w', encoding='utf-8') as f:
                 json.dump(mini_json, f, ensure_ascii=False, indent=4)
             count += 1
-            total += 1
         except Exception as e:
-            print(e)  
+            print(e)
+        finally:
+            total += 1
 
         # 联动修改 佣兵面板
         location = self.controller.current_states.get(MERCENARY_LOCATION)
