@@ -1,1 +1,41 @@
-{"dependencies":{"particles":[],"models":[],"skeletons":[],"animations":[],"textures":[],"physics":[],"json":[],"variantdata":[],"objecteffects":[],"other":[]},"type":"OverlayDefinition","name":"shout","entities":[{"type":"Entity","name":"entity_root","id":992020576,"components":[{"type":"VfxDefinitionComponent","name":"component_vfx","filename":"data/hd/vfx/artparticles/BattleS.particles","hardKillOnDestroy":true},{"type":"TransformDefinitionComponent","name":"entity_root_TransformDefinition","position":{"x":128.0,"y":100.0,"z":124.0},"inheritOnlyPosition":true}]}]}
+{
+    "dependencies": {
+        "particles": [],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "OverlayDefinition",
+    "name": "shout",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 992020576,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "component_vfx",
+                    "filename": "data/hd/vfx/artparticles/shout.particles",
+                    "hardKillOnDestroy": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 22,
+                        "y": 15,
+                        "z": 16
+                    },
+                    "inheritOnlyPosition": true
+                }
+            ]
+        }
+    ]
+}
