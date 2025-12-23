@@ -68,7 +68,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "component_vfx",
-                    "filename": "data/hd/vfx/artparticles/MarkBear.particles",
+                    "filename": "data/hd/vfx2/particles/druid/mark_of_the_bear.particles",
                     "hardKillOnDestroy": true
                 },
                 {

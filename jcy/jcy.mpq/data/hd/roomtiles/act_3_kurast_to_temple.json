@@ -100,7 +100,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -134,7 +134,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -168,7 +168,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -202,7 +202,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -236,7 +236,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -270,7 +270,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -304,7 +304,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -338,7 +338,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -372,7 +372,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -406,7 +406,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -440,7 +440,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -474,7 +474,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -508,7 +508,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -542,7 +542,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -576,7 +576,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -610,7 +610,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -644,7 +644,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -678,7 +678,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -712,7 +712,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -746,7 +746,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -780,7 +780,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -814,7 +814,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -848,7 +848,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -882,7 +882,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -916,7 +916,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -950,7 +950,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -984,7 +984,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -1018,7 +1018,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -1052,7 +1052,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -1086,7 +1086,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -1120,7 +1120,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -1154,7 +1154,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -1188,7 +1188,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -1222,7 +1222,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -1256,7 +1256,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -1290,7 +1290,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -1324,7 +1324,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -1358,7 +1358,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -1392,7 +1392,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]
@@ -1426,7 +1426,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "vfx_will_entrance_light",
-                    "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light_WP.particles",
+                    "filename": "data/hd/vfx2/particles/common/fx_horadric_light_WP.particles",
                     "hardKillOnDestroy": false
                 }
             ]

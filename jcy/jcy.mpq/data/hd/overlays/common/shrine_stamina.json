@@ -1,10 +1,6 @@
 {
     "dependencies": {
-        "particles": [
-            {
-                "path": "data/hd/vfx/artparticles/gem.particles"
-            }
-        ],
+        "particles": [],
         "models": [],
         "skeletons": [],
         "animations": [],
@@ -26,7 +22,7 @@
                 {
                     "type": "VfxDefinitionComponent",
                     "name": "entity_root_VfxDefinition",
-                    "filename": "data/hd/vfx/artparticles/gem.particles",
+                    "filename": "data/hd/vfx2/particles/common/gem.particles",
                     "hardKillOnDestroy": true
                 }
             ]

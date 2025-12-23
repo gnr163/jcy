@@ -26,8 +26,8 @@ ASSETS = [
         "url": "https://gitee.com/jcymeow/jcymod_d2r_assets/releases/download/v1.0.0/netease.zip",
         "file": "netease.zip",
         "image": "https://gitee.com/jcymeow/jcymod_d2r_assets/raw/master/netease.png",
-        "size": 11079732,
-        "md5": "907C739E21FF246EDFFFF885F1282ECD",
+        "size": 11079780,
+        "md5": "E6281E351FE5A94CCF727DB8CC9C629F",
         APPLY_METHOD: [
             { 
                 "method": MODIFY_FILENAME_BY_SETTINGS, 
@@ -178,8 +178,8 @@ ASSETS = [
         "url": "https://gitee.com/jcymeow/jcymod_d2r_assets/releases/download/v1.0.0/battlenet.zip",
         "file": "battlenet.zip",
         "image": "https://gitee.com/jcymeow/jcymod_d2r_assets/raw/master/battlenet.png",
-        "size": 1407492,
-        "md5": "EA7DBB522484E2894BA7E8752E12189D",
+        "size": 1407541,
+        "md5": "CF6F3182A19E7F75A99B1F40D046B414",
         APPLY_METHOD: [
             { 
                 "method": MODIFY_FILENAME_BY_SETTINGS, 
