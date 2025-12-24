@@ -231,6 +231,8 @@ class FeatureController:
             ASN_SETTING: self.file_operations.assassin_setting,
             # 刺客-聚气图标
             ASN_MARTIAL: self.file_operations.assassin_martial,
+            # 圣骑士
+            PAL_SETTING: self.file_operations.paladin_setting,
             # 通用设置
             COMMON_SETTING: self.file_operations.common_setting,
             # 技能结束提示音

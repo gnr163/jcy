@@ -3457,13 +3457,21 @@ class FileOperations:
             return (0, 0)
         
         _files = {
-            # 取消雷云风暴吓人特效
+            # 取消 雷云风暴吓人特效
             "1":[
                 r"data/hd/missiles/lightningbolt_big.json",
             ],
-            # 降低闪电新星亮度
+            # 降低 闪电新星亮度
             "2": [
                 r"data/hd/missiles/electric_nova.json",
+            ],
+            # 开启 附魔双手火焰特效
+            "3": [
+                r"data/hd/overlays/sorceress/enchant.json",
+            ],
+            # 开启 蓝色能量护盾顶球
+            "4": [
+                r"data/hd/overlays/sorceress/energyshield.json"
             ],
         }
 
@@ -3523,6 +3531,28 @@ class FileOperations:
         
         return summary
     
+
+    def paladin_setting(self, keys: list):
+        """圣骑士设置"""
+        if keys is None:
+            return (0, 0)
+        
+        _files = {
+            # 德鲁伊-飓风术
+            "1":[
+                r"data/hd/missiles/blessedhammer.json",
+            ],
+        }
+
+        funcs = []
+        for key, files in _files.items():
+            sub = self.common_rename(files, key in keys)
+            funcs.append(sub)
+
+        results = [f for f in funcs]
+        summary = tuple(sum(values) for values in zip(*results))
+        
+        return summary
 
     def assassin_setting(self, keys: list):
         """刺客设置"""

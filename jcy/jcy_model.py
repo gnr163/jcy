@@ -303,28 +303,12 @@ class FeatureConfig:
                             "fid": SOR_SETTING,
                             "type": CHECK,
                             "text": "魔法师",
-                            "colspan": 50,
+                            "colspan": 100,
                             "params": {
-                                "1": "取消雷云风暴吓人特效",
-                                "2": "降低闪电新星亮度"
-                            }
-                        },
-                        {
-                            "fid": NEC_SETTING,
-                            "type": CHECK,
-                            "text": "死灵法师",
-                            "colspan": 25,
-                            "params": {
-                                "1": "骷髅火刀圣盾"
-                            }
-                        },
-                        {
-                            "fid": DRU_SETTING,
-                            "type": CHECK,
-                            "text": "德鲁伊",
-                            "colspan": 25,
-                            "params": {
-                                "1": "飓风术特效"
+                                "1": "取消 雷云风暴吓人特效",
+                                "2": "降低 闪电新星亮度",
+                                "3": "开启 附魔双手火焰特效",
+                                "4": "开启 蓝色能量护盾顶球"
                             }
                         },
                         {
@@ -346,6 +330,33 @@ class FeatureConfig:
                                 "0": "不开启",
                                 "1": "刺客右侧",
                                 "2": "HUD右上方"
+                            }
+                        },
+                        {
+                            "fid": NEC_SETTING,
+                            "type": CHECK,
+                            "text": "死灵法师",
+                            "colspan": 25,
+                            "params": {
+                                "1": "骷髅火刀圣盾"
+                            }
+                        },
+                        {
+                            "fid": DRU_SETTING,
+                            "type": CHECK,
+                            "text": "德鲁伊",
+                            "colspan": 25,
+                            "params": {
+                                "1": "飓风术特效"
+                            }
+                        },
+                        {
+                            "fid": PAL_SETTING,
+                            "type": CHECK,
+                            "text": "圣骑士",
+                            "colspan": 25,
+                            "params": {
+                                "1": "祝锤闪电弹道特效"
                             }
                         },
                         {
