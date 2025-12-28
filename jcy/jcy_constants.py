@@ -148,6 +148,7 @@ RUNE_SIZE = "RuneSize"
 ITEM_NOTIFICATION = "ItemNotification"
 ITEM_RUNE_SETTING1 = "ItemRuneSetting1"
 ITEM_RUNE_SETTING2 = "ItemRuneSetting2"
+ITEM_GEM_SETTING = "ItemGemSetting"
 ASSET_PATH = "AssetPath"
 DISABLE_EFFECTS = "DisableEffects"
 ENABLE_POINTER = "EnablePointer"
@@ -1703,6 +1704,7 @@ __all__ = [
     'ITEM_NOTIFICATION',
     'ITEM_RUNE_SETTING1',
     'ITEM_RUNE_SETTING2',
+    'ITEM_GEM_SETTING',
     'ASSET_PATH',
     'ITEM_ENUS',
     'ITEM_ZHTW',

@@ -1776,6 +1776,69 @@ class FileOperations:
 
         return (count, 1)
     
+    def modify_item_gem(self, keys: list):
+        """
+          装备特效
+          1.宝石
+        """
+        if keys is None:
+            return (0, 0)
+
+        count = 0
+        item_rune_setting = self.controller.current_states.get(ITEM_GEM_SETTING)
+
+        rune_upgrade = "1" in item_rune_setting
+
+        _languages = [ZHCN, ZHSGCN, ZHTW, ZHSGTW, ENUS]
+
+        # --- item-names.templet.json + item-names.data.json -> item-names.json ---
+        try:
+            templet_list = None
+            templet_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.templet.json")
+            with open(templet_path, 'r', encoding='utf-8-sig') as f:
+                templet_list = json.load(f)
+
+            data_dict = None
+            data_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-gems.data.json")
+            with open(data_path, 'r', encoding='utf-8') as f:
+                data_dict = json.load(f)
+            # 松岗简/繁体, 采用简/繁体数据
+            for key, obj in data_dict.items():
+                if obj.get(ZHSGCN) is None:
+                    obj[ZHSGCN] = obj[ZHCN]
+                if obj.get(ZHSGTW) is None:
+                    obj[ZHSGTW] = obj[ZHTW]
+
+            netease = self.controller.current_states.get(NETEASE_LANGUAGE)
+            battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
+
+            for item in templet_list:
+                Key = item["Key"]
+                data = data_dict.get(Key)
+                if data is None:
+                    continue
+                for lng in _languages:
+                    item[lng] = item[lng].replace("{{formula}}", data.get(lng).get(
+                        "formula") if rune_upgrade else "")
+                # 备份
+                item[ZHCN2] = item[ZHCN]
+                item[ZHTW2] = item[ZHTW]
+                # 国服本地化
+                item[ZHCN] = item[netease]
+                # 国际服本地化
+                item[ZHTW] = item[battlenet]
+
+            item_runes_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json.tmp")
+            with open(item_runes_tmp, 'w', encoding="utf-8-sig") as f:
+                json.dump(templet_list, f, ensure_ascii=False, indent=2)
+
+            item_runes = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json")
+            os.replace(item_runes_tmp, item_runes)
+            count += 1
+        except Exception as e:
+            print(e)
+
+        return (count, 1)
 
     def hide_environmental_effects(self, keys: list):
         """屏蔽环境特效"""

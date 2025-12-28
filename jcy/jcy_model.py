@@ -620,7 +620,15 @@ class FeatureConfig:
                                 "6": "升级公式",
                             }
                         },
-                        
+                        {
+                            "fid": ITEM_GEM_SETTING,
+                            "type": CHECK,
+                            "text": "宝石-设置",
+                            "colspan": 100,
+                            "params": {
+                                "1": "升级公式",
+                            }
+                        },
                     ]
                 }
             ],
