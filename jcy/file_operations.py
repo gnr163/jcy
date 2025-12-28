@@ -1506,7 +1506,7 @@ class FileOperations:
             return (0, 0)
 
         count = 0
-        
+
 
         # 道具过滤 ITEM_FILTER
         item_filter_dict = self.controller.current_states[ITEM_FILTER]
@@ -1516,6 +1516,8 @@ class FileOperations:
         unique_dict = self.controller.current_states[UNIQUE_EFFECTS]
         # 套装特效配置 SETS_EFFECTS
         set_dict = self.controller.current_states[SETS_EFFECTS]
+        # 宝石配置
+        item_rune_setting = self.controller.current_states.get(ITEM_GEM_SETTING)
 
         base_grade = "0" in base_dict
         base_weight = "1" in base_dict
@@ -1530,6 +1532,8 @@ class FileOperations:
         set_enus = "4" in set_dict
         set_max = "5" in set_dict
         set_mark = "6" in set_dict
+
+        rune_upgrade = "1" in item_rune_setting
 
         _languages = [ZHCN, ZHSGCN, ZHTW, ZHSGTW, ENUS]
         # --- item-names.templet.json + item-names.data.json -> item-names.json ---
@@ -1554,7 +1558,7 @@ class FileOperations:
             for item in templet_list:
                 Key = item["Key"]
                 data = data_dict.get(Key)
-                
+
                 # 没有模板数据pass
                 if data is None:
                     continue
@@ -1571,7 +1575,7 @@ class FileOperations:
                     # 装备底材
                     for lng in _languages:
                         arr = [item[lng]]
-                        
+
                         if base_grade:
                             grade = data[lng].get("grade")
                             if grade:
@@ -1599,7 +1603,7 @@ class FileOperations:
                             arr.append(" ")
                             arr.append(item.get(ENUS))
                         item[lng] = ''.join(arr)
-                
+
                 elif Key in ITEM_UNIQUE:
                     # 暗金装
                     for lng in _languages:
@@ -1623,7 +1627,7 @@ class FileOperations:
                             arr.append(" ")
                             arr.append(item.get(ENUS))
                         item[lng] = ''.join(arr)
-                
+
                 elif Key in SETS_INDEX or Key in SET_ITEM_INDEX:
                     # 套装
                     for lng in _languages:
@@ -1647,7 +1651,11 @@ class FileOperations:
                             arr.append(" ")
                             arr.append(item.get(ENUS))
                         item[lng] = ''.join(arr)
-                
+                elif Key in ITEM_GEM:
+                    for lng in _languages:
+                        item[lng] = item[lng].replace("{{formula}}", data[lng].get(
+                            "formula") if rune_upgrade else "")
+
                 # 备份
                 item[ZHCN2] = item[ZHCN]
                 item[ZHTW2] = item[ZHTW]
@@ -1655,7 +1663,7 @@ class FileOperations:
                 item[ZHCN] = item[netease]
                 # 国际服本地化
                 item[ZHTW] = item[battlenet]
-                                                
+
             # write temp file
             item_names_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json.tmp")
             with open(item_names_tmp, 'w', encoding="utf-8-sig") as f:
@@ -1775,70 +1783,7 @@ class FileOperations:
             print(e)
 
         return (count, 1)
-    
-    def modify_item_gem(self, keys: list):
-        """
-          装备特效
-          1.宝石
-        """
-        if keys is None:
-            return (0, 0)
 
-        count = 0
-        item_rune_setting = self.controller.current_states.get(ITEM_GEM_SETTING)
-
-        rune_upgrade = "1" in item_rune_setting
-
-        _languages = [ZHCN, ZHSGCN, ZHTW, ZHSGTW, ENUS]
-
-        # --- item-names.templet.json + item-names.data.json -> item-names.json ---
-        try:
-            templet_list = None
-            templet_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-names.templet.json")
-            with open(templet_path, 'r', encoding='utf-8-sig') as f:
-                templet_list = json.load(f)
-
-            data_dict = None
-            data_path = os.path.join(MOD_PATH, r"data/local/lng/strings/jcy/item-gems.data.json")
-            with open(data_path, 'r', encoding='utf-8') as f:
-                data_dict = json.load(f)
-            # 松岗简/繁体, 采用简/繁体数据
-            for key, obj in data_dict.items():
-                if obj.get(ZHSGCN) is None:
-                    obj[ZHSGCN] = obj[ZHCN]
-                if obj.get(ZHSGTW) is None:
-                    obj[ZHSGTW] = obj[ZHTW]
-
-            netease = self.controller.current_states.get(NETEASE_LANGUAGE)
-            battlenet = self.controller.current_states.get(BATTLE_NET_LANGUAGE)
-
-            for item in templet_list:
-                Key = item["Key"]
-                data = data_dict.get(Key)
-                if data is None:
-                    continue
-                for lng in _languages:
-                    item[lng] = item[lng].replace("{{formula}}", data.get(lng).get(
-                        "formula") if rune_upgrade else "")
-                # 备份
-                item[ZHCN2] = item[ZHCN]
-                item[ZHTW2] = item[ZHTW]
-                # 国服本地化
-                item[ZHCN] = item[netease]
-                # 国际服本地化
-                item[ZHTW] = item[battlenet]
-
-            item_runes_tmp = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json.tmp")
-            with open(item_runes_tmp, 'w', encoding="utf-8-sig") as f:
-                json.dump(templet_list, f, ensure_ascii=False, indent=2)
-
-            item_runes = os.path.join(MOD_PATH, r"data/local/lng/strings/item-names.json")
-            os.replace(item_runes_tmp, item_runes)
-            count += 1
-        except Exception as e:
-            print(e)
-
-        return (count, 1)
 
     def hide_environmental_effects(self, keys: list):
         """屏蔽环境特效"""

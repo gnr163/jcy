@@ -1456,7 +1456,8 @@ ITEM_UNIQUE = [
     "Bone Break",
     "Black Cleft",
 ]
-
+ITEM_GEM = ["gcv", "gfv", "gsv", "gzv", "gpv", "gcy", "gfy", "gsy", "gly", "gpy", "gcb", "gfb", "gsb", "glb", "gpb",
+            "gcg", "gfg", "glg", "gsg", "gpg", "gcr", "gfr", "gsr", "glr", "gpr", "gcw", "gfw", "gsw", "glw", "gpw"]
 # 道具字典<Key, 模型>
 ITEM_MISC = {
     "skc": "data/hd/items/misc/gem/chipped_skull.json",
@@ -1728,6 +1729,7 @@ __all__ = [
     'SET_ITEM_INDEX',
     'ITEM_BASE',
     'ITEM_UNIQUE',
+    'ITEM_GEM',
     'ITEM_MISC',
     'CUSTOM_SOUNDS',
     'WAYPOINT_POINTER',
