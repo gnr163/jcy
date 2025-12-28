@@ -21951,5 +21951,95 @@
             "max": "",
             "mark": ""
         }
+    },
+    "gcv":{
+        "zhCN": {
+            "formula": "ÿc5[+#11x3]\n"
+        }
+    },
+    "gfv":{
+        "zhCN": {
+            "formula": "ÿc5[+#17x3]\n"
+        }
+    },
+    "gsv":{
+        "zhCN": {
+            "formula": "ÿc5[+#23x2]\n"
+        }
+    },
+    "gcy":{
+        "zhCN": {
+            "formula": "ÿc5[+#10x3]\n"
+        }
+    },
+    "gfy":{
+        "zhCN": {
+            "formula": "ÿc5[+#16x3]\n"
+        }
+    },
+    "gsy":{
+        "zhCN": {
+            "formula": "ÿc5[+#22x2]\n"
+        }
+    },
+    "gcb":{
+        "zhCN": {
+            "formula": "ÿc5[+#12x3]\n"
+        }
+    },
+    "gfb":{
+        "zhCN": {
+            "formula": "ÿc5[+#18x3]\n"
+        }
+    },
+    "gsb":{
+        "zhCN": {
+            "formula": "ÿc5[+#24x2]\n"
+        }
+    },
+    "gcg":{
+        "zhCN": {
+            "formula": "ÿc5[+#14x3]\n"
+        }
+    },
+    "gfg":{
+        "zhCN": {
+            "formula": "ÿc5[+#20x3]\n"
+        }
+    },
+    "gsg":{
+        "zhCN": {
+            "formula": "ÿc5[+#26x2]\n"
+        }
+    },
+    "gcr":{
+        "zhCN": {
+            "formula": "ÿc5[+#13x3]\n"
+        }
+    },
+    "gfr":{
+        "zhCN": {
+            "formula": "ÿc5[+#19x3]\n"
+        }
+    },
+    "gsr":{
+        "zhCN": {
+            "formula": "ÿc5[+#25x2]\n"
+        }
+    },
+    "gcw":{
+        "zhCN": {
+            "formula": "ÿc5[+#15x3]\n"
+        }
+    },
+    "gfw":{
+        "zhCN": {
+            "formula": "ÿc5[+#21x2]\n"
+        }
+    },
+    "gsw":{
+        "zhCN": {
+            "formula": "ÿc5[+#27x2]\n"
+        }
     }
 }

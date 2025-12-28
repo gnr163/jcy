@@ -6335,11 +6335,11 @@
     "jaJP": "欠けたアメジスト",
     "ptBR": "Ametista Lascada",
     "ruRU": "Надколотый аметист",
-    "zhCN": "ÿc1碎裂的紫宝石ÿc0",
-    "zhCN2": "ÿc1碎裂的紫宝石ÿc0",
-    "zhTW2": "ÿc1碎裂紫寶石ÿc0",
-    "zhSGCN": "ÿc1碎裂的紫宝石ÿc0",
-    "zhSGTW": "ÿc1碎裂的紫寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1碎裂的紫宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1碎裂的紫宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1碎裂紫寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1碎裂的紫宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1碎裂的紫寶石ÿc0"
   },
   {
     "id": 2237,
@@ -6356,11 +6356,11 @@
     "jaJP": "傷のあるアメジスト",
     "ptBR": "Ametista Imperfeita",
     "ruRU": "Мутный аметист",
-    "zhCN": "ÿc1有瑕疵的紫宝石ÿc0",
-    "zhCN2": "ÿc1有瑕疵的紫宝石ÿc0",
-    "zhTW2": "ÿc1瑕疵紫寶石ÿc0",
-    "zhSGCN": "ÿc1裂开的紫宝石ÿc0",
-    "zhSGTW": "ÿc1裂開的紫寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1有瑕疵的紫宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1有瑕疵的紫宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1瑕疵紫寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1裂开的紫宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1裂開的紫寶石ÿc0"
   },
   {
     "id": 2238,
@@ -6377,11 +6377,11 @@
     "jaJP": "アメジスト",
     "ptBR": "Ametista",
     "ruRU": "Аметист",
-    "zhCN": "ÿc1紫宝石ÿc0",
-    "zhCN2": "ÿc1紫宝石ÿc0",
-    "zhTW2": "ÿc1紫寶石ÿc0",
-    "zhSGCN": "ÿc1紫宝石ÿc0",
-    "zhSGTW": "ÿc1紫寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1紫宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1紫宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1紫寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1紫宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1紫寶石ÿc0"
   },
   {
     "id": 2239,
@@ -6440,11 +6440,11 @@
     "jaJP": "欠けたトパーズ",
     "ptBR": "Topázio Lascado",
     "ruRU": "Надколотый топаз",
-    "zhCN": "ÿc1碎裂的黄宝石ÿc0",
-    "zhCN2": "ÿc1碎裂的黄宝石ÿc0",
-    "zhTW2": "ÿc1碎裂黃寶石ÿc0",
-    "zhSGCN": "ÿc1碎裂的黄宝石ÿc0",
-    "zhSGTW": "ÿc1碎裂的黃寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1碎裂的黄宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1碎裂的黄宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1碎裂黃寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1碎裂的黄宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1碎裂的黃寶石ÿc0"
   },
   {
     "id": 2242,
@@ -6461,11 +6461,11 @@
     "jaJP": "傷のあるトパーズ",
     "ptBR": "Topázio Imperfeito",
     "ruRU": "Мутный топаз",
-    "zhCN": "ÿc1有瑕疵的黄宝石ÿc0",
-    "zhCN2": "ÿc1有瑕疵的黄宝石ÿc0",
-    "zhTW2": "ÿc1瑕疵黃寶石ÿc0",
-    "zhSGCN": "ÿc1裂开的黄宝石ÿc0",
-    "zhSGTW": "ÿc1裂開的黃寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1有瑕疵的黄宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1有瑕疵的黄宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1瑕疵黃寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1裂开的黄宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1裂開的黃寶石ÿc0"
   },
   {
     "id": 2243,
@@ -6482,11 +6482,11 @@
     "jaJP": "トパーズ",
     "ptBR": "Topázio",
     "ruRU": "Топаз",
-    "zhCN": "ÿc1黄宝石ÿc0",
-    "zhCN2": "ÿc1黄宝石ÿc0",
-    "zhTW2": "ÿc1黃寶石ÿc0",
-    "zhSGCN": "ÿc1黄宝石ÿc0",
-    "zhSGTW": "ÿc1黃寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1黄宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1黄宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1黃寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1黄宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1黃寶石ÿc0"
   },
   {
     "id": 2244,
@@ -6545,11 +6545,11 @@
     "jaJP": "欠けたサファイア",
     "ptBR": "Safira Lascada",
     "ruRU": "Надколотый сапфир",
-    "zhCN": "ÿc1碎裂的蓝宝石ÿc0",
-    "zhCN2": "ÿc1碎裂的蓝宝石ÿc0",
-    "zhTW2": "ÿc1碎裂藍寶石ÿc0",
-    "zhSGCN": "ÿc1碎裂的蓝宝石ÿc0",
-    "zhSGTW": "ÿc1碎裂的藍寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1碎裂的蓝宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1碎裂的蓝宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1碎裂藍寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1碎裂的蓝宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1碎裂的藍寶石ÿc0"
   },
   {
     "id": 2247,
@@ -6566,11 +6566,11 @@
     "jaJP": "傷のあるサファイア",
     "ptBR": "Safira Imperfeita",
     "ruRU": "Мутный сапфир",
-    "zhCN": "ÿc1有瑕疵的蓝宝石ÿc0",
-    "zhCN2": "ÿc1有瑕疵的蓝宝石ÿc0",
-    "zhTW2": "ÿc1瑕疵藍寶石ÿc0",
-    "zhSGCN": "ÿc1裂开的蓝宝石ÿc0",
-    "zhSGTW": "ÿc1裂開的藍寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1有瑕疵的蓝宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1有瑕疵的蓝宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1瑕疵藍寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1裂开的蓝宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1裂開的藍寶石ÿc0"
   },
   {
     "id": 2248,
@@ -6587,11 +6587,11 @@
     "jaJP": "サファイア",
     "ptBR": "Safira",
     "ruRU": "[ms]Сапфир",
-    "zhCN": "ÿc1蓝宝石ÿc0",
-    "zhCN2": "ÿc1蓝宝石ÿc0",
-    "zhTW2": "ÿc1藍寶石ÿc0",
-    "zhSGCN": "ÿc1蓝宝石ÿc0",
-    "zhSGTW": "ÿc1藍寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1蓝宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1蓝宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1藍寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1蓝宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1藍寶石ÿc0"
   },
   {
     "id": 2249,
@@ -6650,11 +6650,11 @@
     "jaJP": "欠けたエメラルド",
     "ptBR": "Esmeralda Lascada",
     "ruRU": "Надколотый изумруд",
-    "zhCN": "ÿc1碎裂的绿宝石ÿc0",
-    "zhCN2": "ÿc1碎裂的绿宝石ÿc0",
-    "zhTW2": "ÿc1碎裂綠寶石ÿc0",
-    "zhSGCN": "ÿc1碎裂的绿宝石ÿc0",
-    "zhSGTW": "ÿc1碎裂的綠寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1碎裂的绿宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1碎裂的绿宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1碎裂綠寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1碎裂的绿宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1碎裂的綠寶石ÿc0"
   },
   {
     "id": 2252,
@@ -6671,11 +6671,11 @@
     "jaJP": "傷のあるエメラルド",
     "ptBR": "Esmeralda Imperfeita",
     "ruRU": "Мутный изумруд",
-    "zhCN": "ÿc1有瑕疵的绿宝石ÿc0",
-    "zhCN2": "ÿc1有瑕疵的绿宝石ÿc0",
-    "zhTW2": "ÿc1瑕疵綠寶石ÿc0",
-    "zhSGCN": "ÿc1裂开的绿宝石ÿc0",
-    "zhSGTW": "ÿc1裂開的綠寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1有瑕疵的绿宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1有瑕疵的绿宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1瑕疵綠寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1裂开的绿宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1裂開的綠寶石ÿc0"
   },
   {
     "id": 2253,
@@ -6713,11 +6713,11 @@
     "jaJP": "エメラルド",
     "ptBR": "Esmeralda",
     "ruRU": "[ms]Изумруд",
-    "zhCN": "ÿc1绿宝石ÿc0",
-    "zhCN2": "ÿc1绿宝石ÿc0",
-    "zhTW2": "ÿc1綠寶石ÿc0",
-    "zhSGCN": "ÿc1绿宝石ÿc0",
-    "zhSGTW": "ÿc1綠寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1绿宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1绿宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1綠寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1绿宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1綠寶石ÿc0"
   },
   {
     "id": 2255,
@@ -6755,11 +6755,11 @@
     "jaJP": "欠けたルビー",
     "ptBR": "Rubi Lascado",
     "ruRU": "Надколотый рубин",
-    "zhCN": "ÿc1碎裂的红宝石ÿc0",
-    "zhCN2": "ÿc1碎裂的红宝石ÿc0",
-    "zhTW2": "ÿc1碎裂紅寶石ÿc0",
-    "zhSGCN": "ÿc1碎裂的红宝石ÿc0",
-    "zhSGTW": "ÿc1碎裂的紅寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1碎裂的红宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1碎裂的红宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1碎裂紅寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1碎裂的红宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1碎裂的紅寶石ÿc0"
   },
   {
     "id": 2257,
@@ -6776,11 +6776,11 @@
     "jaJP": "傷のあるルビー",
     "ptBR": "Rubi Imperfeito",
     "ruRU": "Мутный рубин",
-    "zhCN": "ÿc1有瑕疵的红宝石ÿc0",
-    "zhCN2": "ÿc1有瑕疵的红宝石ÿc0",
-    "zhTW2": "ÿc1瑕疵紅寶石ÿc0",
-    "zhSGCN": "ÿc1裂开的红宝石ÿc0",
-    "zhSGTW": "ÿc1裂開的紅寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1有瑕疵的红宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1有瑕疵的红宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1瑕疵紅寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1裂开的红宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1裂開的紅寶石ÿc0"
   },
   {
     "id": 2258,
@@ -6797,11 +6797,11 @@
     "jaJP": "ルビー",
     "ptBR": "Rubi",
     "ruRU": "[ms]Рубин",
-    "zhCN": "ÿc1红宝石ÿc0",
-    "zhCN2": "ÿc1红宝石ÿc0",
-    "zhTW2": "ÿc1紅寶石ÿc0",
-    "zhSGCN": "ÿc1红宝石ÿc0",
-    "zhSGTW": "ÿc1紅寶石ÿc0"
+    "zhCN": "{{formula}}ÿc1红宝石ÿc0",
+    "zhCN2": "{{formula}}ÿc1红宝石ÿc0",
+    "zhTW2": "{{formula}}ÿc1紅寶石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1红宝石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1紅寶石ÿc0"
   },
   {
     "id": 2259,
@@ -6860,11 +6860,11 @@
     "jaJP": "欠けたダイヤモンド",
     "ptBR": "Diamante Lascado",
     "ruRU": "Надколотый бриллиант",
-    "zhCN": "ÿc1碎裂的钻石ÿc0",
-    "zhCN2": "ÿc1碎裂的钻石ÿc0",
-    "zhTW2": "ÿc1碎裂鑽石ÿc0",
-    "zhSGCN": "ÿc1碎裂的钻石ÿc0",
-    "zhSGTW": "ÿc1碎裂的鑽石ÿc0"
+    "zhCN": "{{formula}}ÿc1碎裂的钻石ÿc0",
+    "zhCN2": "{{formula}}ÿc1碎裂的钻石ÿc0",
+    "zhTW2": "{{formula}}ÿc1碎裂鑽石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1碎裂的钻石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1碎裂的鑽石ÿc0"
   },
   {
     "id": 2262,
@@ -6881,11 +6881,11 @@
     "jaJP": "傷のあるダイヤモンド",
     "ptBR": "Diamante Imperfeito",
     "ruRU": "Мутный бриллиант",
-    "zhCN": "ÿc1有瑕疵的钻石ÿc0",
-    "zhCN2": "ÿc1有瑕疵的钻石ÿc0",
-    "zhTW2": "ÿc1瑕疵鑽石ÿc0",
-    "zhSGCN": "ÿc1裂开的钻石ÿc0",
-    "zhSGTW": "ÿc1裂開的鑽石ÿc0"
+    "zhCN": "{{formula}}ÿc1有瑕疵的钻石ÿc0",
+    "zhCN2": "{{formula}}ÿc1有瑕疵的钻石ÿc0",
+    "zhTW2": "{{formula}}ÿc1瑕疵鑽石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1裂开的钻石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1裂開的鑽石ÿc0"
   },
   {
     "id": 2263,
@@ -6902,11 +6902,11 @@
     "jaJP": "ダイアモンド",
     "ptBR": "Diamante",
     "ruRU": "[ms]Алмаз",
-    "zhCN": "ÿc1钻石ÿc0",
-    "zhCN2": "ÿc1钻石ÿc0",
-    "zhTW2": "ÿc1鑽石ÿc0",
-    "zhSGCN": "ÿc1钻石ÿc0",
-    "zhSGTW": "ÿc1鑽石ÿc0"
+    "zhCN": "{{formula}}ÿc1钻石ÿc0",
+    "zhCN2": "{{formula}}ÿc1钻石ÿc0",
+    "zhTW2": "{{formula}}ÿc1鑽石ÿc0",
+    "zhSGCN": "{{formula}}ÿc1钻石ÿc0",
+    "zhSGTW": "{{formula}}ÿc1鑽石ÿc0"
   },
   {
     "id": 2264,
